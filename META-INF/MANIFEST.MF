@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: br.ufes.inf.nemo.PINF8000-DM.FrameWeb_Martins2015
+Bundle-SymbolicName: br.ufes.inf.nemo.PINF8000-DM.FrameWeb_Martins2015; singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Require-Bundle: org.eclipse.emf.ecore
