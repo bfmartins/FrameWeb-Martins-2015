@@ -41,17 +41,6 @@
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//Fetch/eager"/>
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//Fetch/lazy"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FrameWeb.ecore#//XHTMLFormField">
-      <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//XHTMLFormField/imput"/>
-      <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//XHTMLFormField/option"/>
-      <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//XHTMLFormField/textarea"/>
-      <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//XHTMLFormField/button"/>
-      <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//XHTMLFormField/fieldset"/>
-      <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//XHTMLFormField/label"/>
-      <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//XHTMLFormField/legend"/>
-      <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//XHTMLFormField/optgroup"/>
-      <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//XHTMLFormField/select"/>
-    </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="FrameWeb.ecore#//DAOBaseOperationList">
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//DAOBaseOperationList/retrieve"/>
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//DAOBaseOperationList/retrieveAll"/>
@@ -112,7 +101,6 @@
     <genClasses ecoreClass="FrameWeb.ecore#//DomainModel">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DomainModel/DomainUMLAssociation"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DomainModel/DomainUMLPackage"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DomainModel/DomainUMLGeneralization"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//NavigationModel">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//NavigationModel/NavigationUMLDependence"/>
@@ -125,7 +113,6 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//ApplicationModel/ApplicationUMLPackage"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//PersistenceModel">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//PersistenceModel/PersistenceUMLAssociation"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//PersistenceModel/PersistenceUMLPackage"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//DomainAssociation">
@@ -158,6 +145,7 @@
     <genClasses ecoreClass="FrameWeb.ecore#//Page">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Page/PageClassAttribute"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Page/PageTagLib"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Page/Mention"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//Template">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Template/TemplateClassAttribute"/>
@@ -206,7 +194,7 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//ResultDependence/TargetForm"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//ResultDependence/TargetComponent"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//ResultDependence/TargetJQuery"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//ResultDependence/TargetFormElement"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//ResultDependence/TargetFormComponent"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//NavigationComposition">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//NavigationComposition/SourceTemplate"/>
@@ -299,7 +287,6 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//ChainingDependence/TargetFrontController"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//ChainingDependence/SourceFrontController"/>
     </genClasses>
-    <genClasses ecoreClass="FrameWeb.ecore#//XHTMLComponent"/>
     <genClasses ecoreClass="FrameWeb.ecore#//DAOServiceAssociation">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DAOServiceAssociation/SourceDAOClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DAOServiceAssociation/TargetDAOService"/>
@@ -345,9 +332,8 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DomainGeneralization/SourceDomain"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//JQuery"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//FormComponent"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//FormElement">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FormElement/inject"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//FormComponent">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FormComponent/inject"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//TagLib">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//TagLib/TagLibTag"/>

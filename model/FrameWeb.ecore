@@ -48,8 +48,6 @@
         eType="#//DomainAssociation" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="DomainUMLPackage" lowerBound="1"
         upperBound="-1" eType="#//DomainPackage" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="DomainUMLGeneralization"
-        upperBound="-1" eType="#//DomainGeneralization" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NavigationModel">
     <eStructuralFeatures xsi:type="ecore:EReference" name="NavigationUMLDependence"
@@ -68,8 +66,6 @@
         lowerBound="1" upperBound="-1" eType="#//ApplicationPackage" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PersistenceModel">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="PersistenceUMLAssociation"
-        lowerBound="1" upperBound="-1" eType="#//DAOGeneralization" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="PersistenceUMLPackage"
         lowerBound="1" upperBound="-1" eType="#//PersistencePackage" containment="true"/>
   </eClassifiers>
@@ -142,15 +138,17 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="PageClassAttribute" upperBound="-1"
         eType="#//UserViewAttribute" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="PageTagLib" lowerBound="1"
-        upperBound="-1" eType="#//TagLib" containment="true"/>
+        upperBound="-1" eType="#//Tag" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Mention" lowerBound="1"
+        upperBound="-1" eType="#//TagLib"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Template" eSuperTypes="#//NavigationClass">
     <eStructuralFeatures xsi:type="ecore:EReference" name="TemplateClassAttribute"
         upperBound="-1" eType="#//UserViewAttribute" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Form" eSuperTypes="#//NavigationClass #//Tag">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="FormClassAttribute" lowerBound="1"
-        upperBound="-1" eType="#//FormElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="FormClassAttribute" upperBound="-1"
+        eType="#//FormComponent" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Binary" eSuperTypes="#//NavigationClass">
     <eStructuralFeatures xsi:type="ecore:EReference" name="BinaryClassAttribute" lowerBound="1"
@@ -189,20 +187,9 @@
         lowerBound="1" upperBound="-1" eType="#//FrontControllerMethod" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="UserViewAttribute" eSuperTypes="#//NavigationAttribute"/>
-  <eClassifiers xsi:type="ecore:EEnum" name="XHTMLFormField">
-    <eLiterals name="imput"/>
-    <eLiterals name="option" value="2"/>
-    <eLiterals name="textarea" value="3"/>
-    <eLiterals name="button" value="4"/>
-    <eLiterals name="fieldset" value="5"/>
-    <eLiterals name="label" value="6"/>
-    <eLiterals name="legend" value="7"/>
-    <eLiterals name="optgroup" value="8"/>
-    <eLiterals name="select" value="1"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="IOParameter" eSuperTypes="#//NavigationAttribute">
     <eStructuralFeatures xsi:type="ecore:EReference" name="display" upperBound="-1"
-        eType="#//FormElement" derived="true" eOpposite="#//FormElement/inject"/>
+        eType="#//FormComponent" derived="true" eOpposite="#//FormComponent/inject"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DAOBaseOperation">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="DAObaseOperationName" eType="#//DAOBaseOperationList"/>
@@ -234,7 +221,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetForm" eType="#//Form"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetComponent" eType="#//Component"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetJQuery" eType="#//JQuery"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetFormElement" eType="#//FormElement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetFormComponent" eType="#//FormComponent"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NavigationComposition" eSuperTypes="../../OMG.UML/model/UML.ecore#//Association">
     <eStructuralFeatures xsi:type="ecore:EReference" name="SourceTemplate" eType="#//Template"/>
@@ -370,8 +357,6 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="SourceFrontController"
         lowerBound="1" eType="#//FrontControllerClass"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="XHTMLComponent" instanceTypeName="XHTMLFormField"
-      eSuperTypes="#//FormElement #//Tag"/>
   <eClassifiers xsi:type="ecore:EClass" name="DAOServiceAssociation" eSuperTypes="#//ServiceAssociation">
     <eStructuralFeatures xsi:type="ecore:EReference" name="SourceDAOClass" lowerBound="1"
         eType="#//DAOInterface"/>
@@ -440,8 +425,7 @@
         eType="#//DomainClass"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="JQuery"/>
-  <eClassifiers xsi:type="ecore:EClass" name="FormComponent" eSuperTypes="#//FormElement #//FrameworkTag"/>
-  <eClassifiers xsi:type="ecore:EClass" name="FormElement" abstract="true" eSuperTypes="#//NavigationAttribute">
+  <eClassifiers xsi:type="ecore:EClass" name="FormComponent" eSuperTypes="#//NavigationAttribute #//FrameworkTag">
     <eStructuralFeatures xsi:type="ecore:EReference" name="inject" eType="#//IOParameter"
         eOpposite="#//IOParameter/display"/>
   </eClassifiers>
