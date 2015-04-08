@@ -1,39 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="FrameWeb" nsURI="http://www.example.org/FrameWeb" nsPrefix="FrameWeb">
-  <eClassifiers xsi:type="ecore:EClass" name="MappedClass" eSuperTypes="#//DomainClass">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="FWMappedName" lowerBound="1"
-        eType="#//FreeName" eOpposite="#//FreeName/MappedClassName"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MappedClass" eSuperTypes="#//DomainClass"/>
   <eClassifiers xsi:type="ecore:EClass" name="PersistentClass" eSuperTypes="#//DomainClass">
     <eStructuralFeatures xsi:type="ecore:EReference" name="Table" eType="#//DomainTableName"
         eOpposite="#//DomainTableName/PersistentClassName"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TransientClass" eSuperTypes="#//DomainClass">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="FWTransientName" lowerBound="1"
-        eType="#//FreeName" eOpposite="#//FreeName/TransientClassName"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TransientClass" eSuperTypes="#//DomainClass"/>
   <eClassifiers xsi:type="ecore:EClass" name="FrameWeb">
     <eStructuralFeatures xsi:type="ecore:EReference" name="Compose" lowerBound="1"
         eType="#//FrameWebModel" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Uses" lowerBound="1" upperBound="-1"
         eType="#//Framework" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FrameWebModel">
+  <eClassifiers xsi:type="ecore:EClass" name="FrameWebModel" abstract="true" eSuperTypes="../../OMG.UML/model/UML.ecore#//Model">
     <eStructuralFeatures xsi:type="ecore:EReference" name="Indite" lowerBound="1"
         eType="#//NamingMethod" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Persists" upperBound="-1"
-        eType="#//PersistenceModel" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Service" upperBound="-1"
-        eType="#//ApplicationModel" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Navigates" upperBound="-1"
-        eType="#//NavigationModel" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Domain" upperBound="-1"
-        eType="#//DomainModel" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Framework">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Classified" lowerBound="1"
-        eType="#//FrameworkCategory"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Framework" eSuperTypes="../../OMG.UML/model/UML.ecore#//Model">
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrameworkTagLib" lowerBound="1"
         eType="#//TagLib" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrameworkRule" upperBound="-1"
@@ -43,13 +27,13 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrameworkAnotation" lowerBound="1"
         upperBound="-1" eType="#//Anotation" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DomainModel">
+  <eClassifiers xsi:type="ecore:EClass" name="DomainModel" eSuperTypes="#//FrameWebModel">
     <eStructuralFeatures xsi:type="ecore:EReference" name="DomainUMLAssociation" upperBound="-1"
         eType="#//DomainAssociation" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="DomainUMLPackage" lowerBound="1"
         upperBound="-1" eType="#//DomainPackage" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NavigationModel">
+  <eClassifiers xsi:type="ecore:EClass" name="NavigationModel" eSuperTypes="#//FrameWebModel">
     <eStructuralFeatures xsi:type="ecore:EReference" name="NavigationUMLDependence"
         upperBound="-1" eType="#//NavigationDependency" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ViewUMLPackage" lowerBound="1"
@@ -59,13 +43,13 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="NavigationUMLComposition"
         upperBound="-1" eType="#//NavigationComposition" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ApplicationModel">
+  <eClassifiers xsi:type="ecore:EClass" name="ApplicationModel" eSuperTypes="#//FrameWebModel">
     <eStructuralFeatures xsi:type="ecore:EReference" name="ServiceUMLAssociation"
         lowerBound="1" upperBound="-1" eType="#//ServiceAssociation" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ApplicationUMLPackage"
         lowerBound="1" upperBound="-1" eType="#//ApplicationPackage" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PersistenceModel">
+  <eClassifiers xsi:type="ecore:EClass" name="PersistenceModel" eSuperTypes="#//FrameWebModel">
     <eStructuralFeatures xsi:type="ecore:EReference" name="PersistenceUMLPackage"
         lowerBound="1" upperBound="-1" eType="#//PersistencePackage" containment="true"/>
   </eClassifiers>
@@ -236,7 +220,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="FrontControllerMethod" eSuperTypes="../../OMG.UML/model/UML.ecore#//Operation">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isDefault" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NamingMethod">
+  <eClassifiers xsi:type="ecore:EClass" name="NamingMethod" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="Contains" lowerBound="1"
         upperBound="-1" eType="#//FrameWebName" containment="true"/>
   </eClassifiers>
@@ -270,35 +254,17 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="DomainClassOperation" upperBound="-1"
         eType="#//DomainOperation" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FrameWebName" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="FWSufix" eType="#//FrameWebName"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="FWPrefix" eType="#//FrameWebName"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FrameWebName" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="BinaryAttribute" eSuperTypes="#//NavigationAttribute"/>
   <eClassifiers xsi:type="ecore:EClass" name="ConstantName" eSuperTypes="#//FrameWebName">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="fwName" eType="#//ConstantNameList"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FreeName" eSuperTypes="#//FrameWebName">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fwName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="TransientClassName" eType="#//TransientClass"
-        eOpposite="#//TransientClass/FWTransientName"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="MappedClassName" eType="#//MappedClass"
-        eOpposite="#//MappedClass/FWMappedName"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="NavigationAttributeName"
-        upperBound="-1" eType="#//NavigationAttribute" eOpposite="#//NavigationAttribute/FWNavigationAttributeName"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ResultName" eType="#//Result"
-        eOpposite="#//Result/FWResultName"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DomainTableName" eSuperTypes="#//FrameWebName">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="fwName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="PersistentClassName" lowerBound="1"
         eType="#//PersistentClass" eOpposite="#//PersistentClass/Table"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FrameWorkName" eSuperTypes="#//FrameWebName">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fwName"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FrameworkCategory" instanceTypeName="FrameworkCategoryList"
-      eSuperTypes="#//FrameWebName"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FrameWorkName" eSuperTypes="#//FrameWebName"/>
   <eClassifiers xsi:type="ecore:EEnum" name="ConstantNameList">
     <eLiterals name="DAO"/>
     <eLiterals name="interface" value="1"/>
@@ -316,7 +282,6 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="DomainAttributeName" lowerBound="1"
         eType="#//DomainAttribute" eOpposite="#//DomainAttribute/Column"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EDataType" name="FrameWebNameType" instanceTypeName="FreeName"/>
   <eClassifiers xsi:type="ecore:EClass" name="DAOInterfaceName" eSuperTypes="#//ConstantName">
     <eStructuralFeatures xsi:type="ecore:EReference" name="ConstantPrefix" eType="#//ConstantName"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="DomainTablePrefix" eType="#//DomainTableName"/>
@@ -325,10 +290,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrameWorkNameSufix" lowerBound="1"
         eType="#//FrameWorkName"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Result">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="FWResultName" lowerBound="1"
-        eType="#//FreeName" eOpposite="#//FreeName/ResultName"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Result"/>
   <eClassifiers xsi:type="ecore:EClass" name="FrontControllerDependence" eSuperTypes="#//NavigationDependency">
     <eStructuralFeatures xsi:type="ecore:EReference" name="Method" lowerBound="1"
         eType="#//FrontControllerMethod"/>
@@ -364,10 +326,7 @@
         eType="#//ServiceClass"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NavigationAttribute" abstract="true"
-      eSuperTypes="../../OMG.UML/model/UML.ecore#//Property">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="FWNavigationAttributeName"
-        lowerBound="1" eType="#//FreeName" eOpposite="#//FreeName/NavigationAttributeName"/>
-  </eClassifiers>
+      eSuperTypes="../../OMG.UML/model/UML.ecore#//Property"/>
   <eClassifiers xsi:type="ecore:EEnum" name="InheritanceMapping">
     <eLiterals name="singletable"/>
     <eLiterals name="union" value="1"/>

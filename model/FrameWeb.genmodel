@@ -70,29 +70,19 @@
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//InheritanceMapping/union"/>
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//InheritanceMapping/join"/>
     </genEnums>
-    <genDataTypes ecoreDataType="FrameWeb.ecore#//FrameWebNameType"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//MappedClass">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//MappedClass/FWMappedName"/>
-    </genClasses>
+    <genClasses ecoreClass="FrameWeb.ecore#//MappedClass"/>
     <genClasses ecoreClass="FrameWeb.ecore#//PersistentClass">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//PersistentClass/Table"/>
     </genClasses>
-    <genClasses ecoreClass="FrameWeb.ecore#//TransientClass">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//TransientClass/FWTransientName"/>
-    </genClasses>
+    <genClasses ecoreClass="FrameWeb.ecore#//TransientClass"/>
     <genClasses ecoreClass="FrameWeb.ecore#//FrameWeb">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FrameWeb/Compose"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FrameWeb/Uses"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//FrameWebModel">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FrameWebModel/Indite"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FrameWebModel/Persists"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FrameWebModel/Service"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FrameWebModel/Navigates"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FrameWebModel/Domain"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//Framework">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Framework/Classified"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Framework/FrameworkTagLib"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Framework/FrameworkRule"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Framework/newEReference"/>
@@ -229,29 +219,16 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DomainClass/DomainClassAttribute"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DomainClass/DomainClassOperation"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="FrameWeb.ecore#//FrameWebName">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FrameWebName/FWSufix"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FrameWebName/FWPrefix"/>
-    </genClasses>
+    <genClasses image="false" ecoreClass="FrameWeb.ecore#//FrameWebName"/>
     <genClasses ecoreClass="FrameWeb.ecore#//BinaryAttribute"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ConstantName">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//ConstantName/fwName"/>
-    </genClasses>
-    <genClasses ecoreClass="FrameWeb.ecore#//FreeName">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//FreeName/fwName"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FreeName/TransientClassName"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FreeName/MappedClassName"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FreeName/NavigationAttributeName"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FreeName/ResultName"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//DomainTableName">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainTableName/fwName"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DomainTableName/PersistentClassName"/>
     </genClasses>
-    <genClasses ecoreClass="FrameWeb.ecore#//FrameWorkName">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//FrameWorkName/fwName"/>
-    </genClasses>
-    <genClasses ecoreClass="FrameWeb.ecore#//FrameworkCategory"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//FrameWorkName"/>
     <genClasses ecoreClass="FrameWeb.ecore#//DomainColumnName">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainColumnName/fwName"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DomainColumnName/DomainAttributeName"/>
@@ -263,9 +240,7 @@
     <genClasses ecoreClass="FrameWeb.ecore#//DAOClassName">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DAOClassName/FrameWorkNameSufix"/>
     </genClasses>
-    <genClasses ecoreClass="FrameWeb.ecore#//Result">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Result/FWResultName"/>
-    </genClasses>
+    <genClasses ecoreClass="FrameWeb.ecore#//Result"/>
     <genClasses ecoreClass="FrameWeb.ecore#//FrontControllerDependence">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FrontControllerDependence/Method"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FrontControllerDependence/SourceForm"/>
@@ -291,9 +266,7 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DAOServiceAssociation/SourceDAOClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DAOServiceAssociation/TargetDAOService"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="FrameWeb.ecore#//NavigationAttribute">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//NavigationAttribute/FWNavigationAttributeName"/>
-    </genClasses>
+    <genClasses image="false" ecoreClass="FrameWeb.ecore#//NavigationAttribute"/>
     <genClasses image="false" ecoreClass="FrameWeb.ecore#//NavigationClass"/>
     <genClasses ecoreClass="FrameWeb.ecore#//DomainOperation"/>
     <genClasses ecoreClass="FrameWeb.ecore#//DAOAttribute"/>
