@@ -89,7 +89,6 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Framework/FrameworkAnotation"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//DomainModel">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DomainModel/DomainUMLAssociation"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DomainModel/DomainUMLPackage"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//NavigationModel">

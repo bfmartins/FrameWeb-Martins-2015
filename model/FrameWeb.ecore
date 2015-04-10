@@ -28,8 +28,6 @@
         upperBound="-1" eType="#//Anotation" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DomainModel" eSuperTypes="#//FrameWebModel">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="DomainUMLAssociation" upperBound="-1"
-        eType="#//DomainAssociation" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="DomainUMLPackage" lowerBound="1"
         upperBound="-1" eType="#//DomainPackage" containment="true"/>
   </eClassifiers>
