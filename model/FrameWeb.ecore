@@ -13,11 +13,11 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="Uses" lowerBound="1" upperBound="-1"
         eType="#//Framework" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FrameWebModel" abstract="true" eSuperTypes="../../OMG.UML/model/UML.ecore#//Model">
+  <eClassifiers xsi:type="ecore:EClass" name="FrameWebModel" abstract="true" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Model">
     <eStructuralFeatures xsi:type="ecore:EReference" name="Indite" lowerBound="1"
         eType="#//NamingMethod" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Framework" eSuperTypes="../../OMG.UML/model/UML.ecore#//Model">
+  <eClassifiers xsi:type="ecore:EClass" name="Framework" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Model">
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrameworkTagLib" lowerBound="1"
         eType="#//TagLib" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrameworkRule" upperBound="-1"
@@ -51,7 +51,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="PersistenceUMLPackage"
         lowerBound="1" upperBound="-1" eType="#//PersistencePackage" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DomainAssociation" eSuperTypes="../../OMG.UML/model/UML.ecore#//Association">
+  <eClassifiers xsi:type="ecore:EClass" name="DomainAssociation" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Association">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="collection" eType="#//Collection"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="order" eType="#//Order"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="cascade" eType="#//Cascade"/>
@@ -61,7 +61,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetClass" lowerBound="1"
         eType="#//DomainClass"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DomainAttribute" eSuperTypes="../../OMG.UML/model/UML.ecore#//Property">
+  <eClassifiers xsi:type="ecore:EClass" name="DomainAttribute" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Property">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isNull" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isPersistent" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
@@ -136,7 +136,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="BinaryClassAttribute" lowerBound="1"
         upperBound="-1" eType="#//BinaryAttribute" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DAOInterface" eSuperTypes="../../OMG.UML/model/UML.ecore#//Interface">
+  <eClassifiers xsi:type="ecore:EClass" name="DAOInterface" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Interface">
     <eStructuralFeatures xsi:type="ecore:EReference" name="OwnBaseOperation" lowerBound="4"
         upperBound="4" eType="#//DAOBaseOperation" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="OwnOperation" upperBound="-1"
@@ -146,7 +146,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="DAOInterfaceAttribute"
         upperBound="-1" eType="#//DAOAttribute" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DAOClass" eSuperTypes="../../OMG.UML/model/UML.ecore#//Class">
+  <eClassifiers xsi:type="ecore:EClass" name="DAOClass" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Class">
     <eStructuralFeatures xsi:type="ecore:EReference" name="BaseImplements" lowerBound="4"
         upperBound="4" eType="#//DAOBaseOperation" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="DAOImplements" upperBound="-1"
@@ -156,7 +156,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="DAOClassAttribute" upperBound="-1"
         eType="#//DAOAttribute" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DAOGeneralization" eSuperTypes="../../OMG.UML/model/UML.ecore#//Generalization">
+  <eClassifiers xsi:type="ecore:EClass" name="DAOGeneralization" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Generalization">
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetDAOClass" lowerBound="1"
         eType="#//DAOClass"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="SourceDAOInterface" lowerBound="1"
@@ -205,7 +205,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetJQuery" eType="#//JQuery"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetFormComponent" eType="#//FormComponent"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NavigationComposition" eSuperTypes="../../OMG.UML/model/UML.ecore#//Association">
+  <eClassifiers xsi:type="ecore:EClass" name="NavigationComposition" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Association">
     <eStructuralFeatures xsi:type="ecore:EReference" name="SourceTemplate" eType="#//Template"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="SourcePage" eType="#//Page"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetForm" lowerBound="1"
@@ -215,26 +215,26 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetJQuery" lowerBound="1"
         eType="#//JQuery"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FrontControllerMethod" eSuperTypes="../../OMG.UML/model/UML.ecore#//Operation">
+  <eClassifiers xsi:type="ecore:EClass" name="FrontControllerMethod" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Operation">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isDefault" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NamingMethod" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="Contains" lowerBound="1"
         upperBound="-1" eType="#//FrameWebName" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceClass" eSuperTypes="../../OMG.UML/model/UML.ecore#//Class">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceClass" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Class">
     <eStructuralFeatures xsi:type="ecore:EReference" name="ServiceClassAttribute"
         eType="#//ServiceAttribute" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ServiceClassOperation"
         upperBound="-1" eType="#//ServiceOperation" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceInterface" eSuperTypes="../../OMG.UML/model/UML.ecore#//Interface">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceInterface" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Interface">
     <eStructuralFeatures xsi:type="ecore:EReference" name="ServiceInterfaceOperation"
         upperBound="-1" eType="#//ServiceOperation" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ServiceInterfaceAttribute"
         upperBound="-1" eType="#//ServiceAttribute" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceGeneralization" eSuperTypes="../../OMG.UML/model/UML.ecore#//Generalization">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceGeneralization" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Generalization">
     <eStructuralFeatures xsi:type="ecore:EReference" name="SourceServiceInterface"
         lowerBound="1" eType="#//ServiceInterface"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetServiceClass" lowerBound="1"
@@ -246,7 +246,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetFrontController"
         lowerBound="1" eType="#//FrontControllerClass"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DomainClass" abstract="true" eSuperTypes="../../OMG.UML/model/UML.ecore#//Class">
+  <eClassifiers xsi:type="ecore:EClass" name="DomainClass" abstract="true" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Class">
     <eStructuralFeatures xsi:type="ecore:EReference" name="DomainClassAttribute" lowerBound="1"
         upperBound="-1" eType="#//DomainAttribute" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="DomainClassOperation" upperBound="-1"
@@ -324,22 +324,22 @@
         eType="#//ServiceClass"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NavigationAttribute" abstract="true"
-      eSuperTypes="../../OMG.UML/model/UML.ecore#//Property"/>
+      eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Property"/>
   <eClassifiers xsi:type="ecore:EEnum" name="InheritanceMapping">
     <eLiterals name="singletable"/>
     <eLiterals name="union" value="1"/>
     <eLiterals name="join" value="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NavigationClass" abstract="true" eSuperTypes="../../OMG.UML/model/UML.ecore#//Class"/>
-  <eClassifiers xsi:type="ecore:EClass" name="DomainOperation" eSuperTypes="../../OMG.UML/model/UML.ecore#//Operation"/>
-  <eClassifiers xsi:type="ecore:EClass" name="DAOAttribute" eSuperTypes="../../OMG.UML/model/UML.ecore#//Property"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceOperation" eSuperTypes="../../OMG.UML/model/UML.ecore#//Operation"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceAttribute" eSuperTypes="../../OMG.UML/model/UML.ecore#//Property"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceAssociation" eSuperTypes="../../OMG.UML/model/UML.ecore#//Association"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NavigationClass" abstract="true" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Class"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DomainOperation" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Operation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DAOAttribute" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Property"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceOperation" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Operation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceAttribute" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Property"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceAssociation" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Association"/>
   <eClassifiers xsi:type="ecore:EClass" name="NavigationDependency" abstract="true"
-      eSuperTypes="../../OMG.UML/model/UML.ecore#//Dependency"/>
-  <eClassifiers xsi:type="ecore:EClass" name="DAOOperation" eSuperTypes="../../OMG.UML/model/UML.ecore#//Operation"/>
-  <eClassifiers xsi:type="ecore:EClass" name="DomainPackage" eSuperTypes="../../OMG.UML/model/UML.ecore#//Package">
+      eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Dependency"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DAOOperation" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Operation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DomainPackage" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Package">
     <eStructuralFeatures xsi:type="ecore:EReference" name="DomainPackageClass" lowerBound="1"
         upperBound="-1" eType="#//DomainClass" containment="true"/>
   </eClassifiers>
@@ -359,13 +359,13 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="ControllerPackageClass"
         lowerBound="1" upperBound="-1" eType="#//FrontControllerClass" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PersistencePackage" eSuperTypes="../../OMG.UML/model/UML.ecore#//Package">
+  <eClassifiers xsi:type="ecore:EClass" name="PersistencePackage" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Package">
     <eStructuralFeatures xsi:type="ecore:EReference" name="PersistencePackageInterface"
         lowerBound="1" upperBound="-1" eType="#//DAOInterface" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="PersistencePackageClass"
         lowerBound="1" upperBound="-1" eType="#//DAOClass" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ApplicationPackage" eSuperTypes="../../OMG.UML/model/UML.ecore#//Package">
+  <eClassifiers xsi:type="ecore:EClass" name="ApplicationPackage" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Package">
     <eStructuralFeatures xsi:type="ecore:EReference" name="ServicePackageClass" lowerBound="1"
         upperBound="-1" eType="#//ServiceClass" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ServicePackageInterface"
@@ -373,8 +373,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Component" eSuperTypes="#//NavigationClass"/>
   <eClassifiers xsi:type="ecore:EClass" name="ResultType"/>
-  <eClassifiers xsi:type="ecore:EClass" name="NavigationPackage" abstract="true" eSuperTypes="../../OMG.UML/model/UML.ecore#//Package"/>
-  <eClassifiers xsi:type="ecore:EClass" name="DomainGeneralization" eSuperTypes="../../OMG.UML/model/UML.ecore#//Generalization">
+  <eClassifiers xsi:type="ecore:EClass" name="NavigationPackage" abstract="true" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Package"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DomainGeneralization" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Generalization">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mapping" eType="#//InheritanceMapping"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetDomain" lowerBound="1"
         eType="#//DomainClass"/>
