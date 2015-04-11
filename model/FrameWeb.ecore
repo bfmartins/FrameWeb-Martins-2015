@@ -188,7 +188,7 @@
     <eLiterals name="ORM" value="2"/>
     <eLiterals name="Decorator" value="3"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ResultDependence" eSuperTypes="#//NavigationDependency">
+  <eClassifiers xsi:type="ecore:EClass" name="ResultDependency" eSuperTypes="#//NavigationDependency">
     <eStructuralFeatures xsi:type="ecore:EReference" name="ReturnResult" upperBound="-1"
         eType="#//Result"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ReturnMethod" lowerBound="1"
