@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="FrameWeb" nsURI="http://www.example.org/FrameWeb" nsPrefix="FrameWeb">
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="frameweb" nsURI="https://github.com/bfmartins/FrameWeb-Martins-2015"
+    nsPrefix="frameweb">
   <eClassifiers xsi:type="ecore:EClass" name="MappedClass" eSuperTypes="#//DomainClass"/>
   <eClassifiers xsi:type="ecore:EClass" name="PersistentClass" eSuperTypes="#//DomainClass">
     <eStructuralFeatures xsi:type="ecore:EReference" name="Table" eType="#//DomainTableName"

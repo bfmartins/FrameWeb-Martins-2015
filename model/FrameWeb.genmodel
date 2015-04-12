@@ -5,7 +5,8 @@
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
     complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
   <foreignModel>FrameWeb.ecore</foreignModel>
-  <genPackages prefix="FrameWeb" disposableProviderFactory="true" ecorePackage="FrameWeb.ecore#/">
+  <genPackages prefix="frameweb" disposableProviderFactory="true" dataTypeConverters="true"
+      ecorePackage="FrameWeb.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="FrameWeb.ecore#//DateTimePrecision">
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//DateTimePrecision/timestamp"/>
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//DateTimePrecision/time"/>
@@ -318,7 +319,7 @@
     <genClasses ecoreClass="FrameWeb.ecore#//Talvez_Method"/>
     <genClasses ecoreClass="FrameWeb.ecore#//Anotation"/>
   </genPackages>
-  <genPackages prefix="UML" ecorePackage="../../OMG.UML2/model/UML2.ecore#/">
+  <genPackages prefix="uml2" ecorePackage="../../OMG.UML2/model/UML2.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="../../OMG.UML2/model/UML2.ecore#//VisibilityKind">
       <genEnumLiterals ecoreEnumLiteral="../../OMG.UML2/model/UML2.ecore#//VisibilityKind/public"/>
       <genEnumLiterals ecoreEnumLiteral="../../OMG.UML2/model/UML2.ecore#//VisibilityKind/private"/>
@@ -368,12 +369,6 @@
       <genEnumLiterals ecoreEnumLiteral="../../OMG.UML2/model/UML2.ecore#//ConnectorKind/assembly"/>
       <genEnumLiterals ecoreEnumLiteral="../../OMG.UML2/model/UML2.ecore#//ConnectorKind/delegation"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="../../OMG.UML2/model/UML2.ecore#//ObjectNodeOrderingKind">
-      <genEnumLiterals ecoreEnumLiteral="../../OMG.UML2/model/UML2.ecore#//ObjectNodeOrderingKind/unordered"/>
-      <genEnumLiterals ecoreEnumLiteral="../../OMG.UML2/model/UML2.ecore#//ObjectNodeOrderingKind/ordered"/>
-      <genEnumLiterals ecoreEnumLiteral="../../OMG.UML2/model/UML2.ecore#//ObjectNodeOrderingKind/lifo"/>
-      <genEnumLiterals ecoreEnumLiteral="../../OMG.UML2/model/UML2.ecore#//ObjectNodeOrderingKind/fifo"/>
-    </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="../../OMG.UML2/model/UML2.ecore#//MessageKind">
       <genEnumLiterals ecoreEnumLiteral="../../OMG.UML2/model/UML2.ecore#//MessageKind/complete"/>
       <genEnumLiterals ecoreEnumLiteral="../../OMG.UML2/model/UML2.ecore#//MessageKind/lost"/>
@@ -407,6 +402,9 @@
       <genEnumLiterals ecoreEnumLiteral="../../OMG.UML2/model/UML2.ecore#//ExpansionKind/iterative"/>
       <genEnumLiterals ecoreEnumLiteral="../../OMG.UML2/model/UML2.ecore#//ExpansionKind/stream"/>
     </genEnums>
+    <genClasses ecoreClass="../../OMG.UML2/model/UML2.ecore#//Abstraction">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ../../OMG.UML2/model/UML2.ecore#//Abstraction/mapping"/>
+    </genClasses>
     <genClasses ecoreClass="../../OMG.UML2/model/UML2.ecore#//Dependency">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../OMG.UML2/model/UML2.ecore#//Dependency/client"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../OMG.UML2/model/UML2.ecore#//Dependency/supplier"/>
@@ -1512,6 +1510,7 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../OMG.UML2/model/UML2.ecore#//Substitution/contract"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ../../OMG.UML2/model/UML2.ecore#//Substitution/substitutingClassifier"/>
     </genClasses>
+    <genClasses ecoreClass="../../OMG.UML2/model/UML2.ecore#//Realization"/>
     <genClasses ecoreClass="../../OMG.UML2/model/UML2.ecore#//ClassifierTemplateParameter">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../OMG.UML2/model/UML2.ecore#//ClassifierTemplateParameter/allowSubstitutable"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../OMG.UML2/model/UML2.ecore#//ClassifierTemplateParameter/constrainingClassifier"/>
@@ -1792,25 +1791,6 @@
         <genParameters ecoreParameter="../../OMG.UML2/model/UML2.ecore#//Pin/controlPins/context"/>
       </genOperations>
     </genClasses>
-    <genClasses image="false" ecoreClass="../../OMG.UML2/model/UML2.ecore#//ObjectNode">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../OMG.UML2/model/UML2.ecore#//ObjectNode/inState"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../OMG.UML2/model/UML2.ecore#//ObjectNode/isControlType"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../OMG.UML2/model/UML2.ecore#//ObjectNode/ordering"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../OMG.UML2/model/UML2.ecore#//ObjectNode/selection"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ../../OMG.UML2/model/UML2.ecore#//ObjectNode/upperBound"/>
-      <genOperations ecoreOperation="../../OMG.UML2/model/UML2.ecore#//ObjectNode/objectFlowEdges">
-        <genParameters ecoreParameter="../../OMG.UML2/model/UML2.ecore#//ObjectNode/objectFlowEdges/diagnostics"/>
-        <genParameters ecoreParameter="../../OMG.UML2/model/UML2.ecore#//ObjectNode/objectFlowEdges/context"/>
-      </genOperations>
-      <genOperations ecoreOperation="../../OMG.UML2/model/UML2.ecore#//ObjectNode/selectionBehavior">
-        <genParameters ecoreParameter="../../OMG.UML2/model/UML2.ecore#//ObjectNode/selectionBehavior/diagnostics"/>
-        <genParameters ecoreParameter="../../OMG.UML2/model/UML2.ecore#//ObjectNode/selectionBehavior/context"/>
-      </genOperations>
-      <genOperations ecoreOperation="../../OMG.UML2/model/UML2.ecore#//ObjectNode/inputOutputParameter">
-        <genParameters ecoreParameter="../../OMG.UML2/model/UML2.ecore#//ObjectNode/inputOutputParameter/diagnostics"/>
-        <genParameters ecoreParameter="../../OMG.UML2/model/UML2.ecore#//ObjectNode/inputOutputParameter/context"/>
-      </genOperations>
-    </genClasses>
     <genClasses ecoreClass="../../OMG.UML2/model/UML2.ecore#//OutputPin">
       <genOperations ecoreOperation="../../OMG.UML2/model/UML2.ecore#//OutputPin/incomingEdgesStructuredOnly">
         <genParameters ecoreParameter="../../OMG.UML2/model/UML2.ecore#//OutputPin/incomingEdgesStructuredOnly/diagnostics"/>
@@ -1837,7 +1817,6 @@
       </genOperations>
     </genClasses>
     <genClasses ecoreClass="../../OMG.UML2/model/UML2.ecore#//ExceptionHandler">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../OMG.UML2/model/UML2.ecore#//ExceptionHandler/exceptionInput"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../OMG.UML2/model/UML2.ecore#//ExceptionHandler/exceptionType"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../OMG.UML2/model/UML2.ecore#//ExceptionHandler/handlerBody"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ../../OMG.UML2/model/UML2.ecore#//ExceptionHandler/protectedNode"/>
@@ -3339,5 +3318,12 @@
         <genParameters ecoreParameter="../../OMG.UML2/model/UML2.ecore#//ValueSpecificationAction/compatibleType/context"/>
       </genOperations>
     </genClasses>
+  </genPackages>
+  <genPackages prefix="primitiveTypes" ecorePackage="../../OMG.UML2/model/PrimitiveTypes.ecore#PrimitiveTypes">
+    <genDataTypes ecoreDataType="../../OMG.UML2/model/PrimitiveTypes.ecore#PrimitiveTypes.Boolean"/>
+    <genDataTypes ecoreDataType="../../OMG.UML2/model/PrimitiveTypes.ecore#PrimitiveTypes.Integer"/>
+    <genDataTypes ecoreDataType="../../OMG.UML2/model/PrimitiveTypes.ecore#PrimitiveTypes.Real"/>
+    <genDataTypes ecoreDataType="../../OMG.UML2/model/PrimitiveTypes.ecore#PrimitiveTypes.String"/>
+    <genDataTypes ecoreDataType="../../OMG.UML2/model/PrimitiveTypes.ecore#PrimitiveTypes.UnlimitedNatural"/>
   </genPackages>
 </genmodel:GenModel>

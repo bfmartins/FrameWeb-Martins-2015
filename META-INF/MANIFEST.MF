@@ -1,6 +1,20 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: br.ufes.inf.nemo.PINF8000-DM.FrameWeb_Martins2015
-Bundle-SymbolicName: br.ufes.inf.nemo.PINF8000-DM.FrameWeb_Martins2015; singleton:=true
-Bundle-Version: 0.1.0.qualifier
-Require-Bundle: org.eclipse.emf.ecore
+Bundle-Name: %pluginName
+Bundle-SymbolicName: br.ufes.inf.nemo.PINF8000-DM.FrameWeb_Martins2015;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: frameweb,
+ frameweb.impl,
+ frameweb.util,
+ primitiveTypes,
+ primitiveTypes.impl,
+ uml2,
+ uml2.impl,
+ uml2.util
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport
+Bundle-ActivationPolicy: lazy
