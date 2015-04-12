@@ -19,7 +19,7 @@ public interface FramewebFactory extends EFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	FramewebFactory eINSTANCE = frameweb.impl.FramewebFactoryImpl.init();
+	FramewebFactory eINSTANCE = frameweb.impl.framewebFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>Mapped Class</em>'.

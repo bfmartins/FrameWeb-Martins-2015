@@ -163,7 +163,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="SourceDAOInterface" lowerBound="1"
         eType="#//DAOInterface"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FrontControllerClass" eSuperTypes="#//NavigationClass">
+  <eClassifiers xsi:type="ecore:EClass" name="FrontControllerClass">
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrontControllerAttribute"
         lowerBound="1" upperBound="-1" eType="#//IOParameter" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrontControllerClassMethod"
@@ -345,16 +345,8 @@
         upperBound="-1" eType="#//DomainClass" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ViewPackage" eSuperTypes="#//NavigationPackage">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ViewPackagePage" lowerBound="1"
-        upperBound="-1" eType="#//Page" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ViewPakageTemplate" upperBound="-1"
-        eType="#//Template" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ViewPackageForm" upperBound="-1"
-        eType="#//Form" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ViewPackageBinaryData"
-        eType="#//Binary" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ViewPackageComponent" upperBound="-1"
-        eType="#//Component" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ViewPackageClass" lowerBound="1"
+        upperBound="-1" eType="#//NavigationClass" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ControllerPackage" eSuperTypes="#//NavigationPackage">
     <eStructuralFeatures xsi:type="ecore:EReference" name="ControllerPackageClass"
@@ -382,7 +374,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="SourceDomain" lowerBound="1"
         eType="#//DomainClass"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="JQuery"/>
+  <eClassifiers xsi:type="ecore:EClass" name="JQuery" eSuperTypes="#//NavigationClass"/>
   <eClassifiers xsi:type="ecore:EClass" name="FormComponent" eSuperTypes="#//NavigationAttribute #//FrameworkTag">
     <eStructuralFeatures xsi:type="ecore:EReference" name="inject" eType="#//IOParameter"
         eOpposite="#//IOParameter/display"/>

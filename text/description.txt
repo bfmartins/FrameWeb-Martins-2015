@@ -108,7 +108,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference TargetDAOClass : DAOClass<<1..1>>
     Reference SourceDAOInterface : DAOInterface<<1..1>>
 
-  Class FrontControllerClass -> NavigationClass
+  Class FrontControllerClass
     Reference FrontControllerAttribute : IOParameter<<1..*>>
     Reference FrontControllerClassMethod : FrontControllerMethod<<1..*>>
 
@@ -239,11 +239,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference DomainPackageClass : DomainClass<<1..*>>
 
   Class ViewPackage -> NavigationPackage
-    Reference ViewPackagePage : Page<<1..*>>
-    Reference ViewPakageTemplate : Template<<0..*>>
-    Reference ViewPackageForm : Form<<0..*>>
-    Reference ViewPackageBinaryData : Binary
-    Reference ViewPackageComponent : Component<<0..*>>
+    Reference ViewPackageClass : NavigationClass<<1..*>>
 
   Class ControllerPackage -> NavigationPackage
     Reference ControllerPackageClass : FrontControllerClass<<1..*>>
@@ -267,7 +263,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference TargetDomain : DomainClass<<1..1>>
     Reference SourceDomain : DomainClass<<1..1>>
 
-  Class JQuery
+  Class JQuery -> NavigationClass
 
   Class FormComponent -> NavigationAttribute, FrameworkTag
     Reference inject : IOParameter

@@ -520,20 +520,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case framewebPackage.FRONT_CONTROLLER_CLASS: {
 				FrontControllerClass frontControllerClass = (FrontControllerClass)theEObject;
 				T result = caseFrontControllerClass(frontControllerClass);
-				if (result == null) result = caseNavigationClass(frontControllerClass);
-				if (result == null) result = caseClass(frontControllerClass);
-				if (result == null) result = caseEncapsulatedClassifier(frontControllerClass);
-				if (result == null) result = caseBehavioredClassifier(frontControllerClass);
-				if (result == null) result = caseStructuredClassifier(frontControllerClass);
-				if (result == null) result = caseClassifier(frontControllerClass);
-				if (result == null) result = caseNamespace(frontControllerClass);
-				if (result == null) result = caseRedefinableElement(frontControllerClass);
-				if (result == null) result = caseType(frontControllerClass);
-				if (result == null) result = caseTemplateableElement(frontControllerClass);
-				if (result == null) result = casePackageableElement(frontControllerClass);
-				if (result == null) result = caseNamedElement(frontControllerClass);
-				if (result == null) result = caseParameterableElement(frontControllerClass);
-				if (result == null) result = caseElement(frontControllerClass);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1112,6 +1098,20 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case framewebPackage.JQUERY: {
 				JQuery jQuery = (JQuery)theEObject;
 				T result = caseJQuery(jQuery);
+				if (result == null) result = caseNavigationClass(jQuery);
+				if (result == null) result = caseClass(jQuery);
+				if (result == null) result = caseEncapsulatedClassifier(jQuery);
+				if (result == null) result = caseBehavioredClassifier(jQuery);
+				if (result == null) result = caseStructuredClassifier(jQuery);
+				if (result == null) result = caseClassifier(jQuery);
+				if (result == null) result = caseNamespace(jQuery);
+				if (result == null) result = caseRedefinableElement(jQuery);
+				if (result == null) result = caseType(jQuery);
+				if (result == null) result = caseTemplateableElement(jQuery);
+				if (result == null) result = casePackageableElement(jQuery);
+				if (result == null) result = caseNamedElement(jQuery);
+				if (result == null) result = caseParameterableElement(jQuery);
+				if (result == null) result = caseElement(jQuery);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}

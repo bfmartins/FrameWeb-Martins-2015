@@ -3,7 +3,8 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/br.ufes.inf.nemo.PINF8000-DM.FrameWeb_Martins2015/src"
     modelPluginID="br.ufes.inf.nemo.PINF8000-DM.FrameWeb_Martins2015" modelName="FrameWeb_Martins2015"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
-    complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+    complianceLevel="7.0" copyrightFields="false" language="English" operationReflection="true"
+    importOrganizing="true">
   <foreignModel>FrameWeb.ecore</foreignModel>
   <genPackages prefix="frameweb" disposableProviderFactory="true" dataTypeConverters="true"
       ecorePackage="FrameWeb.ecore#/">
@@ -279,11 +280,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//DomainPackage/DomainPackageClass"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//ViewPackage">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//ViewPackage/ViewPackagePage"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//ViewPackage/ViewPakageTemplate"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//ViewPackage/ViewPackageForm"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//ViewPackage/ViewPackageBinaryData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//ViewPackage/ViewPackageComponent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//ViewPackage/ViewPackageClass"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//ControllerPackage">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//ControllerPackage/ControllerPackageClass"/>

@@ -4,11 +4,7 @@
  */
 package frameweb.validation;
 
-import frameweb.Binary;
-import frameweb.Component;
-import frameweb.Form;
-import frameweb.Page;
-import frameweb.Template;
+import frameweb.NavigationClass;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -21,9 +17,5 @@ import org.eclipse.emf.common.util.EList;
 public interface ViewPackageValidator {
 	boolean validate();
 
-	boolean validateViewPackagePage(EList<Page> value);
-	boolean validateViewPakageTemplate(EList<Template> value);
-	boolean validateViewPackageForm(EList<Form> value);
-	boolean validateViewPackageBinaryData(Binary value);
-	boolean validateViewPackageComponent(EList<Component> value);
+	boolean validateViewPackageClass(EList<NavigationClass> value);
 }

@@ -29,5 +29,4 @@
             class="primitiveTypes.PrimitiveTypesPackage"
             genModel="model/FrameWeb.genmodel"/>
    </extension>
-
 </plugin>

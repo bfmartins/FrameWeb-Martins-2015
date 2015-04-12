@@ -57,14 +57,14 @@ public interface framewebPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	framewebPackage eINSTANCE = frameweb.impl.framewebPackageImpl.init();
+	framewebPackage eINSTANCE = frameweb.impl.FramewebPackageImpl.init();
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.DomainClassImpl <em>Domain Class</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainClassImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDomainClass()
+	 * @see frameweb.impl.FramewebPackageImpl#getDomainClass()
 	 * @generated
 	 */
 	int DOMAIN_CLASS = 37;
@@ -1028,7 +1028,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.MappedClassImpl
-	 * @see frameweb.impl.framewebPackageImpl#getMappedClass()
+	 * @see frameweb.impl.FramewebPackageImpl#getMappedClass()
 	 * @generated
 	 */
 	int MAPPED_CLASS = 0;
@@ -1992,7 +1992,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.PersistentClassImpl
-	 * @see frameweb.impl.framewebPackageImpl#getPersistentClass()
+	 * @see frameweb.impl.FramewebPackageImpl#getPersistentClass()
 	 * @generated
 	 */
 	int PERSISTENT_CLASS = 1;
@@ -2965,7 +2965,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.TransientClassImpl
-	 * @see frameweb.impl.framewebPackageImpl#getTransientClass()
+	 * @see frameweb.impl.FramewebPackageImpl#getTransientClass()
 	 * @generated
 	 */
 	int TRANSIENT_CLASS = 2;
@@ -3929,7 +3929,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrameWebImpl
-	 * @see frameweb.impl.framewebPackageImpl#getFrameWeb()
+	 * @see frameweb.impl.FramewebPackageImpl#getFrameWeb()
 	 * @generated
 	 */
 	int FRAME_WEB = 3;
@@ -3975,7 +3975,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrameWebModelImpl
-	 * @see frameweb.impl.framewebPackageImpl#getFrameWebModel()
+	 * @see frameweb.impl.FramewebPackageImpl#getFrameWebModel()
 	 * @generated
 	 */
 	int FRAME_WEB_MODEL = 4;
@@ -4552,7 +4552,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrameworkImpl
-	 * @see frameweb.impl.framewebPackageImpl#getFramework()
+	 * @see frameweb.impl.FramewebPackageImpl#getFramework()
 	 * @generated
 	 */
 	int FRAMEWORK = 5;
@@ -5156,7 +5156,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainModelImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDomainModel()
+	 * @see frameweb.impl.FramewebPackageImpl#getDomainModel()
 	 * @generated
 	 */
 	int DOMAIN_MODEL = 6;
@@ -5742,7 +5742,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.NavigationModelImpl
-	 * @see frameweb.impl.framewebPackageImpl#getNavigationModel()
+	 * @see frameweb.impl.FramewebPackageImpl#getNavigationModel()
 	 * @generated
 	 */
 	int NAVIGATION_MODEL = 7;
@@ -6355,7 +6355,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ApplicationModelImpl
-	 * @see frameweb.impl.framewebPackageImpl#getApplicationModel()
+	 * @see frameweb.impl.FramewebPackageImpl#getApplicationModel()
 	 * @generated
 	 */
 	int APPLICATION_MODEL = 8;
@@ -6950,7 +6950,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.PersistenceModelImpl
-	 * @see frameweb.impl.framewebPackageImpl#getPersistenceModel()
+	 * @see frameweb.impl.FramewebPackageImpl#getPersistenceModel()
 	 * @generated
 	 */
 	int PERSISTENCE_MODEL = 9;
@@ -7536,7 +7536,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainAssociationImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDomainAssociation()
+	 * @see frameweb.impl.FramewebPackageImpl#getDomainAssociation()
 	 * @generated
 	 */
 	int DOMAIN_ASSOCIATION = 10;
@@ -8446,7 +8446,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainAttributeImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDomainAttribute()
+	 * @see frameweb.impl.FramewebPackageImpl#getDomainAttribute()
 	 * @generated
 	 */
 	int DOMAIN_ATTRIBUTE = 11;
@@ -9356,7 +9356,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.VersionAttributeImpl
-	 * @see frameweb.impl.framewebPackageImpl#getVersionAttribute()
+	 * @see frameweb.impl.FramewebPackageImpl#getVersionAttribute()
 	 * @generated
 	 */
 	int VERSION_ATTRIBUTE = 12;
@@ -10266,7 +10266,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.IdAttributeImpl
-	 * @see frameweb.impl.framewebPackageImpl#getIdAttribute()
+	 * @see frameweb.impl.FramewebPackageImpl#getIdAttribute()
 	 * @generated
 	 */
 	int ID_ATTRIBUTE = 13;
@@ -11185,7 +11185,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.LOBAttributeImpl
-	 * @see frameweb.impl.framewebPackageImpl#getLOBAttribute()
+	 * @see frameweb.impl.FramewebPackageImpl#getLOBAttribute()
 	 * @generated
 	 */
 	int LOB_ATTRIBUTE = 14;
@@ -12095,7 +12095,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.EmbeddedAttributeImpl
-	 * @see frameweb.impl.framewebPackageImpl#getEmbeddedAttribute()
+	 * @see frameweb.impl.FramewebPackageImpl#getEmbeddedAttribute()
 	 * @generated
 	 */
 	int EMBEDDED_ATTRIBUTE = 15;
@@ -13005,7 +13005,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DecimalAttributeImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDecimalAttribute()
+	 * @see frameweb.impl.FramewebPackageImpl#getDecimalAttribute()
 	 * @generated
 	 */
 	int DECIMAL_ATTRIBUTE = 16;
@@ -13933,7 +13933,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DateTimeAttributeImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDateTimeAttribute()
+	 * @see frameweb.impl.FramewebPackageImpl#getDateTimeAttribute()
 	 * @generated
 	 */
 	int DATE_TIME_ATTRIBUTE = 17;
@@ -14852,7 +14852,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.NavigationClassImpl
-	 * @see frameweb.impl.framewebPackageImpl#getNavigationClass()
+	 * @see frameweb.impl.FramewebPackageImpl#getNavigationClass()
 	 * @generated
 	 */
 	int NAVIGATION_CLASS = 52;
@@ -15798,7 +15798,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.PageImpl
-	 * @see frameweb.impl.framewebPackageImpl#getPage()
+	 * @see frameweb.impl.FramewebPackageImpl#getPage()
 	 * @generated
 	 */
 	int PAGE = 18;
@@ -16771,7 +16771,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.TemplateImpl
-	 * @see frameweb.impl.framewebPackageImpl#getTemplate()
+	 * @see frameweb.impl.FramewebPackageImpl#getTemplate()
 	 * @generated
 	 */
 	int TEMPLATE = 19;
@@ -17726,7 +17726,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FormImpl
-	 * @see frameweb.impl.framewebPackageImpl#getForm()
+	 * @see frameweb.impl.FramewebPackageImpl#getForm()
 	 * @generated
 	 */
 	int FORM = 20;
@@ -18690,7 +18690,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.BinaryImpl
-	 * @see frameweb.impl.framewebPackageImpl#getBinary()
+	 * @see frameweb.impl.FramewebPackageImpl#getBinary()
 	 * @generated
 	 */
 	int BINARY = 21;
@@ -19645,7 +19645,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOInterfaceImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDAOInterface()
+	 * @see frameweb.impl.FramewebPackageImpl#getDAOInterface()
 	 * @generated
 	 */
 	int DAO_INTERFACE = 22;
@@ -20501,7 +20501,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOClassImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDAOClass()
+	 * @see frameweb.impl.FramewebPackageImpl#getDAOClass()
 	 * @generated
 	 */
 	int DAO_CLASS = 23;
@@ -21483,7 +21483,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOGeneralizationImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDAOGeneralization()
+	 * @see frameweb.impl.FramewebPackageImpl#getDAOGeneralization()
 	 * @generated
 	 */
 	int DAO_GENERALIZATION = 24;
@@ -21664,469 +21664,10 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrontControllerClassImpl
-	 * @see frameweb.impl.framewebPackageImpl#getFrontControllerClass()
+	 * @see frameweb.impl.FramewebPackageImpl#getFrontControllerClass()
 	 * @generated
 	 */
 	int FRONT_CONTROLLER_CLASS = 25;
-
-	/**
-	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_COMMENT = NAVIGATION_CLASS__OWNED_COMMENT;
-
-	/**
-	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_ELEMENT = NAVIGATION_CLASS__OWNED_ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__OWNER = NAVIGATION_CLASS__OWNER;
-
-	/**
-	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__CLIENT_DEPENDENCY = NAVIGATION_CLASS__CLIENT_DEPENDENCY;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__NAME = NAVIGATION_CLASS__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__NAME_EXPRESSION = NAVIGATION_CLASS__NAME_EXPRESSION;
-
-	/**
-	 * The feature id for the '<em><b>Namespace</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__NAMESPACE = NAVIGATION_CLASS__NAMESPACE;
-
-	/**
-	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__QUALIFIED_NAME = NAVIGATION_CLASS__QUALIFIED_NAME;
-
-	/**
-	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__VISIBILITY = NAVIGATION_CLASS__VISIBILITY;
-
-	/**
-	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__ELEMENT_IMPORT = NAVIGATION_CLASS__ELEMENT_IMPORT;
-
-	/**
-	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__IMPORTED_MEMBER = NAVIGATION_CLASS__IMPORTED_MEMBER;
-
-	/**
-	 * The feature id for the '<em><b>Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__MEMBER = NAVIGATION_CLASS__MEMBER;
-
-	/**
-	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_MEMBER = NAVIGATION_CLASS__OWNED_MEMBER;
-
-	/**
-	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_RULE = NAVIGATION_CLASS__OWNED_RULE;
-
-	/**
-	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__PACKAGE_IMPORT = NAVIGATION_CLASS__PACKAGE_IMPORT;
-
-	/**
-	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__IS_LEAF = NAVIGATION_CLASS__IS_LEAF;
-
-	/**
-	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__REDEFINED_ELEMENT = NAVIGATION_CLASS__REDEFINED_ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__REDEFINITION_CONTEXT = NAVIGATION_CLASS__REDEFINITION_CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__OWNING_TEMPLATE_PARAMETER = NAVIGATION_CLASS__OWNING_TEMPLATE_PARAMETER;
-
-	/**
-	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__TEMPLATE_PARAMETER = NAVIGATION_CLASS__TEMPLATE_PARAMETER;
-
-	/**
-	 * The feature id for the '<em><b>Package</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__PACKAGE = NAVIGATION_CLASS__PACKAGE;
-
-	/**
-	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__TEMPLATE_BINDING = NAVIGATION_CLASS__TEMPLATE_BINDING;
-
-	/**
-	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_TEMPLATE_SIGNATURE = NAVIGATION_CLASS__OWNED_TEMPLATE_SIGNATURE;
-
-	/**
-	 * The feature id for the '<em><b>Attribute</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__ATTRIBUTE = NAVIGATION_CLASS__ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Feature</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__FEATURE = NAVIGATION_CLASS__FEATURE;
-
-	/**
-	 * The feature id for the '<em><b>Collaboration Use</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__COLLABORATION_USE = NAVIGATION_CLASS__COLLABORATION_USE;
-
-	/**
-	 * The feature id for the '<em><b>General</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__GENERAL = NAVIGATION_CLASS__GENERAL;
-
-	/**
-	 * The feature id for the '<em><b>Generalization</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__GENERALIZATION = NAVIGATION_CLASS__GENERALIZATION;
-
-	/**
-	 * The feature id for the '<em><b>Powertype Extent</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__POWERTYPE_EXTENT = NAVIGATION_CLASS__POWERTYPE_EXTENT;
-
-	/**
-	 * The feature id for the '<em><b>Inherited Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__INHERITED_MEMBER = NAVIGATION_CLASS__INHERITED_MEMBER;
-
-	/**
-	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__IS_ABSTRACT = NAVIGATION_CLASS__IS_ABSTRACT;
-
-	/**
-	 * The feature id for the '<em><b>Is Final Specialization</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__IS_FINAL_SPECIALIZATION = NAVIGATION_CLASS__IS_FINAL_SPECIALIZATION;
-
-	/**
-	 * The feature id for the '<em><b>Owned Use Case</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_USE_CASE = NAVIGATION_CLASS__OWNED_USE_CASE;
-
-	/**
-	 * The feature id for the '<em><b>Use Case</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__USE_CASE = NAVIGATION_CLASS__USE_CASE;
-
-	/**
-	 * The feature id for the '<em><b>Redefined Classifier</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__REDEFINED_CLASSIFIER = NAVIGATION_CLASS__REDEFINED_CLASSIFIER;
-
-	/**
-	 * The feature id for the '<em><b>Representation</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__REPRESENTATION = NAVIGATION_CLASS__REPRESENTATION;
-
-	/**
-	 * The feature id for the '<em><b>Substitution</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__SUBSTITUTION = NAVIGATION_CLASS__SUBSTITUTION;
-
-	/**
-	 * The feature id for the '<em><b>Owned Attribute</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_ATTRIBUTE = NAVIGATION_CLASS__OWNED_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Owned Connector</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_CONNECTOR = NAVIGATION_CLASS__OWNED_CONNECTOR;
-
-	/**
-	 * The feature id for the '<em><b>Part</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__PART = NAVIGATION_CLASS__PART;
-
-	/**
-	 * The feature id for the '<em><b>Role</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__ROLE = NAVIGATION_CLASS__ROLE;
-
-	/**
-	 * The feature id for the '<em><b>Owned Port</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_PORT = NAVIGATION_CLASS__OWNED_PORT;
-
-	/**
-	 * The feature id for the '<em><b>Classifier Behavior</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__CLASSIFIER_BEHAVIOR = NAVIGATION_CLASS__CLASSIFIER_BEHAVIOR;
-
-	/**
-	 * The feature id for the '<em><b>Interface Realization</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__INTERFACE_REALIZATION = NAVIGATION_CLASS__INTERFACE_REALIZATION;
-
-	/**
-	 * The feature id for the '<em><b>Owned Behavior</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_BEHAVIOR = NAVIGATION_CLASS__OWNED_BEHAVIOR;
-
-	/**
-	 * The feature id for the '<em><b>Owned Operation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_OPERATION = NAVIGATION_CLASS__OWNED_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Extension</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__EXTENSION = NAVIGATION_CLASS__EXTENSION;
-
-	/**
-	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__IS_ACTIVE = NAVIGATION_CLASS__IS_ACTIVE;
-
-	/**
-	 * The feature id for the '<em><b>Nested Classifier</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__NESTED_CLASSIFIER = NAVIGATION_CLASS__NESTED_CLASSIFIER;
-
-	/**
-	 * The feature id for the '<em><b>Owned Reception</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_RECEPTION = NAVIGATION_CLASS__OWNED_RECEPTION;
-
-	/**
-	 * The feature id for the '<em><b>Super Class</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS__SUPER_CLASS = NAVIGATION_CLASS__SUPER_CLASS;
 
 	/**
 	 * The feature id for the '<em><b>Front Controller Attribute</b></em>' containment reference list.
@@ -22135,7 +21676,7 @@ public interface framewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE = NAVIGATION_CLASS_FEATURE_COUNT + 0;
+	int FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE = 0;
 
 	/**
 	 * The feature id for the '<em><b>Front Controller Class Method</b></em>' containment reference list.
@@ -22144,7 +21685,7 @@ public interface framewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD = NAVIGATION_CLASS_FEATURE_COUNT + 1;
+	int FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD = 1;
 
 	/**
 	 * The number of structural features of the '<em>Front Controller Class</em>' class.
@@ -22153,466 +21694,7 @@ public interface framewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS_FEATURE_COUNT = NAVIGATION_CLASS_FEATURE_COUNT + 2;
-
-	/**
-	 * The operation id for the '<em>Not Own Self</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Has Owner</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>All Owned Elements</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___ALL_OWNED_ELEMENTS = NAVIGATION_CLASS___ALL_OWNED_ELEMENTS;
-
-	/**
-	 * The operation id for the '<em>Must Be Owned</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___MUST_BE_OWNED = NAVIGATION_CLASS___MUST_BE_OWNED;
-
-	/**
-	 * The operation id for the '<em>Has Qualified Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>All Namespaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___ALL_NAMESPACES = NAVIGATION_CLASS___ALL_NAMESPACES;
-
-	/**
-	 * The operation id for the '<em>All Owning Packages</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___ALL_OWNING_PACKAGES = NAVIGATION_CLASS___ALL_OWNING_PACKAGES;
-
-	/**
-	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = NAVIGATION_CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
-
-	/**
-	 * The operation id for the '<em>Namespace</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___NAMESPACE = NAVIGATION_CLASS___NAMESPACE;
-
-	/**
-	 * The operation id for the '<em>Qualified Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___QUALIFIED_NAME = NAVIGATION_CLASS___QUALIFIED_NAME;
-
-	/**
-	 * The operation id for the '<em>Separator</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___SEPARATOR = NAVIGATION_CLASS___SEPARATOR;
-
-	/**
-	 * The operation id for the '<em>Members Distinguishable</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Exclude Collisions</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___EXCLUDE_COLLISIONS__ELIST = NAVIGATION_CLASS___EXCLUDE_COLLISIONS__ELIST;
-
-	/**
-	 * The operation id for the '<em>Get Names Of Member</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT = NAVIGATION_CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
-
-	/**
-	 * The operation id for the '<em>Import Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___IMPORT_MEMBERS__ELIST = NAVIGATION_CLASS___IMPORT_MEMBERS__ELIST;
-
-	/**
-	 * The operation id for the '<em>Imported Member</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___IMPORTED_MEMBER = NAVIGATION_CLASS___IMPORTED_MEMBER;
-
-	/**
-	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___MEMBERS_ARE_DISTINGUISHABLE = NAVIGATION_CLASS___MEMBERS_ARE_DISTINGUISHABLE;
-
-	/**
-	 * The operation id for the '<em>Owned Member</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___OWNED_MEMBER = NAVIGATION_CLASS___OWNED_MEMBER;
-
-	/**
-	 * The operation id for the '<em>Non Leaf Redefinition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Redefinition Context Valid</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Redefinition Consistent</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Is Consistent With</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = NAVIGATION_CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
-
-	/**
-	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = NAVIGATION_CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
-
-	/**
-	 * The operation id for the '<em>Is Compatible With</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = NAVIGATION_CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
-
-	/**
-	 * The operation id for the '<em>Is Template Parameter</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___IS_TEMPLATE_PARAMETER = NAVIGATION_CLASS___IS_TEMPLATE_PARAMETER;
-
-	/**
-	 * The operation id for the '<em>Conforms To</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___CONFORMS_TO__TYPE = NAVIGATION_CLASS___CONFORMS_TO__TYPE;
-
-	/**
-	 * The operation id for the '<em>Is Template</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___IS_TEMPLATE = NAVIGATION_CLASS___IS_TEMPLATE;
-
-	/**
-	 * The operation id for the '<em>Parameterable Elements</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___PARAMETERABLE_ELEMENTS = NAVIGATION_CLASS___PARAMETERABLE_ELEMENTS;
-
-	/**
-	 * The operation id for the '<em>No Cycles In Generalization</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Specialize Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Non Final Parents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Maps To Generalization Set</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>All Features</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___ALL_FEATURES = NAVIGATION_CLASS___ALL_FEATURES;
-
-	/**
-	 * The operation id for the '<em>All Parents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___ALL_PARENTS = NAVIGATION_CLASS___ALL_PARENTS;
-
-	/**
-	 * The operation id for the '<em>Conforms To</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___CONFORMS_TO__CLASSIFIER = NAVIGATION_CLASS___CONFORMS_TO__CLASSIFIER;
-
-	/**
-	 * The operation id for the '<em>General</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___GENERAL = NAVIGATION_CLASS___GENERAL;
-
-	/**
-	 * The operation id for the '<em>Has Visibility Of</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT = NAVIGATION_CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT;
-
-	/**
-	 * The operation id for the '<em>Inherit</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___INHERIT__ELIST = NAVIGATION_CLASS___INHERIT__ELIST;
-
-	/**
-	 * The operation id for the '<em>Inheritable Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___INHERITABLE_MEMBERS__CLASSIFIER = NAVIGATION_CLASS___INHERITABLE_MEMBERS__CLASSIFIER;
-
-	/**
-	 * The operation id for the '<em>Inherited Member</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___INHERITED_MEMBER = NAVIGATION_CLASS___INHERITED_MEMBER;
-
-	/**
-	 * The operation id for the '<em>May Specialize Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER = NAVIGATION_CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER;
-
-	/**
-	 * The operation id for the '<em>Parents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___PARENTS = NAVIGATION_CLASS___PARENTS;
-
-	/**
-	 * The operation id for the '<em>Multiplicities</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Part</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___PART = NAVIGATION_CLASS___PART;
-
-	/**
-	 * The operation id for the '<em>Owned Port</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___OWNED_PORT = NAVIGATION_CLASS___OWNED_PORT;
-
-	/**
-	 * The operation id for the '<em>Class Behavior</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Passive Class</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Extension</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___EXTENSION = NAVIGATION_CLASS___EXTENSION;
-
-	/**
-	 * The operation id for the '<em>Super Class</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRONT_CONTROLLER_CLASS___SUPER_CLASS = NAVIGATION_CLASS___SUPER_CLASS;
+	int FRONT_CONTROLLER_CLASS_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Front Controller Class</em>' class.
@@ -22621,14 +21703,14 @@ public interface framewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS_OPERATION_COUNT = NAVIGATION_CLASS_OPERATION_COUNT + 0;
+	int FRONT_CONTROLLER_CLASS_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.NavigationAttributeImpl <em>Navigation Attribute</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.NavigationAttributeImpl
-	 * @see frameweb.impl.framewebPackageImpl#getNavigationAttribute()
+	 * @see frameweb.impl.FramewebPackageImpl#getNavigationAttribute()
 	 * @generated
 	 */
 	int NAVIGATION_ATTRIBUTE = 51;
@@ -23502,7 +22584,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.UserViewAttributeImpl
-	 * @see frameweb.impl.framewebPackageImpl#getUserViewAttribute()
+	 * @see frameweb.impl.FramewebPackageImpl#getUserViewAttribute()
 	 * @generated
 	 */
 	int USER_VIEW_ATTRIBUTE = 26;
@@ -24376,7 +23458,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.IOParameterImpl
-	 * @see frameweb.impl.framewebPackageImpl#getIOParameter()
+	 * @see frameweb.impl.FramewebPackageImpl#getIOParameter()
 	 * @generated
 	 */
 	int IO_PARAMETER = 27;
@@ -25259,7 +24341,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOBaseOperationImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDAOBaseOperation()
+	 * @see frameweb.impl.FramewebPackageImpl#getDAOBaseOperation()
 	 * @generated
 	 */
 	int DAO_BASE_OPERATION = 28;
@@ -25296,7 +24378,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.NavigationDependencyImpl
-	 * @see frameweb.impl.framewebPackageImpl#getNavigationDependency()
+	 * @see frameweb.impl.FramewebPackageImpl#getNavigationDependency()
 	 * @generated
 	 */
 	int NAVIGATION_DEPENDENCY = 58;
@@ -25603,7 +24685,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ResultDependencyImpl
-	 * @see frameweb.impl.framewebPackageImpl#getResultDependency()
+	 * @see frameweb.impl.FramewebPackageImpl#getResultDependency()
 	 * @generated
 	 */
 	int RESULT_DEPENDENCY = 29;
@@ -26009,7 +25091,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.NavigationCompositionImpl
-	 * @see frameweb.impl.framewebPackageImpl#getNavigationComposition()
+	 * @see frameweb.impl.FramewebPackageImpl#getNavigationComposition()
 	 * @generated
 	 */
 	int NAVIGATION_COMPOSITION = 30;
@@ -26910,7 +25992,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrontControllerMethodImpl
-	 * @see frameweb.impl.framewebPackageImpl#getFrontControllerMethod()
+	 * @see frameweb.impl.FramewebPackageImpl#getFrontControllerMethod()
 	 * @generated
 	 */
 	int FRONT_CONTROLLER_METHOD = 31;
@@ -27667,7 +26749,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.NamingMethodImpl
-	 * @see frameweb.impl.framewebPackageImpl#getNamingMethod()
+	 * @see frameweb.impl.FramewebPackageImpl#getNamingMethod()
 	 * @generated
 	 */
 	int NAMING_METHOD = 32;
@@ -27704,7 +26786,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ServiceClassImpl
-	 * @see frameweb.impl.framewebPackageImpl#getServiceClass()
+	 * @see frameweb.impl.FramewebPackageImpl#getServiceClass()
 	 * @generated
 	 */
 	int SERVICE_CLASS = 33;
@@ -28668,7 +27750,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ServiceInterfaceImpl
-	 * @see frameweb.impl.framewebPackageImpl#getServiceInterface()
+	 * @see frameweb.impl.FramewebPackageImpl#getServiceInterface()
 	 * @generated
 	 */
 	int SERVICE_INTERFACE = 34;
@@ -29506,7 +28588,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ServiceGeneralizationImpl
-	 * @see frameweb.impl.framewebPackageImpl#getServiceGeneralization()
+	 * @see frameweb.impl.FramewebPackageImpl#getServiceGeneralization()
 	 * @generated
 	 */
 	int SERVICE_GENERALIZATION = 35;
@@ -29687,7 +28769,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ServiceAssociationImpl
-	 * @see frameweb.impl.framewebPackageImpl#getServiceAssociation()
+	 * @see frameweb.impl.FramewebPackageImpl#getServiceAssociation()
 	 * @generated
 	 */
 	int SERVICE_ASSOCIATION = 57;
@@ -30543,7 +29625,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ServiceNavigationAssociationImpl
-	 * @see frameweb.impl.framewebPackageImpl#getServiceNavigationAssociation()
+	 * @see frameweb.impl.FramewebPackageImpl#getServiceNavigationAssociation()
 	 * @generated
 	 */
 	int SERVICE_NAVIGATION_ASSOCIATION = 36;
@@ -31417,7 +30499,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrameWebNameImpl
-	 * @see frameweb.impl.framewebPackageImpl#getFrameWebName()
+	 * @see frameweb.impl.FramewebPackageImpl#getFrameWebName()
 	 * @generated
 	 */
 	int FRAME_WEB_NAME = 38;
@@ -31445,7 +30527,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.BinaryAttributeImpl
-	 * @see frameweb.impl.framewebPackageImpl#getBinaryAttribute()
+	 * @see frameweb.impl.FramewebPackageImpl#getBinaryAttribute()
 	 * @generated
 	 */
 	int BINARY_ATTRIBUTE = 39;
@@ -32319,7 +31401,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ConstantNameImpl
-	 * @see frameweb.impl.framewebPackageImpl#getConstantName()
+	 * @see frameweb.impl.FramewebPackageImpl#getConstantName()
 	 * @generated
 	 */
 	int CONSTANT_NAME = 40;
@@ -32356,7 +31438,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainTableNameImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDomainTableName()
+	 * @see frameweb.impl.FramewebPackageImpl#getDomainTableName()
 	 * @generated
 	 */
 	int DOMAIN_TABLE_NAME = 41;
@@ -32402,7 +31484,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrameWorkNameImpl
-	 * @see frameweb.impl.framewebPackageImpl#getFrameWorkName()
+	 * @see frameweb.impl.FramewebPackageImpl#getFrameWorkName()
 	 * @generated
 	 */
 	int FRAME_WORK_NAME = 42;
@@ -32430,7 +31512,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainColumnNameImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDomainColumnName()
+	 * @see frameweb.impl.FramewebPackageImpl#getDomainColumnName()
 	 * @generated
 	 */
 	int DOMAIN_COLUMN_NAME = 43;
@@ -32476,7 +31558,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOInterfaceNameImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDAOInterfaceName()
+	 * @see frameweb.impl.FramewebPackageImpl#getDAOInterfaceName()
 	 * @generated
 	 */
 	int DAO_INTERFACE_NAME = 44;
@@ -32531,7 +31613,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOClassNameImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDAOClassName()
+	 * @see frameweb.impl.FramewebPackageImpl#getDAOClassName()
 	 * @generated
 	 */
 	int DAO_CLASS_NAME = 45;
@@ -32595,7 +31677,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ResultImpl
-	 * @see frameweb.impl.framewebPackageImpl#getResult()
+	 * @see frameweb.impl.FramewebPackageImpl#getResult()
 	 * @generated
 	 */
 	int RESULT = 46;
@@ -32623,7 +31705,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrontControllerDependenceImpl
-	 * @see frameweb.impl.framewebPackageImpl#getFrontControllerDependence()
+	 * @see frameweb.impl.FramewebPackageImpl#getFrontControllerDependence()
 	 * @generated
 	 */
 	int FRONT_CONTROLLER_DEPENDENCE = 47;
@@ -32993,7 +32075,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.PageDependenceImpl
-	 * @see frameweb.impl.framewebPackageImpl#getPageDependence()
+	 * @see frameweb.impl.FramewebPackageImpl#getPageDependence()
 	 * @generated
 	 */
 	int PAGE_DEPENDENCE = 48;
@@ -33336,7 +32418,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ChainingDependenceImpl
-	 * @see frameweb.impl.framewebPackageImpl#getChainingDependence()
+	 * @see frameweb.impl.FramewebPackageImpl#getChainingDependence()
 	 * @generated
 	 */
 	int CHAINING_DEPENDENCE = 49;
@@ -33679,7 +32761,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOServiceAssociationImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDAOServiceAssociation()
+	 * @see frameweb.impl.FramewebPackageImpl#getDAOServiceAssociation()
 	 * @generated
 	 */
 	int DAO_SERVICE_ASSOCIATION = 50;
@@ -34553,7 +33635,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainOperationImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDomainOperation()
+	 * @see frameweb.impl.FramewebPackageImpl#getDomainOperation()
 	 * @generated
 	 */
 	int DOMAIN_OPERATION = 53;
@@ -35301,7 +34383,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOAttributeImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDAOAttribute()
+	 * @see frameweb.impl.FramewebPackageImpl#getDAOAttribute()
 	 * @generated
 	 */
 	int DAO_ATTRIBUTE = 54;
@@ -36175,7 +35257,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ServiceOperationImpl
-	 * @see frameweb.impl.framewebPackageImpl#getServiceOperation()
+	 * @see frameweb.impl.FramewebPackageImpl#getServiceOperation()
 	 * @generated
 	 */
 	int SERVICE_OPERATION = 55;
@@ -36923,7 +36005,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ServiceAttributeImpl
-	 * @see frameweb.impl.framewebPackageImpl#getServiceAttribute()
+	 * @see frameweb.impl.FramewebPackageImpl#getServiceAttribute()
 	 * @generated
 	 */
 	int SERVICE_ATTRIBUTE = 56;
@@ -37797,7 +36879,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOOperationImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDAOOperation()
+	 * @see frameweb.impl.FramewebPackageImpl#getDAOOperation()
 	 * @generated
 	 */
 	int DAO_OPERATION = 59;
@@ -38545,7 +37627,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainPackageImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDomainPackage()
+	 * @see frameweb.impl.FramewebPackageImpl#getDomainPackage()
 	 * @generated
 	 */
 	int DOMAIN_PACKAGE = 60;
@@ -39113,7 +38195,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.NavigationPackageImpl
-	 * @see frameweb.impl.framewebPackageImpl#getNavigationPackage()
+	 * @see frameweb.impl.FramewebPackageImpl#getNavigationPackage()
 	 * @generated
 	 */
 	int NAVIGATION_PACKAGE = 67;
@@ -39672,7 +38754,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ViewPackageImpl
-	 * @see frameweb.impl.framewebPackageImpl#getViewPackage()
+	 * @see frameweb.impl.FramewebPackageImpl#getViewPackage()
 	 * @generated
 	 */
 	int VIEW_PACKAGE = 61;
@@ -39921,49 +39003,13 @@ public interface framewebPackage extends EPackage {
 	int VIEW_PACKAGE__OWNED_TYPE = NAVIGATION_PACKAGE__OWNED_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>View Package Page</b></em>' containment reference list.
+	 * The feature id for the '<em><b>View Package Class</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VIEW_PACKAGE__VIEW_PACKAGE_PAGE = NAVIGATION_PACKAGE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>View Pakage Template</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VIEW_PACKAGE__VIEW_PAKAGE_TEMPLATE = NAVIGATION_PACKAGE_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>View Package Form</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VIEW_PACKAGE__VIEW_PACKAGE_FORM = NAVIGATION_PACKAGE_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>View Package Binary Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VIEW_PACKAGE__VIEW_PACKAGE_BINARY_DATA = NAVIGATION_PACKAGE_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>View Package Component</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VIEW_PACKAGE__VIEW_PACKAGE_COMPONENT = NAVIGATION_PACKAGE_FEATURE_COUNT + 4;
+	int VIEW_PACKAGE__VIEW_PACKAGE_CLASS = NAVIGATION_PACKAGE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>View Package</em>' class.
@@ -39972,7 +39018,7 @@ public interface framewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VIEW_PACKAGE_FEATURE_COUNT = NAVIGATION_PACKAGE_FEATURE_COUNT + 5;
+	int VIEW_PACKAGE_FEATURE_COUNT = NAVIGATION_PACKAGE_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Not Own Self</em>' operation.
@@ -40276,7 +39322,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ControllerPackageImpl
-	 * @see frameweb.impl.framewebPackageImpl#getControllerPackage()
+	 * @see frameweb.impl.FramewebPackageImpl#getControllerPackage()
 	 * @generated
 	 */
 	int CONTROLLER_PACKAGE = 62;
@@ -40844,7 +39890,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.PersistencePackageImpl
-	 * @see frameweb.impl.framewebPackageImpl#getPersistencePackage()
+	 * @see frameweb.impl.FramewebPackageImpl#getPersistencePackage()
 	 * @generated
 	 */
 	int PERSISTENCE_PACKAGE = 63;
@@ -41421,7 +40467,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ApplicationPackageImpl
-	 * @see frameweb.impl.framewebPackageImpl#getApplicationPackage()
+	 * @see frameweb.impl.FramewebPackageImpl#getApplicationPackage()
 	 * @generated
 	 */
 	int APPLICATION_PACKAGE = 64;
@@ -41998,7 +41044,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ComponentImpl
-	 * @see frameweb.impl.framewebPackageImpl#getComponent()
+	 * @see frameweb.impl.FramewebPackageImpl#getComponent()
 	 * @generated
 	 */
 	int COMPONENT = 65;
@@ -42944,7 +41990,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ResultTypeImpl
-	 * @see frameweb.impl.framewebPackageImpl#getResultType()
+	 * @see frameweb.impl.FramewebPackageImpl#getResultType()
 	 * @generated
 	 */
 	int RESULT_TYPE = 66;
@@ -42972,7 +42018,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainGeneralizationImpl
-	 * @see frameweb.impl.framewebPackageImpl#getDomainGeneralization()
+	 * @see frameweb.impl.FramewebPackageImpl#getDomainGeneralization()
 	 * @generated
 	 */
 	int DOMAIN_GENERALIZATION = 68;
@@ -43162,10 +42208,469 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.JQueryImpl
-	 * @see frameweb.impl.framewebPackageImpl#getJQuery()
+	 * @see frameweb.impl.FramewebPackageImpl#getJQuery()
 	 * @generated
 	 */
 	int JQUERY = 69;
+
+	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__OWNED_COMMENT = NAVIGATION_CLASS__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__OWNED_ELEMENT = NAVIGATION_CLASS__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__OWNER = NAVIGATION_CLASS__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__CLIENT_DEPENDENCY = NAVIGATION_CLASS__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__NAME = NAVIGATION_CLASS__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__NAME_EXPRESSION = NAVIGATION_CLASS__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__NAMESPACE = NAVIGATION_CLASS__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__QUALIFIED_NAME = NAVIGATION_CLASS__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__VISIBILITY = NAVIGATION_CLASS__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__ELEMENT_IMPORT = NAVIGATION_CLASS__ELEMENT_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__IMPORTED_MEMBER = NAVIGATION_CLASS__IMPORTED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__MEMBER = NAVIGATION_CLASS__MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__OWNED_MEMBER = NAVIGATION_CLASS__OWNED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__OWNED_RULE = NAVIGATION_CLASS__OWNED_RULE;
+
+	/**
+	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__PACKAGE_IMPORT = NAVIGATION_CLASS__PACKAGE_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__IS_LEAF = NAVIGATION_CLASS__IS_LEAF;
+
+	/**
+	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__REDEFINED_ELEMENT = NAVIGATION_CLASS__REDEFINED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__REDEFINITION_CONTEXT = NAVIGATION_CLASS__REDEFINITION_CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__OWNING_TEMPLATE_PARAMETER = NAVIGATION_CLASS__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__TEMPLATE_PARAMETER = NAVIGATION_CLASS__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Package</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__PACKAGE = NAVIGATION_CLASS__PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__TEMPLATE_BINDING = NAVIGATION_CLASS__TEMPLATE_BINDING;
+
+	/**
+	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__OWNED_TEMPLATE_SIGNATURE = NAVIGATION_CLASS__OWNED_TEMPLATE_SIGNATURE;
+
+	/**
+	 * The feature id for the '<em><b>Attribute</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__ATTRIBUTE = NAVIGATION_CLASS__ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Feature</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__FEATURE = NAVIGATION_CLASS__FEATURE;
+
+	/**
+	 * The feature id for the '<em><b>Collaboration Use</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__COLLABORATION_USE = NAVIGATION_CLASS__COLLABORATION_USE;
+
+	/**
+	 * The feature id for the '<em><b>General</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__GENERAL = NAVIGATION_CLASS__GENERAL;
+
+	/**
+	 * The feature id for the '<em><b>Generalization</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__GENERALIZATION = NAVIGATION_CLASS__GENERALIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Powertype Extent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__POWERTYPE_EXTENT = NAVIGATION_CLASS__POWERTYPE_EXTENT;
+
+	/**
+	 * The feature id for the '<em><b>Inherited Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__INHERITED_MEMBER = NAVIGATION_CLASS__INHERITED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__IS_ABSTRACT = NAVIGATION_CLASS__IS_ABSTRACT;
+
+	/**
+	 * The feature id for the '<em><b>Is Final Specialization</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__IS_FINAL_SPECIALIZATION = NAVIGATION_CLASS__IS_FINAL_SPECIALIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Use Case</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__OWNED_USE_CASE = NAVIGATION_CLASS__OWNED_USE_CASE;
+
+	/**
+	 * The feature id for the '<em><b>Use Case</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__USE_CASE = NAVIGATION_CLASS__USE_CASE;
+
+	/**
+	 * The feature id for the '<em><b>Redefined Classifier</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__REDEFINED_CLASSIFIER = NAVIGATION_CLASS__REDEFINED_CLASSIFIER;
+
+	/**
+	 * The feature id for the '<em><b>Representation</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__REPRESENTATION = NAVIGATION_CLASS__REPRESENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Substitution</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__SUBSTITUTION = NAVIGATION_CLASS__SUBSTITUTION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Attribute</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__OWNED_ATTRIBUTE = NAVIGATION_CLASS__OWNED_ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Connector</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__OWNED_CONNECTOR = NAVIGATION_CLASS__OWNED_CONNECTOR;
+
+	/**
+	 * The feature id for the '<em><b>Part</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__PART = NAVIGATION_CLASS__PART;
+
+	/**
+	 * The feature id for the '<em><b>Role</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__ROLE = NAVIGATION_CLASS__ROLE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Port</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__OWNED_PORT = NAVIGATION_CLASS__OWNED_PORT;
+
+	/**
+	 * The feature id for the '<em><b>Classifier Behavior</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__CLASSIFIER_BEHAVIOR = NAVIGATION_CLASS__CLASSIFIER_BEHAVIOR;
+
+	/**
+	 * The feature id for the '<em><b>Interface Realization</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__INTERFACE_REALIZATION = NAVIGATION_CLASS__INTERFACE_REALIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Behavior</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__OWNED_BEHAVIOR = NAVIGATION_CLASS__OWNED_BEHAVIOR;
+
+	/**
+	 * The feature id for the '<em><b>Owned Operation</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__OWNED_OPERATION = NAVIGATION_CLASS__OWNED_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>Extension</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__EXTENSION = NAVIGATION_CLASS__EXTENSION;
+
+	/**
+	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__IS_ACTIVE = NAVIGATION_CLASS__IS_ACTIVE;
+
+	/**
+	 * The feature id for the '<em><b>Nested Classifier</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__NESTED_CLASSIFIER = NAVIGATION_CLASS__NESTED_CLASSIFIER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Reception</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__OWNED_RECEPTION = NAVIGATION_CLASS__OWNED_RECEPTION;
+
+	/**
+	 * The feature id for the '<em><b>Super Class</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__SUPER_CLASS = NAVIGATION_CLASS__SUPER_CLASS;
 
 	/**
 	 * The number of structural features of the '<em>JQuery</em>' class.
@@ -43174,7 +42679,466 @@ public interface framewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JQUERY_FEATURE_COUNT = 0;
+	int JQUERY_FEATURE_COUNT = NAVIGATION_CLASS_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___HAS_OWNER__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___ALL_OWNED_ELEMENTS = NAVIGATION_CLASS___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___MUST_BE_OWNED = NAVIGATION_CLASS___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___ALL_NAMESPACES = NAVIGATION_CLASS___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___ALL_OWNING_PACKAGES = NAVIGATION_CLASS___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = NAVIGATION_CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___NAMESPACE = NAVIGATION_CLASS___NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___QUALIFIED_NAME = NAVIGATION_CLASS___QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___SEPARATOR = NAVIGATION_CLASS___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Members Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Exclude Collisions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___EXCLUDE_COLLISIONS__ELIST = NAVIGATION_CLASS___EXCLUDE_COLLISIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Names Of Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___GET_NAMES_OF_MEMBER__NAMEDELEMENT = NAVIGATION_CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Import Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___IMPORT_MEMBERS__ELIST = NAVIGATION_CLASS___IMPORT_MEMBERS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Imported Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___IMPORTED_MEMBER = NAVIGATION_CLASS___IMPORTED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___MEMBERS_ARE_DISTINGUISHABLE = NAVIGATION_CLASS___MEMBERS_ARE_DISTINGUISHABLE;
+
+	/**
+	 * The operation id for the '<em>Owned Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___OWNED_MEMBER = NAVIGATION_CLASS___OWNED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Non Leaf Redefinition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Redefinition Context Valid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Redefinition Consistent</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Is Consistent With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = NAVIGATION_CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = NAVIGATION_CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = NAVIGATION_CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___IS_TEMPLATE_PARAMETER = NAVIGATION_CLASS___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Conforms To</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___CONFORMS_TO__TYPE = NAVIGATION_CLASS___CONFORMS_TO__TYPE;
+
+	/**
+	 * The operation id for the '<em>Is Template</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___IS_TEMPLATE = NAVIGATION_CLASS___IS_TEMPLATE;
+
+	/**
+	 * The operation id for the '<em>Parameterable Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___PARAMETERABLE_ELEMENTS = NAVIGATION_CLASS___PARAMETERABLE_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>No Cycles In Generalization</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Specialize Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Non Final Parents</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Maps To Generalization Set</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Features</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___ALL_FEATURES = NAVIGATION_CLASS___ALL_FEATURES;
+
+	/**
+	 * The operation id for the '<em>All Parents</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___ALL_PARENTS = NAVIGATION_CLASS___ALL_PARENTS;
+
+	/**
+	 * The operation id for the '<em>Conforms To</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___CONFORMS_TO__CLASSIFIER = NAVIGATION_CLASS___CONFORMS_TO__CLASSIFIER;
+
+	/**
+	 * The operation id for the '<em>General</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___GENERAL = NAVIGATION_CLASS___GENERAL;
+
+	/**
+	 * The operation id for the '<em>Has Visibility Of</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___HAS_VISIBILITY_OF__NAMEDELEMENT = NAVIGATION_CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Inherit</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___INHERIT__ELIST = NAVIGATION_CLASS___INHERIT__ELIST;
+
+	/**
+	 * The operation id for the '<em>Inheritable Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___INHERITABLE_MEMBERS__CLASSIFIER = NAVIGATION_CLASS___INHERITABLE_MEMBERS__CLASSIFIER;
+
+	/**
+	 * The operation id for the '<em>Inherited Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___INHERITED_MEMBER = NAVIGATION_CLASS___INHERITED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>May Specialize Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___MAY_SPECIALIZE_TYPE__CLASSIFIER = NAVIGATION_CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER;
+
+	/**
+	 * The operation id for the '<em>Parents</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___PARENTS = NAVIGATION_CLASS___PARENTS;
+
+	/**
+	 * The operation id for the '<em>Multiplicities</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Part</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___PART = NAVIGATION_CLASS___PART;
+
+	/**
+	 * The operation id for the '<em>Owned Port</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___OWNED_PORT = NAVIGATION_CLASS___OWNED_PORT;
+
+	/**
+	 * The operation id for the '<em>Class Behavior</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Passive Class</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Extension</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___EXTENSION = NAVIGATION_CLASS___EXTENSION;
+
+	/**
+	 * The operation id for the '<em>Super Class</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___SUPER_CLASS = NAVIGATION_CLASS___SUPER_CLASS;
 
 	/**
 	 * The number of operations of the '<em>JQuery</em>' class.
@@ -43183,14 +43147,14 @@ public interface framewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JQUERY_OPERATION_COUNT = 0;
+	int JQUERY_OPERATION_COUNT = NAVIGATION_CLASS_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.FormComponentImpl <em>Form Component</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FormComponentImpl
-	 * @see frameweb.impl.framewebPackageImpl#getFormComponent()
+	 * @see frameweb.impl.FramewebPackageImpl#getFormComponent()
 	 * @generated
 	 */
 	int FORM_COMPONENT = 70;
@@ -44082,7 +44046,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.TagLibImpl
-	 * @see frameweb.impl.framewebPackageImpl#getTagLib()
+	 * @see frameweb.impl.FramewebPackageImpl#getTagLib()
 	 * @generated
 	 */
 	int TAG_LIB = 71;
@@ -44119,7 +44083,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.TagImpl
-	 * @see frameweb.impl.framewebPackageImpl#getTag()
+	 * @see frameweb.impl.FramewebPackageImpl#getTag()
 	 * @generated
 	 */
 	int TAG = 74;
@@ -44156,7 +44120,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrameworkTagImpl
-	 * @see frameweb.impl.framewebPackageImpl#getFrameworkTag()
+	 * @see frameweb.impl.FramewebPackageImpl#getFrameworkTag()
 	 * @generated
 	 */
 	int FRAMEWORK_TAG = 72;
@@ -44193,7 +44157,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.RuleImpl
-	 * @see frameweb.impl.framewebPackageImpl#getRule()
+	 * @see frameweb.impl.FramewebPackageImpl#getRule()
 	 * @generated
 	 */
 	int RULE = 73;
@@ -44221,7 +44185,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.Talvez_MethodImpl
-	 * @see frameweb.impl.framewebPackageImpl#getTalvez_Method()
+	 * @see frameweb.impl.FramewebPackageImpl#getTalvez_Method()
 	 * @generated
 	 */
 	int TALVEZ_METHOD = 75;
@@ -44249,7 +44213,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.AnotationImpl
-	 * @see frameweb.impl.framewebPackageImpl#getAnotation()
+	 * @see frameweb.impl.FramewebPackageImpl#getAnotation()
 	 * @generated
 	 */
 	int ANOTATION = 76;
@@ -44277,7 +44241,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.DateTimePrecision
-	 * @see frameweb.impl.framewebPackageImpl#getDateTimePrecision()
+	 * @see frameweb.impl.FramewebPackageImpl#getDateTimePrecision()
 	 * @generated
 	 */
 	int DATE_TIME_PRECISION = 77;
@@ -44287,7 +44251,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.Generation
-	 * @see frameweb.impl.framewebPackageImpl#getGeneration()
+	 * @see frameweb.impl.FramewebPackageImpl#getGeneration()
 	 * @generated
 	 */
 	int GENERATION = 78;
@@ -44297,7 +44261,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.Collection
-	 * @see frameweb.impl.framewebPackageImpl#getCollection()
+	 * @see frameweb.impl.FramewebPackageImpl#getCollection()
 	 * @generated
 	 */
 	int COLLECTION = 79;
@@ -44307,7 +44271,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.Order
-	 * @see frameweb.impl.framewebPackageImpl#getOrder()
+	 * @see frameweb.impl.FramewebPackageImpl#getOrder()
 	 * @generated
 	 */
 	int ORDER = 80;
@@ -44317,7 +44281,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.Cascade
-	 * @see frameweb.impl.framewebPackageImpl#getCascade()
+	 * @see frameweb.impl.FramewebPackageImpl#getCascade()
 	 * @generated
 	 */
 	int CASCADE = 81;
@@ -44327,7 +44291,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.Fetch
-	 * @see frameweb.impl.framewebPackageImpl#getFetch()
+	 * @see frameweb.impl.FramewebPackageImpl#getFetch()
 	 * @generated
 	 */
 	int FETCH = 82;
@@ -44337,7 +44301,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.DAOBaseOperationList
-	 * @see frameweb.impl.framewebPackageImpl#getDAOBaseOperationList()
+	 * @see frameweb.impl.FramewebPackageImpl#getDAOBaseOperationList()
 	 * @generated
 	 */
 	int DAO_BASE_OPERATION_LIST = 83;
@@ -44347,7 +44311,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.FrameworkCategoryList
-	 * @see frameweb.impl.framewebPackageImpl#getFrameworkCategoryList()
+	 * @see frameweb.impl.FramewebPackageImpl#getFrameworkCategoryList()
 	 * @generated
 	 */
 	int FRAMEWORK_CATEGORY_LIST = 84;
@@ -44357,7 +44321,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.ConstantNameList
-	 * @see frameweb.impl.framewebPackageImpl#getConstantNameList()
+	 * @see frameweb.impl.FramewebPackageImpl#getConstantNameList()
 	 * @generated
 	 */
 	int CONSTANT_NAME_LIST = 85;
@@ -44367,7 +44331,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.InheritanceMapping
-	 * @see frameweb.impl.framewebPackageImpl#getInheritanceMapping()
+	 * @see frameweb.impl.FramewebPackageImpl#getInheritanceMapping()
 	 * @generated
 	 */
 	int INHERITANCE_MAPPING = 86;
@@ -46138,59 +46102,15 @@ public interface framewebPackage extends EPackage {
 	EClass getViewPackage();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link frameweb.ViewPackage#getViewPackagePage <em>View Package Page</em>}'.
+	 * Returns the meta object for the containment reference list '{@link frameweb.ViewPackage#getViewPackageClass <em>View Package Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>View Package Page</em>'.
-	 * @see frameweb.ViewPackage#getViewPackagePage()
+	 * @return the meta object for the containment reference list '<em>View Package Class</em>'.
+	 * @see frameweb.ViewPackage#getViewPackageClass()
 	 * @see #getViewPackage()
 	 * @generated
 	 */
-	EReference getViewPackage_ViewPackagePage();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link frameweb.ViewPackage#getViewPakageTemplate <em>View Pakage Template</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>View Pakage Template</em>'.
-	 * @see frameweb.ViewPackage#getViewPakageTemplate()
-	 * @see #getViewPackage()
-	 * @generated
-	 */
-	EReference getViewPackage_ViewPakageTemplate();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link frameweb.ViewPackage#getViewPackageForm <em>View Package Form</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>View Package Form</em>'.
-	 * @see frameweb.ViewPackage#getViewPackageForm()
-	 * @see #getViewPackage()
-	 * @generated
-	 */
-	EReference getViewPackage_ViewPackageForm();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link frameweb.ViewPackage#getViewPackageBinaryData <em>View Package Binary Data</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>View Package Binary Data</em>'.
-	 * @see frameweb.ViewPackage#getViewPackageBinaryData()
-	 * @see #getViewPackage()
-	 * @generated
-	 */
-	EReference getViewPackage_ViewPackageBinaryData();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link frameweb.ViewPackage#getViewPackageComponent <em>View Package Component</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>View Package Component</em>'.
-	 * @see frameweb.ViewPackage#getViewPackageComponent()
-	 * @see #getViewPackage()
-	 * @generated
-	 */
-	EReference getViewPackage_ViewPackageComponent();
+	EReference getViewPackage_ViewPackageClass();
 
 	/**
 	 * Returns the meta object for class '{@link frameweb.ControllerPackage <em>Controller Package</em>}'.
@@ -46591,7 +46511,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.MappedClassImpl
-		 * @see frameweb.impl.framewebPackageImpl#getMappedClass()
+		 * @see frameweb.impl.FramewebPackageImpl#getMappedClass()
 		 * @generated
 		 */
 		EClass MAPPED_CLASS = eINSTANCE.getMappedClass();
@@ -46601,7 +46521,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.PersistentClassImpl
-		 * @see frameweb.impl.framewebPackageImpl#getPersistentClass()
+		 * @see frameweb.impl.FramewebPackageImpl#getPersistentClass()
 		 * @generated
 		 */
 		EClass PERSISTENT_CLASS = eINSTANCE.getPersistentClass();
@@ -46619,7 +46539,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.TransientClassImpl
-		 * @see frameweb.impl.framewebPackageImpl#getTransientClass()
+		 * @see frameweb.impl.FramewebPackageImpl#getTransientClass()
 		 * @generated
 		 */
 		EClass TRANSIENT_CLASS = eINSTANCE.getTransientClass();
@@ -46629,7 +46549,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrameWebImpl
-		 * @see frameweb.impl.framewebPackageImpl#getFrameWeb()
+		 * @see frameweb.impl.FramewebPackageImpl#getFrameWeb()
 		 * @generated
 		 */
 		EClass FRAME_WEB = eINSTANCE.getFrameWeb();
@@ -46655,7 +46575,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrameWebModelImpl
-		 * @see frameweb.impl.framewebPackageImpl#getFrameWebModel()
+		 * @see frameweb.impl.FramewebPackageImpl#getFrameWebModel()
 		 * @generated
 		 */
 		EClass FRAME_WEB_MODEL = eINSTANCE.getFrameWebModel();
@@ -46673,7 +46593,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrameworkImpl
-		 * @see frameweb.impl.framewebPackageImpl#getFramework()
+		 * @see frameweb.impl.FramewebPackageImpl#getFramework()
 		 * @generated
 		 */
 		EClass FRAMEWORK = eINSTANCE.getFramework();
@@ -46715,7 +46635,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainModelImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDomainModel()
+		 * @see frameweb.impl.FramewebPackageImpl#getDomainModel()
 		 * @generated
 		 */
 		EClass DOMAIN_MODEL = eINSTANCE.getDomainModel();
@@ -46733,7 +46653,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.NavigationModelImpl
-		 * @see frameweb.impl.framewebPackageImpl#getNavigationModel()
+		 * @see frameweb.impl.FramewebPackageImpl#getNavigationModel()
 		 * @generated
 		 */
 		EClass NAVIGATION_MODEL = eINSTANCE.getNavigationModel();
@@ -46775,7 +46695,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ApplicationModelImpl
-		 * @see frameweb.impl.framewebPackageImpl#getApplicationModel()
+		 * @see frameweb.impl.FramewebPackageImpl#getApplicationModel()
 		 * @generated
 		 */
 		EClass APPLICATION_MODEL = eINSTANCE.getApplicationModel();
@@ -46801,7 +46721,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.PersistenceModelImpl
-		 * @see frameweb.impl.framewebPackageImpl#getPersistenceModel()
+		 * @see frameweb.impl.FramewebPackageImpl#getPersistenceModel()
 		 * @generated
 		 */
 		EClass PERSISTENCE_MODEL = eINSTANCE.getPersistenceModel();
@@ -46819,7 +46739,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainAssociationImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDomainAssociation()
+		 * @see frameweb.impl.FramewebPackageImpl#getDomainAssociation()
 		 * @generated
 		 */
 		EClass DOMAIN_ASSOCIATION = eINSTANCE.getDomainAssociation();
@@ -46877,7 +46797,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainAttributeImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDomainAttribute()
+		 * @see frameweb.impl.FramewebPackageImpl#getDomainAttribute()
 		 * @generated
 		 */
 		EClass DOMAIN_ATTRIBUTE = eINSTANCE.getDomainAttribute();
@@ -46919,7 +46839,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.VersionAttributeImpl
-		 * @see frameweb.impl.framewebPackageImpl#getVersionAttribute()
+		 * @see frameweb.impl.FramewebPackageImpl#getVersionAttribute()
 		 * @generated
 		 */
 		EClass VERSION_ATTRIBUTE = eINSTANCE.getVersionAttribute();
@@ -46929,7 +46849,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.IdAttributeImpl
-		 * @see frameweb.impl.framewebPackageImpl#getIdAttribute()
+		 * @see frameweb.impl.FramewebPackageImpl#getIdAttribute()
 		 * @generated
 		 */
 		EClass ID_ATTRIBUTE = eINSTANCE.getIdAttribute();
@@ -46947,7 +46867,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.LOBAttributeImpl
-		 * @see frameweb.impl.framewebPackageImpl#getLOBAttribute()
+		 * @see frameweb.impl.FramewebPackageImpl#getLOBAttribute()
 		 * @generated
 		 */
 		EClass LOB_ATTRIBUTE = eINSTANCE.getLOBAttribute();
@@ -46957,7 +46877,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.EmbeddedAttributeImpl
-		 * @see frameweb.impl.framewebPackageImpl#getEmbeddedAttribute()
+		 * @see frameweb.impl.FramewebPackageImpl#getEmbeddedAttribute()
 		 * @generated
 		 */
 		EClass EMBEDDED_ATTRIBUTE = eINSTANCE.getEmbeddedAttribute();
@@ -46967,7 +46887,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DecimalAttributeImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDecimalAttribute()
+		 * @see frameweb.impl.FramewebPackageImpl#getDecimalAttribute()
 		 * @generated
 		 */
 		EClass DECIMAL_ATTRIBUTE = eINSTANCE.getDecimalAttribute();
@@ -46993,7 +46913,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DateTimeAttributeImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDateTimeAttribute()
+		 * @see frameweb.impl.FramewebPackageImpl#getDateTimeAttribute()
 		 * @generated
 		 */
 		EClass DATE_TIME_ATTRIBUTE = eINSTANCE.getDateTimeAttribute();
@@ -47011,7 +46931,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.PageImpl
-		 * @see frameweb.impl.framewebPackageImpl#getPage()
+		 * @see frameweb.impl.FramewebPackageImpl#getPage()
 		 * @generated
 		 */
 		EClass PAGE = eINSTANCE.getPage();
@@ -47045,7 +46965,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.TemplateImpl
-		 * @see frameweb.impl.framewebPackageImpl#getTemplate()
+		 * @see frameweb.impl.FramewebPackageImpl#getTemplate()
 		 * @generated
 		 */
 		EClass TEMPLATE = eINSTANCE.getTemplate();
@@ -47063,7 +46983,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FormImpl
-		 * @see frameweb.impl.framewebPackageImpl#getForm()
+		 * @see frameweb.impl.FramewebPackageImpl#getForm()
 		 * @generated
 		 */
 		EClass FORM = eINSTANCE.getForm();
@@ -47081,7 +47001,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.BinaryImpl
-		 * @see frameweb.impl.framewebPackageImpl#getBinary()
+		 * @see frameweb.impl.FramewebPackageImpl#getBinary()
 		 * @generated
 		 */
 		EClass BINARY = eINSTANCE.getBinary();
@@ -47099,7 +47019,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOInterfaceImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDAOInterface()
+		 * @see frameweb.impl.FramewebPackageImpl#getDAOInterface()
 		 * @generated
 		 */
 		EClass DAO_INTERFACE = eINSTANCE.getDAOInterface();
@@ -47141,7 +47061,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOClassImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDAOClass()
+		 * @see frameweb.impl.FramewebPackageImpl#getDAOClass()
 		 * @generated
 		 */
 		EClass DAO_CLASS = eINSTANCE.getDAOClass();
@@ -47183,7 +47103,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOGeneralizationImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDAOGeneralization()
+		 * @see frameweb.impl.FramewebPackageImpl#getDAOGeneralization()
 		 * @generated
 		 */
 		EClass DAO_GENERALIZATION = eINSTANCE.getDAOGeneralization();
@@ -47209,7 +47129,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrontControllerClassImpl
-		 * @see frameweb.impl.framewebPackageImpl#getFrontControllerClass()
+		 * @see frameweb.impl.FramewebPackageImpl#getFrontControllerClass()
 		 * @generated
 		 */
 		EClass FRONT_CONTROLLER_CLASS = eINSTANCE.getFrontControllerClass();
@@ -47235,7 +47155,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.UserViewAttributeImpl
-		 * @see frameweb.impl.framewebPackageImpl#getUserViewAttribute()
+		 * @see frameweb.impl.FramewebPackageImpl#getUserViewAttribute()
 		 * @generated
 		 */
 		EClass USER_VIEW_ATTRIBUTE = eINSTANCE.getUserViewAttribute();
@@ -47245,7 +47165,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.IOParameterImpl
-		 * @see frameweb.impl.framewebPackageImpl#getIOParameter()
+		 * @see frameweb.impl.FramewebPackageImpl#getIOParameter()
 		 * @generated
 		 */
 		EClass IO_PARAMETER = eINSTANCE.getIOParameter();
@@ -47263,7 +47183,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOBaseOperationImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDAOBaseOperation()
+		 * @see frameweb.impl.FramewebPackageImpl#getDAOBaseOperation()
 		 * @generated
 		 */
 		EClass DAO_BASE_OPERATION = eINSTANCE.getDAOBaseOperation();
@@ -47281,7 +47201,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ResultDependencyImpl
-		 * @see frameweb.impl.framewebPackageImpl#getResultDependency()
+		 * @see frameweb.impl.FramewebPackageImpl#getResultDependency()
 		 * @generated
 		 */
 		EClass RESULT_DEPENDENCY = eINSTANCE.getResultDependency();
@@ -47379,7 +47299,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.NavigationCompositionImpl
-		 * @see frameweb.impl.framewebPackageImpl#getNavigationComposition()
+		 * @see frameweb.impl.FramewebPackageImpl#getNavigationComposition()
 		 * @generated
 		 */
 		EClass NAVIGATION_COMPOSITION = eINSTANCE.getNavigationComposition();
@@ -47429,7 +47349,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrontControllerMethodImpl
-		 * @see frameweb.impl.framewebPackageImpl#getFrontControllerMethod()
+		 * @see frameweb.impl.FramewebPackageImpl#getFrontControllerMethod()
 		 * @generated
 		 */
 		EClass FRONT_CONTROLLER_METHOD = eINSTANCE.getFrontControllerMethod();
@@ -47447,7 +47367,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.NamingMethodImpl
-		 * @see frameweb.impl.framewebPackageImpl#getNamingMethod()
+		 * @see frameweb.impl.FramewebPackageImpl#getNamingMethod()
 		 * @generated
 		 */
 		EClass NAMING_METHOD = eINSTANCE.getNamingMethod();
@@ -47465,7 +47385,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ServiceClassImpl
-		 * @see frameweb.impl.framewebPackageImpl#getServiceClass()
+		 * @see frameweb.impl.FramewebPackageImpl#getServiceClass()
 		 * @generated
 		 */
 		EClass SERVICE_CLASS = eINSTANCE.getServiceClass();
@@ -47491,7 +47411,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ServiceInterfaceImpl
-		 * @see frameweb.impl.framewebPackageImpl#getServiceInterface()
+		 * @see frameweb.impl.FramewebPackageImpl#getServiceInterface()
 		 * @generated
 		 */
 		EClass SERVICE_INTERFACE = eINSTANCE.getServiceInterface();
@@ -47517,7 +47437,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ServiceGeneralizationImpl
-		 * @see frameweb.impl.framewebPackageImpl#getServiceGeneralization()
+		 * @see frameweb.impl.FramewebPackageImpl#getServiceGeneralization()
 		 * @generated
 		 */
 		EClass SERVICE_GENERALIZATION = eINSTANCE.getServiceGeneralization();
@@ -47543,7 +47463,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ServiceNavigationAssociationImpl
-		 * @see frameweb.impl.framewebPackageImpl#getServiceNavigationAssociation()
+		 * @see frameweb.impl.FramewebPackageImpl#getServiceNavigationAssociation()
 		 * @generated
 		 */
 		EClass SERVICE_NAVIGATION_ASSOCIATION = eINSTANCE.getServiceNavigationAssociation();
@@ -47569,7 +47489,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainClassImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDomainClass()
+		 * @see frameweb.impl.FramewebPackageImpl#getDomainClass()
 		 * @generated
 		 */
 		EClass DOMAIN_CLASS = eINSTANCE.getDomainClass();
@@ -47595,7 +47515,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrameWebNameImpl
-		 * @see frameweb.impl.framewebPackageImpl#getFrameWebName()
+		 * @see frameweb.impl.FramewebPackageImpl#getFrameWebName()
 		 * @generated
 		 */
 		EClass FRAME_WEB_NAME = eINSTANCE.getFrameWebName();
@@ -47605,7 +47525,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.BinaryAttributeImpl
-		 * @see frameweb.impl.framewebPackageImpl#getBinaryAttribute()
+		 * @see frameweb.impl.FramewebPackageImpl#getBinaryAttribute()
 		 * @generated
 		 */
 		EClass BINARY_ATTRIBUTE = eINSTANCE.getBinaryAttribute();
@@ -47615,7 +47535,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ConstantNameImpl
-		 * @see frameweb.impl.framewebPackageImpl#getConstantName()
+		 * @see frameweb.impl.FramewebPackageImpl#getConstantName()
 		 * @generated
 		 */
 		EClass CONSTANT_NAME = eINSTANCE.getConstantName();
@@ -47633,7 +47553,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainTableNameImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDomainTableName()
+		 * @see frameweb.impl.FramewebPackageImpl#getDomainTableName()
 		 * @generated
 		 */
 		EClass DOMAIN_TABLE_NAME = eINSTANCE.getDomainTableName();
@@ -47659,7 +47579,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrameWorkNameImpl
-		 * @see frameweb.impl.framewebPackageImpl#getFrameWorkName()
+		 * @see frameweb.impl.FramewebPackageImpl#getFrameWorkName()
 		 * @generated
 		 */
 		EClass FRAME_WORK_NAME = eINSTANCE.getFrameWorkName();
@@ -47669,7 +47589,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainColumnNameImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDomainColumnName()
+		 * @see frameweb.impl.FramewebPackageImpl#getDomainColumnName()
 		 * @generated
 		 */
 		EClass DOMAIN_COLUMN_NAME = eINSTANCE.getDomainColumnName();
@@ -47695,7 +47615,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOInterfaceNameImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDAOInterfaceName()
+		 * @see frameweb.impl.FramewebPackageImpl#getDAOInterfaceName()
 		 * @generated
 		 */
 		EClass DAO_INTERFACE_NAME = eINSTANCE.getDAOInterfaceName();
@@ -47721,7 +47641,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOClassNameImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDAOClassName()
+		 * @see frameweb.impl.FramewebPackageImpl#getDAOClassName()
 		 * @generated
 		 */
 		EClass DAO_CLASS_NAME = eINSTANCE.getDAOClassName();
@@ -47739,7 +47659,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ResultImpl
-		 * @see frameweb.impl.framewebPackageImpl#getResult()
+		 * @see frameweb.impl.FramewebPackageImpl#getResult()
 		 * @generated
 		 */
 		EClass RESULT = eINSTANCE.getResult();
@@ -47749,7 +47669,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrontControllerDependenceImpl
-		 * @see frameweb.impl.framewebPackageImpl#getFrontControllerDependence()
+		 * @see frameweb.impl.FramewebPackageImpl#getFrontControllerDependence()
 		 * @generated
 		 */
 		EClass FRONT_CONTROLLER_DEPENDENCE = eINSTANCE.getFrontControllerDependence();
@@ -47815,7 +47735,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.PageDependenceImpl
-		 * @see frameweb.impl.framewebPackageImpl#getPageDependence()
+		 * @see frameweb.impl.FramewebPackageImpl#getPageDependence()
 		 * @generated
 		 */
 		EClass PAGE_DEPENDENCE = eINSTANCE.getPageDependence();
@@ -47857,7 +47777,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ChainingDependenceImpl
-		 * @see frameweb.impl.framewebPackageImpl#getChainingDependence()
+		 * @see frameweb.impl.FramewebPackageImpl#getChainingDependence()
 		 * @generated
 		 */
 		EClass CHAINING_DEPENDENCE = eINSTANCE.getChainingDependence();
@@ -47899,7 +47819,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOServiceAssociationImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDAOServiceAssociation()
+		 * @see frameweb.impl.FramewebPackageImpl#getDAOServiceAssociation()
 		 * @generated
 		 */
 		EClass DAO_SERVICE_ASSOCIATION = eINSTANCE.getDAOServiceAssociation();
@@ -47925,7 +47845,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.NavigationAttributeImpl
-		 * @see frameweb.impl.framewebPackageImpl#getNavigationAttribute()
+		 * @see frameweb.impl.FramewebPackageImpl#getNavigationAttribute()
 		 * @generated
 		 */
 		EClass NAVIGATION_ATTRIBUTE = eINSTANCE.getNavigationAttribute();
@@ -47935,7 +47855,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.NavigationClassImpl
-		 * @see frameweb.impl.framewebPackageImpl#getNavigationClass()
+		 * @see frameweb.impl.FramewebPackageImpl#getNavigationClass()
 		 * @generated
 		 */
 		EClass NAVIGATION_CLASS = eINSTANCE.getNavigationClass();
@@ -47945,7 +47865,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainOperationImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDomainOperation()
+		 * @see frameweb.impl.FramewebPackageImpl#getDomainOperation()
 		 * @generated
 		 */
 		EClass DOMAIN_OPERATION = eINSTANCE.getDomainOperation();
@@ -47955,7 +47875,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOAttributeImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDAOAttribute()
+		 * @see frameweb.impl.FramewebPackageImpl#getDAOAttribute()
 		 * @generated
 		 */
 		EClass DAO_ATTRIBUTE = eINSTANCE.getDAOAttribute();
@@ -47965,7 +47885,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ServiceOperationImpl
-		 * @see frameweb.impl.framewebPackageImpl#getServiceOperation()
+		 * @see frameweb.impl.FramewebPackageImpl#getServiceOperation()
 		 * @generated
 		 */
 		EClass SERVICE_OPERATION = eINSTANCE.getServiceOperation();
@@ -47975,7 +47895,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ServiceAttributeImpl
-		 * @see frameweb.impl.framewebPackageImpl#getServiceAttribute()
+		 * @see frameweb.impl.FramewebPackageImpl#getServiceAttribute()
 		 * @generated
 		 */
 		EClass SERVICE_ATTRIBUTE = eINSTANCE.getServiceAttribute();
@@ -47985,7 +47905,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ServiceAssociationImpl
-		 * @see frameweb.impl.framewebPackageImpl#getServiceAssociation()
+		 * @see frameweb.impl.FramewebPackageImpl#getServiceAssociation()
 		 * @generated
 		 */
 		EClass SERVICE_ASSOCIATION = eINSTANCE.getServiceAssociation();
@@ -47995,7 +47915,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.NavigationDependencyImpl
-		 * @see frameweb.impl.framewebPackageImpl#getNavigationDependency()
+		 * @see frameweb.impl.FramewebPackageImpl#getNavigationDependency()
 		 * @generated
 		 */
 		EClass NAVIGATION_DEPENDENCY = eINSTANCE.getNavigationDependency();
@@ -48005,7 +47925,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOOperationImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDAOOperation()
+		 * @see frameweb.impl.FramewebPackageImpl#getDAOOperation()
 		 * @generated
 		 */
 		EClass DAO_OPERATION = eINSTANCE.getDAOOperation();
@@ -48015,7 +47935,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainPackageImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDomainPackage()
+		 * @see frameweb.impl.FramewebPackageImpl#getDomainPackage()
 		 * @generated
 		 */
 		EClass DOMAIN_PACKAGE = eINSTANCE.getDomainPackage();
@@ -48033,57 +47953,25 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ViewPackageImpl
-		 * @see frameweb.impl.framewebPackageImpl#getViewPackage()
+		 * @see frameweb.impl.FramewebPackageImpl#getViewPackage()
 		 * @generated
 		 */
 		EClass VIEW_PACKAGE = eINSTANCE.getViewPackage();
 
 		/**
-		 * The meta object literal for the '<em><b>View Package Page</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>View Package Class</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference VIEW_PACKAGE__VIEW_PACKAGE_PAGE = eINSTANCE.getViewPackage_ViewPackagePage();
-
-		/**
-		 * The meta object literal for the '<em><b>View Pakage Template</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference VIEW_PACKAGE__VIEW_PAKAGE_TEMPLATE = eINSTANCE.getViewPackage_ViewPakageTemplate();
-
-		/**
-		 * The meta object literal for the '<em><b>View Package Form</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference VIEW_PACKAGE__VIEW_PACKAGE_FORM = eINSTANCE.getViewPackage_ViewPackageForm();
-
-		/**
-		 * The meta object literal for the '<em><b>View Package Binary Data</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference VIEW_PACKAGE__VIEW_PACKAGE_BINARY_DATA = eINSTANCE.getViewPackage_ViewPackageBinaryData();
-
-		/**
-		 * The meta object literal for the '<em><b>View Package Component</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference VIEW_PACKAGE__VIEW_PACKAGE_COMPONENT = eINSTANCE.getViewPackage_ViewPackageComponent();
+		EReference VIEW_PACKAGE__VIEW_PACKAGE_CLASS = eINSTANCE.getViewPackage_ViewPackageClass();
 
 		/**
 		 * The meta object literal for the '{@link frameweb.impl.ControllerPackageImpl <em>Controller Package</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ControllerPackageImpl
-		 * @see frameweb.impl.framewebPackageImpl#getControllerPackage()
+		 * @see frameweb.impl.FramewebPackageImpl#getControllerPackage()
 		 * @generated
 		 */
 		EClass CONTROLLER_PACKAGE = eINSTANCE.getControllerPackage();
@@ -48101,7 +47989,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.PersistencePackageImpl
-		 * @see frameweb.impl.framewebPackageImpl#getPersistencePackage()
+		 * @see frameweb.impl.FramewebPackageImpl#getPersistencePackage()
 		 * @generated
 		 */
 		EClass PERSISTENCE_PACKAGE = eINSTANCE.getPersistencePackage();
@@ -48127,7 +48015,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ApplicationPackageImpl
-		 * @see frameweb.impl.framewebPackageImpl#getApplicationPackage()
+		 * @see frameweb.impl.FramewebPackageImpl#getApplicationPackage()
 		 * @generated
 		 */
 		EClass APPLICATION_PACKAGE = eINSTANCE.getApplicationPackage();
@@ -48153,7 +48041,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ComponentImpl
-		 * @see frameweb.impl.framewebPackageImpl#getComponent()
+		 * @see frameweb.impl.FramewebPackageImpl#getComponent()
 		 * @generated
 		 */
 		EClass COMPONENT = eINSTANCE.getComponent();
@@ -48163,7 +48051,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ResultTypeImpl
-		 * @see frameweb.impl.framewebPackageImpl#getResultType()
+		 * @see frameweb.impl.FramewebPackageImpl#getResultType()
 		 * @generated
 		 */
 		EClass RESULT_TYPE = eINSTANCE.getResultType();
@@ -48173,7 +48061,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.NavigationPackageImpl
-		 * @see frameweb.impl.framewebPackageImpl#getNavigationPackage()
+		 * @see frameweb.impl.FramewebPackageImpl#getNavigationPackage()
 		 * @generated
 		 */
 		EClass NAVIGATION_PACKAGE = eINSTANCE.getNavigationPackage();
@@ -48183,7 +48071,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainGeneralizationImpl
-		 * @see frameweb.impl.framewebPackageImpl#getDomainGeneralization()
+		 * @see frameweb.impl.FramewebPackageImpl#getDomainGeneralization()
 		 * @generated
 		 */
 		EClass DOMAIN_GENERALIZATION = eINSTANCE.getDomainGeneralization();
@@ -48217,7 +48105,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.JQueryImpl
-		 * @see frameweb.impl.framewebPackageImpl#getJQuery()
+		 * @see frameweb.impl.FramewebPackageImpl#getJQuery()
 		 * @generated
 		 */
 		EClass JQUERY = eINSTANCE.getJQuery();
@@ -48227,7 +48115,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FormComponentImpl
-		 * @see frameweb.impl.framewebPackageImpl#getFormComponent()
+		 * @see frameweb.impl.FramewebPackageImpl#getFormComponent()
 		 * @generated
 		 */
 		EClass FORM_COMPONENT = eINSTANCE.getFormComponent();
@@ -48245,7 +48133,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.TagLibImpl
-		 * @see frameweb.impl.framewebPackageImpl#getTagLib()
+		 * @see frameweb.impl.FramewebPackageImpl#getTagLib()
 		 * @generated
 		 */
 		EClass TAG_LIB = eINSTANCE.getTagLib();
@@ -48263,7 +48151,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrameworkTagImpl
-		 * @see frameweb.impl.framewebPackageImpl#getFrameworkTag()
+		 * @see frameweb.impl.FramewebPackageImpl#getFrameworkTag()
 		 * @generated
 		 */
 		EClass FRAMEWORK_TAG = eINSTANCE.getFrameworkTag();
@@ -48273,7 +48161,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.RuleImpl
-		 * @see frameweb.impl.framewebPackageImpl#getRule()
+		 * @see frameweb.impl.FramewebPackageImpl#getRule()
 		 * @generated
 		 */
 		EClass RULE = eINSTANCE.getRule();
@@ -48283,7 +48171,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.TagImpl
-		 * @see frameweb.impl.framewebPackageImpl#getTag()
+		 * @see frameweb.impl.FramewebPackageImpl#getTag()
 		 * @generated
 		 */
 		EClass TAG = eINSTANCE.getTag();
@@ -48301,7 +48189,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.Talvez_MethodImpl
-		 * @see frameweb.impl.framewebPackageImpl#getTalvez_Method()
+		 * @see frameweb.impl.FramewebPackageImpl#getTalvez_Method()
 		 * @generated
 		 */
 		EClass TALVEZ_METHOD = eINSTANCE.getTalvez_Method();
@@ -48311,7 +48199,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.AnotationImpl
-		 * @see frameweb.impl.framewebPackageImpl#getAnotation()
+		 * @see frameweb.impl.FramewebPackageImpl#getAnotation()
 		 * @generated
 		 */
 		EClass ANOTATION = eINSTANCE.getAnotation();
@@ -48321,7 +48209,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.DateTimePrecision
-		 * @see frameweb.impl.framewebPackageImpl#getDateTimePrecision()
+		 * @see frameweb.impl.FramewebPackageImpl#getDateTimePrecision()
 		 * @generated
 		 */
 		EEnum DATE_TIME_PRECISION = eINSTANCE.getDateTimePrecision();
@@ -48331,7 +48219,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.Generation
-		 * @see frameweb.impl.framewebPackageImpl#getGeneration()
+		 * @see frameweb.impl.FramewebPackageImpl#getGeneration()
 		 * @generated
 		 */
 		EEnum GENERATION = eINSTANCE.getGeneration();
@@ -48341,7 +48229,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.Collection
-		 * @see frameweb.impl.framewebPackageImpl#getCollection()
+		 * @see frameweb.impl.FramewebPackageImpl#getCollection()
 		 * @generated
 		 */
 		EEnum COLLECTION = eINSTANCE.getCollection();
@@ -48351,7 +48239,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.Order
-		 * @see frameweb.impl.framewebPackageImpl#getOrder()
+		 * @see frameweb.impl.FramewebPackageImpl#getOrder()
 		 * @generated
 		 */
 		EEnum ORDER = eINSTANCE.getOrder();
@@ -48361,7 +48249,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.Cascade
-		 * @see frameweb.impl.framewebPackageImpl#getCascade()
+		 * @see frameweb.impl.FramewebPackageImpl#getCascade()
 		 * @generated
 		 */
 		EEnum CASCADE = eINSTANCE.getCascade();
@@ -48371,7 +48259,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.Fetch
-		 * @see frameweb.impl.framewebPackageImpl#getFetch()
+		 * @see frameweb.impl.FramewebPackageImpl#getFetch()
 		 * @generated
 		 */
 		EEnum FETCH = eINSTANCE.getFetch();
@@ -48381,7 +48269,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.DAOBaseOperationList
-		 * @see frameweb.impl.framewebPackageImpl#getDAOBaseOperationList()
+		 * @see frameweb.impl.FramewebPackageImpl#getDAOBaseOperationList()
 		 * @generated
 		 */
 		EEnum DAO_BASE_OPERATION_LIST = eINSTANCE.getDAOBaseOperationList();
@@ -48391,7 +48279,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.FrameworkCategoryList
-		 * @see frameweb.impl.framewebPackageImpl#getFrameworkCategoryList()
+		 * @see frameweb.impl.FramewebPackageImpl#getFrameworkCategoryList()
 		 * @generated
 		 */
 		EEnum FRAMEWORK_CATEGORY_LIST = eINSTANCE.getFrameworkCategoryList();
@@ -48401,7 +48289,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.ConstantNameList
-		 * @see frameweb.impl.framewebPackageImpl#getConstantNameList()
+		 * @see frameweb.impl.FramewebPackageImpl#getConstantNameList()
 		 * @generated
 		 */
 		EEnum CONSTANT_NAME_LIST = eINSTANCE.getConstantNameList();
@@ -48411,7 +48299,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.InheritanceMapping
-		 * @see frameweb.impl.framewebPackageImpl#getInheritanceMapping()
+		 * @see frameweb.impl.FramewebPackageImpl#getInheritanceMapping()
 		 * @generated
 		 */
 		EEnum INHERITANCE_MAPPING = eINSTANCE.getInheritanceMapping();
