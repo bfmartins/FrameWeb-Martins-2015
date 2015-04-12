@@ -114,7 +114,7 @@ import uml2.Uml2Package;
  * <!-- end-user-doc -->
  * @generated
  */
-public class framewebPackageImpl extends EPackageImpl implements framewebPackage {
+public class FramewebPackageImpl extends EPackageImpl implements framewebPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -739,7 +739,7 @@ public class framewebPackageImpl extends EPackageImpl implements framewebPackage
 	 * @see #init()
 	 * @generated
 	 */
-	private framewebPackageImpl() {
+	private FramewebPackageImpl() {
 		super(eNS_URI, FramewebFactory.eINSTANCE);
 	}
 
@@ -766,7 +766,7 @@ public class framewebPackageImpl extends EPackageImpl implements framewebPackage
 		if (isInited) return (framewebPackage)EPackage.Registry.INSTANCE.getEPackage(framewebPackage.eNS_URI);
 
 		// Obtain or create and register package
-		framewebPackageImpl theframewebPackage = (framewebPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof framewebPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new framewebPackageImpl());
+		FramewebPackageImpl theframewebPackage = (FramewebPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof FramewebPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new FramewebPackageImpl());
 
 		isInited = true;
 
@@ -2292,44 +2292,8 @@ public class framewebPackageImpl extends EPackageImpl implements framewebPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getViewPackage_ViewPackagePage() {
+	public EReference getViewPackage_ViewPackageClass() {
 		return (EReference)viewPackageEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getViewPackage_ViewPakageTemplate() {
-		return (EReference)viewPackageEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getViewPackage_ViewPackageForm() {
-		return (EReference)viewPackageEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getViewPackage_ViewPackageBinaryData() {
-		return (EReference)viewPackageEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getViewPackage_ViewPackageComponent() {
-		return (EReference)viewPackageEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -2911,11 +2875,7 @@ public class framewebPackageImpl extends EPackageImpl implements framewebPackage
 		createEReference(domainPackageEClass, DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS);
 
 		viewPackageEClass = createEClass(VIEW_PACKAGE);
-		createEReference(viewPackageEClass, VIEW_PACKAGE__VIEW_PACKAGE_PAGE);
-		createEReference(viewPackageEClass, VIEW_PACKAGE__VIEW_PAKAGE_TEMPLATE);
-		createEReference(viewPackageEClass, VIEW_PACKAGE__VIEW_PACKAGE_FORM);
-		createEReference(viewPackageEClass, VIEW_PACKAGE__VIEW_PACKAGE_BINARY_DATA);
-		createEReference(viewPackageEClass, VIEW_PACKAGE__VIEW_PACKAGE_COMPONENT);
+		createEReference(viewPackageEClass, VIEW_PACKAGE__VIEW_PACKAGE_CLASS);
 
 		controllerPackageEClass = createEClass(CONTROLLER_PACKAGE);
 		createEReference(controllerPackageEClass, CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS);
@@ -3027,7 +2987,6 @@ public class framewebPackageImpl extends EPackageImpl implements framewebPackage
 		daoInterfaceEClass.getESuperTypes().add(theuml2Package.getInterface());
 		daoClassEClass.getESuperTypes().add(theuml2Package.getClass_());
 		daoGeneralizationEClass.getESuperTypes().add(theuml2Package.getGeneralization());
-		frontControllerClassEClass.getESuperTypes().add(this.getNavigationClass());
 		userViewAttributeEClass.getESuperTypes().add(this.getNavigationAttribute());
 		ioParameterEClass.getESuperTypes().add(this.getNavigationAttribute());
 		resultDependencyEClass.getESuperTypes().add(this.getNavigationDependency());
@@ -3066,6 +3025,7 @@ public class framewebPackageImpl extends EPackageImpl implements framewebPackage
 		componentEClass.getESuperTypes().add(this.getNavigationClass());
 		navigationPackageEClass.getESuperTypes().add(theuml2Package.getPackage());
 		domainGeneralizationEClass.getESuperTypes().add(theuml2Package.getGeneralization());
+		jQueryEClass.getESuperTypes().add(this.getNavigationClass());
 		formComponentEClass.getESuperTypes().add(this.getNavigationAttribute());
 		formComponentEClass.getESuperTypes().add(this.getFrameworkTag());
 		frameworkTagEClass.getESuperTypes().add(this.getTag());
@@ -3298,11 +3258,7 @@ public class framewebPackageImpl extends EPackageImpl implements framewebPackage
 		initEReference(getDomainPackage_DomainPackageClass(), this.getDomainClass(), null, "DomainPackageClass", null, 1, -1, DomainPackage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(viewPackageEClass, ViewPackage.class, "ViewPackage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getViewPackage_ViewPackagePage(), this.getPage(), null, "ViewPackagePage", null, 1, -1, ViewPackage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getViewPackage_ViewPakageTemplate(), this.getTemplate(), null, "ViewPakageTemplate", null, 0, -1, ViewPackage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getViewPackage_ViewPackageForm(), this.getForm(), null, "ViewPackageForm", null, 0, -1, ViewPackage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getViewPackage_ViewPackageBinaryData(), this.getBinary(), null, "ViewPackageBinaryData", null, 0, 1, ViewPackage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getViewPackage_ViewPackageComponent(), this.getComponent(), null, "ViewPackageComponent", null, 0, -1, ViewPackage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getViewPackage_ViewPackageClass(), this.getNavigationClass(), null, "ViewPackageClass", null, 1, -1, ViewPackage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(controllerPackageEClass, ControllerPackage.class, "ControllerPackage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getControllerPackage_ControllerPackageClass(), this.getFrontControllerClass(), null, "ControllerPackageClass", null, 1, -1, ControllerPackage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

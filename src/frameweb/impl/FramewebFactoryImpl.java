@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory {
+public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
@@ -36,7 +36,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
-		return new FramewebFactoryImpl();
+		return new framewebFactoryImpl();
 	}
 
 	/**
@@ -45,7 +45,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FramewebFactoryImpl() {
+	public framewebFactoryImpl() {
 		super();
 	}
 
