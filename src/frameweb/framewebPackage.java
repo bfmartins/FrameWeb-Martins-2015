@@ -22,11 +22,11 @@ import uml2.Uml2Package;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see frameweb.FramewebFactory
+ * @see frameweb.FrameWebFactory
  * @model kind="package"
  * @generated
  */
-public interface framewebPackage extends EPackage {
+public interface FrameWebPackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
@@ -57,14 +57,14 @@ public interface framewebPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	framewebPackage eINSTANCE = frameweb.impl.FramewebPackageImpl.init();
+	FrameWebPackage eINSTANCE = frameweb.impl.FrameWebPackageImpl.init();
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.DomainClassImpl <em>Domain Class</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainClassImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDomainClass()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDomainClass()
 	 * @generated
 	 */
 	int DOMAIN_CLASS = 37;
@@ -1028,7 +1028,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.MappedClassImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getMappedClass()
+	 * @see frameweb.impl.FrameWebPackageImpl#getMappedClass()
 	 * @generated
 	 */
 	int MAPPED_CLASS = 0;
@@ -1992,7 +1992,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.PersistentClassImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getPersistentClass()
+	 * @see frameweb.impl.FrameWebPackageImpl#getPersistentClass()
 	 * @generated
 	 */
 	int PERSISTENT_CLASS = 1;
@@ -2965,7 +2965,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.TransientClassImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getTransientClass()
+	 * @see frameweb.impl.FrameWebPackageImpl#getTransientClass()
 	 * @generated
 	 */
 	int TRANSIENT_CLASS = 2;
@@ -3929,7 +3929,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrameWebImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getFrameWeb()
+	 * @see frameweb.impl.FrameWebPackageImpl#getFrameWeb()
 	 * @generated
 	 */
 	int FRAME_WEB = 3;
@@ -3971,11 +3971,11 @@ public interface framewebPackage extends EPackage {
 	int FRAME_WEB_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link frameweb.impl.FrameWebModelImpl <em>Frame Web Model</em>}' class.
+	 * The meta object id for the '{@link frameweb.impl.FrameWebModelImpl <em>Model</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrameWebModelImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getFrameWebModel()
+	 * @see frameweb.impl.FrameWebPackageImpl#getFrameWebModel()
 	 * @generated
 	 */
 	int FRAME_WEB_MODEL = 4;
@@ -4242,7 +4242,7 @@ public interface framewebPackage extends EPackage {
 	int FRAME_WEB_MODEL__INDITE = Uml2Package.MODEL_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Frame Web Model</em>' class.
+	 * The number of structural features of the '<em>Model</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4539,7 +4539,7 @@ public interface framewebPackage extends EPackage {
 	int FRAME_WEB_MODEL___VISIBLE_MEMBERS = Uml2Package.MODEL___VISIBLE_MEMBERS;
 
 	/**
-	 * The number of operations of the '<em>Frame Web Model</em>' class.
+	 * The number of operations of the '<em>Model</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4552,7 +4552,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrameworkImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getFramework()
+	 * @see frameweb.impl.FrameWebPackageImpl#getFramework()
 	 * @generated
 	 */
 	int FRAMEWORK = 5;
@@ -5156,7 +5156,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainModelImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDomainModel()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDomainModel()
 	 * @generated
 	 */
 	int DOMAIN_MODEL = 6;
@@ -5742,7 +5742,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.NavigationModelImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getNavigationModel()
+	 * @see frameweb.impl.FrameWebPackageImpl#getNavigationModel()
 	 * @generated
 	 */
 	int NAVIGATION_MODEL = 7;
@@ -6355,7 +6355,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ApplicationModelImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getApplicationModel()
+	 * @see frameweb.impl.FrameWebPackageImpl#getApplicationModel()
 	 * @generated
 	 */
 	int APPLICATION_MODEL = 8;
@@ -6950,7 +6950,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.PersistenceModelImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getPersistenceModel()
+	 * @see frameweb.impl.FrameWebPackageImpl#getPersistenceModel()
 	 * @generated
 	 */
 	int PERSISTENCE_MODEL = 9;
@@ -7536,7 +7536,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainAssociationImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDomainAssociation()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDomainAssociation()
 	 * @generated
 	 */
 	int DOMAIN_ASSOCIATION = 10;
@@ -8446,7 +8446,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainAttributeImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDomainAttribute()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDomainAttribute()
 	 * @generated
 	 */
 	int DOMAIN_ATTRIBUTE = 11;
@@ -9356,7 +9356,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.VersionAttributeImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getVersionAttribute()
+	 * @see frameweb.impl.FrameWebPackageImpl#getVersionAttribute()
 	 * @generated
 	 */
 	int VERSION_ATTRIBUTE = 12;
@@ -10266,7 +10266,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.IdAttributeImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getIdAttribute()
+	 * @see frameweb.impl.FrameWebPackageImpl#getIdAttribute()
 	 * @generated
 	 */
 	int ID_ATTRIBUTE = 13;
@@ -11185,7 +11185,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.LOBAttributeImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getLOBAttribute()
+	 * @see frameweb.impl.FrameWebPackageImpl#getLOBAttribute()
 	 * @generated
 	 */
 	int LOB_ATTRIBUTE = 14;
@@ -12095,7 +12095,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.EmbeddedAttributeImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getEmbeddedAttribute()
+	 * @see frameweb.impl.FrameWebPackageImpl#getEmbeddedAttribute()
 	 * @generated
 	 */
 	int EMBEDDED_ATTRIBUTE = 15;
@@ -13005,7 +13005,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DecimalAttributeImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDecimalAttribute()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDecimalAttribute()
 	 * @generated
 	 */
 	int DECIMAL_ATTRIBUTE = 16;
@@ -13933,7 +13933,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DateTimeAttributeImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDateTimeAttribute()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDateTimeAttribute()
 	 * @generated
 	 */
 	int DATE_TIME_ATTRIBUTE = 17;
@@ -14852,7 +14852,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.NavigationClassImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getNavigationClass()
+	 * @see frameweb.impl.FrameWebPackageImpl#getNavigationClass()
 	 * @generated
 	 */
 	int NAVIGATION_CLASS = 52;
@@ -15798,7 +15798,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.PageImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getPage()
+	 * @see frameweb.impl.FrameWebPackageImpl#getPage()
 	 * @generated
 	 */
 	int PAGE = 18;
@@ -16771,7 +16771,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.TemplateImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getTemplate()
+	 * @see frameweb.impl.FrameWebPackageImpl#getTemplate()
 	 * @generated
 	 */
 	int TEMPLATE = 19;
@@ -17726,7 +17726,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FormImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getForm()
+	 * @see frameweb.impl.FrameWebPackageImpl#getForm()
 	 * @generated
 	 */
 	int FORM = 20;
@@ -18690,7 +18690,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.BinaryImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getBinary()
+	 * @see frameweb.impl.FrameWebPackageImpl#getBinary()
 	 * @generated
 	 */
 	int BINARY = 21;
@@ -19645,7 +19645,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOInterfaceImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDAOInterface()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDAOInterface()
 	 * @generated
 	 */
 	int DAO_INTERFACE = 22;
@@ -20501,7 +20501,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOClassImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDAOClass()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDAOClass()
 	 * @generated
 	 */
 	int DAO_CLASS = 23;
@@ -21483,7 +21483,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOGeneralizationImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDAOGeneralization()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDAOGeneralization()
 	 * @generated
 	 */
 	int DAO_GENERALIZATION = 24;
@@ -21664,7 +21664,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrontControllerClassImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getFrontControllerClass()
+	 * @see frameweb.impl.FrameWebPackageImpl#getFrontControllerClass()
 	 * @generated
 	 */
 	int FRONT_CONTROLLER_CLASS = 25;
@@ -21710,7 +21710,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.NavigationAttributeImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getNavigationAttribute()
+	 * @see frameweb.impl.FrameWebPackageImpl#getNavigationAttribute()
 	 * @generated
 	 */
 	int NAVIGATION_ATTRIBUTE = 51;
@@ -22584,7 +22584,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.UserViewAttributeImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getUserViewAttribute()
+	 * @see frameweb.impl.FrameWebPackageImpl#getUserViewAttribute()
 	 * @generated
 	 */
 	int USER_VIEW_ATTRIBUTE = 26;
@@ -23458,7 +23458,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.IOParameterImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getIOParameter()
+	 * @see frameweb.impl.FrameWebPackageImpl#getIOParameter()
 	 * @generated
 	 */
 	int IO_PARAMETER = 27;
@@ -24341,7 +24341,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOBaseOperationImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDAOBaseOperation()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDAOBaseOperation()
 	 * @generated
 	 */
 	int DAO_BASE_OPERATION = 28;
@@ -24378,7 +24378,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.NavigationDependencyImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getNavigationDependency()
+	 * @see frameweb.impl.FrameWebPackageImpl#getNavigationDependency()
 	 * @generated
 	 */
 	int NAVIGATION_DEPENDENCY = 58;
@@ -24685,7 +24685,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ResultDependencyImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getResultDependency()
+	 * @see frameweb.impl.FrameWebPackageImpl#getResultDependency()
 	 * @generated
 	 */
 	int RESULT_DEPENDENCY = 29;
@@ -25091,7 +25091,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.NavigationCompositionImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getNavigationComposition()
+	 * @see frameweb.impl.FrameWebPackageImpl#getNavigationComposition()
 	 * @generated
 	 */
 	int NAVIGATION_COMPOSITION = 30;
@@ -25992,7 +25992,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrontControllerMethodImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getFrontControllerMethod()
+	 * @see frameweb.impl.FrameWebPackageImpl#getFrontControllerMethod()
 	 * @generated
 	 */
 	int FRONT_CONTROLLER_METHOD = 31;
@@ -26749,7 +26749,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.NamingMethodImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getNamingMethod()
+	 * @see frameweb.impl.FrameWebPackageImpl#getNamingMethod()
 	 * @generated
 	 */
 	int NAMING_METHOD = 32;
@@ -26786,7 +26786,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ServiceClassImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getServiceClass()
+	 * @see frameweb.impl.FrameWebPackageImpl#getServiceClass()
 	 * @generated
 	 */
 	int SERVICE_CLASS = 33;
@@ -27750,7 +27750,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ServiceInterfaceImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getServiceInterface()
+	 * @see frameweb.impl.FrameWebPackageImpl#getServiceInterface()
 	 * @generated
 	 */
 	int SERVICE_INTERFACE = 34;
@@ -28588,7 +28588,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ServiceGeneralizationImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getServiceGeneralization()
+	 * @see frameweb.impl.FrameWebPackageImpl#getServiceGeneralization()
 	 * @generated
 	 */
 	int SERVICE_GENERALIZATION = 35;
@@ -28769,7 +28769,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ServiceAssociationImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getServiceAssociation()
+	 * @see frameweb.impl.FrameWebPackageImpl#getServiceAssociation()
 	 * @generated
 	 */
 	int SERVICE_ASSOCIATION = 57;
@@ -29625,7 +29625,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ServiceNavigationAssociationImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getServiceNavigationAssociation()
+	 * @see frameweb.impl.FrameWebPackageImpl#getServiceNavigationAssociation()
 	 * @generated
 	 */
 	int SERVICE_NAVIGATION_ASSOCIATION = 36;
@@ -30495,17 +30495,17 @@ public interface framewebPackage extends EPackage {
 	int SERVICE_NAVIGATION_ASSOCIATION_OPERATION_COUNT = SERVICE_ASSOCIATION_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link frameweb.impl.FrameWebNameImpl <em>Frame Web Name</em>}' class.
+	 * The meta object id for the '{@link frameweb.impl.FrameWebNameImpl <em>Name</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrameWebNameImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getFrameWebName()
+	 * @see frameweb.impl.FrameWebPackageImpl#getFrameWebName()
 	 * @generated
 	 */
 	int FRAME_WEB_NAME = 38;
 
 	/**
-	 * The number of structural features of the '<em>Frame Web Name</em>' class.
+	 * The number of structural features of the '<em>Name</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -30514,7 +30514,7 @@ public interface framewebPackage extends EPackage {
 	int FRAME_WEB_NAME_FEATURE_COUNT = 0;
 
 	/**
-	 * The number of operations of the '<em>Frame Web Name</em>' class.
+	 * The number of operations of the '<em>Name</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -30527,7 +30527,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.BinaryAttributeImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getBinaryAttribute()
+	 * @see frameweb.impl.FrameWebPackageImpl#getBinaryAttribute()
 	 * @generated
 	 */
 	int BINARY_ATTRIBUTE = 39;
@@ -31401,7 +31401,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ConstantNameImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getConstantName()
+	 * @see frameweb.impl.FrameWebPackageImpl#getConstantName()
 	 * @generated
 	 */
 	int CONSTANT_NAME = 40;
@@ -31438,7 +31438,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainTableNameImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDomainTableName()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDomainTableName()
 	 * @generated
 	 */
 	int DOMAIN_TABLE_NAME = 41;
@@ -31484,7 +31484,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrameWorkNameImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getFrameWorkName()
+	 * @see frameweb.impl.FrameWebPackageImpl#getFrameWorkName()
 	 * @generated
 	 */
 	int FRAME_WORK_NAME = 42;
@@ -31512,7 +31512,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainColumnNameImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDomainColumnName()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDomainColumnName()
 	 * @generated
 	 */
 	int DOMAIN_COLUMN_NAME = 43;
@@ -31558,7 +31558,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOInterfaceNameImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDAOInterfaceName()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDAOInterfaceName()
 	 * @generated
 	 */
 	int DAO_INTERFACE_NAME = 44;
@@ -31613,7 +31613,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOClassNameImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDAOClassName()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDAOClassName()
 	 * @generated
 	 */
 	int DAO_CLASS_NAME = 45;
@@ -31677,7 +31677,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ResultImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getResult()
+	 * @see frameweb.impl.FrameWebPackageImpl#getResult()
 	 * @generated
 	 */
 	int RESULT = 46;
@@ -31705,7 +31705,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrontControllerDependenceImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getFrontControllerDependence()
+	 * @see frameweb.impl.FrameWebPackageImpl#getFrontControllerDependence()
 	 * @generated
 	 */
 	int FRONT_CONTROLLER_DEPENDENCE = 47;
@@ -32075,7 +32075,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.PageDependenceImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getPageDependence()
+	 * @see frameweb.impl.FrameWebPackageImpl#getPageDependence()
 	 * @generated
 	 */
 	int PAGE_DEPENDENCE = 48;
@@ -32418,7 +32418,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ChainingDependenceImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getChainingDependence()
+	 * @see frameweb.impl.FrameWebPackageImpl#getChainingDependence()
 	 * @generated
 	 */
 	int CHAINING_DEPENDENCE = 49;
@@ -32761,7 +32761,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOServiceAssociationImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDAOServiceAssociation()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDAOServiceAssociation()
 	 * @generated
 	 */
 	int DAO_SERVICE_ASSOCIATION = 50;
@@ -33635,7 +33635,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainOperationImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDomainOperation()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDomainOperation()
 	 * @generated
 	 */
 	int DOMAIN_OPERATION = 53;
@@ -34383,7 +34383,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOAttributeImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDAOAttribute()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDAOAttribute()
 	 * @generated
 	 */
 	int DAO_ATTRIBUTE = 54;
@@ -35257,7 +35257,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ServiceOperationImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getServiceOperation()
+	 * @see frameweb.impl.FrameWebPackageImpl#getServiceOperation()
 	 * @generated
 	 */
 	int SERVICE_OPERATION = 55;
@@ -36005,7 +36005,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ServiceAttributeImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getServiceAttribute()
+	 * @see frameweb.impl.FrameWebPackageImpl#getServiceAttribute()
 	 * @generated
 	 */
 	int SERVICE_ATTRIBUTE = 56;
@@ -36879,7 +36879,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DAOOperationImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDAOOperation()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDAOOperation()
 	 * @generated
 	 */
 	int DAO_OPERATION = 59;
@@ -37627,7 +37627,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainPackageImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDomainPackage()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDomainPackage()
 	 * @generated
 	 */
 	int DOMAIN_PACKAGE = 60;
@@ -38195,7 +38195,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.NavigationPackageImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getNavigationPackage()
+	 * @see frameweb.impl.FrameWebPackageImpl#getNavigationPackage()
 	 * @generated
 	 */
 	int NAVIGATION_PACKAGE = 67;
@@ -38754,7 +38754,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ViewPackageImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getViewPackage()
+	 * @see frameweb.impl.FrameWebPackageImpl#getViewPackage()
 	 * @generated
 	 */
 	int VIEW_PACKAGE = 61;
@@ -39322,7 +39322,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ControllerPackageImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getControllerPackage()
+	 * @see frameweb.impl.FrameWebPackageImpl#getControllerPackage()
 	 * @generated
 	 */
 	int CONTROLLER_PACKAGE = 62;
@@ -39890,7 +39890,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.PersistencePackageImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getPersistencePackage()
+	 * @see frameweb.impl.FrameWebPackageImpl#getPersistencePackage()
 	 * @generated
 	 */
 	int PERSISTENCE_PACKAGE = 63;
@@ -40467,7 +40467,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ApplicationPackageImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getApplicationPackage()
+	 * @see frameweb.impl.FrameWebPackageImpl#getApplicationPackage()
 	 * @generated
 	 */
 	int APPLICATION_PACKAGE = 64;
@@ -41044,7 +41044,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ComponentImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getComponent()
+	 * @see frameweb.impl.FrameWebPackageImpl#getComponent()
 	 * @generated
 	 */
 	int COMPONENT = 65;
@@ -41990,7 +41990,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.ResultTypeImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getResultType()
+	 * @see frameweb.impl.FrameWebPackageImpl#getResultType()
 	 * @generated
 	 */
 	int RESULT_TYPE = 66;
@@ -42018,7 +42018,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.DomainGeneralizationImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getDomainGeneralization()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDomainGeneralization()
 	 * @generated
 	 */
 	int DOMAIN_GENERALIZATION = 68;
@@ -42208,7 +42208,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.JQueryImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getJQuery()
+	 * @see frameweb.impl.FrameWebPackageImpl#getJQuery()
 	 * @generated
 	 */
 	int JQUERY = 69;
@@ -43154,7 +43154,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FormComponentImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getFormComponent()
+	 * @see frameweb.impl.FrameWebPackageImpl#getFormComponent()
 	 * @generated
 	 */
 	int FORM_COMPONENT = 70;
@@ -44046,7 +44046,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.TagLibImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getTagLib()
+	 * @see frameweb.impl.FrameWebPackageImpl#getTagLib()
 	 * @generated
 	 */
 	int TAG_LIB = 71;
@@ -44083,7 +44083,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.TagImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getTag()
+	 * @see frameweb.impl.FrameWebPackageImpl#getTag()
 	 * @generated
 	 */
 	int TAG = 74;
@@ -44120,7 +44120,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.FrameworkTagImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getFrameworkTag()
+	 * @see frameweb.impl.FrameWebPackageImpl#getFrameworkTag()
 	 * @generated
 	 */
 	int FRAMEWORK_TAG = 72;
@@ -44157,7 +44157,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.RuleImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getRule()
+	 * @see frameweb.impl.FrameWebPackageImpl#getRule()
 	 * @generated
 	 */
 	int RULE = 73;
@@ -44185,7 +44185,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.Talvez_MethodImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getTalvez_Method()
+	 * @see frameweb.impl.FrameWebPackageImpl#getTalvez_Method()
 	 * @generated
 	 */
 	int TALVEZ_METHOD = 75;
@@ -44213,7 +44213,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.impl.AnotationImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getAnotation()
+	 * @see frameweb.impl.FrameWebPackageImpl#getAnotation()
 	 * @generated
 	 */
 	int ANOTATION = 76;
@@ -44241,7 +44241,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.DateTimePrecision
-	 * @see frameweb.impl.FramewebPackageImpl#getDateTimePrecision()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDateTimePrecision()
 	 * @generated
 	 */
 	int DATE_TIME_PRECISION = 77;
@@ -44251,7 +44251,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.Generation
-	 * @see frameweb.impl.FramewebPackageImpl#getGeneration()
+	 * @see frameweb.impl.FrameWebPackageImpl#getGeneration()
 	 * @generated
 	 */
 	int GENERATION = 78;
@@ -44261,7 +44261,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.Collection
-	 * @see frameweb.impl.FramewebPackageImpl#getCollection()
+	 * @see frameweb.impl.FrameWebPackageImpl#getCollection()
 	 * @generated
 	 */
 	int COLLECTION = 79;
@@ -44271,7 +44271,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.Order
-	 * @see frameweb.impl.FramewebPackageImpl#getOrder()
+	 * @see frameweb.impl.FrameWebPackageImpl#getOrder()
 	 * @generated
 	 */
 	int ORDER = 80;
@@ -44281,7 +44281,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.Cascade
-	 * @see frameweb.impl.FramewebPackageImpl#getCascade()
+	 * @see frameweb.impl.FrameWebPackageImpl#getCascade()
 	 * @generated
 	 */
 	int CASCADE = 81;
@@ -44291,7 +44291,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.Fetch
-	 * @see frameweb.impl.FramewebPackageImpl#getFetch()
+	 * @see frameweb.impl.FrameWebPackageImpl#getFetch()
 	 * @generated
 	 */
 	int FETCH = 82;
@@ -44301,7 +44301,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.DAOBaseOperationList
-	 * @see frameweb.impl.FramewebPackageImpl#getDAOBaseOperationList()
+	 * @see frameweb.impl.FrameWebPackageImpl#getDAOBaseOperationList()
 	 * @generated
 	 */
 	int DAO_BASE_OPERATION_LIST = 83;
@@ -44311,7 +44311,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.FrameworkCategoryList
-	 * @see frameweb.impl.FramewebPackageImpl#getFrameworkCategoryList()
+	 * @see frameweb.impl.FrameWebPackageImpl#getFrameworkCategoryList()
 	 * @generated
 	 */
 	int FRAMEWORK_CATEGORY_LIST = 84;
@@ -44321,7 +44321,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.ConstantNameList
-	 * @see frameweb.impl.FramewebPackageImpl#getConstantNameList()
+	 * @see frameweb.impl.FrameWebPackageImpl#getConstantNameList()
 	 * @generated
 	 */
 	int CONSTANT_NAME_LIST = 85;
@@ -44331,7 +44331,7 @@ public interface framewebPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see frameweb.InheritanceMapping
-	 * @see frameweb.impl.FramewebPackageImpl#getInheritanceMapping()
+	 * @see frameweb.impl.FrameWebPackageImpl#getInheritanceMapping()
 	 * @generated
 	 */
 	int INHERITANCE_MAPPING = 86;
@@ -44411,10 +44411,10 @@ public interface framewebPackage extends EPackage {
 	EReference getFrameWeb_Uses();
 
 	/**
-	 * Returns the meta object for class '{@link frameweb.FrameWebModel <em>Frame Web Model</em>}'.
+	 * Returns the meta object for class '{@link frameweb.FrameWebModel <em>Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Frame Web Model</em>'.
+	 * @return the meta object for class '<em>Model</em>'.
 	 * @see frameweb.FrameWebModel
 	 * @generated
 	 */
@@ -45576,10 +45576,10 @@ public interface framewebPackage extends EPackage {
 	EReference getDomainClass_DomainClassOperation();
 
 	/**
-	 * Returns the meta object for class '{@link frameweb.FrameWebName <em>Frame Web Name</em>}'.
+	 * Returns the meta object for class '{@link frameweb.FrameWebName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Frame Web Name</em>'.
+	 * @return the meta object for class '<em>Name</em>'.
 	 * @see frameweb.FrameWebName
 	 * @generated
 	 */
@@ -46490,7 +46490,7 @@ public interface framewebPackage extends EPackage {
 	 * @return the factory that creates the instances of the model.
 	 * @generated
 	 */
-	FramewebFactory getframewebFactory();
+	FrameWebFactory getFrameWebFactory();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -46511,7 +46511,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.MappedClassImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getMappedClass()
+		 * @see frameweb.impl.FrameWebPackageImpl#getMappedClass()
 		 * @generated
 		 */
 		EClass MAPPED_CLASS = eINSTANCE.getMappedClass();
@@ -46521,7 +46521,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.PersistentClassImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getPersistentClass()
+		 * @see frameweb.impl.FrameWebPackageImpl#getPersistentClass()
 		 * @generated
 		 */
 		EClass PERSISTENT_CLASS = eINSTANCE.getPersistentClass();
@@ -46539,7 +46539,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.TransientClassImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getTransientClass()
+		 * @see frameweb.impl.FrameWebPackageImpl#getTransientClass()
 		 * @generated
 		 */
 		EClass TRANSIENT_CLASS = eINSTANCE.getTransientClass();
@@ -46549,7 +46549,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrameWebImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getFrameWeb()
+		 * @see frameweb.impl.FrameWebPackageImpl#getFrameWeb()
 		 * @generated
 		 */
 		EClass FRAME_WEB = eINSTANCE.getFrameWeb();
@@ -46571,11 +46571,11 @@ public interface framewebPackage extends EPackage {
 		EReference FRAME_WEB__USES = eINSTANCE.getFrameWeb_Uses();
 
 		/**
-		 * The meta object literal for the '{@link frameweb.impl.FrameWebModelImpl <em>Frame Web Model</em>}' class.
+		 * The meta object literal for the '{@link frameweb.impl.FrameWebModelImpl <em>Model</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrameWebModelImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getFrameWebModel()
+		 * @see frameweb.impl.FrameWebPackageImpl#getFrameWebModel()
 		 * @generated
 		 */
 		EClass FRAME_WEB_MODEL = eINSTANCE.getFrameWebModel();
@@ -46593,7 +46593,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrameworkImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getFramework()
+		 * @see frameweb.impl.FrameWebPackageImpl#getFramework()
 		 * @generated
 		 */
 		EClass FRAMEWORK = eINSTANCE.getFramework();
@@ -46635,7 +46635,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainModelImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDomainModel()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDomainModel()
 		 * @generated
 		 */
 		EClass DOMAIN_MODEL = eINSTANCE.getDomainModel();
@@ -46653,7 +46653,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.NavigationModelImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getNavigationModel()
+		 * @see frameweb.impl.FrameWebPackageImpl#getNavigationModel()
 		 * @generated
 		 */
 		EClass NAVIGATION_MODEL = eINSTANCE.getNavigationModel();
@@ -46695,7 +46695,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ApplicationModelImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getApplicationModel()
+		 * @see frameweb.impl.FrameWebPackageImpl#getApplicationModel()
 		 * @generated
 		 */
 		EClass APPLICATION_MODEL = eINSTANCE.getApplicationModel();
@@ -46721,7 +46721,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.PersistenceModelImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getPersistenceModel()
+		 * @see frameweb.impl.FrameWebPackageImpl#getPersistenceModel()
 		 * @generated
 		 */
 		EClass PERSISTENCE_MODEL = eINSTANCE.getPersistenceModel();
@@ -46739,7 +46739,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainAssociationImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDomainAssociation()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDomainAssociation()
 		 * @generated
 		 */
 		EClass DOMAIN_ASSOCIATION = eINSTANCE.getDomainAssociation();
@@ -46797,7 +46797,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainAttributeImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDomainAttribute()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDomainAttribute()
 		 * @generated
 		 */
 		EClass DOMAIN_ATTRIBUTE = eINSTANCE.getDomainAttribute();
@@ -46839,7 +46839,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.VersionAttributeImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getVersionAttribute()
+		 * @see frameweb.impl.FrameWebPackageImpl#getVersionAttribute()
 		 * @generated
 		 */
 		EClass VERSION_ATTRIBUTE = eINSTANCE.getVersionAttribute();
@@ -46849,7 +46849,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.IdAttributeImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getIdAttribute()
+		 * @see frameweb.impl.FrameWebPackageImpl#getIdAttribute()
 		 * @generated
 		 */
 		EClass ID_ATTRIBUTE = eINSTANCE.getIdAttribute();
@@ -46867,7 +46867,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.LOBAttributeImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getLOBAttribute()
+		 * @see frameweb.impl.FrameWebPackageImpl#getLOBAttribute()
 		 * @generated
 		 */
 		EClass LOB_ATTRIBUTE = eINSTANCE.getLOBAttribute();
@@ -46877,7 +46877,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.EmbeddedAttributeImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getEmbeddedAttribute()
+		 * @see frameweb.impl.FrameWebPackageImpl#getEmbeddedAttribute()
 		 * @generated
 		 */
 		EClass EMBEDDED_ATTRIBUTE = eINSTANCE.getEmbeddedAttribute();
@@ -46887,7 +46887,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DecimalAttributeImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDecimalAttribute()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDecimalAttribute()
 		 * @generated
 		 */
 		EClass DECIMAL_ATTRIBUTE = eINSTANCE.getDecimalAttribute();
@@ -46913,7 +46913,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DateTimeAttributeImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDateTimeAttribute()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDateTimeAttribute()
 		 * @generated
 		 */
 		EClass DATE_TIME_ATTRIBUTE = eINSTANCE.getDateTimeAttribute();
@@ -46931,7 +46931,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.PageImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getPage()
+		 * @see frameweb.impl.FrameWebPackageImpl#getPage()
 		 * @generated
 		 */
 		EClass PAGE = eINSTANCE.getPage();
@@ -46965,7 +46965,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.TemplateImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getTemplate()
+		 * @see frameweb.impl.FrameWebPackageImpl#getTemplate()
 		 * @generated
 		 */
 		EClass TEMPLATE = eINSTANCE.getTemplate();
@@ -46983,7 +46983,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FormImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getForm()
+		 * @see frameweb.impl.FrameWebPackageImpl#getForm()
 		 * @generated
 		 */
 		EClass FORM = eINSTANCE.getForm();
@@ -47001,7 +47001,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.BinaryImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getBinary()
+		 * @see frameweb.impl.FrameWebPackageImpl#getBinary()
 		 * @generated
 		 */
 		EClass BINARY = eINSTANCE.getBinary();
@@ -47019,7 +47019,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOInterfaceImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDAOInterface()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDAOInterface()
 		 * @generated
 		 */
 		EClass DAO_INTERFACE = eINSTANCE.getDAOInterface();
@@ -47061,7 +47061,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOClassImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDAOClass()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDAOClass()
 		 * @generated
 		 */
 		EClass DAO_CLASS = eINSTANCE.getDAOClass();
@@ -47103,7 +47103,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOGeneralizationImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDAOGeneralization()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDAOGeneralization()
 		 * @generated
 		 */
 		EClass DAO_GENERALIZATION = eINSTANCE.getDAOGeneralization();
@@ -47129,7 +47129,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrontControllerClassImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getFrontControllerClass()
+		 * @see frameweb.impl.FrameWebPackageImpl#getFrontControllerClass()
 		 * @generated
 		 */
 		EClass FRONT_CONTROLLER_CLASS = eINSTANCE.getFrontControllerClass();
@@ -47155,7 +47155,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.UserViewAttributeImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getUserViewAttribute()
+		 * @see frameweb.impl.FrameWebPackageImpl#getUserViewAttribute()
 		 * @generated
 		 */
 		EClass USER_VIEW_ATTRIBUTE = eINSTANCE.getUserViewAttribute();
@@ -47165,7 +47165,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.IOParameterImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getIOParameter()
+		 * @see frameweb.impl.FrameWebPackageImpl#getIOParameter()
 		 * @generated
 		 */
 		EClass IO_PARAMETER = eINSTANCE.getIOParameter();
@@ -47183,7 +47183,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOBaseOperationImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDAOBaseOperation()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDAOBaseOperation()
 		 * @generated
 		 */
 		EClass DAO_BASE_OPERATION = eINSTANCE.getDAOBaseOperation();
@@ -47201,7 +47201,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ResultDependencyImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getResultDependency()
+		 * @see frameweb.impl.FrameWebPackageImpl#getResultDependency()
 		 * @generated
 		 */
 		EClass RESULT_DEPENDENCY = eINSTANCE.getResultDependency();
@@ -47299,7 +47299,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.NavigationCompositionImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getNavigationComposition()
+		 * @see frameweb.impl.FrameWebPackageImpl#getNavigationComposition()
 		 * @generated
 		 */
 		EClass NAVIGATION_COMPOSITION = eINSTANCE.getNavigationComposition();
@@ -47349,7 +47349,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrontControllerMethodImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getFrontControllerMethod()
+		 * @see frameweb.impl.FrameWebPackageImpl#getFrontControllerMethod()
 		 * @generated
 		 */
 		EClass FRONT_CONTROLLER_METHOD = eINSTANCE.getFrontControllerMethod();
@@ -47367,7 +47367,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.NamingMethodImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getNamingMethod()
+		 * @see frameweb.impl.FrameWebPackageImpl#getNamingMethod()
 		 * @generated
 		 */
 		EClass NAMING_METHOD = eINSTANCE.getNamingMethod();
@@ -47385,7 +47385,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ServiceClassImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getServiceClass()
+		 * @see frameweb.impl.FrameWebPackageImpl#getServiceClass()
 		 * @generated
 		 */
 		EClass SERVICE_CLASS = eINSTANCE.getServiceClass();
@@ -47411,7 +47411,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ServiceInterfaceImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getServiceInterface()
+		 * @see frameweb.impl.FrameWebPackageImpl#getServiceInterface()
 		 * @generated
 		 */
 		EClass SERVICE_INTERFACE = eINSTANCE.getServiceInterface();
@@ -47437,7 +47437,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ServiceGeneralizationImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getServiceGeneralization()
+		 * @see frameweb.impl.FrameWebPackageImpl#getServiceGeneralization()
 		 * @generated
 		 */
 		EClass SERVICE_GENERALIZATION = eINSTANCE.getServiceGeneralization();
@@ -47463,7 +47463,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ServiceNavigationAssociationImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getServiceNavigationAssociation()
+		 * @see frameweb.impl.FrameWebPackageImpl#getServiceNavigationAssociation()
 		 * @generated
 		 */
 		EClass SERVICE_NAVIGATION_ASSOCIATION = eINSTANCE.getServiceNavigationAssociation();
@@ -47489,7 +47489,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainClassImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDomainClass()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDomainClass()
 		 * @generated
 		 */
 		EClass DOMAIN_CLASS = eINSTANCE.getDomainClass();
@@ -47511,11 +47511,11 @@ public interface framewebPackage extends EPackage {
 		EReference DOMAIN_CLASS__DOMAIN_CLASS_OPERATION = eINSTANCE.getDomainClass_DomainClassOperation();
 
 		/**
-		 * The meta object literal for the '{@link frameweb.impl.FrameWebNameImpl <em>Frame Web Name</em>}' class.
+		 * The meta object literal for the '{@link frameweb.impl.FrameWebNameImpl <em>Name</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrameWebNameImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getFrameWebName()
+		 * @see frameweb.impl.FrameWebPackageImpl#getFrameWebName()
 		 * @generated
 		 */
 		EClass FRAME_WEB_NAME = eINSTANCE.getFrameWebName();
@@ -47525,7 +47525,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.BinaryAttributeImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getBinaryAttribute()
+		 * @see frameweb.impl.FrameWebPackageImpl#getBinaryAttribute()
 		 * @generated
 		 */
 		EClass BINARY_ATTRIBUTE = eINSTANCE.getBinaryAttribute();
@@ -47535,7 +47535,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ConstantNameImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getConstantName()
+		 * @see frameweb.impl.FrameWebPackageImpl#getConstantName()
 		 * @generated
 		 */
 		EClass CONSTANT_NAME = eINSTANCE.getConstantName();
@@ -47553,7 +47553,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainTableNameImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDomainTableName()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDomainTableName()
 		 * @generated
 		 */
 		EClass DOMAIN_TABLE_NAME = eINSTANCE.getDomainTableName();
@@ -47579,7 +47579,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrameWorkNameImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getFrameWorkName()
+		 * @see frameweb.impl.FrameWebPackageImpl#getFrameWorkName()
 		 * @generated
 		 */
 		EClass FRAME_WORK_NAME = eINSTANCE.getFrameWorkName();
@@ -47589,7 +47589,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainColumnNameImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDomainColumnName()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDomainColumnName()
 		 * @generated
 		 */
 		EClass DOMAIN_COLUMN_NAME = eINSTANCE.getDomainColumnName();
@@ -47615,7 +47615,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOInterfaceNameImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDAOInterfaceName()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDAOInterfaceName()
 		 * @generated
 		 */
 		EClass DAO_INTERFACE_NAME = eINSTANCE.getDAOInterfaceName();
@@ -47641,7 +47641,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOClassNameImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDAOClassName()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDAOClassName()
 		 * @generated
 		 */
 		EClass DAO_CLASS_NAME = eINSTANCE.getDAOClassName();
@@ -47659,7 +47659,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ResultImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getResult()
+		 * @see frameweb.impl.FrameWebPackageImpl#getResult()
 		 * @generated
 		 */
 		EClass RESULT = eINSTANCE.getResult();
@@ -47669,7 +47669,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrontControllerDependenceImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getFrontControllerDependence()
+		 * @see frameweb.impl.FrameWebPackageImpl#getFrontControllerDependence()
 		 * @generated
 		 */
 		EClass FRONT_CONTROLLER_DEPENDENCE = eINSTANCE.getFrontControllerDependence();
@@ -47735,7 +47735,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.PageDependenceImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getPageDependence()
+		 * @see frameweb.impl.FrameWebPackageImpl#getPageDependence()
 		 * @generated
 		 */
 		EClass PAGE_DEPENDENCE = eINSTANCE.getPageDependence();
@@ -47777,7 +47777,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ChainingDependenceImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getChainingDependence()
+		 * @see frameweb.impl.FrameWebPackageImpl#getChainingDependence()
 		 * @generated
 		 */
 		EClass CHAINING_DEPENDENCE = eINSTANCE.getChainingDependence();
@@ -47819,7 +47819,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOServiceAssociationImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDAOServiceAssociation()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDAOServiceAssociation()
 		 * @generated
 		 */
 		EClass DAO_SERVICE_ASSOCIATION = eINSTANCE.getDAOServiceAssociation();
@@ -47845,7 +47845,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.NavigationAttributeImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getNavigationAttribute()
+		 * @see frameweb.impl.FrameWebPackageImpl#getNavigationAttribute()
 		 * @generated
 		 */
 		EClass NAVIGATION_ATTRIBUTE = eINSTANCE.getNavigationAttribute();
@@ -47855,7 +47855,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.NavigationClassImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getNavigationClass()
+		 * @see frameweb.impl.FrameWebPackageImpl#getNavigationClass()
 		 * @generated
 		 */
 		EClass NAVIGATION_CLASS = eINSTANCE.getNavigationClass();
@@ -47865,7 +47865,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainOperationImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDomainOperation()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDomainOperation()
 		 * @generated
 		 */
 		EClass DOMAIN_OPERATION = eINSTANCE.getDomainOperation();
@@ -47875,7 +47875,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOAttributeImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDAOAttribute()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDAOAttribute()
 		 * @generated
 		 */
 		EClass DAO_ATTRIBUTE = eINSTANCE.getDAOAttribute();
@@ -47885,7 +47885,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ServiceOperationImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getServiceOperation()
+		 * @see frameweb.impl.FrameWebPackageImpl#getServiceOperation()
 		 * @generated
 		 */
 		EClass SERVICE_OPERATION = eINSTANCE.getServiceOperation();
@@ -47895,7 +47895,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ServiceAttributeImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getServiceAttribute()
+		 * @see frameweb.impl.FrameWebPackageImpl#getServiceAttribute()
 		 * @generated
 		 */
 		EClass SERVICE_ATTRIBUTE = eINSTANCE.getServiceAttribute();
@@ -47905,7 +47905,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ServiceAssociationImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getServiceAssociation()
+		 * @see frameweb.impl.FrameWebPackageImpl#getServiceAssociation()
 		 * @generated
 		 */
 		EClass SERVICE_ASSOCIATION = eINSTANCE.getServiceAssociation();
@@ -47915,7 +47915,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.NavigationDependencyImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getNavigationDependency()
+		 * @see frameweb.impl.FrameWebPackageImpl#getNavigationDependency()
 		 * @generated
 		 */
 		EClass NAVIGATION_DEPENDENCY = eINSTANCE.getNavigationDependency();
@@ -47925,7 +47925,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DAOOperationImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDAOOperation()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDAOOperation()
 		 * @generated
 		 */
 		EClass DAO_OPERATION = eINSTANCE.getDAOOperation();
@@ -47935,7 +47935,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainPackageImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDomainPackage()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDomainPackage()
 		 * @generated
 		 */
 		EClass DOMAIN_PACKAGE = eINSTANCE.getDomainPackage();
@@ -47953,7 +47953,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ViewPackageImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getViewPackage()
+		 * @see frameweb.impl.FrameWebPackageImpl#getViewPackage()
 		 * @generated
 		 */
 		EClass VIEW_PACKAGE = eINSTANCE.getViewPackage();
@@ -47971,7 +47971,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ControllerPackageImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getControllerPackage()
+		 * @see frameweb.impl.FrameWebPackageImpl#getControllerPackage()
 		 * @generated
 		 */
 		EClass CONTROLLER_PACKAGE = eINSTANCE.getControllerPackage();
@@ -47989,7 +47989,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.PersistencePackageImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getPersistencePackage()
+		 * @see frameweb.impl.FrameWebPackageImpl#getPersistencePackage()
 		 * @generated
 		 */
 		EClass PERSISTENCE_PACKAGE = eINSTANCE.getPersistencePackage();
@@ -48015,7 +48015,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ApplicationPackageImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getApplicationPackage()
+		 * @see frameweb.impl.FrameWebPackageImpl#getApplicationPackage()
 		 * @generated
 		 */
 		EClass APPLICATION_PACKAGE = eINSTANCE.getApplicationPackage();
@@ -48041,7 +48041,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ComponentImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getComponent()
+		 * @see frameweb.impl.FrameWebPackageImpl#getComponent()
 		 * @generated
 		 */
 		EClass COMPONENT = eINSTANCE.getComponent();
@@ -48051,7 +48051,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.ResultTypeImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getResultType()
+		 * @see frameweb.impl.FrameWebPackageImpl#getResultType()
 		 * @generated
 		 */
 		EClass RESULT_TYPE = eINSTANCE.getResultType();
@@ -48061,7 +48061,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.NavigationPackageImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getNavigationPackage()
+		 * @see frameweb.impl.FrameWebPackageImpl#getNavigationPackage()
 		 * @generated
 		 */
 		EClass NAVIGATION_PACKAGE = eINSTANCE.getNavigationPackage();
@@ -48071,7 +48071,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.DomainGeneralizationImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getDomainGeneralization()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDomainGeneralization()
 		 * @generated
 		 */
 		EClass DOMAIN_GENERALIZATION = eINSTANCE.getDomainGeneralization();
@@ -48105,7 +48105,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.JQueryImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getJQuery()
+		 * @see frameweb.impl.FrameWebPackageImpl#getJQuery()
 		 * @generated
 		 */
 		EClass JQUERY = eINSTANCE.getJQuery();
@@ -48115,7 +48115,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FormComponentImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getFormComponent()
+		 * @see frameweb.impl.FrameWebPackageImpl#getFormComponent()
 		 * @generated
 		 */
 		EClass FORM_COMPONENT = eINSTANCE.getFormComponent();
@@ -48133,7 +48133,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.TagLibImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getTagLib()
+		 * @see frameweb.impl.FrameWebPackageImpl#getTagLib()
 		 * @generated
 		 */
 		EClass TAG_LIB = eINSTANCE.getTagLib();
@@ -48151,7 +48151,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.FrameworkTagImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getFrameworkTag()
+		 * @see frameweb.impl.FrameWebPackageImpl#getFrameworkTag()
 		 * @generated
 		 */
 		EClass FRAMEWORK_TAG = eINSTANCE.getFrameworkTag();
@@ -48161,7 +48161,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.RuleImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getRule()
+		 * @see frameweb.impl.FrameWebPackageImpl#getRule()
 		 * @generated
 		 */
 		EClass RULE = eINSTANCE.getRule();
@@ -48171,7 +48171,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.TagImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getTag()
+		 * @see frameweb.impl.FrameWebPackageImpl#getTag()
 		 * @generated
 		 */
 		EClass TAG = eINSTANCE.getTag();
@@ -48189,7 +48189,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.Talvez_MethodImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getTalvez_Method()
+		 * @see frameweb.impl.FrameWebPackageImpl#getTalvez_Method()
 		 * @generated
 		 */
 		EClass TALVEZ_METHOD = eINSTANCE.getTalvez_Method();
@@ -48199,7 +48199,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.impl.AnotationImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getAnotation()
+		 * @see frameweb.impl.FrameWebPackageImpl#getAnotation()
 		 * @generated
 		 */
 		EClass ANOTATION = eINSTANCE.getAnotation();
@@ -48209,7 +48209,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.DateTimePrecision
-		 * @see frameweb.impl.FramewebPackageImpl#getDateTimePrecision()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDateTimePrecision()
 		 * @generated
 		 */
 		EEnum DATE_TIME_PRECISION = eINSTANCE.getDateTimePrecision();
@@ -48219,7 +48219,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.Generation
-		 * @see frameweb.impl.FramewebPackageImpl#getGeneration()
+		 * @see frameweb.impl.FrameWebPackageImpl#getGeneration()
 		 * @generated
 		 */
 		EEnum GENERATION = eINSTANCE.getGeneration();
@@ -48229,7 +48229,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.Collection
-		 * @see frameweb.impl.FramewebPackageImpl#getCollection()
+		 * @see frameweb.impl.FrameWebPackageImpl#getCollection()
 		 * @generated
 		 */
 		EEnum COLLECTION = eINSTANCE.getCollection();
@@ -48239,7 +48239,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.Order
-		 * @see frameweb.impl.FramewebPackageImpl#getOrder()
+		 * @see frameweb.impl.FrameWebPackageImpl#getOrder()
 		 * @generated
 		 */
 		EEnum ORDER = eINSTANCE.getOrder();
@@ -48249,7 +48249,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.Cascade
-		 * @see frameweb.impl.FramewebPackageImpl#getCascade()
+		 * @see frameweb.impl.FrameWebPackageImpl#getCascade()
 		 * @generated
 		 */
 		EEnum CASCADE = eINSTANCE.getCascade();
@@ -48259,7 +48259,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.Fetch
-		 * @see frameweb.impl.FramewebPackageImpl#getFetch()
+		 * @see frameweb.impl.FrameWebPackageImpl#getFetch()
 		 * @generated
 		 */
 		EEnum FETCH = eINSTANCE.getFetch();
@@ -48269,7 +48269,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.DAOBaseOperationList
-		 * @see frameweb.impl.FramewebPackageImpl#getDAOBaseOperationList()
+		 * @see frameweb.impl.FrameWebPackageImpl#getDAOBaseOperationList()
 		 * @generated
 		 */
 		EEnum DAO_BASE_OPERATION_LIST = eINSTANCE.getDAOBaseOperationList();
@@ -48279,7 +48279,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.FrameworkCategoryList
-		 * @see frameweb.impl.FramewebPackageImpl#getFrameworkCategoryList()
+		 * @see frameweb.impl.FrameWebPackageImpl#getFrameworkCategoryList()
 		 * @generated
 		 */
 		EEnum FRAMEWORK_CATEGORY_LIST = eINSTANCE.getFrameworkCategoryList();
@@ -48289,7 +48289,7 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.ConstantNameList
-		 * @see frameweb.impl.FramewebPackageImpl#getConstantNameList()
+		 * @see frameweb.impl.FrameWebPackageImpl#getConstantNameList()
 		 * @generated
 		 */
 		EEnum CONSTANT_NAME_LIST = eINSTANCE.getConstantNameList();
@@ -48299,11 +48299,11 @@ public interface framewebPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @see frameweb.InheritanceMapping
-		 * @see frameweb.impl.FramewebPackageImpl#getInheritanceMapping()
+		 * @see frameweb.impl.FrameWebPackageImpl#getInheritanceMapping()
 		 * @generated
 		 */
 		EEnum INHERITANCE_MAPPING = eINSTANCE.getInheritanceMapping();
 
 	}
 
-} //framewebPackage
+} //FrameWebPackage

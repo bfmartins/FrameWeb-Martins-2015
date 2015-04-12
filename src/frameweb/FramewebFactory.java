@@ -9,17 +9,17 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see frameweb.framewebPackage
+ * @see frameweb.FrameWebPackage
  * @generated
  */
-public interface FramewebFactory extends EFactory {
+public interface FrameWebFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	FramewebFactory eINSTANCE = frameweb.impl.framewebFactoryImpl.init();
+	FrameWebFactory eINSTANCE = frameweb.impl.FrameWebFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>Mapped Class</em>'.
@@ -840,6 +840,6 @@ public interface FramewebFactory extends EFactory {
 	 * @return the package supported by this factory.
 	 * @generated
 	 */
-	framewebPackage getframewebPackage();
+	FrameWebPackage getFrameWebPackage();
 
-} //framewebFactory
+} //FrameWebFactory

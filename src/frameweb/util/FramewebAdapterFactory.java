@@ -45,17 +45,17 @@ import uml2.TypedElement;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see frameweb.framewebPackage
+ * @see frameweb.FrameWebPackage
  * @generated
  */
-public class FramewebAdapterFactory extends AdapterFactoryImpl {
+public class FrameWebAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static framewebPackage modelPackage;
+	protected static FrameWebPackage modelPackage;
 
 	/**
 	 * Creates an instance of the adapter factory.
@@ -63,9 +63,9 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FramewebAdapterFactory() {
+	public FrameWebAdapterFactory() {
 		if (modelPackage == null) {
-			modelPackage = framewebPackage.eINSTANCE;
+			modelPackage = FrameWebPackage.eINSTANCE;
 		}
 	}
 
@@ -94,8 +94,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FramewebSwitch<Adapter> modelSwitch =
-		new FramewebSwitch<Adapter>() {
+	protected FrameWebSwitch<Adapter> modelSwitch =
+		new FrameWebSwitch<Adapter>() {
 			@Override
 			public Adapter caseMappedClass(MappedClass object) {
 				return createMappedClassAdapter();
@@ -601,7 +601,7 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.FrameWebModel <em>Frame Web Model</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.FrameWebModel <em>Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
@@ -1077,7 +1077,7 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.FrameWebName <em>Frame Web Name</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.FrameWebName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
@@ -2054,4 +2054,4 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //framewebAdapterFactory
+} //FrameWebAdapterFactory

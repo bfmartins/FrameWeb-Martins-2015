@@ -48,17 +48,17 @@ import uml2.TypedElement;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see frameweb.framewebPackage
+ * @see frameweb.FrameWebPackage
  * @generated
  */
-public class FramewebSwitch<T> extends Switch<T> {
+public class FrameWebSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static framewebPackage modelPackage;
+	protected static FrameWebPackage modelPackage;
 
 	/**
 	 * Creates an instance of the switch.
@@ -66,9 +66,9 @@ public class FramewebSwitch<T> extends Switch<T> {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FramewebSwitch() {
+	public FrameWebSwitch() {
 		if (modelPackage == null) {
-			modelPackage = framewebPackage.eINSTANCE;
+			modelPackage = FrameWebPackage.eINSTANCE;
 		}
 	}
 
@@ -95,7 +95,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case framewebPackage.MAPPED_CLASS: {
+			case FrameWebPackage.MAPPED_CLASS: {
 				MappedClass mappedClass = (MappedClass)theEObject;
 				T result = caseMappedClass(mappedClass);
 				if (result == null) result = caseDomainClass(mappedClass);
@@ -115,7 +115,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.PERSISTENT_CLASS: {
+			case FrameWebPackage.PERSISTENT_CLASS: {
 				PersistentClass persistentClass = (PersistentClass)theEObject;
 				T result = casePersistentClass(persistentClass);
 				if (result == null) result = caseDomainClass(persistentClass);
@@ -135,7 +135,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.TRANSIENT_CLASS: {
+			case FrameWebPackage.TRANSIENT_CLASS: {
 				TransientClass transientClass = (TransientClass)theEObject;
 				T result = caseTransientClass(transientClass);
 				if (result == null) result = caseDomainClass(transientClass);
@@ -155,13 +155,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.FRAME_WEB: {
+			case FrameWebPackage.FRAME_WEB: {
 				FrameWeb frameWeb = (FrameWeb)theEObject;
 				T result = caseFrameWeb(frameWeb);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.FRAME_WEB_MODEL: {
+			case FrameWebPackage.FRAME_WEB_MODEL: {
 				FrameWebModel frameWebModel = (FrameWebModel)theEObject;
 				T result = caseFrameWebModel(frameWebModel);
 				if (result == null) result = caseModel(frameWebModel);
@@ -175,7 +175,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.FRAMEWORK: {
+			case FrameWebPackage.FRAMEWORK: {
 				Framework framework = (Framework)theEObject;
 				T result = caseFramework(framework);
 				if (result == null) result = caseModel(framework);
@@ -189,7 +189,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DOMAIN_MODEL: {
+			case FrameWebPackage.DOMAIN_MODEL: {
 				DomainModel domainModel = (DomainModel)theEObject;
 				T result = caseDomainModel(domainModel);
 				if (result == null) result = caseFrameWebModel(domainModel);
@@ -204,7 +204,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.NAVIGATION_MODEL: {
+			case FrameWebPackage.NAVIGATION_MODEL: {
 				NavigationModel navigationModel = (NavigationModel)theEObject;
 				T result = caseNavigationModel(navigationModel);
 				if (result == null) result = caseFrameWebModel(navigationModel);
@@ -219,7 +219,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.APPLICATION_MODEL: {
+			case FrameWebPackage.APPLICATION_MODEL: {
 				ApplicationModel applicationModel = (ApplicationModel)theEObject;
 				T result = caseApplicationModel(applicationModel);
 				if (result == null) result = caseFrameWebModel(applicationModel);
@@ -234,7 +234,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.PERSISTENCE_MODEL: {
+			case FrameWebPackage.PERSISTENCE_MODEL: {
 				PersistenceModel persistenceModel = (PersistenceModel)theEObject;
 				T result = casePersistenceModel(persistenceModel);
 				if (result == null) result = caseFrameWebModel(persistenceModel);
@@ -249,7 +249,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DOMAIN_ASSOCIATION: {
+			case FrameWebPackage.DOMAIN_ASSOCIATION: {
 				DomainAssociation domainAssociation = (DomainAssociation)theEObject;
 				T result = caseDomainAssociation(domainAssociation);
 				if (result == null) result = caseAssociation(domainAssociation);
@@ -266,7 +266,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DOMAIN_ATTRIBUTE: {
+			case FrameWebPackage.DOMAIN_ATTRIBUTE: {
 				DomainAttribute domainAttribute = (DomainAttribute)theEObject;
 				T result = caseDomainAttribute(domainAttribute);
 				if (result == null) result = caseProperty(domainAttribute);
@@ -283,7 +283,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.VERSION_ATTRIBUTE: {
+			case FrameWebPackage.VERSION_ATTRIBUTE: {
 				VersionAttribute versionAttribute = (VersionAttribute)theEObject;
 				T result = caseVersionAttribute(versionAttribute);
 				if (result == null) result = caseDomainAttribute(versionAttribute);
@@ -301,7 +301,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.ID_ATTRIBUTE: {
+			case FrameWebPackage.ID_ATTRIBUTE: {
 				IdAttribute idAttribute = (IdAttribute)theEObject;
 				T result = caseIdAttribute(idAttribute);
 				if (result == null) result = caseDomainAttribute(idAttribute);
@@ -319,7 +319,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.LOB_ATTRIBUTE: {
+			case FrameWebPackage.LOB_ATTRIBUTE: {
 				LOBAttribute lobAttribute = (LOBAttribute)theEObject;
 				T result = caseLOBAttribute(lobAttribute);
 				if (result == null) result = caseDomainAttribute(lobAttribute);
@@ -337,7 +337,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.EMBEDDED_ATTRIBUTE: {
+			case FrameWebPackage.EMBEDDED_ATTRIBUTE: {
 				EmbeddedAttribute embeddedAttribute = (EmbeddedAttribute)theEObject;
 				T result = caseEmbeddedAttribute(embeddedAttribute);
 				if (result == null) result = caseDomainAttribute(embeddedAttribute);
@@ -355,7 +355,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DECIMAL_ATTRIBUTE: {
+			case FrameWebPackage.DECIMAL_ATTRIBUTE: {
 				DecimalAttribute decimalAttribute = (DecimalAttribute)theEObject;
 				T result = caseDecimalAttribute(decimalAttribute);
 				if (result == null) result = caseDomainAttribute(decimalAttribute);
@@ -373,7 +373,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DATE_TIME_ATTRIBUTE: {
+			case FrameWebPackage.DATE_TIME_ATTRIBUTE: {
 				DateTimeAttribute dateTimeAttribute = (DateTimeAttribute)theEObject;
 				T result = caseDateTimeAttribute(dateTimeAttribute);
 				if (result == null) result = caseDomainAttribute(dateTimeAttribute);
@@ -391,7 +391,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.PAGE: {
+			case FrameWebPackage.PAGE: {
 				Page page = (Page)theEObject;
 				T result = casePage(page);
 				if (result == null) result = caseNavigationClass(page);
@@ -411,7 +411,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.TEMPLATE: {
+			case FrameWebPackage.TEMPLATE: {
 				Template template = (Template)theEObject;
 				T result = caseTemplate(template);
 				if (result == null) result = caseNavigationClass(template);
@@ -431,7 +431,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.FORM: {
+			case FrameWebPackage.FORM: {
 				Form form = (Form)theEObject;
 				T result = caseForm(form);
 				if (result == null) result = caseNavigationClass(form);
@@ -452,7 +452,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.BINARY: {
+			case FrameWebPackage.BINARY: {
 				Binary binary = (Binary)theEObject;
 				T result = caseBinary(binary);
 				if (result == null) result = caseNavigationClass(binary);
@@ -472,7 +472,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DAO_INTERFACE: {
+			case FrameWebPackage.DAO_INTERFACE: {
 				DAOInterface daoInterface = (DAOInterface)theEObject;
 				T result = caseDAOInterface(daoInterface);
 				if (result == null) result = caseInterface(daoInterface);
@@ -488,7 +488,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DAO_CLASS: {
+			case FrameWebPackage.DAO_CLASS: {
 				DAOClass daoClass = (DAOClass)theEObject;
 				T result = caseDAOClass(daoClass);
 				if (result == null) result = caseClass(daoClass);
@@ -507,7 +507,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DAO_GENERALIZATION: {
+			case FrameWebPackage.DAO_GENERALIZATION: {
 				DAOGeneralization daoGeneralization = (DAOGeneralization)theEObject;
 				T result = caseDAOGeneralization(daoGeneralization);
 				if (result == null) result = caseGeneralization(daoGeneralization);
@@ -517,13 +517,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.FRONT_CONTROLLER_CLASS: {
+			case FrameWebPackage.FRONT_CONTROLLER_CLASS: {
 				FrontControllerClass frontControllerClass = (FrontControllerClass)theEObject;
 				T result = caseFrontControllerClass(frontControllerClass);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.USER_VIEW_ATTRIBUTE: {
+			case FrameWebPackage.USER_VIEW_ATTRIBUTE: {
 				UserViewAttribute userViewAttribute = (UserViewAttribute)theEObject;
 				T result = caseUserViewAttribute(userViewAttribute);
 				if (result == null) result = caseNavigationAttribute(userViewAttribute);
@@ -541,7 +541,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.IO_PARAMETER: {
+			case FrameWebPackage.IO_PARAMETER: {
 				IOParameter ioParameter = (IOParameter)theEObject;
 				T result = caseIOParameter(ioParameter);
 				if (result == null) result = caseNavigationAttribute(ioParameter);
@@ -559,13 +559,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DAO_BASE_OPERATION: {
+			case FrameWebPackage.DAO_BASE_OPERATION: {
 				DAOBaseOperation daoBaseOperation = (DAOBaseOperation)theEObject;
 				T result = caseDAOBaseOperation(daoBaseOperation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.RESULT_DEPENDENCY: {
+			case FrameWebPackage.RESULT_DEPENDENCY: {
 				ResultDependency resultDependency = (ResultDependency)theEObject;
 				T result = caseResultDependency(resultDependency);
 				if (result == null) result = caseNavigationDependency(resultDependency);
@@ -579,7 +579,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.NAVIGATION_COMPOSITION: {
+			case FrameWebPackage.NAVIGATION_COMPOSITION: {
 				NavigationComposition navigationComposition = (NavigationComposition)theEObject;
 				T result = caseNavigationComposition(navigationComposition);
 				if (result == null) result = caseAssociation(navigationComposition);
@@ -596,7 +596,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.FRONT_CONTROLLER_METHOD: {
+			case FrameWebPackage.FRONT_CONTROLLER_METHOD: {
 				FrontControllerMethod frontControllerMethod = (FrontControllerMethod)theEObject;
 				T result = caseFrontControllerMethod(frontControllerMethod);
 				if (result == null) result = caseOperation(frontControllerMethod);
@@ -611,13 +611,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.NAMING_METHOD: {
+			case FrameWebPackage.NAMING_METHOD: {
 				NamingMethod namingMethod = (NamingMethod)theEObject;
 				T result = caseNamingMethod(namingMethod);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.SERVICE_CLASS: {
+			case FrameWebPackage.SERVICE_CLASS: {
 				ServiceClass serviceClass = (ServiceClass)theEObject;
 				T result = caseServiceClass(serviceClass);
 				if (result == null) result = caseClass(serviceClass);
@@ -636,7 +636,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.SERVICE_INTERFACE: {
+			case FrameWebPackage.SERVICE_INTERFACE: {
 				ServiceInterface serviceInterface = (ServiceInterface)theEObject;
 				T result = caseServiceInterface(serviceInterface);
 				if (result == null) result = caseInterface(serviceInterface);
@@ -652,7 +652,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.SERVICE_GENERALIZATION: {
+			case FrameWebPackage.SERVICE_GENERALIZATION: {
 				ServiceGeneralization serviceGeneralization = (ServiceGeneralization)theEObject;
 				T result = caseServiceGeneralization(serviceGeneralization);
 				if (result == null) result = caseGeneralization(serviceGeneralization);
@@ -662,7 +662,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.SERVICE_NAVIGATION_ASSOCIATION: {
+			case FrameWebPackage.SERVICE_NAVIGATION_ASSOCIATION: {
 				ServiceNavigationAssociation serviceNavigationAssociation = (ServiceNavigationAssociation)theEObject;
 				T result = caseServiceNavigationAssociation(serviceNavigationAssociation);
 				if (result == null) result = caseServiceAssociation(serviceNavigationAssociation);
@@ -680,7 +680,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DOMAIN_CLASS: {
+			case FrameWebPackage.DOMAIN_CLASS: {
 				DomainClass domainClass = (DomainClass)theEObject;
 				T result = caseDomainClass(domainClass);
 				if (result == null) result = caseClass(domainClass);
@@ -699,13 +699,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.FRAME_WEB_NAME: {
+			case FrameWebPackage.FRAME_WEB_NAME: {
 				FrameWebName frameWebName = (FrameWebName)theEObject;
 				T result = caseFrameWebName(frameWebName);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.BINARY_ATTRIBUTE: {
+			case FrameWebPackage.BINARY_ATTRIBUTE: {
 				BinaryAttribute binaryAttribute = (BinaryAttribute)theEObject;
 				T result = caseBinaryAttribute(binaryAttribute);
 				if (result == null) result = caseNavigationAttribute(binaryAttribute);
@@ -723,35 +723,35 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.CONSTANT_NAME: {
+			case FrameWebPackage.CONSTANT_NAME: {
 				ConstantName constantName = (ConstantName)theEObject;
 				T result = caseConstantName(constantName);
 				if (result == null) result = caseFrameWebName(constantName);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DOMAIN_TABLE_NAME: {
+			case FrameWebPackage.DOMAIN_TABLE_NAME: {
 				DomainTableName domainTableName = (DomainTableName)theEObject;
 				T result = caseDomainTableName(domainTableName);
 				if (result == null) result = caseFrameWebName(domainTableName);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.FRAME_WORK_NAME: {
+			case FrameWebPackage.FRAME_WORK_NAME: {
 				FrameWorkName frameWorkName = (FrameWorkName)theEObject;
 				T result = caseFrameWorkName(frameWorkName);
 				if (result == null) result = caseFrameWebName(frameWorkName);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DOMAIN_COLUMN_NAME: {
+			case FrameWebPackage.DOMAIN_COLUMN_NAME: {
 				DomainColumnName domainColumnName = (DomainColumnName)theEObject;
 				T result = caseDomainColumnName(domainColumnName);
 				if (result == null) result = caseFrameWebName(domainColumnName);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DAO_INTERFACE_NAME: {
+			case FrameWebPackage.DAO_INTERFACE_NAME: {
 				DAOInterfaceName daoInterfaceName = (DAOInterfaceName)theEObject;
 				T result = caseDAOInterfaceName(daoInterfaceName);
 				if (result == null) result = caseConstantName(daoInterfaceName);
@@ -759,7 +759,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DAO_CLASS_NAME: {
+			case FrameWebPackage.DAO_CLASS_NAME: {
 				DAOClassName daoClassName = (DAOClassName)theEObject;
 				T result = caseDAOClassName(daoClassName);
 				if (result == null) result = caseDAOInterfaceName(daoClassName);
@@ -768,13 +768,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.RESULT: {
+			case FrameWebPackage.RESULT: {
 				Result result = (Result)theEObject;
 				T theResult = caseResult(result);
 				if (theResult == null) theResult = defaultCase(theEObject);
 				return theResult;
 			}
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE: {
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE: {
 				FrontControllerDependence frontControllerDependence = (FrontControllerDependence)theEObject;
 				T result = caseFrontControllerDependence(frontControllerDependence);
 				if (result == null) result = caseNavigationDependency(frontControllerDependence);
@@ -788,7 +788,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.PAGE_DEPENDENCE: {
+			case FrameWebPackage.PAGE_DEPENDENCE: {
 				PageDependence pageDependence = (PageDependence)theEObject;
 				T result = casePageDependence(pageDependence);
 				if (result == null) result = caseNavigationDependency(pageDependence);
@@ -802,7 +802,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.CHAINING_DEPENDENCE: {
+			case FrameWebPackage.CHAINING_DEPENDENCE: {
 				ChainingDependence chainingDependence = (ChainingDependence)theEObject;
 				T result = caseChainingDependence(chainingDependence);
 				if (result == null) result = caseNavigationDependency(chainingDependence);
@@ -816,7 +816,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DAO_SERVICE_ASSOCIATION: {
+			case FrameWebPackage.DAO_SERVICE_ASSOCIATION: {
 				DAOServiceAssociation daoServiceAssociation = (DAOServiceAssociation)theEObject;
 				T result = caseDAOServiceAssociation(daoServiceAssociation);
 				if (result == null) result = caseServiceAssociation(daoServiceAssociation);
@@ -834,7 +834,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.NAVIGATION_ATTRIBUTE: {
+			case FrameWebPackage.NAVIGATION_ATTRIBUTE: {
 				NavigationAttribute navigationAttribute = (NavigationAttribute)theEObject;
 				T result = caseNavigationAttribute(navigationAttribute);
 				if (result == null) result = caseProperty(navigationAttribute);
@@ -851,7 +851,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.NAVIGATION_CLASS: {
+			case FrameWebPackage.NAVIGATION_CLASS: {
 				NavigationClass navigationClass = (NavigationClass)theEObject;
 				T result = caseNavigationClass(navigationClass);
 				if (result == null) result = caseClass(navigationClass);
@@ -870,7 +870,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DOMAIN_OPERATION: {
+			case FrameWebPackage.DOMAIN_OPERATION: {
 				DomainOperation domainOperation = (DomainOperation)theEObject;
 				T result = caseDomainOperation(domainOperation);
 				if (result == null) result = caseOperation(domainOperation);
@@ -885,7 +885,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DAO_ATTRIBUTE: {
+			case FrameWebPackage.DAO_ATTRIBUTE: {
 				DAOAttribute daoAttribute = (DAOAttribute)theEObject;
 				T result = caseDAOAttribute(daoAttribute);
 				if (result == null) result = caseProperty(daoAttribute);
@@ -902,7 +902,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.SERVICE_OPERATION: {
+			case FrameWebPackage.SERVICE_OPERATION: {
 				ServiceOperation serviceOperation = (ServiceOperation)theEObject;
 				T result = caseServiceOperation(serviceOperation);
 				if (result == null) result = caseOperation(serviceOperation);
@@ -917,7 +917,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.SERVICE_ATTRIBUTE: {
+			case FrameWebPackage.SERVICE_ATTRIBUTE: {
 				ServiceAttribute serviceAttribute = (ServiceAttribute)theEObject;
 				T result = caseServiceAttribute(serviceAttribute);
 				if (result == null) result = caseProperty(serviceAttribute);
@@ -934,7 +934,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.SERVICE_ASSOCIATION: {
+			case FrameWebPackage.SERVICE_ASSOCIATION: {
 				ServiceAssociation serviceAssociation = (ServiceAssociation)theEObject;
 				T result = caseServiceAssociation(serviceAssociation);
 				if (result == null) result = caseAssociation(serviceAssociation);
@@ -951,7 +951,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.NAVIGATION_DEPENDENCY: {
+			case FrameWebPackage.NAVIGATION_DEPENDENCY: {
 				NavigationDependency navigationDependency = (NavigationDependency)theEObject;
 				T result = caseNavigationDependency(navigationDependency);
 				if (result == null) result = caseDependency(navigationDependency);
@@ -964,7 +964,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DAO_OPERATION: {
+			case FrameWebPackage.DAO_OPERATION: {
 				DAOOperation daoOperation = (DAOOperation)theEObject;
 				T result = caseDAOOperation(daoOperation);
 				if (result == null) result = caseOperation(daoOperation);
@@ -979,7 +979,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DOMAIN_PACKAGE: {
+			case FrameWebPackage.DOMAIN_PACKAGE: {
 				DomainPackage domainPackage = (DomainPackage)theEObject;
 				T result = caseDomainPackage(domainPackage);
 				if (result == null) result = casePackage(domainPackage);
@@ -992,7 +992,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.VIEW_PACKAGE: {
+			case FrameWebPackage.VIEW_PACKAGE: {
 				ViewPackage viewPackage = (ViewPackage)theEObject;
 				T result = caseViewPackage(viewPackage);
 				if (result == null) result = caseNavigationPackage(viewPackage);
@@ -1006,7 +1006,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.CONTROLLER_PACKAGE: {
+			case FrameWebPackage.CONTROLLER_PACKAGE: {
 				ControllerPackage controllerPackage = (ControllerPackage)theEObject;
 				T result = caseControllerPackage(controllerPackage);
 				if (result == null) result = caseNavigationPackage(controllerPackage);
@@ -1020,7 +1020,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.PERSISTENCE_PACKAGE: {
+			case FrameWebPackage.PERSISTENCE_PACKAGE: {
 				PersistencePackage persistencePackage = (PersistencePackage)theEObject;
 				T result = casePersistencePackage(persistencePackage);
 				if (result == null) result = casePackage(persistencePackage);
@@ -1033,7 +1033,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.APPLICATION_PACKAGE: {
+			case FrameWebPackage.APPLICATION_PACKAGE: {
 				ApplicationPackage applicationPackage = (ApplicationPackage)theEObject;
 				T result = caseApplicationPackage(applicationPackage);
 				if (result == null) result = casePackage(applicationPackage);
@@ -1046,7 +1046,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.COMPONENT: {
+			case FrameWebPackage.COMPONENT: {
 				Component component = (Component)theEObject;
 				T result = caseComponent(component);
 				if (result == null) result = caseNavigationClass(component);
@@ -1066,13 +1066,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.RESULT_TYPE: {
+			case FrameWebPackage.RESULT_TYPE: {
 				ResultType resultType = (ResultType)theEObject;
 				T result = caseResultType(resultType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.NAVIGATION_PACKAGE: {
+			case FrameWebPackage.NAVIGATION_PACKAGE: {
 				NavigationPackage navigationPackage = (NavigationPackage)theEObject;
 				T result = caseNavigationPackage(navigationPackage);
 				if (result == null) result = casePackage(navigationPackage);
@@ -1085,7 +1085,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.DOMAIN_GENERALIZATION: {
+			case FrameWebPackage.DOMAIN_GENERALIZATION: {
 				DomainGeneralization domainGeneralization = (DomainGeneralization)theEObject;
 				T result = caseDomainGeneralization(domainGeneralization);
 				if (result == null) result = caseGeneralization(domainGeneralization);
@@ -1095,7 +1095,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.JQUERY: {
+			case FrameWebPackage.JQUERY: {
 				JQuery jQuery = (JQuery)theEObject;
 				T result = caseJQuery(jQuery);
 				if (result == null) result = caseNavigationClass(jQuery);
@@ -1115,7 +1115,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.FORM_COMPONENT: {
+			case FrameWebPackage.FORM_COMPONENT: {
 				FormComponent formComponent = (FormComponent)theEObject;
 				T result = caseFormComponent(formComponent);
 				if (result == null) result = caseNavigationAttribute(formComponent);
@@ -1135,38 +1135,38 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.TAG_LIB: {
+			case FrameWebPackage.TAG_LIB: {
 				TagLib tagLib = (TagLib)theEObject;
 				T result = caseTagLib(tagLib);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.FRAMEWORK_TAG: {
+			case FrameWebPackage.FRAMEWORK_TAG: {
 				FrameworkTag frameworkTag = (FrameworkTag)theEObject;
 				T result = caseFrameworkTag(frameworkTag);
 				if (result == null) result = caseTag(frameworkTag);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.RULE: {
+			case FrameWebPackage.RULE: {
 				Rule rule = (Rule)theEObject;
 				T result = caseRule(rule);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.TAG: {
+			case FrameWebPackage.TAG: {
 				Tag tag = (Tag)theEObject;
 				T result = caseTag(tag);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.TALVEZ_METHOD: {
+			case FrameWebPackage.TALVEZ_METHOD: {
 				Talvez_Method talvez_Method = (Talvez_Method)theEObject;
 				T result = caseTalvez_Method(talvez_Method);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case framewebPackage.ANOTATION: {
+			case FrameWebPackage.ANOTATION: {
 				Anotation anotation = (Anotation)theEObject;
 				T result = caseAnotation(anotation);
 				if (result == null) result = defaultCase(theEObject);
@@ -1237,13 +1237,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Frame Web Model</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Model</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Frame Web Model</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Model</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -1747,13 +1747,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Frame Web Name</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Name</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Frame Web Name</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Name</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -2797,4 +2797,4 @@ public class FramewebSwitch<T> extends Switch<T> {
 		return null;
 	}
 
-} //framewebSwitch
+} //FrameWebSwitch
