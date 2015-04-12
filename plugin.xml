@@ -10,7 +10,7 @@
       <!-- @generated FrameWeb -->
       <package
             uri="https://github.com/bfmartins/FrameWeb-Martins-2015"
-            class="frameweb.framewebPackage"
+            class="frameweb.FrameWebPackage"
             genModel="model/FrameWeb.genmodel"/>
    </extension>
 
@@ -29,4 +29,5 @@
             class="primitiveTypes.PrimitiveTypesPackage"
             genModel="model/FrameWeb.genmodel"/>
    </extension>
+
 </plugin>

@@ -18,7 +18,7 @@ import uml2.Generalization;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getDomainGeneralization()
+ * @see frameweb.FrameWebPackage#getDomainGeneralization()
  * @model
  * @generated
  */
@@ -35,7 +35,7 @@ public interface DomainGeneralization extends Generalization {
 	 * @return the value of the '<em>Mapping</em>' attribute.
 	 * @see frameweb.InheritanceMapping
 	 * @see #setMapping(InheritanceMapping)
-	 * @see frameweb.framewebPackage#getDomainGeneralization_Mapping()
+	 * @see frameweb.FrameWebPackage#getDomainGeneralization_Mapping()
 	 * @model
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface DomainGeneralization extends Generalization {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Domain</em>' reference.
 	 * @see #setTargetDomain(DomainClass)
-	 * @see frameweb.framewebPackage#getDomainGeneralization_TargetDomain()
+	 * @see frameweb.FrameWebPackage#getDomainGeneralization_TargetDomain()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -88,7 +88,7 @@ public interface DomainGeneralization extends Generalization {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Domain</em>' reference.
 	 * @see #setSourceDomain(DomainClass)
-	 * @see frameweb.framewebPackage#getDomainGeneralization_SourceDomain()
+	 * @see frameweb.FrameWebPackage#getDomainGeneralization_SourceDomain()
 	 * @model required="true"
 	 * @generated
 	 */

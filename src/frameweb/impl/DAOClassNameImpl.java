@@ -3,8 +3,8 @@
 package frameweb.impl;
 
 import frameweb.DAOClassName;
+import frameweb.FrameWebPackage;
 import frameweb.FrameWorkName;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -53,7 +53,7 @@ public class DAOClassNameImpl extends DAOInterfaceNameImpl implements DAOClassNa
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.DAO_CLASS_NAME;
+		return FrameWebPackage.Literals.DAO_CLASS_NAME;
 	}
 
 	/**
@@ -67,7 +67,7 @@ public class DAOClassNameImpl extends DAOInterfaceNameImpl implements DAOClassNa
 			frameWorkNameSufix = (FrameWorkName)eResolveProxy(oldFrameWorkNameSufix);
 			if (frameWorkNameSufix != oldFrameWorkNameSufix) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.DAO_CLASS_NAME__FRAME_WORK_NAME_SUFIX, oldFrameWorkNameSufix, frameWorkNameSufix));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DAO_CLASS_NAME__FRAME_WORK_NAME_SUFIX, oldFrameWorkNameSufix, frameWorkNameSufix));
 			}
 		}
 		return frameWorkNameSufix;
@@ -91,7 +91,7 @@ public class DAOClassNameImpl extends DAOInterfaceNameImpl implements DAOClassNa
 		FrameWorkName oldFrameWorkNameSufix = frameWorkNameSufix;
 		frameWorkNameSufix = newFrameWorkNameSufix;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.DAO_CLASS_NAME__FRAME_WORK_NAME_SUFIX, oldFrameWorkNameSufix, frameWorkNameSufix));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DAO_CLASS_NAME__FRAME_WORK_NAME_SUFIX, oldFrameWorkNameSufix, frameWorkNameSufix));
 	}
 
 	/**
@@ -102,7 +102,7 @@ public class DAOClassNameImpl extends DAOInterfaceNameImpl implements DAOClassNa
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.DAO_CLASS_NAME__FRAME_WORK_NAME_SUFIX:
+			case FrameWebPackage.DAO_CLASS_NAME__FRAME_WORK_NAME_SUFIX:
 				if (resolve) return getFrameWorkNameSufix();
 				return basicGetFrameWorkNameSufix();
 		}
@@ -117,7 +117,7 @@ public class DAOClassNameImpl extends DAOInterfaceNameImpl implements DAOClassNa
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.DAO_CLASS_NAME__FRAME_WORK_NAME_SUFIX:
+			case FrameWebPackage.DAO_CLASS_NAME__FRAME_WORK_NAME_SUFIX:
 				setFrameWorkNameSufix((FrameWorkName)newValue);
 				return;
 		}
@@ -132,7 +132,7 @@ public class DAOClassNameImpl extends DAOInterfaceNameImpl implements DAOClassNa
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DAO_CLASS_NAME__FRAME_WORK_NAME_SUFIX:
+			case FrameWebPackage.DAO_CLASS_NAME__FRAME_WORK_NAME_SUFIX:
 				setFrameWorkNameSufix((FrameWorkName)null);
 				return;
 		}
@@ -147,7 +147,7 @@ public class DAOClassNameImpl extends DAOInterfaceNameImpl implements DAOClassNa
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DAO_CLASS_NAME__FRAME_WORK_NAME_SUFIX:
+			case FrameWebPackage.DAO_CLASS_NAME__FRAME_WORK_NAME_SUFIX:
 				return frameWorkNameSufix != null;
 		}
 		return super.eIsSet(featureID);

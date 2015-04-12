@@ -21,7 +21,7 @@ import uml2.Association;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getDomainAssociation()
+ * @see frameweb.FrameWebPackage#getDomainAssociation()
  * @model
  * @generated
  */
@@ -38,7 +38,7 @@ public interface DomainAssociation extends Association {
 	 * @return the value of the '<em>Collection</em>' attribute.
 	 * @see frameweb.Collection
 	 * @see #setCollection(Collection)
-	 * @see frameweb.framewebPackage#getDomainAssociation_Collection()
+	 * @see frameweb.FrameWebPackage#getDomainAssociation_Collection()
 	 * @model
 	 * @generated
 	 */
@@ -67,7 +67,7 @@ public interface DomainAssociation extends Association {
 	 * @return the value of the '<em>Order</em>' attribute.
 	 * @see frameweb.Order
 	 * @see #setOrder(Order)
-	 * @see frameweb.framewebPackage#getDomainAssociation_Order()
+	 * @see frameweb.FrameWebPackage#getDomainAssociation_Order()
 	 * @model
 	 * @generated
 	 */
@@ -96,7 +96,7 @@ public interface DomainAssociation extends Association {
 	 * @return the value of the '<em>Cascade</em>' attribute.
 	 * @see frameweb.Cascade
 	 * @see #setCascade(Cascade)
-	 * @see frameweb.framewebPackage#getDomainAssociation_Cascade()
+	 * @see frameweb.FrameWebPackage#getDomainAssociation_Cascade()
 	 * @model
 	 * @generated
 	 */
@@ -125,7 +125,7 @@ public interface DomainAssociation extends Association {
 	 * @return the value of the '<em>Fetch</em>' attribute.
 	 * @see frameweb.Fetch
 	 * @see #setFetch(Fetch)
-	 * @see frameweb.framewebPackage#getDomainAssociation_Fetch()
+	 * @see frameweb.FrameWebPackage#getDomainAssociation_Fetch()
 	 * @model
 	 * @generated
 	 */
@@ -152,7 +152,7 @@ public interface DomainAssociation extends Association {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Class</em>' reference.
 	 * @see #setSourceClass(DomainClass)
-	 * @see frameweb.framewebPackage#getDomainAssociation_SourceClass()
+	 * @see frameweb.FrameWebPackage#getDomainAssociation_SourceClass()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -178,7 +178,7 @@ public interface DomainAssociation extends Association {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Class</em>' reference.
 	 * @see #setTargetClass(DomainClass)
-	 * @see frameweb.framewebPackage#getDomainAssociation_TargetClass()
+	 * @see frameweb.FrameWebPackage#getDomainAssociation_TargetClass()
 	 * @model required="true"
 	 * @generated
 	 */

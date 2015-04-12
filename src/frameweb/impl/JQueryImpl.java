@@ -2,8 +2,8 @@
  */
 package frameweb.impl;
 
+import frameweb.FrameWebPackage;
 import frameweb.JQuery;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -33,7 +33,7 @@ public class JQueryImpl extends NavigationClassImpl implements JQuery {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.JQUERY;
+		return FrameWebPackage.Literals.JQUERY;
 	}
 
 } //JQueryImpl

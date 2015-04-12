@@ -21,8 +21,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
 import uml2.InstanceSpecification;
 import uml2.Slot;
 import uml2.StructuralFeature;
-import uml2.ValueSpecification;
 import uml2.Uml2Package;
+import uml2.ValueSpecification;
 
 /**
  * <!-- begin-user-doc -->

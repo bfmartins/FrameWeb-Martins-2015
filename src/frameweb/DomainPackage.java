@@ -16,7 +16,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getDomainPackage()
+ * @see frameweb.FrameWebPackage#getDomainPackage()
  * @model
  * @generated
  */
@@ -31,7 +31,7 @@ public interface DomainPackage extends uml2.Package {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Domain Package Class</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getDomainPackage_DomainPackageClass()
+	 * @see frameweb.FrameWebPackage#getDomainPackage_DomainPackageClass()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */

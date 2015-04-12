@@ -3,7 +3,7 @@
 package frameweb.impl;
 
 import frameweb.DomainOperation;
-import frameweb.framewebPackage;
+import frameweb.FrameWebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -35,7 +35,7 @@ public class DomainOperationImpl extends OperationImpl implements DomainOperatio
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.DOMAIN_OPERATION;
+		return FrameWebPackage.Literals.DOMAIN_OPERATION;
 	}
 
 } //DomainOperationImpl

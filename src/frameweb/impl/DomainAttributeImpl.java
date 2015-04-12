@@ -4,7 +4,7 @@ package frameweb.impl;
 
 import frameweb.DomainAttribute;
 import frameweb.DomainColumnName;
-import frameweb.framewebPackage;
+import frameweb.FrameWebPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -119,7 +119,7 @@ public class DomainAttributeImpl extends PropertyImpl implements DomainAttribute
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.DOMAIN_ATTRIBUTE;
+		return FrameWebPackage.Literals.DOMAIN_ATTRIBUTE;
 	}
 
 	/**
@@ -140,7 +140,7 @@ public class DomainAttributeImpl extends PropertyImpl implements DomainAttribute
 		long oldSize = size;
 		size = newSize;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.DOMAIN_ATTRIBUTE__SIZE, oldSize, size));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_ATTRIBUTE__SIZE, oldSize, size));
 	}
 
 	/**
@@ -161,7 +161,7 @@ public class DomainAttributeImpl extends PropertyImpl implements DomainAttribute
 		boolean oldIsNull = isNull;
 		isNull = newIsNull;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.DOMAIN_ATTRIBUTE__IS_NULL, oldIsNull, isNull));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_ATTRIBUTE__IS_NULL, oldIsNull, isNull));
 	}
 
 	/**
@@ -182,7 +182,7 @@ public class DomainAttributeImpl extends PropertyImpl implements DomainAttribute
 		boolean oldIsPersistent = isPersistent;
 		isPersistent = newIsPersistent;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.DOMAIN_ATTRIBUTE__IS_PERSISTENT, oldIsPersistent, isPersistent));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_ATTRIBUTE__IS_PERSISTENT, oldIsPersistent, isPersistent));
 	}
 
 	/**
@@ -196,7 +196,7 @@ public class DomainAttributeImpl extends PropertyImpl implements DomainAttribute
 			column = (DomainColumnName)eResolveProxy(oldColumn);
 			if (column != oldColumn) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.DOMAIN_ATTRIBUTE__COLUMN, oldColumn, column));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DOMAIN_ATTRIBUTE__COLUMN, oldColumn, column));
 			}
 		}
 		return column;
@@ -220,7 +220,7 @@ public class DomainAttributeImpl extends PropertyImpl implements DomainAttribute
 		DomainColumnName oldColumn = column;
 		column = newColumn;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, framewebPackage.DOMAIN_ATTRIBUTE__COLUMN, oldColumn, newColumn);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_ATTRIBUTE__COLUMN, oldColumn, newColumn);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -235,14 +235,14 @@ public class DomainAttributeImpl extends PropertyImpl implements DomainAttribute
 		if (newColumn != column) {
 			NotificationChain msgs = null;
 			if (column != null)
-				msgs = ((InternalEObject)column).eInverseRemove(this, framewebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME, DomainColumnName.class, msgs);
+				msgs = ((InternalEObject)column).eInverseRemove(this, FrameWebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME, DomainColumnName.class, msgs);
 			if (newColumn != null)
-				msgs = ((InternalEObject)newColumn).eInverseAdd(this, framewebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME, DomainColumnName.class, msgs);
+				msgs = ((InternalEObject)newColumn).eInverseAdd(this, FrameWebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME, DomainColumnName.class, msgs);
 			msgs = basicSetColumn(newColumn, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.DOMAIN_ATTRIBUTE__COLUMN, newColumn, newColumn));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_ATTRIBUTE__COLUMN, newColumn, newColumn));
 	}
 
 	/**
@@ -253,9 +253,9 @@ public class DomainAttributeImpl extends PropertyImpl implements DomainAttribute
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_ATTRIBUTE__COLUMN:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__COLUMN:
 				if (column != null)
-					msgs = ((InternalEObject)column).eInverseRemove(this, framewebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME, DomainColumnName.class, msgs);
+					msgs = ((InternalEObject)column).eInverseRemove(this, FrameWebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME, DomainColumnName.class, msgs);
 				return basicSetColumn((DomainColumnName)otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -269,7 +269,7 @@ public class DomainAttributeImpl extends PropertyImpl implements DomainAttribute
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_ATTRIBUTE__COLUMN:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__COLUMN:
 				return basicSetColumn(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -283,13 +283,13 @@ public class DomainAttributeImpl extends PropertyImpl implements DomainAttribute
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_ATTRIBUTE__SIZE:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__SIZE:
 				return getSize();
-			case framewebPackage.DOMAIN_ATTRIBUTE__IS_NULL:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__IS_NULL:
 				return isIsNull();
-			case framewebPackage.DOMAIN_ATTRIBUTE__IS_PERSISTENT:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__IS_PERSISTENT:
 				return isIsPersistent();
-			case framewebPackage.DOMAIN_ATTRIBUTE__COLUMN:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__COLUMN:
 				if (resolve) return getColumn();
 				return basicGetColumn();
 		}
@@ -304,16 +304,16 @@ public class DomainAttributeImpl extends PropertyImpl implements DomainAttribute
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_ATTRIBUTE__SIZE:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__SIZE:
 				setSize((Long)newValue);
 				return;
-			case framewebPackage.DOMAIN_ATTRIBUTE__IS_NULL:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__IS_NULL:
 				setIsNull((Boolean)newValue);
 				return;
-			case framewebPackage.DOMAIN_ATTRIBUTE__IS_PERSISTENT:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__IS_PERSISTENT:
 				setIsPersistent((Boolean)newValue);
 				return;
-			case framewebPackage.DOMAIN_ATTRIBUTE__COLUMN:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__COLUMN:
 				setColumn((DomainColumnName)newValue);
 				return;
 		}
@@ -328,16 +328,16 @@ public class DomainAttributeImpl extends PropertyImpl implements DomainAttribute
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_ATTRIBUTE__SIZE:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__SIZE:
 				setSize(SIZE_EDEFAULT);
 				return;
-			case framewebPackage.DOMAIN_ATTRIBUTE__IS_NULL:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__IS_NULL:
 				setIsNull(IS_NULL_EDEFAULT);
 				return;
-			case framewebPackage.DOMAIN_ATTRIBUTE__IS_PERSISTENT:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__IS_PERSISTENT:
 				setIsPersistent(IS_PERSISTENT_EDEFAULT);
 				return;
-			case framewebPackage.DOMAIN_ATTRIBUTE__COLUMN:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__COLUMN:
 				setColumn((DomainColumnName)null);
 				return;
 		}
@@ -352,13 +352,13 @@ public class DomainAttributeImpl extends PropertyImpl implements DomainAttribute
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_ATTRIBUTE__SIZE:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__SIZE:
 				return size != SIZE_EDEFAULT;
-			case framewebPackage.DOMAIN_ATTRIBUTE__IS_NULL:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__IS_NULL:
 				return isNull != IS_NULL_EDEFAULT;
-			case framewebPackage.DOMAIN_ATTRIBUTE__IS_PERSISTENT:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__IS_PERSISTENT:
 				return isPersistent != IS_PERSISTENT_EDEFAULT;
-			case framewebPackage.DOMAIN_ATTRIBUTE__COLUMN:
+			case FrameWebPackage.DOMAIN_ATTRIBUTE__COLUMN:
 				return column != null;
 		}
 		return super.eIsSet(featureID);

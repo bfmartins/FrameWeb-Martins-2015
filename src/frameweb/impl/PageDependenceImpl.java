@@ -2,10 +2,10 @@
  */
 package frameweb.impl;
 
+import frameweb.FrameWebPackage;
 import frameweb.Page;
 import frameweb.PageDependence;
 import frameweb.Template;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -97,7 +97,7 @@ public class PageDependenceImpl extends NavigationDependencyImpl implements Page
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.PAGE_DEPENDENCE;
+		return FrameWebPackage.Literals.PAGE_DEPENDENCE;
 	}
 
 	/**
@@ -111,7 +111,7 @@ public class PageDependenceImpl extends NavigationDependencyImpl implements Page
 			targetPage = (Page)eResolveProxy(oldTargetPage);
 			if (targetPage != oldTargetPage) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.PAGE_DEPENDENCE__TARGET_PAGE, oldTargetPage, targetPage));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.PAGE_DEPENDENCE__TARGET_PAGE, oldTargetPage, targetPage));
 			}
 		}
 		return targetPage;
@@ -135,7 +135,7 @@ public class PageDependenceImpl extends NavigationDependencyImpl implements Page
 		Page oldTargetPage = targetPage;
 		targetPage = newTargetPage;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.PAGE_DEPENDENCE__TARGET_PAGE, oldTargetPage, targetPage));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.PAGE_DEPENDENCE__TARGET_PAGE, oldTargetPage, targetPage));
 	}
 
 	/**
@@ -149,7 +149,7 @@ public class PageDependenceImpl extends NavigationDependencyImpl implements Page
 			sourceTemplate = (Template)eResolveProxy(oldSourceTemplate);
 			if (sourceTemplate != oldSourceTemplate) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.PAGE_DEPENDENCE__SOURCE_TEMPLATE, oldSourceTemplate, sourceTemplate));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.PAGE_DEPENDENCE__SOURCE_TEMPLATE, oldSourceTemplate, sourceTemplate));
 			}
 		}
 		return sourceTemplate;
@@ -173,7 +173,7 @@ public class PageDependenceImpl extends NavigationDependencyImpl implements Page
 		Template oldSourceTemplate = sourceTemplate;
 		sourceTemplate = newSourceTemplate;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.PAGE_DEPENDENCE__SOURCE_TEMPLATE, oldSourceTemplate, sourceTemplate));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.PAGE_DEPENDENCE__SOURCE_TEMPLATE, oldSourceTemplate, sourceTemplate));
 	}
 
 	/**
@@ -194,7 +194,7 @@ public class PageDependenceImpl extends NavigationDependencyImpl implements Page
 		String oldLinkHTML = linkHTML;
 		linkHTML = newLinkHTML;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.PAGE_DEPENDENCE__LINK_HTML, oldLinkHTML, linkHTML));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.PAGE_DEPENDENCE__LINK_HTML, oldLinkHTML, linkHTML));
 	}
 
 	/**
@@ -208,7 +208,7 @@ public class PageDependenceImpl extends NavigationDependencyImpl implements Page
 			sourcePage = (Page)eResolveProxy(oldSourcePage);
 			if (sourcePage != oldSourcePage) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.PAGE_DEPENDENCE__SOURCE_PAGE, oldSourcePage, sourcePage));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.PAGE_DEPENDENCE__SOURCE_PAGE, oldSourcePage, sourcePage));
 			}
 		}
 		return sourcePage;
@@ -232,7 +232,7 @@ public class PageDependenceImpl extends NavigationDependencyImpl implements Page
 		Page oldSourcePage = sourcePage;
 		sourcePage = newSourcePage;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.PAGE_DEPENDENCE__SOURCE_PAGE, oldSourcePage, sourcePage));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.PAGE_DEPENDENCE__SOURCE_PAGE, oldSourcePage, sourcePage));
 	}
 
 	/**
@@ -243,15 +243,15 @@ public class PageDependenceImpl extends NavigationDependencyImpl implements Page
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.PAGE_DEPENDENCE__TARGET_PAGE:
+			case FrameWebPackage.PAGE_DEPENDENCE__TARGET_PAGE:
 				if (resolve) return getTargetPage();
 				return basicGetTargetPage();
-			case framewebPackage.PAGE_DEPENDENCE__SOURCE_TEMPLATE:
+			case FrameWebPackage.PAGE_DEPENDENCE__SOURCE_TEMPLATE:
 				if (resolve) return getSourceTemplate();
 				return basicGetSourceTemplate();
-			case framewebPackage.PAGE_DEPENDENCE__LINK_HTML:
+			case FrameWebPackage.PAGE_DEPENDENCE__LINK_HTML:
 				return getLinkHTML();
-			case framewebPackage.PAGE_DEPENDENCE__SOURCE_PAGE:
+			case FrameWebPackage.PAGE_DEPENDENCE__SOURCE_PAGE:
 				if (resolve) return getSourcePage();
 				return basicGetSourcePage();
 		}
@@ -266,16 +266,16 @@ public class PageDependenceImpl extends NavigationDependencyImpl implements Page
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.PAGE_DEPENDENCE__TARGET_PAGE:
+			case FrameWebPackage.PAGE_DEPENDENCE__TARGET_PAGE:
 				setTargetPage((Page)newValue);
 				return;
-			case framewebPackage.PAGE_DEPENDENCE__SOURCE_TEMPLATE:
+			case FrameWebPackage.PAGE_DEPENDENCE__SOURCE_TEMPLATE:
 				setSourceTemplate((Template)newValue);
 				return;
-			case framewebPackage.PAGE_DEPENDENCE__LINK_HTML:
+			case FrameWebPackage.PAGE_DEPENDENCE__LINK_HTML:
 				setLinkHTML((String)newValue);
 				return;
-			case framewebPackage.PAGE_DEPENDENCE__SOURCE_PAGE:
+			case FrameWebPackage.PAGE_DEPENDENCE__SOURCE_PAGE:
 				setSourcePage((Page)newValue);
 				return;
 		}
@@ -290,16 +290,16 @@ public class PageDependenceImpl extends NavigationDependencyImpl implements Page
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.PAGE_DEPENDENCE__TARGET_PAGE:
+			case FrameWebPackage.PAGE_DEPENDENCE__TARGET_PAGE:
 				setTargetPage((Page)null);
 				return;
-			case framewebPackage.PAGE_DEPENDENCE__SOURCE_TEMPLATE:
+			case FrameWebPackage.PAGE_DEPENDENCE__SOURCE_TEMPLATE:
 				setSourceTemplate((Template)null);
 				return;
-			case framewebPackage.PAGE_DEPENDENCE__LINK_HTML:
+			case FrameWebPackage.PAGE_DEPENDENCE__LINK_HTML:
 				setLinkHTML(LINK_HTML_EDEFAULT);
 				return;
-			case framewebPackage.PAGE_DEPENDENCE__SOURCE_PAGE:
+			case FrameWebPackage.PAGE_DEPENDENCE__SOURCE_PAGE:
 				setSourcePage((Page)null);
 				return;
 		}
@@ -314,13 +314,13 @@ public class PageDependenceImpl extends NavigationDependencyImpl implements Page
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.PAGE_DEPENDENCE__TARGET_PAGE:
+			case FrameWebPackage.PAGE_DEPENDENCE__TARGET_PAGE:
 				return targetPage != null;
-			case framewebPackage.PAGE_DEPENDENCE__SOURCE_TEMPLATE:
+			case FrameWebPackage.PAGE_DEPENDENCE__SOURCE_TEMPLATE:
 				return sourceTemplate != null;
-			case framewebPackage.PAGE_DEPENDENCE__LINK_HTML:
+			case FrameWebPackage.PAGE_DEPENDENCE__LINK_HTML:
 				return LINK_HTML_EDEFAULT == null ? linkHTML != null : !LINK_HTML_EDEFAULT.equals(linkHTML);
-			case framewebPackage.PAGE_DEPENDENCE__SOURCE_PAGE:
+			case FrameWebPackage.PAGE_DEPENDENCE__SOURCE_PAGE:
 				return sourcePage != null;
 		}
 		return super.eIsSet(featureID);

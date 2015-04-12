@@ -3,7 +3,7 @@
 package frameweb.impl;
 
 import frameweb.Component;
-import frameweb.framewebPackage;
+import frameweb.FrameWebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -33,7 +33,7 @@ public class ComponentImpl extends NavigationClassImpl implements Component {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.COMPONENT;
+		return FrameWebPackage.Literals.COMPONENT;
 	}
 
 } //ComponentImpl

@@ -2,9 +2,9 @@
  */
 package frameweb.impl;
 
+import frameweb.FrameWebPackage;
 import frameweb.PersistenceModel;
 import frameweb.PersistencePackage;
-import frameweb.framewebPackage;
 
 import java.util.Collection;
 
@@ -58,7 +58,7 @@ public class PersistenceModelImpl extends FrameWebModelImpl implements Persisten
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.PERSISTENCE_MODEL;
+		return FrameWebPackage.Literals.PERSISTENCE_MODEL;
 	}
 
 	/**
@@ -68,7 +68,7 @@ public class PersistenceModelImpl extends FrameWebModelImpl implements Persisten
 	 */
 	public EList<PersistencePackage> getPersistenceUMLPackage() {
 		if (persistenceUMLPackage == null) {
-			persistenceUMLPackage = new EObjectContainmentEList<PersistencePackage>(PersistencePackage.class, this, framewebPackage.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE);
+			persistenceUMLPackage = new EObjectContainmentEList<PersistencePackage>(PersistencePackage.class, this, FrameWebPackage.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE);
 		}
 		return persistenceUMLPackage;
 	}
@@ -81,7 +81,7 @@ public class PersistenceModelImpl extends FrameWebModelImpl implements Persisten
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE:
+			case FrameWebPackage.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE:
 				return ((InternalEList<?>)getPersistenceUMLPackage()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -95,7 +95,7 @@ public class PersistenceModelImpl extends FrameWebModelImpl implements Persisten
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE:
+			case FrameWebPackage.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE:
 				return getPersistenceUMLPackage();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -110,7 +110,7 @@ public class PersistenceModelImpl extends FrameWebModelImpl implements Persisten
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE:
+			case FrameWebPackage.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE:
 				getPersistenceUMLPackage().clear();
 				getPersistenceUMLPackage().addAll((Collection<? extends PersistencePackage>)newValue);
 				return;
@@ -126,7 +126,7 @@ public class PersistenceModelImpl extends FrameWebModelImpl implements Persisten
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE:
+			case FrameWebPackage.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE:
 				getPersistenceUMLPackage().clear();
 				return;
 		}
@@ -141,7 +141,7 @@ public class PersistenceModelImpl extends FrameWebModelImpl implements Persisten
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE:
+			case FrameWebPackage.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE:
 				return persistenceUMLPackage != null && !persistenceUMLPackage.isEmpty();
 		}
 		return super.eIsSet(featureID);

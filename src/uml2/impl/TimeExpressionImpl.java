@@ -18,8 +18,8 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 import uml2.Observation;
 import uml2.TimeExpression;
-import uml2.ValueSpecification;
 import uml2.Uml2Package;
+import uml2.ValueSpecification;
 
 /**
  * <!-- begin-user-doc -->

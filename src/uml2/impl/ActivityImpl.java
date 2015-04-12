@@ -33,8 +33,8 @@ import uml2.ActivityGroup;
 import uml2.ActivityNode;
 import uml2.ActivityPartition;
 import uml2.StructuredActivityNode;
-import uml2.Variable;
 import uml2.Uml2Package;
+import uml2.Variable;
 
 import uml2.util.Uml2Validator;
 

@@ -2,8 +2,8 @@
  */
 package frameweb.impl;
 
+import frameweb.FrameWebPackage;
 import frameweb.LOBAttribute;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -33,7 +33,7 @@ public class LOBAttributeImpl extends DomainAttributeImpl implements LOBAttribut
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.LOB_ATTRIBUTE;
+		return FrameWebPackage.Literals.LOB_ATTRIBUTE;
 	}
 
 } //LOBAttributeImpl

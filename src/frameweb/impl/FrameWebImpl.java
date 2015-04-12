@@ -4,8 +4,8 @@ package frameweb.impl;
 
 import frameweb.FrameWeb;
 import frameweb.FrameWebModel;
+import frameweb.FrameWebPackage;
 import frameweb.Framework;
-import frameweb.framewebPackage;
 
 import java.util.Collection;
 
@@ -74,7 +74,7 @@ public class FrameWebImpl extends MinimalEObjectImpl.Container implements FrameW
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.FRAME_WEB;
+		return FrameWebPackage.Literals.FRAME_WEB;
 	}
 
 	/**
@@ -95,7 +95,7 @@ public class FrameWebImpl extends MinimalEObjectImpl.Container implements FrameW
 		FrameWebModel oldCompose = compose;
 		compose = newCompose;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, framewebPackage.FRAME_WEB__COMPOSE, oldCompose, newCompose);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FrameWebPackage.FRAME_WEB__COMPOSE, oldCompose, newCompose);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -110,14 +110,14 @@ public class FrameWebImpl extends MinimalEObjectImpl.Container implements FrameW
 		if (newCompose != compose) {
 			NotificationChain msgs = null;
 			if (compose != null)
-				msgs = ((InternalEObject)compose).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - framewebPackage.FRAME_WEB__COMPOSE, null, msgs);
+				msgs = ((InternalEObject)compose).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - FrameWebPackage.FRAME_WEB__COMPOSE, null, msgs);
 			if (newCompose != null)
-				msgs = ((InternalEObject)newCompose).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - framewebPackage.FRAME_WEB__COMPOSE, null, msgs);
+				msgs = ((InternalEObject)newCompose).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - FrameWebPackage.FRAME_WEB__COMPOSE, null, msgs);
 			msgs = basicSetCompose(newCompose, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.FRAME_WEB__COMPOSE, newCompose, newCompose));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.FRAME_WEB__COMPOSE, newCompose, newCompose));
 	}
 
 	/**
@@ -127,7 +127,7 @@ public class FrameWebImpl extends MinimalEObjectImpl.Container implements FrameW
 	 */
 	public EList<Framework> getUses() {
 		if (uses == null) {
-			uses = new EObjectContainmentEList<Framework>(Framework.class, this, framewebPackage.FRAME_WEB__USES);
+			uses = new EObjectContainmentEList<Framework>(Framework.class, this, FrameWebPackage.FRAME_WEB__USES);
 		}
 		return uses;
 	}
@@ -140,9 +140,9 @@ public class FrameWebImpl extends MinimalEObjectImpl.Container implements FrameW
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.FRAME_WEB__COMPOSE:
+			case FrameWebPackage.FRAME_WEB__COMPOSE:
 				return basicSetCompose(null, msgs);
-			case framewebPackage.FRAME_WEB__USES:
+			case FrameWebPackage.FRAME_WEB__USES:
 				return ((InternalEList<?>)getUses()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -156,9 +156,9 @@ public class FrameWebImpl extends MinimalEObjectImpl.Container implements FrameW
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.FRAME_WEB__COMPOSE:
+			case FrameWebPackage.FRAME_WEB__COMPOSE:
 				return getCompose();
-			case framewebPackage.FRAME_WEB__USES:
+			case FrameWebPackage.FRAME_WEB__USES:
 				return getUses();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -173,10 +173,10 @@ public class FrameWebImpl extends MinimalEObjectImpl.Container implements FrameW
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.FRAME_WEB__COMPOSE:
+			case FrameWebPackage.FRAME_WEB__COMPOSE:
 				setCompose((FrameWebModel)newValue);
 				return;
-			case framewebPackage.FRAME_WEB__USES:
+			case FrameWebPackage.FRAME_WEB__USES:
 				getUses().clear();
 				getUses().addAll((Collection<? extends Framework>)newValue);
 				return;
@@ -192,10 +192,10 @@ public class FrameWebImpl extends MinimalEObjectImpl.Container implements FrameW
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.FRAME_WEB__COMPOSE:
+			case FrameWebPackage.FRAME_WEB__COMPOSE:
 				setCompose((FrameWebModel)null);
 				return;
-			case framewebPackage.FRAME_WEB__USES:
+			case FrameWebPackage.FRAME_WEB__USES:
 				getUses().clear();
 				return;
 		}
@@ -210,9 +210,9 @@ public class FrameWebImpl extends MinimalEObjectImpl.Container implements FrameW
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.FRAME_WEB__COMPOSE:
+			case FrameWebPackage.FRAME_WEB__COMPOSE:
 				return compose != null;
-			case framewebPackage.FRAME_WEB__USES:
+			case FrameWebPackage.FRAME_WEB__USES:
 				return uses != null && !uses.isEmpty();
 		}
 		return super.eIsSet(featureID);

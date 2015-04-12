@@ -16,7 +16,7 @@ package frameweb;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getDAOServiceAssociation()
+ * @see frameweb.FrameWebPackage#getDAOServiceAssociation()
  * @model
  * @generated
  */
@@ -31,7 +31,7 @@ public interface DAOServiceAssociation extends ServiceAssociation {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source DAO Class</em>' reference.
 	 * @see #setSourceDAOClass(DAOInterface)
-	 * @see frameweb.framewebPackage#getDAOServiceAssociation_SourceDAOClass()
+	 * @see frameweb.FrameWebPackage#getDAOServiceAssociation_SourceDAOClass()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -57,7 +57,7 @@ public interface DAOServiceAssociation extends ServiceAssociation {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target DAO Service</em>' reference.
 	 * @see #setTargetDAOService(ServiceClass)
-	 * @see frameweb.framewebPackage#getDAOServiceAssociation_TargetDAOService()
+	 * @see frameweb.FrameWebPackage#getDAOServiceAssociation_TargetDAOService()
 	 * @model required="true"
 	 * @generated
 	 */

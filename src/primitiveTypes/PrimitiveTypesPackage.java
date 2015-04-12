@@ -167,7 +167,7 @@ public interface PrimitiveTypesPackage extends EPackage {
 	 * @return the factory that creates the instances of the model.
 	 * @generated
 	 */
-	PrimitiveTypesFactory getprimitiveTypesFactory();
+	PrimitiveTypesFactory getPrimitiveTypesFactory();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -235,4 +235,4 @@ public interface PrimitiveTypesPackage extends EPackage {
 
 	}
 
-} //primitiveTypesPackage
+} //PrimitiveTypesPackage

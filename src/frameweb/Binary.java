@@ -16,7 +16,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getBinary()
+ * @see frameweb.FrameWebPackage#getBinary()
  * @model
  * @generated
  */
@@ -31,7 +31,7 @@ public interface Binary extends NavigationClass {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Binary Class Attribute</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getBinary_BinaryClassAttribute()
+	 * @see frameweb.FrameWebPackage#getBinary_BinaryClassAttribute()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */

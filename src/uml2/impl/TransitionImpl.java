@@ -36,8 +36,8 @@ import uml2.StateMachine;
 import uml2.Transition;
 import uml2.TransitionKind;
 import uml2.Trigger;
-import uml2.Vertex;
 import uml2.Uml2Package;
+import uml2.Vertex;
 
 import uml2.util.Uml2Validator;
 

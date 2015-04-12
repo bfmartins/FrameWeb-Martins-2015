@@ -7,7 +7,7 @@ import frameweb.DAOBaseOperation;
 import frameweb.DAOInterface;
 import frameweb.DAOInterfaceName;
 import frameweb.DAOOperation;
-import frameweb.framewebPackage;
+import frameweb.FrameWebPackage;
 
 import java.util.Collection;
 
@@ -99,7 +99,7 @@ public class DAOInterfaceImpl extends InterfaceImpl implements DAOInterface {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.DAO_INTERFACE;
+		return FrameWebPackage.Literals.DAO_INTERFACE;
 	}
 
 	/**
@@ -109,7 +109,7 @@ public class DAOInterfaceImpl extends InterfaceImpl implements DAOInterface {
 	 */
 	public EList<DAOBaseOperation> getOwnBaseOperation() {
 		if (ownBaseOperation == null) {
-			ownBaseOperation = new EObjectContainmentEList<DAOBaseOperation>(DAOBaseOperation.class, this, framewebPackage.DAO_INTERFACE__OWN_BASE_OPERATION);
+			ownBaseOperation = new EObjectContainmentEList<DAOBaseOperation>(DAOBaseOperation.class, this, FrameWebPackage.DAO_INTERFACE__OWN_BASE_OPERATION);
 		}
 		return ownBaseOperation;
 	}
@@ -121,7 +121,7 @@ public class DAOInterfaceImpl extends InterfaceImpl implements DAOInterface {
 	 */
 	public EList<DAOOperation> getOwnOperation() {
 		if (ownOperation == null) {
-			ownOperation = new EObjectContainmentEList<DAOOperation>(DAOOperation.class, this, framewebPackage.DAO_INTERFACE__OWN_OPERATION);
+			ownOperation = new EObjectContainmentEList<DAOOperation>(DAOOperation.class, this, FrameWebPackage.DAO_INTERFACE__OWN_OPERATION);
 		}
 		return ownOperation;
 	}
@@ -137,7 +137,7 @@ public class DAOInterfaceImpl extends InterfaceImpl implements DAOInterface {
 			daoInterfaceName = (DAOInterfaceName)eResolveProxy(oldDAOInterfaceName);
 			if (daoInterfaceName != oldDAOInterfaceName) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.DAO_INTERFACE__DAO_INTERFACE_NAME, oldDAOInterfaceName, daoInterfaceName));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DAO_INTERFACE__DAO_INTERFACE_NAME, oldDAOInterfaceName, daoInterfaceName));
 			}
 		}
 		return daoInterfaceName;
@@ -161,7 +161,7 @@ public class DAOInterfaceImpl extends InterfaceImpl implements DAOInterface {
 		DAOInterfaceName oldDAOInterfaceName = daoInterfaceName;
 		daoInterfaceName = newDAOInterfaceName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.DAO_INTERFACE__DAO_INTERFACE_NAME, oldDAOInterfaceName, daoInterfaceName));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DAO_INTERFACE__DAO_INTERFACE_NAME, oldDAOInterfaceName, daoInterfaceName));
 	}
 
 	/**
@@ -171,7 +171,7 @@ public class DAOInterfaceImpl extends InterfaceImpl implements DAOInterface {
 	 */
 	public EList<DAOAttribute> getDAOInterfaceAttribute() {
 		if (daoInterfaceAttribute == null) {
-			daoInterfaceAttribute = new EObjectContainmentEList<DAOAttribute>(DAOAttribute.class, this, framewebPackage.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE);
+			daoInterfaceAttribute = new EObjectContainmentEList<DAOAttribute>(DAOAttribute.class, this, FrameWebPackage.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE);
 		}
 		return daoInterfaceAttribute;
 	}
@@ -184,11 +184,11 @@ public class DAOInterfaceImpl extends InterfaceImpl implements DAOInterface {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.DAO_INTERFACE__OWN_BASE_OPERATION:
+			case FrameWebPackage.DAO_INTERFACE__OWN_BASE_OPERATION:
 				return ((InternalEList<?>)getOwnBaseOperation()).basicRemove(otherEnd, msgs);
-			case framewebPackage.DAO_INTERFACE__OWN_OPERATION:
+			case FrameWebPackage.DAO_INTERFACE__OWN_OPERATION:
 				return ((InternalEList<?>)getOwnOperation()).basicRemove(otherEnd, msgs);
-			case framewebPackage.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE:
+			case FrameWebPackage.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE:
 				return ((InternalEList<?>)getDAOInterfaceAttribute()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -202,14 +202,14 @@ public class DAOInterfaceImpl extends InterfaceImpl implements DAOInterface {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.DAO_INTERFACE__OWN_BASE_OPERATION:
+			case FrameWebPackage.DAO_INTERFACE__OWN_BASE_OPERATION:
 				return getOwnBaseOperation();
-			case framewebPackage.DAO_INTERFACE__OWN_OPERATION:
+			case FrameWebPackage.DAO_INTERFACE__OWN_OPERATION:
 				return getOwnOperation();
-			case framewebPackage.DAO_INTERFACE__DAO_INTERFACE_NAME:
+			case FrameWebPackage.DAO_INTERFACE__DAO_INTERFACE_NAME:
 				if (resolve) return getDAOInterfaceName();
 				return basicGetDAOInterfaceName();
-			case framewebPackage.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE:
+			case FrameWebPackage.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE:
 				return getDAOInterfaceAttribute();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -224,18 +224,18 @@ public class DAOInterfaceImpl extends InterfaceImpl implements DAOInterface {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.DAO_INTERFACE__OWN_BASE_OPERATION:
+			case FrameWebPackage.DAO_INTERFACE__OWN_BASE_OPERATION:
 				getOwnBaseOperation().clear();
 				getOwnBaseOperation().addAll((Collection<? extends DAOBaseOperation>)newValue);
 				return;
-			case framewebPackage.DAO_INTERFACE__OWN_OPERATION:
+			case FrameWebPackage.DAO_INTERFACE__OWN_OPERATION:
 				getOwnOperation().clear();
 				getOwnOperation().addAll((Collection<? extends DAOOperation>)newValue);
 				return;
-			case framewebPackage.DAO_INTERFACE__DAO_INTERFACE_NAME:
+			case FrameWebPackage.DAO_INTERFACE__DAO_INTERFACE_NAME:
 				setDAOInterfaceName((DAOInterfaceName)newValue);
 				return;
-			case framewebPackage.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE:
+			case FrameWebPackage.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE:
 				getDAOInterfaceAttribute().clear();
 				getDAOInterfaceAttribute().addAll((Collection<? extends DAOAttribute>)newValue);
 				return;
@@ -251,16 +251,16 @@ public class DAOInterfaceImpl extends InterfaceImpl implements DAOInterface {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DAO_INTERFACE__OWN_BASE_OPERATION:
+			case FrameWebPackage.DAO_INTERFACE__OWN_BASE_OPERATION:
 				getOwnBaseOperation().clear();
 				return;
-			case framewebPackage.DAO_INTERFACE__OWN_OPERATION:
+			case FrameWebPackage.DAO_INTERFACE__OWN_OPERATION:
 				getOwnOperation().clear();
 				return;
-			case framewebPackage.DAO_INTERFACE__DAO_INTERFACE_NAME:
+			case FrameWebPackage.DAO_INTERFACE__DAO_INTERFACE_NAME:
 				setDAOInterfaceName((DAOInterfaceName)null);
 				return;
-			case framewebPackage.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE:
+			case FrameWebPackage.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE:
 				getDAOInterfaceAttribute().clear();
 				return;
 		}
@@ -275,13 +275,13 @@ public class DAOInterfaceImpl extends InterfaceImpl implements DAOInterface {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DAO_INTERFACE__OWN_BASE_OPERATION:
+			case FrameWebPackage.DAO_INTERFACE__OWN_BASE_OPERATION:
 				return ownBaseOperation != null && !ownBaseOperation.isEmpty();
-			case framewebPackage.DAO_INTERFACE__OWN_OPERATION:
+			case FrameWebPackage.DAO_INTERFACE__OWN_OPERATION:
 				return ownOperation != null && !ownOperation.isEmpty();
-			case framewebPackage.DAO_INTERFACE__DAO_INTERFACE_NAME:
+			case FrameWebPackage.DAO_INTERFACE__DAO_INTERFACE_NAME:
 				return daoInterfaceName != null;
-			case framewebPackage.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE:
+			case FrameWebPackage.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE:
 				return daoInterfaceAttribute != null && !daoInterfaceAttribute.isEmpty();
 		}
 		return super.eIsSet(featureID);

@@ -3,11 +3,11 @@
 package frameweb.impl;
 
 import frameweb.Anotation;
+import frameweb.FrameWebPackage;
 import frameweb.Framework;
 import frameweb.Rule;
 import frameweb.TagLib;
 import frameweb.Talvez_Method;
-import frameweb.framewebPackage;
 
 import java.util.Collection;
 
@@ -99,7 +99,7 @@ public class FrameworkImpl extends ModelImpl implements Framework {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.FRAMEWORK;
+		return FrameWebPackage.Literals.FRAMEWORK;
 	}
 
 	/**
@@ -120,7 +120,7 @@ public class FrameworkImpl extends ModelImpl implements Framework {
 		TagLib oldFrameworkTagLib = frameworkTagLib;
 		frameworkTagLib = newFrameworkTagLib;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, framewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB, oldFrameworkTagLib, newFrameworkTagLib);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FrameWebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB, oldFrameworkTagLib, newFrameworkTagLib);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -135,14 +135,14 @@ public class FrameworkImpl extends ModelImpl implements Framework {
 		if (newFrameworkTagLib != frameworkTagLib) {
 			NotificationChain msgs = null;
 			if (frameworkTagLib != null)
-				msgs = ((InternalEObject)frameworkTagLib).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - framewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB, null, msgs);
+				msgs = ((InternalEObject)frameworkTagLib).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - FrameWebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB, null, msgs);
 			if (newFrameworkTagLib != null)
-				msgs = ((InternalEObject)newFrameworkTagLib).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - framewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB, null, msgs);
+				msgs = ((InternalEObject)newFrameworkTagLib).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - FrameWebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB, null, msgs);
 			msgs = basicSetFrameworkTagLib(newFrameworkTagLib, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB, newFrameworkTagLib, newFrameworkTagLib));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB, newFrameworkTagLib, newFrameworkTagLib));
 	}
 
 	/**
@@ -152,7 +152,7 @@ public class FrameworkImpl extends ModelImpl implements Framework {
 	 */
 	public EList<Rule> getFrameworkRule() {
 		if (frameworkRule == null) {
-			frameworkRule = new EObjectContainmentEList<Rule>(Rule.class, this, framewebPackage.FRAMEWORK__FRAMEWORK_RULE);
+			frameworkRule = new EObjectContainmentEList<Rule>(Rule.class, this, FrameWebPackage.FRAMEWORK__FRAMEWORK_RULE);
 		}
 		return frameworkRule;
 	}
@@ -164,7 +164,7 @@ public class FrameworkImpl extends ModelImpl implements Framework {
 	 */
 	public EList<Talvez_Method> getNewEReference() {
 		if (newEReference == null) {
-			newEReference = new EObjectContainmentEList<Talvez_Method>(Talvez_Method.class, this, framewebPackage.FRAMEWORK__NEW_EREFERENCE);
+			newEReference = new EObjectContainmentEList<Talvez_Method>(Talvez_Method.class, this, FrameWebPackage.FRAMEWORK__NEW_EREFERENCE);
 		}
 		return newEReference;
 	}
@@ -176,7 +176,7 @@ public class FrameworkImpl extends ModelImpl implements Framework {
 	 */
 	public EList<Anotation> getFrameworkAnotation() {
 		if (frameworkAnotation == null) {
-			frameworkAnotation = new EObjectContainmentEList<Anotation>(Anotation.class, this, framewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION);
+			frameworkAnotation = new EObjectContainmentEList<Anotation>(Anotation.class, this, FrameWebPackage.FRAMEWORK__FRAMEWORK_ANOTATION);
 		}
 		return frameworkAnotation;
 	}
@@ -189,13 +189,13 @@ public class FrameworkImpl extends ModelImpl implements Framework {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
+			case FrameWebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
 				return basicSetFrameworkTagLib(null, msgs);
-			case framewebPackage.FRAMEWORK__FRAMEWORK_RULE:
+			case FrameWebPackage.FRAMEWORK__FRAMEWORK_RULE:
 				return ((InternalEList<?>)getFrameworkRule()).basicRemove(otherEnd, msgs);
-			case framewebPackage.FRAMEWORK__NEW_EREFERENCE:
+			case FrameWebPackage.FRAMEWORK__NEW_EREFERENCE:
 				return ((InternalEList<?>)getNewEReference()).basicRemove(otherEnd, msgs);
-			case framewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
+			case FrameWebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
 				return ((InternalEList<?>)getFrameworkAnotation()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -209,13 +209,13 @@ public class FrameworkImpl extends ModelImpl implements Framework {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
+			case FrameWebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
 				return getFrameworkTagLib();
-			case framewebPackage.FRAMEWORK__FRAMEWORK_RULE:
+			case FrameWebPackage.FRAMEWORK__FRAMEWORK_RULE:
 				return getFrameworkRule();
-			case framewebPackage.FRAMEWORK__NEW_EREFERENCE:
+			case FrameWebPackage.FRAMEWORK__NEW_EREFERENCE:
 				return getNewEReference();
-			case framewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
+			case FrameWebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
 				return getFrameworkAnotation();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -230,18 +230,18 @@ public class FrameworkImpl extends ModelImpl implements Framework {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
+			case FrameWebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
 				setFrameworkTagLib((TagLib)newValue);
 				return;
-			case framewebPackage.FRAMEWORK__FRAMEWORK_RULE:
+			case FrameWebPackage.FRAMEWORK__FRAMEWORK_RULE:
 				getFrameworkRule().clear();
 				getFrameworkRule().addAll((Collection<? extends Rule>)newValue);
 				return;
-			case framewebPackage.FRAMEWORK__NEW_EREFERENCE:
+			case FrameWebPackage.FRAMEWORK__NEW_EREFERENCE:
 				getNewEReference().clear();
 				getNewEReference().addAll((Collection<? extends Talvez_Method>)newValue);
 				return;
-			case framewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
+			case FrameWebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
 				getFrameworkAnotation().clear();
 				getFrameworkAnotation().addAll((Collection<? extends Anotation>)newValue);
 				return;
@@ -257,16 +257,16 @@ public class FrameworkImpl extends ModelImpl implements Framework {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
+			case FrameWebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
 				setFrameworkTagLib((TagLib)null);
 				return;
-			case framewebPackage.FRAMEWORK__FRAMEWORK_RULE:
+			case FrameWebPackage.FRAMEWORK__FRAMEWORK_RULE:
 				getFrameworkRule().clear();
 				return;
-			case framewebPackage.FRAMEWORK__NEW_EREFERENCE:
+			case FrameWebPackage.FRAMEWORK__NEW_EREFERENCE:
 				getNewEReference().clear();
 				return;
-			case framewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
+			case FrameWebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
 				getFrameworkAnotation().clear();
 				return;
 		}
@@ -281,13 +281,13 @@ public class FrameworkImpl extends ModelImpl implements Framework {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
+			case FrameWebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
 				return frameworkTagLib != null;
-			case framewebPackage.FRAMEWORK__FRAMEWORK_RULE:
+			case FrameWebPackage.FRAMEWORK__FRAMEWORK_RULE:
 				return frameworkRule != null && !frameworkRule.isEmpty();
-			case framewebPackage.FRAMEWORK__NEW_EREFERENCE:
+			case FrameWebPackage.FRAMEWORK__NEW_EREFERENCE:
 				return newEReference != null && !newEReference.isEmpty();
-			case framewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
+			case FrameWebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
 				return frameworkAnotation != null && !frameworkAnotation.isEmpty();
 		}
 		return super.eIsSet(featureID);

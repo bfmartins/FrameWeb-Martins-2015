@@ -18,7 +18,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getPage()
+ * @see frameweb.FrameWebPackage#getPage()
  * @model
  * @generated
  */
@@ -33,7 +33,7 @@ public interface Page extends NavigationClass {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Page Class Attribute</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getPage_PageClassAttribute()
+	 * @see frameweb.FrameWebPackage#getPage_PageClassAttribute()
 	 * @model containment="true"
 	 * @generated
 	 */
@@ -49,7 +49,7 @@ public interface Page extends NavigationClass {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Page Tag Lib</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getPage_PageTagLib()
+	 * @see frameweb.FrameWebPackage#getPage_PageTagLib()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
@@ -65,7 +65,7 @@ public interface Page extends NavigationClass {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mention</em>' reference list.
-	 * @see frameweb.framewebPackage#getPage_Mention()
+	 * @see frameweb.FrameWebPackage#getPage_Mention()
 	 * @model required="true"
 	 * @generated
 	 */

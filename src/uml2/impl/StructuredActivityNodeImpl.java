@@ -41,8 +41,8 @@ import uml2.OutputPin;
 import uml2.PackageImport;
 import uml2.PackageableElement;
 import uml2.StructuredActivityNode;
-import uml2.Variable;
 import uml2.Uml2Package;
+import uml2.Variable;
 
 import uml2.util.Uml2Validator;
 

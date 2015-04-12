@@ -2,8 +2,8 @@
  */
 package frameweb.impl;
 
+import frameweb.FrameWebPackage;
 import frameweb.NavigationPackage;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -35,7 +35,7 @@ public abstract class NavigationPackageImpl extends PackageImpl implements Navig
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.NAVIGATION_PACKAGE;
+		return FrameWebPackage.Literals.NAVIGATION_PACKAGE;
 	}
 
 } //NavigationPackageImpl

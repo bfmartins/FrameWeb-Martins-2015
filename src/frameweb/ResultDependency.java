@@ -26,7 +26,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getResultDependency()
+ * @see frameweb.FrameWebPackage#getResultDependency()
  * @model
  * @generated
  */
@@ -41,7 +41,7 @@ public interface ResultDependency extends NavigationDependency {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Return Result</em>' reference list.
-	 * @see frameweb.framewebPackage#getResultDependency_ReturnResult()
+	 * @see frameweb.FrameWebPackage#getResultDependency_ReturnResult()
 	 * @model
 	 * @generated
 	 */
@@ -57,7 +57,7 @@ public interface ResultDependency extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Return Method</em>' reference.
 	 * @see #setReturnMethod(FrontControllerMethod)
-	 * @see frameweb.framewebPackage#getResultDependency_ReturnMethod()
+	 * @see frameweb.FrameWebPackage#getResultDependency_ReturnMethod()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -83,7 +83,7 @@ public interface ResultDependency extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Front Controller</em>' reference.
 	 * @see #setSourceFrontController(FrontControllerClass)
-	 * @see frameweb.framewebPackage#getResultDependency_SourceFrontController()
+	 * @see frameweb.FrameWebPackage#getResultDependency_SourceFrontController()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -109,7 +109,7 @@ public interface ResultDependency extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Template</em>' reference.
 	 * @see #setTargetTemplate(Template)
-	 * @see frameweb.framewebPackage#getResultDependency_TargetTemplate()
+	 * @see frameweb.FrameWebPackage#getResultDependency_TargetTemplate()
 	 * @model
 	 * @generated
 	 */
@@ -135,7 +135,7 @@ public interface ResultDependency extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Page</em>' reference.
 	 * @see #setTargetPage(Page)
-	 * @see frameweb.framewebPackage#getResultDependency_TargetPage()
+	 * @see frameweb.FrameWebPackage#getResultDependency_TargetPage()
 	 * @model
 	 * @generated
 	 */
@@ -161,7 +161,7 @@ public interface ResultDependency extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Binary</em>' reference.
 	 * @see #setTargetBinary(Binary)
-	 * @see frameweb.framewebPackage#getResultDependency_TargetBinary()
+	 * @see frameweb.FrameWebPackage#getResultDependency_TargetBinary()
 	 * @model
 	 * @generated
 	 */
@@ -187,7 +187,7 @@ public interface ResultDependency extends NavigationDependency {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Return Result Type</em>' reference list.
-	 * @see frameweb.framewebPackage#getResultDependency_ReturnResultType()
+	 * @see frameweb.FrameWebPackage#getResultDependency_ReturnResultType()
 	 * @model
 	 * @generated
 	 */
@@ -203,7 +203,7 @@ public interface ResultDependency extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Form</em>' reference.
 	 * @see #setTargetForm(Form)
-	 * @see frameweb.framewebPackage#getResultDependency_TargetForm()
+	 * @see frameweb.FrameWebPackage#getResultDependency_TargetForm()
 	 * @model
 	 * @generated
 	 */
@@ -229,7 +229,7 @@ public interface ResultDependency extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Component</em>' reference.
 	 * @see #setTargetComponent(Component)
-	 * @see frameweb.framewebPackage#getResultDependency_TargetComponent()
+	 * @see frameweb.FrameWebPackage#getResultDependency_TargetComponent()
 	 * @model
 	 * @generated
 	 */
@@ -255,7 +255,7 @@ public interface ResultDependency extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target JQuery</em>' reference.
 	 * @see #setTargetJQuery(JQuery)
-	 * @see frameweb.framewebPackage#getResultDependency_TargetJQuery()
+	 * @see frameweb.FrameWebPackage#getResultDependency_TargetJQuery()
 	 * @model
 	 * @generated
 	 */
@@ -281,7 +281,7 @@ public interface ResultDependency extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Form Component</em>' reference.
 	 * @see #setTargetFormComponent(FormComponent)
-	 * @see frameweb.framewebPackage#getResultDependency_TargetFormComponent()
+	 * @see frameweb.FrameWebPackage#getResultDependency_TargetFormComponent()
 	 * @model
 	 * @generated
 	 */

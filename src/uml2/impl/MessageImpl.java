@@ -34,8 +34,8 @@ import uml2.MessageEnd;
 import uml2.MessageKind;
 import uml2.MessageSort;
 import uml2.NamedElement;
-import uml2.ValueSpecification;
 import uml2.Uml2Package;
+import uml2.ValueSpecification;
 
 import uml2.util.Uml2Validator;
 

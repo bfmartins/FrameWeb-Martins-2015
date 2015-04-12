@@ -22,9 +22,9 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
 import org.eclipse.emf.ecore.util.EObjectValidator;
 
+import uml2.Uml2Package;
 import uml2.Variable;
 import uml2.VariableAction;
-import uml2.Uml2Package;
 
 import uml2.util.Uml2Validator;
 

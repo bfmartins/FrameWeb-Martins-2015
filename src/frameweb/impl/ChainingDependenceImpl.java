@@ -3,9 +3,9 @@
 package frameweb.impl;
 
 import frameweb.ChainingDependence;
+import frameweb.FrameWebPackage;
 import frameweb.FrontControllerClass;
 import frameweb.FrontControllerMethod;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -87,7 +87,7 @@ public class ChainingDependenceImpl extends NavigationDependencyImpl implements 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.CHAINING_DEPENDENCE;
+		return FrameWebPackage.Literals.CHAINING_DEPENDENCE;
 	}
 
 	/**
@@ -101,7 +101,7 @@ public class ChainingDependenceImpl extends NavigationDependencyImpl implements 
 			outMethod = (FrontControllerMethod)eResolveProxy(oldOutMethod);
 			if (outMethod != oldOutMethod) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.CHAINING_DEPENDENCE__OUT_METHOD, oldOutMethod, outMethod));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.CHAINING_DEPENDENCE__OUT_METHOD, oldOutMethod, outMethod));
 			}
 		}
 		return outMethod;
@@ -125,7 +125,7 @@ public class ChainingDependenceImpl extends NavigationDependencyImpl implements 
 		FrontControllerMethod oldOutMethod = outMethod;
 		outMethod = newOutMethod;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.CHAINING_DEPENDENCE__OUT_METHOD, oldOutMethod, outMethod));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.CHAINING_DEPENDENCE__OUT_METHOD, oldOutMethod, outMethod));
 	}
 
 	/**
@@ -139,7 +139,7 @@ public class ChainingDependenceImpl extends NavigationDependencyImpl implements 
 			inMethod = (FrontControllerMethod)eResolveProxy(oldInMethod);
 			if (inMethod != oldInMethod) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.CHAINING_DEPENDENCE__IN_METHOD, oldInMethod, inMethod));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.CHAINING_DEPENDENCE__IN_METHOD, oldInMethod, inMethod));
 			}
 		}
 		return inMethod;
@@ -163,7 +163,7 @@ public class ChainingDependenceImpl extends NavigationDependencyImpl implements 
 		FrontControllerMethod oldInMethod = inMethod;
 		inMethod = newInMethod;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.CHAINING_DEPENDENCE__IN_METHOD, oldInMethod, inMethod));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.CHAINING_DEPENDENCE__IN_METHOD, oldInMethod, inMethod));
 	}
 
 	/**
@@ -177,7 +177,7 @@ public class ChainingDependenceImpl extends NavigationDependencyImpl implements 
 			targetFrontController = (FrontControllerClass)eResolveProxy(oldTargetFrontController);
 			if (targetFrontController != oldTargetFrontController) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.CHAINING_DEPENDENCE__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.CHAINING_DEPENDENCE__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
 			}
 		}
 		return targetFrontController;
@@ -201,7 +201,7 @@ public class ChainingDependenceImpl extends NavigationDependencyImpl implements 
 		FrontControllerClass oldTargetFrontController = targetFrontController;
 		targetFrontController = newTargetFrontController;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.CHAINING_DEPENDENCE__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.CHAINING_DEPENDENCE__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
 	}
 
 	/**
@@ -215,7 +215,7 @@ public class ChainingDependenceImpl extends NavigationDependencyImpl implements 
 			sourceFrontController = (FrontControllerClass)eResolveProxy(oldSourceFrontController);
 			if (sourceFrontController != oldSourceFrontController) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.CHAINING_DEPENDENCE__SOURCE_FRONT_CONTROLLER, oldSourceFrontController, sourceFrontController));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.CHAINING_DEPENDENCE__SOURCE_FRONT_CONTROLLER, oldSourceFrontController, sourceFrontController));
 			}
 		}
 		return sourceFrontController;
@@ -239,7 +239,7 @@ public class ChainingDependenceImpl extends NavigationDependencyImpl implements 
 		FrontControllerClass oldSourceFrontController = sourceFrontController;
 		sourceFrontController = newSourceFrontController;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.CHAINING_DEPENDENCE__SOURCE_FRONT_CONTROLLER, oldSourceFrontController, sourceFrontController));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.CHAINING_DEPENDENCE__SOURCE_FRONT_CONTROLLER, oldSourceFrontController, sourceFrontController));
 	}
 
 	/**
@@ -250,16 +250,16 @@ public class ChainingDependenceImpl extends NavigationDependencyImpl implements 
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.CHAINING_DEPENDENCE__OUT_METHOD:
+			case FrameWebPackage.CHAINING_DEPENDENCE__OUT_METHOD:
 				if (resolve) return getOutMethod();
 				return basicGetOutMethod();
-			case framewebPackage.CHAINING_DEPENDENCE__IN_METHOD:
+			case FrameWebPackage.CHAINING_DEPENDENCE__IN_METHOD:
 				if (resolve) return getInMethod();
 				return basicGetInMethod();
-			case framewebPackage.CHAINING_DEPENDENCE__TARGET_FRONT_CONTROLLER:
+			case FrameWebPackage.CHAINING_DEPENDENCE__TARGET_FRONT_CONTROLLER:
 				if (resolve) return getTargetFrontController();
 				return basicGetTargetFrontController();
-			case framewebPackage.CHAINING_DEPENDENCE__SOURCE_FRONT_CONTROLLER:
+			case FrameWebPackage.CHAINING_DEPENDENCE__SOURCE_FRONT_CONTROLLER:
 				if (resolve) return getSourceFrontController();
 				return basicGetSourceFrontController();
 		}
@@ -274,16 +274,16 @@ public class ChainingDependenceImpl extends NavigationDependencyImpl implements 
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.CHAINING_DEPENDENCE__OUT_METHOD:
+			case FrameWebPackage.CHAINING_DEPENDENCE__OUT_METHOD:
 				setOutMethod((FrontControllerMethod)newValue);
 				return;
-			case framewebPackage.CHAINING_DEPENDENCE__IN_METHOD:
+			case FrameWebPackage.CHAINING_DEPENDENCE__IN_METHOD:
 				setInMethod((FrontControllerMethod)newValue);
 				return;
-			case framewebPackage.CHAINING_DEPENDENCE__TARGET_FRONT_CONTROLLER:
+			case FrameWebPackage.CHAINING_DEPENDENCE__TARGET_FRONT_CONTROLLER:
 				setTargetFrontController((FrontControllerClass)newValue);
 				return;
-			case framewebPackage.CHAINING_DEPENDENCE__SOURCE_FRONT_CONTROLLER:
+			case FrameWebPackage.CHAINING_DEPENDENCE__SOURCE_FRONT_CONTROLLER:
 				setSourceFrontController((FrontControllerClass)newValue);
 				return;
 		}
@@ -298,16 +298,16 @@ public class ChainingDependenceImpl extends NavigationDependencyImpl implements 
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.CHAINING_DEPENDENCE__OUT_METHOD:
+			case FrameWebPackage.CHAINING_DEPENDENCE__OUT_METHOD:
 				setOutMethod((FrontControllerMethod)null);
 				return;
-			case framewebPackage.CHAINING_DEPENDENCE__IN_METHOD:
+			case FrameWebPackage.CHAINING_DEPENDENCE__IN_METHOD:
 				setInMethod((FrontControllerMethod)null);
 				return;
-			case framewebPackage.CHAINING_DEPENDENCE__TARGET_FRONT_CONTROLLER:
+			case FrameWebPackage.CHAINING_DEPENDENCE__TARGET_FRONT_CONTROLLER:
 				setTargetFrontController((FrontControllerClass)null);
 				return;
-			case framewebPackage.CHAINING_DEPENDENCE__SOURCE_FRONT_CONTROLLER:
+			case FrameWebPackage.CHAINING_DEPENDENCE__SOURCE_FRONT_CONTROLLER:
 				setSourceFrontController((FrontControllerClass)null);
 				return;
 		}
@@ -322,13 +322,13 @@ public class ChainingDependenceImpl extends NavigationDependencyImpl implements 
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.CHAINING_DEPENDENCE__OUT_METHOD:
+			case FrameWebPackage.CHAINING_DEPENDENCE__OUT_METHOD:
 				return outMethod != null;
-			case framewebPackage.CHAINING_DEPENDENCE__IN_METHOD:
+			case FrameWebPackage.CHAINING_DEPENDENCE__IN_METHOD:
 				return inMethod != null;
-			case framewebPackage.CHAINING_DEPENDENCE__TARGET_FRONT_CONTROLLER:
+			case FrameWebPackage.CHAINING_DEPENDENCE__TARGET_FRONT_CONTROLLER:
 				return targetFrontController != null;
-			case framewebPackage.CHAINING_DEPENDENCE__SOURCE_FRONT_CONTROLLER:
+			case FrameWebPackage.CHAINING_DEPENDENCE__SOURCE_FRONT_CONTROLLER:
 				return sourceFrontController != null;
 		}
 		return super.eIsSet(featureID);

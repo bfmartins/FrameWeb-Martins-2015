@@ -2,10 +2,10 @@
  */
 package frameweb.impl;
 
+import frameweb.FrameWebPackage;
 import frameweb.FrontControllerClass;
 import frameweb.ServiceInterface;
 import frameweb.ServiceNavigationAssociation;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -65,7 +65,7 @@ public class ServiceNavigationAssociationImpl extends ServiceAssociationImpl imp
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.SERVICE_NAVIGATION_ASSOCIATION;
+		return FrameWebPackage.Literals.SERVICE_NAVIGATION_ASSOCIATION;
 	}
 
 	/**
@@ -79,7 +79,7 @@ public class ServiceNavigationAssociationImpl extends ServiceAssociationImpl imp
 			sourceServiceClass = (ServiceInterface)eResolveProxy(oldSourceServiceClass);
 			if (sourceServiceClass != oldSourceServiceClass) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS, oldSourceServiceClass, sourceServiceClass));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS, oldSourceServiceClass, sourceServiceClass));
 			}
 		}
 		return sourceServiceClass;
@@ -103,7 +103,7 @@ public class ServiceNavigationAssociationImpl extends ServiceAssociationImpl imp
 		ServiceInterface oldSourceServiceClass = sourceServiceClass;
 		sourceServiceClass = newSourceServiceClass;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS, oldSourceServiceClass, sourceServiceClass));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS, oldSourceServiceClass, sourceServiceClass));
 	}
 
 	/**
@@ -117,7 +117,7 @@ public class ServiceNavigationAssociationImpl extends ServiceAssociationImpl imp
 			targetFrontController = (FrontControllerClass)eResolveProxy(oldTargetFrontController);
 			if (targetFrontController != oldTargetFrontController) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
 			}
 		}
 		return targetFrontController;
@@ -141,7 +141,7 @@ public class ServiceNavigationAssociationImpl extends ServiceAssociationImpl imp
 		FrontControllerClass oldTargetFrontController = targetFrontController;
 		targetFrontController = newTargetFrontController;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
 	}
 
 	/**
@@ -152,10 +152,10 @@ public class ServiceNavigationAssociationImpl extends ServiceAssociationImpl imp
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS:
+			case FrameWebPackage.SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS:
 				if (resolve) return getSourceServiceClass();
 				return basicGetSourceServiceClass();
-			case framewebPackage.SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER:
+			case FrameWebPackage.SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER:
 				if (resolve) return getTargetFrontController();
 				return basicGetTargetFrontController();
 		}
@@ -170,10 +170,10 @@ public class ServiceNavigationAssociationImpl extends ServiceAssociationImpl imp
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS:
+			case FrameWebPackage.SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS:
 				setSourceServiceClass((ServiceInterface)newValue);
 				return;
-			case framewebPackage.SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER:
+			case FrameWebPackage.SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER:
 				setTargetFrontController((FrontControllerClass)newValue);
 				return;
 		}
@@ -188,10 +188,10 @@ public class ServiceNavigationAssociationImpl extends ServiceAssociationImpl imp
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS:
+			case FrameWebPackage.SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS:
 				setSourceServiceClass((ServiceInterface)null);
 				return;
-			case framewebPackage.SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER:
+			case FrameWebPackage.SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER:
 				setTargetFrontController((FrontControllerClass)null);
 				return;
 		}
@@ -206,9 +206,9 @@ public class ServiceNavigationAssociationImpl extends ServiceAssociationImpl imp
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS:
+			case FrameWebPackage.SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS:
 				return sourceServiceClass != null;
-			case framewebPackage.SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER:
+			case FrameWebPackage.SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER:
 				return targetFrontController != null;
 		}
 		return super.eIsSet(featureID);

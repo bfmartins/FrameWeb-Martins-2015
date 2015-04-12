@@ -18,8 +18,8 @@ import uml2.DirectedRelationship;
 import uml2.Element;
 import uml2.Include;
 import uml2.Relationship;
-import uml2.UseCase;
 import uml2.Uml2Package;
+import uml2.UseCase;
 
 /**
  * <!-- begin-user-doc -->

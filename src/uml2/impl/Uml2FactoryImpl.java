@@ -207,6 +207,8 @@ import uml2.TimeObservation;
 import uml2.Transition;
 import uml2.TransitionKind;
 import uml2.Trigger;
+import uml2.Uml2Factory;
+import uml2.Uml2Package;
 import uml2.UnmarshallAction;
 import uml2.Usage;
 import uml2.UseCase;
@@ -214,8 +216,6 @@ import uml2.ValuePin;
 import uml2.ValueSpecificationAction;
 import uml2.Variable;
 import uml2.VisibilityKind;
-import uml2.Uml2Factory;
-import uml2.Uml2Package;
 
 /**
  * <!-- begin-user-doc -->
@@ -232,9 +232,9 @@ public class Uml2FactoryImpl extends EFactoryImpl implements Uml2Factory {
 	 */
 	public static Uml2Factory init() {
 		try {
-			Uml2Factory theuml2Factory = (Uml2Factory)EPackage.Registry.INSTANCE.getEFactory(Uml2Package.eNS_URI);
-			if (theuml2Factory != null) {
-				return theuml2Factory;
+			Uml2Factory theUml2Factory = (Uml2Factory)EPackage.Registry.INSTANCE.getEFactory(Uml2Package.eNS_URI);
+			if (theUml2Factory != null) {
+				return theUml2Factory;
 			}
 		}
 		catch (Exception exception) {
@@ -2708,7 +2708,7 @@ public class Uml2FactoryImpl extends EFactoryImpl implements Uml2Factory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Uml2Package getuml2Package() {
+	public Uml2Package getUml2Package() {
 		return (Uml2Package)getEPackage();
 	}
 
@@ -2723,4 +2723,4 @@ public class Uml2FactoryImpl extends EFactoryImpl implements Uml2Factory {
 		return Uml2Package.eINSTANCE;
 	}
 
-} //uml2FactoryImpl
+} //Uml2FactoryImpl

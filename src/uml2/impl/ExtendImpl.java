@@ -32,8 +32,8 @@ import uml2.Element;
 import uml2.Extend;
 import uml2.ExtensionPoint;
 import uml2.Relationship;
-import uml2.UseCase;
 import uml2.Uml2Package;
+import uml2.UseCase;
 
 import uml2.util.Uml2Validator;
 

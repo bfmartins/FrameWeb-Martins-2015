@@ -6,11 +6,11 @@ import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Frame Web Name</b></em>'.
+ * A representation of the model object '<em><b>Name</b></em>'.
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.framewebPackage#getFrameWebName()
+ * @see frameweb.FrameWebPackage#getFrameWebName()
  * @model abstract="true"
  * @generated
  */

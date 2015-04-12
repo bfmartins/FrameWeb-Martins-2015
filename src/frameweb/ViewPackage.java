@@ -16,7 +16,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getViewPackage()
+ * @see frameweb.FrameWebPackage#getViewPackage()
  * @model
  * @generated
  */
@@ -31,7 +31,7 @@ public interface ViewPackage extends NavigationPackage {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>View Package Class</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getViewPackage_ViewPackageClass()
+	 * @see frameweb.FrameWebPackage#getViewPackage_ViewPackageClass()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */

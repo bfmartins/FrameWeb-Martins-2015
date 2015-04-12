@@ -4,8 +4,8 @@ package frameweb.impl;
 
 import frameweb.ApplicationModel;
 import frameweb.ApplicationPackage;
+import frameweb.FrameWebPackage;
 import frameweb.ServiceAssociation;
-import frameweb.framewebPackage;
 
 import java.util.Collection;
 
@@ -70,7 +70,7 @@ public class ApplicationModelImpl extends FrameWebModelImpl implements Applicati
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.APPLICATION_MODEL;
+		return FrameWebPackage.Literals.APPLICATION_MODEL;
 	}
 
 	/**
@@ -80,7 +80,7 @@ public class ApplicationModelImpl extends FrameWebModelImpl implements Applicati
 	 */
 	public EList<ServiceAssociation> getServiceUMLAssociation() {
 		if (serviceUMLAssociation == null) {
-			serviceUMLAssociation = new EObjectContainmentEList<ServiceAssociation>(ServiceAssociation.class, this, framewebPackage.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION);
+			serviceUMLAssociation = new EObjectContainmentEList<ServiceAssociation>(ServiceAssociation.class, this, FrameWebPackage.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION);
 		}
 		return serviceUMLAssociation;
 	}
@@ -92,7 +92,7 @@ public class ApplicationModelImpl extends FrameWebModelImpl implements Applicati
 	 */
 	public EList<ApplicationPackage> getApplicationUMLPackage() {
 		if (applicationUMLPackage == null) {
-			applicationUMLPackage = new EObjectContainmentEList<ApplicationPackage>(ApplicationPackage.class, this, framewebPackage.APPLICATION_MODEL__APPLICATION_UML_PACKAGE);
+			applicationUMLPackage = new EObjectContainmentEList<ApplicationPackage>(ApplicationPackage.class, this, FrameWebPackage.APPLICATION_MODEL__APPLICATION_UML_PACKAGE);
 		}
 		return applicationUMLPackage;
 	}
@@ -105,9 +105,9 @@ public class ApplicationModelImpl extends FrameWebModelImpl implements Applicati
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION:
+			case FrameWebPackage.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION:
 				return ((InternalEList<?>)getServiceUMLAssociation()).basicRemove(otherEnd, msgs);
-			case framewebPackage.APPLICATION_MODEL__APPLICATION_UML_PACKAGE:
+			case FrameWebPackage.APPLICATION_MODEL__APPLICATION_UML_PACKAGE:
 				return ((InternalEList<?>)getApplicationUMLPackage()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -121,9 +121,9 @@ public class ApplicationModelImpl extends FrameWebModelImpl implements Applicati
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION:
+			case FrameWebPackage.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION:
 				return getServiceUMLAssociation();
-			case framewebPackage.APPLICATION_MODEL__APPLICATION_UML_PACKAGE:
+			case FrameWebPackage.APPLICATION_MODEL__APPLICATION_UML_PACKAGE:
 				return getApplicationUMLPackage();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -138,11 +138,11 @@ public class ApplicationModelImpl extends FrameWebModelImpl implements Applicati
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION:
+			case FrameWebPackage.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION:
 				getServiceUMLAssociation().clear();
 				getServiceUMLAssociation().addAll((Collection<? extends ServiceAssociation>)newValue);
 				return;
-			case framewebPackage.APPLICATION_MODEL__APPLICATION_UML_PACKAGE:
+			case FrameWebPackage.APPLICATION_MODEL__APPLICATION_UML_PACKAGE:
 				getApplicationUMLPackage().clear();
 				getApplicationUMLPackage().addAll((Collection<? extends ApplicationPackage>)newValue);
 				return;
@@ -158,10 +158,10 @@ public class ApplicationModelImpl extends FrameWebModelImpl implements Applicati
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION:
+			case FrameWebPackage.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION:
 				getServiceUMLAssociation().clear();
 				return;
-			case framewebPackage.APPLICATION_MODEL__APPLICATION_UML_PACKAGE:
+			case FrameWebPackage.APPLICATION_MODEL__APPLICATION_UML_PACKAGE:
 				getApplicationUMLPackage().clear();
 				return;
 		}
@@ -176,9 +176,9 @@ public class ApplicationModelImpl extends FrameWebModelImpl implements Applicati
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION:
+			case FrameWebPackage.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION:
 				return serviceUMLAssociation != null && !serviceUMLAssociation.isEmpty();
-			case framewebPackage.APPLICATION_MODEL__APPLICATION_UML_PACKAGE:
+			case FrameWebPackage.APPLICATION_MODEL__APPLICATION_UML_PACKAGE:
 				return applicationUMLPackage != null && !applicationUMLPackage.isEmpty();
 		}
 		return super.eIsSet(featureID);

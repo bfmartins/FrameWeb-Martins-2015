@@ -2,8 +2,8 @@
  */
 package frameweb.impl;
 
+import frameweb.FrameWebPackage;
 import frameweb.ServiceAssociation;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -35,7 +35,7 @@ public class ServiceAssociationImpl extends AssociationImpl implements ServiceAs
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.SERVICE_ASSOCIATION;
+		return FrameWebPackage.Literals.SERVICE_ASSOCIATION;
 	}
 
 } //ServiceAssociationImpl

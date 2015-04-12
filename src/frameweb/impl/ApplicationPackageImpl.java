@@ -3,9 +3,9 @@
 package frameweb.impl;
 
 import frameweb.ApplicationPackage;
+import frameweb.FrameWebPackage;
 import frameweb.ServiceClass;
 import frameweb.ServiceInterface;
-import frameweb.framewebPackage;
 
 import java.util.Collection;
 
@@ -72,7 +72,7 @@ public class ApplicationPackageImpl extends PackageImpl implements ApplicationPa
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.APPLICATION_PACKAGE;
+		return FrameWebPackage.Literals.APPLICATION_PACKAGE;
 	}
 
 	/**
@@ -82,7 +82,7 @@ public class ApplicationPackageImpl extends PackageImpl implements ApplicationPa
 	 */
 	public EList<ServiceClass> getServicePackageClass() {
 		if (servicePackageClass == null) {
-			servicePackageClass = new EObjectContainmentEList<ServiceClass>(ServiceClass.class, this, framewebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS);
+			servicePackageClass = new EObjectContainmentEList<ServiceClass>(ServiceClass.class, this, FrameWebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS);
 		}
 		return servicePackageClass;
 	}
@@ -94,7 +94,7 @@ public class ApplicationPackageImpl extends PackageImpl implements ApplicationPa
 	 */
 	public EList<ServiceInterface> getServicePackageInterface() {
 		if (servicePackageInterface == null) {
-			servicePackageInterface = new EObjectContainmentEList<ServiceInterface>(ServiceInterface.class, this, framewebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE);
+			servicePackageInterface = new EObjectContainmentEList<ServiceInterface>(ServiceInterface.class, this, FrameWebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE);
 		}
 		return servicePackageInterface;
 	}
@@ -107,9 +107,9 @@ public class ApplicationPackageImpl extends PackageImpl implements ApplicationPa
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS:
+			case FrameWebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS:
 				return ((InternalEList<?>)getServicePackageClass()).basicRemove(otherEnd, msgs);
-			case framewebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE:
+			case FrameWebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE:
 				return ((InternalEList<?>)getServicePackageInterface()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -123,9 +123,9 @@ public class ApplicationPackageImpl extends PackageImpl implements ApplicationPa
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS:
+			case FrameWebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS:
 				return getServicePackageClass();
-			case framewebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE:
+			case FrameWebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE:
 				return getServicePackageInterface();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -140,11 +140,11 @@ public class ApplicationPackageImpl extends PackageImpl implements ApplicationPa
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS:
+			case FrameWebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS:
 				getServicePackageClass().clear();
 				getServicePackageClass().addAll((Collection<? extends ServiceClass>)newValue);
 				return;
-			case framewebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE:
+			case FrameWebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE:
 				getServicePackageInterface().clear();
 				getServicePackageInterface().addAll((Collection<? extends ServiceInterface>)newValue);
 				return;
@@ -160,10 +160,10 @@ public class ApplicationPackageImpl extends PackageImpl implements ApplicationPa
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS:
+			case FrameWebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS:
 				getServicePackageClass().clear();
 				return;
-			case framewebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE:
+			case FrameWebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE:
 				getServicePackageInterface().clear();
 				return;
 		}
@@ -178,9 +178,9 @@ public class ApplicationPackageImpl extends PackageImpl implements ApplicationPa
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS:
+			case FrameWebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS:
 				return servicePackageClass != null && !servicePackageClass.isEmpty();
-			case framewebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE:
+			case FrameWebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE:
 				return servicePackageInterface != null && !servicePackageInterface.isEmpty();
 		}
 		return super.eIsSet(featureID);

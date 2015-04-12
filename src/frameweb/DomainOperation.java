@@ -10,7 +10,7 @@ import uml2.Operation;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.framewebPackage#getDomainOperation()
+ * @see frameweb.FrameWebPackage#getDomainOperation()
  * @model
  * @generated
  */

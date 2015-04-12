@@ -32,8 +32,8 @@ import uml2.Interaction;
 import uml2.InteractionFragment;
 import uml2.Lifeline;
 import uml2.PartDecomposition;
-import uml2.ValueSpecification;
 import uml2.Uml2Package;
+import uml2.ValueSpecification;
 
 import uml2.util.Uml2Validator;
 

@@ -27,8 +27,8 @@ import uml2.MultiplicityElement;
 import uml2.StructuralFeature;
 import uml2.Type;
 import uml2.TypedElement;
-import uml2.ValueSpecification;
 import uml2.Uml2Package;
+import uml2.ValueSpecification;
 
 import uml2.util.Uml2Validator;
 

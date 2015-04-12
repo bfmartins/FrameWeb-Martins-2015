@@ -1765,6 +1765,6 @@ public interface Uml2Factory extends EFactory {
 	 * @return the package supported by this factory.
 	 * @generated
 	 */
-	Uml2Package getuml2Package();
+	Uml2Package getUml2Package();
 
-} //uml2Factory
+} //Uml2Factory

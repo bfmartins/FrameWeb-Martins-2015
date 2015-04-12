@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getDomainClass()
+ * @see frameweb.FrameWebPackage#getDomainClass()
  * @model abstract="true"
  * @generated
  */
@@ -32,7 +32,7 @@ public interface DomainClass extends uml2.Class {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Domain Class Attribute</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getDomainClass_DomainClassAttribute()
+	 * @see frameweb.FrameWebPackage#getDomainClass_DomainClassAttribute()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
@@ -48,7 +48,7 @@ public interface DomainClass extends uml2.Class {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Domain Class Operation</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getDomainClass_DomainClassOperation()
+	 * @see frameweb.FrameWebPackage#getDomainClass_DomainClassOperation()
 	 * @model containment="true"
 	 * @generated
 	 */

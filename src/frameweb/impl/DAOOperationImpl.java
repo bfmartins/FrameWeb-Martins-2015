@@ -3,7 +3,7 @@
 package frameweb.impl;
 
 import frameweb.DAOOperation;
-import frameweb.framewebPackage;
+import frameweb.FrameWebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -35,7 +35,7 @@ public class DAOOperationImpl extends OperationImpl implements DAOOperation {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.DAO_OPERATION;
+		return FrameWebPackage.Literals.DAO_OPERATION;
 	}
 
 } //DAOOperationImpl

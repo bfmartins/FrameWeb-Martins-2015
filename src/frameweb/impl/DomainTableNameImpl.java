@@ -3,8 +3,8 @@
 package frameweb.impl;
 
 import frameweb.DomainTableName;
+import frameweb.FrameWebPackage;
 import frameweb.PersistentClass;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -75,7 +75,7 @@ public class DomainTableNameImpl extends FrameWebNameImpl implements DomainTable
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.DOMAIN_TABLE_NAME;
+		return FrameWebPackage.Literals.DOMAIN_TABLE_NAME;
 	}
 
 	/**
@@ -96,7 +96,7 @@ public class DomainTableNameImpl extends FrameWebNameImpl implements DomainTable
 		String oldFwName = fwName;
 		fwName = newFwName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.DOMAIN_TABLE_NAME__FW_NAME, oldFwName, fwName));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_TABLE_NAME__FW_NAME, oldFwName, fwName));
 	}
 
 	/**
@@ -110,7 +110,7 @@ public class DomainTableNameImpl extends FrameWebNameImpl implements DomainTable
 			persistentClassName = (PersistentClass)eResolveProxy(oldPersistentClassName);
 			if (persistentClassName != oldPersistentClassName) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME, oldPersistentClassName, persistentClassName));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME, oldPersistentClassName, persistentClassName));
 			}
 		}
 		return persistentClassName;
@@ -134,7 +134,7 @@ public class DomainTableNameImpl extends FrameWebNameImpl implements DomainTable
 		PersistentClass oldPersistentClassName = persistentClassName;
 		persistentClassName = newPersistentClassName;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, framewebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME, oldPersistentClassName, newPersistentClassName);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME, oldPersistentClassName, newPersistentClassName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -149,14 +149,14 @@ public class DomainTableNameImpl extends FrameWebNameImpl implements DomainTable
 		if (newPersistentClassName != persistentClassName) {
 			NotificationChain msgs = null;
 			if (persistentClassName != null)
-				msgs = ((InternalEObject)persistentClassName).eInverseRemove(this, framewebPackage.PERSISTENT_CLASS__TABLE, PersistentClass.class, msgs);
+				msgs = ((InternalEObject)persistentClassName).eInverseRemove(this, FrameWebPackage.PERSISTENT_CLASS__TABLE, PersistentClass.class, msgs);
 			if (newPersistentClassName != null)
-				msgs = ((InternalEObject)newPersistentClassName).eInverseAdd(this, framewebPackage.PERSISTENT_CLASS__TABLE, PersistentClass.class, msgs);
+				msgs = ((InternalEObject)newPersistentClassName).eInverseAdd(this, FrameWebPackage.PERSISTENT_CLASS__TABLE, PersistentClass.class, msgs);
 			msgs = basicSetPersistentClassName(newPersistentClassName, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME, newPersistentClassName, newPersistentClassName));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME, newPersistentClassName, newPersistentClassName));
 	}
 
 	/**
@@ -167,9 +167,9 @@ public class DomainTableNameImpl extends FrameWebNameImpl implements DomainTable
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME:
+			case FrameWebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME:
 				if (persistentClassName != null)
-					msgs = ((InternalEObject)persistentClassName).eInverseRemove(this, framewebPackage.PERSISTENT_CLASS__TABLE, PersistentClass.class, msgs);
+					msgs = ((InternalEObject)persistentClassName).eInverseRemove(this, FrameWebPackage.PERSISTENT_CLASS__TABLE, PersistentClass.class, msgs);
 				return basicSetPersistentClassName((PersistentClass)otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -183,7 +183,7 @@ public class DomainTableNameImpl extends FrameWebNameImpl implements DomainTable
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME:
+			case FrameWebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME:
 				return basicSetPersistentClassName(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -197,9 +197,9 @@ public class DomainTableNameImpl extends FrameWebNameImpl implements DomainTable
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_TABLE_NAME__FW_NAME:
+			case FrameWebPackage.DOMAIN_TABLE_NAME__FW_NAME:
 				return getFwName();
-			case framewebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME:
+			case FrameWebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME:
 				if (resolve) return getPersistentClassName();
 				return basicGetPersistentClassName();
 		}
@@ -214,10 +214,10 @@ public class DomainTableNameImpl extends FrameWebNameImpl implements DomainTable
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_TABLE_NAME__FW_NAME:
+			case FrameWebPackage.DOMAIN_TABLE_NAME__FW_NAME:
 				setFwName((String)newValue);
 				return;
-			case framewebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME:
+			case FrameWebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME:
 				setPersistentClassName((PersistentClass)newValue);
 				return;
 		}
@@ -232,10 +232,10 @@ public class DomainTableNameImpl extends FrameWebNameImpl implements DomainTable
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_TABLE_NAME__FW_NAME:
+			case FrameWebPackage.DOMAIN_TABLE_NAME__FW_NAME:
 				setFwName(FW_NAME_EDEFAULT);
 				return;
-			case framewebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME:
+			case FrameWebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME:
 				setPersistentClassName((PersistentClass)null);
 				return;
 		}
@@ -250,9 +250,9 @@ public class DomainTableNameImpl extends FrameWebNameImpl implements DomainTable
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_TABLE_NAME__FW_NAME:
+			case FrameWebPackage.DOMAIN_TABLE_NAME__FW_NAME:
 				return FW_NAME_EDEFAULT == null ? fwName != null : !FW_NAME_EDEFAULT.equals(fwName);
-			case framewebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME:
+			case FrameWebPackage.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME:
 				return persistentClassName != null;
 		}
 		return super.eIsSet(featureID);

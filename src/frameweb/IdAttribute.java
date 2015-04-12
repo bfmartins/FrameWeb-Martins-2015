@@ -15,7 +15,7 @@ package frameweb;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getIdAttribute()
+ * @see frameweb.FrameWebPackage#getIdAttribute()
  * @model
  * @generated
  */
@@ -32,7 +32,7 @@ public interface IdAttribute extends DomainAttribute {
 	 * @return the value of the '<em>Generation</em>' attribute.
 	 * @see frameweb.Generation
 	 * @see #setGeneration(Generation)
-	 * @see frameweb.framewebPackage#getIdAttribute_Generation()
+	 * @see frameweb.FrameWebPackage#getIdAttribute_Generation()
 	 * @model
 	 * @generated
 	 */

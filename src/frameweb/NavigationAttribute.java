@@ -10,7 +10,7 @@ import uml2.Property;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.framewebPackage#getNavigationAttribute()
+ * @see frameweb.FrameWebPackage#getNavigationAttribute()
  * @model abstract="true"
  * @generated
  */

@@ -15,7 +15,7 @@ package frameweb;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getDAOClassName()
+ * @see frameweb.FrameWebPackage#getDAOClassName()
  * @model
  * @generated
  */
@@ -30,7 +30,7 @@ public interface DAOClassName extends DAOInterfaceName {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Frame Work Name Sufix</em>' reference.
 	 * @see #setFrameWorkNameSufix(FrameWorkName)
-	 * @see frameweb.framewebPackage#getDAOClassName_FrameWorkNameSufix()
+	 * @see frameweb.FrameWebPackage#getDAOClassName_FrameWorkNameSufix()
 	 * @model required="true"
 	 * @generated
 	 */

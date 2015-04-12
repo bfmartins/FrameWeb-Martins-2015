@@ -17,7 +17,7 @@ import uml2.Generalization;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getDAOGeneralization()
+ * @see frameweb.FrameWebPackage#getDAOGeneralization()
  * @model
  * @generated
  */
@@ -32,7 +32,7 @@ public interface DAOGeneralization extends Generalization {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target DAO Class</em>' reference.
 	 * @see #setTargetDAOClass(DAOClass)
-	 * @see frameweb.framewebPackage#getDAOGeneralization_TargetDAOClass()
+	 * @see frameweb.FrameWebPackage#getDAOGeneralization_TargetDAOClass()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -58,7 +58,7 @@ public interface DAOGeneralization extends Generalization {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source DAO Interface</em>' reference.
 	 * @see #setSourceDAOInterface(DAOInterface)
-	 * @see frameweb.framewebPackage#getDAOGeneralization_SourceDAOInterface()
+	 * @see frameweb.FrameWebPackage#getDAOGeneralization_SourceDAOInterface()
 	 * @model required="true"
 	 * @generated
 	 */

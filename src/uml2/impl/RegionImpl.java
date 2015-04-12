@@ -33,8 +33,8 @@ import uml2.Region;
 import uml2.State;
 import uml2.StateMachine;
 import uml2.Transition;
-import uml2.Vertex;
 import uml2.Uml2Package;
+import uml2.Vertex;
 
 import uml2.util.Uml2Validator;
 

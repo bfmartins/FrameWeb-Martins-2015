@@ -5,7 +5,7 @@ package frameweb.impl;
 import frameweb.DAOClass;
 import frameweb.DAOGeneralization;
 import frameweb.DAOInterface;
-import frameweb.framewebPackage;
+import frameweb.FrameWebPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -67,7 +67,7 @@ public class DAOGeneralizationImpl extends GeneralizationImpl implements DAOGene
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.DAO_GENERALIZATION;
+		return FrameWebPackage.Literals.DAO_GENERALIZATION;
 	}
 
 	/**
@@ -81,7 +81,7 @@ public class DAOGeneralizationImpl extends GeneralizationImpl implements DAOGene
 			targetDAOClass = (DAOClass)eResolveProxy(oldTargetDAOClass);
 			if (targetDAOClass != oldTargetDAOClass) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.DAO_GENERALIZATION__TARGET_DAO_CLASS, oldTargetDAOClass, targetDAOClass));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DAO_GENERALIZATION__TARGET_DAO_CLASS, oldTargetDAOClass, targetDAOClass));
 			}
 		}
 		return targetDAOClass;
@@ -105,7 +105,7 @@ public class DAOGeneralizationImpl extends GeneralizationImpl implements DAOGene
 		DAOClass oldTargetDAOClass = targetDAOClass;
 		targetDAOClass = newTargetDAOClass;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.DAO_GENERALIZATION__TARGET_DAO_CLASS, oldTargetDAOClass, targetDAOClass));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DAO_GENERALIZATION__TARGET_DAO_CLASS, oldTargetDAOClass, targetDAOClass));
 	}
 
 	/**
@@ -119,7 +119,7 @@ public class DAOGeneralizationImpl extends GeneralizationImpl implements DAOGene
 			sourceDAOInterface = (DAOInterface)eResolveProxy(oldSourceDAOInterface);
 			if (sourceDAOInterface != oldSourceDAOInterface) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.DAO_GENERALIZATION__SOURCE_DAO_INTERFACE, oldSourceDAOInterface, sourceDAOInterface));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DAO_GENERALIZATION__SOURCE_DAO_INTERFACE, oldSourceDAOInterface, sourceDAOInterface));
 			}
 		}
 		return sourceDAOInterface;
@@ -143,7 +143,7 @@ public class DAOGeneralizationImpl extends GeneralizationImpl implements DAOGene
 		DAOInterface oldSourceDAOInterface = sourceDAOInterface;
 		sourceDAOInterface = newSourceDAOInterface;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.DAO_GENERALIZATION__SOURCE_DAO_INTERFACE, oldSourceDAOInterface, sourceDAOInterface));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DAO_GENERALIZATION__SOURCE_DAO_INTERFACE, oldSourceDAOInterface, sourceDAOInterface));
 	}
 
 	/**
@@ -154,10 +154,10 @@ public class DAOGeneralizationImpl extends GeneralizationImpl implements DAOGene
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.DAO_GENERALIZATION__TARGET_DAO_CLASS:
+			case FrameWebPackage.DAO_GENERALIZATION__TARGET_DAO_CLASS:
 				if (resolve) return getTargetDAOClass();
 				return basicGetTargetDAOClass();
-			case framewebPackage.DAO_GENERALIZATION__SOURCE_DAO_INTERFACE:
+			case FrameWebPackage.DAO_GENERALIZATION__SOURCE_DAO_INTERFACE:
 				if (resolve) return getSourceDAOInterface();
 				return basicGetSourceDAOInterface();
 		}
@@ -172,10 +172,10 @@ public class DAOGeneralizationImpl extends GeneralizationImpl implements DAOGene
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.DAO_GENERALIZATION__TARGET_DAO_CLASS:
+			case FrameWebPackage.DAO_GENERALIZATION__TARGET_DAO_CLASS:
 				setTargetDAOClass((DAOClass)newValue);
 				return;
-			case framewebPackage.DAO_GENERALIZATION__SOURCE_DAO_INTERFACE:
+			case FrameWebPackage.DAO_GENERALIZATION__SOURCE_DAO_INTERFACE:
 				setSourceDAOInterface((DAOInterface)newValue);
 				return;
 		}
@@ -190,10 +190,10 @@ public class DAOGeneralizationImpl extends GeneralizationImpl implements DAOGene
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DAO_GENERALIZATION__TARGET_DAO_CLASS:
+			case FrameWebPackage.DAO_GENERALIZATION__TARGET_DAO_CLASS:
 				setTargetDAOClass((DAOClass)null);
 				return;
-			case framewebPackage.DAO_GENERALIZATION__SOURCE_DAO_INTERFACE:
+			case FrameWebPackage.DAO_GENERALIZATION__SOURCE_DAO_INTERFACE:
 				setSourceDAOInterface((DAOInterface)null);
 				return;
 		}
@@ -208,9 +208,9 @@ public class DAOGeneralizationImpl extends GeneralizationImpl implements DAOGene
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DAO_GENERALIZATION__TARGET_DAO_CLASS:
+			case FrameWebPackage.DAO_GENERALIZATION__TARGET_DAO_CLASS:
 				return targetDAOClass != null;
-			case framewebPackage.DAO_GENERALIZATION__SOURCE_DAO_INTERFACE:
+			case FrameWebPackage.DAO_GENERALIZATION__SOURCE_DAO_INTERFACE:
 				return sourceDAOInterface != null;
 		}
 		return super.eIsSet(featureID);

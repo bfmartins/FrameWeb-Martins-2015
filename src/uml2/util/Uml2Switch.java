@@ -234,6 +234,7 @@ import uml2.Transition;
 import uml2.Trigger;
 import uml2.Type;
 import uml2.TypedElement;
+import uml2.Uml2Package;
 import uml2.UnmarshallAction;
 import uml2.Usage;
 import uml2.UseCase;
@@ -246,7 +247,6 @@ import uml2.Vertex;
 import uml2.WriteLinkAction;
 import uml2.WriteStructuralFeatureAction;
 import uml2.WriteVariableAction;
-import uml2.Uml2Package;
 
 /**
  * <!-- begin-user-doc -->
@@ -6768,4 +6768,4 @@ public class Uml2Switch<T> extends Switch<T> {
 		return null;
 	}
 
-} //uml2Switch
+} //Uml2Switch

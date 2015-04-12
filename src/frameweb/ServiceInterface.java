@@ -19,7 +19,7 @@ import uml2.Interface;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getServiceInterface()
+ * @see frameweb.FrameWebPackage#getServiceInterface()
  * @model
  * @generated
  */
@@ -34,7 +34,7 @@ public interface ServiceInterface extends Interface {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Service Interface Operation</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getServiceInterface_ServiceInterfaceOperation()
+	 * @see frameweb.FrameWebPackage#getServiceInterface_ServiceInterfaceOperation()
 	 * @model containment="true"
 	 * @generated
 	 */
@@ -50,7 +50,7 @@ public interface ServiceInterface extends Interface {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Service Interface Attribute</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getServiceInterface_ServiceInterfaceAttribute()
+	 * @see frameweb.FrameWebPackage#getServiceInterface_ServiceInterfaceAttribute()
 	 * @model containment="true"
 	 * @generated
 	 */

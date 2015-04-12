@@ -4,8 +4,8 @@ package uml2.impl;
 
 import org.eclipse.emf.ecore.EClass;
 
-import uml2.Usage;
 import uml2.Uml2Package;
+import uml2.Usage;
 
 /**
  * <!-- begin-user-doc -->

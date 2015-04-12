@@ -2,9 +2,9 @@
  */
 package frameweb.impl;
 
+import frameweb.FrameWebPackage;
 import frameweb.FrameworkTag;
 import frameweb.TagLib;
-import frameweb.framewebPackage;
 
 import java.util.Collection;
 
@@ -60,7 +60,7 @@ public class TagLibImpl extends MinimalEObjectImpl.Container implements TagLib {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.TAG_LIB;
+		return FrameWebPackage.Literals.TAG_LIB;
 	}
 
 	/**
@@ -70,7 +70,7 @@ public class TagLibImpl extends MinimalEObjectImpl.Container implements TagLib {
 	 */
 	public EList<FrameworkTag> getTagLibTag() {
 		if (tagLibTag == null) {
-			tagLibTag = new EObjectContainmentEList<FrameworkTag>(FrameworkTag.class, this, framewebPackage.TAG_LIB__TAG_LIB_TAG);
+			tagLibTag = new EObjectContainmentEList<FrameworkTag>(FrameworkTag.class, this, FrameWebPackage.TAG_LIB__TAG_LIB_TAG);
 		}
 		return tagLibTag;
 	}
@@ -83,7 +83,7 @@ public class TagLibImpl extends MinimalEObjectImpl.Container implements TagLib {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.TAG_LIB__TAG_LIB_TAG:
+			case FrameWebPackage.TAG_LIB__TAG_LIB_TAG:
 				return ((InternalEList<?>)getTagLibTag()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -97,7 +97,7 @@ public class TagLibImpl extends MinimalEObjectImpl.Container implements TagLib {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.TAG_LIB__TAG_LIB_TAG:
+			case FrameWebPackage.TAG_LIB__TAG_LIB_TAG:
 				return getTagLibTag();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -112,7 +112,7 @@ public class TagLibImpl extends MinimalEObjectImpl.Container implements TagLib {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.TAG_LIB__TAG_LIB_TAG:
+			case FrameWebPackage.TAG_LIB__TAG_LIB_TAG:
 				getTagLibTag().clear();
 				getTagLibTag().addAll((Collection<? extends FrameworkTag>)newValue);
 				return;
@@ -128,7 +128,7 @@ public class TagLibImpl extends MinimalEObjectImpl.Container implements TagLib {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.TAG_LIB__TAG_LIB_TAG:
+			case FrameWebPackage.TAG_LIB__TAG_LIB_TAG:
 				getTagLibTag().clear();
 				return;
 		}
@@ -143,7 +143,7 @@ public class TagLibImpl extends MinimalEObjectImpl.Container implements TagLib {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.TAG_LIB__TAG_LIB_TAG:
+			case FrameWebPackage.TAG_LIB__TAG_LIB_TAG:
 				return tagLibTag != null && !tagLibTag.isEmpty();
 		}
 		return super.eIsSet(featureID);

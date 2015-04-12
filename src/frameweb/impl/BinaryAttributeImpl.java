@@ -3,7 +3,7 @@
 package frameweb.impl;
 
 import frameweb.BinaryAttribute;
-import frameweb.framewebPackage;
+import frameweb.FrameWebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -33,7 +33,7 @@ public class BinaryAttributeImpl extends NavigationAttributeImpl implements Bina
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.BINARY_ATTRIBUTE;
+		return FrameWebPackage.Literals.BINARY_ATTRIBUTE;
 	}
 
 } //BinaryAttributeImpl

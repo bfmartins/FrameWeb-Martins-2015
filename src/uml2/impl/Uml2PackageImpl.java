@@ -2,6 +2,10 @@
  */
 package uml2.impl;
 
+import frameweb.FrameWebPackage;
+
+import frameweb.impl.FrameWebPackageImpl;
+
 import org.eclipse.emf.common.util.URI;
 
 import org.eclipse.emf.ecore.EAttribute;
@@ -15,9 +19,9 @@ import org.eclipse.emf.ecore.EValidator;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
-import primitiveTypes.impl.PrimitiveTypesPackageImpl;
-
 import primitiveTypes.PrimitiveTypesPackage;
+
+import primitiveTypes.impl.PrimitiveTypesPackageImpl;
 
 import uml2.Abstraction;
 import uml2.AcceptCallAction;
@@ -257,6 +261,8 @@ import uml2.TransitionKind;
 import uml2.Trigger;
 import uml2.Type;
 import uml2.TypedElement;
+import uml2.Uml2Factory;
+import uml2.Uml2Package;
 import uml2.UnmarshallAction;
 import uml2.Usage;
 import uml2.UseCase;
@@ -270,8 +276,6 @@ import uml2.VisibilityKind;
 import uml2.WriteLinkAction;
 import uml2.WriteStructuralFeatureAction;
 import uml2.WriteVariableAction;
-import uml2.Uml2Factory;
-import uml2.Uml2Package;
 
 import uml2.util.Uml2Validator;
 
@@ -2095,24 +2099,27 @@ public class Uml2PackageImpl extends EPackageImpl implements Uml2Package {
 		if (isInited) return (Uml2Package)EPackage.Registry.INSTANCE.getEPackage(Uml2Package.eNS_URI);
 
 		// Obtain or create and register package
-		Uml2PackageImpl theuml2Package = (Uml2PackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof Uml2PackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new Uml2PackageImpl());
+		Uml2PackageImpl theUml2Package = (Uml2PackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof Uml2PackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new Uml2PackageImpl());
 
 		isInited = true;
 
 		// Obtain or create and register interdependencies
-		PrimitiveTypesPackageImpl theprimitiveTypesPackage = (PrimitiveTypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(PrimitiveTypesPackage.eNS_URI) instanceof PrimitiveTypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(PrimitiveTypesPackage.eNS_URI) : PrimitiveTypesPackage.eINSTANCE);
+		FrameWebPackageImpl theFrameWebPackage = (FrameWebPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(FrameWebPackage.eNS_URI) instanceof FrameWebPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(FrameWebPackage.eNS_URI) : FrameWebPackage.eINSTANCE);
+		PrimitiveTypesPackageImpl thePrimitiveTypesPackage = (PrimitiveTypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(PrimitiveTypesPackage.eNS_URI) instanceof PrimitiveTypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(PrimitiveTypesPackage.eNS_URI) : PrimitiveTypesPackage.eINSTANCE);
 
 		// Create package meta-data objects
-		theuml2Package.createPackageContents();
-		theprimitiveTypesPackage.createPackageContents();
+		theUml2Package.createPackageContents();
+		theFrameWebPackage.createPackageContents();
+		thePrimitiveTypesPackage.createPackageContents();
 
 		// Initialize created meta-data
-		theuml2Package.initializePackageContents();
-		theprimitiveTypesPackage.initializePackageContents();
+		theUml2Package.initializePackageContents();
+		theFrameWebPackage.initializePackageContents();
+		thePrimitiveTypesPackage.initializePackageContents();
 
 		// Register package validator
 		EValidator.Registry.INSTANCE.put
-			(theuml2Package, 
+			(theUml2Package, 
 			 new EValidator.Descriptor() {
 				 public EValidator getEValidator() {
 					 return Uml2Validator.INSTANCE;
@@ -2120,12 +2127,12 @@ public class Uml2PackageImpl extends EPackageImpl implements Uml2Package {
 			 });
 
 		// Mark meta-data to indicate it can't be changed
-		theuml2Package.freeze();
+		theUml2Package.freeze();
 
   
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(Uml2Package.eNS_URI, theuml2Package);
-		return theuml2Package;
+		EPackage.Registry.INSTANCE.put(Uml2Package.eNS_URI, theUml2Package);
+		return theUml2Package;
 	}
 
 	/**
@@ -14589,7 +14596,7 @@ public class Uml2PackageImpl extends EPackageImpl implements Uml2Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Uml2Factory getuml2Factory() {
+	public Uml2Factory getUml2Factory() {
 		return (Uml2Factory)getEFactoryInstance();
 	}
 
@@ -16255,7 +16262,7 @@ public class Uml2PackageImpl extends EPackageImpl implements Uml2Package {
 	 * @generated
 	 */
 	
-	public void addSupertypesPackageContents() {
+	private void addSupertypesPackageContents() {
 		// Add supertypes to classes
 		abstractionEClass.getESuperTypes().add(this.getDependency());
 		dependencyEClass.getESuperTypes().add(this.getPackageableElement());
@@ -16536,7 +16543,7 @@ public class Uml2PackageImpl extends EPackageImpl implements Uml2Package {
 		valueSpecificationActionEClass.getESuperTypes().add(this.getAction());
 	}
 
-	public void initEnumsPackageContents() {
+	private void initEnumsPackageContents() {
 		// Initialize enums and add enum literals
 		initEEnum(visibilityKindEEnum, VisibilityKind.class, "VisibilityKind");
 		addEEnumLiteral(visibilityKindEEnum, VisibilityKind.PUBLIC);
@@ -16621,7 +16628,7 @@ public class Uml2PackageImpl extends EPackageImpl implements Uml2Package {
 		addEEnumLiteral(expansionKindEEnum, ExpansionKind.STREAM);
 	}
 
-	public void addEParamPackageContents(EOperation op, int i, int j, boolean is_unique, boolean is_ordered) {
+	private void addEParamPackageContents(EOperation op, int i, int j, boolean is_unique, boolean is_ordered) {
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", i, j, is_unique, is_ordered);
 		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
 		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -16635,7 +16642,7 @@ public class Uml2PackageImpl extends EPackageImpl implements Uml2Package {
 	 * The function below was commented because of the error:
 	 * The code of method initializePackageContents() is exceeding the 65535 bytes limit
 	 * 
-	 * The solution was divide the function on small parts, which ar above.
+	 * The solution was divide the function on small parts, which are above.
 	 **/
 	
 	public void initializePackageContents() {
@@ -25512,4 +25519,4 @@ public class Uml2PackageImpl extends EPackageImpl implements Uml2Package {
 		   });
 	}
 
-} //uml2PackageImpl
+} //Uml2PackageImpl

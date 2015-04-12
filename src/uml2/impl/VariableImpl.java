@@ -28,9 +28,9 @@ import uml2.Action;
 import uml2.Activity;
 import uml2.MultiplicityElement;
 import uml2.StructuredActivityNode;
+import uml2.Uml2Package;
 import uml2.ValueSpecification;
 import uml2.Variable;
-import uml2.Uml2Package;
 
 import uml2.util.Uml2Validator;
 

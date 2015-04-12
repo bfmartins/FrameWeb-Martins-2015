@@ -10,7 +10,7 @@ import uml2.Association;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.framewebPackage#getServiceAssociation()
+ * @see frameweb.FrameWebPackage#getServiceAssociation()
  * @model
  * @generated
  */

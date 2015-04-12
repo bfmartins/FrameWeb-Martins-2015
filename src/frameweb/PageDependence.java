@@ -18,7 +18,7 @@ package frameweb;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getPageDependence()
+ * @see frameweb.FrameWebPackage#getPageDependence()
  * @model
  * @generated
  */
@@ -33,7 +33,7 @@ public interface PageDependence extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Page</em>' reference.
 	 * @see #setTargetPage(Page)
-	 * @see frameweb.framewebPackage#getPageDependence_TargetPage()
+	 * @see frameweb.FrameWebPackage#getPageDependence_TargetPage()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface PageDependence extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Template</em>' reference.
 	 * @see #setSourceTemplate(Template)
-	 * @see frameweb.framewebPackage#getPageDependence_SourceTemplate()
+	 * @see frameweb.FrameWebPackage#getPageDependence_SourceTemplate()
 	 * @model
 	 * @generated
 	 */
@@ -85,7 +85,7 @@ public interface PageDependence extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Link HTML</em>' attribute.
 	 * @see #setLinkHTML(String)
-	 * @see frameweb.framewebPackage#getPageDependence_LinkHTML()
+	 * @see frameweb.FrameWebPackage#getPageDependence_LinkHTML()
 	 * @model
 	 * @generated
 	 */
@@ -111,7 +111,7 @@ public interface PageDependence extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Page</em>' reference.
 	 * @see #setSourcePage(Page)
-	 * @see frameweb.framewebPackage#getPageDependence_SourcePage()
+	 * @see frameweb.FrameWebPackage#getPageDependence_SourcePage()
 	 * @model
 	 * @generated
 	 */

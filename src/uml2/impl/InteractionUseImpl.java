@@ -30,8 +30,8 @@ import uml2.Gate;
 import uml2.Interaction;
 import uml2.InteractionUse;
 import uml2.Property;
-import uml2.ValueSpecification;
 import uml2.Uml2Package;
+import uml2.ValueSpecification;
 
 import uml2.util.Uml2Validator;
 

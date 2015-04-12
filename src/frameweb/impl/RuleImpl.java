@@ -2,8 +2,8 @@
  */
 package frameweb.impl;
 
+import frameweb.FrameWebPackage;
 import frameweb.Rule;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -35,7 +35,7 @@ public class RuleImpl extends MinimalEObjectImpl.Container implements Rule {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.RULE;
+		return FrameWebPackage.Literals.RULE;
 	}
 
 } //RuleImpl

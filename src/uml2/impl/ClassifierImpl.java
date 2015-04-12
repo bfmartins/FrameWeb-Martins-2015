@@ -46,8 +46,8 @@ import uml2.TemplateParameter;
 import uml2.TemplateSignature;
 import uml2.TemplateableElement;
 import uml2.Type;
-import uml2.UseCase;
 import uml2.Uml2Package;
+import uml2.UseCase;
 
 import uml2.util.Uml2Validator;
 

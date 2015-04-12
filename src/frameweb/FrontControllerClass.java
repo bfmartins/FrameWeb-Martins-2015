@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getFrontControllerClass()
+ * @see frameweb.FrameWebPackage#getFrontControllerClass()
  * @model
  * @generated
  */
@@ -34,7 +34,7 @@ public interface FrontControllerClass extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Front Controller Attribute</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getFrontControllerClass_FrontControllerAttribute()
+	 * @see frameweb.FrameWebPackage#getFrontControllerClass_FrontControllerAttribute()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
@@ -50,7 +50,7 @@ public interface FrontControllerClass extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Front Controller Class Method</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getFrontControllerClass_FrontControllerClassMethod()
+	 * @see frameweb.FrameWebPackage#getFrontControllerClass_FrontControllerClassMethod()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */

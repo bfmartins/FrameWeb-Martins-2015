@@ -27,8 +27,8 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
 import uml2.ElementImport;
 import uml2.Namespace;
 import uml2.PackageableElement;
-import uml2.VisibilityKind;
 import uml2.Uml2Package;
+import uml2.VisibilityKind;
 
 import uml2.util.Uml2Validator;
 

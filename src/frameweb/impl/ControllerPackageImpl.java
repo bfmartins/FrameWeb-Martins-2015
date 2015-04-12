@@ -3,8 +3,8 @@
 package frameweb.impl;
 
 import frameweb.ControllerPackage;
+import frameweb.FrameWebPackage;
 import frameweb.FrontControllerClass;
-import frameweb.framewebPackage;
 
 import java.util.Collection;
 
@@ -58,7 +58,7 @@ public class ControllerPackageImpl extends NavigationPackageImpl implements Cont
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.CONTROLLER_PACKAGE;
+		return FrameWebPackage.Literals.CONTROLLER_PACKAGE;
 	}
 
 	/**
@@ -68,7 +68,7 @@ public class ControllerPackageImpl extends NavigationPackageImpl implements Cont
 	 */
 	public EList<FrontControllerClass> getControllerPackageClass() {
 		if (controllerPackageClass == null) {
-			controllerPackageClass = new EObjectContainmentEList<FrontControllerClass>(FrontControllerClass.class, this, framewebPackage.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS);
+			controllerPackageClass = new EObjectContainmentEList<FrontControllerClass>(FrontControllerClass.class, this, FrameWebPackage.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS);
 		}
 		return controllerPackageClass;
 	}
@@ -81,7 +81,7 @@ public class ControllerPackageImpl extends NavigationPackageImpl implements Cont
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS:
+			case FrameWebPackage.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS:
 				return ((InternalEList<?>)getControllerPackageClass()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -95,7 +95,7 @@ public class ControllerPackageImpl extends NavigationPackageImpl implements Cont
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS:
+			case FrameWebPackage.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS:
 				return getControllerPackageClass();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -110,7 +110,7 @@ public class ControllerPackageImpl extends NavigationPackageImpl implements Cont
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS:
+			case FrameWebPackage.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS:
 				getControllerPackageClass().clear();
 				getControllerPackageClass().addAll((Collection<? extends FrontControllerClass>)newValue);
 				return;
@@ -126,7 +126,7 @@ public class ControllerPackageImpl extends NavigationPackageImpl implements Cont
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS:
+			case FrameWebPackage.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS:
 				getControllerPackageClass().clear();
 				return;
 		}
@@ -141,7 +141,7 @@ public class ControllerPackageImpl extends NavigationPackageImpl implements Cont
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS:
+			case FrameWebPackage.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS:
 				return controllerPackageClass != null && !controllerPackageClass.isEmpty();
 		}
 		return super.eIsSet(featureID);

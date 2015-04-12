@@ -9,7 +9,7 @@ package frameweb;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.framewebPackage#getFrameworkTag()
+ * @see frameweb.FrameWebPackage#getFrameworkTag()
  * @model
  * @generated
  */

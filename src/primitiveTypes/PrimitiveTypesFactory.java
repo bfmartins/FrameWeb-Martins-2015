@@ -28,6 +28,6 @@ public interface PrimitiveTypesFactory extends EFactory {
 	 * @return the package supported by this factory.
 	 * @generated
 	 */
-	PrimitiveTypesPackage getprimitiveTypesPackage();
+	PrimitiveTypesPackage getPrimitiveTypesPackage();
 
-} //primitiveTypesFactory
+} //PrimitiveTypesFactory

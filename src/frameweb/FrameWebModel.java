@@ -6,7 +6,7 @@ import uml2.Model;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Frame Web Model</b></em>'.
+ * A representation of the model object '<em><b>Model</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
@@ -16,7 +16,7 @@ import uml2.Model;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getFrameWebModel()
+ * @see frameweb.FrameWebPackage#getFrameWebModel()
  * @model abstract="true"
  * @generated
  */
@@ -31,7 +31,7 @@ public interface FrameWebModel extends Model {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Indite</em>' containment reference.
 	 * @see #setIndite(NamingMethod)
-	 * @see frameweb.framewebPackage#getFrameWebModel_Indite()
+	 * @see frameweb.FrameWebPackage#getFrameWebModel_Indite()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */

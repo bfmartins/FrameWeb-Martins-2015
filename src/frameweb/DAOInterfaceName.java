@@ -16,7 +16,7 @@ package frameweb;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getDAOInterfaceName()
+ * @see frameweb.FrameWebPackage#getDAOInterfaceName()
  * @model
  * @generated
  */
@@ -31,7 +31,7 @@ public interface DAOInterfaceName extends ConstantName {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Constant Prefix</em>' reference.
 	 * @see #setConstantPrefix(ConstantName)
-	 * @see frameweb.framewebPackage#getDAOInterfaceName_ConstantPrefix()
+	 * @see frameweb.FrameWebPackage#getDAOInterfaceName_ConstantPrefix()
 	 * @model
 	 * @generated
 	 */
@@ -57,7 +57,7 @@ public interface DAOInterfaceName extends ConstantName {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Domain Table Prefix</em>' reference.
 	 * @see #setDomainTablePrefix(DomainTableName)
-	 * @see frameweb.framewebPackage#getDAOInterfaceName_DomainTablePrefix()
+	 * @see frameweb.FrameWebPackage#getDAOInterfaceName_DomainTablePrefix()
 	 * @model
 	 * @generated
 	 */

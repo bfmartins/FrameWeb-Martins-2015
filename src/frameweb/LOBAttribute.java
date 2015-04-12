@@ -9,7 +9,7 @@ package frameweb;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.framewebPackage#getLOBAttribute()
+ * @see frameweb.FrameWebPackage#getLOBAttribute()
  * @model
  * @generated
  */

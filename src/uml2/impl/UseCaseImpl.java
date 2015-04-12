@@ -28,8 +28,8 @@ import uml2.Classifier;
 import uml2.Extend;
 import uml2.ExtensionPoint;
 import uml2.Include;
-import uml2.UseCase;
 import uml2.Uml2Package;
+import uml2.UseCase;
 
 import uml2.util.Uml2Validator;
 

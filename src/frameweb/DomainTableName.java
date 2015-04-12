@@ -16,7 +16,7 @@ package frameweb;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getDomainTableName()
+ * @see frameweb.FrameWebPackage#getDomainTableName()
  * @model
  * @generated
  */
@@ -31,7 +31,7 @@ public interface DomainTableName extends FrameWebName {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fw Name</em>' attribute.
 	 * @see #setFwName(String)
-	 * @see frameweb.framewebPackage#getDomainTableName_FwName()
+	 * @see frameweb.FrameWebPackage#getDomainTableName_FwName()
 	 * @model
 	 * @generated
 	 */
@@ -58,7 +58,7 @@ public interface DomainTableName extends FrameWebName {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Persistent Class Name</em>' reference.
 	 * @see #setPersistentClassName(PersistentClass)
-	 * @see frameweb.framewebPackage#getDomainTableName_PersistentClassName()
+	 * @see frameweb.FrameWebPackage#getDomainTableName_PersistentClassName()
 	 * @see frameweb.PersistentClass#getTable
 	 * @model opposite="Table" required="true"
 	 * @generated

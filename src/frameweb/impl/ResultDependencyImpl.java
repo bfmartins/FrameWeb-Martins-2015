@@ -6,6 +6,7 @@ import frameweb.Binary;
 import frameweb.Component;
 import frameweb.Form;
 import frameweb.FormComponent;
+import frameweb.FrameWebPackage;
 import frameweb.FrontControllerClass;
 import frameweb.FrontControllerMethod;
 import frameweb.JQuery;
@@ -14,7 +15,6 @@ import frameweb.Result;
 import frameweb.ResultDependency;
 import frameweb.ResultType;
 import frameweb.Template;
-import frameweb.framewebPackage;
 
 import java.util.Collection;
 
@@ -179,7 +179,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.RESULT_DEPENDENCY;
+		return FrameWebPackage.Literals.RESULT_DEPENDENCY;
 	}
 
 	/**
@@ -189,7 +189,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 	 */
 	public EList<Result> getReturnResult() {
 		if (returnResult == null) {
-			returnResult = new EObjectResolvingEList<Result>(Result.class, this, framewebPackage.RESULT_DEPENDENCY__RETURN_RESULT);
+			returnResult = new EObjectResolvingEList<Result>(Result.class, this, FrameWebPackage.RESULT_DEPENDENCY__RETURN_RESULT);
 		}
 		return returnResult;
 	}
@@ -205,7 +205,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 			returnMethod = (FrontControllerMethod)eResolveProxy(oldReturnMethod);
 			if (returnMethod != oldReturnMethod) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.RESULT_DEPENDENCY__RETURN_METHOD, oldReturnMethod, returnMethod));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.RESULT_DEPENDENCY__RETURN_METHOD, oldReturnMethod, returnMethod));
 			}
 		}
 		return returnMethod;
@@ -229,7 +229,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 		FrontControllerMethod oldReturnMethod = returnMethod;
 		returnMethod = newReturnMethod;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.RESULT_DEPENDENCY__RETURN_METHOD, oldReturnMethod, returnMethod));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.RESULT_DEPENDENCY__RETURN_METHOD, oldReturnMethod, returnMethod));
 	}
 
 	/**
@@ -243,7 +243,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 			sourceFrontController = (FrontControllerClass)eResolveProxy(oldSourceFrontController);
 			if (sourceFrontController != oldSourceFrontController) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.RESULT_DEPENDENCY__SOURCE_FRONT_CONTROLLER, oldSourceFrontController, sourceFrontController));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.RESULT_DEPENDENCY__SOURCE_FRONT_CONTROLLER, oldSourceFrontController, sourceFrontController));
 			}
 		}
 		return sourceFrontController;
@@ -267,7 +267,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 		FrontControllerClass oldSourceFrontController = sourceFrontController;
 		sourceFrontController = newSourceFrontController;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.RESULT_DEPENDENCY__SOURCE_FRONT_CONTROLLER, oldSourceFrontController, sourceFrontController));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.RESULT_DEPENDENCY__SOURCE_FRONT_CONTROLLER, oldSourceFrontController, sourceFrontController));
 	}
 
 	/**
@@ -281,7 +281,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 			targetTemplate = (Template)eResolveProxy(oldTargetTemplate);
 			if (targetTemplate != oldTargetTemplate) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.RESULT_DEPENDENCY__TARGET_TEMPLATE, oldTargetTemplate, targetTemplate));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.RESULT_DEPENDENCY__TARGET_TEMPLATE, oldTargetTemplate, targetTemplate));
 			}
 		}
 		return targetTemplate;
@@ -305,7 +305,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 		Template oldTargetTemplate = targetTemplate;
 		targetTemplate = newTargetTemplate;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.RESULT_DEPENDENCY__TARGET_TEMPLATE, oldTargetTemplate, targetTemplate));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.RESULT_DEPENDENCY__TARGET_TEMPLATE, oldTargetTemplate, targetTemplate));
 	}
 
 	/**
@@ -319,7 +319,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 			targetPage = (Page)eResolveProxy(oldTargetPage);
 			if (targetPage != oldTargetPage) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.RESULT_DEPENDENCY__TARGET_PAGE, oldTargetPage, targetPage));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.RESULT_DEPENDENCY__TARGET_PAGE, oldTargetPage, targetPage));
 			}
 		}
 		return targetPage;
@@ -343,7 +343,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 		Page oldTargetPage = targetPage;
 		targetPage = newTargetPage;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.RESULT_DEPENDENCY__TARGET_PAGE, oldTargetPage, targetPage));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.RESULT_DEPENDENCY__TARGET_PAGE, oldTargetPage, targetPage));
 	}
 
 	/**
@@ -357,7 +357,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 			targetBinary = (Binary)eResolveProxy(oldTargetBinary);
 			if (targetBinary != oldTargetBinary) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.RESULT_DEPENDENCY__TARGET_BINARY, oldTargetBinary, targetBinary));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.RESULT_DEPENDENCY__TARGET_BINARY, oldTargetBinary, targetBinary));
 			}
 		}
 		return targetBinary;
@@ -381,7 +381,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 		Binary oldTargetBinary = targetBinary;
 		targetBinary = newTargetBinary;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.RESULT_DEPENDENCY__TARGET_BINARY, oldTargetBinary, targetBinary));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.RESULT_DEPENDENCY__TARGET_BINARY, oldTargetBinary, targetBinary));
 	}
 
 	/**
@@ -391,7 +391,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 	 */
 	public EList<ResultType> getReturnResultType() {
 		if (returnResultType == null) {
-			returnResultType = new EObjectResolvingEList<ResultType>(ResultType.class, this, framewebPackage.RESULT_DEPENDENCY__RETURN_RESULT_TYPE);
+			returnResultType = new EObjectResolvingEList<ResultType>(ResultType.class, this, FrameWebPackage.RESULT_DEPENDENCY__RETURN_RESULT_TYPE);
 		}
 		return returnResultType;
 	}
@@ -407,7 +407,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 			targetForm = (Form)eResolveProxy(oldTargetForm);
 			if (targetForm != oldTargetForm) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.RESULT_DEPENDENCY__TARGET_FORM, oldTargetForm, targetForm));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.RESULT_DEPENDENCY__TARGET_FORM, oldTargetForm, targetForm));
 			}
 		}
 		return targetForm;
@@ -431,7 +431,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 		Form oldTargetForm = targetForm;
 		targetForm = newTargetForm;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.RESULT_DEPENDENCY__TARGET_FORM, oldTargetForm, targetForm));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.RESULT_DEPENDENCY__TARGET_FORM, oldTargetForm, targetForm));
 	}
 
 	/**
@@ -445,7 +445,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 			targetComponent = (Component)eResolveProxy(oldTargetComponent);
 			if (targetComponent != oldTargetComponent) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.RESULT_DEPENDENCY__TARGET_COMPONENT, oldTargetComponent, targetComponent));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.RESULT_DEPENDENCY__TARGET_COMPONENT, oldTargetComponent, targetComponent));
 			}
 		}
 		return targetComponent;
@@ -469,7 +469,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 		Component oldTargetComponent = targetComponent;
 		targetComponent = newTargetComponent;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.RESULT_DEPENDENCY__TARGET_COMPONENT, oldTargetComponent, targetComponent));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.RESULT_DEPENDENCY__TARGET_COMPONENT, oldTargetComponent, targetComponent));
 	}
 
 	/**
@@ -483,7 +483,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 			targetJQuery = (JQuery)eResolveProxy(oldTargetJQuery);
 			if (targetJQuery != oldTargetJQuery) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.RESULT_DEPENDENCY__TARGET_JQUERY, oldTargetJQuery, targetJQuery));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.RESULT_DEPENDENCY__TARGET_JQUERY, oldTargetJQuery, targetJQuery));
 			}
 		}
 		return targetJQuery;
@@ -507,7 +507,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 		JQuery oldTargetJQuery = targetJQuery;
 		targetJQuery = newTargetJQuery;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.RESULT_DEPENDENCY__TARGET_JQUERY, oldTargetJQuery, targetJQuery));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.RESULT_DEPENDENCY__TARGET_JQUERY, oldTargetJQuery, targetJQuery));
 	}
 
 	/**
@@ -521,7 +521,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 			targetFormComponent = (FormComponent)eResolveProxy(oldTargetFormComponent);
 			if (targetFormComponent != oldTargetFormComponent) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT, oldTargetFormComponent, targetFormComponent));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT, oldTargetFormComponent, targetFormComponent));
 			}
 		}
 		return targetFormComponent;
@@ -545,7 +545,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 		FormComponent oldTargetFormComponent = targetFormComponent;
 		targetFormComponent = newTargetFormComponent;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT, oldTargetFormComponent, targetFormComponent));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT, oldTargetFormComponent, targetFormComponent));
 	}
 
 	/**
@@ -556,35 +556,35 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.RESULT_DEPENDENCY__RETURN_RESULT:
+			case FrameWebPackage.RESULT_DEPENDENCY__RETURN_RESULT:
 				return getReturnResult();
-			case framewebPackage.RESULT_DEPENDENCY__RETURN_METHOD:
+			case FrameWebPackage.RESULT_DEPENDENCY__RETURN_METHOD:
 				if (resolve) return getReturnMethod();
 				return basicGetReturnMethod();
-			case framewebPackage.RESULT_DEPENDENCY__SOURCE_FRONT_CONTROLLER:
+			case FrameWebPackage.RESULT_DEPENDENCY__SOURCE_FRONT_CONTROLLER:
 				if (resolve) return getSourceFrontController();
 				return basicGetSourceFrontController();
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_TEMPLATE:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_TEMPLATE:
 				if (resolve) return getTargetTemplate();
 				return basicGetTargetTemplate();
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_PAGE:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_PAGE:
 				if (resolve) return getTargetPage();
 				return basicGetTargetPage();
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_BINARY:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_BINARY:
 				if (resolve) return getTargetBinary();
 				return basicGetTargetBinary();
-			case framewebPackage.RESULT_DEPENDENCY__RETURN_RESULT_TYPE:
+			case FrameWebPackage.RESULT_DEPENDENCY__RETURN_RESULT_TYPE:
 				return getReturnResultType();
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_FORM:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_FORM:
 				if (resolve) return getTargetForm();
 				return basicGetTargetForm();
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_COMPONENT:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_COMPONENT:
 				if (resolve) return getTargetComponent();
 				return basicGetTargetComponent();
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_JQUERY:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_JQUERY:
 				if (resolve) return getTargetJQuery();
 				return basicGetTargetJQuery();
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT:
 				if (resolve) return getTargetFormComponent();
 				return basicGetTargetFormComponent();
 		}
@@ -600,39 +600,39 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.RESULT_DEPENDENCY__RETURN_RESULT:
+			case FrameWebPackage.RESULT_DEPENDENCY__RETURN_RESULT:
 				getReturnResult().clear();
 				getReturnResult().addAll((Collection<? extends Result>)newValue);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__RETURN_METHOD:
+			case FrameWebPackage.RESULT_DEPENDENCY__RETURN_METHOD:
 				setReturnMethod((FrontControllerMethod)newValue);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__SOURCE_FRONT_CONTROLLER:
+			case FrameWebPackage.RESULT_DEPENDENCY__SOURCE_FRONT_CONTROLLER:
 				setSourceFrontController((FrontControllerClass)newValue);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_TEMPLATE:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_TEMPLATE:
 				setTargetTemplate((Template)newValue);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_PAGE:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_PAGE:
 				setTargetPage((Page)newValue);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_BINARY:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_BINARY:
 				setTargetBinary((Binary)newValue);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__RETURN_RESULT_TYPE:
+			case FrameWebPackage.RESULT_DEPENDENCY__RETURN_RESULT_TYPE:
 				getReturnResultType().clear();
 				getReturnResultType().addAll((Collection<? extends ResultType>)newValue);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_FORM:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_FORM:
 				setTargetForm((Form)newValue);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_COMPONENT:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_COMPONENT:
 				setTargetComponent((Component)newValue);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_JQUERY:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_JQUERY:
 				setTargetJQuery((JQuery)newValue);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT:
 				setTargetFormComponent((FormComponent)newValue);
 				return;
 		}
@@ -647,37 +647,37 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.RESULT_DEPENDENCY__RETURN_RESULT:
+			case FrameWebPackage.RESULT_DEPENDENCY__RETURN_RESULT:
 				getReturnResult().clear();
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__RETURN_METHOD:
+			case FrameWebPackage.RESULT_DEPENDENCY__RETURN_METHOD:
 				setReturnMethod((FrontControllerMethod)null);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__SOURCE_FRONT_CONTROLLER:
+			case FrameWebPackage.RESULT_DEPENDENCY__SOURCE_FRONT_CONTROLLER:
 				setSourceFrontController((FrontControllerClass)null);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_TEMPLATE:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_TEMPLATE:
 				setTargetTemplate((Template)null);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_PAGE:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_PAGE:
 				setTargetPage((Page)null);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_BINARY:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_BINARY:
 				setTargetBinary((Binary)null);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__RETURN_RESULT_TYPE:
+			case FrameWebPackage.RESULT_DEPENDENCY__RETURN_RESULT_TYPE:
 				getReturnResultType().clear();
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_FORM:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_FORM:
 				setTargetForm((Form)null);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_COMPONENT:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_COMPONENT:
 				setTargetComponent((Component)null);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_JQUERY:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_JQUERY:
 				setTargetJQuery((JQuery)null);
 				return;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT:
 				setTargetFormComponent((FormComponent)null);
 				return;
 		}
@@ -692,27 +692,27 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.RESULT_DEPENDENCY__RETURN_RESULT:
+			case FrameWebPackage.RESULT_DEPENDENCY__RETURN_RESULT:
 				return returnResult != null && !returnResult.isEmpty();
-			case framewebPackage.RESULT_DEPENDENCY__RETURN_METHOD:
+			case FrameWebPackage.RESULT_DEPENDENCY__RETURN_METHOD:
 				return returnMethod != null;
-			case framewebPackage.RESULT_DEPENDENCY__SOURCE_FRONT_CONTROLLER:
+			case FrameWebPackage.RESULT_DEPENDENCY__SOURCE_FRONT_CONTROLLER:
 				return sourceFrontController != null;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_TEMPLATE:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_TEMPLATE:
 				return targetTemplate != null;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_PAGE:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_PAGE:
 				return targetPage != null;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_BINARY:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_BINARY:
 				return targetBinary != null;
-			case framewebPackage.RESULT_DEPENDENCY__RETURN_RESULT_TYPE:
+			case FrameWebPackage.RESULT_DEPENDENCY__RETURN_RESULT_TYPE:
 				return returnResultType != null && !returnResultType.isEmpty();
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_FORM:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_FORM:
 				return targetForm != null;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_COMPONENT:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_COMPONENT:
 				return targetComponent != null;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_JQUERY:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_JQUERY:
 				return targetJQuery != null;
-			case framewebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT:
+			case FrameWebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT:
 				return targetFormComponent != null;
 		}
 		return super.eIsSet(featureID);

@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getFrameWeb()
+ * @see frameweb.FrameWebPackage#getFrameWeb()
  * @model
  * @generated
  */
@@ -34,7 +34,7 @@ public interface FrameWeb extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Compose</em>' containment reference.
 	 * @see #setCompose(FrameWebModel)
-	 * @see frameweb.framewebPackage#getFrameWeb_Compose()
+	 * @see frameweb.FrameWebPackage#getFrameWeb_Compose()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
@@ -60,7 +60,7 @@ public interface FrameWeb extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getFrameWeb_Uses()
+	 * @see frameweb.FrameWebPackage#getFrameWeb_Uses()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */

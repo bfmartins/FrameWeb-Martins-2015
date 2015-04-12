@@ -2,8 +2,8 @@
  */
 package frameweb.impl;
 
+import frameweb.FrameWebPackage;
 import frameweb.VersionAttribute;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -33,7 +33,7 @@ public class VersionAttributeImpl extends DomainAttributeImpl implements Version
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.VERSION_ATTRIBUTE;
+		return FrameWebPackage.Literals.VERSION_ATTRIBUTE;
 	}
 
 } //VersionAttributeImpl

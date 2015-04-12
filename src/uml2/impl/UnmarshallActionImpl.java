@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
 import uml2.Classifier;
 import uml2.InputPin;
 import uml2.OutputPin;
-import uml2.UnmarshallAction;
 import uml2.Uml2Package;
+import uml2.UnmarshallAction;
 
 import uml2.util.Uml2Validator;
 

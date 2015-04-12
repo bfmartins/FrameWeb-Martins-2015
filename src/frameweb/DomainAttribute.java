@@ -19,7 +19,7 @@ import uml2.Property;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getDomainAttribute()
+ * @see frameweb.FrameWebPackage#getDomainAttribute()
  * @model
  * @generated
  */
@@ -34,7 +34,7 @@ public interface DomainAttribute extends Property {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Size</em>' attribute.
 	 * @see #setSize(long)
-	 * @see frameweb.framewebPackage#getDomainAttribute_Size()
+	 * @see frameweb.FrameWebPackage#getDomainAttribute_Size()
 	 * @model
 	 * @generated
 	 */
@@ -60,7 +60,7 @@ public interface DomainAttribute extends Property {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Null</em>' attribute.
 	 * @see #setIsNull(boolean)
-	 * @see frameweb.framewebPackage#getDomainAttribute_IsNull()
+	 * @see frameweb.FrameWebPackage#getDomainAttribute_IsNull()
 	 * @model
 	 * @generated
 	 */
@@ -86,7 +86,7 @@ public interface DomainAttribute extends Property {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Persistent</em>' attribute.
 	 * @see #setIsPersistent(boolean)
-	 * @see frameweb.framewebPackage#getDomainAttribute_IsPersistent()
+	 * @see frameweb.FrameWebPackage#getDomainAttribute_IsPersistent()
 	 * @model
 	 * @generated
 	 */
@@ -113,7 +113,7 @@ public interface DomainAttribute extends Property {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Column</em>' reference.
 	 * @see #setColumn(DomainColumnName)
-	 * @see frameweb.framewebPackage#getDomainAttribute_Column()
+	 * @see frameweb.FrameWebPackage#getDomainAttribute_Column()
 	 * @see frameweb.DomainColumnName#getDomainAttributeName
 	 * @model opposite="DomainAttributeName"
 	 * @generated

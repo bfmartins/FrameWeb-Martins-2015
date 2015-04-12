@@ -3,8 +3,8 @@
 package frameweb.impl;
 
 import frameweb.FrameWebName;
+import frameweb.FrameWebPackage;
 import frameweb.NamingMethod;
-import frameweb.framewebPackage;
 
 import java.util.Collection;
 
@@ -60,7 +60,7 @@ public abstract class NamingMethodImpl extends MinimalEObjectImpl.Container impl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.NAMING_METHOD;
+		return FrameWebPackage.Literals.NAMING_METHOD;
 	}
 
 	/**
@@ -70,7 +70,7 @@ public abstract class NamingMethodImpl extends MinimalEObjectImpl.Container impl
 	 */
 	public EList<FrameWebName> getContains() {
 		if (contains == null) {
-			contains = new EObjectContainmentEList<FrameWebName>(FrameWebName.class, this, framewebPackage.NAMING_METHOD__CONTAINS);
+			contains = new EObjectContainmentEList<FrameWebName>(FrameWebName.class, this, FrameWebPackage.NAMING_METHOD__CONTAINS);
 		}
 		return contains;
 	}
@@ -83,7 +83,7 @@ public abstract class NamingMethodImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.NAMING_METHOD__CONTAINS:
+			case FrameWebPackage.NAMING_METHOD__CONTAINS:
 				return ((InternalEList<?>)getContains()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -97,7 +97,7 @@ public abstract class NamingMethodImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.NAMING_METHOD__CONTAINS:
+			case FrameWebPackage.NAMING_METHOD__CONTAINS:
 				return getContains();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -112,7 +112,7 @@ public abstract class NamingMethodImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.NAMING_METHOD__CONTAINS:
+			case FrameWebPackage.NAMING_METHOD__CONTAINS:
 				getContains().clear();
 				getContains().addAll((Collection<? extends FrameWebName>)newValue);
 				return;
@@ -128,7 +128,7 @@ public abstract class NamingMethodImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.NAMING_METHOD__CONTAINS:
+			case FrameWebPackage.NAMING_METHOD__CONTAINS:
 				getContains().clear();
 				return;
 		}
@@ -143,7 +143,7 @@ public abstract class NamingMethodImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.NAMING_METHOD__CONTAINS:
+			case FrameWebPackage.NAMING_METHOD__CONTAINS:
 				return contains != null && !contains.isEmpty();
 		}
 		return super.eIsSet(featureID);

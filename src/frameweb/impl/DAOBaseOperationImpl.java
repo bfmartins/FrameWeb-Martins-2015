@@ -4,7 +4,7 @@ package frameweb.impl;
 
 import frameweb.DAOBaseOperation;
 import frameweb.DAOBaseOperationList;
-import frameweb.framewebPackage;
+import frameweb.FrameWebPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -63,7 +63,7 @@ public class DAOBaseOperationImpl extends MinimalEObjectImpl.Container implement
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.DAO_BASE_OPERATION;
+		return FrameWebPackage.Literals.DAO_BASE_OPERATION;
 	}
 
 	/**
@@ -84,7 +84,7 @@ public class DAOBaseOperationImpl extends MinimalEObjectImpl.Container implement
 		DAOBaseOperationList oldDAObaseOperationName = daObaseOperationName;
 		daObaseOperationName = newDAObaseOperationName == null ? DA_OBASE_OPERATION_NAME_EDEFAULT : newDAObaseOperationName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.DAO_BASE_OPERATION__DA_OBASE_OPERATION_NAME, oldDAObaseOperationName, daObaseOperationName));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DAO_BASE_OPERATION__DA_OBASE_OPERATION_NAME, oldDAObaseOperationName, daObaseOperationName));
 	}
 
 	/**
@@ -95,7 +95,7 @@ public class DAOBaseOperationImpl extends MinimalEObjectImpl.Container implement
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.DAO_BASE_OPERATION__DA_OBASE_OPERATION_NAME:
+			case FrameWebPackage.DAO_BASE_OPERATION__DA_OBASE_OPERATION_NAME:
 				return getDAObaseOperationName();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -109,7 +109,7 @@ public class DAOBaseOperationImpl extends MinimalEObjectImpl.Container implement
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.DAO_BASE_OPERATION__DA_OBASE_OPERATION_NAME:
+			case FrameWebPackage.DAO_BASE_OPERATION__DA_OBASE_OPERATION_NAME:
 				setDAObaseOperationName((DAOBaseOperationList)newValue);
 				return;
 		}
@@ -124,7 +124,7 @@ public class DAOBaseOperationImpl extends MinimalEObjectImpl.Container implement
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DAO_BASE_OPERATION__DA_OBASE_OPERATION_NAME:
+			case FrameWebPackage.DAO_BASE_OPERATION__DA_OBASE_OPERATION_NAME:
 				setDAObaseOperationName(DA_OBASE_OPERATION_NAME_EDEFAULT);
 				return;
 		}
@@ -139,7 +139,7 @@ public class DAOBaseOperationImpl extends MinimalEObjectImpl.Container implement
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DAO_BASE_OPERATION__DA_OBASE_OPERATION_NAME:
+			case FrameWebPackage.DAO_BASE_OPERATION__DA_OBASE_OPERATION_NAME:
 				return daObaseOperationName != DA_OBASE_OPERATION_NAME_EDEFAULT;
 		}
 		return super.eIsSet(featureID);

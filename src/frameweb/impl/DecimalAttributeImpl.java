@@ -3,7 +3,7 @@
 package frameweb.impl;
 
 import frameweb.DecimalAttribute;
-import frameweb.framewebPackage;
+import frameweb.FrameWebPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -82,7 +82,7 @@ public class DecimalAttributeImpl extends DomainAttributeImpl implements Decimal
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.DECIMAL_ATTRIBUTE;
+		return FrameWebPackage.Literals.DECIMAL_ATTRIBUTE;
 	}
 
 	/**
@@ -103,7 +103,7 @@ public class DecimalAttributeImpl extends DomainAttributeImpl implements Decimal
 		long oldDecimalPrecision = decimalPrecision;
 		decimalPrecision = newDecimalPrecision;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.DECIMAL_ATTRIBUTE__DECIMAL_PRECISION, oldDecimalPrecision, decimalPrecision));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DECIMAL_ATTRIBUTE__DECIMAL_PRECISION, oldDecimalPrecision, decimalPrecision));
 	}
 
 	/**
@@ -124,7 +124,7 @@ public class DecimalAttributeImpl extends DomainAttributeImpl implements Decimal
 		long oldDecimalScale = decimalScale;
 		decimalScale = newDecimalScale;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.DECIMAL_ATTRIBUTE__DECIMAL_SCALE, oldDecimalScale, decimalScale));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DECIMAL_ATTRIBUTE__DECIMAL_SCALE, oldDecimalScale, decimalScale));
 	}
 
 	/**
@@ -135,9 +135,9 @@ public class DecimalAttributeImpl extends DomainAttributeImpl implements Decimal
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.DECIMAL_ATTRIBUTE__DECIMAL_PRECISION:
+			case FrameWebPackage.DECIMAL_ATTRIBUTE__DECIMAL_PRECISION:
 				return getDecimalPrecision();
-			case framewebPackage.DECIMAL_ATTRIBUTE__DECIMAL_SCALE:
+			case FrameWebPackage.DECIMAL_ATTRIBUTE__DECIMAL_SCALE:
 				return getDecimalScale();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -151,10 +151,10 @@ public class DecimalAttributeImpl extends DomainAttributeImpl implements Decimal
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.DECIMAL_ATTRIBUTE__DECIMAL_PRECISION:
+			case FrameWebPackage.DECIMAL_ATTRIBUTE__DECIMAL_PRECISION:
 				setDecimalPrecision((Long)newValue);
 				return;
-			case framewebPackage.DECIMAL_ATTRIBUTE__DECIMAL_SCALE:
+			case FrameWebPackage.DECIMAL_ATTRIBUTE__DECIMAL_SCALE:
 				setDecimalScale((Long)newValue);
 				return;
 		}
@@ -169,10 +169,10 @@ public class DecimalAttributeImpl extends DomainAttributeImpl implements Decimal
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DECIMAL_ATTRIBUTE__DECIMAL_PRECISION:
+			case FrameWebPackage.DECIMAL_ATTRIBUTE__DECIMAL_PRECISION:
 				setDecimalPrecision(DECIMAL_PRECISION_EDEFAULT);
 				return;
-			case framewebPackage.DECIMAL_ATTRIBUTE__DECIMAL_SCALE:
+			case FrameWebPackage.DECIMAL_ATTRIBUTE__DECIMAL_SCALE:
 				setDecimalScale(DECIMAL_SCALE_EDEFAULT);
 				return;
 		}
@@ -187,9 +187,9 @@ public class DecimalAttributeImpl extends DomainAttributeImpl implements Decimal
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DECIMAL_ATTRIBUTE__DECIMAL_PRECISION:
+			case FrameWebPackage.DECIMAL_ATTRIBUTE__DECIMAL_PRECISION:
 				return decimalPrecision != DECIMAL_PRECISION_EDEFAULT;
-			case framewebPackage.DECIMAL_ATTRIBUTE__DECIMAL_SCALE:
+			case FrameWebPackage.DECIMAL_ATTRIBUTE__DECIMAL_SCALE:
 				return decimalScale != DECIMAL_SCALE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);

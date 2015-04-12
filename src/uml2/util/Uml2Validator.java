@@ -249,6 +249,7 @@ import uml2.TransitionKind;
 import uml2.Trigger;
 import uml2.Type;
 import uml2.TypedElement;
+import uml2.Uml2Package;
 import uml2.UnmarshallAction;
 import uml2.Usage;
 import uml2.UseCase;
@@ -262,7 +263,6 @@ import uml2.VisibilityKind;
 import uml2.WriteLinkAction;
 import uml2.WriteStructuralFeatureAction;
 import uml2.WriteVariableAction;
-import uml2.Uml2Package;
 
 /**
  * <!-- begin-user-doc -->
@@ -15400,4 +15400,4 @@ public class Uml2Validator extends EObjectValidator {
 		return super.getResourceLocator();
 	}
 
-} //uml2Validator
+} //Uml2Validator

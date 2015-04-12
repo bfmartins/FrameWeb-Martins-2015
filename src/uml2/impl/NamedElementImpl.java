@@ -30,8 +30,8 @@ import uml2.Dependency;
 import uml2.NamedElement;
 import uml2.Namespace;
 import uml2.StringExpression;
-import uml2.VisibilityKind;
 import uml2.Uml2Package;
+import uml2.VisibilityKind;
 
 import uml2.util.Uml2Validator;
 

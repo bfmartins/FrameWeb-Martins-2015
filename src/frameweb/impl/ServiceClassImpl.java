@@ -2,10 +2,10 @@
  */
 package frameweb.impl;
 
+import frameweb.FrameWebPackage;
 import frameweb.ServiceAttribute;
 import frameweb.ServiceClass;
 import frameweb.ServiceOperation;
-import frameweb.framewebPackage;
 
 import java.util.Collection;
 
@@ -75,7 +75,7 @@ public class ServiceClassImpl extends ClassImpl implements ServiceClass {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.SERVICE_CLASS;
+		return FrameWebPackage.Literals.SERVICE_CLASS;
 	}
 
 	/**
@@ -96,7 +96,7 @@ public class ServiceClassImpl extends ClassImpl implements ServiceClass {
 		ServiceAttribute oldServiceClassAttribute = serviceClassAttribute;
 		serviceClassAttribute = newServiceClassAttribute;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, framewebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE, oldServiceClassAttribute, newServiceClassAttribute);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE, oldServiceClassAttribute, newServiceClassAttribute);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -111,14 +111,14 @@ public class ServiceClassImpl extends ClassImpl implements ServiceClass {
 		if (newServiceClassAttribute != serviceClassAttribute) {
 			NotificationChain msgs = null;
 			if (serviceClassAttribute != null)
-				msgs = ((InternalEObject)serviceClassAttribute).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - framewebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE, null, msgs);
+				msgs = ((InternalEObject)serviceClassAttribute).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE, null, msgs);
 			if (newServiceClassAttribute != null)
-				msgs = ((InternalEObject)newServiceClassAttribute).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - framewebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE, null, msgs);
+				msgs = ((InternalEObject)newServiceClassAttribute).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE, null, msgs);
 			msgs = basicSetServiceClassAttribute(newServiceClassAttribute, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE, newServiceClassAttribute, newServiceClassAttribute));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE, newServiceClassAttribute, newServiceClassAttribute));
 	}
 
 	/**
@@ -128,7 +128,7 @@ public class ServiceClassImpl extends ClassImpl implements ServiceClass {
 	 */
 	public EList<ServiceOperation> getServiceClassOperation() {
 		if (serviceClassOperation == null) {
-			serviceClassOperation = new EObjectContainmentEList<ServiceOperation>(ServiceOperation.class, this, framewebPackage.SERVICE_CLASS__SERVICE_CLASS_OPERATION);
+			serviceClassOperation = new EObjectContainmentEList<ServiceOperation>(ServiceOperation.class, this, FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_OPERATION);
 		}
 		return serviceClassOperation;
 	}
@@ -141,9 +141,9 @@ public class ServiceClassImpl extends ClassImpl implements ServiceClass {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE:
+			case FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE:
 				return basicSetServiceClassAttribute(null, msgs);
-			case framewebPackage.SERVICE_CLASS__SERVICE_CLASS_OPERATION:
+			case FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_OPERATION:
 				return ((InternalEList<?>)getServiceClassOperation()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -157,9 +157,9 @@ public class ServiceClassImpl extends ClassImpl implements ServiceClass {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE:
+			case FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE:
 				return getServiceClassAttribute();
-			case framewebPackage.SERVICE_CLASS__SERVICE_CLASS_OPERATION:
+			case FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_OPERATION:
 				return getServiceClassOperation();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -174,10 +174,10 @@ public class ServiceClassImpl extends ClassImpl implements ServiceClass {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE:
+			case FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE:
 				setServiceClassAttribute((ServiceAttribute)newValue);
 				return;
-			case framewebPackage.SERVICE_CLASS__SERVICE_CLASS_OPERATION:
+			case FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_OPERATION:
 				getServiceClassOperation().clear();
 				getServiceClassOperation().addAll((Collection<? extends ServiceOperation>)newValue);
 				return;
@@ -193,10 +193,10 @@ public class ServiceClassImpl extends ClassImpl implements ServiceClass {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE:
+			case FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE:
 				setServiceClassAttribute((ServiceAttribute)null);
 				return;
-			case framewebPackage.SERVICE_CLASS__SERVICE_CLASS_OPERATION:
+			case FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_OPERATION:
 				getServiceClassOperation().clear();
 				return;
 		}
@@ -211,9 +211,9 @@ public class ServiceClassImpl extends ClassImpl implements ServiceClass {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE:
+			case FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE:
 				return serviceClassAttribute != null;
-			case framewebPackage.SERVICE_CLASS__SERVICE_CLASS_OPERATION:
+			case FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_OPERATION:
 				return serviceClassOperation != null && !serviceClassOperation.isEmpty();
 		}
 		return super.eIsSet(featureID);

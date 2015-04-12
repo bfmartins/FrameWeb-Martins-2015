@@ -24,8 +24,8 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.eclipse.emf.ecore.util.EObjectValidator;
 
 import uml2.InputPin;
-import uml2.WriteVariableAction;
 import uml2.Uml2Package;
+import uml2.WriteVariableAction;
 
 import uml2.util.Uml2Validator;
 

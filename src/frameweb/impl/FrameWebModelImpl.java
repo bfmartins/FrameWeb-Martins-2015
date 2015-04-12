@@ -3,8 +3,8 @@
 package frameweb.impl;
 
 import frameweb.FrameWebModel;
+import frameweb.FrameWebPackage;
 import frameweb.NamingMethod;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -18,7 +18,7 @@ import uml2.impl.ModelImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Frame Web Model</b></em>'.
+ * An implementation of the model object '<em><b>Model</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
@@ -56,7 +56,7 @@ public abstract class FrameWebModelImpl extends ModelImpl implements FrameWebMod
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.FRAME_WEB_MODEL;
+		return FrameWebPackage.Literals.FRAME_WEB_MODEL;
 	}
 
 	/**
@@ -77,7 +77,7 @@ public abstract class FrameWebModelImpl extends ModelImpl implements FrameWebMod
 		NamingMethod oldIndite = indite;
 		indite = newIndite;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, framewebPackage.FRAME_WEB_MODEL__INDITE, oldIndite, newIndite);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FrameWebPackage.FRAME_WEB_MODEL__INDITE, oldIndite, newIndite);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -92,14 +92,14 @@ public abstract class FrameWebModelImpl extends ModelImpl implements FrameWebMod
 		if (newIndite != indite) {
 			NotificationChain msgs = null;
 			if (indite != null)
-				msgs = ((InternalEObject)indite).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - framewebPackage.FRAME_WEB_MODEL__INDITE, null, msgs);
+				msgs = ((InternalEObject)indite).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - FrameWebPackage.FRAME_WEB_MODEL__INDITE, null, msgs);
 			if (newIndite != null)
-				msgs = ((InternalEObject)newIndite).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - framewebPackage.FRAME_WEB_MODEL__INDITE, null, msgs);
+				msgs = ((InternalEObject)newIndite).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - FrameWebPackage.FRAME_WEB_MODEL__INDITE, null, msgs);
 			msgs = basicSetIndite(newIndite, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.FRAME_WEB_MODEL__INDITE, newIndite, newIndite));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.FRAME_WEB_MODEL__INDITE, newIndite, newIndite));
 	}
 
 	/**
@@ -110,7 +110,7 @@ public abstract class FrameWebModelImpl extends ModelImpl implements FrameWebMod
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.FRAME_WEB_MODEL__INDITE:
+			case FrameWebPackage.FRAME_WEB_MODEL__INDITE:
 				return basicSetIndite(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -124,7 +124,7 @@ public abstract class FrameWebModelImpl extends ModelImpl implements FrameWebMod
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.FRAME_WEB_MODEL__INDITE:
+			case FrameWebPackage.FRAME_WEB_MODEL__INDITE:
 				return getIndite();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -138,7 +138,7 @@ public abstract class FrameWebModelImpl extends ModelImpl implements FrameWebMod
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.FRAME_WEB_MODEL__INDITE:
+			case FrameWebPackage.FRAME_WEB_MODEL__INDITE:
 				setIndite((NamingMethod)newValue);
 				return;
 		}
@@ -153,7 +153,7 @@ public abstract class FrameWebModelImpl extends ModelImpl implements FrameWebMod
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.FRAME_WEB_MODEL__INDITE:
+			case FrameWebPackage.FRAME_WEB_MODEL__INDITE:
 				setIndite((NamingMethod)null);
 				return;
 		}
@@ -168,7 +168,7 @@ public abstract class FrameWebModelImpl extends ModelImpl implements FrameWebMod
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.FRAME_WEB_MODEL__INDITE:
+			case FrameWebPackage.FRAME_WEB_MODEL__INDITE:
 				return indite != null;
 		}
 		return super.eIsSet(featureID);

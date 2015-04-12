@@ -2,9 +2,9 @@
  */
 package primitiveTypes.impl;
 
-import frameweb.framewebPackage;
+import frameweb.FrameWebPackage;
 
-import frameweb.impl.FramewebPackageImpl;
+import frameweb.impl.FrameWebPackageImpl;
 
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EPackage;
@@ -14,9 +14,9 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 import primitiveTypes.PrimitiveTypesFactory;
 import primitiveTypes.PrimitiveTypesPackage;
 
-import uml2.impl.Uml2PackageImpl;
-
 import uml2.Uml2Package;
+
+import uml2.impl.Uml2PackageImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -102,31 +102,31 @@ public class PrimitiveTypesPackageImpl extends EPackageImpl implements Primitive
 		if (isInited) return (PrimitiveTypesPackage)EPackage.Registry.INSTANCE.getEPackage(PrimitiveTypesPackage.eNS_URI);
 
 		// Obtain or create and register package
-		PrimitiveTypesPackageImpl theprimitiveTypesPackage = (PrimitiveTypesPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof PrimitiveTypesPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new PrimitiveTypesPackageImpl());
+		PrimitiveTypesPackageImpl thePrimitiveTypesPackage = (PrimitiveTypesPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof PrimitiveTypesPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new PrimitiveTypesPackageImpl());
 
 		isInited = true;
 
 		// Obtain or create and register interdependencies
-		FramewebPackageImpl theframewebPackage = (FramewebPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(framewebPackage.eNS_URI) instanceof FramewebPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(framewebPackage.eNS_URI) : framewebPackage.eINSTANCE);
-		Uml2PackageImpl theuml2Package = (Uml2PackageImpl)(EPackage.Registry.INSTANCE.getEPackage(Uml2Package.eNS_URI) instanceof Uml2PackageImpl ? EPackage.Registry.INSTANCE.getEPackage(Uml2Package.eNS_URI) : Uml2Package.eINSTANCE);
+		FrameWebPackageImpl theFrameWebPackage = (FrameWebPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(FrameWebPackage.eNS_URI) instanceof FrameWebPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(FrameWebPackage.eNS_URI) : FrameWebPackage.eINSTANCE);
+		Uml2PackageImpl theUml2Package = (Uml2PackageImpl)(EPackage.Registry.INSTANCE.getEPackage(Uml2Package.eNS_URI) instanceof Uml2PackageImpl ? EPackage.Registry.INSTANCE.getEPackage(Uml2Package.eNS_URI) : Uml2Package.eINSTANCE);
 
 		// Create package meta-data objects
-		theprimitiveTypesPackage.createPackageContents();
-		theframewebPackage.createPackageContents();
-		theuml2Package.createPackageContents();
+		thePrimitiveTypesPackage.createPackageContents();
+		theFrameWebPackage.createPackageContents();
+		theUml2Package.createPackageContents();
 
 		// Initialize created meta-data
-		theprimitiveTypesPackage.initializePackageContents();
-		theframewebPackage.initializePackageContents();
-		theuml2Package.initializePackageContents();
+		thePrimitiveTypesPackage.initializePackageContents();
+		theFrameWebPackage.initializePackageContents();
+		theUml2Package.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
-		theprimitiveTypesPackage.freeze();
+		thePrimitiveTypesPackage.freeze();
 
   
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(PrimitiveTypesPackage.eNS_URI, theprimitiveTypesPackage);
-		return theprimitiveTypesPackage;
+		EPackage.Registry.INSTANCE.put(PrimitiveTypesPackage.eNS_URI, thePrimitiveTypesPackage);
+		return thePrimitiveTypesPackage;
 	}
 
 	/**
@@ -179,7 +179,7 @@ public class PrimitiveTypesPackageImpl extends EPackageImpl implements Primitive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PrimitiveTypesFactory getprimitiveTypesFactory() {
+	public PrimitiveTypesFactory getPrimitiveTypesFactory() {
 		return (PrimitiveTypesFactory)getEFactoryInstance();
 	}
 
@@ -243,4 +243,4 @@ public class PrimitiveTypesPackageImpl extends EPackageImpl implements Primitive
 		createResource(eNS_URI);
 	}
 
-} //primitiveTypesPackageImpl
+} //PrimitiveTypesPackageImpl

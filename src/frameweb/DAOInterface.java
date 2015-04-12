@@ -21,7 +21,7 @@ import uml2.Interface;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getDAOInterface()
+ * @see frameweb.FrameWebPackage#getDAOInterface()
  * @model
  * @generated
  */
@@ -36,7 +36,7 @@ public interface DAOInterface extends Interface {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Own Base Operation</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getDAOInterface_OwnBaseOperation()
+	 * @see frameweb.FrameWebPackage#getDAOInterface_OwnBaseOperation()
 	 * @model containment="true" lower="4" upper="4"
 	 * @generated
 	 */
@@ -52,7 +52,7 @@ public interface DAOInterface extends Interface {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Own Operation</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getDAOInterface_OwnOperation()
+	 * @see frameweb.FrameWebPackage#getDAOInterface_OwnOperation()
 	 * @model containment="true"
 	 * @generated
 	 */
@@ -68,7 +68,7 @@ public interface DAOInterface extends Interface {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DAO Interface Name</em>' reference.
 	 * @see #setDAOInterfaceName(DAOInterfaceName)
-	 * @see frameweb.framewebPackage#getDAOInterface_DAOInterfaceName()
+	 * @see frameweb.FrameWebPackage#getDAOInterface_DAOInterfaceName()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -94,7 +94,7 @@ public interface DAOInterface extends Interface {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DAO Interface Attribute</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getDAOInterface_DAOInterfaceAttribute()
+	 * @see frameweb.FrameWebPackage#getDAOInterface_DAOInterfaceAttribute()
 	 * @model containment="true"
 	 * @generated
 	 */

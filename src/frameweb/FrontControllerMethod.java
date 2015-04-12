@@ -16,7 +16,7 @@ import uml2.Operation;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getFrontControllerMethod()
+ * @see frameweb.FrameWebPackage#getFrontControllerMethod()
  * @model
  * @generated
  */
@@ -31,7 +31,7 @@ public interface FrontControllerMethod extends Operation {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Default</em>' attribute.
 	 * @see #setIsDefault(boolean)
-	 * @see frameweb.framewebPackage#getFrontControllerMethod_IsDefault()
+	 * @see frameweb.FrameWebPackage#getFrontControllerMethod_IsDefault()
 	 * @model
 	 * @generated
 	 */

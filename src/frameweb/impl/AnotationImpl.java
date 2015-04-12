@@ -3,7 +3,7 @@
 package frameweb.impl;
 
 import frameweb.Anotation;
-import frameweb.framewebPackage;
+import frameweb.FrameWebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -35,7 +35,7 @@ public class AnotationImpl extends MinimalEObjectImpl.Container implements Anota
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.ANOTATION;
+		return FrameWebPackage.Literals.ANOTATION;
 	}
 
 } //AnotationImpl

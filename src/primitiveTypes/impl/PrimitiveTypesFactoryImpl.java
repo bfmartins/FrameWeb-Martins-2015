@@ -28,9 +28,9 @@ public class PrimitiveTypesFactoryImpl extends EFactoryImpl implements Primitive
 	 */
 	public static PrimitiveTypesFactory init() {
 		try {
-			PrimitiveTypesFactory theprimitiveTypesFactory = (PrimitiveTypesFactory)EPackage.Registry.INSTANCE.getEFactory(PrimitiveTypesPackage.eNS_URI);
-			if (theprimitiveTypesFactory != null) {
-				return theprimitiveTypesFactory;
+			PrimitiveTypesFactory thePrimitiveTypesFactory = (PrimitiveTypesFactory)EPackage.Registry.INSTANCE.getEFactory(PrimitiveTypesPackage.eNS_URI);
+			if (thePrimitiveTypesFactory != null) {
+				return thePrimitiveTypesFactory;
 			}
 		}
 		catch (Exception exception) {
@@ -203,7 +203,7 @@ public class PrimitiveTypesFactoryImpl extends EFactoryImpl implements Primitive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PrimitiveTypesPackage getprimitiveTypesPackage() {
+	public PrimitiveTypesPackage getPrimitiveTypesPackage() {
 		return (PrimitiveTypesPackage)getEPackage();
 	}
 
@@ -218,4 +218,4 @@ public class PrimitiveTypesFactoryImpl extends EFactoryImpl implements Primitive
 		return PrimitiveTypesPackage.eINSTANCE;
 	}
 
-} //primitiveTypesFactoryImpl
+} //PrimitiveTypesFactoryImpl

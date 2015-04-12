@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getServiceClass()
+ * @see frameweb.FrameWebPackage#getServiceClass()
  * @model
  * @generated
  */
@@ -32,7 +32,7 @@ public interface ServiceClass extends uml2.Class {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Service Class Attribute</em>' containment reference.
 	 * @see #setServiceClassAttribute(ServiceAttribute)
-	 * @see frameweb.framewebPackage#getServiceClass_ServiceClassAttribute()
+	 * @see frameweb.FrameWebPackage#getServiceClass_ServiceClassAttribute()
 	 * @model containment="true"
 	 * @generated
 	 */
@@ -58,7 +58,7 @@ public interface ServiceClass extends uml2.Class {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Service Class Operation</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getServiceClass_ServiceClassOperation()
+	 * @see frameweb.FrameWebPackage#getServiceClass_ServiceClassOperation()
 	 * @model containment="true"
 	 * @generated
 	 */

@@ -3,7 +3,7 @@
 package frameweb.impl;
 
 import frameweb.DAOAttribute;
-import frameweb.framewebPackage;
+import frameweb.FrameWebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -35,7 +35,7 @@ public class DAOAttributeImpl extends PropertyImpl implements DAOAttribute {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.DAO_ATTRIBUTE;
+		return FrameWebPackage.Literals.DAO_ATTRIBUTE;
 	}
 
 } //DAOAttributeImpl

@@ -123609,7 +123609,7 @@ public interface Uml2Package extends EPackage {
 	 * @return the factory that creates the instances of the model.
 	 * @generated
 	 */
-	Uml2Factory getuml2Factory();
+	Uml2Factory getUml2Factory();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -135205,4 +135205,4 @@ public interface Uml2Package extends EPackage {
 
 	}
 
-} //uml2Package
+} //Uml2Package

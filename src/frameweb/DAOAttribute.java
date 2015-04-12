@@ -10,7 +10,7 @@ import uml2.Property;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.framewebPackage#getDAOAttribute()
+ * @see frameweb.FrameWebPackage#getDAOAttribute()
  * @model
  * @generated
  */

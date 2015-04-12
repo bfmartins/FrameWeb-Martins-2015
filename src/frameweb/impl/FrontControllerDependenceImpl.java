@@ -4,13 +4,13 @@ package frameweb.impl;
 
 import frameweb.Component;
 import frameweb.Form;
+import frameweb.FrameWebPackage;
 import frameweb.FrontControllerClass;
 import frameweb.FrontControllerDependence;
 import frameweb.FrontControllerMethod;
 import frameweb.JQuery;
 import frameweb.Page;
 import frameweb.Template;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -125,7 +125,7 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE;
+		return FrameWebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE;
 	}
 
 	/**
@@ -139,7 +139,7 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 			method = (FrontControllerMethod)eResolveProxy(oldMethod);
 			if (method != oldMethod) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.FRONT_CONTROLLER_DEPENDENCE__METHOD, oldMethod, method));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__METHOD, oldMethod, method));
 			}
 		}
 		return method;
@@ -163,7 +163,7 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 		FrontControllerMethod oldMethod = method;
 		method = newMethod;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.FRONT_CONTROLLER_DEPENDENCE__METHOD, oldMethod, method));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__METHOD, oldMethod, method));
 	}
 
 	/**
@@ -177,7 +177,7 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 			sourceForm = (Form)eResolveProxy(oldSourceForm);
 			if (sourceForm != oldSourceForm) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_FORM, oldSourceForm, sourceForm));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_FORM, oldSourceForm, sourceForm));
 			}
 		}
 		return sourceForm;
@@ -201,7 +201,7 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 		Form oldSourceForm = sourceForm;
 		sourceForm = newSourceForm;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_FORM, oldSourceForm, sourceForm));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_FORM, oldSourceForm, sourceForm));
 	}
 
 	/**
@@ -215,7 +215,7 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 			targetFrontController = (FrontControllerClass)eResolveProxy(oldTargetFrontController);
 			if (targetFrontController != oldTargetFrontController) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.FRONT_CONTROLLER_DEPENDENCE__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
 			}
 		}
 		return targetFrontController;
@@ -239,7 +239,7 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 		FrontControllerClass oldTargetFrontController = targetFrontController;
 		targetFrontController = newTargetFrontController;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.FRONT_CONTROLLER_DEPENDENCE__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
 	}
 
 	/**
@@ -253,7 +253,7 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 			sourcePage = (Page)eResolveProxy(oldSourcePage);
 			if (sourcePage != oldSourcePage) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_PAGE, oldSourcePage, sourcePage));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_PAGE, oldSourcePage, sourcePage));
 			}
 		}
 		return sourcePage;
@@ -277,7 +277,7 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 		Page oldSourcePage = sourcePage;
 		sourcePage = newSourcePage;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_PAGE, oldSourcePage, sourcePage));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_PAGE, oldSourcePage, sourcePage));
 	}
 
 	/**
@@ -291,7 +291,7 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 			sourceTemplate = (Template)eResolveProxy(oldSourceTemplate);
 			if (sourceTemplate != oldSourceTemplate) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_TEMPLATE, oldSourceTemplate, sourceTemplate));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_TEMPLATE, oldSourceTemplate, sourceTemplate));
 			}
 		}
 		return sourceTemplate;
@@ -315,7 +315,7 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 		Template oldSourceTemplate = sourceTemplate;
 		sourceTemplate = newSourceTemplate;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_TEMPLATE, oldSourceTemplate, sourceTemplate));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_TEMPLATE, oldSourceTemplate, sourceTemplate));
 	}
 
 	/**
@@ -329,7 +329,7 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 			sourceComponent = (Component)eResolveProxy(oldSourceComponent);
 			if (sourceComponent != oldSourceComponent) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_COMPONENT, oldSourceComponent, sourceComponent));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_COMPONENT, oldSourceComponent, sourceComponent));
 			}
 		}
 		return sourceComponent;
@@ -353,7 +353,7 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 		Component oldSourceComponent = sourceComponent;
 		sourceComponent = newSourceComponent;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_COMPONENT, oldSourceComponent, sourceComponent));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_COMPONENT, oldSourceComponent, sourceComponent));
 	}
 
 	/**
@@ -367,7 +367,7 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 			sourceJQuery = (JQuery)eResolveProxy(oldSourceJQuery);
 			if (sourceJQuery != oldSourceJQuery) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_JQUERY, oldSourceJQuery, sourceJQuery));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_JQUERY, oldSourceJQuery, sourceJQuery));
 			}
 		}
 		return sourceJQuery;
@@ -391,7 +391,7 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 		JQuery oldSourceJQuery = sourceJQuery;
 		sourceJQuery = newSourceJQuery;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_JQUERY, oldSourceJQuery, sourceJQuery));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_JQUERY, oldSourceJQuery, sourceJQuery));
 	}
 
 	/**
@@ -402,25 +402,25 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__METHOD:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__METHOD:
 				if (resolve) return getMethod();
 				return basicGetMethod();
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_FORM:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_FORM:
 				if (resolve) return getSourceForm();
 				return basicGetSourceForm();
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__TARGET_FRONT_CONTROLLER:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__TARGET_FRONT_CONTROLLER:
 				if (resolve) return getTargetFrontController();
 				return basicGetTargetFrontController();
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_PAGE:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_PAGE:
 				if (resolve) return getSourcePage();
 				return basicGetSourcePage();
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_TEMPLATE:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_TEMPLATE:
 				if (resolve) return getSourceTemplate();
 				return basicGetSourceTemplate();
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_COMPONENT:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_COMPONENT:
 				if (resolve) return getSourceComponent();
 				return basicGetSourceComponent();
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_JQUERY:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_JQUERY:
 				if (resolve) return getSourceJQuery();
 				return basicGetSourceJQuery();
 		}
@@ -435,25 +435,25 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__METHOD:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__METHOD:
 				setMethod((FrontControllerMethod)newValue);
 				return;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_FORM:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_FORM:
 				setSourceForm((Form)newValue);
 				return;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__TARGET_FRONT_CONTROLLER:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__TARGET_FRONT_CONTROLLER:
 				setTargetFrontController((FrontControllerClass)newValue);
 				return;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_PAGE:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_PAGE:
 				setSourcePage((Page)newValue);
 				return;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_TEMPLATE:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_TEMPLATE:
 				setSourceTemplate((Template)newValue);
 				return;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_COMPONENT:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_COMPONENT:
 				setSourceComponent((Component)newValue);
 				return;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_JQUERY:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_JQUERY:
 				setSourceJQuery((JQuery)newValue);
 				return;
 		}
@@ -468,25 +468,25 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__METHOD:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__METHOD:
 				setMethod((FrontControllerMethod)null);
 				return;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_FORM:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_FORM:
 				setSourceForm((Form)null);
 				return;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__TARGET_FRONT_CONTROLLER:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__TARGET_FRONT_CONTROLLER:
 				setTargetFrontController((FrontControllerClass)null);
 				return;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_PAGE:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_PAGE:
 				setSourcePage((Page)null);
 				return;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_TEMPLATE:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_TEMPLATE:
 				setSourceTemplate((Template)null);
 				return;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_COMPONENT:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_COMPONENT:
 				setSourceComponent((Component)null);
 				return;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_JQUERY:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_JQUERY:
 				setSourceJQuery((JQuery)null);
 				return;
 		}
@@ -501,19 +501,19 @@ public class FrontControllerDependenceImpl extends NavigationDependencyImpl impl
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__METHOD:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__METHOD:
 				return method != null;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_FORM:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_FORM:
 				return sourceForm != null;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__TARGET_FRONT_CONTROLLER:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__TARGET_FRONT_CONTROLLER:
 				return targetFrontController != null;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_PAGE:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_PAGE:
 				return sourcePage != null;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_TEMPLATE:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_TEMPLATE:
 				return sourceTemplate != null;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_COMPONENT:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_COMPONENT:
 				return sourceComponent != null;
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_JQUERY:
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE__SOURCE_JQUERY:
 				return sourceJQuery != null;
 		}
 		return super.eIsSet(featureID);

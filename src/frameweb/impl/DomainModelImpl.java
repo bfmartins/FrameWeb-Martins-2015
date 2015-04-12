@@ -4,7 +4,7 @@ package frameweb.impl;
 
 import frameweb.DomainModel;
 import frameweb.DomainPackage;
-import frameweb.framewebPackage;
+import frameweb.FrameWebPackage;
 
 import java.util.Collection;
 
@@ -58,7 +58,7 @@ public class DomainModelImpl extends FrameWebModelImpl implements DomainModel {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.DOMAIN_MODEL;
+		return FrameWebPackage.Literals.DOMAIN_MODEL;
 	}
 
 	/**
@@ -68,7 +68,7 @@ public class DomainModelImpl extends FrameWebModelImpl implements DomainModel {
 	 */
 	public EList<DomainPackage> getDomainUMLPackage() {
 		if (domainUMLPackage == null) {
-			domainUMLPackage = new EObjectContainmentEList<DomainPackage>(DomainPackage.class, this, framewebPackage.DOMAIN_MODEL__DOMAIN_UML_PACKAGE);
+			domainUMLPackage = new EObjectContainmentEList<DomainPackage>(DomainPackage.class, this, FrameWebPackage.DOMAIN_MODEL__DOMAIN_UML_PACKAGE);
 		}
 		return domainUMLPackage;
 	}
@@ -81,7 +81,7 @@ public class DomainModelImpl extends FrameWebModelImpl implements DomainModel {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_MODEL__DOMAIN_UML_PACKAGE:
+			case FrameWebPackage.DOMAIN_MODEL__DOMAIN_UML_PACKAGE:
 				return ((InternalEList<?>)getDomainUMLPackage()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -95,7 +95,7 @@ public class DomainModelImpl extends FrameWebModelImpl implements DomainModel {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_MODEL__DOMAIN_UML_PACKAGE:
+			case FrameWebPackage.DOMAIN_MODEL__DOMAIN_UML_PACKAGE:
 				return getDomainUMLPackage();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -110,7 +110,7 @@ public class DomainModelImpl extends FrameWebModelImpl implements DomainModel {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_MODEL__DOMAIN_UML_PACKAGE:
+			case FrameWebPackage.DOMAIN_MODEL__DOMAIN_UML_PACKAGE:
 				getDomainUMLPackage().clear();
 				getDomainUMLPackage().addAll((Collection<? extends DomainPackage>)newValue);
 				return;
@@ -126,7 +126,7 @@ public class DomainModelImpl extends FrameWebModelImpl implements DomainModel {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_MODEL__DOMAIN_UML_PACKAGE:
+			case FrameWebPackage.DOMAIN_MODEL__DOMAIN_UML_PACKAGE:
 				getDomainUMLPackage().clear();
 				return;
 		}
@@ -141,7 +141,7 @@ public class DomainModelImpl extends FrameWebModelImpl implements DomainModel {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.DOMAIN_MODEL__DOMAIN_UML_PACKAGE:
+			case FrameWebPackage.DOMAIN_MODEL__DOMAIN_UML_PACKAGE:
 				return domainUMLPackage != null && !domainUMLPackage.isEmpty();
 		}
 		return super.eIsSet(featureID);

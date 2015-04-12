@@ -2,8 +2,8 @@
  */
 package frameweb.impl;
 
+import frameweb.FrameWebPackage;
 import frameweb.ServiceOperation;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -35,7 +35,7 @@ public class ServiceOperationImpl extends OperationImpl implements ServiceOperat
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.SERVICE_OPERATION;
+		return FrameWebPackage.Literals.SERVICE_OPERATION;
 	}
 
 } //ServiceOperationImpl

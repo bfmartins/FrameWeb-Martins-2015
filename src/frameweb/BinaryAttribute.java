@@ -9,7 +9,7 @@ package frameweb;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.framewebPackage#getBinaryAttribute()
+ * @see frameweb.FrameWebPackage#getBinaryAttribute()
  * @model
  * @generated
  */

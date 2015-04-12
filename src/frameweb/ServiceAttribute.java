@@ -10,7 +10,7 @@ import uml2.Property;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.framewebPackage#getServiceAttribute()
+ * @see frameweb.FrameWebPackage#getServiceAttribute()
  * @model
  * @generated
  */

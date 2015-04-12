@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getPersistencePackage()
+ * @see frameweb.FrameWebPackage#getPersistencePackage()
  * @model
  * @generated
  */
@@ -32,7 +32,7 @@ public interface PersistencePackage extends uml2.Package {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Persistence Package Interface</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getPersistencePackage_PersistencePackageInterface()
+	 * @see frameweb.FrameWebPackage#getPersistencePackage_PersistencePackageInterface()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
@@ -48,7 +48,7 @@ public interface PersistencePackage extends uml2.Package {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Persistence Package Class</em>' containment reference list.
-	 * @see frameweb.framewebPackage#getPersistencePackage_PersistencePackageClass()
+	 * @see frameweb.FrameWebPackage#getPersistencePackage_PersistencePackageClass()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */

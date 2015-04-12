@@ -25,8 +25,8 @@ import org.eclipse.emf.ecore.util.EObjectValidator;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
 import uml2.ExtensionPoint;
-import uml2.UseCase;
 import uml2.Uml2Package;
+import uml2.UseCase;
 
 import uml2.util.Uml2Validator;
 

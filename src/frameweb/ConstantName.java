@@ -15,7 +15,7 @@ package frameweb;
  * </ul>
  * </p>
  *
- * @see frameweb.framewebPackage#getConstantName()
+ * @see frameweb.FrameWebPackage#getConstantName()
  * @model
  * @generated
  */
@@ -32,7 +32,7 @@ public interface ConstantName extends FrameWebName {
 	 * @return the value of the '<em>Fw Name</em>' attribute.
 	 * @see frameweb.ConstantNameList
 	 * @see #setFwName(ConstantNameList)
-	 * @see frameweb.framewebPackage#getConstantName_FwName()
+	 * @see frameweb.FrameWebPackage#getConstantName_FwName()
 	 * @model
 	 * @generated
 	 */

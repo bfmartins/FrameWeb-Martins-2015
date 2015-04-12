@@ -2,10 +2,10 @@
  */
 package frameweb.impl;
 
+import frameweb.FrameWebPackage;
 import frameweb.ServiceAttribute;
 import frameweb.ServiceInterface;
 import frameweb.ServiceOperation;
-import frameweb.framewebPackage;
 
 import java.util.Collection;
 
@@ -72,7 +72,7 @@ public class ServiceInterfaceImpl extends InterfaceImpl implements ServiceInterf
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.SERVICE_INTERFACE;
+		return FrameWebPackage.Literals.SERVICE_INTERFACE;
 	}
 
 	/**
@@ -82,7 +82,7 @@ public class ServiceInterfaceImpl extends InterfaceImpl implements ServiceInterf
 	 */
 	public EList<ServiceOperation> getServiceInterfaceOperation() {
 		if (serviceInterfaceOperation == null) {
-			serviceInterfaceOperation = new EObjectContainmentEList<ServiceOperation>(ServiceOperation.class, this, framewebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION);
+			serviceInterfaceOperation = new EObjectContainmentEList<ServiceOperation>(ServiceOperation.class, this, FrameWebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION);
 		}
 		return serviceInterfaceOperation;
 	}
@@ -94,7 +94,7 @@ public class ServiceInterfaceImpl extends InterfaceImpl implements ServiceInterf
 	 */
 	public EList<ServiceAttribute> getServiceInterfaceAttribute() {
 		if (serviceInterfaceAttribute == null) {
-			serviceInterfaceAttribute = new EObjectContainmentEList<ServiceAttribute>(ServiceAttribute.class, this, framewebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE);
+			serviceInterfaceAttribute = new EObjectContainmentEList<ServiceAttribute>(ServiceAttribute.class, this, FrameWebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE);
 		}
 		return serviceInterfaceAttribute;
 	}
@@ -107,9 +107,9 @@ public class ServiceInterfaceImpl extends InterfaceImpl implements ServiceInterf
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION:
+			case FrameWebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION:
 				return ((InternalEList<?>)getServiceInterfaceOperation()).basicRemove(otherEnd, msgs);
-			case framewebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE:
+			case FrameWebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE:
 				return ((InternalEList<?>)getServiceInterfaceAttribute()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -123,9 +123,9 @@ public class ServiceInterfaceImpl extends InterfaceImpl implements ServiceInterf
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION:
+			case FrameWebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION:
 				return getServiceInterfaceOperation();
-			case framewebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE:
+			case FrameWebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE:
 				return getServiceInterfaceAttribute();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -140,11 +140,11 @@ public class ServiceInterfaceImpl extends InterfaceImpl implements ServiceInterf
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION:
+			case FrameWebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION:
 				getServiceInterfaceOperation().clear();
 				getServiceInterfaceOperation().addAll((Collection<? extends ServiceOperation>)newValue);
 				return;
-			case framewebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE:
+			case FrameWebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE:
 				getServiceInterfaceAttribute().clear();
 				getServiceInterfaceAttribute().addAll((Collection<? extends ServiceAttribute>)newValue);
 				return;
@@ -160,10 +160,10 @@ public class ServiceInterfaceImpl extends InterfaceImpl implements ServiceInterf
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION:
+			case FrameWebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION:
 				getServiceInterfaceOperation().clear();
 				return;
-			case framewebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE:
+			case FrameWebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE:
 				getServiceInterfaceAttribute().clear();
 				return;
 		}
@@ -178,9 +178,9 @@ public class ServiceInterfaceImpl extends InterfaceImpl implements ServiceInterf
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION:
+			case FrameWebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION:
 				return serviceInterfaceOperation != null && !serviceInterfaceOperation.isEmpty();
-			case framewebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE:
+			case FrameWebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE:
 				return serviceInterfaceAttribute != null && !serviceInterfaceAttribute.isEmpty();
 		}
 		return super.eIsSet(featureID);

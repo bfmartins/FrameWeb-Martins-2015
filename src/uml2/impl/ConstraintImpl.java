@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
 import uml2.Constraint;
 import uml2.Element;
 import uml2.Namespace;
-import uml2.ValueSpecification;
 import uml2.Uml2Package;
+import uml2.ValueSpecification;
 
 import uml2.util.Uml2Validator;
 

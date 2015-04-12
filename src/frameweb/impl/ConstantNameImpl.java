@@ -4,7 +4,7 @@ package frameweb.impl;
 
 import frameweb.ConstantName;
 import frameweb.ConstantNameList;
-import frameweb.framewebPackage;
+import frameweb.FrameWebPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -62,7 +62,7 @@ public class ConstantNameImpl extends FrameWebNameImpl implements ConstantName {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.CONSTANT_NAME;
+		return FrameWebPackage.Literals.CONSTANT_NAME;
 	}
 
 	/**
@@ -83,7 +83,7 @@ public class ConstantNameImpl extends FrameWebNameImpl implements ConstantName {
 		ConstantNameList oldFwName = fwName;
 		fwName = newFwName == null ? FW_NAME_EDEFAULT : newFwName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, framewebPackage.CONSTANT_NAME__FW_NAME, oldFwName, fwName));
+			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.CONSTANT_NAME__FW_NAME, oldFwName, fwName));
 	}
 
 	/**
@@ -94,7 +94,7 @@ public class ConstantNameImpl extends FrameWebNameImpl implements ConstantName {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.CONSTANT_NAME__FW_NAME:
+			case FrameWebPackage.CONSTANT_NAME__FW_NAME:
 				return getFwName();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -108,7 +108,7 @@ public class ConstantNameImpl extends FrameWebNameImpl implements ConstantName {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.CONSTANT_NAME__FW_NAME:
+			case FrameWebPackage.CONSTANT_NAME__FW_NAME:
 				setFwName((ConstantNameList)newValue);
 				return;
 		}
@@ -123,7 +123,7 @@ public class ConstantNameImpl extends FrameWebNameImpl implements ConstantName {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.CONSTANT_NAME__FW_NAME:
+			case FrameWebPackage.CONSTANT_NAME__FW_NAME:
 				setFwName(FW_NAME_EDEFAULT);
 				return;
 		}
@@ -138,7 +138,7 @@ public class ConstantNameImpl extends FrameWebNameImpl implements ConstantName {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.CONSTANT_NAME__FW_NAME:
+			case FrameWebPackage.CONSTANT_NAME__FW_NAME:
 				return fwName != FW_NAME_EDEFAULT;
 		}
 		return super.eIsSet(featureID);

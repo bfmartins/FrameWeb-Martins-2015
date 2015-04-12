@@ -2,8 +2,8 @@
  */
 package frameweb.impl;
 
+import frameweb.FrameWebPackage;
 import frameweb.FrameworkTag;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -33,7 +33,7 @@ public class FrameworkTagImpl extends TagImpl implements FrameworkTag {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.FRAMEWORK_TAG;
+		return FrameWebPackage.Literals.FRAMEWORK_TAG;
 	}
 
 } //FrameworkTagImpl

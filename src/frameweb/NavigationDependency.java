@@ -10,7 +10,7 @@ import uml2.Dependency;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.framewebPackage#getNavigationDependency()
+ * @see frameweb.FrameWebPackage#getNavigationDependency()
  * @model abstract="true"
  * @generated
  */

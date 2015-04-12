@@ -3,8 +3,8 @@
 package frameweb.impl;
 
 import frameweb.FormComponent;
+import frameweb.FrameWebPackage;
 import frameweb.IOParameter;
-import frameweb.framewebPackage;
 
 import java.util.Collection;
 
@@ -58,7 +58,7 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return framewebPackage.Literals.IO_PARAMETER;
+		return FrameWebPackage.Literals.IO_PARAMETER;
 	}
 
 	/**
@@ -68,7 +68,7 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 	 */
 	public EList<FormComponent> getDisplay() {
 		if (display == null) {
-			display = new EObjectWithInverseResolvingEList<FormComponent>(FormComponent.class, this, framewebPackage.IO_PARAMETER__DISPLAY, framewebPackage.FORM_COMPONENT__INJECT);
+			display = new EObjectWithInverseResolvingEList<FormComponent>(FormComponent.class, this, FrameWebPackage.IO_PARAMETER__DISPLAY, FrameWebPackage.FORM_COMPONENT__INJECT);
 		}
 		return display;
 	}
@@ -82,7 +82,7 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.IO_PARAMETER__DISPLAY:
+			case FrameWebPackage.IO_PARAMETER__DISPLAY:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getDisplay()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -96,7 +96,7 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case framewebPackage.IO_PARAMETER__DISPLAY:
+			case FrameWebPackage.IO_PARAMETER__DISPLAY:
 				return ((InternalEList<?>)getDisplay()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -110,7 +110,7 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case framewebPackage.IO_PARAMETER__DISPLAY:
+			case FrameWebPackage.IO_PARAMETER__DISPLAY:
 				return getDisplay();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -125,7 +125,7 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case framewebPackage.IO_PARAMETER__DISPLAY:
+			case FrameWebPackage.IO_PARAMETER__DISPLAY:
 				getDisplay().clear();
 				getDisplay().addAll((Collection<? extends FormComponent>)newValue);
 				return;
@@ -141,7 +141,7 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case framewebPackage.IO_PARAMETER__DISPLAY:
+			case FrameWebPackage.IO_PARAMETER__DISPLAY:
 				getDisplay().clear();
 				return;
 		}
@@ -156,7 +156,7 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case framewebPackage.IO_PARAMETER__DISPLAY:
+			case FrameWebPackage.IO_PARAMETER__DISPLAY:
 				return display != null && !display.isEmpty();
 		}
 		return super.eIsSet(featureID);
