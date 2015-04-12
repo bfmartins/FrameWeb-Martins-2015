@@ -41,8 +41,10 @@ import frameweb.Fetch;
 import frameweb.Form;
 import frameweb.FormComponent;
 import frameweb.FrameWeb;
+import frameweb.FrameWebFactory;
 import frameweb.FrameWebModel;
 import frameweb.FrameWebName;
+import frameweb.FrameWebPackage;
 import frameweb.FrameWorkName;
 import frameweb.Framework;
 import frameweb.FrameworkCategoryList;
@@ -89,8 +91,6 @@ import frameweb.TransientClass;
 import frameweb.UserViewAttribute;
 import frameweb.VersionAttribute;
 import frameweb.ViewPackage;
-import frameweb.FramewebFactory;
-import frameweb.framewebPackage;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -100,13 +100,13 @@ import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
-import primitiveTypes.impl.PrimitiveTypesPackageImpl;
-
 import primitiveTypes.PrimitiveTypesPackage;
 
-import uml2.impl.Uml2PackageImpl;
+import primitiveTypes.impl.PrimitiveTypesPackageImpl;
 
 import uml2.Uml2Package;
+
+import uml2.impl.Uml2PackageImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -114,7 +114,7 @@ import uml2.Uml2Package;
  * <!-- end-user-doc -->
  * @generated
  */
-public class FramewebPackageImpl extends EPackageImpl implements framewebPackage {
+public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -735,12 +735,12 @@ public class FramewebPackageImpl extends EPackageImpl implements framewebPackage
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see frameweb.framewebPackage#eNS_URI
+	 * @see frameweb.FrameWebPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
-	private FramewebPackageImpl() {
-		super(eNS_URI, FramewebFactory.eINSTANCE);
+	private FrameWebPackageImpl() {
+		super(eNS_URI, FrameWebFactory.eINSTANCE);
 	}
 
 	/**
@@ -753,7 +753,7 @@ public class FramewebPackageImpl extends EPackageImpl implements framewebPackage
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
 	 * 
-	 * <p>This method is used to initialize {@link framewebPackage#eINSTANCE} when that field is accessed.
+	 * <p>This method is used to initialize {@link FrameWebPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -762,35 +762,35 @@ public class FramewebPackageImpl extends EPackageImpl implements framewebPackage
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static framewebPackage init() {
-		if (isInited) return (framewebPackage)EPackage.Registry.INSTANCE.getEPackage(framewebPackage.eNS_URI);
+	public static FrameWebPackage init() {
+		if (isInited) return (FrameWebPackage)EPackage.Registry.INSTANCE.getEPackage(FrameWebPackage.eNS_URI);
 
 		// Obtain or create and register package
-		FramewebPackageImpl theframewebPackage = (FramewebPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof FramewebPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new FramewebPackageImpl());
+		FrameWebPackageImpl theFrameWebPackage = (FrameWebPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof FrameWebPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new FrameWebPackageImpl());
 
 		isInited = true;
 
 		// Obtain or create and register interdependencies
-		Uml2PackageImpl theuml2Package = (Uml2PackageImpl)(EPackage.Registry.INSTANCE.getEPackage(Uml2Package.eNS_URI) instanceof Uml2PackageImpl ? EPackage.Registry.INSTANCE.getEPackage(Uml2Package.eNS_URI) : Uml2Package.eINSTANCE);
-		PrimitiveTypesPackageImpl theprimitiveTypesPackage = (PrimitiveTypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(PrimitiveTypesPackage.eNS_URI) instanceof PrimitiveTypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(PrimitiveTypesPackage.eNS_URI) : PrimitiveTypesPackage.eINSTANCE);
+		Uml2PackageImpl theUml2Package = (Uml2PackageImpl)(EPackage.Registry.INSTANCE.getEPackage(Uml2Package.eNS_URI) instanceof Uml2PackageImpl ? EPackage.Registry.INSTANCE.getEPackage(Uml2Package.eNS_URI) : Uml2Package.eINSTANCE);
+		PrimitiveTypesPackageImpl thePrimitiveTypesPackage = (PrimitiveTypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(PrimitiveTypesPackage.eNS_URI) instanceof PrimitiveTypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(PrimitiveTypesPackage.eNS_URI) : PrimitiveTypesPackage.eINSTANCE);
 
 		// Create package meta-data objects
-		theframewebPackage.createPackageContents();
-		theuml2Package.createPackageContents();
-		theprimitiveTypesPackage.createPackageContents();
+		theFrameWebPackage.createPackageContents();
+		theUml2Package.createPackageContents();
+		thePrimitiveTypesPackage.createPackageContents();
 
 		// Initialize created meta-data
-		theframewebPackage.initializePackageContents();
-		theuml2Package.initializePackageContents();
-		theprimitiveTypesPackage.initializePackageContents();
+		theFrameWebPackage.initializePackageContents();
+		theUml2Package.initializePackageContents();
+		thePrimitiveTypesPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
-		theframewebPackage.freeze();
+		theFrameWebPackage.freeze();
 
   
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(framewebPackage.eNS_URI, theframewebPackage);
-		return theframewebPackage;
+		EPackage.Registry.INSTANCE.put(FrameWebPackage.eNS_URI, theFrameWebPackage);
+		return theFrameWebPackage;
 	}
 
 	/**
@@ -2625,8 +2625,8 @@ public class FramewebPackageImpl extends EPackageImpl implements framewebPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FramewebFactory getframewebFactory() {
-		return (FramewebFactory)getEFactoryInstance();
+	public FrameWebFactory getFrameWebFactory() {
+		return (FrameWebFactory)getEFactoryInstance();
 	}
 
 	/**
@@ -2955,7 +2955,7 @@ public class FramewebPackageImpl extends EPackageImpl implements framewebPackage
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		Uml2Package theuml2Package = (Uml2Package)EPackage.Registry.INSTANCE.getEPackage(Uml2Package.eNS_URI);
+		Uml2Package theUml2Package = (Uml2Package)EPackage.Registry.INSTANCE.getEPackage(Uml2Package.eNS_URI);
 
 		// Create type parameters
 
@@ -2965,14 +2965,14 @@ public class FramewebPackageImpl extends EPackageImpl implements framewebPackage
 		mappedClassEClass.getESuperTypes().add(this.getDomainClass());
 		persistentClassEClass.getESuperTypes().add(this.getDomainClass());
 		transientClassEClass.getESuperTypes().add(this.getDomainClass());
-		frameWebModelEClass.getESuperTypes().add(theuml2Package.getModel());
-		frameworkEClass.getESuperTypes().add(theuml2Package.getModel());
+		frameWebModelEClass.getESuperTypes().add(theUml2Package.getModel());
+		frameworkEClass.getESuperTypes().add(theUml2Package.getModel());
 		domainModelEClass.getESuperTypes().add(this.getFrameWebModel());
 		navigationModelEClass.getESuperTypes().add(this.getFrameWebModel());
 		applicationModelEClass.getESuperTypes().add(this.getFrameWebModel());
 		persistenceModelEClass.getESuperTypes().add(this.getFrameWebModel());
-		domainAssociationEClass.getESuperTypes().add(theuml2Package.getAssociation());
-		domainAttributeEClass.getESuperTypes().add(theuml2Package.getProperty());
+		domainAssociationEClass.getESuperTypes().add(theUml2Package.getAssociation());
+		domainAttributeEClass.getESuperTypes().add(theUml2Package.getProperty());
 		versionAttributeEClass.getESuperTypes().add(this.getDomainAttribute());
 		idAttributeEClass.getESuperTypes().add(this.getDomainAttribute());
 		lobAttributeEClass.getESuperTypes().add(this.getDomainAttribute());
@@ -2984,19 +2984,19 @@ public class FramewebPackageImpl extends EPackageImpl implements framewebPackage
 		formEClass.getESuperTypes().add(this.getNavigationClass());
 		formEClass.getESuperTypes().add(this.getTag());
 		binaryEClass.getESuperTypes().add(this.getNavigationClass());
-		daoInterfaceEClass.getESuperTypes().add(theuml2Package.getInterface());
-		daoClassEClass.getESuperTypes().add(theuml2Package.getClass_());
-		daoGeneralizationEClass.getESuperTypes().add(theuml2Package.getGeneralization());
+		daoInterfaceEClass.getESuperTypes().add(theUml2Package.getInterface());
+		daoClassEClass.getESuperTypes().add(theUml2Package.getClass_());
+		daoGeneralizationEClass.getESuperTypes().add(theUml2Package.getGeneralization());
 		userViewAttributeEClass.getESuperTypes().add(this.getNavigationAttribute());
 		ioParameterEClass.getESuperTypes().add(this.getNavigationAttribute());
 		resultDependencyEClass.getESuperTypes().add(this.getNavigationDependency());
-		navigationCompositionEClass.getESuperTypes().add(theuml2Package.getAssociation());
-		frontControllerMethodEClass.getESuperTypes().add(theuml2Package.getOperation());
-		serviceClassEClass.getESuperTypes().add(theuml2Package.getClass_());
-		serviceInterfaceEClass.getESuperTypes().add(theuml2Package.getInterface());
-		serviceGeneralizationEClass.getESuperTypes().add(theuml2Package.getGeneralization());
+		navigationCompositionEClass.getESuperTypes().add(theUml2Package.getAssociation());
+		frontControllerMethodEClass.getESuperTypes().add(theUml2Package.getOperation());
+		serviceClassEClass.getESuperTypes().add(theUml2Package.getClass_());
+		serviceInterfaceEClass.getESuperTypes().add(theUml2Package.getInterface());
+		serviceGeneralizationEClass.getESuperTypes().add(theUml2Package.getGeneralization());
 		serviceNavigationAssociationEClass.getESuperTypes().add(this.getServiceAssociation());
-		domainClassEClass.getESuperTypes().add(theuml2Package.getClass_());
+		domainClassEClass.getESuperTypes().add(theUml2Package.getClass_());
 		binaryAttributeEClass.getESuperTypes().add(this.getNavigationAttribute());
 		constantNameEClass.getESuperTypes().add(this.getFrameWebName());
 		domainTableNameEClass.getESuperTypes().add(this.getFrameWebName());
@@ -3008,23 +3008,23 @@ public class FramewebPackageImpl extends EPackageImpl implements framewebPackage
 		pageDependenceEClass.getESuperTypes().add(this.getNavigationDependency());
 		chainingDependenceEClass.getESuperTypes().add(this.getNavigationDependency());
 		daoServiceAssociationEClass.getESuperTypes().add(this.getServiceAssociation());
-		navigationAttributeEClass.getESuperTypes().add(theuml2Package.getProperty());
-		navigationClassEClass.getESuperTypes().add(theuml2Package.getClass_());
-		domainOperationEClass.getESuperTypes().add(theuml2Package.getOperation());
-		daoAttributeEClass.getESuperTypes().add(theuml2Package.getProperty());
-		serviceOperationEClass.getESuperTypes().add(theuml2Package.getOperation());
-		serviceAttributeEClass.getESuperTypes().add(theuml2Package.getProperty());
-		serviceAssociationEClass.getESuperTypes().add(theuml2Package.getAssociation());
-		navigationDependencyEClass.getESuperTypes().add(theuml2Package.getDependency());
-		daoOperationEClass.getESuperTypes().add(theuml2Package.getOperation());
-		domainPackageEClass.getESuperTypes().add(theuml2Package.getPackage());
+		navigationAttributeEClass.getESuperTypes().add(theUml2Package.getProperty());
+		navigationClassEClass.getESuperTypes().add(theUml2Package.getClass_());
+		domainOperationEClass.getESuperTypes().add(theUml2Package.getOperation());
+		daoAttributeEClass.getESuperTypes().add(theUml2Package.getProperty());
+		serviceOperationEClass.getESuperTypes().add(theUml2Package.getOperation());
+		serviceAttributeEClass.getESuperTypes().add(theUml2Package.getProperty());
+		serviceAssociationEClass.getESuperTypes().add(theUml2Package.getAssociation());
+		navigationDependencyEClass.getESuperTypes().add(theUml2Package.getDependency());
+		daoOperationEClass.getESuperTypes().add(theUml2Package.getOperation());
+		domainPackageEClass.getESuperTypes().add(theUml2Package.getPackage());
 		viewPackageEClass.getESuperTypes().add(this.getNavigationPackage());
 		controllerPackageEClass.getESuperTypes().add(this.getNavigationPackage());
-		persistencePackageEClass.getESuperTypes().add(theuml2Package.getPackage());
-		applicationPackageEClass.getESuperTypes().add(theuml2Package.getPackage());
+		persistencePackageEClass.getESuperTypes().add(theUml2Package.getPackage());
+		applicationPackageEClass.getESuperTypes().add(theUml2Package.getPackage());
 		componentEClass.getESuperTypes().add(this.getNavigationClass());
-		navigationPackageEClass.getESuperTypes().add(theuml2Package.getPackage());
-		domainGeneralizationEClass.getESuperTypes().add(theuml2Package.getGeneralization());
+		navigationPackageEClass.getESuperTypes().add(theUml2Package.getPackage());
+		domainGeneralizationEClass.getESuperTypes().add(theUml2Package.getGeneralization());
 		jQueryEClass.getESuperTypes().add(this.getNavigationClass());
 		formComponentEClass.getESuperTypes().add(this.getNavigationAttribute());
 		formComponentEClass.getESuperTypes().add(this.getFrameworkTag());
@@ -3370,4 +3370,4 @@ public class FramewebPackageImpl extends EPackageImpl implements framewebPackage
 		createResource(eNS_URI);
 	}
 
-} //framewebPackageImpl
+} //FrameWebPackageImpl

@@ -19,24 +19,24 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory {
+public class FrameWebFactoryImpl extends EFactoryImpl implements FrameWebFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static FramewebFactory init() {
+	public static FrameWebFactory init() {
 		try {
-			FramewebFactory theframewebFactory = (FramewebFactory)EPackage.Registry.INSTANCE.getEFactory(framewebPackage.eNS_URI);
-			if (theframewebFactory != null) {
-				return theframewebFactory;
+			FrameWebFactory theFrameWebFactory = (FrameWebFactory)EPackage.Registry.INSTANCE.getEFactory(FrameWebPackage.eNS_URI);
+			if (theFrameWebFactory != null) {
+				return theFrameWebFactory;
 			}
 		}
 		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
-		return new framewebFactoryImpl();
+		return new FrameWebFactoryImpl();
 	}
 
 	/**
@@ -45,7 +45,7 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public framewebFactoryImpl() {
+	public FrameWebFactoryImpl() {
 		super();
 	}
 
@@ -57,74 +57,74 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case framewebPackage.MAPPED_CLASS: return createMappedClass();
-			case framewebPackage.PERSISTENT_CLASS: return createPersistentClass();
-			case framewebPackage.TRANSIENT_CLASS: return createTransientClass();
-			case framewebPackage.FRAME_WEB: return createFrameWeb();
-			case framewebPackage.FRAMEWORK: return createFramework();
-			case framewebPackage.DOMAIN_MODEL: return createDomainModel();
-			case framewebPackage.NAVIGATION_MODEL: return createNavigationModel();
-			case framewebPackage.APPLICATION_MODEL: return createApplicationModel();
-			case framewebPackage.PERSISTENCE_MODEL: return createPersistenceModel();
-			case framewebPackage.DOMAIN_ASSOCIATION: return createDomainAssociation();
-			case framewebPackage.DOMAIN_ATTRIBUTE: return createDomainAttribute();
-			case framewebPackage.VERSION_ATTRIBUTE: return createVersionAttribute();
-			case framewebPackage.ID_ATTRIBUTE: return createIdAttribute();
-			case framewebPackage.LOB_ATTRIBUTE: return createLOBAttribute();
-			case framewebPackage.EMBEDDED_ATTRIBUTE: return createEmbeddedAttribute();
-			case framewebPackage.DECIMAL_ATTRIBUTE: return createDecimalAttribute();
-			case framewebPackage.DATE_TIME_ATTRIBUTE: return createDateTimeAttribute();
-			case framewebPackage.PAGE: return createPage();
-			case framewebPackage.TEMPLATE: return createTemplate();
-			case framewebPackage.FORM: return createForm();
-			case framewebPackage.BINARY: return createBinary();
-			case framewebPackage.DAO_INTERFACE: return createDAOInterface();
-			case framewebPackage.DAO_CLASS: return createDAOClass();
-			case framewebPackage.DAO_GENERALIZATION: return createDAOGeneralization();
-			case framewebPackage.FRONT_CONTROLLER_CLASS: return createFrontControllerClass();
-			case framewebPackage.USER_VIEW_ATTRIBUTE: return createUserViewAttribute();
-			case framewebPackage.IO_PARAMETER: return createIOParameter();
-			case framewebPackage.DAO_BASE_OPERATION: return createDAOBaseOperation();
-			case framewebPackage.RESULT_DEPENDENCY: return createResultDependency();
-			case framewebPackage.NAVIGATION_COMPOSITION: return createNavigationComposition();
-			case framewebPackage.FRONT_CONTROLLER_METHOD: return createFrontControllerMethod();
-			case framewebPackage.SERVICE_CLASS: return createServiceClass();
-			case framewebPackage.SERVICE_INTERFACE: return createServiceInterface();
-			case framewebPackage.SERVICE_GENERALIZATION: return createServiceGeneralization();
-			case framewebPackage.SERVICE_NAVIGATION_ASSOCIATION: return createServiceNavigationAssociation();
-			case framewebPackage.BINARY_ATTRIBUTE: return createBinaryAttribute();
-			case framewebPackage.CONSTANT_NAME: return createConstantName();
-			case framewebPackage.DOMAIN_TABLE_NAME: return createDomainTableName();
-			case framewebPackage.FRAME_WORK_NAME: return createFrameWorkName();
-			case framewebPackage.DOMAIN_COLUMN_NAME: return createDomainColumnName();
-			case framewebPackage.DAO_INTERFACE_NAME: return createDAOInterfaceName();
-			case framewebPackage.DAO_CLASS_NAME: return createDAOClassName();
-			case framewebPackage.RESULT: return createResult();
-			case framewebPackage.FRONT_CONTROLLER_DEPENDENCE: return createFrontControllerDependence();
-			case framewebPackage.PAGE_DEPENDENCE: return createPageDependence();
-			case framewebPackage.CHAINING_DEPENDENCE: return createChainingDependence();
-			case framewebPackage.DAO_SERVICE_ASSOCIATION: return createDAOServiceAssociation();
-			case framewebPackage.DOMAIN_OPERATION: return createDomainOperation();
-			case framewebPackage.DAO_ATTRIBUTE: return createDAOAttribute();
-			case framewebPackage.SERVICE_OPERATION: return createServiceOperation();
-			case framewebPackage.SERVICE_ATTRIBUTE: return createServiceAttribute();
-			case framewebPackage.SERVICE_ASSOCIATION: return createServiceAssociation();
-			case framewebPackage.DAO_OPERATION: return createDAOOperation();
-			case framewebPackage.DOMAIN_PACKAGE: return createDomainPackage();
-			case framewebPackage.VIEW_PACKAGE: return createViewPackage();
-			case framewebPackage.CONTROLLER_PACKAGE: return createControllerPackage();
-			case framewebPackage.PERSISTENCE_PACKAGE: return createPersistencePackage();
-			case framewebPackage.APPLICATION_PACKAGE: return createApplicationPackage();
-			case framewebPackage.COMPONENT: return createComponent();
-			case framewebPackage.RESULT_TYPE: return createResultType();
-			case framewebPackage.DOMAIN_GENERALIZATION: return createDomainGeneralization();
-			case framewebPackage.JQUERY: return createJQuery();
-			case framewebPackage.FORM_COMPONENT: return createFormComponent();
-			case framewebPackage.TAG_LIB: return createTagLib();
-			case framewebPackage.FRAMEWORK_TAG: return createFrameworkTag();
-			case framewebPackage.RULE: return createRule();
-			case framewebPackage.TALVEZ_METHOD: return createTalvez_Method();
-			case framewebPackage.ANOTATION: return createAnotation();
+			case FrameWebPackage.MAPPED_CLASS: return createMappedClass();
+			case FrameWebPackage.PERSISTENT_CLASS: return createPersistentClass();
+			case FrameWebPackage.TRANSIENT_CLASS: return createTransientClass();
+			case FrameWebPackage.FRAME_WEB: return createFrameWeb();
+			case FrameWebPackage.FRAMEWORK: return createFramework();
+			case FrameWebPackage.DOMAIN_MODEL: return createDomainModel();
+			case FrameWebPackage.NAVIGATION_MODEL: return createNavigationModel();
+			case FrameWebPackage.APPLICATION_MODEL: return createApplicationModel();
+			case FrameWebPackage.PERSISTENCE_MODEL: return createPersistenceModel();
+			case FrameWebPackage.DOMAIN_ASSOCIATION: return createDomainAssociation();
+			case FrameWebPackage.DOMAIN_ATTRIBUTE: return createDomainAttribute();
+			case FrameWebPackage.VERSION_ATTRIBUTE: return createVersionAttribute();
+			case FrameWebPackage.ID_ATTRIBUTE: return createIdAttribute();
+			case FrameWebPackage.LOB_ATTRIBUTE: return createLOBAttribute();
+			case FrameWebPackage.EMBEDDED_ATTRIBUTE: return createEmbeddedAttribute();
+			case FrameWebPackage.DECIMAL_ATTRIBUTE: return createDecimalAttribute();
+			case FrameWebPackage.DATE_TIME_ATTRIBUTE: return createDateTimeAttribute();
+			case FrameWebPackage.PAGE: return createPage();
+			case FrameWebPackage.TEMPLATE: return createTemplate();
+			case FrameWebPackage.FORM: return createForm();
+			case FrameWebPackage.BINARY: return createBinary();
+			case FrameWebPackage.DAO_INTERFACE: return createDAOInterface();
+			case FrameWebPackage.DAO_CLASS: return createDAOClass();
+			case FrameWebPackage.DAO_GENERALIZATION: return createDAOGeneralization();
+			case FrameWebPackage.FRONT_CONTROLLER_CLASS: return createFrontControllerClass();
+			case FrameWebPackage.USER_VIEW_ATTRIBUTE: return createUserViewAttribute();
+			case FrameWebPackage.IO_PARAMETER: return createIOParameter();
+			case FrameWebPackage.DAO_BASE_OPERATION: return createDAOBaseOperation();
+			case FrameWebPackage.RESULT_DEPENDENCY: return createResultDependency();
+			case FrameWebPackage.NAVIGATION_COMPOSITION: return createNavigationComposition();
+			case FrameWebPackage.FRONT_CONTROLLER_METHOD: return createFrontControllerMethod();
+			case FrameWebPackage.SERVICE_CLASS: return createServiceClass();
+			case FrameWebPackage.SERVICE_INTERFACE: return createServiceInterface();
+			case FrameWebPackage.SERVICE_GENERALIZATION: return createServiceGeneralization();
+			case FrameWebPackage.SERVICE_NAVIGATION_ASSOCIATION: return createServiceNavigationAssociation();
+			case FrameWebPackage.BINARY_ATTRIBUTE: return createBinaryAttribute();
+			case FrameWebPackage.CONSTANT_NAME: return createConstantName();
+			case FrameWebPackage.DOMAIN_TABLE_NAME: return createDomainTableName();
+			case FrameWebPackage.FRAME_WORK_NAME: return createFrameWorkName();
+			case FrameWebPackage.DOMAIN_COLUMN_NAME: return createDomainColumnName();
+			case FrameWebPackage.DAO_INTERFACE_NAME: return createDAOInterfaceName();
+			case FrameWebPackage.DAO_CLASS_NAME: return createDAOClassName();
+			case FrameWebPackage.RESULT: return createResult();
+			case FrameWebPackage.FRONT_CONTROLLER_DEPENDENCE: return createFrontControllerDependence();
+			case FrameWebPackage.PAGE_DEPENDENCE: return createPageDependence();
+			case FrameWebPackage.CHAINING_DEPENDENCE: return createChainingDependence();
+			case FrameWebPackage.DAO_SERVICE_ASSOCIATION: return createDAOServiceAssociation();
+			case FrameWebPackage.DOMAIN_OPERATION: return createDomainOperation();
+			case FrameWebPackage.DAO_ATTRIBUTE: return createDAOAttribute();
+			case FrameWebPackage.SERVICE_OPERATION: return createServiceOperation();
+			case FrameWebPackage.SERVICE_ATTRIBUTE: return createServiceAttribute();
+			case FrameWebPackage.SERVICE_ASSOCIATION: return createServiceAssociation();
+			case FrameWebPackage.DAO_OPERATION: return createDAOOperation();
+			case FrameWebPackage.DOMAIN_PACKAGE: return createDomainPackage();
+			case FrameWebPackage.VIEW_PACKAGE: return createViewPackage();
+			case FrameWebPackage.CONTROLLER_PACKAGE: return createControllerPackage();
+			case FrameWebPackage.PERSISTENCE_PACKAGE: return createPersistencePackage();
+			case FrameWebPackage.APPLICATION_PACKAGE: return createApplicationPackage();
+			case FrameWebPackage.COMPONENT: return createComponent();
+			case FrameWebPackage.RESULT_TYPE: return createResultType();
+			case FrameWebPackage.DOMAIN_GENERALIZATION: return createDomainGeneralization();
+			case FrameWebPackage.JQUERY: return createJQuery();
+			case FrameWebPackage.FORM_COMPONENT: return createFormComponent();
+			case FrameWebPackage.TAG_LIB: return createTagLib();
+			case FrameWebPackage.FRAMEWORK_TAG: return createFrameworkTag();
+			case FrameWebPackage.RULE: return createRule();
+			case FrameWebPackage.TALVEZ_METHOD: return createTalvez_Method();
+			case FrameWebPackage.ANOTATION: return createAnotation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -138,25 +138,25 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	@Override
 	public Object createFromString(EDataType eDataType, String initialValue) {
 		switch (eDataType.getClassifierID()) {
-			case framewebPackage.DATE_TIME_PRECISION:
+			case FrameWebPackage.DATE_TIME_PRECISION:
 				return createDateTimePrecisionFromString(eDataType, initialValue);
-			case framewebPackage.GENERATION:
+			case FrameWebPackage.GENERATION:
 				return createGenerationFromString(eDataType, initialValue);
-			case framewebPackage.COLLECTION:
+			case FrameWebPackage.COLLECTION:
 				return createCollectionFromString(eDataType, initialValue);
-			case framewebPackage.ORDER:
+			case FrameWebPackage.ORDER:
 				return createOrderFromString(eDataType, initialValue);
-			case framewebPackage.CASCADE:
+			case FrameWebPackage.CASCADE:
 				return createCascadeFromString(eDataType, initialValue);
-			case framewebPackage.FETCH:
+			case FrameWebPackage.FETCH:
 				return createFetchFromString(eDataType, initialValue);
-			case framewebPackage.DAO_BASE_OPERATION_LIST:
+			case FrameWebPackage.DAO_BASE_OPERATION_LIST:
 				return createDAOBaseOperationListFromString(eDataType, initialValue);
-			case framewebPackage.FRAMEWORK_CATEGORY_LIST:
+			case FrameWebPackage.FRAMEWORK_CATEGORY_LIST:
 				return createFrameworkCategoryListFromString(eDataType, initialValue);
-			case framewebPackage.CONSTANT_NAME_LIST:
+			case FrameWebPackage.CONSTANT_NAME_LIST:
 				return createConstantNameListFromString(eDataType, initialValue);
-			case framewebPackage.INHERITANCE_MAPPING:
+			case FrameWebPackage.INHERITANCE_MAPPING:
 				return createInheritanceMappingFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
@@ -171,25 +171,25 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	@Override
 	public String convertToString(EDataType eDataType, Object instanceValue) {
 		switch (eDataType.getClassifierID()) {
-			case framewebPackage.DATE_TIME_PRECISION:
+			case FrameWebPackage.DATE_TIME_PRECISION:
 				return convertDateTimePrecisionToString(eDataType, instanceValue);
-			case framewebPackage.GENERATION:
+			case FrameWebPackage.GENERATION:
 				return convertGenerationToString(eDataType, instanceValue);
-			case framewebPackage.COLLECTION:
+			case FrameWebPackage.COLLECTION:
 				return convertCollectionToString(eDataType, instanceValue);
-			case framewebPackage.ORDER:
+			case FrameWebPackage.ORDER:
 				return convertOrderToString(eDataType, instanceValue);
-			case framewebPackage.CASCADE:
+			case FrameWebPackage.CASCADE:
 				return convertCascadeToString(eDataType, instanceValue);
-			case framewebPackage.FETCH:
+			case FrameWebPackage.FETCH:
 				return convertFetchToString(eDataType, instanceValue);
-			case framewebPackage.DAO_BASE_OPERATION_LIST:
+			case FrameWebPackage.DAO_BASE_OPERATION_LIST:
 				return convertDAOBaseOperationListToString(eDataType, instanceValue);
-			case framewebPackage.FRAMEWORK_CATEGORY_LIST:
+			case FrameWebPackage.FRAMEWORK_CATEGORY_LIST:
 				return convertFrameworkCategoryListToString(eDataType, instanceValue);
-			case framewebPackage.CONSTANT_NAME_LIST:
+			case FrameWebPackage.CONSTANT_NAME_LIST:
 				return convertConstantNameListToString(eDataType, instanceValue);
-			case framewebPackage.INHERITANCE_MAPPING:
+			case FrameWebPackage.INHERITANCE_MAPPING:
 				return convertInheritanceMappingToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
@@ -883,7 +883,7 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 */
 	public DateTimePrecision createDateTimePrecision(String literal) {
 		DateTimePrecision result = DateTimePrecision.get(literal);
-		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + framewebPackage.Literals.DATE_TIME_PRECISION.getName() + "'");
+		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + FrameWebPackage.Literals.DATE_TIME_PRECISION.getName() + "'");
 		return result;
 	}
 
@@ -921,7 +921,7 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 */
 	public Generation createGeneration(String literal) {
 		Generation result = Generation.get(literal);
-		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + framewebPackage.Literals.GENERATION.getName() + "'");
+		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + FrameWebPackage.Literals.GENERATION.getName() + "'");
 		return result;
 	}
 
@@ -959,7 +959,7 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 */
 	public Collection createCollection(String literal) {
 		Collection result = Collection.get(literal);
-		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + framewebPackage.Literals.COLLECTION.getName() + "'");
+		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + FrameWebPackage.Literals.COLLECTION.getName() + "'");
 		return result;
 	}
 
@@ -997,7 +997,7 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 */
 	public Order createOrder(String literal) {
 		Order result = Order.get(literal);
-		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + framewebPackage.Literals.ORDER.getName() + "'");
+		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + FrameWebPackage.Literals.ORDER.getName() + "'");
 		return result;
 	}
 
@@ -1035,7 +1035,7 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 */
 	public Cascade createCascade(String literal) {
 		Cascade result = Cascade.get(literal);
-		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + framewebPackage.Literals.CASCADE.getName() + "'");
+		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + FrameWebPackage.Literals.CASCADE.getName() + "'");
 		return result;
 	}
 
@@ -1073,7 +1073,7 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 */
 	public Fetch createFetch(String literal) {
 		Fetch result = Fetch.get(literal);
-		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + framewebPackage.Literals.FETCH.getName() + "'");
+		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + FrameWebPackage.Literals.FETCH.getName() + "'");
 		return result;
 	}
 
@@ -1111,7 +1111,7 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 */
 	public DAOBaseOperationList createDAOBaseOperationList(String literal) {
 		DAOBaseOperationList result = DAOBaseOperationList.get(literal);
-		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + framewebPackage.Literals.DAO_BASE_OPERATION_LIST.getName() + "'");
+		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + FrameWebPackage.Literals.DAO_BASE_OPERATION_LIST.getName() + "'");
 		return result;
 	}
 
@@ -1149,7 +1149,7 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 */
 	public FrameworkCategoryList createFrameworkCategoryList(String literal) {
 		FrameworkCategoryList result = FrameworkCategoryList.get(literal);
-		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + framewebPackage.Literals.FRAMEWORK_CATEGORY_LIST.getName() + "'");
+		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + FrameWebPackage.Literals.FRAMEWORK_CATEGORY_LIST.getName() + "'");
 		return result;
 	}
 
@@ -1187,7 +1187,7 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 */
 	public ConstantNameList createConstantNameList(String literal) {
 		ConstantNameList result = ConstantNameList.get(literal);
-		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + framewebPackage.Literals.CONSTANT_NAME_LIST.getName() + "'");
+		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + FrameWebPackage.Literals.CONSTANT_NAME_LIST.getName() + "'");
 		return result;
 	}
 
@@ -1225,7 +1225,7 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 */
 	public InheritanceMapping createInheritanceMapping(String literal) {
 		InheritanceMapping result = InheritanceMapping.get(literal);
-		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + framewebPackage.Literals.INHERITANCE_MAPPING.getName() + "'");
+		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + FrameWebPackage.Literals.INHERITANCE_MAPPING.getName() + "'");
 		return result;
 	}
 
@@ -1261,8 +1261,8 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public framewebPackage getframewebPackage() {
-		return (framewebPackage)getEPackage();
+	public FrameWebPackage getFrameWebPackage() {
+		return (FrameWebPackage)getEPackage();
 	}
 
 	/**
@@ -1272,8 +1272,8 @@ public class framewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * @generated
 	 */
 	@Deprecated
-	public static framewebPackage getPackage() {
-		return framewebPackage.eINSTANCE;
+	public static FrameWebPackage getPackage() {
+		return FrameWebPackage.eINSTANCE;
 	}
 
-} //framewebFactoryImpl
+} //FrameWebFactoryImpl
