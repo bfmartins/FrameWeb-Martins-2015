@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: br.ufes.inf.nemo.PINF8000-DM.FrameWeb_Martins2015.edit;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: frameweb.provider.FrameWeb_Martins2015EditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: frameweb.provider,
+ uml2.provider
+Require-Bundle: org.eclipse.core.runtime,
+ br.ufes.inf.nemo.PINF8000-DM.FrameWeb_Martins2015;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport
+Bundle-ActivationPolicy: lazy
