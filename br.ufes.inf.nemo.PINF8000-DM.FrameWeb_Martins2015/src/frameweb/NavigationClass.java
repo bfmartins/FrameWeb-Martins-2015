@@ -9,7 +9,7 @@ package frameweb;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.FrameWebPackage#getNavigationClass()
+ * @see frameweb.FramewebPackage#getNavigationClass()
  * @model abstract="true"
  * @generated
  */

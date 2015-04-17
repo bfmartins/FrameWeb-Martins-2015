@@ -3,7 +3,7 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.NavigationComposition;
 
 import java.util.Collection;
@@ -69,7 +69,7 @@ public class NavigationCompositionItemProvider extends AssociationItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_NavigationComposition_SourceTemplate_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_NavigationComposition_SourceTemplate_feature", "_UI_NavigationComposition_type"),
-				 FrameWebPackage.Literals.NAVIGATION_COMPOSITION__SOURCE_TEMPLATE,
+				 FramewebPackage.Literals.NAVIGATION_COMPOSITION__SOURCE_TEMPLATE,
 				 true,
 				 false,
 				 true,
@@ -91,7 +91,7 @@ public class NavigationCompositionItemProvider extends AssociationItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_NavigationComposition_SourcePage_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_NavigationComposition_SourcePage_feature", "_UI_NavigationComposition_type"),
-				 FrameWebPackage.Literals.NAVIGATION_COMPOSITION__SOURCE_PAGE,
+				 FramewebPackage.Literals.NAVIGATION_COMPOSITION__SOURCE_PAGE,
 				 true,
 				 false,
 				 true,
@@ -113,7 +113,7 @@ public class NavigationCompositionItemProvider extends AssociationItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_NavigationComposition_TargetForm_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_NavigationComposition_TargetForm_feature", "_UI_NavigationComposition_type"),
-				 FrameWebPackage.Literals.NAVIGATION_COMPOSITION__TARGET_FORM,
+				 FramewebPackage.Literals.NAVIGATION_COMPOSITION__TARGET_FORM,
 				 true,
 				 false,
 				 true,
@@ -135,7 +135,7 @@ public class NavigationCompositionItemProvider extends AssociationItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_NavigationComposition_TargetComponent_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_NavigationComposition_TargetComponent_feature", "_UI_NavigationComposition_type"),
-				 FrameWebPackage.Literals.NAVIGATION_COMPOSITION__TARGET_COMPONENT,
+				 FramewebPackage.Literals.NAVIGATION_COMPOSITION__TARGET_COMPONENT,
 				 true,
 				 false,
 				 true,
@@ -157,7 +157,7 @@ public class NavigationCompositionItemProvider extends AssociationItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_NavigationComposition_TargetJQuery_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_NavigationComposition_TargetJQuery_feature", "_UI_NavigationComposition_type"),
-				 FrameWebPackage.Literals.NAVIGATION_COMPOSITION__TARGET_JQUERY,
+				 FramewebPackage.Literals.NAVIGATION_COMPOSITION__TARGET_JQUERY,
 				 true,
 				 false,
 				 true,

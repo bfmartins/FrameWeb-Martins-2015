@@ -3,8 +3,8 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 import frameweb.Template;
 
 import java.util.Collection;
@@ -64,7 +64,7 @@ public class TemplateItemProvider extends NavigationClassItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE);
+			childrenFeatures.add(FramewebPackage.Literals.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE);
 		}
 		return childrenFeatures;
 	}
@@ -120,7 +120,7 @@ public class TemplateItemProvider extends NavigationClassItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Template.class)) {
-			case FrameWebPackage.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE:
+			case FramewebPackage.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -140,8 +140,8 @@ public class TemplateItemProvider extends NavigationClassItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createUserViewAttribute()));
+				(FramewebPackage.Literals.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createUserViewAttribute()));
 	}
 
 	/**
@@ -159,7 +159,7 @@ public class TemplateItemProvider extends NavigationClassItemProvider {
 			childFeature == Uml2Package.Literals.CLASSIFIER__OWNED_USE_CASE ||
 			childFeature == Uml2Package.Literals.CLASS__NESTED_CLASSIFIER ||
 			childFeature == Uml2Package.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
-			childFeature == FrameWebPackage.Literals.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE ||
+			childFeature == FramewebPackage.Literals.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE ||
 			childFeature == Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR;
 
 		if (qualify) {

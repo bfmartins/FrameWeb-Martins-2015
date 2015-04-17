@@ -3,8 +3,8 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 import frameweb.NamingMethod;
 
 import java.util.Collection;
@@ -77,7 +77,7 @@ public class NamingMethodItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.NAMING_METHOD__CONTAINS);
+			childrenFeatures.add(FramewebPackage.Literals.NAMING_METHOD__CONTAINS);
 		}
 		return childrenFeatures;
 	}
@@ -130,7 +130,7 @@ public class NamingMethodItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(NamingMethod.class)) {
-			case FrameWebPackage.NAMING_METHOD__CONTAINS:
+			case FramewebPackage.NAMING_METHOD__CONTAINS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -150,33 +150,33 @@ public class NamingMethodItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.NAMING_METHOD__CONTAINS,
-				 FrameWebFactory.eINSTANCE.createConstantName()));
+				(FramewebPackage.Literals.NAMING_METHOD__CONTAINS,
+				 FramewebFactory.eINSTANCE.createConstantName()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.NAMING_METHOD__CONTAINS,
-				 FrameWebFactory.eINSTANCE.createDomainTableName()));
+				(FramewebPackage.Literals.NAMING_METHOD__CONTAINS,
+				 FramewebFactory.eINSTANCE.createDomainTableName()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.NAMING_METHOD__CONTAINS,
-				 FrameWebFactory.eINSTANCE.createFrameWorkName()));
+				(FramewebPackage.Literals.NAMING_METHOD__CONTAINS,
+				 FramewebFactory.eINSTANCE.createFrameWorkName()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.NAMING_METHOD__CONTAINS,
-				 FrameWebFactory.eINSTANCE.createDomainColumnName()));
+				(FramewebPackage.Literals.NAMING_METHOD__CONTAINS,
+				 FramewebFactory.eINSTANCE.createDomainColumnName()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.NAMING_METHOD__CONTAINS,
-				 FrameWebFactory.eINSTANCE.createDAOInterfaceName()));
+				(FramewebPackage.Literals.NAMING_METHOD__CONTAINS,
+				 FramewebFactory.eINSTANCE.createDAOInterfaceName()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.NAMING_METHOD__CONTAINS,
-				 FrameWebFactory.eINSTANCE.createDAOClassName()));
+				(FramewebPackage.Literals.NAMING_METHOD__CONTAINS,
+				 FramewebFactory.eINSTANCE.createDAOClassName()));
 	}
 
 	/**

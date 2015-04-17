@@ -8,7 +8,7 @@ This can be disabled with -vmargs -Dorg.eclipse.emf.examples.generator.validator
 Contains packages:
   frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
   uml2 <http://www.omg.org/spec/UML/20110701>
-  primitiveTypes <http://schema.omg.org/spec/QVT/1.1/primitivetypes.xml>
+  primitiveTypes <http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi>
 
 Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
 
@@ -19,8 +19,8 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
 
   Class TransientClass -> DomainClass
 
-  Class FrameWeb
-    Reference Compose : FrameWebModel<<1..1>>
+  Class Frameweb
+    Reference Compose : FrameWebModel<<1..*>>
     Reference Uses : Framework<<1..*>>
 
   Class FrameWebModel -> Model
@@ -34,6 +34,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
 
   Class DomainModel -> FrameWebModel
     Reference DomainUMLPackage : DomainPackage<<1..*>>
+    Reference DomainUMLAssociation : DomainAssociation<<0..*>>
 
   Class NavigationModel -> FrameWebModel
     Reference NavigationUMLDependence : NavigationDependency<<0..*>>
@@ -2043,7 +2044,7 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
     Literal iterative = 1
     Literal stream = 2
 
-Package primitiveTypes <http://schema.omg.org/spec/QVT/1.1/primitivetypes.xml>
+Package primitiveTypes <http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi>
 
   DataType Boolean <java.lang.Boolean>
 

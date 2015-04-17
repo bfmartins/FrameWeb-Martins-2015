@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getTag()
+ * @see frameweb.FramewebPackage#getTag()
  * @model abstract="true"
  * @generated
  */
@@ -33,7 +33,7 @@ public interface Tag extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sub Tag</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getTag_SubTag()
+	 * @see frameweb.FramewebPackage#getTag_SubTag()
 	 * @model containment="true"
 	 * @generated
 	 */

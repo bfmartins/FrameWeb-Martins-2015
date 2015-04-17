@@ -3,7 +3,7 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.IOParameter;
 
 import java.util.Collection;
@@ -63,7 +63,7 @@ public class IOParameterItemProvider extends NavigationAttributeItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_IOParameter_display_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_IOParameter_display_feature", "_UI_IOParameter_type"),
-				 FrameWebPackage.Literals.IO_PARAMETER__DISPLAY,
+				 FramewebPackage.Literals.IO_PARAMETER__DISPLAY,
 				 true,
 				 false,
 				 true,

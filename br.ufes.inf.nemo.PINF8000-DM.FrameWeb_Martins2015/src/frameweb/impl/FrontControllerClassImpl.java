@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.FrontControllerClass;
 import frameweb.FrontControllerMethod;
 import frameweb.IOParameter;
@@ -72,7 +72,7 @@ public class FrontControllerClassImpl extends MinimalEObjectImpl.Container imple
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.FRONT_CONTROLLER_CLASS;
+		return FramewebPackage.Literals.FRONT_CONTROLLER_CLASS;
 	}
 
 	/**
@@ -82,7 +82,7 @@ public class FrontControllerClassImpl extends MinimalEObjectImpl.Container imple
 	 */
 	public EList<IOParameter> getFrontControllerAttribute() {
 		if (frontControllerAttribute == null) {
-			frontControllerAttribute = new EObjectContainmentEList<IOParameter>(IOParameter.class, this, FrameWebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE);
+			frontControllerAttribute = new EObjectContainmentEList<IOParameter>(IOParameter.class, this, FramewebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE);
 		}
 		return frontControllerAttribute;
 	}
@@ -94,7 +94,7 @@ public class FrontControllerClassImpl extends MinimalEObjectImpl.Container imple
 	 */
 	public EList<FrontControllerMethod> getFrontControllerClassMethod() {
 		if (frontControllerClassMethod == null) {
-			frontControllerClassMethod = new EObjectContainmentEList<FrontControllerMethod>(FrontControllerMethod.class, this, FrameWebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD);
+			frontControllerClassMethod = new EObjectContainmentEList<FrontControllerMethod>(FrontControllerMethod.class, this, FramewebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD);
 		}
 		return frontControllerClassMethod;
 	}
@@ -107,9 +107,9 @@ public class FrontControllerClassImpl extends MinimalEObjectImpl.Container imple
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FrameWebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE:
+			case FramewebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE:
 				return ((InternalEList<?>)getFrontControllerAttribute()).basicRemove(otherEnd, msgs);
-			case FrameWebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD:
+			case FramewebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD:
 				return ((InternalEList<?>)getFrontControllerClassMethod()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -123,9 +123,9 @@ public class FrontControllerClassImpl extends MinimalEObjectImpl.Container imple
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE:
+			case FramewebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE:
 				return getFrontControllerAttribute();
-			case FrameWebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD:
+			case FramewebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD:
 				return getFrontControllerClassMethod();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -140,11 +140,11 @@ public class FrontControllerClassImpl extends MinimalEObjectImpl.Container imple
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE:
+			case FramewebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE:
 				getFrontControllerAttribute().clear();
 				getFrontControllerAttribute().addAll((Collection<? extends IOParameter>)newValue);
 				return;
-			case FrameWebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD:
+			case FramewebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD:
 				getFrontControllerClassMethod().clear();
 				getFrontControllerClassMethod().addAll((Collection<? extends FrontControllerMethod>)newValue);
 				return;
@@ -160,10 +160,10 @@ public class FrontControllerClassImpl extends MinimalEObjectImpl.Container imple
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE:
+			case FramewebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE:
 				getFrontControllerAttribute().clear();
 				return;
-			case FrameWebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD:
+			case FramewebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD:
 				getFrontControllerClassMethod().clear();
 				return;
 		}
@@ -178,9 +178,9 @@ public class FrontControllerClassImpl extends MinimalEObjectImpl.Container imple
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE:
+			case FramewebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE:
 				return frontControllerAttribute != null && !frontControllerAttribute.isEmpty();
-			case FrameWebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD:
+			case FramewebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD:
 				return frontControllerClassMethod != null && !frontControllerClassMethod.isEmpty();
 		}
 		return super.eIsSet(featureID);

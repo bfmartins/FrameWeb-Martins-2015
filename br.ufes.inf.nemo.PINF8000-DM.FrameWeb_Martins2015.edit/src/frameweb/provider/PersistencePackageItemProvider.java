@@ -3,8 +3,8 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 import frameweb.PersistencePackage;
 
 import java.util.Collection;
@@ -68,8 +68,8 @@ public class PersistencePackageItemProvider extends PackageItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE);
-			childrenFeatures.add(FrameWebPackage.Literals.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS);
+			childrenFeatures.add(FramewebPackage.Literals.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE);
+			childrenFeatures.add(FramewebPackage.Literals.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS);
 		}
 		return childrenFeatures;
 	}
@@ -125,8 +125,8 @@ public class PersistencePackageItemProvider extends PackageItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(PersistencePackage.class)) {
-			case FrameWebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE:
-			case FrameWebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS:
+			case FramewebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE:
+			case FramewebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -146,13 +146,13 @@ public class PersistencePackageItemProvider extends PackageItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE,
-				 FrameWebFactory.eINSTANCE.createDAOInterface()));
+				(FramewebPackage.Literals.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE,
+				 FramewebFactory.eINSTANCE.createDAOInterface()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS,
-				 FrameWebFactory.eINSTANCE.createDAOClass()));
+				(FramewebPackage.Literals.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS,
+				 FramewebFactory.eINSTANCE.createDAOClass()));
 	}
 
 	/**
@@ -170,8 +170,8 @@ public class PersistencePackageItemProvider extends PackageItemProvider {
 			childFeature == Uml2Package.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
 			childFeature == Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT ||
 			childFeature == Uml2Package.Literals.NAMESPACE__OWNED_RULE ||
-			childFeature == FrameWebPackage.Literals.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE ||
-			childFeature == FrameWebPackage.Literals.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS;
+			childFeature == FramewebPackage.Literals.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE ||
+			childFeature == FramewebPackage.Literals.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS;
 
 		if (qualify) {
 			return getString

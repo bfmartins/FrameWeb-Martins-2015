@@ -16,7 +16,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getTemplate()
+ * @see frameweb.FramewebPackage#getTemplate()
  * @model
  * @generated
  */
@@ -31,7 +31,7 @@ public interface Template extends NavigationClass {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Template Class Attribute</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getTemplate_TemplateClassAttribute()
+	 * @see frameweb.FramewebPackage#getTemplate_TemplateClassAttribute()
 	 * @model containment="true"
 	 * @generated
 	 */

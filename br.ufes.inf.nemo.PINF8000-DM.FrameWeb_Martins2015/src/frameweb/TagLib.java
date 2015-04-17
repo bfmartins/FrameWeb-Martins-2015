@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getTagLib()
+ * @see frameweb.FramewebPackage#getTagLib()
  * @model
  * @generated
  */
@@ -33,7 +33,7 @@ public interface TagLib extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tag Lib Tag</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getTagLib_TagLibTag()
+	 * @see frameweb.FramewebPackage#getTagLib_TagLibTag()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */

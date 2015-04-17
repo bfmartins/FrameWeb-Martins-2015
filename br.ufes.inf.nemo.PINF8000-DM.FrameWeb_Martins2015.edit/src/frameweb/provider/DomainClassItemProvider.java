@@ -4,8 +4,8 @@ package frameweb.provider;
 
 
 import frameweb.DomainClass;
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -68,8 +68,8 @@ public class DomainClassItemProvider extends ClassItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE);
-			childrenFeatures.add(FrameWebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION);
+			childrenFeatures.add(FramewebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE);
+			childrenFeatures.add(FramewebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION);
 		}
 		return childrenFeatures;
 	}
@@ -114,8 +114,8 @@ public class DomainClassItemProvider extends ClassItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(DomainClass.class)) {
-			case FrameWebPackage.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE:
-			case FrameWebPackage.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION:
+			case FramewebPackage.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE:
+			case FramewebPackage.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -135,43 +135,38 @@ public class DomainClassItemProvider extends ClassItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createDomainAttribute()));
+				(FramewebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createVersionAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createVersionAttribute()));
+				(FramewebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createIdAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createIdAttribute()));
+				(FramewebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createLOBAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createLOBAttribute()));
+				(FramewebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createEmbeddedAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createEmbeddedAttribute()));
+				(FramewebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createDecimalAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createDecimalAttribute()));
+				(FramewebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createDateTimeAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createDateTimeAttribute()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FrameWebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION,
-				 FrameWebFactory.eINSTANCE.createDomainOperation()));
+				(FramewebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION,
+				 FramewebFactory.eINSTANCE.createDomainOperation()));
 	}
 
 	/**
@@ -189,10 +184,10 @@ public class DomainClassItemProvider extends ClassItemProvider {
 			childFeature == Uml2Package.Literals.CLASSIFIER__OWNED_USE_CASE ||
 			childFeature == Uml2Package.Literals.CLASS__NESTED_CLASSIFIER ||
 			childFeature == Uml2Package.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
-			childFeature == FrameWebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE ||
+			childFeature == FramewebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE ||
 			childFeature == Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR ||
 			childFeature == Uml2Package.Literals.CLASS__OWNED_OPERATION ||
-			childFeature == FrameWebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION;
+			childFeature == FramewebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION;
 
 		if (qualify) {
 			return getString

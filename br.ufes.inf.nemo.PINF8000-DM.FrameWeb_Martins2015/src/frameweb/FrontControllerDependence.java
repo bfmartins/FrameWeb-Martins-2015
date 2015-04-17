@@ -21,7 +21,7 @@ package frameweb;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getFrontControllerDependence()
+ * @see frameweb.FramewebPackage#getFrontControllerDependence()
  * @model
  * @generated
  */
@@ -36,7 +36,7 @@ public interface FrontControllerDependence extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Method</em>' reference.
 	 * @see #setMethod(FrontControllerMethod)
-	 * @see frameweb.FrameWebPackage#getFrontControllerDependence_Method()
+	 * @see frameweb.FramewebPackage#getFrontControllerDependence_Method()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface FrontControllerDependence extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Form</em>' reference.
 	 * @see #setSourceForm(Form)
-	 * @see frameweb.FrameWebPackage#getFrontControllerDependence_SourceForm()
+	 * @see frameweb.FramewebPackage#getFrontControllerDependence_SourceForm()
 	 * @model
 	 * @generated
 	 */
@@ -88,7 +88,7 @@ public interface FrontControllerDependence extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Front Controller</em>' reference.
 	 * @see #setTargetFrontController(FrontControllerClass)
-	 * @see frameweb.FrameWebPackage#getFrontControllerDependence_TargetFrontController()
+	 * @see frameweb.FramewebPackage#getFrontControllerDependence_TargetFrontController()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -114,7 +114,7 @@ public interface FrontControllerDependence extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Page</em>' reference.
 	 * @see #setSourcePage(Page)
-	 * @see frameweb.FrameWebPackage#getFrontControllerDependence_SourcePage()
+	 * @see frameweb.FramewebPackage#getFrontControllerDependence_SourcePage()
 	 * @model
 	 * @generated
 	 */
@@ -140,7 +140,7 @@ public interface FrontControllerDependence extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Template</em>' reference.
 	 * @see #setSourceTemplate(Template)
-	 * @see frameweb.FrameWebPackage#getFrontControllerDependence_SourceTemplate()
+	 * @see frameweb.FramewebPackage#getFrontControllerDependence_SourceTemplate()
 	 * @model
 	 * @generated
 	 */
@@ -166,7 +166,7 @@ public interface FrontControllerDependence extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Component</em>' reference.
 	 * @see #setSourceComponent(Component)
-	 * @see frameweb.FrameWebPackage#getFrontControllerDependence_SourceComponent()
+	 * @see frameweb.FramewebPackage#getFrontControllerDependence_SourceComponent()
 	 * @model
 	 * @generated
 	 */
@@ -192,7 +192,7 @@ public interface FrontControllerDependence extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source JQuery</em>' reference.
 	 * @see #setSourceJQuery(JQuery)
-	 * @see frameweb.FrameWebPackage#getFrontControllerDependence_SourceJQuery()
+	 * @see frameweb.FramewebPackage#getFrontControllerDependence_SourceJQuery()
 	 * @model
 	 * @generated
 	 */

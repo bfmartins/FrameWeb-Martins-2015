@@ -4,8 +4,8 @@ package frameweb.provider;
 
 
 import frameweb.DomainPackage;
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -68,7 +68,7 @@ public class DomainPackageItemProvider extends PackageItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS);
+			childrenFeatures.add(FramewebPackage.Literals.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS);
 		}
 		return childrenFeatures;
 	}
@@ -124,7 +124,7 @@ public class DomainPackageItemProvider extends PackageItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(DomainPackage.class)) {
-			case FrameWebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS:
+			case FramewebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -144,18 +144,18 @@ public class DomainPackageItemProvider extends PackageItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS,
-				 FrameWebFactory.eINSTANCE.createMappedClass()));
+				(FramewebPackage.Literals.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS,
+				 FramewebFactory.eINSTANCE.createMappedClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS,
-				 FrameWebFactory.eINSTANCE.createPersistentClass()));
+				(FramewebPackage.Literals.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS,
+				 FramewebFactory.eINSTANCE.createPersistentClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS,
-				 FrameWebFactory.eINSTANCE.createTransientClass()));
+				(FramewebPackage.Literals.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS,
+				 FramewebFactory.eINSTANCE.createTransientClass()));
 	}
 
 	/**
@@ -173,7 +173,7 @@ public class DomainPackageItemProvider extends PackageItemProvider {
 			childFeature == Uml2Package.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
 			childFeature == Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT ||
 			childFeature == Uml2Package.Literals.NAMESPACE__OWNED_RULE ||
-			childFeature == FrameWebPackage.Literals.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS;
+			childFeature == FramewebPackage.Literals.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS;
 
 		if (qualify) {
 			return getString

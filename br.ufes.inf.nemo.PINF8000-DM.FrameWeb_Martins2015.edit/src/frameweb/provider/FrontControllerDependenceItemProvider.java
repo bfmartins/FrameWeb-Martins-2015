@@ -3,7 +3,7 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.FrontControllerDependence;
 
 import java.util.Collection;
@@ -67,7 +67,7 @@ public class FrontControllerDependenceItemProvider extends NavigationDependencyI
 				 getResourceLocator(),
 				 getString("_UI_FrontControllerDependence_Method_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependence_Method_feature", "_UI_FrontControllerDependence_type"),
-				 FrameWebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE__METHOD,
+				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE__METHOD,
 				 true,
 				 false,
 				 true,
@@ -89,7 +89,7 @@ public class FrontControllerDependenceItemProvider extends NavigationDependencyI
 				 getResourceLocator(),
 				 getString("_UI_FrontControllerDependence_SourceForm_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependence_SourceForm_feature", "_UI_FrontControllerDependence_type"),
-				 FrameWebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE__SOURCE_FORM,
+				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE__SOURCE_FORM,
 				 true,
 				 false,
 				 true,
@@ -111,7 +111,7 @@ public class FrontControllerDependenceItemProvider extends NavigationDependencyI
 				 getResourceLocator(),
 				 getString("_UI_FrontControllerDependence_TargetFrontController_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependence_TargetFrontController_feature", "_UI_FrontControllerDependence_type"),
-				 FrameWebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE__TARGET_FRONT_CONTROLLER,
+				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE__TARGET_FRONT_CONTROLLER,
 				 true,
 				 false,
 				 true,
@@ -133,7 +133,7 @@ public class FrontControllerDependenceItemProvider extends NavigationDependencyI
 				 getResourceLocator(),
 				 getString("_UI_FrontControllerDependence_SourcePage_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependence_SourcePage_feature", "_UI_FrontControllerDependence_type"),
-				 FrameWebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE__SOURCE_PAGE,
+				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE__SOURCE_PAGE,
 				 true,
 				 false,
 				 true,
@@ -155,7 +155,7 @@ public class FrontControllerDependenceItemProvider extends NavigationDependencyI
 				 getResourceLocator(),
 				 getString("_UI_FrontControllerDependence_SourceTemplate_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependence_SourceTemplate_feature", "_UI_FrontControllerDependence_type"),
-				 FrameWebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE__SOURCE_TEMPLATE,
+				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE__SOURCE_TEMPLATE,
 				 true,
 				 false,
 				 true,
@@ -177,7 +177,7 @@ public class FrontControllerDependenceItemProvider extends NavigationDependencyI
 				 getResourceLocator(),
 				 getString("_UI_FrontControllerDependence_SourceComponent_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependence_SourceComponent_feature", "_UI_FrontControllerDependence_type"),
-				 FrameWebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE__SOURCE_COMPONENT,
+				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE__SOURCE_COMPONENT,
 				 true,
 				 false,
 				 true,
@@ -199,7 +199,7 @@ public class FrontControllerDependenceItemProvider extends NavigationDependencyI
 				 getResourceLocator(),
 				 getString("_UI_FrontControllerDependence_SourceJQuery_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependence_SourceJQuery_feature", "_UI_FrontControllerDependence_type"),
-				 FrameWebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE__SOURCE_JQUERY,
+				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCE__SOURCE_JQUERY,
 				 true,
 				 false,
 				 true,

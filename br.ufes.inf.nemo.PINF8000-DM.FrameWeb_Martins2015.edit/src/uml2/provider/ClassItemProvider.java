@@ -3,7 +3,7 @@
 package uml2.provider;
 
 
-import frameweb.FrameWebFactory;
+import frameweb.FramewebFactory;
 
 import java.util.Collection;
 import java.util.List;
@@ -285,22 +285,22 @@ public class ClassItemProvider extends EncapsulatedClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__OWNED_OPERATION,
-				 FrameWebFactory.eINSTANCE.createFrontControllerMethod()));
+				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__OWNED_OPERATION,
-				 FrameWebFactory.eINSTANCE.createDomainOperation()));
+				 FramewebFactory.eINSTANCE.createDomainOperation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__OWNED_OPERATION,
-				 FrameWebFactory.eINSTANCE.createServiceOperation()));
+				 FramewebFactory.eINSTANCE.createServiceOperation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__OWNED_OPERATION,
-				 FrameWebFactory.eINSTANCE.createDAOOperation()));
+				 FramewebFactory.eINSTANCE.createDAOOperation()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -440,92 +440,87 @@ public class ClassItemProvider extends EncapsulatedClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createMappedClass()));
+				 FramewebFactory.eINSTANCE.createMappedClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createPersistentClass()));
+				 FramewebFactory.eINSTANCE.createPersistentClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createTransientClass()));
+				 FramewebFactory.eINSTANCE.createTransientClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createDomainAssociation()));
+				 FramewebFactory.eINSTANCE.createDomainAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createPage()));
+				 FramewebFactory.eINSTANCE.createPage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createTemplate()));
+				 FramewebFactory.eINSTANCE.createTemplate()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createForm()));
+				 FramewebFactory.eINSTANCE.createForm()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createBinary()));
+				 FramewebFactory.eINSTANCE.createBinary()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createDAOInterface()));
+				 FramewebFactory.eINSTANCE.createDAOInterface()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createDAOClass()));
+				 FramewebFactory.eINSTANCE.createDAOClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createNavigationComposition()));
+				 FramewebFactory.eINSTANCE.createNavigationComposition()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createServiceClass()));
+				 FramewebFactory.eINSTANCE.createServiceClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createServiceInterface()));
+				 FramewebFactory.eINSTANCE.createServiceInterface()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createServiceAssociation()));
+				 FramewebFactory.eINSTANCE.createServiceNavigationAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createServiceNavigationAssociation()));
+				 FramewebFactory.eINSTANCE.createDAOServiceAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createDAOServiceAssociation()));
+				 FramewebFactory.eINSTANCE.createComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createComponent()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 FrameWebFactory.eINSTANCE.createJQuery()));
+				 FramewebFactory.eINSTANCE.createJQuery()));
 
 		newChildDescriptors.add
 			(createChildParameter

@@ -6,7 +6,7 @@
     complianceLevel="7.0" copyrightFields="false" language="English" operationReflection="true"
     importOrganizing="true">
   <foreignModel>FrameWeb.ecore</foreignModel>
-  <genPackages prefix="FrameWeb" disposableProviderFactory="true" dataTypeConverters="true"
+  <genPackages prefix="Frameweb" disposableProviderFactory="true" dataTypeConverters="true"
       ecorePackage="FrameWeb.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="FrameWeb.ecore#//DateTimePrecision">
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//DateTimePrecision/timestamp"/>
@@ -77,9 +77,9 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//PersistentClass/Table"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//TransientClass"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//FrameWeb">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FrameWeb/Compose"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FrameWeb/Uses"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//Frameweb">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Frameweb/Compose"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Frameweb/Uses"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//FrameWebModel">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//FrameWebModel/Indite"/>

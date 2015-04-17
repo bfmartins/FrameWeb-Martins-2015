@@ -4,7 +4,7 @@ package frameweb.provider;
 
 
 import frameweb.DomainGeneralization;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -69,7 +69,7 @@ public class DomainGeneralizationItemProvider extends GeneralizationItemProvider
 				 getResourceLocator(),
 				 getString("_UI_DomainGeneralization_mapping_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainGeneralization_mapping_feature", "_UI_DomainGeneralization_type"),
-				 FrameWebPackage.Literals.DOMAIN_GENERALIZATION__MAPPING,
+				 FramewebPackage.Literals.DOMAIN_GENERALIZATION__MAPPING,
 				 true,
 				 false,
 				 false,
@@ -91,7 +91,7 @@ public class DomainGeneralizationItemProvider extends GeneralizationItemProvider
 				 getResourceLocator(),
 				 getString("_UI_DomainGeneralization_TargetDomain_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainGeneralization_TargetDomain_feature", "_UI_DomainGeneralization_type"),
-				 FrameWebPackage.Literals.DOMAIN_GENERALIZATION__TARGET_DOMAIN,
+				 FramewebPackage.Literals.DOMAIN_GENERALIZATION__TARGET_DOMAIN,
 				 true,
 				 false,
 				 true,
@@ -113,7 +113,7 @@ public class DomainGeneralizationItemProvider extends GeneralizationItemProvider
 				 getResourceLocator(),
 				 getString("_UI_DomainGeneralization_SourceDomain_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainGeneralization_SourceDomain_feature", "_UI_DomainGeneralization_type"),
-				 FrameWebPackage.Literals.DOMAIN_GENERALIZATION__SOURCE_DOMAIN,
+				 FramewebPackage.Literals.DOMAIN_GENERALIZATION__SOURCE_DOMAIN,
 				 true,
 				 false,
 				 true,
@@ -161,7 +161,7 @@ public class DomainGeneralizationItemProvider extends GeneralizationItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(DomainGeneralization.class)) {
-			case FrameWebPackage.DOMAIN_GENERALIZATION__MAPPING:
+			case FramewebPackage.DOMAIN_GENERALIZATION__MAPPING:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

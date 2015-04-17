@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.Talvez_Method;
 
 import org.eclipse.emf.ecore.EClass;
@@ -35,7 +35,7 @@ public class Talvez_MethodImpl extends MinimalEObjectImpl.Container implements T
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.TALVEZ_METHOD;
+		return FramewebPackage.Literals.TALVEZ_METHOD;
 	}
 
 } //Talvez_MethodImpl

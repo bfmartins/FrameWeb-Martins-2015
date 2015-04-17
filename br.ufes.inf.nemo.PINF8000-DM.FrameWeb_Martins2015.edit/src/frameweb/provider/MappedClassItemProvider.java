@@ -3,7 +3,7 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.MappedClass;
 
 import java.util.Collection;
@@ -114,10 +114,10 @@ public class MappedClassItemProvider extends DomainClassItemProvider {
 			childFeature == Uml2Package.Literals.CLASSIFIER__OWNED_USE_CASE ||
 			childFeature == Uml2Package.Literals.CLASS__NESTED_CLASSIFIER ||
 			childFeature == Uml2Package.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
-			childFeature == FrameWebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE ||
+			childFeature == FramewebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE ||
 			childFeature == Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR ||
 			childFeature == Uml2Package.Literals.CLASS__OWNED_OPERATION ||
-			childFeature == FrameWebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION;
+			childFeature == FramewebPackage.Literals.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION;
 
 		if (qualify) {
 			return getString

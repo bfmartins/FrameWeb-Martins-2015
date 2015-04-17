@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.ResultType;
 
 import org.eclipse.emf.ecore.EClass;
@@ -35,7 +35,7 @@ public class ResultTypeImpl extends MinimalEObjectImpl.Container implements Resu
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.RESULT_TYPE;
+		return FramewebPackage.Literals.RESULT_TYPE;
 	}
 
 } //ResultTypeImpl

@@ -3,7 +3,7 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.PageDependence;
 
 import java.util.Collection;
@@ -66,7 +66,7 @@ public class PageDependenceItemProvider extends NavigationDependencyItemProvider
 				 getResourceLocator(),
 				 getString("_UI_PageDependence_TargetPage_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_PageDependence_TargetPage_feature", "_UI_PageDependence_type"),
-				 FrameWebPackage.Literals.PAGE_DEPENDENCE__TARGET_PAGE,
+				 FramewebPackage.Literals.PAGE_DEPENDENCE__TARGET_PAGE,
 				 true,
 				 false,
 				 true,
@@ -88,7 +88,7 @@ public class PageDependenceItemProvider extends NavigationDependencyItemProvider
 				 getResourceLocator(),
 				 getString("_UI_PageDependence_SourceTemplate_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_PageDependence_SourceTemplate_feature", "_UI_PageDependence_type"),
-				 FrameWebPackage.Literals.PAGE_DEPENDENCE__SOURCE_TEMPLATE,
+				 FramewebPackage.Literals.PAGE_DEPENDENCE__SOURCE_TEMPLATE,
 				 true,
 				 false,
 				 true,
@@ -110,7 +110,7 @@ public class PageDependenceItemProvider extends NavigationDependencyItemProvider
 				 getResourceLocator(),
 				 getString("_UI_PageDependence_linkHTML_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_PageDependence_linkHTML_feature", "_UI_PageDependence_type"),
-				 FrameWebPackage.Literals.PAGE_DEPENDENCE__LINK_HTML,
+				 FramewebPackage.Literals.PAGE_DEPENDENCE__LINK_HTML,
 				 true,
 				 false,
 				 false,
@@ -132,7 +132,7 @@ public class PageDependenceItemProvider extends NavigationDependencyItemProvider
 				 getResourceLocator(),
 				 getString("_UI_PageDependence_SourcePage_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_PageDependence_SourcePage_feature", "_UI_PageDependence_type"),
-				 FrameWebPackage.Literals.PAGE_DEPENDENCE__SOURCE_PAGE,
+				 FramewebPackage.Literals.PAGE_DEPENDENCE__SOURCE_PAGE,
 				 true,
 				 false,
 				 true,
@@ -179,7 +179,7 @@ public class PageDependenceItemProvider extends NavigationDependencyItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(PageDependence.class)) {
-			case FrameWebPackage.PAGE_DEPENDENCE__LINK_HTML:
+			case FramewebPackage.PAGE_DEPENDENCE__LINK_HTML:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

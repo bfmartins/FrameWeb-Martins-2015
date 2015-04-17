@@ -4,7 +4,7 @@ package frameweb.provider;
 
 
 import frameweb.DomainAssociation;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -72,7 +72,7 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DomainAssociation_collection_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAssociation_collection_feature", "_UI_DomainAssociation_type"),
-				 FrameWebPackage.Literals.DOMAIN_ASSOCIATION__COLLECTION,
+				 FramewebPackage.Literals.DOMAIN_ASSOCIATION__COLLECTION,
 				 true,
 				 false,
 				 false,
@@ -94,7 +94,7 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DomainAssociation_order_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAssociation_order_feature", "_UI_DomainAssociation_type"),
-				 FrameWebPackage.Literals.DOMAIN_ASSOCIATION__ORDER,
+				 FramewebPackage.Literals.DOMAIN_ASSOCIATION__ORDER,
 				 true,
 				 false,
 				 false,
@@ -116,7 +116,7 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DomainAssociation_cascade_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAssociation_cascade_feature", "_UI_DomainAssociation_type"),
-				 FrameWebPackage.Literals.DOMAIN_ASSOCIATION__CASCADE,
+				 FramewebPackage.Literals.DOMAIN_ASSOCIATION__CASCADE,
 				 true,
 				 false,
 				 false,
@@ -138,7 +138,7 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DomainAssociation_fetch_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAssociation_fetch_feature", "_UI_DomainAssociation_type"),
-				 FrameWebPackage.Literals.DOMAIN_ASSOCIATION__FETCH,
+				 FramewebPackage.Literals.DOMAIN_ASSOCIATION__FETCH,
 				 true,
 				 false,
 				 false,
@@ -160,7 +160,7 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DomainAssociation_SourceClass_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAssociation_SourceClass_feature", "_UI_DomainAssociation_type"),
-				 FrameWebPackage.Literals.DOMAIN_ASSOCIATION__SOURCE_CLASS,
+				 FramewebPackage.Literals.DOMAIN_ASSOCIATION__SOURCE_CLASS,
 				 true,
 				 false,
 				 true,
@@ -182,7 +182,7 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DomainAssociation_TargetClass_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAssociation_TargetClass_feature", "_UI_DomainAssociation_type"),
-				 FrameWebPackage.Literals.DOMAIN_ASSOCIATION__TARGET_CLASS,
+				 FramewebPackage.Literals.DOMAIN_ASSOCIATION__TARGET_CLASS,
 				 true,
 				 false,
 				 true,
@@ -229,10 +229,10 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(DomainAssociation.class)) {
-			case FrameWebPackage.DOMAIN_ASSOCIATION__COLLECTION:
-			case FrameWebPackage.DOMAIN_ASSOCIATION__ORDER:
-			case FrameWebPackage.DOMAIN_ASSOCIATION__CASCADE:
-			case FrameWebPackage.DOMAIN_ASSOCIATION__FETCH:
+			case FramewebPackage.DOMAIN_ASSOCIATION__COLLECTION:
+			case FramewebPackage.DOMAIN_ASSOCIATION__ORDER:
+			case FramewebPackage.DOMAIN_ASSOCIATION__CASCADE:
+			case FramewebPackage.DOMAIN_ASSOCIATION__FETCH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

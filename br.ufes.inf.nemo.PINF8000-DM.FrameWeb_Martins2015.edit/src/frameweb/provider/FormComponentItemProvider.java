@@ -4,8 +4,8 @@ package frameweb.provider;
 
 
 import frameweb.FormComponent;
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -67,7 +67,7 @@ public class FormComponentItemProvider extends NavigationAttributeItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_FormComponent_inject_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_FormComponent_inject_feature", "_UI_FormComponent_type"),
-				 FrameWebPackage.Literals.FORM_COMPONENT__INJECT,
+				 FramewebPackage.Literals.FORM_COMPONENT__INJECT,
 				 true,
 				 false,
 				 true,
@@ -88,7 +88,7 @@ public class FormComponentItemProvider extends NavigationAttributeItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.TAG__SUB_TAG);
+			childrenFeatures.add(FramewebPackage.Literals.TAG__SUB_TAG);
 		}
 		return childrenFeatures;
 	}
@@ -144,7 +144,7 @@ public class FormComponentItemProvider extends NavigationAttributeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(FormComponent.class)) {
-			case FrameWebPackage.FORM_COMPONENT__SUB_TAG:
+			case FramewebPackage.FORM_COMPONENT__SUB_TAG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -164,18 +164,18 @@ public class FormComponentItemProvider extends NavigationAttributeItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.TAG__SUB_TAG,
-				 FrameWebFactory.eINSTANCE.createForm()));
+				(FramewebPackage.Literals.TAG__SUB_TAG,
+				 FramewebFactory.eINSTANCE.createForm()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.TAG__SUB_TAG,
-				 FrameWebFactory.eINSTANCE.createFormComponent()));
+				(FramewebPackage.Literals.TAG__SUB_TAG,
+				 FramewebFactory.eINSTANCE.createFormComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.TAG__SUB_TAG,
-				 FrameWebFactory.eINSTANCE.createFrameworkTag()));
+				(FramewebPackage.Literals.TAG__SUB_TAG,
+				 FramewebFactory.eINSTANCE.createFrameworkTag()));
 	}
 
 	/**
@@ -195,7 +195,7 @@ public class FormComponentItemProvider extends NavigationAttributeItemProvider {
 			childFeature == Uml2Package.Literals.MULTIPLICITY_ELEMENT__UPPER_VALUE ||
 			childFeature == Uml2Package.Literals.PROPERTY__DEFAULT_VALUE ||
 			childFeature == Uml2Package.Literals.PROPERTY__QUALIFIER ||
-			childFeature == FrameWebPackage.Literals.TAG__SUB_TAG;
+			childFeature == FramewebPackage.Literals.TAG__SUB_TAG;
 
 		if (qualify) {
 			return getString

@@ -5,7 +5,7 @@ package frameweb.provider;
 
 import frameweb.ConstantNameList;
 import frameweb.DAOClassName;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -62,7 +62,7 @@ public class DAOClassNameItemProvider extends DAOInterfaceNameItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DAOClassName_FrameWorkNameSufix_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DAOClassName_FrameWorkNameSufix_feature", "_UI_DAOClassName_type"),
-				 FrameWebPackage.Literals.DAO_CLASS_NAME__FRAME_WORK_NAME_SUFIX,
+				 FramewebPackage.Literals.DAO_CLASS_NAME__FRAME_WORK_NAME_SUFIX,
 				 true,
 				 false,
 				 true,

@@ -3,8 +3,8 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 import frameweb.PersistenceModel;
 
 import java.util.Collection;
@@ -64,7 +64,7 @@ public class PersistenceModelItemProvider extends FrameWebModelItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE);
+			childrenFeatures.add(FramewebPackage.Literals.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE);
 		}
 		return childrenFeatures;
 	}
@@ -120,7 +120,7 @@ public class PersistenceModelItemProvider extends FrameWebModelItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(PersistenceModel.class)) {
-			case FrameWebPackage.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE:
+			case FramewebPackage.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -140,8 +140,8 @@ public class PersistenceModelItemProvider extends FrameWebModelItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE,
-				 FrameWebFactory.eINSTANCE.createPersistencePackage()));
+				(FramewebPackage.Literals.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE,
+				 FramewebFactory.eINSTANCE.createPersistencePackage()));
 	}
 
 	/**
@@ -159,7 +159,7 @@ public class PersistenceModelItemProvider extends FrameWebModelItemProvider {
 			childFeature == Uml2Package.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
 			childFeature == Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT ||
 			childFeature == Uml2Package.Literals.NAMESPACE__OWNED_RULE ||
-			childFeature == FrameWebPackage.Literals.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE;
+			childFeature == FramewebPackage.Literals.PERSISTENCE_MODEL__PERSISTENCE_UML_PACKAGE;
 
 		if (qualify) {
 			return getString

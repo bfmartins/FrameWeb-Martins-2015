@@ -9,7 +9,7 @@ package frameweb;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.FrameWebPackage#getTransientClass()
+ * @see frameweb.FramewebPackage#getTransientClass()
  * @model
  * @generated
  */

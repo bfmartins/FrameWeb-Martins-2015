@@ -16,7 +16,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getPersistenceModel()
+ * @see frameweb.FramewebPackage#getPersistenceModel()
  * @model
  * @generated
  */
@@ -31,7 +31,7 @@ public interface PersistenceModel extends FrameWebModel {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Persistence UML Package</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getPersistenceModel_PersistenceUMLPackage()
+	 * @see frameweb.FramewebPackage#getPersistenceModel_PersistenceUMLPackage()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */

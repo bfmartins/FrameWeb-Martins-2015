@@ -3,7 +3,7 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.FrontControllerMethod;
 
 import java.util.Collection;
@@ -67,7 +67,7 @@ public class FrontControllerMethodItemProvider extends OperationItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_FrontControllerMethod_isDefault_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerMethod_isDefault_feature", "_UI_FrontControllerMethod_type"),
-				 FrameWebPackage.Literals.FRONT_CONTROLLER_METHOD__IS_DEFAULT,
+				 FramewebPackage.Literals.FRONT_CONTROLLER_METHOD__IS_DEFAULT,
 				 true,
 				 false,
 				 false,
@@ -114,7 +114,7 @@ public class FrontControllerMethodItemProvider extends OperationItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(FrontControllerMethod.class)) {
-			case FrameWebPackage.FRONT_CONTROLLER_METHOD__IS_DEFAULT:
+			case FramewebPackage.FRONT_CONTROLLER_METHOD__IS_DEFAULT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

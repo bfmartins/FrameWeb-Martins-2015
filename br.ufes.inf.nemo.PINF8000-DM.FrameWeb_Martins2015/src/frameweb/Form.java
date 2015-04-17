@@ -16,7 +16,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getForm()
+ * @see frameweb.FramewebPackage#getForm()
  * @model
  * @generated
  */
@@ -31,7 +31,7 @@ public interface Form extends NavigationClass, Tag {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Form Class Attribute</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getForm_FormClassAttribute()
+	 * @see frameweb.FramewebPackage#getForm_FormClassAttribute()
 	 * @model containment="true"
 	 * @generated
 	 */

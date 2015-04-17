@@ -3,8 +3,8 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 import frameweb.NavigationModel;
 
 import java.util.Collection;
@@ -64,10 +64,10 @@ public class NavigationModelItemProvider extends FrameWebModelItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE);
-			childrenFeatures.add(FrameWebPackage.Literals.NAVIGATION_MODEL__VIEW_UML_PACKAGE);
-			childrenFeatures.add(FrameWebPackage.Literals.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE);
-			childrenFeatures.add(FrameWebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION);
+			childrenFeatures.add(FramewebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE);
+			childrenFeatures.add(FramewebPackage.Literals.NAVIGATION_MODEL__VIEW_UML_PACKAGE);
+			childrenFeatures.add(FramewebPackage.Literals.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE);
+			childrenFeatures.add(FramewebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION);
 		}
 		return childrenFeatures;
 	}
@@ -123,10 +123,10 @@ public class NavigationModelItemProvider extends FrameWebModelItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(NavigationModel.class)) {
-			case FrameWebPackage.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE:
-			case FrameWebPackage.NAVIGATION_MODEL__VIEW_UML_PACKAGE:
-			case FrameWebPackage.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE:
-			case FrameWebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION:
+			case FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE:
+			case FramewebPackage.NAVIGATION_MODEL__VIEW_UML_PACKAGE:
+			case FramewebPackage.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE:
+			case FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -146,38 +146,38 @@ public class NavigationModelItemProvider extends FrameWebModelItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE,
-				 FrameWebFactory.eINSTANCE.createResultDependency()));
+				(FramewebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE,
+				 FramewebFactory.eINSTANCE.createResultDependency()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE,
-				 FrameWebFactory.eINSTANCE.createFrontControllerDependence()));
+				(FramewebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE,
+				 FramewebFactory.eINSTANCE.createFrontControllerDependence()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE,
-				 FrameWebFactory.eINSTANCE.createPageDependence()));
+				(FramewebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE,
+				 FramewebFactory.eINSTANCE.createPageDependence()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE,
-				 FrameWebFactory.eINSTANCE.createChainingDependence()));
+				(FramewebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE,
+				 FramewebFactory.eINSTANCE.createChainingDependence()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.NAVIGATION_MODEL__VIEW_UML_PACKAGE,
-				 FrameWebFactory.eINSTANCE.createViewPackage()));
+				(FramewebPackage.Literals.NAVIGATION_MODEL__VIEW_UML_PACKAGE,
+				 FramewebFactory.eINSTANCE.createViewPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE,
-				 FrameWebFactory.eINSTANCE.createControllerPackage()));
+				(FramewebPackage.Literals.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE,
+				 FramewebFactory.eINSTANCE.createControllerPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION,
-				 FrameWebFactory.eINSTANCE.createNavigationComposition()));
+				(FramewebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION,
+				 FramewebFactory.eINSTANCE.createNavigationComposition()));
 	}
 
 	/**
@@ -195,10 +195,10 @@ public class NavigationModelItemProvider extends FrameWebModelItemProvider {
 			childFeature == Uml2Package.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
 			childFeature == Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT ||
 			childFeature == Uml2Package.Literals.NAMESPACE__OWNED_RULE ||
-			childFeature == FrameWebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE ||
-			childFeature == FrameWebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION ||
-			childFeature == FrameWebPackage.Literals.NAVIGATION_MODEL__VIEW_UML_PACKAGE ||
-			childFeature == FrameWebPackage.Literals.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE;
+			childFeature == FramewebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE ||
+			childFeature == FramewebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION ||
+			childFeature == FramewebPackage.Literals.NAVIGATION_MODEL__VIEW_UML_PACKAGE ||
+			childFeature == FramewebPackage.Literals.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE;
 
 		if (qualify) {
 			return getString

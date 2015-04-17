@@ -3,8 +3,8 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 import frameweb.ServiceInterface;
 
 import java.util.Collection;
@@ -68,8 +68,8 @@ public class ServiceInterfaceItemProvider extends InterfaceItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION);
-			childrenFeatures.add(FrameWebPackage.Literals.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE);
+			childrenFeatures.add(FramewebPackage.Literals.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION);
+			childrenFeatures.add(FramewebPackage.Literals.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE);
 		}
 		return childrenFeatures;
 	}
@@ -125,8 +125,8 @@ public class ServiceInterfaceItemProvider extends InterfaceItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(ServiceInterface.class)) {
-			case FrameWebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION:
-			case FrameWebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE:
+			case FramewebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION:
+			case FramewebPackage.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -146,13 +146,13 @@ public class ServiceInterfaceItemProvider extends InterfaceItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION,
-				 FrameWebFactory.eINSTANCE.createServiceOperation()));
+				(FramewebPackage.Literals.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION,
+				 FramewebFactory.eINSTANCE.createServiceOperation()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createServiceAttribute()));
+				(FramewebPackage.Literals.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createServiceAttribute()));
 	}
 
 	/**
@@ -171,9 +171,9 @@ public class ServiceInterfaceItemProvider extends InterfaceItemProvider {
 			childFeature == Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER ||
 			childFeature == Uml2Package.Literals.INTERFACE__PROTOCOL ||
 			childFeature == Uml2Package.Literals.INTERFACE__OWNED_ATTRIBUTE ||
-			childFeature == FrameWebPackage.Literals.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE ||
+			childFeature == FramewebPackage.Literals.SERVICE_INTERFACE__SERVICE_INTERFACE_ATTRIBUTE ||
 			childFeature == Uml2Package.Literals.INTERFACE__OWNED_OPERATION ||
-			childFeature == FrameWebPackage.Literals.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION;
+			childFeature == FramewebPackage.Literals.SERVICE_INTERFACE__SERVICE_INTERFACE_OPERATION;
 
 		if (qualify) {
 			return getString

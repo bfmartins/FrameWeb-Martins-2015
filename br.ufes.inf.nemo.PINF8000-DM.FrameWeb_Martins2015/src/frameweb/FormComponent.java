@@ -15,7 +15,7 @@ package frameweb;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getFormComponent()
+ * @see frameweb.FramewebPackage#getFormComponent()
  * @model
  * @generated
  */
@@ -31,7 +31,7 @@ public interface FormComponent extends NavigationAttribute, FrameworkTag {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Inject</em>' reference.
 	 * @see #setInject(IOParameter)
-	 * @see frameweb.FrameWebPackage#getFormComponent_Inject()
+	 * @see frameweb.FramewebPackage#getFormComponent_Inject()
 	 * @see frameweb.IOParameter#getDisplay
 	 * @model opposite="display"
 	 * @generated

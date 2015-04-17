@@ -4,7 +4,7 @@ package frameweb.impl;
 
 import frameweb.Component;
 import frameweb.Form;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.JQuery;
 import frameweb.NavigationComposition;
 import frameweb.Page;
@@ -103,7 +103,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.NAVIGATION_COMPOSITION;
+		return FramewebPackage.Literals.NAVIGATION_COMPOSITION;
 	}
 
 	/**
@@ -117,7 +117,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 			sourceTemplate = (Template)eResolveProxy(oldSourceTemplate);
 			if (sourceTemplate != oldSourceTemplate) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.NAVIGATION_COMPOSITION__SOURCE_TEMPLATE, oldSourceTemplate, sourceTemplate));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.NAVIGATION_COMPOSITION__SOURCE_TEMPLATE, oldSourceTemplate, sourceTemplate));
 			}
 		}
 		return sourceTemplate;
@@ -141,7 +141,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 		Template oldSourceTemplate = sourceTemplate;
 		sourceTemplate = newSourceTemplate;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.NAVIGATION_COMPOSITION__SOURCE_TEMPLATE, oldSourceTemplate, sourceTemplate));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.NAVIGATION_COMPOSITION__SOURCE_TEMPLATE, oldSourceTemplate, sourceTemplate));
 	}
 
 	/**
@@ -155,7 +155,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 			sourcePage = (Page)eResolveProxy(oldSourcePage);
 			if (sourcePage != oldSourcePage) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.NAVIGATION_COMPOSITION__SOURCE_PAGE, oldSourcePage, sourcePage));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.NAVIGATION_COMPOSITION__SOURCE_PAGE, oldSourcePage, sourcePage));
 			}
 		}
 		return sourcePage;
@@ -179,7 +179,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 		Page oldSourcePage = sourcePage;
 		sourcePage = newSourcePage;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.NAVIGATION_COMPOSITION__SOURCE_PAGE, oldSourcePage, sourcePage));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.NAVIGATION_COMPOSITION__SOURCE_PAGE, oldSourcePage, sourcePage));
 	}
 
 	/**
@@ -193,7 +193,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 			targetForm = (Form)eResolveProxy(oldTargetForm);
 			if (targetForm != oldTargetForm) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_FORM, oldTargetForm, targetForm));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.NAVIGATION_COMPOSITION__TARGET_FORM, oldTargetForm, targetForm));
 			}
 		}
 		return targetForm;
@@ -217,7 +217,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 		Form oldTargetForm = targetForm;
 		targetForm = newTargetForm;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_FORM, oldTargetForm, targetForm));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.NAVIGATION_COMPOSITION__TARGET_FORM, oldTargetForm, targetForm));
 	}
 
 	/**
@@ -231,7 +231,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 			targetComponent = (Component)eResolveProxy(oldTargetComponent);
 			if (targetComponent != oldTargetComponent) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_COMPONENT, oldTargetComponent, targetComponent));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.NAVIGATION_COMPOSITION__TARGET_COMPONENT, oldTargetComponent, targetComponent));
 			}
 		}
 		return targetComponent;
@@ -255,7 +255,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 		Component oldTargetComponent = targetComponent;
 		targetComponent = newTargetComponent;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_COMPONENT, oldTargetComponent, targetComponent));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.NAVIGATION_COMPOSITION__TARGET_COMPONENT, oldTargetComponent, targetComponent));
 	}
 
 	/**
@@ -269,7 +269,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 			targetJQuery = (JQuery)eResolveProxy(oldTargetJQuery);
 			if (targetJQuery != oldTargetJQuery) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_JQUERY, oldTargetJQuery, targetJQuery));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.NAVIGATION_COMPOSITION__TARGET_JQUERY, oldTargetJQuery, targetJQuery));
 			}
 		}
 		return targetJQuery;
@@ -293,7 +293,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 		JQuery oldTargetJQuery = targetJQuery;
 		targetJQuery = newTargetJQuery;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_JQUERY, oldTargetJQuery, targetJQuery));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.NAVIGATION_COMPOSITION__TARGET_JQUERY, oldTargetJQuery, targetJQuery));
 	}
 
 	/**
@@ -304,19 +304,19 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.NAVIGATION_COMPOSITION__SOURCE_TEMPLATE:
+			case FramewebPackage.NAVIGATION_COMPOSITION__SOURCE_TEMPLATE:
 				if (resolve) return getSourceTemplate();
 				return basicGetSourceTemplate();
-			case FrameWebPackage.NAVIGATION_COMPOSITION__SOURCE_PAGE:
+			case FramewebPackage.NAVIGATION_COMPOSITION__SOURCE_PAGE:
 				if (resolve) return getSourcePage();
 				return basicGetSourcePage();
-			case FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_FORM:
+			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_FORM:
 				if (resolve) return getTargetForm();
 				return basicGetTargetForm();
-			case FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_COMPONENT:
+			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_COMPONENT:
 				if (resolve) return getTargetComponent();
 				return basicGetTargetComponent();
-			case FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_JQUERY:
+			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_JQUERY:
 				if (resolve) return getTargetJQuery();
 				return basicGetTargetJQuery();
 		}
@@ -331,19 +331,19 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.NAVIGATION_COMPOSITION__SOURCE_TEMPLATE:
+			case FramewebPackage.NAVIGATION_COMPOSITION__SOURCE_TEMPLATE:
 				setSourceTemplate((Template)newValue);
 				return;
-			case FrameWebPackage.NAVIGATION_COMPOSITION__SOURCE_PAGE:
+			case FramewebPackage.NAVIGATION_COMPOSITION__SOURCE_PAGE:
 				setSourcePage((Page)newValue);
 				return;
-			case FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_FORM:
+			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_FORM:
 				setTargetForm((Form)newValue);
 				return;
-			case FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_COMPONENT:
+			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_COMPONENT:
 				setTargetComponent((Component)newValue);
 				return;
-			case FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_JQUERY:
+			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_JQUERY:
 				setTargetJQuery((JQuery)newValue);
 				return;
 		}
@@ -358,19 +358,19 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.NAVIGATION_COMPOSITION__SOURCE_TEMPLATE:
+			case FramewebPackage.NAVIGATION_COMPOSITION__SOURCE_TEMPLATE:
 				setSourceTemplate((Template)null);
 				return;
-			case FrameWebPackage.NAVIGATION_COMPOSITION__SOURCE_PAGE:
+			case FramewebPackage.NAVIGATION_COMPOSITION__SOURCE_PAGE:
 				setSourcePage((Page)null);
 				return;
-			case FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_FORM:
+			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_FORM:
 				setTargetForm((Form)null);
 				return;
-			case FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_COMPONENT:
+			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_COMPONENT:
 				setTargetComponent((Component)null);
 				return;
-			case FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_JQUERY:
+			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_JQUERY:
 				setTargetJQuery((JQuery)null);
 				return;
 		}
@@ -385,15 +385,15 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.NAVIGATION_COMPOSITION__SOURCE_TEMPLATE:
+			case FramewebPackage.NAVIGATION_COMPOSITION__SOURCE_TEMPLATE:
 				return sourceTemplate != null;
-			case FrameWebPackage.NAVIGATION_COMPOSITION__SOURCE_PAGE:
+			case FramewebPackage.NAVIGATION_COMPOSITION__SOURCE_PAGE:
 				return sourcePage != null;
-			case FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_FORM:
+			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_FORM:
 				return targetForm != null;
-			case FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_COMPONENT:
+			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_COMPONENT:
 				return targetComponent != null;
-			case FrameWebPackage.NAVIGATION_COMPOSITION__TARGET_JQUERY:
+			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_JQUERY:
 				return targetJQuery != null;
 		}
 		return super.eIsSet(featureID);

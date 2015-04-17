@@ -4,8 +4,8 @@ package frameweb.provider;
 
 
 import frameweb.Binary;
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -64,7 +64,7 @@ public class BinaryItemProvider extends NavigationClassItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.BINARY__BINARY_CLASS_ATTRIBUTE);
+			childrenFeatures.add(FramewebPackage.Literals.BINARY__BINARY_CLASS_ATTRIBUTE);
 		}
 		return childrenFeatures;
 	}
@@ -120,7 +120,7 @@ public class BinaryItemProvider extends NavigationClassItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Binary.class)) {
-			case FrameWebPackage.BINARY__BINARY_CLASS_ATTRIBUTE:
+			case FramewebPackage.BINARY__BINARY_CLASS_ATTRIBUTE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -140,8 +140,8 @@ public class BinaryItemProvider extends NavigationClassItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.BINARY__BINARY_CLASS_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createBinaryAttribute()));
+				(FramewebPackage.Literals.BINARY__BINARY_CLASS_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createBinaryAttribute()));
 	}
 
 	/**
@@ -159,7 +159,7 @@ public class BinaryItemProvider extends NavigationClassItemProvider {
 			childFeature == Uml2Package.Literals.CLASSIFIER__OWNED_USE_CASE ||
 			childFeature == Uml2Package.Literals.CLASS__NESTED_CLASSIFIER ||
 			childFeature == Uml2Package.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
-			childFeature == FrameWebPackage.Literals.BINARY__BINARY_CLASS_ATTRIBUTE ||
+			childFeature == FramewebPackage.Literals.BINARY__BINARY_CLASS_ATTRIBUTE ||
 			childFeature == Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR;
 
 		if (qualify) {

@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.FrontControllerMethod;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -63,7 +63,7 @@ public class FrontControllerMethodImpl extends OperationImpl implements FrontCon
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.FRONT_CONTROLLER_METHOD;
+		return FramewebPackage.Literals.FRONT_CONTROLLER_METHOD;
 	}
 
 	/**
@@ -84,7 +84,7 @@ public class FrontControllerMethodImpl extends OperationImpl implements FrontCon
 		boolean oldIsDefault = isDefault;
 		isDefault = newIsDefault;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.FRONT_CONTROLLER_METHOD__IS_DEFAULT, oldIsDefault, isDefault));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRONT_CONTROLLER_METHOD__IS_DEFAULT, oldIsDefault, isDefault));
 	}
 
 	/**
@@ -95,7 +95,7 @@ public class FrontControllerMethodImpl extends OperationImpl implements FrontCon
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.FRONT_CONTROLLER_METHOD__IS_DEFAULT:
+			case FramewebPackage.FRONT_CONTROLLER_METHOD__IS_DEFAULT:
 				return isIsDefault();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -109,7 +109,7 @@ public class FrontControllerMethodImpl extends OperationImpl implements FrontCon
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.FRONT_CONTROLLER_METHOD__IS_DEFAULT:
+			case FramewebPackage.FRONT_CONTROLLER_METHOD__IS_DEFAULT:
 				setIsDefault((Boolean)newValue);
 				return;
 		}
@@ -124,7 +124,7 @@ public class FrontControllerMethodImpl extends OperationImpl implements FrontCon
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.FRONT_CONTROLLER_METHOD__IS_DEFAULT:
+			case FramewebPackage.FRONT_CONTROLLER_METHOD__IS_DEFAULT:
 				setIsDefault(IS_DEFAULT_EDEFAULT);
 				return;
 		}
@@ -139,7 +139,7 @@ public class FrontControllerMethodImpl extends OperationImpl implements FrontCon
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.FRONT_CONTROLLER_METHOD__IS_DEFAULT:
+			case FramewebPackage.FRONT_CONTROLLER_METHOD__IS_DEFAULT:
 				return isDefault != IS_DEFAULT_EDEFAULT;
 		}
 		return super.eIsSet(featureID);

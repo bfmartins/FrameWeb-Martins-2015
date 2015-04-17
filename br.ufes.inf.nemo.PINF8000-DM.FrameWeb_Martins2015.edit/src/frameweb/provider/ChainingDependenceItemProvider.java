@@ -4,7 +4,7 @@ package frameweb.provider;
 
 
 import frameweb.ChainingDependence;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -64,7 +64,7 @@ public class ChainingDependenceItemProvider extends NavigationDependencyItemProv
 				 getResourceLocator(),
 				 getString("_UI_ChainingDependence_OutMethod_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_ChainingDependence_OutMethod_feature", "_UI_ChainingDependence_type"),
-				 FrameWebPackage.Literals.CHAINING_DEPENDENCE__OUT_METHOD,
+				 FramewebPackage.Literals.CHAINING_DEPENDENCE__OUT_METHOD,
 				 true,
 				 false,
 				 true,
@@ -86,7 +86,7 @@ public class ChainingDependenceItemProvider extends NavigationDependencyItemProv
 				 getResourceLocator(),
 				 getString("_UI_ChainingDependence_InMethod_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_ChainingDependence_InMethod_feature", "_UI_ChainingDependence_type"),
-				 FrameWebPackage.Literals.CHAINING_DEPENDENCE__IN_METHOD,
+				 FramewebPackage.Literals.CHAINING_DEPENDENCE__IN_METHOD,
 				 true,
 				 false,
 				 true,
@@ -108,7 +108,7 @@ public class ChainingDependenceItemProvider extends NavigationDependencyItemProv
 				 getResourceLocator(),
 				 getString("_UI_ChainingDependence_TargetFrontController_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_ChainingDependence_TargetFrontController_feature", "_UI_ChainingDependence_type"),
-				 FrameWebPackage.Literals.CHAINING_DEPENDENCE__TARGET_FRONT_CONTROLLER,
+				 FramewebPackage.Literals.CHAINING_DEPENDENCE__TARGET_FRONT_CONTROLLER,
 				 true,
 				 false,
 				 true,
@@ -130,7 +130,7 @@ public class ChainingDependenceItemProvider extends NavigationDependencyItemProv
 				 getResourceLocator(),
 				 getString("_UI_ChainingDependence_SourceFrontController_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_ChainingDependence_SourceFrontController_feature", "_UI_ChainingDependence_type"),
-				 FrameWebPackage.Literals.CHAINING_DEPENDENCE__SOURCE_FRONT_CONTROLLER,
+				 FramewebPackage.Literals.CHAINING_DEPENDENCE__SOURCE_FRONT_CONTROLLER,
 				 true,
 				 false,
 				 true,

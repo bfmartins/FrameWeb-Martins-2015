@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.MappedClass;
 
 import org.eclipse.emf.ecore.EClass;
@@ -33,7 +33,7 @@ public class MappedClassImpl extends DomainClassImpl implements MappedClass {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.MAPPED_CLASS;
+		return FramewebPackage.Literals.MAPPED_CLASS;
 	}
 
 } //MappedClassImpl

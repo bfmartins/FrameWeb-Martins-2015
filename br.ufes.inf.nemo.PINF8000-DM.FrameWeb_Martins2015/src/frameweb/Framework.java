@@ -21,7 +21,7 @@ import uml2.Model;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getFramework()
+ * @see frameweb.FramewebPackage#getFramework()
  * @model
  * @generated
  */
@@ -36,7 +36,7 @@ public interface Framework extends Model {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Framework Tag Lib</em>' containment reference.
 	 * @see #setFrameworkTagLib(TagLib)
-	 * @see frameweb.FrameWebPackage#getFramework_FrameworkTagLib()
+	 * @see frameweb.FramewebPackage#getFramework_FrameworkTagLib()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface Framework extends Model {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Framework Rule</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getFramework_FrameworkRule()
+	 * @see frameweb.FramewebPackage#getFramework_FrameworkRule()
 	 * @model containment="true"
 	 * @generated
 	 */
@@ -78,7 +78,7 @@ public interface Framework extends Model {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>New EReference</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getFramework_NewEReference()
+	 * @see frameweb.FramewebPackage#getFramework_NewEReference()
 	 * @model containment="true"
 	 * @generated
 	 */
@@ -94,7 +94,7 @@ public interface Framework extends Model {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Framework Anotation</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getFramework_FrameworkAnotation()
+	 * @see frameweb.FramewebPackage#getFramework_FrameworkAnotation()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */

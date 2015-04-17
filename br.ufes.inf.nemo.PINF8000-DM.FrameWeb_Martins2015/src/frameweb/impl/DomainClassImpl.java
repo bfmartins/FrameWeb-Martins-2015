@@ -5,7 +5,7 @@ package frameweb.impl;
 import frameweb.DomainAttribute;
 import frameweb.DomainClass;
 import frameweb.DomainOperation;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 
@@ -72,7 +72,7 @@ public abstract class DomainClassImpl extends ClassImpl implements DomainClass {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.DOMAIN_CLASS;
+		return FramewebPackage.Literals.DOMAIN_CLASS;
 	}
 
 	/**
@@ -82,7 +82,7 @@ public abstract class DomainClassImpl extends ClassImpl implements DomainClass {
 	 */
 	public EList<DomainAttribute> getDomainClassAttribute() {
 		if (domainClassAttribute == null) {
-			domainClassAttribute = new EObjectContainmentEList<DomainAttribute>(DomainAttribute.class, this, FrameWebPackage.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE);
+			domainClassAttribute = new EObjectContainmentEList<DomainAttribute>(DomainAttribute.class, this, FramewebPackage.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE);
 		}
 		return domainClassAttribute;
 	}
@@ -94,7 +94,7 @@ public abstract class DomainClassImpl extends ClassImpl implements DomainClass {
 	 */
 	public EList<DomainOperation> getDomainClassOperation() {
 		if (domainClassOperation == null) {
-			domainClassOperation = new EObjectContainmentEList<DomainOperation>(DomainOperation.class, this, FrameWebPackage.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION);
+			domainClassOperation = new EObjectContainmentEList<DomainOperation>(DomainOperation.class, this, FramewebPackage.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION);
 		}
 		return domainClassOperation;
 	}
@@ -107,9 +107,9 @@ public abstract class DomainClassImpl extends ClassImpl implements DomainClass {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE:
+			case FramewebPackage.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE:
 				return ((InternalEList<?>)getDomainClassAttribute()).basicRemove(otherEnd, msgs);
-			case FrameWebPackage.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION:
+			case FramewebPackage.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION:
 				return ((InternalEList<?>)getDomainClassOperation()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -123,9 +123,9 @@ public abstract class DomainClassImpl extends ClassImpl implements DomainClass {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE:
+			case FramewebPackage.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE:
 				return getDomainClassAttribute();
-			case FrameWebPackage.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION:
+			case FramewebPackage.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION:
 				return getDomainClassOperation();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -140,11 +140,11 @@ public abstract class DomainClassImpl extends ClassImpl implements DomainClass {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE:
+			case FramewebPackage.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE:
 				getDomainClassAttribute().clear();
 				getDomainClassAttribute().addAll((Collection<? extends DomainAttribute>)newValue);
 				return;
-			case FrameWebPackage.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION:
+			case FramewebPackage.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION:
 				getDomainClassOperation().clear();
 				getDomainClassOperation().addAll((Collection<? extends DomainOperation>)newValue);
 				return;
@@ -160,10 +160,10 @@ public abstract class DomainClassImpl extends ClassImpl implements DomainClass {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE:
+			case FramewebPackage.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE:
 				getDomainClassAttribute().clear();
 				return;
-			case FrameWebPackage.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION:
+			case FramewebPackage.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION:
 				getDomainClassOperation().clear();
 				return;
 		}
@@ -178,9 +178,9 @@ public abstract class DomainClassImpl extends ClassImpl implements DomainClass {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE:
+			case FramewebPackage.DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE:
 				return domainClassAttribute != null && !domainClassAttribute.isEmpty();
-			case FrameWebPackage.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION:
+			case FramewebPackage.DOMAIN_CLASS__DOMAIN_CLASS_OPERATION:
 				return domainClassOperation != null && !domainClassOperation.isEmpty();
 		}
 		return super.eIsSet(featureID);

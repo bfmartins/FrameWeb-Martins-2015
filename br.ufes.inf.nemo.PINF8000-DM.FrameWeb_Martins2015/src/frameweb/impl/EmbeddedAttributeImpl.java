@@ -3,7 +3,7 @@
 package frameweb.impl;
 
 import frameweb.EmbeddedAttribute;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -33,7 +33,7 @@ public class EmbeddedAttributeImpl extends DomainAttributeImpl implements Embedd
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.EMBEDDED_ATTRIBUTE;
+		return FramewebPackage.Literals.EMBEDDED_ATTRIBUTE;
 	}
 
 } //EmbeddedAttributeImpl

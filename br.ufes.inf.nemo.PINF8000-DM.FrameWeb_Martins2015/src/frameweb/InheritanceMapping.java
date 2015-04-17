@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * A representation of the literals of the enumeration '<em><b>Inheritance Mapping</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see frameweb.FrameWebPackage#getInheritanceMapping()
+ * @see frameweb.FramewebPackage#getInheritanceMapping()
  * @model
  * @generated
  */

@@ -5,7 +5,7 @@ package frameweb.provider;
 
 import frameweb.DAOBaseOperation;
 import frameweb.DAOBaseOperationList;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -79,7 +79,7 @@ public class DAOBaseOperationItemProvider
 				 getResourceLocator(),
 				 getString("_UI_DAOBaseOperation_DAObaseOperationName_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DAOBaseOperation_DAObaseOperationName_feature", "_UI_DAOBaseOperation_type"),
-				 FrameWebPackage.Literals.DAO_BASE_OPERATION__DA_OBASE_OPERATION_NAME,
+				 FramewebPackage.Literals.DAO_BASE_OPERATION__DA_OBASE_OPERATION_NAME,
 				 true,
 				 false,
 				 false,
@@ -127,7 +127,7 @@ public class DAOBaseOperationItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(DAOBaseOperation.class)) {
-			case FrameWebPackage.DAO_BASE_OPERATION__DA_OBASE_OPERATION_NAME:
+			case FramewebPackage.DAO_BASE_OPERATION__DA_OBASE_OPERATION_NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

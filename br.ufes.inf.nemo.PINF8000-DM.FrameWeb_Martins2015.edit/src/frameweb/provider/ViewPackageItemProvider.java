@@ -3,8 +3,8 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 import frameweb.ViewPackage;
 
 import java.util.Collection;
@@ -64,7 +64,7 @@ public class ViewPackageItemProvider extends NavigationPackageItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS);
+			childrenFeatures.add(FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS);
 		}
 		return childrenFeatures;
 	}
@@ -120,7 +120,7 @@ public class ViewPackageItemProvider extends NavigationPackageItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(ViewPackage.class)) {
-			case FrameWebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
+			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -140,33 +140,33 @@ public class ViewPackageItemProvider extends NavigationPackageItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
-				 FrameWebFactory.eINSTANCE.createPage()));
+				(FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
+				 FramewebFactory.eINSTANCE.createPage()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
-				 FrameWebFactory.eINSTANCE.createTemplate()));
+				(FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
+				 FramewebFactory.eINSTANCE.createTemplate()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
-				 FrameWebFactory.eINSTANCE.createForm()));
+				(FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
+				 FramewebFactory.eINSTANCE.createForm()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
-				 FrameWebFactory.eINSTANCE.createBinary()));
+				(FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
+				 FramewebFactory.eINSTANCE.createBinary()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
-				 FrameWebFactory.eINSTANCE.createComponent()));
+				(FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
+				 FramewebFactory.eINSTANCE.createComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
-				 FrameWebFactory.eINSTANCE.createJQuery()));
+				(FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
+				 FramewebFactory.eINSTANCE.createJQuery()));
 	}
 
 	/**
@@ -184,7 +184,7 @@ public class ViewPackageItemProvider extends NavigationPackageItemProvider {
 			childFeature == Uml2Package.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
 			childFeature == Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT ||
 			childFeature == Uml2Package.Literals.NAMESPACE__OWNED_RULE ||
-			childFeature == FrameWebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS;
+			childFeature == FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS;
 
 		if (qualify) {
 			return getString

@@ -2,8 +2,8 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
 import frameweb.FrameWorkName;
+import frameweb.FramewebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -33,7 +33,7 @@ public class FrameWorkNameImpl extends FrameWebNameImpl implements FrameWorkName
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.FRAME_WORK_NAME;
+		return FramewebPackage.Literals.FRAME_WORK_NAME;
 	}
 
 } //FrameWorkNameImpl

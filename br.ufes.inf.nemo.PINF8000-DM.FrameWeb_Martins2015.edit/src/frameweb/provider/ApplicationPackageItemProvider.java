@@ -4,8 +4,8 @@ package frameweb.provider;
 
 
 import frameweb.ApplicationPackage;
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -68,8 +68,8 @@ public class ApplicationPackageItemProvider extends PackageItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS);
-			childrenFeatures.add(FrameWebPackage.Literals.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE);
+			childrenFeatures.add(FramewebPackage.Literals.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS);
+			childrenFeatures.add(FramewebPackage.Literals.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE);
 		}
 		return childrenFeatures;
 	}
@@ -125,8 +125,8 @@ public class ApplicationPackageItemProvider extends PackageItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(ApplicationPackage.class)) {
-			case FrameWebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS:
-			case FrameWebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE:
+			case FramewebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS:
+			case FramewebPackage.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -146,13 +146,13 @@ public class ApplicationPackageItemProvider extends PackageItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS,
-				 FrameWebFactory.eINSTANCE.createServiceClass()));
+				(FramewebPackage.Literals.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS,
+				 FramewebFactory.eINSTANCE.createServiceClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE,
-				 FrameWebFactory.eINSTANCE.createServiceInterface()));
+				(FramewebPackage.Literals.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE,
+				 FramewebFactory.eINSTANCE.createServiceInterface()));
 	}
 
 	/**
@@ -170,8 +170,8 @@ public class ApplicationPackageItemProvider extends PackageItemProvider {
 			childFeature == Uml2Package.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
 			childFeature == Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT ||
 			childFeature == Uml2Package.Literals.NAMESPACE__OWNED_RULE ||
-			childFeature == FrameWebPackage.Literals.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS ||
-			childFeature == FrameWebPackage.Literals.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE;
+			childFeature == FramewebPackage.Literals.APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS ||
+			childFeature == FramewebPackage.Literals.APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE;
 
 		if (qualify) {
 			return getString

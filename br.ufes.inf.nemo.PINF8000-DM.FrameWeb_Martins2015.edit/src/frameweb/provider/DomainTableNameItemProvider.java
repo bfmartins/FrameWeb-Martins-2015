@@ -4,7 +4,7 @@ package frameweb.provider;
 
 
 import frameweb.DomainTableName;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -64,7 +64,7 @@ public class DomainTableNameItemProvider extends FrameWebNameItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DomainTableName_fwName_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainTableName_fwName_feature", "_UI_DomainTableName_type"),
-				 FrameWebPackage.Literals.DOMAIN_TABLE_NAME__FW_NAME,
+				 FramewebPackage.Literals.DOMAIN_TABLE_NAME__FW_NAME,
 				 true,
 				 false,
 				 false,
@@ -86,7 +86,7 @@ public class DomainTableNameItemProvider extends FrameWebNameItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DomainTableName_PersistentClassName_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainTableName_PersistentClassName_feature", "_UI_DomainTableName_type"),
-				 FrameWebPackage.Literals.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME,
+				 FramewebPackage.Literals.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME,
 				 true,
 				 false,
 				 true,
@@ -133,7 +133,7 @@ public class DomainTableNameItemProvider extends FrameWebNameItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(DomainTableName.class)) {
-			case FrameWebPackage.DOMAIN_TABLE_NAME__FW_NAME:
+			case FramewebPackage.DOMAIN_TABLE_NAME__FW_NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

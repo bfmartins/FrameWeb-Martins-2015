@@ -36,7 +36,7 @@ public interface PrimitiveTypesPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://schema.omg.org/spec/QVT/1.1/primitivetypes.xml";
+	String eNS_URI = "http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi";
 
 	/**
 	 * The package namespace name.

@@ -4,7 +4,7 @@ package frameweb.provider;
 
 
 import frameweb.DomainAttribute;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -72,7 +72,7 @@ public class DomainAttributeItemProvider extends PropertyItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DomainAttribute_size_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAttribute_size_feature", "_UI_DomainAttribute_type"),
-				 FrameWebPackage.Literals.DOMAIN_ATTRIBUTE__SIZE,
+				 FramewebPackage.Literals.DOMAIN_ATTRIBUTE__SIZE,
 				 true,
 				 false,
 				 false,
@@ -94,7 +94,7 @@ public class DomainAttributeItemProvider extends PropertyItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DomainAttribute_isNull_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAttribute_isNull_feature", "_UI_DomainAttribute_type"),
-				 FrameWebPackage.Literals.DOMAIN_ATTRIBUTE__IS_NULL,
+				 FramewebPackage.Literals.DOMAIN_ATTRIBUTE__IS_NULL,
 				 true,
 				 false,
 				 false,
@@ -116,7 +116,7 @@ public class DomainAttributeItemProvider extends PropertyItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DomainAttribute_isPersistent_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAttribute_isPersistent_feature", "_UI_DomainAttribute_type"),
-				 FrameWebPackage.Literals.DOMAIN_ATTRIBUTE__IS_PERSISTENT,
+				 FramewebPackage.Literals.DOMAIN_ATTRIBUTE__IS_PERSISTENT,
 				 true,
 				 false,
 				 false,
@@ -138,7 +138,7 @@ public class DomainAttributeItemProvider extends PropertyItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DomainAttribute_Column_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAttribute_Column_feature", "_UI_DomainAttribute_type"),
-				 FrameWebPackage.Literals.DOMAIN_ATTRIBUTE__COLUMN,
+				 FramewebPackage.Literals.DOMAIN_ATTRIBUTE__COLUMN,
 				 true,
 				 false,
 				 true,
@@ -185,9 +185,9 @@ public class DomainAttributeItemProvider extends PropertyItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(DomainAttribute.class)) {
-			case FrameWebPackage.DOMAIN_ATTRIBUTE__SIZE:
-			case FrameWebPackage.DOMAIN_ATTRIBUTE__IS_NULL:
-			case FrameWebPackage.DOMAIN_ATTRIBUTE__IS_PERSISTENT:
+			case FramewebPackage.DOMAIN_ATTRIBUTE__SIZE:
+			case FramewebPackage.DOMAIN_ATTRIBUTE__IS_NULL:
+			case FramewebPackage.DOMAIN_ATTRIBUTE__IS_PERSISTENT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

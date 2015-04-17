@@ -9,7 +9,7 @@ package frameweb;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.FrameWebPackage#getUserViewAttribute()
+ * @see frameweb.FramewebPackage#getUserViewAttribute()
  * @model
  * @generated
  */

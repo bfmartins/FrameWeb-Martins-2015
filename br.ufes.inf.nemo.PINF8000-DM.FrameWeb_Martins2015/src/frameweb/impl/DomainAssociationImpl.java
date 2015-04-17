@@ -7,7 +7,7 @@ import frameweb.Collection;
 import frameweb.DomainAssociation;
 import frameweb.DomainClass;
 import frameweb.Fetch;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.Order;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -154,7 +154,7 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.DOMAIN_ASSOCIATION;
+		return FramewebPackage.Literals.DOMAIN_ASSOCIATION;
 	}
 
 	/**
@@ -175,7 +175,7 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 		Collection oldCollection = collection;
 		collection = newCollection == null ? COLLECTION_EDEFAULT : newCollection;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_ASSOCIATION__COLLECTION, oldCollection, collection));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_ASSOCIATION__COLLECTION, oldCollection, collection));
 	}
 
 	/**
@@ -196,7 +196,7 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 		Order oldOrder = order;
 		order = newOrder == null ? ORDER_EDEFAULT : newOrder;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_ASSOCIATION__ORDER, oldOrder, order));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_ASSOCIATION__ORDER, oldOrder, order));
 	}
 
 	/**
@@ -217,7 +217,7 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 		Cascade oldCascade = cascade;
 		cascade = newCascade == null ? CASCADE_EDEFAULT : newCascade;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_ASSOCIATION__CASCADE, oldCascade, cascade));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_ASSOCIATION__CASCADE, oldCascade, cascade));
 	}
 
 	/**
@@ -238,7 +238,7 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 		Fetch oldFetch = fetch;
 		fetch = newFetch == null ? FETCH_EDEFAULT : newFetch;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_ASSOCIATION__FETCH, oldFetch, fetch));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_ASSOCIATION__FETCH, oldFetch, fetch));
 	}
 
 	/**
@@ -252,7 +252,7 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 			sourceClass = (DomainClass)eResolveProxy(oldSourceClass);
 			if (sourceClass != oldSourceClass) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS, oldSourceClass, sourceClass));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS, oldSourceClass, sourceClass));
 			}
 		}
 		return sourceClass;
@@ -276,7 +276,7 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 		DomainClass oldSourceClass = sourceClass;
 		sourceClass = newSourceClass;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS, oldSourceClass, sourceClass));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS, oldSourceClass, sourceClass));
 	}
 
 	/**
@@ -290,7 +290,7 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 			targetClass = (DomainClass)eResolveProxy(oldTargetClass);
 			if (targetClass != oldTargetClass) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS, oldTargetClass, targetClass));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS, oldTargetClass, targetClass));
 			}
 		}
 		return targetClass;
@@ -314,7 +314,7 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 		DomainClass oldTargetClass = targetClass;
 		targetClass = newTargetClass;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS, oldTargetClass, targetClass));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS, oldTargetClass, targetClass));
 	}
 
 	/**
@@ -325,18 +325,18 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_ASSOCIATION__COLLECTION:
+			case FramewebPackage.DOMAIN_ASSOCIATION__COLLECTION:
 				return getCollection();
-			case FrameWebPackage.DOMAIN_ASSOCIATION__ORDER:
+			case FramewebPackage.DOMAIN_ASSOCIATION__ORDER:
 				return getOrder();
-			case FrameWebPackage.DOMAIN_ASSOCIATION__CASCADE:
+			case FramewebPackage.DOMAIN_ASSOCIATION__CASCADE:
 				return getCascade();
-			case FrameWebPackage.DOMAIN_ASSOCIATION__FETCH:
+			case FramewebPackage.DOMAIN_ASSOCIATION__FETCH:
 				return getFetch();
-			case FrameWebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS:
+			case FramewebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS:
 				if (resolve) return getSourceClass();
 				return basicGetSourceClass();
-			case FrameWebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS:
+			case FramewebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS:
 				if (resolve) return getTargetClass();
 				return basicGetTargetClass();
 		}
@@ -351,22 +351,22 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_ASSOCIATION__COLLECTION:
+			case FramewebPackage.DOMAIN_ASSOCIATION__COLLECTION:
 				setCollection((Collection)newValue);
 				return;
-			case FrameWebPackage.DOMAIN_ASSOCIATION__ORDER:
+			case FramewebPackage.DOMAIN_ASSOCIATION__ORDER:
 				setOrder((Order)newValue);
 				return;
-			case FrameWebPackage.DOMAIN_ASSOCIATION__CASCADE:
+			case FramewebPackage.DOMAIN_ASSOCIATION__CASCADE:
 				setCascade((Cascade)newValue);
 				return;
-			case FrameWebPackage.DOMAIN_ASSOCIATION__FETCH:
+			case FramewebPackage.DOMAIN_ASSOCIATION__FETCH:
 				setFetch((Fetch)newValue);
 				return;
-			case FrameWebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS:
+			case FramewebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS:
 				setSourceClass((DomainClass)newValue);
 				return;
-			case FrameWebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS:
+			case FramewebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS:
 				setTargetClass((DomainClass)newValue);
 				return;
 		}
@@ -381,22 +381,22 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_ASSOCIATION__COLLECTION:
+			case FramewebPackage.DOMAIN_ASSOCIATION__COLLECTION:
 				setCollection(COLLECTION_EDEFAULT);
 				return;
-			case FrameWebPackage.DOMAIN_ASSOCIATION__ORDER:
+			case FramewebPackage.DOMAIN_ASSOCIATION__ORDER:
 				setOrder(ORDER_EDEFAULT);
 				return;
-			case FrameWebPackage.DOMAIN_ASSOCIATION__CASCADE:
+			case FramewebPackage.DOMAIN_ASSOCIATION__CASCADE:
 				setCascade(CASCADE_EDEFAULT);
 				return;
-			case FrameWebPackage.DOMAIN_ASSOCIATION__FETCH:
+			case FramewebPackage.DOMAIN_ASSOCIATION__FETCH:
 				setFetch(FETCH_EDEFAULT);
 				return;
-			case FrameWebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS:
+			case FramewebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS:
 				setSourceClass((DomainClass)null);
 				return;
-			case FrameWebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS:
+			case FramewebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS:
 				setTargetClass((DomainClass)null);
 				return;
 		}
@@ -411,17 +411,17 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_ASSOCIATION__COLLECTION:
+			case FramewebPackage.DOMAIN_ASSOCIATION__COLLECTION:
 				return collection != COLLECTION_EDEFAULT;
-			case FrameWebPackage.DOMAIN_ASSOCIATION__ORDER:
+			case FramewebPackage.DOMAIN_ASSOCIATION__ORDER:
 				return order != ORDER_EDEFAULT;
-			case FrameWebPackage.DOMAIN_ASSOCIATION__CASCADE:
+			case FramewebPackage.DOMAIN_ASSOCIATION__CASCADE:
 				return cascade != CASCADE_EDEFAULT;
-			case FrameWebPackage.DOMAIN_ASSOCIATION__FETCH:
+			case FramewebPackage.DOMAIN_ASSOCIATION__FETCH:
 				return fetch != FETCH_EDEFAULT;
-			case FrameWebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS:
+			case FramewebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS:
 				return sourceClass != null;
-			case FrameWebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS:
+			case FramewebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS:
 				return targetClass != null;
 		}
 		return super.eIsSet(featureID);

@@ -4,7 +4,7 @@ package frameweb.impl;
 
 import frameweb.DomainClass;
 import frameweb.DomainGeneralization;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.InheritanceMapping;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -88,7 +88,7 @@ public class DomainGeneralizationImpl extends GeneralizationImpl implements Doma
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.DOMAIN_GENERALIZATION;
+		return FramewebPackage.Literals.DOMAIN_GENERALIZATION;
 	}
 
 	/**
@@ -109,7 +109,7 @@ public class DomainGeneralizationImpl extends GeneralizationImpl implements Doma
 		InheritanceMapping oldMapping = mapping;
 		mapping = newMapping == null ? MAPPING_EDEFAULT : newMapping;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_GENERALIZATION__MAPPING, oldMapping, mapping));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_GENERALIZATION__MAPPING, oldMapping, mapping));
 	}
 
 	/**
@@ -123,7 +123,7 @@ public class DomainGeneralizationImpl extends GeneralizationImpl implements Doma
 			targetDomain = (DomainClass)eResolveProxy(oldTargetDomain);
 			if (targetDomain != oldTargetDomain) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN, oldTargetDomain, targetDomain));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN, oldTargetDomain, targetDomain));
 			}
 		}
 		return targetDomain;
@@ -147,7 +147,7 @@ public class DomainGeneralizationImpl extends GeneralizationImpl implements Doma
 		DomainClass oldTargetDomain = targetDomain;
 		targetDomain = newTargetDomain;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN, oldTargetDomain, targetDomain));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN, oldTargetDomain, targetDomain));
 	}
 
 	/**
@@ -161,7 +161,7 @@ public class DomainGeneralizationImpl extends GeneralizationImpl implements Doma
 			sourceDomain = (DomainClass)eResolveProxy(oldSourceDomain);
 			if (sourceDomain != oldSourceDomain) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN, oldSourceDomain, sourceDomain));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN, oldSourceDomain, sourceDomain));
 			}
 		}
 		return sourceDomain;
@@ -185,7 +185,7 @@ public class DomainGeneralizationImpl extends GeneralizationImpl implements Doma
 		DomainClass oldSourceDomain = sourceDomain;
 		sourceDomain = newSourceDomain;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN, oldSourceDomain, sourceDomain));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN, oldSourceDomain, sourceDomain));
 	}
 
 	/**
@@ -196,12 +196,12 @@ public class DomainGeneralizationImpl extends GeneralizationImpl implements Doma
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_GENERALIZATION__MAPPING:
+			case FramewebPackage.DOMAIN_GENERALIZATION__MAPPING:
 				return getMapping();
-			case FrameWebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN:
+			case FramewebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN:
 				if (resolve) return getTargetDomain();
 				return basicGetTargetDomain();
-			case FrameWebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN:
+			case FramewebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN:
 				if (resolve) return getSourceDomain();
 				return basicGetSourceDomain();
 		}
@@ -216,13 +216,13 @@ public class DomainGeneralizationImpl extends GeneralizationImpl implements Doma
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_GENERALIZATION__MAPPING:
+			case FramewebPackage.DOMAIN_GENERALIZATION__MAPPING:
 				setMapping((InheritanceMapping)newValue);
 				return;
-			case FrameWebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN:
+			case FramewebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN:
 				setTargetDomain((DomainClass)newValue);
 				return;
-			case FrameWebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN:
+			case FramewebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN:
 				setSourceDomain((DomainClass)newValue);
 				return;
 		}
@@ -237,13 +237,13 @@ public class DomainGeneralizationImpl extends GeneralizationImpl implements Doma
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_GENERALIZATION__MAPPING:
+			case FramewebPackage.DOMAIN_GENERALIZATION__MAPPING:
 				setMapping(MAPPING_EDEFAULT);
 				return;
-			case FrameWebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN:
+			case FramewebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN:
 				setTargetDomain((DomainClass)null);
 				return;
-			case FrameWebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN:
+			case FramewebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN:
 				setSourceDomain((DomainClass)null);
 				return;
 		}
@@ -258,11 +258,11 @@ public class DomainGeneralizationImpl extends GeneralizationImpl implements Doma
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_GENERALIZATION__MAPPING:
+			case FramewebPackage.DOMAIN_GENERALIZATION__MAPPING:
 				return mapping != MAPPING_EDEFAULT;
-			case FrameWebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN:
+			case FramewebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN:
 				return targetDomain != null;
-			case FrameWebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN:
+			case FramewebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN:
 				return sourceDomain != null;
 		}
 		return super.eIsSet(featureID);

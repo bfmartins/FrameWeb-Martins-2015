@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.ServiceAttribute;
 
 import org.eclipse.emf.ecore.EClass;
@@ -35,7 +35,7 @@ public class ServiceAttributeImpl extends PropertyImpl implements ServiceAttribu
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.SERVICE_ATTRIBUTE;
+		return FramewebPackage.Literals.SERVICE_ATTRIBUTE;
 	}
 
 } //ServiceAttributeImpl

@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * A representation of the literals of the enumeration '<em><b>DAO Base Operation List</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see frameweb.FrameWebPackage#getDAOBaseOperationList()
+ * @see frameweb.FramewebPackage#getDAOBaseOperationList()
  * @model
  * @generated
  */

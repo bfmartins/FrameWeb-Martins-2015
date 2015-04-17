@@ -3,8 +3,8 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 import frameweb.Page;
 
 import java.util.Collection;
@@ -67,7 +67,7 @@ public class PageItemProvider extends NavigationClassItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_Page_Mention_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_Page_Mention_feature", "_UI_Page_type"),
-				 FrameWebPackage.Literals.PAGE__MENTION,
+				 FramewebPackage.Literals.PAGE__MENTION,
 				 true,
 				 false,
 				 true,
@@ -88,8 +88,8 @@ public class PageItemProvider extends NavigationClassItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.PAGE__PAGE_CLASS_ATTRIBUTE);
-			childrenFeatures.add(FrameWebPackage.Literals.PAGE__PAGE_TAG_LIB);
+			childrenFeatures.add(FramewebPackage.Literals.PAGE__PAGE_CLASS_ATTRIBUTE);
+			childrenFeatures.add(FramewebPackage.Literals.PAGE__PAGE_TAG_LIB);
 		}
 		return childrenFeatures;
 	}
@@ -145,8 +145,8 @@ public class PageItemProvider extends NavigationClassItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Page.class)) {
-			case FrameWebPackage.PAGE__PAGE_CLASS_ATTRIBUTE:
-			case FrameWebPackage.PAGE__PAGE_TAG_LIB:
+			case FramewebPackage.PAGE__PAGE_CLASS_ATTRIBUTE:
+			case FramewebPackage.PAGE__PAGE_TAG_LIB:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -166,23 +166,23 @@ public class PageItemProvider extends NavigationClassItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.PAGE__PAGE_CLASS_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createUserViewAttribute()));
+				(FramewebPackage.Literals.PAGE__PAGE_CLASS_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createUserViewAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.PAGE__PAGE_TAG_LIB,
-				 FrameWebFactory.eINSTANCE.createForm()));
+				(FramewebPackage.Literals.PAGE__PAGE_TAG_LIB,
+				 FramewebFactory.eINSTANCE.createForm()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.PAGE__PAGE_TAG_LIB,
-				 FrameWebFactory.eINSTANCE.createFormComponent()));
+				(FramewebPackage.Literals.PAGE__PAGE_TAG_LIB,
+				 FramewebFactory.eINSTANCE.createFormComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.PAGE__PAGE_TAG_LIB,
-				 FrameWebFactory.eINSTANCE.createFrameworkTag()));
+				(FramewebPackage.Literals.PAGE__PAGE_TAG_LIB,
+				 FramewebFactory.eINSTANCE.createFrameworkTag()));
 	}
 
 	/**
@@ -200,8 +200,8 @@ public class PageItemProvider extends NavigationClassItemProvider {
 			childFeature == Uml2Package.Literals.CLASSIFIER__OWNED_USE_CASE ||
 			childFeature == Uml2Package.Literals.CLASS__NESTED_CLASSIFIER ||
 			childFeature == Uml2Package.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
-			childFeature == FrameWebPackage.Literals.PAGE__PAGE_CLASS_ATTRIBUTE ||
-			childFeature == FrameWebPackage.Literals.PAGE__PAGE_TAG_LIB ||
+			childFeature == FramewebPackage.Literals.PAGE__PAGE_CLASS_ATTRIBUTE ||
+			childFeature == FramewebPackage.Literals.PAGE__PAGE_TAG_LIB ||
 			childFeature == Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR;
 
 		if (qualify) {

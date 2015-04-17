@@ -9,7 +9,7 @@ package frameweb;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.FrameWebPackage#getVersionAttribute()
+ * @see frameweb.FramewebPackage#getVersionAttribute()
  * @model
  * @generated
  */

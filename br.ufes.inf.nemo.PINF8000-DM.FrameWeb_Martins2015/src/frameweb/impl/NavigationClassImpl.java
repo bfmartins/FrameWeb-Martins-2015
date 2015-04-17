@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.NavigationClass;
 
 import org.eclipse.emf.ecore.EClass;
@@ -35,7 +35,7 @@ public abstract class NavigationClassImpl extends ClassImpl implements Navigatio
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.NAVIGATION_CLASS;
+		return FramewebPackage.Literals.NAVIGATION_CLASS;
 	}
 
 } //NavigationClassImpl

@@ -3,7 +3,7 @@
 package frameweb.impl;
 
 import frameweb.FormComponent;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.FrameworkTag;
 import frameweb.IOParameter;
 import frameweb.Tag;
@@ -74,7 +74,7 @@ public class FormComponentImpl extends NavigationAttributeImpl implements FormCo
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.FORM_COMPONENT;
+		return FramewebPackage.Literals.FORM_COMPONENT;
 	}
 
 	/**
@@ -84,7 +84,7 @@ public class FormComponentImpl extends NavigationAttributeImpl implements FormCo
 	 */
 	public EList<Tag> getSubTag() {
 		if (subTag == null) {
-			subTag = new EObjectContainmentEList<Tag>(Tag.class, this, FrameWebPackage.FORM_COMPONENT__SUB_TAG);
+			subTag = new EObjectContainmentEList<Tag>(Tag.class, this, FramewebPackage.FORM_COMPONENT__SUB_TAG);
 		}
 		return subTag;
 	}
@@ -100,7 +100,7 @@ public class FormComponentImpl extends NavigationAttributeImpl implements FormCo
 			inject = (IOParameter)eResolveProxy(oldInject);
 			if (inject != oldInject) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.FORM_COMPONENT__INJECT, oldInject, inject));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.FORM_COMPONENT__INJECT, oldInject, inject));
 			}
 		}
 		return inject;
@@ -124,7 +124,7 @@ public class FormComponentImpl extends NavigationAttributeImpl implements FormCo
 		IOParameter oldInject = inject;
 		inject = newInject;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FrameWebPackage.FORM_COMPONENT__INJECT, oldInject, newInject);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FramewebPackage.FORM_COMPONENT__INJECT, oldInject, newInject);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -139,14 +139,14 @@ public class FormComponentImpl extends NavigationAttributeImpl implements FormCo
 		if (newInject != inject) {
 			NotificationChain msgs = null;
 			if (inject != null)
-				msgs = ((InternalEObject)inject).eInverseRemove(this, FrameWebPackage.IO_PARAMETER__DISPLAY, IOParameter.class, msgs);
+				msgs = ((InternalEObject)inject).eInverseRemove(this, FramewebPackage.IO_PARAMETER__DISPLAY, IOParameter.class, msgs);
 			if (newInject != null)
-				msgs = ((InternalEObject)newInject).eInverseAdd(this, FrameWebPackage.IO_PARAMETER__DISPLAY, IOParameter.class, msgs);
+				msgs = ((InternalEObject)newInject).eInverseAdd(this, FramewebPackage.IO_PARAMETER__DISPLAY, IOParameter.class, msgs);
 			msgs = basicSetInject(newInject, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.FORM_COMPONENT__INJECT, newInject, newInject));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FORM_COMPONENT__INJECT, newInject, newInject));
 	}
 
 	/**
@@ -157,9 +157,9 @@ public class FormComponentImpl extends NavigationAttributeImpl implements FormCo
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FrameWebPackage.FORM_COMPONENT__INJECT:
+			case FramewebPackage.FORM_COMPONENT__INJECT:
 				if (inject != null)
-					msgs = ((InternalEObject)inject).eInverseRemove(this, FrameWebPackage.IO_PARAMETER__DISPLAY, IOParameter.class, msgs);
+					msgs = ((InternalEObject)inject).eInverseRemove(this, FramewebPackage.IO_PARAMETER__DISPLAY, IOParameter.class, msgs);
 				return basicSetInject((IOParameter)otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -173,9 +173,9 @@ public class FormComponentImpl extends NavigationAttributeImpl implements FormCo
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FrameWebPackage.FORM_COMPONENT__SUB_TAG:
+			case FramewebPackage.FORM_COMPONENT__SUB_TAG:
 				return ((InternalEList<?>)getSubTag()).basicRemove(otherEnd, msgs);
-			case FrameWebPackage.FORM_COMPONENT__INJECT:
+			case FramewebPackage.FORM_COMPONENT__INJECT:
 				return basicSetInject(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -189,9 +189,9 @@ public class FormComponentImpl extends NavigationAttributeImpl implements FormCo
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.FORM_COMPONENT__SUB_TAG:
+			case FramewebPackage.FORM_COMPONENT__SUB_TAG:
 				return getSubTag();
-			case FrameWebPackage.FORM_COMPONENT__INJECT:
+			case FramewebPackage.FORM_COMPONENT__INJECT:
 				if (resolve) return getInject();
 				return basicGetInject();
 		}
@@ -207,11 +207,11 @@ public class FormComponentImpl extends NavigationAttributeImpl implements FormCo
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.FORM_COMPONENT__SUB_TAG:
+			case FramewebPackage.FORM_COMPONENT__SUB_TAG:
 				getSubTag().clear();
 				getSubTag().addAll((Collection<? extends Tag>)newValue);
 				return;
-			case FrameWebPackage.FORM_COMPONENT__INJECT:
+			case FramewebPackage.FORM_COMPONENT__INJECT:
 				setInject((IOParameter)newValue);
 				return;
 		}
@@ -226,10 +226,10 @@ public class FormComponentImpl extends NavigationAttributeImpl implements FormCo
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.FORM_COMPONENT__SUB_TAG:
+			case FramewebPackage.FORM_COMPONENT__SUB_TAG:
 				getSubTag().clear();
 				return;
-			case FrameWebPackage.FORM_COMPONENT__INJECT:
+			case FramewebPackage.FORM_COMPONENT__INJECT:
 				setInject((IOParameter)null);
 				return;
 		}
@@ -244,9 +244,9 @@ public class FormComponentImpl extends NavigationAttributeImpl implements FormCo
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.FORM_COMPONENT__SUB_TAG:
+			case FramewebPackage.FORM_COMPONENT__SUB_TAG:
 				return subTag != null && !subTag.isEmpty();
-			case FrameWebPackage.FORM_COMPONENT__INJECT:
+			case FramewebPackage.FORM_COMPONENT__INJECT:
 				return inject != null;
 		}
 		return super.eIsSet(featureID);
@@ -261,7 +261,7 @@ public class FormComponentImpl extends NavigationAttributeImpl implements FormCo
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
 		if (baseClass == Tag.class) {
 			switch (derivedFeatureID) {
-				case FrameWebPackage.FORM_COMPONENT__SUB_TAG: return FrameWebPackage.TAG__SUB_TAG;
+				case FramewebPackage.FORM_COMPONENT__SUB_TAG: return FramewebPackage.TAG__SUB_TAG;
 				default: return -1;
 			}
 		}
@@ -282,7 +282,7 @@ public class FormComponentImpl extends NavigationAttributeImpl implements FormCo
 	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
 		if (baseClass == Tag.class) {
 			switch (baseFeatureID) {
-				case FrameWebPackage.TAG__SUB_TAG: return FrameWebPackage.FORM_COMPONENT__SUB_TAG;
+				case FramewebPackage.TAG__SUB_TAG: return FramewebPackage.FORM_COMPONENT__SUB_TAG;
 				default: return -1;
 			}
 		}

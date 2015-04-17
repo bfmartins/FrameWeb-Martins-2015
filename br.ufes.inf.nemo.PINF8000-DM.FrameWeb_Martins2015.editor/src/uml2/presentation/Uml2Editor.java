@@ -158,7 +158,7 @@ import uml2.provider.Uml2ItemProviderAdapterFactory;
 
 import frameweb.presentation.FrameWeb_Martins2015EditorPlugin;
 
-import frameweb.provider.FrameWebItemProviderAdapterFactory;
+import frameweb.provider.FramewebItemProviderAdapterFactory;
 
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 
@@ -705,7 +705,7 @@ public class Uml2Editor
 		adapterFactory = new ComposedAdapterFactory(ComposedAdapterFactory.Descriptor.Registry.INSTANCE);
 
 		adapterFactory.addAdapterFactory(new ResourceItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new FrameWebItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new FramewebItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new Uml2ItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 

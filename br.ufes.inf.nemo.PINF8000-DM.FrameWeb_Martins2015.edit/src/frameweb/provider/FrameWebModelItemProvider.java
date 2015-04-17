@@ -4,7 +4,7 @@ package frameweb.provider;
 
 
 import frameweb.FrameWebModel;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -67,7 +67,7 @@ public class FrameWebModelItemProvider extends ModelItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.FRAME_WEB_MODEL__INDITE);
+			childrenFeatures.add(FramewebPackage.Literals.FRAME_WEB_MODEL__INDITE);
 		}
 		return childrenFeatures;
 	}
@@ -123,7 +123,7 @@ public class FrameWebModelItemProvider extends ModelItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(FrameWebModel.class)) {
-			case FrameWebPackage.FRAME_WEB_MODEL__INDITE:
+			case FramewebPackage.FRAME_WEB_MODEL__INDITE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}

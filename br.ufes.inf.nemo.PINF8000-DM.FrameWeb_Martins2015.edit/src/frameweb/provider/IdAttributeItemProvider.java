@@ -3,7 +3,7 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.IdAttribute;
 
 import java.util.Collection;
@@ -65,7 +65,7 @@ public class IdAttributeItemProvider extends DomainAttributeItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_IdAttribute_generation_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_IdAttribute_generation_feature", "_UI_IdAttribute_type"),
-				 FrameWebPackage.Literals.ID_ATTRIBUTE__GENERATION,
+				 FramewebPackage.Literals.ID_ATTRIBUTE__GENERATION,
 				 true,
 				 false,
 				 false,
@@ -112,7 +112,7 @@ public class IdAttributeItemProvider extends DomainAttributeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(IdAttribute.class)) {
-			case FrameWebPackage.ID_ATTRIBUTE__GENERATION:
+			case FramewebPackage.ID_ATTRIBUTE__GENERATION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

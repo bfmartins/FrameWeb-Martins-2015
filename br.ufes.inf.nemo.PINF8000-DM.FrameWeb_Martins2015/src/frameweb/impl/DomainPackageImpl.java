@@ -4,7 +4,7 @@ package frameweb.impl;
 
 import frameweb.DomainClass;
 import frameweb.DomainPackage;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 
@@ -60,7 +60,7 @@ public class DomainPackageImpl extends PackageImpl implements DomainPackage {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.DOMAIN_PACKAGE;
+		return FramewebPackage.Literals.DOMAIN_PACKAGE;
 	}
 
 	/**
@@ -70,7 +70,7 @@ public class DomainPackageImpl extends PackageImpl implements DomainPackage {
 	 */
 	public EList<DomainClass> getDomainPackageClass() {
 		if (domainPackageClass == null) {
-			domainPackageClass = new EObjectContainmentEList<DomainClass>(DomainClass.class, this, FrameWebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS);
+			domainPackageClass = new EObjectContainmentEList<DomainClass>(DomainClass.class, this, FramewebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS);
 		}
 		return domainPackageClass;
 	}
@@ -83,7 +83,7 @@ public class DomainPackageImpl extends PackageImpl implements DomainPackage {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS:
+			case FramewebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS:
 				return ((InternalEList<?>)getDomainPackageClass()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -97,7 +97,7 @@ public class DomainPackageImpl extends PackageImpl implements DomainPackage {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS:
+			case FramewebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS:
 				return getDomainPackageClass();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -112,7 +112,7 @@ public class DomainPackageImpl extends PackageImpl implements DomainPackage {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS:
+			case FramewebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS:
 				getDomainPackageClass().clear();
 				getDomainPackageClass().addAll((Collection<? extends DomainClass>)newValue);
 				return;
@@ -128,7 +128,7 @@ public class DomainPackageImpl extends PackageImpl implements DomainPackage {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS:
+			case FramewebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS:
 				getDomainPackageClass().clear();
 				return;
 		}
@@ -143,7 +143,7 @@ public class DomainPackageImpl extends PackageImpl implements DomainPackage {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS:
+			case FramewebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS:
 				return domainPackageClass != null && !domainPackageClass.isEmpty();
 		}
 		return super.eIsSet(featureID);

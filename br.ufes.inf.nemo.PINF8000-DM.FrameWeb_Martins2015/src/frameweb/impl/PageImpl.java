@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.Page;
 import frameweb.Tag;
 import frameweb.TagLib;
@@ -83,7 +83,7 @@ public class PageImpl extends NavigationClassImpl implements Page {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.PAGE;
+		return FramewebPackage.Literals.PAGE;
 	}
 
 	/**
@@ -93,7 +93,7 @@ public class PageImpl extends NavigationClassImpl implements Page {
 	 */
 	public EList<UserViewAttribute> getPageClassAttribute() {
 		if (pageClassAttribute == null) {
-			pageClassAttribute = new EObjectContainmentEList<UserViewAttribute>(UserViewAttribute.class, this, FrameWebPackage.PAGE__PAGE_CLASS_ATTRIBUTE);
+			pageClassAttribute = new EObjectContainmentEList<UserViewAttribute>(UserViewAttribute.class, this, FramewebPackage.PAGE__PAGE_CLASS_ATTRIBUTE);
 		}
 		return pageClassAttribute;
 	}
@@ -105,7 +105,7 @@ public class PageImpl extends NavigationClassImpl implements Page {
 	 */
 	public EList<Tag> getPageTagLib() {
 		if (pageTagLib == null) {
-			pageTagLib = new EObjectContainmentEList<Tag>(Tag.class, this, FrameWebPackage.PAGE__PAGE_TAG_LIB);
+			pageTagLib = new EObjectContainmentEList<Tag>(Tag.class, this, FramewebPackage.PAGE__PAGE_TAG_LIB);
 		}
 		return pageTagLib;
 	}
@@ -117,7 +117,7 @@ public class PageImpl extends NavigationClassImpl implements Page {
 	 */
 	public EList<TagLib> getMention() {
 		if (mention == null) {
-			mention = new EObjectResolvingEList<TagLib>(TagLib.class, this, FrameWebPackage.PAGE__MENTION);
+			mention = new EObjectResolvingEList<TagLib>(TagLib.class, this, FramewebPackage.PAGE__MENTION);
 		}
 		return mention;
 	}
@@ -130,9 +130,9 @@ public class PageImpl extends NavigationClassImpl implements Page {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FrameWebPackage.PAGE__PAGE_CLASS_ATTRIBUTE:
+			case FramewebPackage.PAGE__PAGE_CLASS_ATTRIBUTE:
 				return ((InternalEList<?>)getPageClassAttribute()).basicRemove(otherEnd, msgs);
-			case FrameWebPackage.PAGE__PAGE_TAG_LIB:
+			case FramewebPackage.PAGE__PAGE_TAG_LIB:
 				return ((InternalEList<?>)getPageTagLib()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -146,11 +146,11 @@ public class PageImpl extends NavigationClassImpl implements Page {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.PAGE__PAGE_CLASS_ATTRIBUTE:
+			case FramewebPackage.PAGE__PAGE_CLASS_ATTRIBUTE:
 				return getPageClassAttribute();
-			case FrameWebPackage.PAGE__PAGE_TAG_LIB:
+			case FramewebPackage.PAGE__PAGE_TAG_LIB:
 				return getPageTagLib();
-			case FrameWebPackage.PAGE__MENTION:
+			case FramewebPackage.PAGE__MENTION:
 				return getMention();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -165,15 +165,15 @@ public class PageImpl extends NavigationClassImpl implements Page {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.PAGE__PAGE_CLASS_ATTRIBUTE:
+			case FramewebPackage.PAGE__PAGE_CLASS_ATTRIBUTE:
 				getPageClassAttribute().clear();
 				getPageClassAttribute().addAll((Collection<? extends UserViewAttribute>)newValue);
 				return;
-			case FrameWebPackage.PAGE__PAGE_TAG_LIB:
+			case FramewebPackage.PAGE__PAGE_TAG_LIB:
 				getPageTagLib().clear();
 				getPageTagLib().addAll((Collection<? extends Tag>)newValue);
 				return;
-			case FrameWebPackage.PAGE__MENTION:
+			case FramewebPackage.PAGE__MENTION:
 				getMention().clear();
 				getMention().addAll((Collection<? extends TagLib>)newValue);
 				return;
@@ -189,13 +189,13 @@ public class PageImpl extends NavigationClassImpl implements Page {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.PAGE__PAGE_CLASS_ATTRIBUTE:
+			case FramewebPackage.PAGE__PAGE_CLASS_ATTRIBUTE:
 				getPageClassAttribute().clear();
 				return;
-			case FrameWebPackage.PAGE__PAGE_TAG_LIB:
+			case FramewebPackage.PAGE__PAGE_TAG_LIB:
 				getPageTagLib().clear();
 				return;
-			case FrameWebPackage.PAGE__MENTION:
+			case FramewebPackage.PAGE__MENTION:
 				getMention().clear();
 				return;
 		}
@@ -210,11 +210,11 @@ public class PageImpl extends NavigationClassImpl implements Page {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.PAGE__PAGE_CLASS_ATTRIBUTE:
+			case FramewebPackage.PAGE__PAGE_CLASS_ATTRIBUTE:
 				return pageClassAttribute != null && !pageClassAttribute.isEmpty();
-			case FrameWebPackage.PAGE__PAGE_TAG_LIB:
+			case FramewebPackage.PAGE__PAGE_TAG_LIB:
 				return pageTagLib != null && !pageTagLib.isEmpty();
-			case FrameWebPackage.PAGE__MENTION:
+			case FramewebPackage.PAGE__MENTION:
 				return mention != null && !mention.isEmpty();
 		}
 		return super.eIsSet(featureID);

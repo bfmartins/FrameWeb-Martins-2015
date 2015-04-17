@@ -4,8 +4,8 @@ package frameweb.provider;
 
 
 import frameweb.DAOInterface;
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -71,7 +71,7 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DAOInterface_DAOInterfaceName_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DAOInterface_DAOInterfaceName_feature", "_UI_DAOInterface_type"),
-				 FrameWebPackage.Literals.DAO_INTERFACE__DAO_INTERFACE_NAME,
+				 FramewebPackage.Literals.DAO_INTERFACE__DAO_INTERFACE_NAME,
 				 true,
 				 false,
 				 true,
@@ -92,9 +92,9 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.DAO_INTERFACE__OWN_BASE_OPERATION);
-			childrenFeatures.add(FrameWebPackage.Literals.DAO_INTERFACE__OWN_OPERATION);
-			childrenFeatures.add(FrameWebPackage.Literals.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE);
+			childrenFeatures.add(FramewebPackage.Literals.DAO_INTERFACE__OWN_BASE_OPERATION);
+			childrenFeatures.add(FramewebPackage.Literals.DAO_INTERFACE__OWN_OPERATION);
+			childrenFeatures.add(FramewebPackage.Literals.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE);
 		}
 		return childrenFeatures;
 	}
@@ -150,9 +150,9 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(DAOInterface.class)) {
-			case FrameWebPackage.DAO_INTERFACE__OWN_BASE_OPERATION:
-			case FrameWebPackage.DAO_INTERFACE__OWN_OPERATION:
-			case FrameWebPackage.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE:
+			case FramewebPackage.DAO_INTERFACE__OWN_BASE_OPERATION:
+			case FramewebPackage.DAO_INTERFACE__OWN_OPERATION:
+			case FramewebPackage.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -172,18 +172,18 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.DAO_INTERFACE__OWN_BASE_OPERATION,
-				 FrameWebFactory.eINSTANCE.createDAOBaseOperation()));
+				(FramewebPackage.Literals.DAO_INTERFACE__OWN_BASE_OPERATION,
+				 FramewebFactory.eINSTANCE.createDAOBaseOperation()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.DAO_INTERFACE__OWN_OPERATION,
-				 FrameWebFactory.eINSTANCE.createDAOOperation()));
+				(FramewebPackage.Literals.DAO_INTERFACE__OWN_OPERATION,
+				 FramewebFactory.eINSTANCE.createDAOOperation()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createDAOAttribute()));
+				(FramewebPackage.Literals.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createDAOAttribute()));
 	}
 
 	/**
@@ -202,9 +202,9 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 			childFeature == Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER ||
 			childFeature == Uml2Package.Literals.INTERFACE__PROTOCOL ||
 			childFeature == Uml2Package.Literals.INTERFACE__OWNED_ATTRIBUTE ||
-			childFeature == FrameWebPackage.Literals.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE ||
+			childFeature == FramewebPackage.Literals.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE ||
 			childFeature == Uml2Package.Literals.INTERFACE__OWNED_OPERATION ||
-			childFeature == FrameWebPackage.Literals.DAO_INTERFACE__OWN_OPERATION;
+			childFeature == FramewebPackage.Literals.DAO_INTERFACE__OWN_OPERATION;
 
 		if (qualify) {
 			return getString

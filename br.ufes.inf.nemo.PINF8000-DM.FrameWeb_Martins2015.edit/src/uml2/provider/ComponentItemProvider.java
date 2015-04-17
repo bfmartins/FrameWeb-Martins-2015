@@ -3,7 +3,7 @@
 package uml2.provider;
 
 
-import frameweb.FrameWebFactory;
+import frameweb.FramewebFactory;
 
 import java.util.Collection;
 import java.util.List;
@@ -567,162 +567,157 @@ public class ComponentItemProvider extends ClassItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createMappedClass()));
+				 FramewebFactory.eINSTANCE.createMappedClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createPersistentClass()));
+				 FramewebFactory.eINSTANCE.createPersistentClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createTransientClass()));
+				 FramewebFactory.eINSTANCE.createTransientClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createFramework()));
+				 FramewebFactory.eINSTANCE.createFramework()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDomainModel()));
+				 FramewebFactory.eINSTANCE.createDomainModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createNavigationModel()));
+				 FramewebFactory.eINSTANCE.createNavigationModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createApplicationModel()));
+				 FramewebFactory.eINSTANCE.createApplicationModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createPersistenceModel()));
+				 FramewebFactory.eINSTANCE.createPersistenceModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDomainAssociation()));
+				 FramewebFactory.eINSTANCE.createDomainAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createPage()));
+				 FramewebFactory.eINSTANCE.createPage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createTemplate()));
+				 FramewebFactory.eINSTANCE.createTemplate()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createForm()));
+				 FramewebFactory.eINSTANCE.createForm()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createBinary()));
+				 FramewebFactory.eINSTANCE.createBinary()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDAOInterface()));
+				 FramewebFactory.eINSTANCE.createDAOInterface()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDAOClass()));
+				 FramewebFactory.eINSTANCE.createDAOClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createResultDependency()));
+				 FramewebFactory.eINSTANCE.createResultDependency()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createNavigationComposition()));
+				 FramewebFactory.eINSTANCE.createNavigationComposition()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createServiceClass()));
+				 FramewebFactory.eINSTANCE.createServiceClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createServiceInterface()));
+				 FramewebFactory.eINSTANCE.createServiceInterface()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createServiceAssociation()));
+				 FramewebFactory.eINSTANCE.createServiceNavigationAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createServiceNavigationAssociation()));
+				 FramewebFactory.eINSTANCE.createFrontControllerDependence()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createFrontControllerDependence()));
+				 FramewebFactory.eINSTANCE.createPageDependence()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createPageDependence()));
+				 FramewebFactory.eINSTANCE.createChainingDependence()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createChainingDependence()));
+				 FramewebFactory.eINSTANCE.createDAOServiceAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDAOServiceAssociation()));
+				 FramewebFactory.eINSTANCE.createDomainPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDomainPackage()));
+				 FramewebFactory.eINSTANCE.createViewPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createViewPackage()));
+				 FramewebFactory.eINSTANCE.createControllerPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createControllerPackage()));
+				 FramewebFactory.eINSTANCE.createPersistencePackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createPersistencePackage()));
+				 FramewebFactory.eINSTANCE.createApplicationPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createApplicationPackage()));
+				 FramewebFactory.eINSTANCE.createComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createComponent()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.COMPONENT__PACKAGED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createJQuery()));
+				 FramewebFactory.eINSTANCE.createJQuery()));
 
 		newChildDescriptors.add
 			(createChildParameter

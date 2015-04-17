@@ -4,7 +4,7 @@ package frameweb.provider;
 
 
 import frameweb.DAOGeneralization;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -66,7 +66,7 @@ public class DAOGeneralizationItemProvider extends GeneralizationItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DAOGeneralization_TargetDAOClass_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DAOGeneralization_TargetDAOClass_feature", "_UI_DAOGeneralization_type"),
-				 FrameWebPackage.Literals.DAO_GENERALIZATION__TARGET_DAO_CLASS,
+				 FramewebPackage.Literals.DAO_GENERALIZATION__TARGET_DAO_CLASS,
 				 true,
 				 false,
 				 true,
@@ -88,7 +88,7 @@ public class DAOGeneralizationItemProvider extends GeneralizationItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DAOGeneralization_SourceDAOInterface_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DAOGeneralization_SourceDAOInterface_feature", "_UI_DAOGeneralization_type"),
-				 FrameWebPackage.Literals.DAO_GENERALIZATION__SOURCE_DAO_INTERFACE,
+				 FramewebPackage.Literals.DAO_GENERALIZATION__SOURCE_DAO_INTERFACE,
 				 true,
 				 false,
 				 true,

@@ -20,7 +20,7 @@ import uml2.Association;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getNavigationComposition()
+ * @see frameweb.FramewebPackage#getNavigationComposition()
  * @model
  * @generated
  */
@@ -35,7 +35,7 @@ public interface NavigationComposition extends Association {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Template</em>' reference.
 	 * @see #setSourceTemplate(Template)
-	 * @see frameweb.FrameWebPackage#getNavigationComposition_SourceTemplate()
+	 * @see frameweb.FramewebPackage#getNavigationComposition_SourceTemplate()
 	 * @model
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface NavigationComposition extends Association {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Page</em>' reference.
 	 * @see #setSourcePage(Page)
-	 * @see frameweb.FrameWebPackage#getNavigationComposition_SourcePage()
+	 * @see frameweb.FramewebPackage#getNavigationComposition_SourcePage()
 	 * @model
 	 * @generated
 	 */
@@ -87,7 +87,7 @@ public interface NavigationComposition extends Association {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Form</em>' reference.
 	 * @see #setTargetForm(Form)
-	 * @see frameweb.FrameWebPackage#getNavigationComposition_TargetForm()
+	 * @see frameweb.FramewebPackage#getNavigationComposition_TargetForm()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -113,7 +113,7 @@ public interface NavigationComposition extends Association {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Component</em>' reference.
 	 * @see #setTargetComponent(Component)
-	 * @see frameweb.FrameWebPackage#getNavigationComposition_TargetComponent()
+	 * @see frameweb.FramewebPackage#getNavigationComposition_TargetComponent()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -139,7 +139,7 @@ public interface NavigationComposition extends Association {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target JQuery</em>' reference.
 	 * @see #setTargetJQuery(JQuery)
-	 * @see frameweb.FrameWebPackage#getNavigationComposition_TargetJQuery()
+	 * @see frameweb.FramewebPackage#getNavigationComposition_TargetJQuery()
 	 * @model required="true"
 	 * @generated
 	 */

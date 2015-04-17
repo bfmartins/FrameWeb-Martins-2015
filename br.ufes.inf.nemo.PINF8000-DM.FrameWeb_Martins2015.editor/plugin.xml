@@ -12,28 +12,28 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="frameweb.presentation.FrameWebModelWizardID"
-            name="%_UI_FrameWebModelWizard_label"
-            class="frameweb.presentation.FrameWebModelWizard"
+            id="frameweb.presentation.FramewebModelWizardID"
+            name="%_UI_FramewebModelWizard_label"
+            class="frameweb.presentation.FramewebModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/FrameWebModelFile.gif">
-         <description>%_UI_FrameWebModelWizard_description</description>
+            icon="icons/full/obj16/FramewebModelFile.gif">
+         <description>%_UI_FramewebModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
       </wizard>
    </extension>
 
+
    <extension point="org.eclipse.ui.editors">
       <!-- @generated FrameWeb -->
       <editor
-            id="frameweb.presentation.FrameWebEditorID"
-            name="%_UI_FrameWebEditor_label"
-            icon="icons/full/obj16/FrameWebModelFile.gif"
+            id="frameweb.presentation.FramewebEditorID"
+            name="%_UI_FramewebEditor_label"
+            icon="icons/full/obj16/FramewebModelFile.gif"
             extensions="frameweb"
-            class="frameweb.presentation.FrameWebEditor"
-            contributorClass="frameweb.presentation.FrameWebActionBarContributor">
+            class="frameweb.presentation.FramewebEditor"
+            contributorClass="frameweb.presentation.FramewebActionBarContributor">
       </editor>
    </extension>
-
    <extension point="org.eclipse.ui.newWizards">
       <!-- @generated FrameWeb -->
       <category

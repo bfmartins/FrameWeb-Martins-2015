@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.Template;
 import frameweb.UserViewAttribute;
 
@@ -58,7 +58,7 @@ public class TemplateImpl extends NavigationClassImpl implements Template {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.TEMPLATE;
+		return FramewebPackage.Literals.TEMPLATE;
 	}
 
 	/**
@@ -68,7 +68,7 @@ public class TemplateImpl extends NavigationClassImpl implements Template {
 	 */
 	public EList<UserViewAttribute> getTemplateClassAttribute() {
 		if (templateClassAttribute == null) {
-			templateClassAttribute = new EObjectContainmentEList<UserViewAttribute>(UserViewAttribute.class, this, FrameWebPackage.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE);
+			templateClassAttribute = new EObjectContainmentEList<UserViewAttribute>(UserViewAttribute.class, this, FramewebPackage.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE);
 		}
 		return templateClassAttribute;
 	}
@@ -81,7 +81,7 @@ public class TemplateImpl extends NavigationClassImpl implements Template {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FrameWebPackage.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE:
+			case FramewebPackage.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE:
 				return ((InternalEList<?>)getTemplateClassAttribute()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -95,7 +95,7 @@ public class TemplateImpl extends NavigationClassImpl implements Template {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE:
+			case FramewebPackage.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE:
 				return getTemplateClassAttribute();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -110,7 +110,7 @@ public class TemplateImpl extends NavigationClassImpl implements Template {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE:
+			case FramewebPackage.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE:
 				getTemplateClassAttribute().clear();
 				getTemplateClassAttribute().addAll((Collection<? extends UserViewAttribute>)newValue);
 				return;
@@ -126,7 +126,7 @@ public class TemplateImpl extends NavigationClassImpl implements Template {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE:
+			case FramewebPackage.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE:
 				getTemplateClassAttribute().clear();
 				return;
 		}
@@ -141,7 +141,7 @@ public class TemplateImpl extends NavigationClassImpl implements Template {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE:
+			case FramewebPackage.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE:
 				return templateClassAttribute != null && !templateClassAttribute.isEmpty();
 		}
 		return super.eIsSet(featureID);

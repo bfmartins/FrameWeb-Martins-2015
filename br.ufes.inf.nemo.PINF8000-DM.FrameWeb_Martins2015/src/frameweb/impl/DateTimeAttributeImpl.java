@@ -4,7 +4,7 @@ package frameweb.impl;
 
 import frameweb.DateTimeAttribute;
 import frameweb.DateTimePrecision;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -62,7 +62,7 @@ public class DateTimeAttributeImpl extends DomainAttributeImpl implements DateTi
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.DATE_TIME_ATTRIBUTE;
+		return FramewebPackage.Literals.DATE_TIME_ATTRIBUTE;
 	}
 
 	/**
@@ -83,7 +83,7 @@ public class DateTimeAttributeImpl extends DomainAttributeImpl implements DateTi
 		DateTimePrecision oldDateTimePrecision = dateTimePrecision;
 		dateTimePrecision = newDateTimePrecision == null ? DATE_TIME_PRECISION_EDEFAULT : newDateTimePrecision;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DATE_TIME_ATTRIBUTE__DATE_TIME_PRECISION, oldDateTimePrecision, dateTimePrecision));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DATE_TIME_ATTRIBUTE__DATE_TIME_PRECISION, oldDateTimePrecision, dateTimePrecision));
 	}
 
 	/**
@@ -94,7 +94,7 @@ public class DateTimeAttributeImpl extends DomainAttributeImpl implements DateTi
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.DATE_TIME_ATTRIBUTE__DATE_TIME_PRECISION:
+			case FramewebPackage.DATE_TIME_ATTRIBUTE__DATE_TIME_PRECISION:
 				return getDateTimePrecision();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -108,7 +108,7 @@ public class DateTimeAttributeImpl extends DomainAttributeImpl implements DateTi
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.DATE_TIME_ATTRIBUTE__DATE_TIME_PRECISION:
+			case FramewebPackage.DATE_TIME_ATTRIBUTE__DATE_TIME_PRECISION:
 				setDateTimePrecision((DateTimePrecision)newValue);
 				return;
 		}
@@ -123,7 +123,7 @@ public class DateTimeAttributeImpl extends DomainAttributeImpl implements DateTi
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DATE_TIME_ATTRIBUTE__DATE_TIME_PRECISION:
+			case FramewebPackage.DATE_TIME_ATTRIBUTE__DATE_TIME_PRECISION:
 				setDateTimePrecision(DATE_TIME_PRECISION_EDEFAULT);
 				return;
 		}
@@ -138,7 +138,7 @@ public class DateTimeAttributeImpl extends DomainAttributeImpl implements DateTi
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DATE_TIME_ATTRIBUTE__DATE_TIME_PRECISION:
+			case FramewebPackage.DATE_TIME_ATTRIBUTE__DATE_TIME_PRECISION:
 				return dateTimePrecision != DATE_TIME_PRECISION_EDEFAULT;
 		}
 		return super.eIsSet(featureID);

@@ -3,7 +3,7 @@
 package uml2.provider;
 
 
-import frameweb.FrameWebFactory;
+import frameweb.FramewebFactory;
 
 import java.util.Collection;
 import java.util.List;
@@ -567,247 +567,237 @@ public class TemplateParameterItemProvider extends ElementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createMappedClass()));
+				 FramewebFactory.eINSTANCE.createMappedClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createPersistentClass()));
+				 FramewebFactory.eINSTANCE.createPersistentClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createTransientClass()));
+				 FramewebFactory.eINSTANCE.createTransientClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createFramework()));
+				 FramewebFactory.eINSTANCE.createFramework()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createDomainModel()));
+				 FramewebFactory.eINSTANCE.createDomainModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createNavigationModel()));
+				 FramewebFactory.eINSTANCE.createNavigationModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createApplicationModel()));
+				 FramewebFactory.eINSTANCE.createApplicationModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createPersistenceModel()));
+				 FramewebFactory.eINSTANCE.createPersistenceModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createDomainAssociation()));
+				 FramewebFactory.eINSTANCE.createDomainAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createDomainAttribute()));
+				 FramewebFactory.eINSTANCE.createVersionAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createVersionAttribute()));
+				 FramewebFactory.eINSTANCE.createIdAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createIdAttribute()));
+				 FramewebFactory.eINSTANCE.createLOBAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createLOBAttribute()));
+				 FramewebFactory.eINSTANCE.createEmbeddedAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createEmbeddedAttribute()));
+				 FramewebFactory.eINSTANCE.createDecimalAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createDecimalAttribute()));
+				 FramewebFactory.eINSTANCE.createDateTimeAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createDateTimeAttribute()));
+				 FramewebFactory.eINSTANCE.createPage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createPage()));
+				 FramewebFactory.eINSTANCE.createTemplate()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createTemplate()));
+				 FramewebFactory.eINSTANCE.createForm()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createForm()));
+				 FramewebFactory.eINSTANCE.createBinary()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createBinary()));
+				 FramewebFactory.eINSTANCE.createDAOInterface()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createDAOInterface()));
+				 FramewebFactory.eINSTANCE.createDAOClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createDAOClass()));
+				 FramewebFactory.eINSTANCE.createUserViewAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createUserViewAttribute()));
+				 FramewebFactory.eINSTANCE.createIOParameter()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createIOParameter()));
+				 FramewebFactory.eINSTANCE.createResultDependency()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createResultDependency()));
+				 FramewebFactory.eINSTANCE.createNavigationComposition()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createNavigationComposition()));
+				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createFrontControllerMethod()));
+				 FramewebFactory.eINSTANCE.createServiceClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createServiceClass()));
+				 FramewebFactory.eINSTANCE.createServiceInterface()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createServiceInterface()));
+				 FramewebFactory.eINSTANCE.createServiceNavigationAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createServiceAssociation()));
+				 FramewebFactory.eINSTANCE.createBinaryAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createServiceNavigationAssociation()));
+				 FramewebFactory.eINSTANCE.createFrontControllerDependence()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createBinaryAttribute()));
+				 FramewebFactory.eINSTANCE.createPageDependence()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createFrontControllerDependence()));
+				 FramewebFactory.eINSTANCE.createChainingDependence()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createPageDependence()));
+				 FramewebFactory.eINSTANCE.createDAOServiceAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createChainingDependence()));
+				 FramewebFactory.eINSTANCE.createDomainOperation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createDAOServiceAssociation()));
+				 FramewebFactory.eINSTANCE.createDAOAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createDomainOperation()));
+				 FramewebFactory.eINSTANCE.createServiceOperation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createDAOAttribute()));
+				 FramewebFactory.eINSTANCE.createServiceAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createServiceOperation()));
+				 FramewebFactory.eINSTANCE.createDAOOperation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createServiceAttribute()));
+				 FramewebFactory.eINSTANCE.createDomainPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createDAOOperation()));
+				 FramewebFactory.eINSTANCE.createViewPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createDomainPackage()));
+				 FramewebFactory.eINSTANCE.createControllerPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createViewPackage()));
+				 FramewebFactory.eINSTANCE.createPersistencePackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createControllerPackage()));
+				 FramewebFactory.eINSTANCE.createApplicationPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createPersistencePackage()));
+				 FramewebFactory.eINSTANCE.createComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createApplicationPackage()));
+				 FramewebFactory.eINSTANCE.createJQuery()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createComponent()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createJQuery()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_DEFAULT,
-				 FrameWebFactory.eINSTANCE.createFormComponent()));
+				 FramewebFactory.eINSTANCE.createFormComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -1192,247 +1182,237 @@ public class TemplateParameterItemProvider extends ElementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createMappedClass()));
+				 FramewebFactory.eINSTANCE.createMappedClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createPersistentClass()));
+				 FramewebFactory.eINSTANCE.createPersistentClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createTransientClass()));
+				 FramewebFactory.eINSTANCE.createTransientClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createFramework()));
+				 FramewebFactory.eINSTANCE.createFramework()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDomainModel()));
+				 FramewebFactory.eINSTANCE.createDomainModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createNavigationModel()));
+				 FramewebFactory.eINSTANCE.createNavigationModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createApplicationModel()));
+				 FramewebFactory.eINSTANCE.createApplicationModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createPersistenceModel()));
+				 FramewebFactory.eINSTANCE.createPersistenceModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDomainAssociation()));
+				 FramewebFactory.eINSTANCE.createDomainAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDomainAttribute()));
+				 FramewebFactory.eINSTANCE.createVersionAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createVersionAttribute()));
+				 FramewebFactory.eINSTANCE.createIdAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createIdAttribute()));
+				 FramewebFactory.eINSTANCE.createLOBAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createLOBAttribute()));
+				 FramewebFactory.eINSTANCE.createEmbeddedAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createEmbeddedAttribute()));
+				 FramewebFactory.eINSTANCE.createDecimalAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDecimalAttribute()));
+				 FramewebFactory.eINSTANCE.createDateTimeAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDateTimeAttribute()));
+				 FramewebFactory.eINSTANCE.createPage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createPage()));
+				 FramewebFactory.eINSTANCE.createTemplate()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createTemplate()));
+				 FramewebFactory.eINSTANCE.createForm()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createForm()));
+				 FramewebFactory.eINSTANCE.createBinary()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createBinary()));
+				 FramewebFactory.eINSTANCE.createDAOInterface()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDAOInterface()));
+				 FramewebFactory.eINSTANCE.createDAOClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDAOClass()));
+				 FramewebFactory.eINSTANCE.createUserViewAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createUserViewAttribute()));
+				 FramewebFactory.eINSTANCE.createIOParameter()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createIOParameter()));
+				 FramewebFactory.eINSTANCE.createResultDependency()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createResultDependency()));
+				 FramewebFactory.eINSTANCE.createNavigationComposition()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createNavigationComposition()));
+				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createFrontControllerMethod()));
+				 FramewebFactory.eINSTANCE.createServiceClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createServiceClass()));
+				 FramewebFactory.eINSTANCE.createServiceInterface()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createServiceInterface()));
+				 FramewebFactory.eINSTANCE.createServiceNavigationAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createServiceAssociation()));
+				 FramewebFactory.eINSTANCE.createBinaryAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createServiceNavigationAssociation()));
+				 FramewebFactory.eINSTANCE.createFrontControllerDependence()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createBinaryAttribute()));
+				 FramewebFactory.eINSTANCE.createPageDependence()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createFrontControllerDependence()));
+				 FramewebFactory.eINSTANCE.createChainingDependence()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createPageDependence()));
+				 FramewebFactory.eINSTANCE.createDAOServiceAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createChainingDependence()));
+				 FramewebFactory.eINSTANCE.createDomainOperation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDAOServiceAssociation()));
+				 FramewebFactory.eINSTANCE.createDAOAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDomainOperation()));
+				 FramewebFactory.eINSTANCE.createServiceOperation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDAOAttribute()));
+				 FramewebFactory.eINSTANCE.createServiceAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createServiceOperation()));
+				 FramewebFactory.eINSTANCE.createDAOOperation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createServiceAttribute()));
+				 FramewebFactory.eINSTANCE.createDomainPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDAOOperation()));
+				 FramewebFactory.eINSTANCE.createViewPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createDomainPackage()));
+				 FramewebFactory.eINSTANCE.createControllerPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createViewPackage()));
+				 FramewebFactory.eINSTANCE.createPersistencePackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createControllerPackage()));
+				 FramewebFactory.eINSTANCE.createApplicationPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createPersistencePackage()));
+				 FramewebFactory.eINSTANCE.createComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createApplicationPackage()));
+				 FramewebFactory.eINSTANCE.createJQuery()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createComponent()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createJQuery()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER__OWNED_PARAMETERED_ELEMENT,
-				 FrameWebFactory.eINSTANCE.createFormComponent()));
+				 FramewebFactory.eINSTANCE.createFormComponent()));
 	}
 
 	/**

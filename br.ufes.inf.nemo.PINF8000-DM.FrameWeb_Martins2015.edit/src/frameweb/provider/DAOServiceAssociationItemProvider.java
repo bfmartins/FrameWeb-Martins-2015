@@ -4,7 +4,7 @@ package frameweb.provider;
 
 
 import frameweb.DAOServiceAssociation;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -62,7 +62,7 @@ public class DAOServiceAssociationItemProvider extends ServiceAssociationItemPro
 				 getResourceLocator(),
 				 getString("_UI_DAOServiceAssociation_SourceDAOClass_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DAOServiceAssociation_SourceDAOClass_feature", "_UI_DAOServiceAssociation_type"),
-				 FrameWebPackage.Literals.DAO_SERVICE_ASSOCIATION__SOURCE_DAO_CLASS,
+				 FramewebPackage.Literals.DAO_SERVICE_ASSOCIATION__SOURCE_DAO_CLASS,
 				 true,
 				 false,
 				 true,
@@ -84,7 +84,7 @@ public class DAOServiceAssociationItemProvider extends ServiceAssociationItemPro
 				 getResourceLocator(),
 				 getString("_UI_DAOServiceAssociation_TargetDAOService_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DAOServiceAssociation_TargetDAOService_feature", "_UI_DAOServiceAssociation_type"),
-				 FrameWebPackage.Literals.DAO_SERVICE_ASSOCIATION__TARGET_DAO_SERVICE,
+				 FramewebPackage.Literals.DAO_SERVICE_ASSOCIATION__TARGET_DAO_SERVICE,
 				 true,
 				 false,
 				 true,

@@ -4,7 +4,7 @@ package frameweb.impl;
 
 import frameweb.DAOInterface;
 import frameweb.DAOServiceAssociation;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.ServiceClass;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -65,7 +65,7 @@ public class DAOServiceAssociationImpl extends ServiceAssociationImpl implements
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.DAO_SERVICE_ASSOCIATION;
+		return FramewebPackage.Literals.DAO_SERVICE_ASSOCIATION;
 	}
 
 	/**
@@ -79,7 +79,7 @@ public class DAOServiceAssociationImpl extends ServiceAssociationImpl implements
 			sourceDAOClass = (DAOInterface)eResolveProxy(oldSourceDAOClass);
 			if (sourceDAOClass != oldSourceDAOClass) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DAO_SERVICE_ASSOCIATION__SOURCE_DAO_CLASS, oldSourceDAOClass, sourceDAOClass));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.DAO_SERVICE_ASSOCIATION__SOURCE_DAO_CLASS, oldSourceDAOClass, sourceDAOClass));
 			}
 		}
 		return sourceDAOClass;
@@ -103,7 +103,7 @@ public class DAOServiceAssociationImpl extends ServiceAssociationImpl implements
 		DAOInterface oldSourceDAOClass = sourceDAOClass;
 		sourceDAOClass = newSourceDAOClass;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DAO_SERVICE_ASSOCIATION__SOURCE_DAO_CLASS, oldSourceDAOClass, sourceDAOClass));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DAO_SERVICE_ASSOCIATION__SOURCE_DAO_CLASS, oldSourceDAOClass, sourceDAOClass));
 	}
 
 	/**
@@ -117,7 +117,7 @@ public class DAOServiceAssociationImpl extends ServiceAssociationImpl implements
 			targetDAOService = (ServiceClass)eResolveProxy(oldTargetDAOService);
 			if (targetDAOService != oldTargetDAOService) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DAO_SERVICE_ASSOCIATION__TARGET_DAO_SERVICE, oldTargetDAOService, targetDAOService));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.DAO_SERVICE_ASSOCIATION__TARGET_DAO_SERVICE, oldTargetDAOService, targetDAOService));
 			}
 		}
 		return targetDAOService;
@@ -141,7 +141,7 @@ public class DAOServiceAssociationImpl extends ServiceAssociationImpl implements
 		ServiceClass oldTargetDAOService = targetDAOService;
 		targetDAOService = newTargetDAOService;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DAO_SERVICE_ASSOCIATION__TARGET_DAO_SERVICE, oldTargetDAOService, targetDAOService));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DAO_SERVICE_ASSOCIATION__TARGET_DAO_SERVICE, oldTargetDAOService, targetDAOService));
 	}
 
 	/**
@@ -152,10 +152,10 @@ public class DAOServiceAssociationImpl extends ServiceAssociationImpl implements
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.DAO_SERVICE_ASSOCIATION__SOURCE_DAO_CLASS:
+			case FramewebPackage.DAO_SERVICE_ASSOCIATION__SOURCE_DAO_CLASS:
 				if (resolve) return getSourceDAOClass();
 				return basicGetSourceDAOClass();
-			case FrameWebPackage.DAO_SERVICE_ASSOCIATION__TARGET_DAO_SERVICE:
+			case FramewebPackage.DAO_SERVICE_ASSOCIATION__TARGET_DAO_SERVICE:
 				if (resolve) return getTargetDAOService();
 				return basicGetTargetDAOService();
 		}
@@ -170,10 +170,10 @@ public class DAOServiceAssociationImpl extends ServiceAssociationImpl implements
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.DAO_SERVICE_ASSOCIATION__SOURCE_DAO_CLASS:
+			case FramewebPackage.DAO_SERVICE_ASSOCIATION__SOURCE_DAO_CLASS:
 				setSourceDAOClass((DAOInterface)newValue);
 				return;
-			case FrameWebPackage.DAO_SERVICE_ASSOCIATION__TARGET_DAO_SERVICE:
+			case FramewebPackage.DAO_SERVICE_ASSOCIATION__TARGET_DAO_SERVICE:
 				setTargetDAOService((ServiceClass)newValue);
 				return;
 		}
@@ -188,10 +188,10 @@ public class DAOServiceAssociationImpl extends ServiceAssociationImpl implements
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DAO_SERVICE_ASSOCIATION__SOURCE_DAO_CLASS:
+			case FramewebPackage.DAO_SERVICE_ASSOCIATION__SOURCE_DAO_CLASS:
 				setSourceDAOClass((DAOInterface)null);
 				return;
-			case FrameWebPackage.DAO_SERVICE_ASSOCIATION__TARGET_DAO_SERVICE:
+			case FramewebPackage.DAO_SERVICE_ASSOCIATION__TARGET_DAO_SERVICE:
 				setTargetDAOService((ServiceClass)null);
 				return;
 		}
@@ -206,9 +206,9 @@ public class DAOServiceAssociationImpl extends ServiceAssociationImpl implements
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DAO_SERVICE_ASSOCIATION__SOURCE_DAO_CLASS:
+			case FramewebPackage.DAO_SERVICE_ASSOCIATION__SOURCE_DAO_CLASS:
 				return sourceDAOClass != null;
-			case FrameWebPackage.DAO_SERVICE_ASSOCIATION__TARGET_DAO_SERVICE:
+			case FramewebPackage.DAO_SERVICE_ASSOCIATION__TARGET_DAO_SERVICE:
 				return targetDAOService != null;
 		}
 		return super.eIsSet(featureID);

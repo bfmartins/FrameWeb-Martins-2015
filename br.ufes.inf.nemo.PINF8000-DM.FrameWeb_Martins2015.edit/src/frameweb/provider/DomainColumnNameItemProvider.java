@@ -4,7 +4,7 @@ package frameweb.provider;
 
 
 import frameweb.DomainColumnName;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -64,7 +64,7 @@ public class DomainColumnNameItemProvider extends FrameWebNameItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DomainColumnName_fwName_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainColumnName_fwName_feature", "_UI_DomainColumnName_type"),
-				 FrameWebPackage.Literals.DOMAIN_COLUMN_NAME__FW_NAME,
+				 FramewebPackage.Literals.DOMAIN_COLUMN_NAME__FW_NAME,
 				 true,
 				 false,
 				 false,
@@ -86,7 +86,7 @@ public class DomainColumnNameItemProvider extends FrameWebNameItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DomainColumnName_DomainAttributeName_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainColumnName_DomainAttributeName_feature", "_UI_DomainColumnName_type"),
-				 FrameWebPackage.Literals.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME,
+				 FramewebPackage.Literals.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME,
 				 true,
 				 false,
 				 true,
@@ -133,7 +133,7 @@ public class DomainColumnNameItemProvider extends FrameWebNameItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(DomainColumnName.class)) {
-			case FrameWebPackage.DOMAIN_COLUMN_NAME__FW_NAME:
+			case FramewebPackage.DOMAIN_COLUMN_NAME__FW_NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

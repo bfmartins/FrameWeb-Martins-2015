@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getDAOBaseOperation()
+ * @see frameweb.FramewebPackage#getDAOBaseOperation()
  * @model
  * @generated
  */
@@ -33,7 +33,7 @@ public interface DAOBaseOperation extends EObject {
 	 * @return the value of the '<em>DA Obase Operation Name</em>' attribute.
 	 * @see frameweb.DAOBaseOperationList
 	 * @see #setDAObaseOperationName(DAOBaseOperationList)
-	 * @see frameweb.FrameWebPackage#getDAOBaseOperation_DAObaseOperationName()
+	 * @see frameweb.FramewebPackage#getDAOBaseOperation_DAObaseOperationName()
 	 * @model
 	 * @generated
 	 */

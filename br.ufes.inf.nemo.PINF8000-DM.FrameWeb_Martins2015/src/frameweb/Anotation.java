@@ -10,7 +10,7 @@ import org.eclipse.emf.ecore.EObject;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.FrameWebPackage#getAnotation()
+ * @see frameweb.FramewebPackage#getAnotation()
  * @model
  * @generated
  */

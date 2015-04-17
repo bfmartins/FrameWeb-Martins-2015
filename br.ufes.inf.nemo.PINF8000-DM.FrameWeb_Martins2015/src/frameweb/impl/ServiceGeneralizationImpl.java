@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.ServiceClass;
 import frameweb.ServiceGeneralization;
 import frameweb.ServiceInterface;
@@ -67,7 +67,7 @@ public class ServiceGeneralizationImpl extends GeneralizationImpl implements Ser
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.SERVICE_GENERALIZATION;
+		return FramewebPackage.Literals.SERVICE_GENERALIZATION;
 	}
 
 	/**
@@ -81,7 +81,7 @@ public class ServiceGeneralizationImpl extends GeneralizationImpl implements Ser
 			sourceServiceInterface = (ServiceInterface)eResolveProxy(oldSourceServiceInterface);
 			if (sourceServiceInterface != oldSourceServiceInterface) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.SERVICE_GENERALIZATION__SOURCE_SERVICE_INTERFACE, oldSourceServiceInterface, sourceServiceInterface));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.SERVICE_GENERALIZATION__SOURCE_SERVICE_INTERFACE, oldSourceServiceInterface, sourceServiceInterface));
 			}
 		}
 		return sourceServiceInterface;
@@ -105,7 +105,7 @@ public class ServiceGeneralizationImpl extends GeneralizationImpl implements Ser
 		ServiceInterface oldSourceServiceInterface = sourceServiceInterface;
 		sourceServiceInterface = newSourceServiceInterface;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.SERVICE_GENERALIZATION__SOURCE_SERVICE_INTERFACE, oldSourceServiceInterface, sourceServiceInterface));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.SERVICE_GENERALIZATION__SOURCE_SERVICE_INTERFACE, oldSourceServiceInterface, sourceServiceInterface));
 	}
 
 	/**
@@ -119,7 +119,7 @@ public class ServiceGeneralizationImpl extends GeneralizationImpl implements Ser
 			targetServiceClass = (ServiceClass)eResolveProxy(oldTargetServiceClass);
 			if (targetServiceClass != oldTargetServiceClass) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS, oldTargetServiceClass, targetServiceClass));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS, oldTargetServiceClass, targetServiceClass));
 			}
 		}
 		return targetServiceClass;
@@ -143,7 +143,7 @@ public class ServiceGeneralizationImpl extends GeneralizationImpl implements Ser
 		ServiceClass oldTargetServiceClass = targetServiceClass;
 		targetServiceClass = newTargetServiceClass;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS, oldTargetServiceClass, targetServiceClass));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS, oldTargetServiceClass, targetServiceClass));
 	}
 
 	/**
@@ -154,10 +154,10 @@ public class ServiceGeneralizationImpl extends GeneralizationImpl implements Ser
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.SERVICE_GENERALIZATION__SOURCE_SERVICE_INTERFACE:
+			case FramewebPackage.SERVICE_GENERALIZATION__SOURCE_SERVICE_INTERFACE:
 				if (resolve) return getSourceServiceInterface();
 				return basicGetSourceServiceInterface();
-			case FrameWebPackage.SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS:
+			case FramewebPackage.SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS:
 				if (resolve) return getTargetServiceClass();
 				return basicGetTargetServiceClass();
 		}
@@ -172,10 +172,10 @@ public class ServiceGeneralizationImpl extends GeneralizationImpl implements Ser
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.SERVICE_GENERALIZATION__SOURCE_SERVICE_INTERFACE:
+			case FramewebPackage.SERVICE_GENERALIZATION__SOURCE_SERVICE_INTERFACE:
 				setSourceServiceInterface((ServiceInterface)newValue);
 				return;
-			case FrameWebPackage.SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS:
+			case FramewebPackage.SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS:
 				setTargetServiceClass((ServiceClass)newValue);
 				return;
 		}
@@ -190,10 +190,10 @@ public class ServiceGeneralizationImpl extends GeneralizationImpl implements Ser
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.SERVICE_GENERALIZATION__SOURCE_SERVICE_INTERFACE:
+			case FramewebPackage.SERVICE_GENERALIZATION__SOURCE_SERVICE_INTERFACE:
 				setSourceServiceInterface((ServiceInterface)null);
 				return;
-			case FrameWebPackage.SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS:
+			case FramewebPackage.SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS:
 				setTargetServiceClass((ServiceClass)null);
 				return;
 		}
@@ -208,9 +208,9 @@ public class ServiceGeneralizationImpl extends GeneralizationImpl implements Ser
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.SERVICE_GENERALIZATION__SOURCE_SERVICE_INTERFACE:
+			case FramewebPackage.SERVICE_GENERALIZATION__SOURCE_SERVICE_INTERFACE:
 				return sourceServiceInterface != null;
-			case FrameWebPackage.SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS:
+			case FramewebPackage.SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS:
 				return targetServiceClass != null;
 		}
 		return super.eIsSet(featureID);

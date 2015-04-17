@@ -16,7 +16,7 @@ package frameweb;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getServiceNavigationAssociation()
+ * @see frameweb.FramewebPackage#getServiceNavigationAssociation()
  * @model
  * @generated
  */
@@ -31,7 +31,7 @@ public interface ServiceNavigationAssociation extends ServiceAssociation {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Service Class</em>' reference.
 	 * @see #setSourceServiceClass(ServiceInterface)
-	 * @see frameweb.FrameWebPackage#getServiceNavigationAssociation_SourceServiceClass()
+	 * @see frameweb.FramewebPackage#getServiceNavigationAssociation_SourceServiceClass()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -57,7 +57,7 @@ public interface ServiceNavigationAssociation extends ServiceAssociation {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Front Controller</em>' reference.
 	 * @see #setTargetFrontController(FrontControllerClass)
-	 * @see frameweb.FrameWebPackage#getServiceNavigationAssociation_TargetFrontController()
+	 * @see frameweb.FramewebPackage#getServiceNavigationAssociation_TargetFrontController()
 	 * @model required="true"
 	 * @generated
 	 */

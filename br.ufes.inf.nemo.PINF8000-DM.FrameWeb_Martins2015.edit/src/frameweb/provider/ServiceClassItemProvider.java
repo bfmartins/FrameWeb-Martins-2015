@@ -3,8 +3,8 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 import frameweb.ServiceClass;
 
 import java.util.Collection;
@@ -68,8 +68,8 @@ public class ServiceClassItemProvider extends ClassItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE);
-			childrenFeatures.add(FrameWebPackage.Literals.SERVICE_CLASS__SERVICE_CLASS_OPERATION);
+			childrenFeatures.add(FramewebPackage.Literals.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE);
+			childrenFeatures.add(FramewebPackage.Literals.SERVICE_CLASS__SERVICE_CLASS_OPERATION);
 		}
 		return childrenFeatures;
 	}
@@ -125,8 +125,8 @@ public class ServiceClassItemProvider extends ClassItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(ServiceClass.class)) {
-			case FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE:
-			case FrameWebPackage.SERVICE_CLASS__SERVICE_CLASS_OPERATION:
+			case FramewebPackage.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE:
+			case FramewebPackage.SERVICE_CLASS__SERVICE_CLASS_OPERATION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -146,13 +146,13 @@ public class ServiceClassItemProvider extends ClassItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createServiceAttribute()));
+				(FramewebPackage.Literals.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createServiceAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.SERVICE_CLASS__SERVICE_CLASS_OPERATION,
-				 FrameWebFactory.eINSTANCE.createServiceOperation()));
+				(FramewebPackage.Literals.SERVICE_CLASS__SERVICE_CLASS_OPERATION,
+				 FramewebFactory.eINSTANCE.createServiceOperation()));
 	}
 
 	/**
@@ -170,10 +170,10 @@ public class ServiceClassItemProvider extends ClassItemProvider {
 			childFeature == Uml2Package.Literals.CLASSIFIER__OWNED_USE_CASE ||
 			childFeature == Uml2Package.Literals.CLASS__NESTED_CLASSIFIER ||
 			childFeature == Uml2Package.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
-			childFeature == FrameWebPackage.Literals.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE ||
+			childFeature == FramewebPackage.Literals.SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE ||
 			childFeature == Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR ||
 			childFeature == Uml2Package.Literals.CLASS__OWNED_OPERATION ||
-			childFeature == FrameWebPackage.Literals.SERVICE_CLASS__SERVICE_CLASS_OPERATION;
+			childFeature == FramewebPackage.Literals.SERVICE_CLASS__SERVICE_CLASS_OPERATION;
 
 		if (qualify) {
 			return getString

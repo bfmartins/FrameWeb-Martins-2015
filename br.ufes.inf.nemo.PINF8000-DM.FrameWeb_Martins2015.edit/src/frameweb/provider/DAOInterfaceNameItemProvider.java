@@ -5,7 +5,7 @@ package frameweb.provider;
 
 import frameweb.ConstantNameList;
 import frameweb.DAOInterfaceName;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -63,7 +63,7 @@ public class DAOInterfaceNameItemProvider extends ConstantNameItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DAOInterfaceName_ConstantPrefix_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DAOInterfaceName_ConstantPrefix_feature", "_UI_DAOInterfaceName_type"),
-				 FrameWebPackage.Literals.DAO_INTERFACE_NAME__CONSTANT_PREFIX,
+				 FramewebPackage.Literals.DAO_INTERFACE_NAME__CONSTANT_PREFIX,
 				 true,
 				 false,
 				 true,
@@ -85,7 +85,7 @@ public class DAOInterfaceNameItemProvider extends ConstantNameItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DAOInterfaceName_DomainTablePrefix_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DAOInterfaceName_DomainTablePrefix_feature", "_UI_DAOInterfaceName_type"),
-				 FrameWebPackage.Literals.DAO_INTERFACE_NAME__DOMAIN_TABLE_PREFIX,
+				 FramewebPackage.Literals.DAO_INTERFACE_NAME__DOMAIN_TABLE_PREFIX,
 				 true,
 				 false,
 				 true,

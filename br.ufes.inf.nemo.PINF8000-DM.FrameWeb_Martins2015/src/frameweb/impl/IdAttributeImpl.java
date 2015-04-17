@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.Generation;
 import frameweb.IdAttribute;
 
@@ -62,7 +62,7 @@ public class IdAttributeImpl extends DomainAttributeImpl implements IdAttribute 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.ID_ATTRIBUTE;
+		return FramewebPackage.Literals.ID_ATTRIBUTE;
 	}
 
 	/**
@@ -83,7 +83,7 @@ public class IdAttributeImpl extends DomainAttributeImpl implements IdAttribute 
 		Generation oldGeneration = generation;
 		generation = newGeneration == null ? GENERATION_EDEFAULT : newGeneration;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.ID_ATTRIBUTE__GENERATION, oldGeneration, generation));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.ID_ATTRIBUTE__GENERATION, oldGeneration, generation));
 	}
 
 	/**
@@ -94,7 +94,7 @@ public class IdAttributeImpl extends DomainAttributeImpl implements IdAttribute 
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.ID_ATTRIBUTE__GENERATION:
+			case FramewebPackage.ID_ATTRIBUTE__GENERATION:
 				return getGeneration();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -108,7 +108,7 @@ public class IdAttributeImpl extends DomainAttributeImpl implements IdAttribute 
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.ID_ATTRIBUTE__GENERATION:
+			case FramewebPackage.ID_ATTRIBUTE__GENERATION:
 				setGeneration((Generation)newValue);
 				return;
 		}
@@ -123,7 +123,7 @@ public class IdAttributeImpl extends DomainAttributeImpl implements IdAttribute 
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.ID_ATTRIBUTE__GENERATION:
+			case FramewebPackage.ID_ATTRIBUTE__GENERATION:
 				setGeneration(GENERATION_EDEFAULT);
 				return;
 		}
@@ -138,7 +138,7 @@ public class IdAttributeImpl extends DomainAttributeImpl implements IdAttribute 
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.ID_ATTRIBUTE__GENERATION:
+			case FramewebPackage.ID_ATTRIBUTE__GENERATION:
 				return generation != GENERATION_EDEFAULT;
 		}
 		return super.eIsSet(featureID);

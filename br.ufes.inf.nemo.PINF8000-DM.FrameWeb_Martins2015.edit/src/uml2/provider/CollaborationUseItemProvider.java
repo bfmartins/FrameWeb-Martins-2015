@@ -3,7 +3,7 @@
 package uml2.provider;
 
 
-import frameweb.FrameWebFactory;
+import frameweb.FramewebFactory;
 
 import java.util.Collection;
 import java.util.List;
@@ -210,22 +210,22 @@ public class CollaborationUseItemProvider extends NamedElementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COLLABORATION_USE__ROLE_BINDING,
-				 FrameWebFactory.eINSTANCE.createResultDependency()));
+				 FramewebFactory.eINSTANCE.createResultDependency()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COLLABORATION_USE__ROLE_BINDING,
-				 FrameWebFactory.eINSTANCE.createFrontControllerDependence()));
+				 FramewebFactory.eINSTANCE.createFrontControllerDependence()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COLLABORATION_USE__ROLE_BINDING,
-				 FrameWebFactory.eINSTANCE.createPageDependence()));
+				 FramewebFactory.eINSTANCE.createPageDependence()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COLLABORATION_USE__ROLE_BINDING,
-				 FrameWebFactory.eINSTANCE.createChainingDependence()));
+				 FramewebFactory.eINSTANCE.createChainingDependence()));
 	}
 
 }

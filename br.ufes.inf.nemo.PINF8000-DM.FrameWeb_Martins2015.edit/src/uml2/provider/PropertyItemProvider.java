@@ -3,7 +3,7 @@
 package uml2.provider;
 
 
-import frameweb.FrameWebFactory;
+import frameweb.FramewebFactory;
 
 import java.util.Collection;
 import java.util.List;
@@ -497,67 +497,62 @@ public class PropertyItemProvider extends StructuralFeatureItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__QUALIFIER,
-				 FrameWebFactory.eINSTANCE.createDomainAttribute()));
+				 FramewebFactory.eINSTANCE.createVersionAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__QUALIFIER,
-				 FrameWebFactory.eINSTANCE.createVersionAttribute()));
+				 FramewebFactory.eINSTANCE.createIdAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__QUALIFIER,
-				 FrameWebFactory.eINSTANCE.createIdAttribute()));
+				 FramewebFactory.eINSTANCE.createLOBAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__QUALIFIER,
-				 FrameWebFactory.eINSTANCE.createLOBAttribute()));
+				 FramewebFactory.eINSTANCE.createEmbeddedAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__QUALIFIER,
-				 FrameWebFactory.eINSTANCE.createEmbeddedAttribute()));
+				 FramewebFactory.eINSTANCE.createDecimalAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__QUALIFIER,
-				 FrameWebFactory.eINSTANCE.createDecimalAttribute()));
+				 FramewebFactory.eINSTANCE.createDateTimeAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__QUALIFIER,
-				 FrameWebFactory.eINSTANCE.createDateTimeAttribute()));
+				 FramewebFactory.eINSTANCE.createUserViewAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__QUALIFIER,
-				 FrameWebFactory.eINSTANCE.createUserViewAttribute()));
+				 FramewebFactory.eINSTANCE.createIOParameter()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__QUALIFIER,
-				 FrameWebFactory.eINSTANCE.createIOParameter()));
+				 FramewebFactory.eINSTANCE.createBinaryAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__QUALIFIER,
-				 FrameWebFactory.eINSTANCE.createBinaryAttribute()));
+				 FramewebFactory.eINSTANCE.createDAOAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__QUALIFIER,
-				 FrameWebFactory.eINSTANCE.createDAOAttribute()));
+				 FramewebFactory.eINSTANCE.createServiceAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__QUALIFIER,
-				 FrameWebFactory.eINSTANCE.createServiceAttribute()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PROPERTY__QUALIFIER,
-				 FrameWebFactory.eINSTANCE.createFormComponent()));
+				 FramewebFactory.eINSTANCE.createFormComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter

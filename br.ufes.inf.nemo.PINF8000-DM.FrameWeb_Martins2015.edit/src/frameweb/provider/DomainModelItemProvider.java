@@ -4,8 +4,8 @@ package frameweb.provider;
 
 
 import frameweb.DomainModel;
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -64,7 +64,8 @@ public class DomainModelItemProvider extends FrameWebModelItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.DOMAIN_MODEL__DOMAIN_UML_PACKAGE);
+			childrenFeatures.add(FramewebPackage.Literals.DOMAIN_MODEL__DOMAIN_UML_PACKAGE);
+			childrenFeatures.add(FramewebPackage.Literals.DOMAIN_MODEL__DOMAIN_UML_ASSOCIATION);
 		}
 		return childrenFeatures;
 	}
@@ -120,7 +121,8 @@ public class DomainModelItemProvider extends FrameWebModelItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(DomainModel.class)) {
-			case FrameWebPackage.DOMAIN_MODEL__DOMAIN_UML_PACKAGE:
+			case FramewebPackage.DOMAIN_MODEL__DOMAIN_UML_PACKAGE:
+			case FramewebPackage.DOMAIN_MODEL__DOMAIN_UML_ASSOCIATION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -140,8 +142,13 @@ public class DomainModelItemProvider extends FrameWebModelItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.DOMAIN_MODEL__DOMAIN_UML_PACKAGE,
-				 FrameWebFactory.eINSTANCE.createDomainPackage()));
+				(FramewebPackage.Literals.DOMAIN_MODEL__DOMAIN_UML_PACKAGE,
+				 FramewebFactory.eINSTANCE.createDomainPackage()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FramewebPackage.Literals.DOMAIN_MODEL__DOMAIN_UML_ASSOCIATION,
+				 FramewebFactory.eINSTANCE.createDomainAssociation()));
 	}
 
 	/**
@@ -159,7 +166,8 @@ public class DomainModelItemProvider extends FrameWebModelItemProvider {
 			childFeature == Uml2Package.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
 			childFeature == Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT ||
 			childFeature == Uml2Package.Literals.NAMESPACE__OWNED_RULE ||
-			childFeature == FrameWebPackage.Literals.DOMAIN_MODEL__DOMAIN_UML_PACKAGE;
+			childFeature == FramewebPackage.Literals.DOMAIN_MODEL__DOMAIN_UML_ASSOCIATION ||
+			childFeature == FramewebPackage.Literals.DOMAIN_MODEL__DOMAIN_UML_PACKAGE;
 
 		if (qualify) {
 			return getString

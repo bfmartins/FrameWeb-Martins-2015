@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.Tag;
 
 import java.util.Collection;
@@ -59,7 +59,7 @@ public abstract class TagImpl extends MinimalEObjectImpl.Container implements Ta
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.TAG;
+		return FramewebPackage.Literals.TAG;
 	}
 
 	/**
@@ -69,7 +69,7 @@ public abstract class TagImpl extends MinimalEObjectImpl.Container implements Ta
 	 */
 	public EList<Tag> getSubTag() {
 		if (subTag == null) {
-			subTag = new EObjectContainmentEList<Tag>(Tag.class, this, FrameWebPackage.TAG__SUB_TAG);
+			subTag = new EObjectContainmentEList<Tag>(Tag.class, this, FramewebPackage.TAG__SUB_TAG);
 		}
 		return subTag;
 	}
@@ -82,7 +82,7 @@ public abstract class TagImpl extends MinimalEObjectImpl.Container implements Ta
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FrameWebPackage.TAG__SUB_TAG:
+			case FramewebPackage.TAG__SUB_TAG:
 				return ((InternalEList<?>)getSubTag()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -96,7 +96,7 @@ public abstract class TagImpl extends MinimalEObjectImpl.Container implements Ta
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.TAG__SUB_TAG:
+			case FramewebPackage.TAG__SUB_TAG:
 				return getSubTag();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -111,7 +111,7 @@ public abstract class TagImpl extends MinimalEObjectImpl.Container implements Ta
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.TAG__SUB_TAG:
+			case FramewebPackage.TAG__SUB_TAG:
 				getSubTag().clear();
 				getSubTag().addAll((Collection<? extends Tag>)newValue);
 				return;
@@ -127,7 +127,7 @@ public abstract class TagImpl extends MinimalEObjectImpl.Container implements Ta
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.TAG__SUB_TAG:
+			case FramewebPackage.TAG__SUB_TAG:
 				getSubTag().clear();
 				return;
 		}
@@ -142,7 +142,7 @@ public abstract class TagImpl extends MinimalEObjectImpl.Container implements Ta
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.TAG__SUB_TAG:
+			case FramewebPackage.TAG__SUB_TAG:
 				return subTag != null && !subTag.isEmpty();
 		}
 		return super.eIsSet(featureID);

@@ -18,7 +18,7 @@ package frameweb;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getChainingDependence()
+ * @see frameweb.FramewebPackage#getChainingDependence()
  * @model
  * @generated
  */
@@ -33,7 +33,7 @@ public interface ChainingDependence extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Out Method</em>' reference.
 	 * @see #setOutMethod(FrontControllerMethod)
-	 * @see frameweb.FrameWebPackage#getChainingDependence_OutMethod()
+	 * @see frameweb.FramewebPackage#getChainingDependence_OutMethod()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface ChainingDependence extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>In Method</em>' reference.
 	 * @see #setInMethod(FrontControllerMethod)
-	 * @see frameweb.FrameWebPackage#getChainingDependence_InMethod()
+	 * @see frameweb.FramewebPackage#getChainingDependence_InMethod()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -85,7 +85,7 @@ public interface ChainingDependence extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Front Controller</em>' reference.
 	 * @see #setTargetFrontController(FrontControllerClass)
-	 * @see frameweb.FrameWebPackage#getChainingDependence_TargetFrontController()
+	 * @see frameweb.FramewebPackage#getChainingDependence_TargetFrontController()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -111,7 +111,7 @@ public interface ChainingDependence extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Front Controller</em>' reference.
 	 * @see #setSourceFrontController(FrontControllerClass)
-	 * @see frameweb.FrameWebPackage#getChainingDependence_SourceFrontController()
+	 * @see frameweb.FramewebPackage#getChainingDependence_SourceFrontController()
 	 * @model required="true"
 	 * @generated
 	 */

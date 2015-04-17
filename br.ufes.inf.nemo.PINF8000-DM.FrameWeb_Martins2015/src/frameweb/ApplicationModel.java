@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getApplicationModel()
+ * @see frameweb.FramewebPackage#getApplicationModel()
  * @model
  * @generated
  */
@@ -32,7 +32,7 @@ public interface ApplicationModel extends FrameWebModel {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Service UML Association</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getApplicationModel_ServiceUMLAssociation()
+	 * @see frameweb.FramewebPackage#getApplicationModel_ServiceUMLAssociation()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
@@ -48,7 +48,7 @@ public interface ApplicationModel extends FrameWebModel {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Application UML Package</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getApplicationModel_ApplicationUMLPackage()
+	 * @see frameweb.FramewebPackage#getApplicationModel_ApplicationUMLPackage()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */

@@ -4,7 +4,7 @@ package frameweb.provider;
 
 
 import frameweb.DecimalAttribute;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -66,7 +66,7 @@ public class DecimalAttributeItemProvider extends DomainAttributeItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DecimalAttribute_decimalPrecision_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DecimalAttribute_decimalPrecision_feature", "_UI_DecimalAttribute_type"),
-				 FrameWebPackage.Literals.DECIMAL_ATTRIBUTE__DECIMAL_PRECISION,
+				 FramewebPackage.Literals.DECIMAL_ATTRIBUTE__DECIMAL_PRECISION,
 				 true,
 				 false,
 				 false,
@@ -88,7 +88,7 @@ public class DecimalAttributeItemProvider extends DomainAttributeItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DecimalAttribute_decimalScale_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DecimalAttribute_decimalScale_feature", "_UI_DecimalAttribute_type"),
-				 FrameWebPackage.Literals.DECIMAL_ATTRIBUTE__DECIMAL_SCALE,
+				 FramewebPackage.Literals.DECIMAL_ATTRIBUTE__DECIMAL_SCALE,
 				 true,
 				 false,
 				 false,
@@ -135,8 +135,8 @@ public class DecimalAttributeItemProvider extends DomainAttributeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(DecimalAttribute.class)) {
-			case FrameWebPackage.DECIMAL_ATTRIBUTE__DECIMAL_PRECISION:
-			case FrameWebPackage.DECIMAL_ATTRIBUTE__DECIMAL_SCALE:
+			case FramewebPackage.DECIMAL_ATTRIBUTE__DECIMAL_PRECISION:
+			case FramewebPackage.DECIMAL_ATTRIBUTE__DECIMAL_SCALE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

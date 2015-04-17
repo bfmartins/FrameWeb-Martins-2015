@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.NavigationDependency;
 
 import org.eclipse.emf.ecore.EClass;
@@ -35,7 +35,7 @@ public abstract class NavigationDependencyImpl extends DependencyImpl implements
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.NAVIGATION_DEPENDENCY;
+		return FramewebPackage.Literals.NAVIGATION_DEPENDENCY;
 	}
 
 } //NavigationDependencyImpl

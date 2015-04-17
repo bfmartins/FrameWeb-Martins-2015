@@ -4,8 +4,8 @@ package frameweb.provider;
 
 
 import frameweb.ApplicationModel;
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -64,8 +64,8 @@ public class ApplicationModelItemProvider extends FrameWebModelItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION);
-			childrenFeatures.add(FrameWebPackage.Literals.APPLICATION_MODEL__APPLICATION_UML_PACKAGE);
+			childrenFeatures.add(FramewebPackage.Literals.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION);
+			childrenFeatures.add(FramewebPackage.Literals.APPLICATION_MODEL__APPLICATION_UML_PACKAGE);
 		}
 		return childrenFeatures;
 	}
@@ -121,8 +121,8 @@ public class ApplicationModelItemProvider extends FrameWebModelItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(ApplicationModel.class)) {
-			case FrameWebPackage.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION:
-			case FrameWebPackage.APPLICATION_MODEL__APPLICATION_UML_PACKAGE:
+			case FramewebPackage.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION:
+			case FramewebPackage.APPLICATION_MODEL__APPLICATION_UML_PACKAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -142,23 +142,18 @@ public class ApplicationModelItemProvider extends FrameWebModelItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION,
-				 FrameWebFactory.eINSTANCE.createServiceAssociation()));
+				(FramewebPackage.Literals.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION,
+				 FramewebFactory.eINSTANCE.createServiceNavigationAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION,
-				 FrameWebFactory.eINSTANCE.createServiceNavigationAssociation()));
+				(FramewebPackage.Literals.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION,
+				 FramewebFactory.eINSTANCE.createDAOServiceAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION,
-				 FrameWebFactory.eINSTANCE.createDAOServiceAssociation()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FrameWebPackage.Literals.APPLICATION_MODEL__APPLICATION_UML_PACKAGE,
-				 FrameWebFactory.eINSTANCE.createApplicationPackage()));
+				(FramewebPackage.Literals.APPLICATION_MODEL__APPLICATION_UML_PACKAGE,
+				 FramewebFactory.eINSTANCE.createApplicationPackage()));
 	}
 
 	/**
@@ -176,8 +171,8 @@ public class ApplicationModelItemProvider extends FrameWebModelItemProvider {
 			childFeature == Uml2Package.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
 			childFeature == Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT ||
 			childFeature == Uml2Package.Literals.NAMESPACE__OWNED_RULE ||
-			childFeature == FrameWebPackage.Literals.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION ||
-			childFeature == FrameWebPackage.Literals.APPLICATION_MODEL__APPLICATION_UML_PACKAGE;
+			childFeature == FramewebPackage.Literals.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION ||
+			childFeature == FramewebPackage.Literals.APPLICATION_MODEL__APPLICATION_UML_PACKAGE;
 
 		if (qualify) {
 			return getString

@@ -3601,7 +3601,7 @@
               </value>
             </value>
             <value xmi:type="diagram:ModelElement2ViewVariable" xmi:id="_K28UEL0vEeSv46ej2xVmgQ">
-              <key xmi:type="ecore:EReference" href="FrameWeb.ecore#//FrameWeb/Compose"/>
+              <key xmi:type="ecore:EReference" href="FrameWeb.ecore#//Frameweb/Compose"/>
               <value xmi:type="diagram:ViewVariable2ContainerVariable" xmi:id="_K28UEb0vEeSv46ej2xVmgQ" key="_K27tAL0vEeSv46ej2xVmgQ">
                 <value xmi:type="diagram:ContainerVariable2StyleDescription" xmi:id="_K28UFb0vEeSv46ej2xVmgQ" value="_K28UEr0vEeSv46ej2xVmgQ">
                   <key xmi:type="ecore:EPackage" href="FrameWeb.ecore#/"/>
@@ -3609,7 +3609,7 @@
               </value>
             </value>
             <value xmi:type="diagram:ModelElement2ViewVariable" xmi:id="_K2-wUL0vEeSv46ej2xVmgQ">
-              <key xmi:type="ecore:EReference" href="FrameWeb.ecore#//FrameWeb/Uses"/>
+              <key xmi:type="ecore:EReference" href="FrameWeb.ecore#//Frameweb/Uses"/>
               <value xmi:type="diagram:ViewVariable2ContainerVariable" xmi:id="_K2-wUb0vEeSv46ej2xVmgQ" key="_K29iML0vEeSv46ej2xVmgQ">
                 <value xmi:type="diagram:ContainerVariable2StyleDescription" xmi:id="_K2-wVb0vEeSv46ej2xVmgQ" value="_K2-wUr0vEeSv46ej2xVmgQ">
                   <key xmi:type="ecore:EPackage" href="FrameWeb.ecore#/"/>
@@ -4874,8 +4874,8 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_KuGhIL0vEeSv46ej2xVmgQ" name="FrameWeb" tooltipText="" outgoingEdges="_K27tAL0vEeSv46ej2xVmgQ _K29iML0vEeSv46ej2xVmgQ" width="12" height="10">
-        <target xmi:type="ecore:EClass" href="FrameWeb.ecore#//FrameWeb"/>
-        <semanticElements xmi:type="ecore:EClass" href="FrameWeb.ecore#//FrameWeb"/>
+        <target xmi:type="ecore:EClass" href="FrameWeb.ecore#//Frameweb"/>
+        <semanticElements xmi:type="ecore:EClass" href="FrameWeb.ecore#//Frameweb"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -6251,8 +6251,8 @@
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_K27tAL0vEeSv46ej2xVmgQ" name="[1..1] Compose" sourceNode="_KuGhIL0vEeSv46ej2xVmgQ" targetNode="_KuI9YL0vEeSv46ej2xVmgQ">
-        <target xmi:type="ecore:EReference" href="FrameWeb.ecore#//FrameWeb/Compose"/>
-        <semanticElements xmi:type="ecore:EReference" href="FrameWeb.ecore#//FrameWeb/Compose"/>
+        <target xmi:type="ecore:EReference" href="FrameWeb.ecore#//Frameweb/Compose"/>
+        <semanticElements xmi:type="ecore:EReference" href="FrameWeb.ecore#//Frameweb/Compose"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_K287IL0vEeSv46ej2xVmgQ" description="_K28UEr0vEeSv46ej2xVmgQ" sourceArrow="FillDiamond" routingStyle="manhattan">
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_K287Ib0vEeSv46ej2xVmgQ"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_K287Ir0vEeSv46ej2xVmgQ" labelFormat="bold" showIcon="false">
@@ -6267,8 +6267,8 @@
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_K29iML0vEeSv46ej2xVmgQ" name="[1..*] Uses" sourceNode="_KuGhIL0vEeSv46ej2xVmgQ" targetNode="_KuNO0L0vEeSv46ej2xVmgQ">
-        <target xmi:type="ecore:EReference" href="FrameWeb.ecore#//FrameWeb/Uses"/>
-        <semanticElements xmi:type="ecore:EReference" href="FrameWeb.ecore#//FrameWeb/Uses"/>
+        <target xmi:type="ecore:EReference" href="FrameWeb.ecore#//Frameweb/Uses"/>
+        <semanticElements xmi:type="ecore:EReference" href="FrameWeb.ecore#//Frameweb/Uses"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_K2-wVr0vEeSv46ej2xVmgQ" description="_K2-wUr0vEeSv46ej2xVmgQ" sourceArrow="FillDiamond" routingStyle="manhattan">
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_K2-wV70vEeSv46ej2xVmgQ"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_K2-wWL0vEeSv46ej2xVmgQ" labelFormat="bold" showIcon="false">
@@ -24346,7 +24346,7 @@
           <cache xmi:type="diagram:DiagramElementMapping2ModelElement" xmi:id="_sHM_st3wEeSAzY2qjvnDrQ">
             <key xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
             <value xmi:type="diagram:ModelElement2ViewVariable" xmi:id="_sHM_s93wEeSAzY2qjvnDrQ">
-              <key xmi:type="ecore:EReference" href="FrameWeb.ecore#//FrameWeb/Compose"/>
+              <key xmi:type="ecore:EReference" href="FrameWeb.ecore#//Frameweb/Compose"/>
               <value xmi:type="diagram:ViewVariable2ContainerVariable" xmi:id="_sHM_tN3wEeSAzY2qjvnDrQ" key="_sHMYoN3wEeSAzY2qjvnDrQ">
                 <value xmi:type="diagram:ContainerVariable2StyleDescription" xmi:id="_sHM_uN3wEeSAzY2qjvnDrQ" value="_sHM_td3wEeSAzY2qjvnDrQ">
                   <key xmi:type="ecore:EPackage" href="FrameWeb.ecore#/"/>
@@ -24354,7 +24354,7 @@
               </value>
             </value>
             <value xmi:type="diagram:ModelElement2ViewVariable" xmi:id="_sHON0N3wEeSAzY2qjvnDrQ">
-              <key xmi:type="ecore:EReference" href="FrameWeb.ecore#//FrameWeb/Uses"/>
+              <key xmi:type="ecore:EReference" href="FrameWeb.ecore#//Frameweb/Uses"/>
               <value xmi:type="diagram:ViewVariable2ContainerVariable" xmi:id="_sHON0d3wEeSAzY2qjvnDrQ" key="_sHNmxt3wEeSAzY2qjvnDrQ">
                 <value xmi:type="diagram:ContainerVariable2StyleDescription" xmi:id="_sHON1d3wEeSAzY2qjvnDrQ" value="_sHON0t3wEeSAzY2qjvnDrQ">
                   <key xmi:type="ecore:EPackage" href="FrameWeb.ecore#/"/>
@@ -24380,9 +24380,9 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_sHBZgN3wEeSAzY2qjvnDrQ" name="FrameWeb" tooltipText="" outgoingEdges="_sHMYoN3wEeSAzY2qjvnDrQ _sHNmxt3wEeSAzY2qjvnDrQ" width="12" height="10">
-        <target xmi:type="ecore:EClass" href="FrameWeb.ecore#//FrameWeb"/>
-        <semanticElements xmi:type="ecore:EClass" href="FrameWeb.ecore#//FrameWeb"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_sHBZgN3wEeSAzY2qjvnDrQ" name="Frameweb" tooltipText="" outgoingEdges="_sHMYoN3wEeSAzY2qjvnDrQ _sHNmxt3wEeSAzY2qjvnDrQ" width="12" height="10">
+        <target xmi:type="ecore:EClass" href="FrameWeb.ecore#//Frameweb"/>
+        <semanticElements xmi:type="ecore:EClass" href="FrameWeb.ecore#//Frameweb"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -24460,9 +24460,9 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_sHMYoN3wEeSAzY2qjvnDrQ" name="[1..1] Compose" sourceNode="_sHBZgN3wEeSAzY2qjvnDrQ" targetNode="_sHCAkN3wEeSAzY2qjvnDrQ">
-        <target xmi:type="ecore:EReference" href="FrameWeb.ecore#//FrameWeb/Compose"/>
-        <semanticElements xmi:type="ecore:EReference" href="FrameWeb.ecore#//FrameWeb/Compose"/>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_sHMYoN3wEeSAzY2qjvnDrQ" name="[1..*] Compose" sourceNode="_sHBZgN3wEeSAzY2qjvnDrQ" targetNode="_sHCAkN3wEeSAzY2qjvnDrQ">
+        <target xmi:type="ecore:EReference" href="FrameWeb.ecore#//Frameweb/Compose"/>
+        <semanticElements xmi:type="ecore:EReference" href="FrameWeb.ecore#//Frameweb/Compose"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_sHNmwN3wEeSAzY2qjvnDrQ" description="_sHM_td3wEeSAzY2qjvnDrQ" sourceArrow="FillDiamond">
           <customFeatures>routingStyle</customFeatures>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_sHNmwd3wEeSAzY2qjvnDrQ"/>
@@ -24478,8 +24478,8 @@
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_sHNmxt3wEeSAzY2qjvnDrQ" name="[1..*] Uses" sourceNode="_sHBZgN3wEeSAzY2qjvnDrQ" targetNode="_sHDOsN3wEeSAzY2qjvnDrQ">
-        <target xmi:type="ecore:EReference" href="FrameWeb.ecore#//FrameWeb/Uses"/>
-        <semanticElements xmi:type="ecore:EReference" href="FrameWeb.ecore#//FrameWeb/Uses"/>
+        <target xmi:type="ecore:EReference" href="FrameWeb.ecore#//Frameweb/Uses"/>
+        <semanticElements xmi:type="ecore:EReference" href="FrameWeb.ecore#//Frameweb/Uses"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_sHO04N3wEeSAzY2qjvnDrQ" description="_sHON0t3wEeSAzY2qjvnDrQ" sourceArrow="FillDiamond">
           <customFeatures>routingStyle</customFeatures>
           <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_sHO04d3wEeSAzY2qjvnDrQ"/>

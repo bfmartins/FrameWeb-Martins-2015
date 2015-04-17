@@ -9,7 +9,7 @@ package frameweb;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.FrameWebPackage#getEmbeddedAttribute()
+ * @see frameweb.FramewebPackage#getEmbeddedAttribute()
  * @model
  * @generated
  */

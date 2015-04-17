@@ -4,6 +4,7 @@
  */
 package frameweb.validation;
 
+import frameweb.DomainAssociation;
 import frameweb.DomainPackage;
 
 import org.eclipse.emf.common.util.EList;
@@ -18,4 +19,5 @@ public interface DomainModelValidator {
 	boolean validate();
 
 	boolean validateDomainUMLPackage(EList<DomainPackage> value);
+	boolean validateDomainUMLAssociation(EList<DomainAssociation> value);
 }

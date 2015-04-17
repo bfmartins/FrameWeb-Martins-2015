@@ -2,10 +2,6 @@
  */
 package uml2.impl;
 
-import frameweb.FrameWebPackage;
-
-import frameweb.impl.FrameWebPackageImpl;
-
 import org.eclipse.emf.common.util.URI;
 
 import org.eclipse.emf.ecore.EAttribute;
@@ -2104,17 +2100,14 @@ public class Uml2PackageImpl extends EPackageImpl implements Uml2Package {
 		isInited = true;
 
 		// Obtain or create and register interdependencies
-		FrameWebPackageImpl theFrameWebPackage = (FrameWebPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(FrameWebPackage.eNS_URI) instanceof FrameWebPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(FrameWebPackage.eNS_URI) : FrameWebPackage.eINSTANCE);
 		PrimitiveTypesPackageImpl thePrimitiveTypesPackage = (PrimitiveTypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(PrimitiveTypesPackage.eNS_URI) instanceof PrimitiveTypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(PrimitiveTypesPackage.eNS_URI) : PrimitiveTypesPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theUml2Package.createPackageContents();
-		theFrameWebPackage.createPackageContents();
 		thePrimitiveTypesPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theUml2Package.initializePackageContents();
-		theFrameWebPackage.initializePackageContents();
 		thePrimitiveTypesPackage.initializePackageContents();
 
 		// Register package validator

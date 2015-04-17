@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * A representation of the literals of the enumeration '<em><b>Collection</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see frameweb.FrameWebPackage#getCollection()
+ * @see frameweb.FramewebPackage#getCollection()
  * @model
  * @generated
  */

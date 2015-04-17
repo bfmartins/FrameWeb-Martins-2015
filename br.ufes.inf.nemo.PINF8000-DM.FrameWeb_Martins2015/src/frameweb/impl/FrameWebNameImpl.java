@@ -3,7 +3,7 @@
 package frameweb.impl;
 
 import frameweb.FrameWebName;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -11,7 +11,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Name</b></em>'.
+ * An implementation of the model object '<em><b>Frame Web Name</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * </p>
@@ -35,7 +35,7 @@ public abstract class FrameWebNameImpl extends MinimalEObjectImpl.Container impl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.FRAME_WEB_NAME;
+		return FramewebPackage.Literals.FRAME_WEB_NAME;
 	}
 
 } //FrameWebNameImpl

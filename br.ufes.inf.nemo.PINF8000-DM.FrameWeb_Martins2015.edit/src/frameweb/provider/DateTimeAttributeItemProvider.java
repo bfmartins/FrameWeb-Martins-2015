@@ -4,7 +4,7 @@ package frameweb.provider;
 
 
 import frameweb.DateTimeAttribute;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -65,7 +65,7 @@ public class DateTimeAttributeItemProvider extends DomainAttributeItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_DateTimeAttribute_dateTimePrecision_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DateTimeAttribute_dateTimePrecision_feature", "_UI_DateTimeAttribute_type"),
-				 FrameWebPackage.Literals.DATE_TIME_ATTRIBUTE__DATE_TIME_PRECISION,
+				 FramewebPackage.Literals.DATE_TIME_ATTRIBUTE__DATE_TIME_PRECISION,
 				 true,
 				 false,
 				 false,
@@ -112,7 +112,7 @@ public class DateTimeAttributeItemProvider extends DomainAttributeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(DateTimeAttribute.class)) {
-			case FrameWebPackage.DATE_TIME_ATTRIBUTE__DATE_TIME_PRECISION:
+			case FramewebPackage.DATE_TIME_ATTRIBUTE__DATE_TIME_PRECISION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

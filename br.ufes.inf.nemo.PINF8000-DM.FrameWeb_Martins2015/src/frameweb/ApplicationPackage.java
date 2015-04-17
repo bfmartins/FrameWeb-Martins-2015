@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getApplicationPackage()
+ * @see frameweb.FramewebPackage#getApplicationPackage()
  * @model
  * @generated
  */
@@ -32,7 +32,7 @@ public interface ApplicationPackage extends uml2.Package {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Service Package Class</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getApplicationPackage_ServicePackageClass()
+	 * @see frameweb.FramewebPackage#getApplicationPackage_ServicePackageClass()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
@@ -48,7 +48,7 @@ public interface ApplicationPackage extends uml2.Package {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Service Package Interface</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getApplicationPackage_ServicePackageInterface()
+	 * @see frameweb.FramewebPackage#getApplicationPackage_ServicePackageInterface()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */

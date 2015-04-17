@@ -19,7 +19,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getDAOClass()
+ * @see frameweb.FramewebPackage#getDAOClass()
  * @model
  * @generated
  */
@@ -34,7 +34,7 @@ public interface DAOClass extends uml2.Class {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Implements</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getDAOClass_BaseImplements()
+	 * @see frameweb.FramewebPackage#getDAOClass_BaseImplements()
 	 * @model containment="true" lower="4" upper="4"
 	 * @generated
 	 */
@@ -50,7 +50,7 @@ public interface DAOClass extends uml2.Class {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DAO Implements</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getDAOClass_DAOImplements()
+	 * @see frameweb.FramewebPackage#getDAOClass_DAOImplements()
 	 * @model containment="true"
 	 * @generated
 	 */
@@ -66,7 +66,7 @@ public interface DAOClass extends uml2.Class {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DAO Class Name</em>' reference.
 	 * @see #setDAOClassName(DAOClassName)
-	 * @see frameweb.FrameWebPackage#getDAOClass_DAOClassName()
+	 * @see frameweb.FramewebPackage#getDAOClass_DAOClassName()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -92,7 +92,7 @@ public interface DAOClass extends uml2.Class {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>DAO Class Attribute</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getDAOClass_DAOClassAttribute()
+	 * @see frameweb.FramewebPackage#getDAOClass_DAOClassAttribute()
 	 * @model containment="true"
 	 * @generated
 	 */

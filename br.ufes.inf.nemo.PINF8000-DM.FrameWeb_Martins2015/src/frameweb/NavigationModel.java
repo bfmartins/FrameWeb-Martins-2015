@@ -19,7 +19,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getNavigationModel()
+ * @see frameweb.FramewebPackage#getNavigationModel()
  * @model
  * @generated
  */
@@ -34,7 +34,7 @@ public interface NavigationModel extends FrameWebModel {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Navigation UML Dependence</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getNavigationModel_NavigationUMLDependence()
+	 * @see frameweb.FramewebPackage#getNavigationModel_NavigationUMLDependence()
 	 * @model containment="true"
 	 * @generated
 	 */
@@ -50,7 +50,7 @@ public interface NavigationModel extends FrameWebModel {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>View UML Package</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getNavigationModel_ViewUMLPackage()
+	 * @see frameweb.FramewebPackage#getNavigationModel_ViewUMLPackage()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
@@ -66,7 +66,7 @@ public interface NavigationModel extends FrameWebModel {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Controller UML Package</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getNavigationModel_ControllerUMLPackage()
+	 * @see frameweb.FramewebPackage#getNavigationModel_ControllerUMLPackage()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
@@ -82,7 +82,7 @@ public interface NavigationModel extends FrameWebModel {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Navigation UML Composition</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getNavigationModel_NavigationUMLComposition()
+	 * @see frameweb.FramewebPackage#getNavigationModel_NavigationUMLComposition()
 	 * @model containment="true"
 	 * @generated
 	 */

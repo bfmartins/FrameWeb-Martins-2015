@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getNamingMethod()
+ * @see frameweb.FramewebPackage#getNamingMethod()
  * @model abstract="true"
  * @generated
  */
@@ -33,7 +33,7 @@ public interface NamingMethod extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Contains</em>' containment reference list.
-	 * @see frameweb.FrameWebPackage#getNamingMethod_Contains()
+	 * @see frameweb.FramewebPackage#getNamingMethod_Contains()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */

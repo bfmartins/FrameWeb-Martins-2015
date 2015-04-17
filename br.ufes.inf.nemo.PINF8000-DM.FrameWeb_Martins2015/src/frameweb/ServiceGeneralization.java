@@ -17,7 +17,7 @@ import uml2.Generalization;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getServiceGeneralization()
+ * @see frameweb.FramewebPackage#getServiceGeneralization()
  * @model
  * @generated
  */
@@ -32,7 +32,7 @@ public interface ServiceGeneralization extends Generalization {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Service Interface</em>' reference.
 	 * @see #setSourceServiceInterface(ServiceInterface)
-	 * @see frameweb.FrameWebPackage#getServiceGeneralization_SourceServiceInterface()
+	 * @see frameweb.FramewebPackage#getServiceGeneralization_SourceServiceInterface()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -58,7 +58,7 @@ public interface ServiceGeneralization extends Generalization {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Service Class</em>' reference.
 	 * @see #setTargetServiceClass(ServiceClass)
-	 * @see frameweb.FrameWebPackage#getServiceGeneralization_TargetServiceClass()
+	 * @see frameweb.FramewebPackage#getServiceGeneralization_TargetServiceClass()
 	 * @model required="true"
 	 * @generated
 	 */

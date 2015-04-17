@@ -10,7 +10,7 @@
       <!-- @generated FrameWeb -->
       <factory
             uri="https://github.com/bfmartins/FrameWeb-Martins-2015"
-            class="frameweb.provider.FrameWebItemProviderAdapterFactory"
+            class="frameweb.provider.FramewebItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider

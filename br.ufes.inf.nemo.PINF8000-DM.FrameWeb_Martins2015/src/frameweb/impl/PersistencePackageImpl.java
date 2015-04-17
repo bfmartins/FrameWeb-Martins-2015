@@ -4,7 +4,7 @@ package frameweb.impl;
 
 import frameweb.DAOClass;
 import frameweb.DAOInterface;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.PersistencePackage;
 
 import java.util.Collection;
@@ -72,7 +72,7 @@ public class PersistencePackageImpl extends PackageImpl implements PersistencePa
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.PERSISTENCE_PACKAGE;
+		return FramewebPackage.Literals.PERSISTENCE_PACKAGE;
 	}
 
 	/**
@@ -82,7 +82,7 @@ public class PersistencePackageImpl extends PackageImpl implements PersistencePa
 	 */
 	public EList<DAOInterface> getPersistencePackageInterface() {
 		if (persistencePackageInterface == null) {
-			persistencePackageInterface = new EObjectContainmentEList<DAOInterface>(DAOInterface.class, this, FrameWebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE);
+			persistencePackageInterface = new EObjectContainmentEList<DAOInterface>(DAOInterface.class, this, FramewebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE);
 		}
 		return persistencePackageInterface;
 	}
@@ -94,7 +94,7 @@ public class PersistencePackageImpl extends PackageImpl implements PersistencePa
 	 */
 	public EList<DAOClass> getPersistencePackageClass() {
 		if (persistencePackageClass == null) {
-			persistencePackageClass = new EObjectContainmentEList<DAOClass>(DAOClass.class, this, FrameWebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS);
+			persistencePackageClass = new EObjectContainmentEList<DAOClass>(DAOClass.class, this, FramewebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS);
 		}
 		return persistencePackageClass;
 	}
@@ -107,9 +107,9 @@ public class PersistencePackageImpl extends PackageImpl implements PersistencePa
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FrameWebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE:
+			case FramewebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE:
 				return ((InternalEList<?>)getPersistencePackageInterface()).basicRemove(otherEnd, msgs);
-			case FrameWebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS:
+			case FramewebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS:
 				return ((InternalEList<?>)getPersistencePackageClass()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -123,9 +123,9 @@ public class PersistencePackageImpl extends PackageImpl implements PersistencePa
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE:
+			case FramewebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE:
 				return getPersistencePackageInterface();
-			case FrameWebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS:
+			case FramewebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS:
 				return getPersistencePackageClass();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -140,11 +140,11 @@ public class PersistencePackageImpl extends PackageImpl implements PersistencePa
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE:
+			case FramewebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE:
 				getPersistencePackageInterface().clear();
 				getPersistencePackageInterface().addAll((Collection<? extends DAOInterface>)newValue);
 				return;
-			case FrameWebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS:
+			case FramewebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS:
 				getPersistencePackageClass().clear();
 				getPersistencePackageClass().addAll((Collection<? extends DAOClass>)newValue);
 				return;
@@ -160,10 +160,10 @@ public class PersistencePackageImpl extends PackageImpl implements PersistencePa
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE:
+			case FramewebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE:
 				getPersistencePackageInterface().clear();
 				return;
-			case FrameWebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS:
+			case FramewebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS:
 				getPersistencePackageClass().clear();
 				return;
 		}
@@ -178,9 +178,9 @@ public class PersistencePackageImpl extends PackageImpl implements PersistencePa
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE:
+			case FramewebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE:
 				return persistencePackageInterface != null && !persistencePackageInterface.isEmpty();
-			case FrameWebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS:
+			case FramewebPackage.PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS:
 				return persistencePackageClass != null && !persistencePackageClass.isEmpty();
 		}
 		return super.eIsSet(featureID);

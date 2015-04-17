@@ -3,7 +3,7 @@
 package uml2.provider;
 
 
-import frameweb.FrameWebFactory;
+import frameweb.FramewebFactory;
 
 import java.util.Collection;
 import java.util.List;
@@ -156,67 +156,62 @@ public class SignalItemProvider extends ClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SIGNAL__OWNED_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createDomainAttribute()));
+				 FramewebFactory.eINSTANCE.createVersionAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SIGNAL__OWNED_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createVersionAttribute()));
+				 FramewebFactory.eINSTANCE.createIdAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SIGNAL__OWNED_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createIdAttribute()));
+				 FramewebFactory.eINSTANCE.createLOBAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SIGNAL__OWNED_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createLOBAttribute()));
+				 FramewebFactory.eINSTANCE.createEmbeddedAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SIGNAL__OWNED_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createEmbeddedAttribute()));
+				 FramewebFactory.eINSTANCE.createDecimalAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SIGNAL__OWNED_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createDecimalAttribute()));
+				 FramewebFactory.eINSTANCE.createDateTimeAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SIGNAL__OWNED_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createDateTimeAttribute()));
+				 FramewebFactory.eINSTANCE.createUserViewAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SIGNAL__OWNED_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createUserViewAttribute()));
+				 FramewebFactory.eINSTANCE.createIOParameter()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SIGNAL__OWNED_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createIOParameter()));
+				 FramewebFactory.eINSTANCE.createBinaryAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SIGNAL__OWNED_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createBinaryAttribute()));
+				 FramewebFactory.eINSTANCE.createDAOAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SIGNAL__OWNED_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createDAOAttribute()));
+				 FramewebFactory.eINSTANCE.createServiceAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SIGNAL__OWNED_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createServiceAttribute()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.SIGNAL__OWNED_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createFormComponent()));
+				 FramewebFactory.eINSTANCE.createFormComponent()));
 	}
 
 }

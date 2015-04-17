@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.TransientClass;
 
 import org.eclipse.emf.ecore.EClass;
@@ -33,7 +33,7 @@ public class TransientClassImpl extends DomainClassImpl implements TransientClas
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.TRANSIENT_CLASS;
+		return FramewebPackage.Literals.TRANSIENT_CLASS;
 	}
 
 } //TransientClassImpl

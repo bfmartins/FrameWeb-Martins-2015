@@ -4,7 +4,7 @@ package frameweb.impl;
 
 import frameweb.DomainAttribute;
 import frameweb.DomainColumnName;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -75,7 +75,7 @@ public class DomainColumnNameImpl extends FrameWebNameImpl implements DomainColu
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.DOMAIN_COLUMN_NAME;
+		return FramewebPackage.Literals.DOMAIN_COLUMN_NAME;
 	}
 
 	/**
@@ -96,7 +96,7 @@ public class DomainColumnNameImpl extends FrameWebNameImpl implements DomainColu
 		String oldFwName = fwName;
 		fwName = newFwName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_COLUMN_NAME__FW_NAME, oldFwName, fwName));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_COLUMN_NAME__FW_NAME, oldFwName, fwName));
 	}
 
 	/**
@@ -110,7 +110,7 @@ public class DomainColumnNameImpl extends FrameWebNameImpl implements DomainColu
 			domainAttributeName = (DomainAttribute)eResolveProxy(oldDomainAttributeName);
 			if (domainAttributeName != oldDomainAttributeName) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME, oldDomainAttributeName, domainAttributeName));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME, oldDomainAttributeName, domainAttributeName));
 			}
 		}
 		return domainAttributeName;
@@ -134,7 +134,7 @@ public class DomainColumnNameImpl extends FrameWebNameImpl implements DomainColu
 		DomainAttribute oldDomainAttributeName = domainAttributeName;
 		domainAttributeName = newDomainAttributeName;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME, oldDomainAttributeName, newDomainAttributeName);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME, oldDomainAttributeName, newDomainAttributeName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -149,14 +149,14 @@ public class DomainColumnNameImpl extends FrameWebNameImpl implements DomainColu
 		if (newDomainAttributeName != domainAttributeName) {
 			NotificationChain msgs = null;
 			if (domainAttributeName != null)
-				msgs = ((InternalEObject)domainAttributeName).eInverseRemove(this, FrameWebPackage.DOMAIN_ATTRIBUTE__COLUMN, DomainAttribute.class, msgs);
+				msgs = ((InternalEObject)domainAttributeName).eInverseRemove(this, FramewebPackage.DOMAIN_ATTRIBUTE__COLUMN, DomainAttribute.class, msgs);
 			if (newDomainAttributeName != null)
-				msgs = ((InternalEObject)newDomainAttributeName).eInverseAdd(this, FrameWebPackage.DOMAIN_ATTRIBUTE__COLUMN, DomainAttribute.class, msgs);
+				msgs = ((InternalEObject)newDomainAttributeName).eInverseAdd(this, FramewebPackage.DOMAIN_ATTRIBUTE__COLUMN, DomainAttribute.class, msgs);
 			msgs = basicSetDomainAttributeName(newDomainAttributeName, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME, newDomainAttributeName, newDomainAttributeName));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME, newDomainAttributeName, newDomainAttributeName));
 	}
 
 	/**
@@ -167,9 +167,9 @@ public class DomainColumnNameImpl extends FrameWebNameImpl implements DomainColu
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME:
+			case FramewebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME:
 				if (domainAttributeName != null)
-					msgs = ((InternalEObject)domainAttributeName).eInverseRemove(this, FrameWebPackage.DOMAIN_ATTRIBUTE__COLUMN, DomainAttribute.class, msgs);
+					msgs = ((InternalEObject)domainAttributeName).eInverseRemove(this, FramewebPackage.DOMAIN_ATTRIBUTE__COLUMN, DomainAttribute.class, msgs);
 				return basicSetDomainAttributeName((DomainAttribute)otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -183,7 +183,7 @@ public class DomainColumnNameImpl extends FrameWebNameImpl implements DomainColu
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME:
+			case FramewebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME:
 				return basicSetDomainAttributeName(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -197,9 +197,9 @@ public class DomainColumnNameImpl extends FrameWebNameImpl implements DomainColu
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_COLUMN_NAME__FW_NAME:
+			case FramewebPackage.DOMAIN_COLUMN_NAME__FW_NAME:
 				return getFwName();
-			case FrameWebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME:
+			case FramewebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME:
 				if (resolve) return getDomainAttributeName();
 				return basicGetDomainAttributeName();
 		}
@@ -214,10 +214,10 @@ public class DomainColumnNameImpl extends FrameWebNameImpl implements DomainColu
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_COLUMN_NAME__FW_NAME:
+			case FramewebPackage.DOMAIN_COLUMN_NAME__FW_NAME:
 				setFwName((String)newValue);
 				return;
-			case FrameWebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME:
+			case FramewebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME:
 				setDomainAttributeName((DomainAttribute)newValue);
 				return;
 		}
@@ -232,10 +232,10 @@ public class DomainColumnNameImpl extends FrameWebNameImpl implements DomainColu
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_COLUMN_NAME__FW_NAME:
+			case FramewebPackage.DOMAIN_COLUMN_NAME__FW_NAME:
 				setFwName(FW_NAME_EDEFAULT);
 				return;
-			case FrameWebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME:
+			case FramewebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME:
 				setDomainAttributeName((DomainAttribute)null);
 				return;
 		}
@@ -250,9 +250,9 @@ public class DomainColumnNameImpl extends FrameWebNameImpl implements DomainColu
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DOMAIN_COLUMN_NAME__FW_NAME:
+			case FramewebPackage.DOMAIN_COLUMN_NAME__FW_NAME:
 				return FW_NAME_EDEFAULT == null ? fwName != null : !FW_NAME_EDEFAULT.equals(fwName);
-			case FrameWebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME:
+			case FramewebPackage.DOMAIN_COLUMN_NAME__DOMAIN_ATTRIBUTE_NAME:
 				return domainAttributeName != null;
 		}
 		return super.eIsSet(featureID);

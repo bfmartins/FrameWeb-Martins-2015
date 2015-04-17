@@ -15,7 +15,7 @@ package frameweb;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getPersistentClass()
+ * @see frameweb.FramewebPackage#getPersistentClass()
  * @model
  * @generated
  */
@@ -31,7 +31,7 @@ public interface PersistentClass extends DomainClass {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Table</em>' reference.
 	 * @see #setTable(DomainTableName)
-	 * @see frameweb.FrameWebPackage#getPersistentClass_Table()
+	 * @see frameweb.FramewebPackage#getPersistentClass_Table()
 	 * @see frameweb.DomainTableName#getPersistentClassName
 	 * @model opposite="PersistentClassName"
 	 * @generated

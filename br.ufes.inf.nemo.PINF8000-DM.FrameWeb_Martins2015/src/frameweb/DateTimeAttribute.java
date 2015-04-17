@@ -15,7 +15,7 @@ package frameweb;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getDateTimeAttribute()
+ * @see frameweb.FramewebPackage#getDateTimeAttribute()
  * @model
  * @generated
  */
@@ -32,7 +32,7 @@ public interface DateTimeAttribute extends DomainAttribute {
 	 * @return the value of the '<em>Date Time Precision</em>' attribute.
 	 * @see frameweb.DateTimePrecision
 	 * @see #setDateTimePrecision(DateTimePrecision)
-	 * @see frameweb.FrameWebPackage#getDateTimeAttribute_DateTimePrecision()
+	 * @see frameweb.FramewebPackage#getDateTimeAttribute_DateTimePrecision()
 	 * @model
 	 * @generated
 	 */

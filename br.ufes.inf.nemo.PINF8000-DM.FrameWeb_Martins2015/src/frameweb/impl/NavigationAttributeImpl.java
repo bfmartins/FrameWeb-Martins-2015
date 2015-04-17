@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.NavigationAttribute;
 
 import org.eclipse.emf.ecore.EClass;
@@ -35,7 +35,7 @@ public abstract class NavigationAttributeImpl extends PropertyImpl implements Na
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.NAVIGATION_ATTRIBUTE;
+		return FramewebPackage.Literals.NAVIGATION_ATTRIBUTE;
 	}
 
 } //NavigationAttributeImpl

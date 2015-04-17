@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.UserViewAttribute;
 
 import org.eclipse.emf.ecore.EClass;
@@ -33,7 +33,7 @@ public class UserViewAttributeImpl extends NavigationAttributeImpl implements Us
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.USER_VIEW_ATTRIBUTE;
+		return FramewebPackage.Literals.USER_VIEW_ATTRIBUTE;
 	}
 
 } //UserViewAttributeImpl

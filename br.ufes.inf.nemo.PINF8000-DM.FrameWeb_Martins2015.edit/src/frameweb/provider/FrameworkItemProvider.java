@@ -3,8 +3,8 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 import frameweb.Framework;
 
 import java.util.Collection;
@@ -68,10 +68,10 @@ public class FrameworkItemProvider extends ModelItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.FRAMEWORK__FRAMEWORK_TAG_LIB);
-			childrenFeatures.add(FrameWebPackage.Literals.FRAMEWORK__FRAMEWORK_RULE);
-			childrenFeatures.add(FrameWebPackage.Literals.FRAMEWORK__NEW_EREFERENCE);
-			childrenFeatures.add(FrameWebPackage.Literals.FRAMEWORK__FRAMEWORK_ANOTATION);
+			childrenFeatures.add(FramewebPackage.Literals.FRAMEWORK__FRAMEWORK_TAG_LIB);
+			childrenFeatures.add(FramewebPackage.Literals.FRAMEWORK__FRAMEWORK_RULE);
+			childrenFeatures.add(FramewebPackage.Literals.FRAMEWORK__NEW_EREFERENCE);
+			childrenFeatures.add(FramewebPackage.Literals.FRAMEWORK__FRAMEWORK_ANOTATION);
 		}
 		return childrenFeatures;
 	}
@@ -127,10 +127,10 @@ public class FrameworkItemProvider extends ModelItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Framework.class)) {
-			case FrameWebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
-			case FrameWebPackage.FRAMEWORK__FRAMEWORK_RULE:
-			case FrameWebPackage.FRAMEWORK__NEW_EREFERENCE:
-			case FrameWebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
+			case FramewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
+			case FramewebPackage.FRAMEWORK__FRAMEWORK_RULE:
+			case FramewebPackage.FRAMEWORK__NEW_EREFERENCE:
+			case FramewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -150,23 +150,23 @@ public class FrameworkItemProvider extends ModelItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.FRAMEWORK__FRAMEWORK_TAG_LIB,
-				 FrameWebFactory.eINSTANCE.createTagLib()));
+				(FramewebPackage.Literals.FRAMEWORK__FRAMEWORK_TAG_LIB,
+				 FramewebFactory.eINSTANCE.createTagLib()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.FRAMEWORK__FRAMEWORK_RULE,
-				 FrameWebFactory.eINSTANCE.createRule()));
+				(FramewebPackage.Literals.FRAMEWORK__FRAMEWORK_RULE,
+				 FramewebFactory.eINSTANCE.createRule()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.FRAMEWORK__NEW_EREFERENCE,
-				 FrameWebFactory.eINSTANCE.createTalvez_Method()));
+				(FramewebPackage.Literals.FRAMEWORK__NEW_EREFERENCE,
+				 FramewebFactory.eINSTANCE.createTalvez_Method()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.FRAMEWORK__FRAMEWORK_ANOTATION,
-				 FrameWebFactory.eINSTANCE.createAnotation()));
+				(FramewebPackage.Literals.FRAMEWORK__FRAMEWORK_ANOTATION,
+				 FramewebFactory.eINSTANCE.createAnotation()));
 	}
 
 	/**

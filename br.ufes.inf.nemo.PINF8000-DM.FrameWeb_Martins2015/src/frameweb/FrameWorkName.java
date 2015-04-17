@@ -9,7 +9,7 @@ package frameweb;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.FrameWebPackage#getFrameWorkName()
+ * @see frameweb.FramewebPackage#getFrameWorkName()
  * @model
  * @generated
  */

@@ -9,7 +9,7 @@ package frameweb;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.FrameWebPackage#getJQuery()
+ * @see frameweb.FramewebPackage#getJQuery()
  * @model
  * @generated
  */

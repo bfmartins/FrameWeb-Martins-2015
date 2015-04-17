@@ -16,7 +16,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getIOParameter()
+ * @see frameweb.FramewebPackage#getIOParameter()
  * @model
  * @generated
  */
@@ -32,7 +32,7 @@ public interface IOParameter extends NavigationAttribute {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Display</em>' reference list.
-	 * @see frameweb.FrameWebPackage#getIOParameter_Display()
+	 * @see frameweb.FramewebPackage#getIOParameter_Display()
 	 * @see frameweb.FormComponent#getInject
 	 * @model opposite="inject" derived="true"
 	 * @generated

@@ -5,7 +5,7 @@ package frameweb.provider;
 
 import frameweb.ConstantName;
 import frameweb.ConstantNameList;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -64,7 +64,7 @@ public class ConstantNameItemProvider extends FrameWebNameItemProvider {
 				 getResourceLocator(),
 				 getString("_UI_ConstantName_fwName_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_ConstantName_fwName_feature", "_UI_ConstantName_type"),
-				 FrameWebPackage.Literals.CONSTANT_NAME__FW_NAME,
+				 FramewebPackage.Literals.CONSTANT_NAME__FW_NAME,
 				 true,
 				 false,
 				 false,
@@ -112,7 +112,7 @@ public class ConstantNameItemProvider extends FrameWebNameItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(ConstantName.class)) {
-			case FrameWebPackage.CONSTANT_NAME__FW_NAME:
+			case FramewebPackage.CONSTANT_NAME__FW_NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

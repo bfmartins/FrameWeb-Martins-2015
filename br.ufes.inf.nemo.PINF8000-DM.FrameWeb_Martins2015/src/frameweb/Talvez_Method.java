@@ -10,7 +10,7 @@ import org.eclipse.emf.ecore.EObject;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.FrameWebPackage#getTalvez_Method()
+ * @see frameweb.FramewebPackage#getTalvez_Method()
  * @model
  * @generated
  */

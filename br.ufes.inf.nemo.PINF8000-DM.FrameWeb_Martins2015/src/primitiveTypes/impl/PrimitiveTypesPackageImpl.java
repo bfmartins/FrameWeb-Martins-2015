@@ -2,9 +2,9 @@
  */
 package primitiveTypes.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
-import frameweb.impl.FrameWebPackageImpl;
+import frameweb.impl.FramewebPackageImpl;
 
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EPackage;
@@ -107,17 +107,17 @@ public class PrimitiveTypesPackageImpl extends EPackageImpl implements Primitive
 		isInited = true;
 
 		// Obtain or create and register interdependencies
-		FrameWebPackageImpl theFrameWebPackage = (FrameWebPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(FrameWebPackage.eNS_URI) instanceof FrameWebPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(FrameWebPackage.eNS_URI) : FrameWebPackage.eINSTANCE);
+		FramewebPackageImpl theFramewebPackage = (FramewebPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(FramewebPackage.eNS_URI) instanceof FramewebPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(FramewebPackage.eNS_URI) : FramewebPackage.eINSTANCE);
 		Uml2PackageImpl theUml2Package = (Uml2PackageImpl)(EPackage.Registry.INSTANCE.getEPackage(Uml2Package.eNS_URI) instanceof Uml2PackageImpl ? EPackage.Registry.INSTANCE.getEPackage(Uml2Package.eNS_URI) : Uml2Package.eINSTANCE);
 
 		// Create package meta-data objects
 		thePrimitiveTypesPackage.createPackageContents();
-		theFrameWebPackage.createPackageContents();
+		theFramewebPackage.createPackageContents();
 		theUml2Package.createPackageContents();
 
 		// Initialize created meta-data
 		thePrimitiveTypesPackage.initializePackageContents();
-		theFrameWebPackage.initializePackageContents();
+		theFramewebPackage.initializePackageContents();
 		theUml2Package.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed

@@ -16,7 +16,7 @@ package frameweb;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getDecimalAttribute()
+ * @see frameweb.FramewebPackage#getDecimalAttribute()
  * @model
  * @generated
  */
@@ -31,7 +31,7 @@ public interface DecimalAttribute extends DomainAttribute {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Decimal Precision</em>' attribute.
 	 * @see #setDecimalPrecision(long)
-	 * @see frameweb.FrameWebPackage#getDecimalAttribute_DecimalPrecision()
+	 * @see frameweb.FramewebPackage#getDecimalAttribute_DecimalPrecision()
 	 * @model
 	 * @generated
 	 */
@@ -57,7 +57,7 @@ public interface DecimalAttribute extends DomainAttribute {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Decimal Scale</em>' attribute.
 	 * @see #setDecimalScale(long)
-	 * @see frameweb.FrameWebPackage#getDecimalAttribute_DecimalScale()
+	 * @see frameweb.FramewebPackage#getDecimalAttribute_DecimalScale()
 	 * @model
 	 * @generated
 	 */

@@ -16,7 +16,7 @@ package frameweb;
  * </ul>
  * </p>
  *
- * @see frameweb.FrameWebPackage#getDomainColumnName()
+ * @see frameweb.FramewebPackage#getDomainColumnName()
  * @model
  * @generated
  */
@@ -31,7 +31,7 @@ public interface DomainColumnName extends FrameWebName {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fw Name</em>' attribute.
 	 * @see #setFwName(String)
-	 * @see frameweb.FrameWebPackage#getDomainColumnName_FwName()
+	 * @see frameweb.FramewebPackage#getDomainColumnName_FwName()
 	 * @model
 	 * @generated
 	 */
@@ -58,7 +58,7 @@ public interface DomainColumnName extends FrameWebName {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Domain Attribute Name</em>' reference.
 	 * @see #setDomainAttributeName(DomainAttribute)
-	 * @see frameweb.FrameWebPackage#getDomainColumnName_DomainAttributeName()
+	 * @see frameweb.FramewebPackage#getDomainColumnName_DomainAttributeName()
 	 * @see frameweb.DomainAttribute#getColumn
 	 * @model opposite="Column" required="true"
 	 * @generated

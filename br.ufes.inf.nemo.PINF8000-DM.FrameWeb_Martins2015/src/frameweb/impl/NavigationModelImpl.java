@@ -3,7 +3,7 @@
 package frameweb.impl;
 
 import frameweb.ControllerPackage;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.NavigationComposition;
 import frameweb.NavigationDependency;
 import frameweb.NavigationModel;
@@ -94,7 +94,7 @@ public class NavigationModelImpl extends FrameWebModelImpl implements Navigation
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.NAVIGATION_MODEL;
+		return FramewebPackage.Literals.NAVIGATION_MODEL;
 	}
 
 	/**
@@ -104,7 +104,7 @@ public class NavigationModelImpl extends FrameWebModelImpl implements Navigation
 	 */
 	public EList<NavigationDependency> getNavigationUMLDependence() {
 		if (navigationUMLDependence == null) {
-			navigationUMLDependence = new EObjectContainmentEList<NavigationDependency>(NavigationDependency.class, this, FrameWebPackage.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE);
+			navigationUMLDependence = new EObjectContainmentEList<NavigationDependency>(NavigationDependency.class, this, FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE);
 		}
 		return navigationUMLDependence;
 	}
@@ -116,7 +116,7 @@ public class NavigationModelImpl extends FrameWebModelImpl implements Navigation
 	 */
 	public EList<ViewPackage> getViewUMLPackage() {
 		if (viewUMLPackage == null) {
-			viewUMLPackage = new EObjectContainmentEList<ViewPackage>(ViewPackage.class, this, FrameWebPackage.NAVIGATION_MODEL__VIEW_UML_PACKAGE);
+			viewUMLPackage = new EObjectContainmentEList<ViewPackage>(ViewPackage.class, this, FramewebPackage.NAVIGATION_MODEL__VIEW_UML_PACKAGE);
 		}
 		return viewUMLPackage;
 	}
@@ -128,7 +128,7 @@ public class NavigationModelImpl extends FrameWebModelImpl implements Navigation
 	 */
 	public EList<ControllerPackage> getControllerUMLPackage() {
 		if (controllerUMLPackage == null) {
-			controllerUMLPackage = new EObjectContainmentEList<ControllerPackage>(ControllerPackage.class, this, FrameWebPackage.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE);
+			controllerUMLPackage = new EObjectContainmentEList<ControllerPackage>(ControllerPackage.class, this, FramewebPackage.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE);
 		}
 		return controllerUMLPackage;
 	}
@@ -140,7 +140,7 @@ public class NavigationModelImpl extends FrameWebModelImpl implements Navigation
 	 */
 	public EList<NavigationComposition> getNavigationUMLComposition() {
 		if (navigationUMLComposition == null) {
-			navigationUMLComposition = new EObjectContainmentEList<NavigationComposition>(NavigationComposition.class, this, FrameWebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION);
+			navigationUMLComposition = new EObjectContainmentEList<NavigationComposition>(NavigationComposition.class, this, FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION);
 		}
 		return navigationUMLComposition;
 	}
@@ -153,13 +153,13 @@ public class NavigationModelImpl extends FrameWebModelImpl implements Navigation
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FrameWebPackage.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE:
+			case FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE:
 				return ((InternalEList<?>)getNavigationUMLDependence()).basicRemove(otherEnd, msgs);
-			case FrameWebPackage.NAVIGATION_MODEL__VIEW_UML_PACKAGE:
+			case FramewebPackage.NAVIGATION_MODEL__VIEW_UML_PACKAGE:
 				return ((InternalEList<?>)getViewUMLPackage()).basicRemove(otherEnd, msgs);
-			case FrameWebPackage.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE:
+			case FramewebPackage.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE:
 				return ((InternalEList<?>)getControllerUMLPackage()).basicRemove(otherEnd, msgs);
-			case FrameWebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION:
+			case FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION:
 				return ((InternalEList<?>)getNavigationUMLComposition()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -173,13 +173,13 @@ public class NavigationModelImpl extends FrameWebModelImpl implements Navigation
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE:
+			case FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE:
 				return getNavigationUMLDependence();
-			case FrameWebPackage.NAVIGATION_MODEL__VIEW_UML_PACKAGE:
+			case FramewebPackage.NAVIGATION_MODEL__VIEW_UML_PACKAGE:
 				return getViewUMLPackage();
-			case FrameWebPackage.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE:
+			case FramewebPackage.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE:
 				return getControllerUMLPackage();
-			case FrameWebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION:
+			case FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION:
 				return getNavigationUMLComposition();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -194,19 +194,19 @@ public class NavigationModelImpl extends FrameWebModelImpl implements Navigation
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE:
+			case FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE:
 				getNavigationUMLDependence().clear();
 				getNavigationUMLDependence().addAll((Collection<? extends NavigationDependency>)newValue);
 				return;
-			case FrameWebPackage.NAVIGATION_MODEL__VIEW_UML_PACKAGE:
+			case FramewebPackage.NAVIGATION_MODEL__VIEW_UML_PACKAGE:
 				getViewUMLPackage().clear();
 				getViewUMLPackage().addAll((Collection<? extends ViewPackage>)newValue);
 				return;
-			case FrameWebPackage.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE:
+			case FramewebPackage.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE:
 				getControllerUMLPackage().clear();
 				getControllerUMLPackage().addAll((Collection<? extends ControllerPackage>)newValue);
 				return;
-			case FrameWebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION:
+			case FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION:
 				getNavigationUMLComposition().clear();
 				getNavigationUMLComposition().addAll((Collection<? extends NavigationComposition>)newValue);
 				return;
@@ -222,16 +222,16 @@ public class NavigationModelImpl extends FrameWebModelImpl implements Navigation
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE:
+			case FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE:
 				getNavigationUMLDependence().clear();
 				return;
-			case FrameWebPackage.NAVIGATION_MODEL__VIEW_UML_PACKAGE:
+			case FramewebPackage.NAVIGATION_MODEL__VIEW_UML_PACKAGE:
 				getViewUMLPackage().clear();
 				return;
-			case FrameWebPackage.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE:
+			case FramewebPackage.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE:
 				getControllerUMLPackage().clear();
 				return;
-			case FrameWebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION:
+			case FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION:
 				getNavigationUMLComposition().clear();
 				return;
 		}
@@ -246,13 +246,13 @@ public class NavigationModelImpl extends FrameWebModelImpl implements Navigation
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE:
+			case FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE:
 				return navigationUMLDependence != null && !navigationUMLDependence.isEmpty();
-			case FrameWebPackage.NAVIGATION_MODEL__VIEW_UML_PACKAGE:
+			case FramewebPackage.NAVIGATION_MODEL__VIEW_UML_PACKAGE:
 				return viewUMLPackage != null && !viewUMLPackage.isEmpty();
-			case FrameWebPackage.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE:
+			case FramewebPackage.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE:
 				return controllerUMLPackage != null && !controllerUMLPackage.isEmpty();
-			case FrameWebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION:
+			case FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION:
 				return navigationUMLComposition != null && !navigationUMLComposition.isEmpty();
 		}
 		return super.eIsSet(featureID);

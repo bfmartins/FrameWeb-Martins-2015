@@ -3,7 +3,7 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.ServiceGeneralization;
 
 import java.util.Collection;
@@ -66,7 +66,7 @@ public class ServiceGeneralizationItemProvider extends GeneralizationItemProvide
 				 getResourceLocator(),
 				 getString("_UI_ServiceGeneralization_SourceServiceInterface_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_ServiceGeneralization_SourceServiceInterface_feature", "_UI_ServiceGeneralization_type"),
-				 FrameWebPackage.Literals.SERVICE_GENERALIZATION__SOURCE_SERVICE_INTERFACE,
+				 FramewebPackage.Literals.SERVICE_GENERALIZATION__SOURCE_SERVICE_INTERFACE,
 				 true,
 				 false,
 				 true,
@@ -88,7 +88,7 @@ public class ServiceGeneralizationItemProvider extends GeneralizationItemProvide
 				 getResourceLocator(),
 				 getString("_UI_ServiceGeneralization_TargetServiceClass_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_ServiceGeneralization_TargetServiceClass_feature", "_UI_ServiceGeneralization_type"),
-				 FrameWebPackage.Literals.SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS,
+				 FramewebPackage.Literals.SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS,
 				 true,
 				 false,
 				 true,

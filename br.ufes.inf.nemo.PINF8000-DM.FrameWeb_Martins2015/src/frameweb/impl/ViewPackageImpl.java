@@ -2,7 +2,7 @@
  */
 package frameweb.impl;
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.NavigationClass;
 import frameweb.ViewPackage;
 
@@ -58,7 +58,7 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.VIEW_PACKAGE;
+		return FramewebPackage.Literals.VIEW_PACKAGE;
 	}
 
 	/**
@@ -68,7 +68,7 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 	 */
 	public EList<NavigationClass> getViewPackageClass() {
 		if (viewPackageClass == null) {
-			viewPackageClass = new EObjectContainmentEList<NavigationClass>(NavigationClass.class, this, FrameWebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS);
+			viewPackageClass = new EObjectContainmentEList<NavigationClass>(NavigationClass.class, this, FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS);
 		}
 		return viewPackageClass;
 	}
@@ -81,7 +81,7 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FrameWebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
+			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
 				return ((InternalEList<?>)getViewPackageClass()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -95,7 +95,7 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
+			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
 				return getViewPackageClass();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -110,7 +110,7 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
+			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
 				getViewPackageClass().clear();
 				getViewPackageClass().addAll((Collection<? extends NavigationClass>)newValue);
 				return;
@@ -126,7 +126,7 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
+			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
 				getViewPackageClass().clear();
 				return;
 		}
@@ -141,7 +141,7 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
+			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
 				return viewPackageClass != null && !viewPackageClass.isEmpty();
 		}
 		return super.eIsSet(featureID);

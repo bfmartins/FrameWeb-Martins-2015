@@ -4,7 +4,7 @@ package frameweb.impl;
 
 import frameweb.Binary;
 import frameweb.BinaryAttribute;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 
@@ -58,7 +58,7 @@ public class BinaryImpl extends NavigationClassImpl implements Binary {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.BINARY;
+		return FramewebPackage.Literals.BINARY;
 	}
 
 	/**
@@ -68,7 +68,7 @@ public class BinaryImpl extends NavigationClassImpl implements Binary {
 	 */
 	public EList<BinaryAttribute> getBinaryClassAttribute() {
 		if (binaryClassAttribute == null) {
-			binaryClassAttribute = new EObjectContainmentEList<BinaryAttribute>(BinaryAttribute.class, this, FrameWebPackage.BINARY__BINARY_CLASS_ATTRIBUTE);
+			binaryClassAttribute = new EObjectContainmentEList<BinaryAttribute>(BinaryAttribute.class, this, FramewebPackage.BINARY__BINARY_CLASS_ATTRIBUTE);
 		}
 		return binaryClassAttribute;
 	}
@@ -81,7 +81,7 @@ public class BinaryImpl extends NavigationClassImpl implements Binary {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FrameWebPackage.BINARY__BINARY_CLASS_ATTRIBUTE:
+			case FramewebPackage.BINARY__BINARY_CLASS_ATTRIBUTE:
 				return ((InternalEList<?>)getBinaryClassAttribute()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -95,7 +95,7 @@ public class BinaryImpl extends NavigationClassImpl implements Binary {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.BINARY__BINARY_CLASS_ATTRIBUTE:
+			case FramewebPackage.BINARY__BINARY_CLASS_ATTRIBUTE:
 				return getBinaryClassAttribute();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -110,7 +110,7 @@ public class BinaryImpl extends NavigationClassImpl implements Binary {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.BINARY__BINARY_CLASS_ATTRIBUTE:
+			case FramewebPackage.BINARY__BINARY_CLASS_ATTRIBUTE:
 				getBinaryClassAttribute().clear();
 				getBinaryClassAttribute().addAll((Collection<? extends BinaryAttribute>)newValue);
 				return;
@@ -126,7 +126,7 @@ public class BinaryImpl extends NavigationClassImpl implements Binary {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.BINARY__BINARY_CLASS_ATTRIBUTE:
+			case FramewebPackage.BINARY__BINARY_CLASS_ATTRIBUTE:
 				getBinaryClassAttribute().clear();
 				return;
 		}
@@ -141,7 +141,7 @@ public class BinaryImpl extends NavigationClassImpl implements Binary {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.BINARY__BINARY_CLASS_ATTRIBUTE:
+			case FramewebPackage.BINARY__BINARY_CLASS_ATTRIBUTE:
 				return binaryClassAttribute != null && !binaryClassAttribute.isEmpty();
 		}
 		return super.eIsSet(featureID);

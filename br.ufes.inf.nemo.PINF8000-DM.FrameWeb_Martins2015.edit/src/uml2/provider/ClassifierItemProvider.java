@@ -3,7 +3,7 @@
 package uml2.provider;
 
 
-import frameweb.FrameWebFactory;
+import frameweb.FramewebFactory;
 
 import java.util.Collection;
 import java.util.List;
@@ -517,17 +517,17 @@ public class ClassifierItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASSIFIER__GENERALIZATION,
-				 FrameWebFactory.eINSTANCE.createDAOGeneralization()));
+				 FramewebFactory.eINSTANCE.createDAOGeneralization()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASSIFIER__GENERALIZATION,
-				 FrameWebFactory.eINSTANCE.createServiceGeneralization()));
+				 FramewebFactory.eINSTANCE.createServiceGeneralization()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASSIFIER__GENERALIZATION,
-				 FrameWebFactory.eINSTANCE.createDomainGeneralization()));
+				 FramewebFactory.eINSTANCE.createDomainGeneralization()));
 
 		newChildDescriptors.add
 			(createChildParameter

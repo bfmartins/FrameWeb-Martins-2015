@@ -5,7 +5,7 @@ package frameweb.impl;
 import frameweb.ConstantName;
 import frameweb.DAOInterfaceName;
 import frameweb.DomainTableName;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -65,7 +65,7 @@ public class DAOInterfaceNameImpl extends ConstantNameImpl implements DAOInterfa
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.DAO_INTERFACE_NAME;
+		return FramewebPackage.Literals.DAO_INTERFACE_NAME;
 	}
 
 	/**
@@ -79,7 +79,7 @@ public class DAOInterfaceNameImpl extends ConstantNameImpl implements DAOInterfa
 			constantPrefix = (ConstantName)eResolveProxy(oldConstantPrefix);
 			if (constantPrefix != oldConstantPrefix) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DAO_INTERFACE_NAME__CONSTANT_PREFIX, oldConstantPrefix, constantPrefix));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.DAO_INTERFACE_NAME__CONSTANT_PREFIX, oldConstantPrefix, constantPrefix));
 			}
 		}
 		return constantPrefix;
@@ -103,7 +103,7 @@ public class DAOInterfaceNameImpl extends ConstantNameImpl implements DAOInterfa
 		ConstantName oldConstantPrefix = constantPrefix;
 		constantPrefix = newConstantPrefix;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DAO_INTERFACE_NAME__CONSTANT_PREFIX, oldConstantPrefix, constantPrefix));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DAO_INTERFACE_NAME__CONSTANT_PREFIX, oldConstantPrefix, constantPrefix));
 	}
 
 	/**
@@ -117,7 +117,7 @@ public class DAOInterfaceNameImpl extends ConstantNameImpl implements DAOInterfa
 			domainTablePrefix = (DomainTableName)eResolveProxy(oldDomainTablePrefix);
 			if (domainTablePrefix != oldDomainTablePrefix) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DAO_INTERFACE_NAME__DOMAIN_TABLE_PREFIX, oldDomainTablePrefix, domainTablePrefix));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.DAO_INTERFACE_NAME__DOMAIN_TABLE_PREFIX, oldDomainTablePrefix, domainTablePrefix));
 			}
 		}
 		return domainTablePrefix;
@@ -141,7 +141,7 @@ public class DAOInterfaceNameImpl extends ConstantNameImpl implements DAOInterfa
 		DomainTableName oldDomainTablePrefix = domainTablePrefix;
 		domainTablePrefix = newDomainTablePrefix;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DAO_INTERFACE_NAME__DOMAIN_TABLE_PREFIX, oldDomainTablePrefix, domainTablePrefix));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DAO_INTERFACE_NAME__DOMAIN_TABLE_PREFIX, oldDomainTablePrefix, domainTablePrefix));
 	}
 
 	/**
@@ -152,10 +152,10 @@ public class DAOInterfaceNameImpl extends ConstantNameImpl implements DAOInterfa
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.DAO_INTERFACE_NAME__CONSTANT_PREFIX:
+			case FramewebPackage.DAO_INTERFACE_NAME__CONSTANT_PREFIX:
 				if (resolve) return getConstantPrefix();
 				return basicGetConstantPrefix();
-			case FrameWebPackage.DAO_INTERFACE_NAME__DOMAIN_TABLE_PREFIX:
+			case FramewebPackage.DAO_INTERFACE_NAME__DOMAIN_TABLE_PREFIX:
 				if (resolve) return getDomainTablePrefix();
 				return basicGetDomainTablePrefix();
 		}
@@ -170,10 +170,10 @@ public class DAOInterfaceNameImpl extends ConstantNameImpl implements DAOInterfa
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.DAO_INTERFACE_NAME__CONSTANT_PREFIX:
+			case FramewebPackage.DAO_INTERFACE_NAME__CONSTANT_PREFIX:
 				setConstantPrefix((ConstantName)newValue);
 				return;
-			case FrameWebPackage.DAO_INTERFACE_NAME__DOMAIN_TABLE_PREFIX:
+			case FramewebPackage.DAO_INTERFACE_NAME__DOMAIN_TABLE_PREFIX:
 				setDomainTablePrefix((DomainTableName)newValue);
 				return;
 		}
@@ -188,10 +188,10 @@ public class DAOInterfaceNameImpl extends ConstantNameImpl implements DAOInterfa
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DAO_INTERFACE_NAME__CONSTANT_PREFIX:
+			case FramewebPackage.DAO_INTERFACE_NAME__CONSTANT_PREFIX:
 				setConstantPrefix((ConstantName)null);
 				return;
-			case FrameWebPackage.DAO_INTERFACE_NAME__DOMAIN_TABLE_PREFIX:
+			case FramewebPackage.DAO_INTERFACE_NAME__DOMAIN_TABLE_PREFIX:
 				setDomainTablePrefix((DomainTableName)null);
 				return;
 		}
@@ -206,9 +206,9 @@ public class DAOInterfaceNameImpl extends ConstantNameImpl implements DAOInterfa
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DAO_INTERFACE_NAME__CONSTANT_PREFIX:
+			case FramewebPackage.DAO_INTERFACE_NAME__CONSTANT_PREFIX:
 				return constantPrefix != null;
-			case FrameWebPackage.DAO_INTERFACE_NAME__DOMAIN_TABLE_PREFIX:
+			case FramewebPackage.DAO_INTERFACE_NAME__DOMAIN_TABLE_PREFIX:
 				return domainTablePrefix != null;
 		}
 		return super.eIsSet(featureID);

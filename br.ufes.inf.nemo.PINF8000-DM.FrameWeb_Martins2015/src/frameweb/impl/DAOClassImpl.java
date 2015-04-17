@@ -7,7 +7,7 @@ import frameweb.DAOBaseOperation;
 import frameweb.DAOClass;
 import frameweb.DAOClassName;
 import frameweb.DAOOperation;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 
@@ -99,7 +99,7 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FrameWebPackage.Literals.DAO_CLASS;
+		return FramewebPackage.Literals.DAO_CLASS;
 	}
 
 	/**
@@ -109,7 +109,7 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	 */
 	public EList<DAOBaseOperation> getBaseImplements() {
 		if (baseImplements == null) {
-			baseImplements = new EObjectContainmentEList<DAOBaseOperation>(DAOBaseOperation.class, this, FrameWebPackage.DAO_CLASS__BASE_IMPLEMENTS);
+			baseImplements = new EObjectContainmentEList<DAOBaseOperation>(DAOBaseOperation.class, this, FramewebPackage.DAO_CLASS__BASE_IMPLEMENTS);
 		}
 		return baseImplements;
 	}
@@ -121,7 +121,7 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	 */
 	public EList<DAOOperation> getDAOImplements() {
 		if (daoImplements == null) {
-			daoImplements = new EObjectContainmentEList<DAOOperation>(DAOOperation.class, this, FrameWebPackage.DAO_CLASS__DAO_IMPLEMENTS);
+			daoImplements = new EObjectContainmentEList<DAOOperation>(DAOOperation.class, this, FramewebPackage.DAO_CLASS__DAO_IMPLEMENTS);
 		}
 		return daoImplements;
 	}
@@ -137,7 +137,7 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 			daoClassName = (DAOClassName)eResolveProxy(oldDAOClassName);
 			if (daoClassName != oldDAOClassName) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FrameWebPackage.DAO_CLASS__DAO_CLASS_NAME, oldDAOClassName, daoClassName));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.DAO_CLASS__DAO_CLASS_NAME, oldDAOClassName, daoClassName));
 			}
 		}
 		return daoClassName;
@@ -161,7 +161,7 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 		DAOClassName oldDAOClassName = daoClassName;
 		daoClassName = newDAOClassName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FrameWebPackage.DAO_CLASS__DAO_CLASS_NAME, oldDAOClassName, daoClassName));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DAO_CLASS__DAO_CLASS_NAME, oldDAOClassName, daoClassName));
 	}
 
 	/**
@@ -171,7 +171,7 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	 */
 	public EList<DAOAttribute> getDAOClassAttribute() {
 		if (daoClassAttribute == null) {
-			daoClassAttribute = new EObjectContainmentEList<DAOAttribute>(DAOAttribute.class, this, FrameWebPackage.DAO_CLASS__DAO_CLASS_ATTRIBUTE);
+			daoClassAttribute = new EObjectContainmentEList<DAOAttribute>(DAOAttribute.class, this, FramewebPackage.DAO_CLASS__DAO_CLASS_ATTRIBUTE);
 		}
 		return daoClassAttribute;
 	}
@@ -184,11 +184,11 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FrameWebPackage.DAO_CLASS__BASE_IMPLEMENTS:
+			case FramewebPackage.DAO_CLASS__BASE_IMPLEMENTS:
 				return ((InternalEList<?>)getBaseImplements()).basicRemove(otherEnd, msgs);
-			case FrameWebPackage.DAO_CLASS__DAO_IMPLEMENTS:
+			case FramewebPackage.DAO_CLASS__DAO_IMPLEMENTS:
 				return ((InternalEList<?>)getDAOImplements()).basicRemove(otherEnd, msgs);
-			case FrameWebPackage.DAO_CLASS__DAO_CLASS_ATTRIBUTE:
+			case FramewebPackage.DAO_CLASS__DAO_CLASS_ATTRIBUTE:
 				return ((InternalEList<?>)getDAOClassAttribute()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -202,14 +202,14 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FrameWebPackage.DAO_CLASS__BASE_IMPLEMENTS:
+			case FramewebPackage.DAO_CLASS__BASE_IMPLEMENTS:
 				return getBaseImplements();
-			case FrameWebPackage.DAO_CLASS__DAO_IMPLEMENTS:
+			case FramewebPackage.DAO_CLASS__DAO_IMPLEMENTS:
 				return getDAOImplements();
-			case FrameWebPackage.DAO_CLASS__DAO_CLASS_NAME:
+			case FramewebPackage.DAO_CLASS__DAO_CLASS_NAME:
 				if (resolve) return getDAOClassName();
 				return basicGetDAOClassName();
-			case FrameWebPackage.DAO_CLASS__DAO_CLASS_ATTRIBUTE:
+			case FramewebPackage.DAO_CLASS__DAO_CLASS_ATTRIBUTE:
 				return getDAOClassAttribute();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -224,18 +224,18 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FrameWebPackage.DAO_CLASS__BASE_IMPLEMENTS:
+			case FramewebPackage.DAO_CLASS__BASE_IMPLEMENTS:
 				getBaseImplements().clear();
 				getBaseImplements().addAll((Collection<? extends DAOBaseOperation>)newValue);
 				return;
-			case FrameWebPackage.DAO_CLASS__DAO_IMPLEMENTS:
+			case FramewebPackage.DAO_CLASS__DAO_IMPLEMENTS:
 				getDAOImplements().clear();
 				getDAOImplements().addAll((Collection<? extends DAOOperation>)newValue);
 				return;
-			case FrameWebPackage.DAO_CLASS__DAO_CLASS_NAME:
+			case FramewebPackage.DAO_CLASS__DAO_CLASS_NAME:
 				setDAOClassName((DAOClassName)newValue);
 				return;
-			case FrameWebPackage.DAO_CLASS__DAO_CLASS_ATTRIBUTE:
+			case FramewebPackage.DAO_CLASS__DAO_CLASS_ATTRIBUTE:
 				getDAOClassAttribute().clear();
 				getDAOClassAttribute().addAll((Collection<? extends DAOAttribute>)newValue);
 				return;
@@ -251,16 +251,16 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DAO_CLASS__BASE_IMPLEMENTS:
+			case FramewebPackage.DAO_CLASS__BASE_IMPLEMENTS:
 				getBaseImplements().clear();
 				return;
-			case FrameWebPackage.DAO_CLASS__DAO_IMPLEMENTS:
+			case FramewebPackage.DAO_CLASS__DAO_IMPLEMENTS:
 				getDAOImplements().clear();
 				return;
-			case FrameWebPackage.DAO_CLASS__DAO_CLASS_NAME:
+			case FramewebPackage.DAO_CLASS__DAO_CLASS_NAME:
 				setDAOClassName((DAOClassName)null);
 				return;
-			case FrameWebPackage.DAO_CLASS__DAO_CLASS_ATTRIBUTE:
+			case FramewebPackage.DAO_CLASS__DAO_CLASS_ATTRIBUTE:
 				getDAOClassAttribute().clear();
 				return;
 		}
@@ -275,13 +275,13 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FrameWebPackage.DAO_CLASS__BASE_IMPLEMENTS:
+			case FramewebPackage.DAO_CLASS__BASE_IMPLEMENTS:
 				return baseImplements != null && !baseImplements.isEmpty();
-			case FrameWebPackage.DAO_CLASS__DAO_IMPLEMENTS:
+			case FramewebPackage.DAO_CLASS__DAO_IMPLEMENTS:
 				return daoImplements != null && !daoImplements.isEmpty();
-			case FrameWebPackage.DAO_CLASS__DAO_CLASS_NAME:
+			case FramewebPackage.DAO_CLASS__DAO_CLASS_NAME:
 				return daoClassName != null;
-			case FrameWebPackage.DAO_CLASS__DAO_CLASS_ATTRIBUTE:
+			case FramewebPackage.DAO_CLASS__DAO_CLASS_ATTRIBUTE:
 				return daoClassAttribute != null && !daoClassAttribute.isEmpty();
 		}
 		return super.eIsSet(featureID);

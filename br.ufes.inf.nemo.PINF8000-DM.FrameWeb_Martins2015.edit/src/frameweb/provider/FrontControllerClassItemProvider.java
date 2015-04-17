@@ -3,8 +3,8 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 import frameweb.FrontControllerClass;
 
 import java.util.Collection;
@@ -77,8 +77,8 @@ public class FrontControllerClassItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE);
-			childrenFeatures.add(FrameWebPackage.Literals.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD);
+			childrenFeatures.add(FramewebPackage.Literals.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE);
+			childrenFeatures.add(FramewebPackage.Literals.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD);
 		}
 		return childrenFeatures;
 	}
@@ -131,8 +131,8 @@ public class FrontControllerClassItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(FrontControllerClass.class)) {
-			case FrameWebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE:
-			case FrameWebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD:
+			case FramewebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE:
+			case FramewebPackage.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -152,13 +152,13 @@ public class FrontControllerClassItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE,
-				 FrameWebFactory.eINSTANCE.createIOParameter()));
+				(FramewebPackage.Literals.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createIOParameter()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD,
-				 FrameWebFactory.eINSTANCE.createFrontControllerMethod()));
+				(FramewebPackage.Literals.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD,
+				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
 	}
 
 	/**

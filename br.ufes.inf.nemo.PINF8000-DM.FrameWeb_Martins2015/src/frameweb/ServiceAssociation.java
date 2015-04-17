@@ -10,8 +10,8 @@ import uml2.Association;
  * <!-- end-user-doc -->
  *
  *
- * @see frameweb.FrameWebPackage#getServiceAssociation()
- * @model
+ * @see frameweb.FramewebPackage#getServiceAssociation()
+ * @model abstract="true"
  * @generated
  */
 public interface ServiceAssociation extends Association {

@@ -4,8 +4,8 @@ package frameweb.provider;
 
 
 import frameweb.ControllerPackage;
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -64,7 +64,7 @@ public class ControllerPackageItemProvider extends NavigationPackageItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS);
+			childrenFeatures.add(FramewebPackage.Literals.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS);
 		}
 		return childrenFeatures;
 	}
@@ -120,7 +120,7 @@ public class ControllerPackageItemProvider extends NavigationPackageItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(ControllerPackage.class)) {
-			case FrameWebPackage.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS:
+			case FramewebPackage.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -140,8 +140,8 @@ public class ControllerPackageItemProvider extends NavigationPackageItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS,
-				 FrameWebFactory.eINSTANCE.createFrontControllerClass()));
+				(FramewebPackage.Literals.CONTROLLER_PACKAGE__CONTROLLER_PACKAGE_CLASS,
+				 FramewebFactory.eINSTANCE.createFrontControllerClass()));
 	}
 
 	/**

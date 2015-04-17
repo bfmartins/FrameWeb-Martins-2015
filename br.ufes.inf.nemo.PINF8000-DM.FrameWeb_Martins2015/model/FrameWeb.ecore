@@ -8,9 +8,9 @@
         eOpposite="#//DomainTableName/PersistentClassName"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TransientClass" eSuperTypes="#//DomainClass"/>
-  <eClassifiers xsi:type="ecore:EClass" name="FrameWeb">
+  <eClassifiers xsi:type="ecore:EClass" name="Frameweb">
     <eStructuralFeatures xsi:type="ecore:EReference" name="Compose" lowerBound="1"
-        eType="#//FrameWebModel" containment="true"/>
+        upperBound="-1" eType="#//FrameWebModel" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Uses" lowerBound="1" upperBound="-1"
         eType="#//Framework" containment="true"/>
   </eClassifiers>

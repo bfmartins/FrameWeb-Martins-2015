@@ -3,7 +3,7 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebPackage;
+import frameweb.FramewebPackage;
 import frameweb.ServiceNavigationAssociation;
 
 import java.util.Collection;
@@ -62,7 +62,7 @@ public class ServiceNavigationAssociationItemProvider extends ServiceAssociation
 				 getResourceLocator(),
 				 getString("_UI_ServiceNavigationAssociation_SourceServiceClass_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_ServiceNavigationAssociation_SourceServiceClass_feature", "_UI_ServiceNavigationAssociation_type"),
-				 FrameWebPackage.Literals.SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS,
+				 FramewebPackage.Literals.SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS,
 				 true,
 				 false,
 				 true,
@@ -84,7 +84,7 @@ public class ServiceNavigationAssociationItemProvider extends ServiceAssociation
 				 getResourceLocator(),
 				 getString("_UI_ServiceNavigationAssociation_TargetFrontController_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_ServiceNavigationAssociation_TargetFrontController_feature", "_UI_ServiceNavigationAssociation_type"),
-				 FrameWebPackage.Literals.SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER,
+				 FramewebPackage.Literals.SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER,
 				 true,
 				 false,
 				 true,

@@ -3,8 +3,8 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 import frameweb.Tag;
 
 import java.util.Collection;
@@ -77,7 +77,7 @@ public class TagItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.TAG__SUB_TAG);
+			childrenFeatures.add(FramewebPackage.Literals.TAG__SUB_TAG);
 		}
 		return childrenFeatures;
 	}
@@ -130,7 +130,7 @@ public class TagItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Tag.class)) {
-			case FrameWebPackage.TAG__SUB_TAG:
+			case FramewebPackage.TAG__SUB_TAG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -150,18 +150,18 @@ public class TagItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.TAG__SUB_TAG,
-				 FrameWebFactory.eINSTANCE.createForm()));
+				(FramewebPackage.Literals.TAG__SUB_TAG,
+				 FramewebFactory.eINSTANCE.createForm()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.TAG__SUB_TAG,
-				 FrameWebFactory.eINSTANCE.createFormComponent()));
+				(FramewebPackage.Literals.TAG__SUB_TAG,
+				 FramewebFactory.eINSTANCE.createFormComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.TAG__SUB_TAG,
-				 FrameWebFactory.eINSTANCE.createFrameworkTag()));
+				(FramewebPackage.Literals.TAG__SUB_TAG,
+				 FramewebFactory.eINSTANCE.createFrameworkTag()));
 	}
 
 	/**
