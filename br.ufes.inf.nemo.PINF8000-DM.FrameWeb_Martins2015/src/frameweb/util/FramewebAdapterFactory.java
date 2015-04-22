@@ -24,7 +24,6 @@ import uml2.EncapsulatedClassifier;
 import uml2.Feature;
 import uml2.Generalization;
 import uml2.Interface;
-import uml2.Model;
 import uml2.MultiplicityElement;
 import uml2.NamedElement;
 import uml2.Namespace;
@@ -455,14 +454,6 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseClass(uml2.Class object) {
 				return createClassAdapter();
-			}
-			@Override
-			public Adapter casePackage(uml2.Package object) {
-				return createPackageAdapter();
-			}
-			@Override
-			public Adapter caseModel(Model object) {
-				return createModelAdapter();
 			}
 			@Override
 			public Adapter caseRelationship(Relationship object) {
@@ -1801,34 +1792,6 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createClassAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link uml2.Package <em>Package</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see uml2.Package
-	 * @generated
-	 */
-	public Adapter createPackageAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link uml2.Model <em>Model</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see uml2.Model
-	 * @generated
-	 */
-	public Adapter createModelAdapter() {
 		return null;
 	}
 

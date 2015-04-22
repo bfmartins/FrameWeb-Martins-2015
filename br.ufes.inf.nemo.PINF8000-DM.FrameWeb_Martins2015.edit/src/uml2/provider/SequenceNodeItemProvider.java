@@ -149,11 +149,6 @@ public class SequenceNodeItemProvider extends StructuredActivityNodeItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SEQUENCE_NODE__EXECUTABLE_NODE,
-				 Uml2Factory.eINSTANCE.createStructuredActivityNode()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.SEQUENCE_NODE__EXECUTABLE_NODE,
 				 Uml2Factory.eINSTANCE.createAddStructuralFeatureValueAction()));
 
 		newChildDescriptors.add
@@ -194,12 +189,27 @@ public class SequenceNodeItemProvider extends StructuredActivityNodeItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SEQUENCE_NODE__EXECUTABLE_NODE,
+				 Uml2Factory.eINSTANCE.createStructuredActivityNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.SEQUENCE_NODE__EXECUTABLE_NODE,
 				 Uml2Factory.eINSTANCE.createConditionalNode()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SEQUENCE_NODE__EXECUTABLE_NODE,
 				 Uml2Factory.eINSTANCE.createCreateLinkAction()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.SEQUENCE_NODE__EXECUTABLE_NODE,
+				 Uml2Factory.eINSTANCE.createLoopNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.SEQUENCE_NODE__EXECUTABLE_NODE,
+				 Uml2Factory.eINSTANCE.createOpaqueAction()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -225,16 +235,6 @@ public class SequenceNodeItemProvider extends StructuredActivityNodeItemProvider
 			(createChildParameter
 				(Uml2Package.Literals.SEQUENCE_NODE__EXECUTABLE_NODE,
 				 Uml2Factory.eINSTANCE.createExpansionRegion()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.SEQUENCE_NODE__EXECUTABLE_NODE,
-				 Uml2Factory.eINSTANCE.createLoopNode()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.SEQUENCE_NODE__EXECUTABLE_NODE,
-				 Uml2Factory.eINSTANCE.createOpaqueAction()));
 
 		newChildDescriptors.add
 			(createChildParameter

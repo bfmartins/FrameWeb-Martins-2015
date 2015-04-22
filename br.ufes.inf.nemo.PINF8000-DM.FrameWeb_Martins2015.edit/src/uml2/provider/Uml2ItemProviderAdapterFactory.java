@@ -3705,29 +3705,6 @@ public class Uml2ItemProviderAdapterFactory extends Uml2AdapterFactory implement
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Model} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ModelItemProvider modelItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Model}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createModelAdapter() {
-		if (modelItemProvider == null) {
-			modelItemProvider = new ModelItemProvider(this);
-		}
-
-		return modelItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link uml2.OpaqueAction} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

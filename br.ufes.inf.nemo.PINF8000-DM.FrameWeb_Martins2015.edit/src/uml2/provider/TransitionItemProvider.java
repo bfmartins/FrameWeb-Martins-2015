@@ -331,6 +331,16 @@ public class TransitionItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TRANSITION__EFFECT,
+				 Uml2Factory.eINSTANCE.createActivity()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TRANSITION__EFFECT,
+				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TRANSITION__EFFECT,
 				 Uml2Factory.eINSTANCE.createStateMachine()));
 
 		newChildDescriptors.add
@@ -341,17 +351,7 @@ public class TransitionItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TRANSITION__EFFECT,
-				 Uml2Factory.eINSTANCE.createActivity()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TRANSITION__EFFECT,
 				 Uml2Factory.eINSTANCE.createInteraction()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TRANSITION__EFFECT,
-				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
 
 		newChildDescriptors.add
 			(createChildParameter

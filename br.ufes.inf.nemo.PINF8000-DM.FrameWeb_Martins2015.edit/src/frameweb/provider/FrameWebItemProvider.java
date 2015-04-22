@@ -3,9 +3,9 @@
 package frameweb.provider;
 
 
-import frameweb.FrameWeb;
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.Frameweb;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -27,12 +27,12 @@ import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
- * This is the item provider adapter for a {@link frameweb.FrameWeb} object.
+ * This is the item provider adapter for a {@link frameweb.Frameweb} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class FrameWebItemProvider 
+public class FramewebItemProvider 
 	extends ItemProviderAdapter
 	implements
 		IEditingDomainItemProvider,
@@ -46,7 +46,7 @@ public class FrameWebItemProvider
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrameWebItemProvider(AdapterFactory adapterFactory) {
+	public FramewebItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -77,8 +77,8 @@ public class FrameWebItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FrameWebPackage.Literals.FRAME_WEB__COMPOSE);
-			childrenFeatures.add(FrameWebPackage.Literals.FRAME_WEB__USES);
+			childrenFeatures.add(FramewebPackage.Literals.FRAMEWEB__COMPOSE);
+			childrenFeatures.add(FramewebPackage.Literals.FRAMEWEB__USES);
 		}
 		return childrenFeatures;
 	}
@@ -97,14 +97,14 @@ public class FrameWebItemProvider
 	}
 
 	/**
-	 * This returns FrameWeb.gif.
+	 * This returns Frameweb.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/FrameWeb"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/Frameweb"));
 	}
 
 	/**
@@ -115,7 +115,7 @@ public class FrameWebItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_FrameWeb_type");
+		return getString("_UI_Frameweb_type");
 	}
 	
 
@@ -130,9 +130,9 @@ public class FrameWebItemProvider
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(FrameWeb.class)) {
-			case FrameWebPackage.FRAME_WEB__COMPOSE:
-			case FrameWebPackage.FRAME_WEB__USES:
+		switch (notification.getFeatureID(Frameweb.class)) {
+			case FramewebPackage.FRAMEWEB__COMPOSE:
+			case FramewebPackage.FRAMEWEB__USES:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -152,28 +152,28 @@ public class FrameWebItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.FRAME_WEB__COMPOSE,
-				 FrameWebFactory.eINSTANCE.createDomainModel()));
+				(FramewebPackage.Literals.FRAMEWEB__COMPOSE,
+				 FramewebFactory.eINSTANCE.createDomainModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.FRAME_WEB__COMPOSE,
-				 FrameWebFactory.eINSTANCE.createNavigationModel()));
+				(FramewebPackage.Literals.FRAMEWEB__COMPOSE,
+				 FramewebFactory.eINSTANCE.createNavigationModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.FRAME_WEB__COMPOSE,
-				 FrameWebFactory.eINSTANCE.createApplicationModel()));
+				(FramewebPackage.Literals.FRAMEWEB__COMPOSE,
+				 FramewebFactory.eINSTANCE.createApplicationModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.FRAME_WEB__COMPOSE,
-				 FrameWebFactory.eINSTANCE.createPersistenceModel()));
+				(FramewebPackage.Literals.FRAMEWEB__COMPOSE,
+				 FramewebFactory.eINSTANCE.createPersistenceModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FrameWebPackage.Literals.FRAME_WEB__USES,
-				 FrameWebFactory.eINSTANCE.createFramework()));
+				(FramewebPackage.Literals.FRAMEWEB__USES,
+				 FramewebFactory.eINSTANCE.createFramework()));
 	}
 
 	/**

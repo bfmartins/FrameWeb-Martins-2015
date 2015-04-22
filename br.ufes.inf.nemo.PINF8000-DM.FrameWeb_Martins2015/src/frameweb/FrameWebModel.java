@@ -2,7 +2,7 @@
  */
 package frameweb;
 
-import uml2.Model;
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,7 +20,7 @@ import uml2.Model;
  * @model abstract="true"
  * @generated
  */
-public interface FrameWebModel extends Model {
+public interface FrameWebModel extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Indite</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

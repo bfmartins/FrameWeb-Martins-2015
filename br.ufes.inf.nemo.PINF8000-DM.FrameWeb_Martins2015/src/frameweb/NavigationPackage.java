@@ -2,6 +2,7 @@
  */
 package frameweb;
 
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -13,5 +14,5 @@ package frameweb;
  * @model abstract="true"
  * @generated
  */
-public interface NavigationPackage extends uml2.Package {
+public interface NavigationPackage extends EObject {
 } // NavigationPackage

@@ -6,25 +6,16 @@ package frameweb.provider;
 import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
 import frameweb.FrontControllerClass;
-
 import java.util.Collection;
 import java.util.List;
-
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.EStructuralFeature;
-
-import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
-import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.IItemPropertySource;
-import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
-import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
-import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+import uml2.Uml2Package;
+import uml2.provider.ClassItemProvider;
 
 /**
  * This is the item provider adapter for a {@link frameweb.FrontControllerClass} object.
@@ -33,13 +24,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
  * @generated
  */
 public class FrontControllerClassItemProvider 
-	extends ItemProviderAdapter
-	implements
-		IEditingDomainItemProvider,
-		IStructuredItemContentProvider,
-		ITreeItemContentProvider,
-		IItemLabelProvider,
-		IItemPropertySource {
+	extends ClassItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -115,7 +100,10 @@ public class FrontControllerClassItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_FrontControllerClass_type");
+		String label = ((FrontControllerClass)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_FrontControllerClass_type") :
+			getString("_UI_FrontControllerClass_type") + " " + label;
 	}
 	
 
@@ -159,6 +147,34 @@ public class FrontControllerClassItemProvider
 			(createChildParameter
 				(FramewebPackage.Literals.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD,
 				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
+	}
+
+	/**
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify =
+			childFeature == Uml2Package.Literals.CLASSIFIER__OWNED_USE_CASE ||
+			childFeature == Uml2Package.Literals.CLASS__NESTED_CLASSIFIER ||
+			childFeature == Uml2Package.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
+			childFeature == FramewebPackage.Literals.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE ||
+			childFeature == Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR ||
+			childFeature == Uml2Package.Literals.CLASS__OWNED_OPERATION ||
+			childFeature == FramewebPackage.Literals.FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD;
+
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 	/**

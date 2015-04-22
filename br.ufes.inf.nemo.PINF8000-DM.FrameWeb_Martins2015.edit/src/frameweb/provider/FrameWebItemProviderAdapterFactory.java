@@ -2,7 +2,7 @@
  */
 package frameweb.provider;
 
-import frameweb.util.FrameWebAdapterFactory;
+import frameweb.util.FramewebAdapterFactory;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -32,7 +32,7 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
  * <!-- end-user-doc -->
  * @generated
  */
-public class FrameWebItemProviderAdapterFactory extends FrameWebAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
+public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
 	/**
 	 * This keeps track of the root adapter factory that delegates to this adapter factory.
 	 * <!-- begin-user-doc -->
@@ -63,7 +63,7 @@ public class FrameWebItemProviderAdapterFactory extends FrameWebAdapterFactory i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrameWebItemProviderAdapterFactory() {
+	public FramewebItemProviderAdapterFactory() {
 		supportedTypes.add(IEditingDomainItemProvider.class);
 		supportedTypes.add(IStructuredItemContentProvider.class);
 		supportedTypes.add(ITreeItemContentProvider.class);
@@ -141,26 +141,26 @@ public class FrameWebItemProviderAdapterFactory extends FrameWebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.FrameWeb} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.Frameweb} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FrameWebItemProvider frameWebItemProvider;
+	protected FramewebItemProvider framewebItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.FrameWeb}.
+	 * This creates an adapter for a {@link frameweb.Frameweb}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createFrameWebAdapter() {
-		if (frameWebItemProvider == null) {
-			frameWebItemProvider = new FrameWebItemProvider(this);
+	public Adapter createFramewebAdapter() {
+		if (framewebItemProvider == null) {
+			framewebItemProvider = new FramewebItemProvider(this);
 		}
 
-		return frameWebItemProvider;
+		return framewebItemProvider;
 	}
 
 	/**
@@ -299,29 +299,6 @@ public class FrameWebItemProviderAdapterFactory extends FrameWebAdapterFactory i
 		}
 
 		return domainAssociationItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.DomainAttribute} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected DomainAttributeItemProvider domainAttributeItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link frameweb.DomainAttribute}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createDomainAttributeAdapter() {
-		if (domainAttributeItemProvider == null) {
-			domainAttributeItemProvider = new DomainAttributeItemProvider(this);
-		}
-
-		return domainAttributeItemProvider;
 	}
 
 	/**
@@ -1245,29 +1222,6 @@ public class FrameWebItemProviderAdapterFactory extends FrameWebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.ServiceAssociation} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ServiceAssociationItemProvider serviceAssociationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link frameweb.ServiceAssociation}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createServiceAssociationAdapter() {
-		if (serviceAssociationItemProvider == null) {
-			serviceAssociationItemProvider = new ServiceAssociationItemProvider(this);
-		}
-
-		return serviceAssociationItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link frameweb.DAOOperation} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1737,14 +1691,13 @@ public class FrameWebItemProviderAdapterFactory extends FrameWebAdapterFactory i
 		if (mappedClassItemProvider != null) mappedClassItemProvider.dispose();
 		if (persistentClassItemProvider != null) persistentClassItemProvider.dispose();
 		if (transientClassItemProvider != null) transientClassItemProvider.dispose();
-		if (frameWebItemProvider != null) frameWebItemProvider.dispose();
+		if (framewebItemProvider != null) framewebItemProvider.dispose();
 		if (frameworkItemProvider != null) frameworkItemProvider.dispose();
 		if (domainModelItemProvider != null) domainModelItemProvider.dispose();
 		if (navigationModelItemProvider != null) navigationModelItemProvider.dispose();
 		if (applicationModelItemProvider != null) applicationModelItemProvider.dispose();
 		if (persistenceModelItemProvider != null) persistenceModelItemProvider.dispose();
 		if (domainAssociationItemProvider != null) domainAssociationItemProvider.dispose();
-		if (domainAttributeItemProvider != null) domainAttributeItemProvider.dispose();
 		if (versionAttributeItemProvider != null) versionAttributeItemProvider.dispose();
 		if (idAttributeItemProvider != null) idAttributeItemProvider.dispose();
 		if (lobAttributeItemProvider != null) lobAttributeItemProvider.dispose();
@@ -1785,7 +1738,6 @@ public class FrameWebItemProviderAdapterFactory extends FrameWebAdapterFactory i
 		if (daoAttributeItemProvider != null) daoAttributeItemProvider.dispose();
 		if (serviceOperationItemProvider != null) serviceOperationItemProvider.dispose();
 		if (serviceAttributeItemProvider != null) serviceAttributeItemProvider.dispose();
-		if (serviceAssociationItemProvider != null) serviceAssociationItemProvider.dispose();
 		if (daoOperationItemProvider != null) daoOperationItemProvider.dispose();
 		if (domainPackageItemProvider != null) domainPackageItemProvider.dispose();
 		if (viewPackageItemProvider != null) viewPackageItemProvider.dispose();

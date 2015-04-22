@@ -2975,8 +2975,6 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		mappedClassEClass.getESuperTypes().add(this.getDomainClass());
 		persistentClassEClass.getESuperTypes().add(this.getDomainClass());
 		transientClassEClass.getESuperTypes().add(this.getDomainClass());
-		frameWebModelEClass.getESuperTypes().add(theUml2Package.getModel());
-		frameworkEClass.getESuperTypes().add(theUml2Package.getModel());
 		domainModelEClass.getESuperTypes().add(this.getFrameWebModel());
 		navigationModelEClass.getESuperTypes().add(this.getFrameWebModel());
 		applicationModelEClass.getESuperTypes().add(this.getFrameWebModel());
@@ -2997,6 +2995,7 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		daoInterfaceEClass.getESuperTypes().add(theUml2Package.getInterface());
 		daoClassEClass.getESuperTypes().add(theUml2Package.getClass_());
 		daoGeneralizationEClass.getESuperTypes().add(theUml2Package.getGeneralization());
+		frontControllerClassEClass.getESuperTypes().add(theUml2Package.getClass_());
 		userViewAttributeEClass.getESuperTypes().add(this.getNavigationAttribute());
 		ioParameterEClass.getESuperTypes().add(this.getNavigationAttribute());
 		resultDependencyEClass.getESuperTypes().add(this.getNavigationDependency());
@@ -3027,13 +3026,9 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		serviceAssociationEClass.getESuperTypes().add(theUml2Package.getAssociation());
 		navigationDependencyEClass.getESuperTypes().add(theUml2Package.getDependency());
 		daoOperationEClass.getESuperTypes().add(theUml2Package.getOperation());
-		domainPackageEClass.getESuperTypes().add(theUml2Package.getPackage());
 		viewPackageEClass.getESuperTypes().add(this.getNavigationPackage());
 		controllerPackageEClass.getESuperTypes().add(this.getNavigationPackage());
-		persistencePackageEClass.getESuperTypes().add(theUml2Package.getPackage());
-		applicationPackageEClass.getESuperTypes().add(theUml2Package.getPackage());
 		componentEClass.getESuperTypes().add(this.getNavigationClass());
-		navigationPackageEClass.getESuperTypes().add(theUml2Package.getPackage());
 		domainGeneralizationEClass.getESuperTypes().add(theUml2Package.getGeneralization());
 		jQueryEClass.getESuperTypes().add(this.getNavigationClass());
 		formComponentEClass.getESuperTypes().add(this.getNavigationAttribute());

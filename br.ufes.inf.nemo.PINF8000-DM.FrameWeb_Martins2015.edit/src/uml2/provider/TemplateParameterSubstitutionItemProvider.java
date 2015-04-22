@@ -195,172 +195,12 @@ public class TemplateParameterSubstitutionItemProvider extends ElementItemProvid
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createStringExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createPackage()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
 				 Uml2Factory.eINSTANCE.createClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createStereotype()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createProperty()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createDeployment()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createArtifact()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createDeploymentSpecification()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createManifestation()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createOperation()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createParameter()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createDataType()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createInterface()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createSignal()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createStateMachine()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createProtocolStateMachine()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createPort()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createAssociation()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createCollaboration()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createGeneralizationSet()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createUseCase()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createRealization()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createSubstitution()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createInterfaceRealization()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createExtension()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createExtensionEnd()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createProfile()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createOpaqueExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
 				 Uml2Factory.eINSTANCE.createActivity()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createVariable()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createInteraction()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createInteractionConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -371,6 +211,16 @@ public class TemplateParameterSubstitutionItemProvider extends ElementItemProvid
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
 				 Uml2Factory.eINSTANCE.createAnyReceiveEvent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createArtifact()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -390,6 +240,11 @@ public class TemplateParameterSubstitutionItemProvider extends ElementItemProvid
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createCollaboration()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
 				 Uml2Factory.eINSTANCE.createCommunicationPath()));
 
 		newChildDescriptors.add
@@ -400,7 +255,202 @@ public class TemplateParameterSubstitutionItemProvider extends ElementItemProvid
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createRealization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
 				 Uml2Factory.eINSTANCE.createComponentRealization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createDataType()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createDeployment()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createDeploymentSpecification()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createGeneralizationSet()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createInformationFlow()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createInformationItem()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createInstanceValue()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createInterface()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createInterfaceRealization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createLiteralBoolean()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createLiteralInteger()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createLiteralNull()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createLiteralReal()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createLiteralString()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createLiteralUnlimitedNatural()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createManifestation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createOpaqueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createOperation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createPackage()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createParameter()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createProfile()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createPort()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createStateMachine()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createProtocolStateMachine()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createSignal()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createSubstitution()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createStereotype()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createStringExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createUseCase()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createVariable()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createInteraction()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 Uml2Factory.eINSTANCE.createInteractionConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -465,62 +515,7 @@ public class TemplateParameterSubstitutionItemProvider extends ElementItemProvid
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
 				 Uml2Factory.eINSTANCE.createFunctionBehavior()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createInformationFlow()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createInformationItem()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createInstanceValue()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createLiteralBoolean()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createLiteralInteger()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createLiteralNull()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createLiteralReal()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createLiteralString()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createLiteralUnlimitedNatural()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 Uml2Factory.eINSTANCE.createModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -576,31 +571,6 @@ public class TemplateParameterSubstitutionItemProvider extends ElementItemProvid
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
 				 FramewebFactory.eINSTANCE.createTransientClass()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 FramewebFactory.eINSTANCE.createFramework()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 FramewebFactory.eINSTANCE.createDomainModel()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 FramewebFactory.eINSTANCE.createNavigationModel()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 FramewebFactory.eINSTANCE.createApplicationModel()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 FramewebFactory.eINSTANCE.createPersistenceModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -666,6 +636,11 @@ public class TemplateParameterSubstitutionItemProvider extends ElementItemProvid
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
 				 FramewebFactory.eINSTANCE.createDAOClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
+				 FramewebFactory.eINSTANCE.createFrontControllerClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -756,31 +731,6 @@ public class TemplateParameterSubstitutionItemProvider extends ElementItemProvid
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
 				 FramewebFactory.eINSTANCE.createDAOOperation()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 FramewebFactory.eINSTANCE.createDomainPackage()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 FramewebFactory.eINSTANCE.createViewPackage()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 FramewebFactory.eINSTANCE.createControllerPackage()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 FramewebFactory.eINSTANCE.createPersistencePackage()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_PARAMETER_SUBSTITUTION__OWNED_ACTUAL,
-				 FramewebFactory.eINSTANCE.createApplicationPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter

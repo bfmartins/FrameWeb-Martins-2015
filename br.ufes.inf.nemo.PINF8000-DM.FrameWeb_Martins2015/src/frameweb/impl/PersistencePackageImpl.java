@@ -16,10 +16,10 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
-
-import uml2.impl.PackageImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +35,7 @@ import uml2.impl.PackageImpl;
  *
  * @generated
  */
-public class PersistencePackageImpl extends PackageImpl implements PersistencePackage {
+public class PersistencePackageImpl extends MinimalEObjectImpl.Container implements PersistencePackage {
 	/**
 	 * The cached value of the '{@link #getPersistencePackageInterface() <em>Persistence Package Interface</em>}' containment reference list.
 	 * <!-- begin-user-doc -->

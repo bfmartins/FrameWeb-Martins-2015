@@ -150,11 +150,6 @@ public class ActionInputPinItemProvider extends InputPinItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.ACTION_INPUT_PIN__FROM_ACTION,
-				 Uml2Factory.eINSTANCE.createStructuredActivityNode()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.ACTION_INPUT_PIN__FROM_ACTION,
 				 Uml2Factory.eINSTANCE.createAddStructuralFeatureValueAction()));
 
 		newChildDescriptors.add
@@ -195,12 +190,27 @@ public class ActionInputPinItemProvider extends InputPinItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.ACTION_INPUT_PIN__FROM_ACTION,
+				 Uml2Factory.eINSTANCE.createStructuredActivityNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.ACTION_INPUT_PIN__FROM_ACTION,
 				 Uml2Factory.eINSTANCE.createConditionalNode()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.ACTION_INPUT_PIN__FROM_ACTION,
 				 Uml2Factory.eINSTANCE.createCreateLinkAction()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.ACTION_INPUT_PIN__FROM_ACTION,
+				 Uml2Factory.eINSTANCE.createLoopNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.ACTION_INPUT_PIN__FROM_ACTION,
+				 Uml2Factory.eINSTANCE.createOpaqueAction()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -226,16 +236,6 @@ public class ActionInputPinItemProvider extends InputPinItemProvider {
 			(createChildParameter
 				(Uml2Package.Literals.ACTION_INPUT_PIN__FROM_ACTION,
 				 Uml2Factory.eINSTANCE.createExpansionRegion()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.ACTION_INPUT_PIN__FROM_ACTION,
-				 Uml2Factory.eINSTANCE.createLoopNode()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.ACTION_INPUT_PIN__FROM_ACTION,
-				 Uml2Factory.eINSTANCE.createOpaqueAction()));
 
 		newChildDescriptors.add
 			(createChildParameter

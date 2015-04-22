@@ -146,31 +146,6 @@ public class InteractionConstraintItemProvider extends ConstraintItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MAXINT,
-				 Uml2Factory.eINSTANCE.createStringExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MAXINT,
-				 Uml2Factory.eINSTANCE.createOpaqueExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MAXINT,
-				 Uml2Factory.eINSTANCE.createDuration()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MAXINT,
-				 Uml2Factory.eINSTANCE.createInterval()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MAXINT,
-				 Uml2Factory.eINSTANCE.createDurationInterval()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MAXINT,
 				 Uml2Factory.eINSTANCE.createInstanceValue()));
 
 		newChildDescriptors.add
@@ -202,6 +177,31 @@ public class InteractionConstraintItemProvider extends ConstraintItemProvider {
 			(createChildParameter
 				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MAXINT,
 				 Uml2Factory.eINSTANCE.createLiteralUnlimitedNatural()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MAXINT,
+				 Uml2Factory.eINSTANCE.createOpaqueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MAXINT,
+				 Uml2Factory.eINSTANCE.createStringExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MAXINT,
+				 Uml2Factory.eINSTANCE.createDuration()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MAXINT,
+				 Uml2Factory.eINSTANCE.createInterval()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MAXINT,
+				 Uml2Factory.eINSTANCE.createDurationInterval()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -221,31 +221,6 @@ public class InteractionConstraintItemProvider extends ConstraintItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MININT,
-				 Uml2Factory.eINSTANCE.createStringExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MININT,
-				 Uml2Factory.eINSTANCE.createOpaqueExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MININT,
-				 Uml2Factory.eINSTANCE.createDuration()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MININT,
-				 Uml2Factory.eINSTANCE.createInterval()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MININT,
-				 Uml2Factory.eINSTANCE.createDurationInterval()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MININT,
 				 Uml2Factory.eINSTANCE.createInstanceValue()));
 
 		newChildDescriptors.add
@@ -277,6 +252,31 @@ public class InteractionConstraintItemProvider extends ConstraintItemProvider {
 			(createChildParameter
 				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MININT,
 				 Uml2Factory.eINSTANCE.createLiteralUnlimitedNatural()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MININT,
+				 Uml2Factory.eINSTANCE.createOpaqueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MININT,
+				 Uml2Factory.eINSTANCE.createStringExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MININT,
+				 Uml2Factory.eINSTANCE.createDuration()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MININT,
+				 Uml2Factory.eINSTANCE.createInterval()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_CONSTRAINT__MININT,
+				 Uml2Factory.eINSTANCE.createDurationInterval()));
 
 		newChildDescriptors.add
 			(createChildParameter

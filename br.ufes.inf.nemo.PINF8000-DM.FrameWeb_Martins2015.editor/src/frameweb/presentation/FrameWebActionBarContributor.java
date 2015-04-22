@@ -40,12 +40,12 @@ import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.PartInitException;
 
 /**
- * This is the action bar contributor for the FrameWeb model editor.
+ * This is the action bar contributor for the Frameweb model editor.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class FrameWebActionBarContributor
+public class FramewebActionBarContributor
 	extends EditingDomainActionBarContributor
 	implements ISelectionChangedListener {
 	/**
@@ -148,7 +148,7 @@ public class FrameWebActionBarContributor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrameWebActionBarContributor() {
+	public FramewebActionBarContributor() {
 		super(ADDITIONS_LAST_STYLE);
 		loadResourceAction = new LoadResourceAction();
 		validateAction = new ValidateAction();
@@ -178,7 +178,7 @@ public class FrameWebActionBarContributor
 	public void contributeToMenu(IMenuManager menuManager) {
 		super.contributeToMenu(menuManager);
 
-		IMenuManager submenuManager = new MenuManager(FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FrameWebEditor_menu"), "framewebMenuID");
+		IMenuManager submenuManager = new MenuManager(FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FramewebEditor_menu"), "framewebMenuID");
 		menuManager.insertAfter("additions", submenuManager);
 		submenuManager.add(new Separator("settings"));
 		submenuManager.add(new Separator("actions"));

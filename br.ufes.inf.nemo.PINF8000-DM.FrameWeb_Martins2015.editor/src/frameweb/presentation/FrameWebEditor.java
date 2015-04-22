@@ -154,7 +154,7 @@ import org.eclipse.emf.edit.ui.util.EditUIUtil;
 
 import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 
-import frameweb.provider.FrameWebItemProviderAdapterFactory;
+import frameweb.provider.FramewebItemProviderAdapterFactory;
 
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 
@@ -162,12 +162,12 @@ import uml2.provider.Uml2ItemProviderAdapterFactory;
 
 
 /**
- * This is an example of a FrameWeb model editor.
+ * This is an example of a Frameweb model editor.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class FrameWebEditor
+public class FramewebEditor
 	extends MultiPageEditorPart
 	implements IEditingDomainProvider, ISelectionProvider, IMenuListener, IViewerProvider, IGotoMarker {
 	/**
@@ -329,18 +329,18 @@ public class FrameWebEditor
 			public void partActivated(IWorkbenchPart p) {
 				if (p instanceof ContentOutline) {
 					if (((ContentOutline)p).getCurrentPage() == contentOutlinePage) {
-						getActionBarContributor().setActiveEditor(FrameWebEditor.this);
+						getActionBarContributor().setActiveEditor(FramewebEditor.this);
 
 						setCurrentViewer(contentOutlineViewer);
 					}
 				}
 				else if (p instanceof PropertySheet) {
 					if (propertySheetPages.contains(((PropertySheet)p).getCurrentPage())) {
-						getActionBarContributor().setActiveEditor(FrameWebEditor.this);
+						getActionBarContributor().setActiveEditor(FramewebEditor.this);
 						handleActivate();
 					}
 				}
-				else if (p == FrameWebEditor.this) {
+				else if (p == FramewebEditor.this) {
 					handleActivate();
 				}
 			}
@@ -513,7 +513,7 @@ public class FrameWebEditor
 								 public void run() {
 									 removedResources.addAll(visitor.getRemovedResources());
 									 if (!isDirty()) {
-										 getSite().getPage().closeEditor(FrameWebEditor.this, false);
+										 getSite().getPage().closeEditor(FramewebEditor.this, false);
 									 }
 								 }
 							 });
@@ -524,7 +524,7 @@ public class FrameWebEditor
 							(new Runnable() {
 								 public void run() {
 									 changedResources.addAll(visitor.getChangedResources());
-									 if (getSite().getPage().getActiveEditor() == FrameWebEditor.this) {
+									 if (getSite().getPage().getActiveEditor() == FramewebEditor.this) {
 										 handleActivate();
 									 }
 								 }
@@ -556,7 +556,7 @@ public class FrameWebEditor
 
 		if (!removedResources.isEmpty()) {
 			if (handleDirtyConflict()) {
-				getSite().getPage().closeEditor(FrameWebEditor.this, false);
+				getSite().getPage().closeEditor(FramewebEditor.this, false);
 			}
 			else {
 				removedResources.clear();
@@ -686,7 +686,7 @@ public class FrameWebEditor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrameWebEditor() {
+	public FramewebEditor() {
 		super();
 		initializeEditingDomain();
 	}
@@ -703,7 +703,7 @@ public class FrameWebEditor
 		adapterFactory = new ComposedAdapterFactory(ComposedAdapterFactory.Descriptor.Registry.INSTANCE);
 
 		adapterFactory.addAdapterFactory(new ResourceItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new FrameWebItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new FramewebItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new Uml2ItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
@@ -1024,7 +1024,7 @@ public class FrameWebEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), FrameWebEditor.this) {
+					new ViewerPane(getSite().getPage(), FramewebEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							Tree tree = new Tree(composite, SWT.MULTI);
@@ -1058,7 +1058,7 @@ public class FrameWebEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), FrameWebEditor.this) {
+					new ViewerPane(getSite().getPage(), FramewebEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							Tree tree = new Tree(composite, SWT.MULTI);
@@ -1087,7 +1087,7 @@ public class FrameWebEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), FrameWebEditor.this) {
+					new ViewerPane(getSite().getPage(), FramewebEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new ListViewer(composite);
@@ -1112,7 +1112,7 @@ public class FrameWebEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), FrameWebEditor.this) {
+					new ViewerPane(getSite().getPage(), FramewebEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new TreeViewer(composite);
@@ -1139,7 +1139,7 @@ public class FrameWebEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), FrameWebEditor.this) {
+					new ViewerPane(getSite().getPage(), FramewebEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new TableViewer(composite);
@@ -1182,7 +1182,7 @@ public class FrameWebEditor
 			//
 			{
 				ViewerPane viewerPane =
-					new ViewerPane(getSite().getPage(), FrameWebEditor.this) {
+					new ViewerPane(getSite().getPage(), FramewebEditor.this) {
 						@Override
 						public Viewer createViewer(Composite composite) {
 							return new TreeViewer(composite);
@@ -1402,8 +1402,8 @@ public class FrameWebEditor
 			new ExtendedPropertySheetPage(editingDomain) {
 				@Override
 				public void setSelectionToViewer(List<?> selection) {
-					FrameWebEditor.this.setSelectionToViewer(selection);
-					FrameWebEditor.this.setFocus();
+					FramewebEditor.this.setSelectionToViewer(selection);
+					FramewebEditor.this.setFocus();
 				}
 
 				@Override

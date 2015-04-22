@@ -4,6 +4,8 @@ package frameweb;
 
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.ecore.EObject;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Domain Package</b></em>'.
@@ -20,7 +22,7 @@ import org.eclipse.emf.common.util.EList;
  * @model
  * @generated
  */
-public interface DomainPackage extends uml2.Package {
+public interface DomainPackage extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Domain Package Class</b></em>' containment reference list.
 	 * The list contents are of type {@link frameweb.DomainClass}.

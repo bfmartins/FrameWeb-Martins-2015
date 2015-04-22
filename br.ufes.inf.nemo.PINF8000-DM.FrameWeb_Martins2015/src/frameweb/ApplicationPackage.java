@@ -4,6 +4,8 @@ package frameweb;
 
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.ecore.EObject;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Application Package</b></em>'.
@@ -21,7 +23,7 @@ import org.eclipse.emf.common.util.EList;
  * @model
  * @generated
  */
-public interface ApplicationPackage extends uml2.Package {
+public interface ApplicationPackage extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Service Package Class</b></em>' containment reference list.
 	 * The list contents are of type {@link frameweb.ServiceClass}.

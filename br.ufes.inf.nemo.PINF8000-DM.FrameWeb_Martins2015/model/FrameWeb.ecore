@@ -14,11 +14,11 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="Uses" lowerBound="1" upperBound="-1"
         eType="#//Framework" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FrameWebModel" abstract="true" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Model">
+  <eClassifiers xsi:type="ecore:EClass" name="FrameWebModel" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="Indite" lowerBound="1"
         eType="#//NamingMethod" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Framework" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Model">
+  <eClassifiers xsi:type="ecore:EClass" name="Framework">
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrameworkTagLib" lowerBound="1"
         eType="#//TagLib" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrameworkRule" upperBound="-1"
@@ -165,7 +165,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="SourceDAOInterface" lowerBound="1"
         eType="#//DAOInterface"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FrontControllerClass">
+  <eClassifiers xsi:type="ecore:EClass" name="FrontControllerClass" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Class">
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrontControllerAttribute"
         lowerBound="1" upperBound="-1" eType="#//IOParameter" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrontControllerClassMethod"
@@ -343,7 +343,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="NavigationDependency" abstract="true"
       eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Dependency"/>
   <eClassifiers xsi:type="ecore:EClass" name="DAOOperation" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Operation"/>
-  <eClassifiers xsi:type="ecore:EClass" name="DomainPackage" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Package">
+  <eClassifiers xsi:type="ecore:EClass" name="DomainPackage">
     <eStructuralFeatures xsi:type="ecore:EReference" name="DomainPackageClass" lowerBound="1"
         upperBound="-1" eType="#//DomainClass" containment="true"/>
   </eClassifiers>
@@ -355,13 +355,13 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="ControllerPackageClass"
         lowerBound="1" upperBound="-1" eType="#//FrontControllerClass" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PersistencePackage" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Package">
+  <eClassifiers xsi:type="ecore:EClass" name="PersistencePackage">
     <eStructuralFeatures xsi:type="ecore:EReference" name="PersistencePackageInterface"
         lowerBound="1" upperBound="-1" eType="#//DAOInterface" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="PersistencePackageClass"
         lowerBound="1" upperBound="-1" eType="#//DAOClass" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ApplicationPackage" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Package">
+  <eClassifiers xsi:type="ecore:EClass" name="ApplicationPackage">
     <eStructuralFeatures xsi:type="ecore:EReference" name="ServicePackageClass" lowerBound="1"
         upperBound="-1" eType="#//ServiceClass" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ServicePackageInterface"
@@ -369,7 +369,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Component" eSuperTypes="#//NavigationClass"/>
   <eClassifiers xsi:type="ecore:EClass" name="ResultType"/>
-  <eClassifiers xsi:type="ecore:EClass" name="NavigationPackage" abstract="true" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Package"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NavigationPackage" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="DomainGeneralization" eSuperTypes="../../OMG.UML2/model/UML2.ecore#//Generalization">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mapping" eType="#//InheritanceMapping"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetDomain" lowerBound="1"

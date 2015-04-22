@@ -451,6 +451,16 @@ public class StateItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.STATE__DO_ACTIVITY,
+				 Uml2Factory.eINSTANCE.createActivity()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.STATE__DO_ACTIVITY,
+				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.STATE__DO_ACTIVITY,
 				 Uml2Factory.eINSTANCE.createStateMachine()));
 
 		newChildDescriptors.add
@@ -461,17 +471,7 @@ public class StateItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.STATE__DO_ACTIVITY,
-				 Uml2Factory.eINSTANCE.createActivity()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.STATE__DO_ACTIVITY,
 				 Uml2Factory.eINSTANCE.createInteraction()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.STATE__DO_ACTIVITY,
-				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -481,6 +481,16 @@ public class StateItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.STATE__ENTRY,
+				 Uml2Factory.eINSTANCE.createActivity()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.STATE__ENTRY,
+				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.STATE__ENTRY,
 				 Uml2Factory.eINSTANCE.createStateMachine()));
 
 		newChildDescriptors.add
@@ -491,17 +501,7 @@ public class StateItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.STATE__ENTRY,
-				 Uml2Factory.eINSTANCE.createActivity()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.STATE__ENTRY,
 				 Uml2Factory.eINSTANCE.createInteraction()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.STATE__ENTRY,
-				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -511,6 +511,16 @@ public class StateItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.STATE__EXIT,
+				 Uml2Factory.eINSTANCE.createActivity()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.STATE__EXIT,
+				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.STATE__EXIT,
 				 Uml2Factory.eINSTANCE.createStateMachine()));
 
 		newChildDescriptors.add
@@ -521,17 +531,7 @@ public class StateItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.STATE__EXIT,
-				 Uml2Factory.eINSTANCE.createActivity()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.STATE__EXIT,
 				 Uml2Factory.eINSTANCE.createInteraction()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.STATE__EXIT,
-				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
 
 		newChildDescriptors.add
 			(createChildParameter

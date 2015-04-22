@@ -4,7 +4,7 @@ package frameweb;
 
 import org.eclipse.emf.common.util.EList;
 
-import uml2.Model;
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +25,7 @@ import uml2.Model;
  * @model
  * @generated
  */
-public interface Framework extends Model {
+public interface Framework extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Framework Tag Lib</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

@@ -178,7 +178,12 @@ public class InterfaceItemProvider extends ClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createStereotype()));
+				 Uml2Factory.eINSTANCE.createActivity()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createActor()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -188,7 +193,27 @@ public class InterfaceItemProvider extends ClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createDeploymentSpecification()));
+				 Uml2Factory.eINSTANCE.createAssociation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createAssociationClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createCollaboration()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createCommunicationPath()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -198,12 +223,27 @@ public class InterfaceItemProvider extends ClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createDeploymentSpecification()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createInformationItem()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
 				 Uml2Factory.eINSTANCE.createInterface()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createSignal()));
+				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -218,12 +258,12 @@ public class InterfaceItemProvider extends ClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createAssociation()));
+				 Uml2Factory.eINSTANCE.createSignal()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createCollaboration()));
+				 Uml2Factory.eINSTANCE.createStereotype()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -233,37 +273,7 @@ public class InterfaceItemProvider extends ClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createExtension()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createActivity()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
 				 Uml2Factory.eINSTANCE.createInteraction()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createActor()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createAssociationClass()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createCommunicationPath()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -288,17 +298,7 @@ public class InterfaceItemProvider extends ClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
 				 Uml2Factory.eINSTANCE.createFunctionBehavior()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createInformationItem()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -358,6 +358,11 @@ public class InterfaceItemProvider extends ClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createFrontControllerClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERFACE__NESTED_CLASSIFIER,
 				 FramewebFactory.eINSTANCE.createNavigationComposition()));
 
 		newChildDescriptors.add
@@ -398,12 +403,12 @@ public class InterfaceItemProvider extends ClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.INTERFACE__OWNED_ATTRIBUTE,
-				 Uml2Factory.eINSTANCE.createPort()));
+				 Uml2Factory.eINSTANCE.createExtensionEnd()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.INTERFACE__OWNED_ATTRIBUTE,
-				 Uml2Factory.eINSTANCE.createExtensionEnd()));
+				 Uml2Factory.eINSTANCE.createPort()));
 
 		newChildDescriptors.add
 			(createChildParameter

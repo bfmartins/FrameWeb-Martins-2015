@@ -177,36 +177,6 @@ public class InteractionOperandItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.INTERACTION_OPERAND__FRAGMENT,
-				 Uml2Factory.eINSTANCE.createActionExecutionSpecification()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_OPERAND__FRAGMENT,
-				 Uml2Factory.eINSTANCE.createInteractionUse()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_OPERAND__FRAGMENT,
-				 Uml2Factory.eINSTANCE.createPartDecomposition()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_OPERAND__FRAGMENT,
-				 Uml2Factory.eINSTANCE.createInteraction()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_OPERAND__FRAGMENT,
-				 Uml2Factory.eINSTANCE.createInteractionOperand()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_OPERAND__FRAGMENT,
-				 Uml2Factory.eINSTANCE.createOccurrenceSpecification()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.INTERACTION_OPERAND__FRAGMENT,
 				 Uml2Factory.eINSTANCE.createBehaviorExecutionSpecification()));
 
 		newChildDescriptors.add
@@ -223,6 +193,36 @@ public class InteractionOperandItemProvider extends NamespaceItemProvider {
 			(createChildParameter
 				(Uml2Package.Literals.INTERACTION_OPERAND__FRAGMENT,
 				 Uml2Factory.eINSTANCE.createContinuation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_OPERAND__FRAGMENT,
+				 Uml2Factory.eINSTANCE.createInteractionUse()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_OPERAND__FRAGMENT,
+				 Uml2Factory.eINSTANCE.createPartDecomposition()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_OPERAND__FRAGMENT,
+				 Uml2Factory.eINSTANCE.createActionExecutionSpecification()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_OPERAND__FRAGMENT,
+				 Uml2Factory.eINSTANCE.createInteraction()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_OPERAND__FRAGMENT,
+				 Uml2Factory.eINSTANCE.createInteractionOperand()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.INTERACTION_OPERAND__FRAGMENT,
+				 Uml2Factory.eINSTANCE.createOccurrenceSpecification()));
 
 		newChildDescriptors.add
 			(createChildParameter
