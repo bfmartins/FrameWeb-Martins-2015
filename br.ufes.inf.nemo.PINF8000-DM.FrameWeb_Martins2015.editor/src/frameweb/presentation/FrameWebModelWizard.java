@@ -69,8 +69,8 @@ import org.eclipse.ui.dialogs.WizardNewFileCreationPage;
 import org.eclipse.ui.part.FileEditorInput;
 import org.eclipse.ui.part.ISetSelectionTarget;
 
-import frameweb.FrameWebFactory;
-import frameweb.FrameWebPackage;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 import frameweb.provider.FrameWeb_Martins2015EditPlugin;
 
 
@@ -91,7 +91,7 @@ import org.eclipse.ui.PartInitException;
  * <!-- end-user-doc -->
  * @generated
  */
-public class FrameWebModelWizard extends Wizard implements INewWizard {
+public class FramewebModelWizard extends Wizard implements INewWizard {
 	/**
 	 * The supported extensions for created files.
 	 * <!-- begin-user-doc -->
@@ -99,7 +99,7 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final List<String> FILE_EXTENSIONS =
-		Collections.unmodifiableList(Arrays.asList(FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FrameWebEditorFilenameExtensions").split("\\s*,\\s*")));
+		Collections.unmodifiableList(Arrays.asList(FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FramewebEditorFilenameExtensions").split("\\s*,\\s*")));
 
 	/**
 	 * A formatted list of supported file extensions, suitable for display.
@@ -108,7 +108,7 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final String FORMATTED_FILE_EXTENSIONS =
-		FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FrameWebEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
+		FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FramewebEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
 
 	/**
 	 * This caches an instance of the model package.
@@ -116,7 +116,7 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FrameWebPackage frameWebPackage = FrameWebPackage.eINSTANCE;
+	protected FramewebPackage framewebPackage = FramewebPackage.eINSTANCE;
 
 	/**
 	 * This caches an instance of the model factory.
@@ -124,7 +124,7 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FrameWebFactory frameWebFactory = frameWebPackage.getFrameWebFactory();
+	protected FramewebFactory framewebFactory = framewebPackage.getFramewebFactory();
 
 	/**
 	 * This is the file creation page.
@@ -132,7 +132,7 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FrameWebModelWizardNewFileCreationPage newFileCreationPage;
+	protected FramewebModelWizardNewFileCreationPage newFileCreationPage;
 
 	/**
 	 * This is the initial object creation page.
@@ -140,7 +140,7 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FrameWebModelWizardInitialObjectCreationPage initialObjectCreationPage;
+	protected FramewebModelWizardInitialObjectCreationPage initialObjectCreationPage;
 
 	/**
 	 * Remember the selection during initialization for populating the default container.
@@ -176,7 +176,7 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 		this.workbench = workbench;
 		this.selection = selection;
 		setWindowTitle(FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_Wizard_label"));
-		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(FrameWeb_Martins2015EditorPlugin.INSTANCE.getImage("full/wizban/NewFrameWeb")));
+		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(FrameWeb_Martins2015EditorPlugin.INSTANCE.getImage("full/wizban/NewFrameweb")));
 	}
 
 	/**
@@ -188,7 +188,7 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 	protected Collection<String> getInitialObjectNames() {
 		if (initialObjectNames == null) {
 			initialObjectNames = new ArrayList<String>();
-			for (EClassifier eClassifier : frameWebPackage.getEClassifiers()) {
+			for (EClassifier eClassifier : framewebPackage.getEClassifiers()) {
 				if (eClassifier instanceof EClass) {
 					EClass eClass = (EClass)eClassifier;
 					if (!eClass.isAbstract()) {
@@ -208,8 +208,8 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	protected EObject createInitialModel() {
-		EClass eClass = (EClass)frameWebPackage.getEClassifier(initialObjectCreationPage.getInitialObjectName());
-		EObject rootObject = frameWebFactory.create(eClass);
+		EClass eClass = (EClass)framewebPackage.getEClassifier(initialObjectCreationPage.getInitialObjectName());
+		EObject rootObject = framewebFactory.create(eClass);
 		return rootObject;
 	}
 
@@ -310,14 +310,14 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public class FrameWebModelWizardNewFileCreationPage extends WizardNewFileCreationPage {
+	public class FramewebModelWizardNewFileCreationPage extends WizardNewFileCreationPage {
 		/**
 		 * Pass in the selection.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		public FrameWebModelWizardNewFileCreationPage(String pageId, IStructuredSelection selection) {
+		public FramewebModelWizardNewFileCreationPage(String pageId, IStructuredSelection selection) {
 			super(pageId, selection);
 		}
 
@@ -357,7 +357,7 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public class FrameWebModelWizardInitialObjectCreationPage extends WizardPage {
+	public class FramewebModelWizardInitialObjectCreationPage extends WizardPage {
 		/**
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -385,7 +385,7 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		public FrameWebModelWizardInitialObjectCreationPage(String pageId) {
+		public FramewebModelWizardInitialObjectCreationPage(String pageId) {
 			super(pageId);
 		}
 
@@ -395,8 +395,7 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 		 * @generated
 		 */
 		public void createControl(Composite parent) {
-			Composite composite = new Composite(parent, SWT.NONE);
-			{
+			Composite composite = new Composite(parent, SWT.NONE); {
 				GridLayout layout = new GridLayout();
 				layout.numColumns = 1;
 				layout.verticalSpacing = 12;
@@ -570,10 +569,10 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 	public void addPages() {
 		// Create a page, set the title, and the initial model file name.
 		//
-		newFileCreationPage = new FrameWebModelWizardNewFileCreationPage("Whatever", selection);
-		newFileCreationPage.setTitle(FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FrameWebModelWizard_label"));
-		newFileCreationPage.setDescription(FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FrameWebModelWizard_description"));
-		newFileCreationPage.setFileName(FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FrameWebEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
+		newFileCreationPage = new FramewebModelWizardNewFileCreationPage("Whatever", selection);
+		newFileCreationPage.setTitle(FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FramewebModelWizard_label"));
+		newFileCreationPage.setDescription(FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FramewebModelWizard_description"));
+		newFileCreationPage.setFileName(FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FramewebEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
 		addPage(newFileCreationPage);
 
 		// Try and get the resource selection to determine a current directory for the file dialog.
@@ -599,7 +598,7 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 
 					// Make up a unique new name here.
 					//
-					String defaultModelBaseFilename = FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FrameWebEditorFilenameDefaultBase");
+					String defaultModelBaseFilename = FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FramewebEditorFilenameDefaultBase");
 					String defaultModelFilenameExtension = FILE_EXTENSIONS.get(0);
 					String modelFilename = defaultModelBaseFilename + "." + defaultModelFilenameExtension;
 					for (int i = 1; ((IContainer)selectedResource).findMember(modelFilename) != null; ++i) {
@@ -609,8 +608,8 @@ public class FrameWebModelWizard extends Wizard implements INewWizard {
 				}
 			}
 		}
-		initialObjectCreationPage = new FrameWebModelWizardInitialObjectCreationPage("Whatever2");
-		initialObjectCreationPage.setTitle(FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FrameWebModelWizard_label"));
+		initialObjectCreationPage = new FramewebModelWizardInitialObjectCreationPage("Whatever2");
+		initialObjectCreationPage.setTitle(FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_FramewebModelWizard_label"));
 		initialObjectCreationPage.setDescription(FrameWeb_Martins2015EditorPlugin.INSTANCE.getString("_UI_Wizard_initial_object_description"));
 		addPage(initialObjectCreationPage);
 	}

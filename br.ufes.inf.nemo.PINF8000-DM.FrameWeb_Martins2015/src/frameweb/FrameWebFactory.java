@@ -9,17 +9,17 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see frameweb.FrameWebPackage
+ * @see frameweb.FramewebPackage
  * @generated
  */
-public interface FrameWebFactory extends EFactory {
+public interface FramewebFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	FrameWebFactory eINSTANCE = frameweb.impl.FrameWebFactoryImpl.init();
+	FramewebFactory eINSTANCE = frameweb.impl.FramewebFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>Mapped Class</em>'.
@@ -49,13 +49,13 @@ public interface FrameWebFactory extends EFactory {
 	TransientClass createTransientClass();
 
 	/**
-	 * Returns a new object of class '<em>Frame Web</em>'.
+	 * Returns a new object of class '<em>Frameweb</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Frame Web</em>'.
+	 * @return a new object of class '<em>Frameweb</em>'.
 	 * @generated
 	 */
-	FrameWeb createFrameWeb();
+	Frameweb createFrameweb();
 
 	/**
 	 * Returns a new object of class '<em>Framework</em>'.
@@ -110,15 +110,6 @@ public interface FrameWebFactory extends EFactory {
 	 * @generated
 	 */
 	DomainAssociation createDomainAssociation();
-
-	/**
-	 * Returns a new object of class '<em>Domain Attribute</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Domain Attribute</em>'.
-	 * @generated
-	 */
-	DomainAttribute createDomainAttribute();
 
 	/**
 	 * Returns a new object of class '<em>Version Attribute</em>'.
@@ -481,15 +472,6 @@ public interface FrameWebFactory extends EFactory {
 	ServiceAttribute createServiceAttribute();
 
 	/**
-	 * Returns a new object of class '<em>Service Association</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Service Association</em>'.
-	 * @generated
-	 */
-	ServiceAssociation createServiceAssociation();
-
-	/**
 	 * Returns a new object of class '<em>DAO Operation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -840,6 +822,6 @@ public interface FrameWebFactory extends EFactory {
 	 * @return the package supported by this factory.
 	 * @generated
 	 */
-	FrameWebPackage getFrameWebPackage();
+	FramewebPackage getFramewebPackage();
 
-} //FrameWebFactory
+} //FramewebFactory

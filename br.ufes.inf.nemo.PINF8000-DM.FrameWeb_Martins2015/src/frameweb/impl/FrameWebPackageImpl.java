@@ -40,12 +40,12 @@ import frameweb.EmbeddedAttribute;
 import frameweb.Fetch;
 import frameweb.Form;
 import frameweb.FormComponent;
-import frameweb.FrameWeb;
-import frameweb.FrameWebFactory;
 import frameweb.FrameWebModel;
 import frameweb.FrameWebName;
-import frameweb.FrameWebPackage;
 import frameweb.FrameWorkName;
+import frameweb.Frameweb;
+import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 import frameweb.Framework;
 import frameweb.FrameworkCategoryList;
 import frameweb.FrameworkTag;
@@ -114,7 +114,7 @@ import uml2.impl.Uml2PackageImpl;
  * <!-- end-user-doc -->
  * @generated
  */
-public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage {
+public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -141,7 +141,7 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass frameWebEClass = null;
+	private EClass framewebEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -735,12 +735,12 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see frameweb.FrameWebPackage#eNS_URI
+	 * @see frameweb.FramewebPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
-	private FrameWebPackageImpl() {
-		super(eNS_URI, FrameWebFactory.eINSTANCE);
+	private FramewebPackageImpl() {
+		super(eNS_URI, FramewebFactory.eINSTANCE);
 	}
 
 	/**
@@ -753,7 +753,7 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
 	 * 
-	 * <p>This method is used to initialize {@link FrameWebPackage#eINSTANCE} when that field is accessed.
+	 * <p>This method is used to initialize {@link FramewebPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -762,11 +762,11 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static FrameWebPackage init() {
-		if (isInited) return (FrameWebPackage)EPackage.Registry.INSTANCE.getEPackage(FrameWebPackage.eNS_URI);
+	public static FramewebPackage init() {
+		if (isInited) return (FramewebPackage)EPackage.Registry.INSTANCE.getEPackage(FramewebPackage.eNS_URI);
 
 		// Obtain or create and register package
-		FrameWebPackageImpl theFrameWebPackage = (FrameWebPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof FrameWebPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new FrameWebPackageImpl());
+		FramewebPackageImpl theFramewebPackage = (FramewebPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof FramewebPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new FramewebPackageImpl());
 
 		isInited = true;
 
@@ -775,22 +775,22 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 		PrimitiveTypesPackageImpl thePrimitiveTypesPackage = (PrimitiveTypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(PrimitiveTypesPackage.eNS_URI) instanceof PrimitiveTypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(PrimitiveTypesPackage.eNS_URI) : PrimitiveTypesPackage.eINSTANCE);
 
 		// Create package meta-data objects
-		theFrameWebPackage.createPackageContents();
+		theFramewebPackage.createPackageContents();
 		theUml2Package.createPackageContents();
 		thePrimitiveTypesPackage.createPackageContents();
 
 		// Initialize created meta-data
-		theFrameWebPackage.initializePackageContents();
+		theFramewebPackage.initializePackageContents();
 		theUml2Package.initializePackageContents();
 		thePrimitiveTypesPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
-		theFrameWebPackage.freeze();
+		theFramewebPackage.freeze();
 
   
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(FrameWebPackage.eNS_URI, theFrameWebPackage);
-		return theFrameWebPackage;
+		EPackage.Registry.INSTANCE.put(FramewebPackage.eNS_URI, theFramewebPackage);
+		return theFramewebPackage;
 	}
 
 	/**
@@ -834,8 +834,8 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getFrameWeb() {
-		return frameWebEClass;
+	public EClass getFrameweb() {
+		return framewebEClass;
 	}
 
 	/**
@@ -843,8 +843,8 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFrameWeb_Compose() {
-		return (EReference)frameWebEClass.getEStructuralFeatures().get(0);
+	public EReference getFrameweb_Compose() {
+		return (EReference)framewebEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -852,8 +852,8 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFrameWeb_Uses() {
-		return (EReference)frameWebEClass.getEStructuralFeatures().get(1);
+	public EReference getFrameweb_Uses() {
+		return (EReference)framewebEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -935,6 +935,15 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 	 */
 	public EReference getDomainModel_DomainUMLPackage() {
 		return (EReference)domainModelEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDomainModel_DomainUMLAssociation() {
+		return (EReference)domainModelEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -2625,8 +2634,8 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrameWebFactory getFrameWebFactory() {
-		return (FrameWebFactory)getEFactoryInstance();
+	public FramewebFactory getFramewebFactory() {
+		return (FramewebFactory)getEFactoryInstance();
 	}
 
 	/**
@@ -2655,9 +2664,9 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 
 		transientClassEClass = createEClass(TRANSIENT_CLASS);
 
-		frameWebEClass = createEClass(FRAME_WEB);
-		createEReference(frameWebEClass, FRAME_WEB__COMPOSE);
-		createEReference(frameWebEClass, FRAME_WEB__USES);
+		framewebEClass = createEClass(FRAMEWEB);
+		createEReference(framewebEClass, FRAMEWEB__COMPOSE);
+		createEReference(framewebEClass, FRAMEWEB__USES);
 
 		frameWebModelEClass = createEClass(FRAME_WEB_MODEL);
 		createEReference(frameWebModelEClass, FRAME_WEB_MODEL__INDITE);
@@ -2670,6 +2679,7 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 
 		domainModelEClass = createEClass(DOMAIN_MODEL);
 		createEReference(domainModelEClass, DOMAIN_MODEL__DOMAIN_UML_PACKAGE);
+		createEReference(domainModelEClass, DOMAIN_MODEL__DOMAIN_UML_ASSOCIATION);
 
 		navigationModelEClass = createEClass(NAVIGATION_MODEL);
 		createEReference(navigationModelEClass, NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCE);
@@ -2965,8 +2975,6 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 		mappedClassEClass.getESuperTypes().add(this.getDomainClass());
 		persistentClassEClass.getESuperTypes().add(this.getDomainClass());
 		transientClassEClass.getESuperTypes().add(this.getDomainClass());
-		frameWebModelEClass.getESuperTypes().add(theUml2Package.getModel());
-		frameworkEClass.getESuperTypes().add(theUml2Package.getModel());
 		domainModelEClass.getESuperTypes().add(this.getFrameWebModel());
 		navigationModelEClass.getESuperTypes().add(this.getFrameWebModel());
 		applicationModelEClass.getESuperTypes().add(this.getFrameWebModel());
@@ -2987,6 +2995,7 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 		daoInterfaceEClass.getESuperTypes().add(theUml2Package.getInterface());
 		daoClassEClass.getESuperTypes().add(theUml2Package.getClass_());
 		daoGeneralizationEClass.getESuperTypes().add(theUml2Package.getGeneralization());
+		frontControllerClassEClass.getESuperTypes().add(theUml2Package.getClass_());
 		userViewAttributeEClass.getESuperTypes().add(this.getNavigationAttribute());
 		ioParameterEClass.getESuperTypes().add(this.getNavigationAttribute());
 		resultDependencyEClass.getESuperTypes().add(this.getNavigationDependency());
@@ -3017,13 +3026,9 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 		serviceAssociationEClass.getESuperTypes().add(theUml2Package.getAssociation());
 		navigationDependencyEClass.getESuperTypes().add(theUml2Package.getDependency());
 		daoOperationEClass.getESuperTypes().add(theUml2Package.getOperation());
-		domainPackageEClass.getESuperTypes().add(theUml2Package.getPackage());
 		viewPackageEClass.getESuperTypes().add(this.getNavigationPackage());
 		controllerPackageEClass.getESuperTypes().add(this.getNavigationPackage());
-		persistencePackageEClass.getESuperTypes().add(theUml2Package.getPackage());
-		applicationPackageEClass.getESuperTypes().add(theUml2Package.getPackage());
 		componentEClass.getESuperTypes().add(this.getNavigationClass());
-		navigationPackageEClass.getESuperTypes().add(theUml2Package.getPackage());
 		domainGeneralizationEClass.getESuperTypes().add(theUml2Package.getGeneralization());
 		jQueryEClass.getESuperTypes().add(this.getNavigationClass());
 		formComponentEClass.getESuperTypes().add(this.getNavigationAttribute());
@@ -3038,9 +3043,9 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 
 		initEClass(transientClassEClass, TransientClass.class, "TransientClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(frameWebEClass, FrameWeb.class, "FrameWeb", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getFrameWeb_Compose(), this.getFrameWebModel(), null, "Compose", null, 1, 1, FrameWeb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getFrameWeb_Uses(), this.getFramework(), null, "Uses", null, 1, -1, FrameWeb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(framewebEClass, Frameweb.class, "Frameweb", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getFrameweb_Compose(), this.getFrameWebModel(), null, "Compose", null, 1, -1, Frameweb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFrameweb_Uses(), this.getFramework(), null, "Uses", null, 1, -1, Frameweb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(frameWebModelEClass, FrameWebModel.class, "FrameWebModel", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFrameWebModel_Indite(), this.getNamingMethod(), null, "Indite", null, 1, 1, FrameWebModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3053,6 +3058,7 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 
 		initEClass(domainModelEClass, DomainModel.class, "DomainModel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDomainModel_DomainUMLPackage(), this.getDomainPackage(), null, "DomainUMLPackage", null, 1, -1, DomainModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDomainModel_DomainUMLAssociation(), this.getDomainAssociation(), null, "DomainUMLAssociation", null, 0, -1, DomainModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(navigationModelEClass, NavigationModel.class, "NavigationModel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getNavigationModel_NavigationUMLDependence(), this.getNavigationDependency(), null, "NavigationUMLDependence", null, 0, -1, NavigationModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3075,7 +3081,7 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 		initEReference(getDomainAssociation_SourceClass(), this.getDomainClass(), null, "SourceClass", null, 1, 1, DomainAssociation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDomainAssociation_TargetClass(), this.getDomainClass(), null, "TargetClass", null, 1, 1, DomainAssociation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(domainAttributeEClass, DomainAttribute.class, "DomainAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(domainAttributeEClass, DomainAttribute.class, "DomainAttribute", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDomainAttribute_Size(), ecorePackage.getELong(), "size", null, 0, 1, DomainAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDomainAttribute_IsNull(), ecorePackage.getEBoolean(), "isNull", null, 0, 1, DomainAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDomainAttribute_IsPersistent(), ecorePackage.getEBoolean(), "isPersistent", null, 0, 1, DomainAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3248,7 +3254,7 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 
 		initEClass(serviceAttributeEClass, ServiceAttribute.class, "ServiceAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(serviceAssociationEClass, ServiceAssociation.class, "ServiceAssociation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(serviceAssociationEClass, ServiceAssociation.class, "ServiceAssociation", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(navigationDependencyEClass, NavigationDependency.class, "NavigationDependency", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -3370,4 +3376,4 @@ public class FrameWebPackageImpl extends EPackageImpl implements FrameWebPackage
 		createResource(eNS_URI);
 	}
 
-} //FrameWebPackageImpl
+} //FramewebPackageImpl

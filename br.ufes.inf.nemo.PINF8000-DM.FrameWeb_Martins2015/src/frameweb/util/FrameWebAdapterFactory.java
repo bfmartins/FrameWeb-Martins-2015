@@ -24,7 +24,6 @@ import uml2.EncapsulatedClassifier;
 import uml2.Feature;
 import uml2.Generalization;
 import uml2.Interface;
-import uml2.Model;
 import uml2.MultiplicityElement;
 import uml2.NamedElement;
 import uml2.Namespace;
@@ -45,17 +44,17 @@ import uml2.TypedElement;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see frameweb.FrameWebPackage
+ * @see frameweb.FramewebPackage
  * @generated
  */
-public class FrameWebAdapterFactory extends AdapterFactoryImpl {
+public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static FrameWebPackage modelPackage;
+	protected static FramewebPackage modelPackage;
 
 	/**
 	 * Creates an instance of the adapter factory.
@@ -63,9 +62,9 @@ public class FrameWebAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrameWebAdapterFactory() {
+	public FramewebAdapterFactory() {
 		if (modelPackage == null) {
-			modelPackage = FrameWebPackage.eINSTANCE;
+			modelPackage = FramewebPackage.eINSTANCE;
 		}
 	}
 
@@ -94,8 +93,8 @@ public class FrameWebAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FrameWebSwitch<Adapter> modelSwitch =
-		new FrameWebSwitch<Adapter>() {
+	protected FramewebSwitch<Adapter> modelSwitch =
+		new FramewebSwitch<Adapter>() {
 			@Override
 			public Adapter caseMappedClass(MappedClass object) {
 				return createMappedClassAdapter();
@@ -109,8 +108,8 @@ public class FrameWebAdapterFactory extends AdapterFactoryImpl {
 				return createTransientClassAdapter();
 			}
 			@Override
-			public Adapter caseFrameWeb(FrameWeb object) {
-				return createFrameWebAdapter();
+			public Adapter caseFrameweb(Frameweb object) {
+				return createFramewebAdapter();
 			}
 			@Override
 			public Adapter caseFrameWebModel(FrameWebModel object) {
@@ -457,14 +456,6 @@ public class FrameWebAdapterFactory extends AdapterFactoryImpl {
 				return createClassAdapter();
 			}
 			@Override
-			public Adapter casePackage(uml2.Package object) {
-				return createPackageAdapter();
-			}
-			@Override
-			public Adapter caseModel(Model object) {
-				return createModelAdapter();
-			}
-			@Override
 			public Adapter caseRelationship(Relationship object) {
 				return createRelationshipAdapter();
 			}
@@ -587,21 +578,21 @@ public class FrameWebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.FrameWeb <em>Frame Web</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.Frameweb <em>Frameweb</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.FrameWeb
+	 * @see frameweb.Frameweb
 	 * @generated
 	 */
-	public Adapter createFrameWebAdapter() {
+	public Adapter createFramewebAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.FrameWebModel <em>Model</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.FrameWebModel <em>Frame Web Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
@@ -1077,7 +1068,7 @@ public class FrameWebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.FrameWebName <em>Name</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.FrameWebName <em>Frame Web Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
@@ -1805,34 +1796,6 @@ public class FrameWebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link uml2.Package <em>Package</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see uml2.Package
-	 * @generated
-	 */
-	public Adapter createPackageAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link uml2.Model <em>Model</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see uml2.Model
-	 * @generated
-	 */
-	public Adapter createModelAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link uml2.Relationship <em>Relationship</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -2054,4 +2017,4 @@ public class FrameWebAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //FrameWebAdapterFactory
+} //FramewebAdapterFactory
