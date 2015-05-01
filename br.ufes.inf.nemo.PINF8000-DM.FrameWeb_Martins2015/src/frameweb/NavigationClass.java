@@ -2,6 +2,8 @@
  */
 package frameweb;
 
+import uml2.Stereotype;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -13,5 +15,5 @@ package frameweb;
  * @model abstract="true"
  * @generated
  */
-public interface NavigationClass extends uml2.Class {
+public interface NavigationClass extends Stereotype {
 } // NavigationClass

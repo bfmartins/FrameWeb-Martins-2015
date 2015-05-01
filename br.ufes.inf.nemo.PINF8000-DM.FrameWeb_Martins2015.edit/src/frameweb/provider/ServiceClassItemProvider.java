@@ -6,23 +6,16 @@ package frameweb.provider;
 import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
 import frameweb.ServiceClass;
-
 import java.util.Collection;
 import java.util.List;
-
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.EStructuralFeature;
-
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-
 import uml2.Uml2Package;
-
-import uml2.provider.ClassItemProvider;
+import uml2.provider.StereotypeItemProvider;
 
 /**
  * This is the item provider adapter for a {@link frameweb.ServiceClass} object.
@@ -30,7 +23,7 @@ import uml2.provider.ClassItemProvider;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ServiceClassItemProvider extends ClassItemProvider {
+public class ServiceClassItemProvider extends StereotypeItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->

@@ -168,6 +168,31 @@ public class DurationItemProvider extends ValueSpecificationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.DURATION__EXPR,
+				 Uml2Factory.eINSTANCE.createStringExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.DURATION__EXPR,
+				 Uml2Factory.eINSTANCE.createOpaqueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.DURATION__EXPR,
+				 Uml2Factory.eINSTANCE.createDuration()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.DURATION__EXPR,
+				 Uml2Factory.eINSTANCE.createInterval()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.DURATION__EXPR,
+				 Uml2Factory.eINSTANCE.createDurationInterval()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.DURATION__EXPR,
 				 Uml2Factory.eINSTANCE.createInstanceValue()));
 
 		newChildDescriptors.add
@@ -199,31 +224,6 @@ public class DurationItemProvider extends ValueSpecificationItemProvider {
 			(createChildParameter
 				(Uml2Package.Literals.DURATION__EXPR,
 				 Uml2Factory.eINSTANCE.createLiteralUnlimitedNatural()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.DURATION__EXPR,
-				 Uml2Factory.eINSTANCE.createOpaqueExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.DURATION__EXPR,
-				 Uml2Factory.eINSTANCE.createStringExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.DURATION__EXPR,
-				 Uml2Factory.eINSTANCE.createDuration()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.DURATION__EXPR,
-				 Uml2Factory.eINSTANCE.createInterval()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.DURATION__EXPR,
-				 Uml2Factory.eINSTANCE.createDurationInterval()));
 
 		newChildDescriptors.add
 			(createChildParameter

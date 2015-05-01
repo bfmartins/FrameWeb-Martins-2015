@@ -4,10 +4,8 @@ package frameweb.impl;
 
 import frameweb.FramewebPackage;
 import frameweb.NavigationClass;
-
 import org.eclipse.emf.ecore.EClass;
-
-import uml2.impl.ClassImpl;
+import uml2.impl.StereotypeImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,7 +16,7 @@ import uml2.impl.ClassImpl;
  *
  * @generated
  */
-public abstract class NavigationClassImpl extends ClassImpl implements NavigationClass {
+public abstract class NavigationClassImpl extends StereotypeImpl implements NavigationClass {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -148,12 +148,12 @@ public class DataTypeItemProvider extends ClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.DATA_TYPE__OWNED_ATTRIBUTE,
-				 Uml2Factory.eINSTANCE.createExtensionEnd()));
+				 Uml2Factory.eINSTANCE.createPort()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.DATA_TYPE__OWNED_ATTRIBUTE,
-				 Uml2Factory.eINSTANCE.createPort()));
+				 Uml2Factory.eINSTANCE.createExtensionEnd()));
 
 		newChildDescriptors.add
 			(createChildParameter

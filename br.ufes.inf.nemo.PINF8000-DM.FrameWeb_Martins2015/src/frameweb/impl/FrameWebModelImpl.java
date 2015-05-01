@@ -13,7 +13,8 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import uml2.impl.PackageImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public abstract class FrameWebModelImpl extends MinimalEObjectImpl.Container implements FrameWebModel {
+public abstract class FrameWebModelImpl extends PackageImpl implements FrameWebModel {
 	/**
 	 * The cached value of the '{@link #getIndite() <em>Indite</em>}' containment reference.
 	 * <!-- begin-user-doc -->

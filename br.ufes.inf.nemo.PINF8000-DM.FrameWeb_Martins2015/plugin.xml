@@ -21,7 +21,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated FrameWeb -->
       <package
-            uri="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi"
+            uri="http://schema.omg.org/spec/QVT/1.1/primitivetypes.xml"
             class="primitiveTypes.PrimitiveTypesPackage"
             genModel="model/FrameWeb.genmodel"/>
    </extension>

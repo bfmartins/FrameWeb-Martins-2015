@@ -20,10 +20,11 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
+
+import uml2.impl.PackageImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -41,7 +42,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class FrameworkImpl extends MinimalEObjectImpl.Container implements Framework {
+public class FrameworkImpl extends PackageImpl implements Framework {
 	/**
 	 * The cached value of the '{@link #getFrameworkTagLib() <em>Framework Tag Lib</em>}' containment reference.
 	 * <!-- begin-user-doc -->

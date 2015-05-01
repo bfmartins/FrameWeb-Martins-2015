@@ -6,20 +6,14 @@ import frameweb.FramewebPackage;
 import frameweb.FrontControllerClass;
 import frameweb.FrontControllerMethod;
 import frameweb.IOParameter;
-
 import java.util.Collection;
-
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
-
-import uml2.impl.ClassImpl;
+import uml2.impl.StereotypeImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +29,7 @@ import uml2.impl.ClassImpl;
  *
  * @generated
  */
-public class FrontControllerClassImpl extends ClassImpl implements FrontControllerClass {
+public class FrontControllerClassImpl extends StereotypeImpl implements FrontControllerClass {
 	/**
 	 * The cached value of the '{@link #getFrontControllerAttribute() <em>Front Controller Attribute</em>}' containment reference list.
 	 * <!-- begin-user-doc -->

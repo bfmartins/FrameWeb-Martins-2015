@@ -387,6 +387,11 @@ public class StructuredActivityNodeItemProvider extends ActionItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
+				 Uml2Factory.eINSTANCE.createStructuredActivityNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
 				 Uml2Factory.eINSTANCE.createActivityFinalNode()));
 
 		newChildDescriptors.add
@@ -432,42 +437,12 @@ public class StructuredActivityNodeItemProvider extends ActionItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
-				 Uml2Factory.eINSTANCE.createStructuredActivityNode()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
 				 Uml2Factory.eINSTANCE.createConditionalNode()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
 				 Uml2Factory.eINSTANCE.createCreateLinkAction()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
-				 Uml2Factory.eINSTANCE.createInitialNode()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
-				 Uml2Factory.eINSTANCE.createJoinNode()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
-				 Uml2Factory.eINSTANCE.createLoopNode()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
-				 Uml2Factory.eINSTANCE.createMergeNode()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
-				 Uml2Factory.eINSTANCE.createOpaqueAction()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -508,6 +483,31 @@ public class StructuredActivityNodeItemProvider extends ActionItemProvider {
 			(createChildParameter
 				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
 				 Uml2Factory.eINSTANCE.createForkNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
+				 Uml2Factory.eINSTANCE.createInitialNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
+				 Uml2Factory.eINSTANCE.createJoinNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
+				 Uml2Factory.eINSTANCE.createLoopNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
+				 Uml2Factory.eINSTANCE.createMergeNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.STRUCTURED_ACTIVITY_NODE__NODE,
+				 Uml2Factory.eINSTANCE.createOpaqueAction()));
 
 		newChildDescriptors.add
 			(createChildParameter

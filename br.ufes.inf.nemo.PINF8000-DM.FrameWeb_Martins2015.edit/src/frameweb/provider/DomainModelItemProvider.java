@@ -6,13 +6,19 @@ package frameweb.provider;
 import frameweb.DomainModel;
 import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
+
 import java.util.Collection;
 import java.util.List;
+
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EStructuralFeature;
+
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import uml2.Uml2Package;
 
 /**
  * This is the item provider adapter for a {@link frameweb.DomainModel} object.
@@ -96,7 +102,10 @@ public class DomainModelItemProvider extends FrameWebModelItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_DomainModel_type");
+		String label = ((DomainModel)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_DomainModel_type") :
+			getString("_UI_DomainModel_type") + " " + label;
 	}
 	
 
@@ -140,6 +149,32 @@ public class DomainModelItemProvider extends FrameWebModelItemProvider {
 			(createChildParameter
 				(FramewebPackage.Literals.DOMAIN_MODEL__DOMAIN_UML_ASSOCIATION,
 				 FramewebFactory.eINSTANCE.createDomainAssociation()));
+	}
+
+	/**
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify =
+			childFeature == Uml2Package.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
+			childFeature == Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT ||
+			childFeature == Uml2Package.Literals.NAMESPACE__OWNED_RULE ||
+			childFeature == FramewebPackage.Literals.DOMAIN_MODEL__DOMAIN_UML_ASSOCIATION ||
+			childFeature == FramewebPackage.Literals.DOMAIN_MODEL__DOMAIN_UML_PACKAGE;
+
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 }

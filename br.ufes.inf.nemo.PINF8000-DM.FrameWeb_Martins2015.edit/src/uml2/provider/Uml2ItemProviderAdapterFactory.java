@@ -94,1409 +94,6 @@ public class Uml2ItemProviderAdapterFactory extends Uml2AdapterFactory implement
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Dependency} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected DependencyItemProvider dependencyItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Dependency}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createDependencyAdapter() {
-		if (dependencyItemProvider == null) {
-			dependencyItemProvider = new DependencyItemProvider(this);
-		}
-
-		return dependencyItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Comment} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected CommentItemProvider commentItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Comment}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createCommentAdapter() {
-		if (commentItemProvider == null) {
-			commentItemProvider = new CommentItemProvider(this);
-		}
-
-		return commentItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.TemplateParameter} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected TemplateParameterItemProvider templateParameterItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.TemplateParameter}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createTemplateParameterAdapter() {
-		if (templateParameterItemProvider == null) {
-			templateParameterItemProvider = new TemplateParameterItemProvider(this);
-		}
-
-		return templateParameterItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.TemplateSignature} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected TemplateSignatureItemProvider templateSignatureItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.TemplateSignature}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createTemplateSignatureAdapter() {
-		if (templateSignatureItemProvider == null) {
-			templateSignatureItemProvider = new TemplateSignatureItemProvider(this);
-		}
-
-		return templateSignatureItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.TemplateBinding} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected TemplateBindingItemProvider templateBindingItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.TemplateBinding}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createTemplateBindingAdapter() {
-		if (templateBindingItemProvider == null) {
-			templateBindingItemProvider = new TemplateBindingItemProvider(this);
-		}
-
-		return templateBindingItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.TemplateParameterSubstitution} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected TemplateParameterSubstitutionItemProvider templateParameterSubstitutionItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.TemplateParameterSubstitution}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createTemplateParameterSubstitutionAdapter() {
-		if (templateParameterSubstitutionItemProvider == null) {
-			templateParameterSubstitutionItemProvider = new TemplateParameterSubstitutionItemProvider(this);
-		}
-
-		return templateParameterSubstitutionItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.StringExpression} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected StringExpressionItemProvider stringExpressionItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.StringExpression}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createStringExpressionAdapter() {
-		if (stringExpressionItemProvider == null) {
-			stringExpressionItemProvider = new StringExpressionItemProvider(this);
-		}
-
-		return stringExpressionItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Expression} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ExpressionItemProvider expressionItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Expression}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createExpressionAdapter() {
-		if (expressionItemProvider == null) {
-			expressionItemProvider = new ExpressionItemProvider(this);
-		}
-
-		return expressionItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Package} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected PackageItemProvider packageItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Package}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createPackageAdapter() {
-		if (packageItemProvider == null) {
-			packageItemProvider = new PackageItemProvider(this);
-		}
-
-		return packageItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.ElementImport} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ElementImportItemProvider elementImportItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.ElementImport}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createElementImportAdapter() {
-		if (elementImportItemProvider == null) {
-			elementImportItemProvider = new ElementImportItemProvider(this);
-		}
-
-		return elementImportItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Constraint} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ConstraintItemProvider constraintItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Constraint}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createConstraintAdapter() {
-		if (constraintItemProvider == null) {
-			constraintItemProvider = new ConstraintItemProvider(this);
-		}
-
-		return constraintItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.PackageImport} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected PackageImportItemProvider packageImportItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.PackageImport}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createPackageImportAdapter() {
-		if (packageImportItemProvider == null) {
-			packageImportItemProvider = new PackageImportItemProvider(this);
-		}
-
-		return packageImportItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Stereotype} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected StereotypeItemProvider stereotypeItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Stereotype}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createStereotypeAdapter() {
-		if (stereotypeItemProvider == null) {
-			stereotypeItemProvider = new StereotypeItemProvider(this);
-		}
-
-		return stereotypeItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Class} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ClassItemProvider classItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Class}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createClassAdapter() {
-		if (classItemProvider == null) {
-			classItemProvider = new ClassItemProvider(this);
-		}
-
-		return classItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Property} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected PropertyItemProvider propertyItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Property}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createPropertyAdapter() {
-		if (propertyItemProvider == null) {
-			propertyItemProvider = new PropertyItemProvider(this);
-		}
-
-		return propertyItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Deployment} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected DeploymentItemProvider deploymentItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Deployment}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createDeploymentAdapter() {
-		if (deploymentItemProvider == null) {
-			deploymentItemProvider = new DeploymentItemProvider(this);
-		}
-
-		return deploymentItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.DeploymentSpecification} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected DeploymentSpecificationItemProvider deploymentSpecificationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.DeploymentSpecification}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createDeploymentSpecificationAdapter() {
-		if (deploymentSpecificationItemProvider == null) {
-			deploymentSpecificationItemProvider = new DeploymentSpecificationItemProvider(this);
-		}
-
-		return deploymentSpecificationItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Artifact} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ArtifactItemProvider artifactItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Artifact}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createArtifactAdapter() {
-		if (artifactItemProvider == null) {
-			artifactItemProvider = new ArtifactItemProvider(this);
-		}
-
-		return artifactItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Manifestation} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ManifestationItemProvider manifestationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Manifestation}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createManifestationAdapter() {
-		if (manifestationItemProvider == null) {
-			manifestationItemProvider = new ManifestationItemProvider(this);
-		}
-
-		return manifestationItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Operation} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected OperationItemProvider operationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Operation}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createOperationAdapter() {
-		if (operationItemProvider == null) {
-			operationItemProvider = new OperationItemProvider(this);
-		}
-
-		return operationItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Parameter} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ParameterItemProvider parameterItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Parameter}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createParameterAdapter() {
-		if (parameterItemProvider == null) {
-			parameterItemProvider = new ParameterItemProvider(this);
-		}
-
-		return parameterItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.ConnectorEnd} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ConnectorEndItemProvider connectorEndItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.ConnectorEnd}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createConnectorEndAdapter() {
-		if (connectorEndItemProvider == null) {
-			connectorEndItemProvider = new ConnectorEndItemProvider(this);
-		}
-
-		return connectorEndItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.ConnectableElementTemplateParameter} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ConnectableElementTemplateParameterItemProvider connectableElementTemplateParameterItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.ConnectableElementTemplateParameter}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createConnectableElementTemplateParameterAdapter() {
-		if (connectableElementTemplateParameterItemProvider == null) {
-			connectableElementTemplateParameterItemProvider = new ConnectableElementTemplateParameterItemProvider(this);
-		}
-
-		return connectableElementTemplateParameterItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.ParameterSet} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ParameterSetItemProvider parameterSetItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.ParameterSet}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createParameterSetAdapter() {
-		if (parameterSetItemProvider == null) {
-			parameterSetItemProvider = new ParameterSetItemProvider(this);
-		}
-
-		return parameterSetItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.DataType} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected DataTypeItemProvider dataTypeItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.DataType}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createDataTypeAdapter() {
-		if (dataTypeItemProvider == null) {
-			dataTypeItemProvider = new DataTypeItemProvider(this);
-		}
-
-		return dataTypeItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Interface} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected InterfaceItemProvider interfaceItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Interface}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createInterfaceAdapter() {
-		if (interfaceItemProvider == null) {
-			interfaceItemProvider = new InterfaceItemProvider(this);
-		}
-
-		return interfaceItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Reception} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ReceptionItemProvider receptionItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Reception}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createReceptionAdapter() {
-		if (receptionItemProvider == null) {
-			receptionItemProvider = new ReceptionItemProvider(this);
-		}
-
-		return receptionItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Signal} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected SignalItemProvider signalItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Signal}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createSignalAdapter() {
-		if (signalItemProvider == null) {
-			signalItemProvider = new SignalItemProvider(this);
-		}
-
-		return signalItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.ProtocolStateMachine} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ProtocolStateMachineItemProvider protocolStateMachineItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.ProtocolStateMachine}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createProtocolStateMachineAdapter() {
-		if (protocolStateMachineItemProvider == null) {
-			protocolStateMachineItemProvider = new ProtocolStateMachineItemProvider(this);
-		}
-
-		return protocolStateMachineItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.StateMachine} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected StateMachineItemProvider stateMachineItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.StateMachine}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createStateMachineAdapter() {
-		if (stateMachineItemProvider == null) {
-			stateMachineItemProvider = new StateMachineItemProvider(this);
-		}
-
-		return stateMachineItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Pseudostate} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected PseudostateItemProvider pseudostateItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Pseudostate}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createPseudostateAdapter() {
-		if (pseudostateItemProvider == null) {
-			pseudostateItemProvider = new PseudostateItemProvider(this);
-		}
-
-		return pseudostateItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Region} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected RegionItemProvider regionItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Region}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createRegionAdapter() {
-		if (regionItemProvider == null) {
-			regionItemProvider = new RegionItemProvider(this);
-		}
-
-		return regionItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.State} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected StateItemProvider stateItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.State}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createStateAdapter() {
-		if (stateItemProvider == null) {
-			stateItemProvider = new StateItemProvider(this);
-		}
-
-		return stateItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.ConnectionPointReference} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ConnectionPointReferenceItemProvider connectionPointReferenceItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.ConnectionPointReference}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createConnectionPointReferenceAdapter() {
-		if (connectionPointReferenceItemProvider == null) {
-			connectionPointReferenceItemProvider = new ConnectionPointReferenceItemProvider(this);
-		}
-
-		return connectionPointReferenceItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Trigger} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected TriggerItemProvider triggerItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Trigger}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createTriggerAdapter() {
-		if (triggerItemProvider == null) {
-			triggerItemProvider = new TriggerItemProvider(this);
-		}
-
-		return triggerItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Port} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected PortItemProvider portItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Port}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createPortAdapter() {
-		if (portItemProvider == null) {
-			portItemProvider = new PortItemProvider(this);
-		}
-
-		return portItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Transition} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected TransitionItemProvider transitionItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Transition}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createTransitionAdapter() {
-		if (transitionItemProvider == null) {
-			transitionItemProvider = new TransitionItemProvider(this);
-		}
-
-		return transitionItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.ProtocolConformance} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ProtocolConformanceItemProvider protocolConformanceItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.ProtocolConformance}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createProtocolConformanceAdapter() {
-		if (protocolConformanceItemProvider == null) {
-			protocolConformanceItemProvider = new ProtocolConformanceItemProvider(this);
-		}
-
-		return protocolConformanceItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.OperationTemplateParameter} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected OperationTemplateParameterItemProvider operationTemplateParameterItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.OperationTemplateParameter}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createOperationTemplateParameterAdapter() {
-		if (operationTemplateParameterItemProvider == null) {
-			operationTemplateParameterItemProvider = new OperationTemplateParameterItemProvider(this);
-		}
-
-		return operationTemplateParameterItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Association} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected AssociationItemProvider associationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Association}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createAssociationAdapter() {
-		if (associationItemProvider == null) {
-			associationItemProvider = new AssociationItemProvider(this);
-		}
-
-		return associationItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.CollaborationUse} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected CollaborationUseItemProvider collaborationUseItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.CollaborationUse}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createCollaborationUseAdapter() {
-		if (collaborationUseItemProvider == null) {
-			collaborationUseItemProvider = new CollaborationUseItemProvider(this);
-		}
-
-		return collaborationUseItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Collaboration} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected CollaborationItemProvider collaborationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Collaboration}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createCollaborationAdapter() {
-		if (collaborationItemProvider == null) {
-			collaborationItemProvider = new CollaborationItemProvider(this);
-		}
-
-		return collaborationItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Connector} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ConnectorItemProvider connectorItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Connector}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createConnectorAdapter() {
-		if (connectorItemProvider == null) {
-			connectorItemProvider = new ConnectorItemProvider(this);
-		}
-
-		return connectorItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Generalization} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected GeneralizationItemProvider generalizationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Generalization}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createGeneralizationAdapter() {
-		if (generalizationItemProvider == null) {
-			generalizationItemProvider = new GeneralizationItemProvider(this);
-		}
-
-		return generalizationItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.GeneralizationSet} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected GeneralizationSetItemProvider generalizationSetItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.GeneralizationSet}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createGeneralizationSetAdapter() {
-		if (generalizationSetItemProvider == null) {
-			generalizationSetItemProvider = new GeneralizationSetItemProvider(this);
-		}
-
-		return generalizationSetItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.RedefinableTemplateSignature} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected RedefinableTemplateSignatureItemProvider redefinableTemplateSignatureItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.RedefinableTemplateSignature}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createRedefinableTemplateSignatureAdapter() {
-		if (redefinableTemplateSignatureItemProvider == null) {
-			redefinableTemplateSignatureItemProvider = new RedefinableTemplateSignatureItemProvider(this);
-		}
-
-		return redefinableTemplateSignatureItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.UseCase} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected UseCaseItemProvider useCaseItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.UseCase}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createUseCaseAdapter() {
-		if (useCaseItemProvider == null) {
-			useCaseItemProvider = new UseCaseItemProvider(this);
-		}
-
-		return useCaseItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Extend} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ExtendItemProvider extendItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Extend}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createExtendAdapter() {
-		if (extendItemProvider == null) {
-			extendItemProvider = new ExtendItemProvider(this);
-		}
-
-		return extendItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.ExtensionPoint} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ExtensionPointItemProvider extensionPointItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.ExtensionPoint}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createExtensionPointAdapter() {
-		if (extensionPointItemProvider == null) {
-			extensionPointItemProvider = new ExtensionPointItemProvider(this);
-		}
-
-		return extensionPointItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Include} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected IncludeItemProvider includeItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Include}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createIncludeAdapter() {
-		if (includeItemProvider == null) {
-			includeItemProvider = new IncludeItemProvider(this);
-		}
-
-		return includeItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Substitution} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected SubstitutionItemProvider substitutionItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Substitution}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createSubstitutionAdapter() {
-		if (substitutionItemProvider == null) {
-			substitutionItemProvider = new SubstitutionItemProvider(this);
-		}
-
-		return substitutionItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Realization} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected RealizationItemProvider realizationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Realization}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createRealizationAdapter() {
-		if (realizationItemProvider == null) {
-			realizationItemProvider = new RealizationItemProvider(this);
-		}
-
-		return realizationItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.ClassifierTemplateParameter} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ClassifierTemplateParameterItemProvider classifierTemplateParameterItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.ClassifierTemplateParameter}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createClassifierTemplateParameterAdapter() {
-		if (classifierTemplateParameterItemProvider == null) {
-			classifierTemplateParameterItemProvider = new ClassifierTemplateParameterItemProvider(this);
-		}
-
-		return classifierTemplateParameterItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.InterfaceRealization} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected InterfaceRealizationItemProvider interfaceRealizationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.InterfaceRealization}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createInterfaceRealizationAdapter() {
-		if (interfaceRealizationItemProvider == null) {
-			interfaceRealizationItemProvider = new InterfaceRealizationItemProvider(this);
-		}
-
-		return interfaceRealizationItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Extension} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ExtensionItemProvider extensionItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Extension}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createExtensionAdapter() {
-		if (extensionItemProvider == null) {
-			extensionItemProvider = new ExtensionItemProvider(this);
-		}
-
-		return extensionItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.ExtensionEnd} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ExtensionEndItemProvider extensionEndItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.ExtensionEnd}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createExtensionEndAdapter() {
-		if (extensionEndItemProvider == null) {
-			extensionEndItemProvider = new ExtensionEndItemProvider(this);
-		}
-
-		return extensionEndItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Image} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ImageItemProvider imageItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Image}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createImageAdapter() {
-		if (imageItemProvider == null) {
-			imageItemProvider = new ImageItemProvider(this);
-		}
-
-		return imageItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Profile} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ProfileItemProvider profileItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Profile}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createProfileAdapter() {
-		if (profileItemProvider == null) {
-			profileItemProvider = new ProfileItemProvider(this);
-		}
-
-		return profileItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.PackageMerge} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected PackageMergeItemProvider packageMergeItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.PackageMerge}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createPackageMergeAdapter() {
-		if (packageMergeItemProvider == null) {
-			packageMergeItemProvider = new PackageMergeItemProvider(this);
-		}
-
-		return packageMergeItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.ProfileApplication} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ProfileApplicationItemProvider profileApplicationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.ProfileApplication}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createProfileApplicationAdapter() {
-		if (profileApplicationItemProvider == null) {
-			profileApplicationItemProvider = new ProfileApplicationItemProvider(this);
-		}
-
-		return profileApplicationItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.OpaqueExpression} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected OpaqueExpressionItemProvider opaqueExpressionItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.OpaqueExpression}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createOpaqueExpressionAdapter() {
-		if (opaqueExpressionItemProvider == null) {
-			opaqueExpressionItemProvider = new OpaqueExpressionItemProvider(this);
-		}
-
-		return opaqueExpressionItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link uml2.AcceptCallAction} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1543,443 +140,6 @@ public class Uml2ItemProviderAdapterFactory extends Uml2AdapterFactory implement
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Activity} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ActivityItemProvider activityItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Activity}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createActivityAdapter() {
-		if (activityItemProvider == null) {
-			activityItemProvider = new ActivityItemProvider(this);
-		}
-
-		return activityItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.ActivityPartition} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ActivityPartitionItemProvider activityPartitionItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.ActivityPartition}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createActivityPartitionAdapter() {
-		if (activityPartitionItemProvider == null) {
-			activityPartitionItemProvider = new ActivityPartitionItemProvider(this);
-		}
-
-		return activityPartitionItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.StructuredActivityNode} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected StructuredActivityNodeItemProvider structuredActivityNodeItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.StructuredActivityNode}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createStructuredActivityNodeAdapter() {
-		if (structuredActivityNodeItemProvider == null) {
-			structuredActivityNodeItemProvider = new StructuredActivityNodeItemProvider(this);
-		}
-
-		return structuredActivityNodeItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.InputPin} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected InputPinItemProvider inputPinItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.InputPin}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createInputPinAdapter() {
-		if (inputPinItemProvider == null) {
-			inputPinItemProvider = new InputPinItemProvider(this);
-		}
-
-		return inputPinItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.OutputPin} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected OutputPinItemProvider outputPinItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.OutputPin}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createOutputPinAdapter() {
-		if (outputPinItemProvider == null) {
-			outputPinItemProvider = new OutputPinItemProvider(this);
-		}
-
-		return outputPinItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Variable} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected VariableItemProvider variableItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Variable}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createVariableAdapter() {
-		if (variableItemProvider == null) {
-			variableItemProvider = new VariableItemProvider(this);
-		}
-
-		return variableItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.InterruptibleActivityRegion} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected InterruptibleActivityRegionItemProvider interruptibleActivityRegionItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.InterruptibleActivityRegion}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createInterruptibleActivityRegionAdapter() {
-		if (interruptibleActivityRegionItemProvider == null) {
-			interruptibleActivityRegionItemProvider = new InterruptibleActivityRegionItemProvider(this);
-		}
-
-		return interruptibleActivityRegionItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.ExceptionHandler} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ExceptionHandlerItemProvider exceptionHandlerItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.ExceptionHandler}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createExceptionHandlerAdapter() {
-		if (exceptionHandlerItemProvider == null) {
-			exceptionHandlerItemProvider = new ExceptionHandlerItemProvider(this);
-		}
-
-		return exceptionHandlerItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.ActionExecutionSpecification} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ActionExecutionSpecificationItemProvider actionExecutionSpecificationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.ActionExecutionSpecification}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createActionExecutionSpecificationAdapter() {
-		if (actionExecutionSpecificationItemProvider == null) {
-			actionExecutionSpecificationItemProvider = new ActionExecutionSpecificationItemProvider(this);
-		}
-
-		return actionExecutionSpecificationItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Lifeline} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected LifelineItemProvider lifelineItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Lifeline}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createLifelineAdapter() {
-		if (lifelineItemProvider == null) {
-			lifelineItemProvider = new LifelineItemProvider(this);
-		}
-
-		return lifelineItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.PartDecomposition} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected PartDecompositionItemProvider partDecompositionItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.PartDecomposition}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createPartDecompositionAdapter() {
-		if (partDecompositionItemProvider == null) {
-			partDecompositionItemProvider = new PartDecompositionItemProvider(this);
-		}
-
-		return partDecompositionItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.InteractionUse} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected InteractionUseItemProvider interactionUseItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.InteractionUse}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createInteractionUseAdapter() {
-		if (interactionUseItemProvider == null) {
-			interactionUseItemProvider = new InteractionUseItemProvider(this);
-		}
-
-		return interactionUseItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Gate} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected GateItemProvider gateItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Gate}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createGateAdapter() {
-		if (gateItemProvider == null) {
-			gateItemProvider = new GateItemProvider(this);
-		}
-
-		return gateItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Message} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected MessageItemProvider messageItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Message}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createMessageAdapter() {
-		if (messageItemProvider == null) {
-			messageItemProvider = new MessageItemProvider(this);
-		}
-
-		return messageItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Interaction} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected InteractionItemProvider interactionItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.Interaction}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createInteractionAdapter() {
-		if (interactionItemProvider == null) {
-			interactionItemProvider = new InteractionItemProvider(this);
-		}
-
-		return interactionItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.InteractionOperand} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected InteractionOperandItemProvider interactionOperandItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.InteractionOperand}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createInteractionOperandAdapter() {
-		if (interactionOperandItemProvider == null) {
-			interactionOperandItemProvider = new InteractionOperandItemProvider(this);
-		}
-
-		return interactionOperandItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.InteractionConstraint} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected InteractionConstraintItemProvider interactionConstraintItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.InteractionConstraint}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createInteractionConstraintAdapter() {
-		if (interactionConstraintItemProvider == null) {
-			interactionConstraintItemProvider = new InteractionConstraintItemProvider(this);
-		}
-
-		return interactionConstraintItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.GeneralOrdering} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected GeneralOrderingItemProvider generalOrderingItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.GeneralOrdering}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createGeneralOrderingAdapter() {
-		if (generalOrderingItemProvider == null) {
-			generalOrderingItemProvider = new GeneralOrderingItemProvider(this);
-		}
-
-		return generalOrderingItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.OccurrenceSpecification} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected OccurrenceSpecificationItemProvider occurrenceSpecificationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.OccurrenceSpecification}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createOccurrenceSpecificationAdapter() {
-		if (occurrenceSpecificationItemProvider == null) {
-			occurrenceSpecificationItemProvider = new OccurrenceSpecificationItemProvider(this);
-		}
-
-		return occurrenceSpecificationItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link uml2.ActionInputPin} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2000,6 +160,29 @@ public class Uml2ItemProviderAdapterFactory extends Uml2AdapterFactory implement
 		}
 
 		return actionInputPinItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Activity} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ActivityItemProvider activityItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Activity}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createActivityAdapter() {
+		if (activityItemProvider == null) {
+			activityItemProvider = new ActivityItemProvider(this);
+		}
+
+		return activityItemProvider;
 	}
 
 	/**
@@ -2046,6 +229,29 @@ public class Uml2ItemProviderAdapterFactory extends Uml2AdapterFactory implement
 		}
 
 		return activityParameterNodeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.ActivityPartition} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ActivityPartitionItemProvider activityPartitionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.ActivityPartition}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createActivityPartitionAdapter() {
+		if (activityPartitionItemProvider == null) {
+			activityPartitionItemProvider = new ActivityPartitionItemProvider(this);
+		}
+
+		return activityPartitionItemProvider;
 	}
 
 	/**
@@ -2138,6 +344,52 @@ public class Uml2ItemProviderAdapterFactory extends Uml2AdapterFactory implement
 		}
 
 		return anyReceiveEventItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Artifact} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ArtifactItemProvider artifactItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Artifact}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createArtifactAdapter() {
+		if (artifactItemProvider == null) {
+			artifactItemProvider = new ArtifactItemProvider(this);
+		}
+
+		return artifactItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Association} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AssociationItemProvider associationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Association}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAssociationAdapter() {
+		if (associationItemProvider == null) {
+			associationItemProvider = new AssociationItemProvider(this);
+		}
+
+		return associationItemProvider;
 	}
 
 	/**
@@ -2256,6 +508,29 @@ public class Uml2ItemProviderAdapterFactory extends Uml2AdapterFactory implement
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Clause} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ClauseItemProvider clauseItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Clause}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createClauseAdapter() {
+		if (clauseItemProvider == null) {
+			clauseItemProvider = new ClauseItemProvider(this);
+		}
+
+		return clauseItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link uml2.CallOperationAction} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2325,26 +600,49 @@ public class Uml2ItemProviderAdapterFactory extends Uml2AdapterFactory implement
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link uml2.Clause} instances.
+	 * This keeps track of the one adapter used for all {@link uml2.Class} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ClauseItemProvider clauseItemProvider;
+	protected ClassItemProvider classItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link uml2.Clause}.
+	 * This creates an adapter for a {@link uml2.Class}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createClauseAdapter() {
-		if (clauseItemProvider == null) {
-			clauseItemProvider = new ClauseItemProvider(this);
+	public Adapter createClassAdapter() {
+		if (classItemProvider == null) {
+			classItemProvider = new ClassItemProvider(this);
 		}
 
-		return clauseItemProvider;
+		return classItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.ClassifierTemplateParameter} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ClassifierTemplateParameterItemProvider classifierTemplateParameterItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.ClassifierTemplateParameter}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createClassifierTemplateParameterAdapter() {
+		if (classifierTemplateParameterItemProvider == null) {
+			classifierTemplateParameterItemProvider = new ClassifierTemplateParameterItemProvider(this);
+		}
+
+		return classifierTemplateParameterItemProvider;
 	}
 
 	/**
@@ -2417,6 +715,52 @@ public class Uml2ItemProviderAdapterFactory extends Uml2AdapterFactory implement
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Collaboration} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected CollaborationItemProvider collaborationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Collaboration}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createCollaborationAdapter() {
+		if (collaborationItemProvider == null) {
+			collaborationItemProvider = new CollaborationItemProvider(this);
+		}
+
+		return collaborationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.CollaborationUse} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected CollaborationUseItemProvider collaborationUseItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.CollaborationUse}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createCollaborationUseAdapter() {
+		if (collaborationUseItemProvider == null) {
+			collaborationUseItemProvider = new CollaborationUseItemProvider(this);
+		}
+
+		return collaborationUseItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link uml2.CombinedFragment} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2437,6 +781,29 @@ public class Uml2ItemProviderAdapterFactory extends Uml2AdapterFactory implement
 		}
 
 		return combinedFragmentItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Comment} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected CommentItemProvider commentItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Comment}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createCommentAdapter() {
+		if (commentItemProvider == null) {
+			commentItemProvider = new CommentItemProvider(this);
+		}
+
+		return commentItemProvider;
 	}
 
 	/**
@@ -2532,6 +899,98 @@ public class Uml2ItemProviderAdapterFactory extends Uml2AdapterFactory implement
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Connector} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ConnectorItemProvider connectorItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Connector}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createConnectorAdapter() {
+		if (connectorItemProvider == null) {
+			connectorItemProvider = new ConnectorItemProvider(this);
+		}
+
+		return connectorItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.ConnectableElementTemplateParameter} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ConnectableElementTemplateParameterItemProvider connectableElementTemplateParameterItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.ConnectableElementTemplateParameter}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createConnectableElementTemplateParameterAdapter() {
+		if (connectableElementTemplateParameterItemProvider == null) {
+			connectableElementTemplateParameterItemProvider = new ConnectableElementTemplateParameterItemProvider(this);
+		}
+
+		return connectableElementTemplateParameterItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.ConnectionPointReference} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ConnectionPointReferenceItemProvider connectionPointReferenceItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.ConnectionPointReference}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createConnectionPointReferenceAdapter() {
+		if (connectionPointReferenceItemProvider == null) {
+			connectionPointReferenceItemProvider = new ConnectionPointReferenceItemProvider(this);
+		}
+
+		return connectionPointReferenceItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.ConnectorEnd} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ConnectorEndItemProvider connectorEndItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.ConnectorEnd}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createConnectorEndAdapter() {
+		if (connectorEndItemProvider == null) {
+			connectorEndItemProvider = new ConnectorEndItemProvider(this);
+		}
+
+		return connectorEndItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link uml2.ConsiderIgnoreFragment} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2552,6 +1011,29 @@ public class Uml2ItemProviderAdapterFactory extends Uml2AdapterFactory implement
 		}
 
 		return considerIgnoreFragmentItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Constraint} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ConstraintItemProvider constraintItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Constraint}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createConstraintAdapter() {
+		if (constraintItemProvider == null) {
+			constraintItemProvider = new ConstraintItemProvider(this);
+		}
+
+		return constraintItemProvider;
 	}
 
 	/**
@@ -2621,6 +1103,1892 @@ public class Uml2ItemProviderAdapterFactory extends Uml2AdapterFactory implement
 		}
 
 		return createLinkActionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.DataType} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DataTypeItemProvider dataTypeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.DataType}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDataTypeAdapter() {
+		if (dataTypeItemProvider == null) {
+			dataTypeItemProvider = new DataTypeItemProvider(this);
+		}
+
+		return dataTypeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Dependency} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DependencyItemProvider dependencyItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Dependency}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDependencyAdapter() {
+		if (dependencyItemProvider == null) {
+			dependencyItemProvider = new DependencyItemProvider(this);
+		}
+
+		return dependencyItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Deployment} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DeploymentItemProvider deploymentItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Deployment}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDeploymentAdapter() {
+		if (deploymentItemProvider == null) {
+			deploymentItemProvider = new DeploymentItemProvider(this);
+		}
+
+		return deploymentItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.DeploymentSpecification} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DeploymentSpecificationItemProvider deploymentSpecificationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.DeploymentSpecification}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDeploymentSpecificationAdapter() {
+		if (deploymentSpecificationItemProvider == null) {
+			deploymentSpecificationItemProvider = new DeploymentSpecificationItemProvider(this);
+		}
+
+		return deploymentSpecificationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.ElementImport} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ElementImportItemProvider elementImportItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.ElementImport}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createElementImportAdapter() {
+		if (elementImportItemProvider == null) {
+			elementImportItemProvider = new ElementImportItemProvider(this);
+		}
+
+		return elementImportItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Extend} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ExtendItemProvider extendItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Extend}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createExtendAdapter() {
+		if (extendItemProvider == null) {
+			extendItemProvider = new ExtendItemProvider(this);
+		}
+
+		return extendItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.ExtensionPoint} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ExtensionPointItemProvider extensionPointItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.ExtensionPoint}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createExtensionPointAdapter() {
+		if (extensionPointItemProvider == null) {
+			extensionPointItemProvider = new ExtensionPointItemProvider(this);
+		}
+
+		return extensionPointItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Extension} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ExtensionItemProvider extensionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Extension}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createExtensionAdapter() {
+		if (extensionItemProvider == null) {
+			extensionItemProvider = new ExtensionItemProvider(this);
+		}
+
+		return extensionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.ExtensionEnd} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ExtensionEndItemProvider extensionEndItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.ExtensionEnd}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createExtensionEndAdapter() {
+		if (extensionEndItemProvider == null) {
+			extensionEndItemProvider = new ExtensionEndItemProvider(this);
+		}
+
+		return extensionEndItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Expression} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ExpressionItemProvider expressionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Expression}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createExpressionAdapter() {
+		if (expressionItemProvider == null) {
+			expressionItemProvider = new ExpressionItemProvider(this);
+		}
+
+		return expressionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Generalization} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected GeneralizationItemProvider generalizationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Generalization}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createGeneralizationAdapter() {
+		if (generalizationItemProvider == null) {
+			generalizationItemProvider = new GeneralizationItemProvider(this);
+		}
+
+		return generalizationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.GeneralizationSet} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected GeneralizationSetItemProvider generalizationSetItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.GeneralizationSet}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createGeneralizationSetAdapter() {
+		if (generalizationSetItemProvider == null) {
+			generalizationSetItemProvider = new GeneralizationSetItemProvider(this);
+		}
+
+		return generalizationSetItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.GeneralOrdering} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected GeneralOrderingItemProvider generalOrderingItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.GeneralOrdering}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createGeneralOrderingAdapter() {
+		if (generalOrderingItemProvider == null) {
+			generalOrderingItemProvider = new GeneralOrderingItemProvider(this);
+		}
+
+		return generalOrderingItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Image} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ImageItemProvider imageItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Image}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createImageAdapter() {
+		if (imageItemProvider == null) {
+			imageItemProvider = new ImageItemProvider(this);
+		}
+
+		return imageItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Include} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected IncludeItemProvider includeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Include}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createIncludeAdapter() {
+		if (includeItemProvider == null) {
+			includeItemProvider = new IncludeItemProvider(this);
+		}
+
+		return includeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.InformationFlow} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InformationFlowItemProvider informationFlowItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.InformationFlow}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInformationFlowAdapter() {
+		if (informationFlowItemProvider == null) {
+			informationFlowItemProvider = new InformationFlowItemProvider(this);
+		}
+
+		return informationFlowItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.InformationItem} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InformationItemItemProvider informationItemItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.InformationItem}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInformationItemAdapter() {
+		if (informationItemItemProvider == null) {
+			informationItemItemProvider = new InformationItemItemProvider(this);
+		}
+
+		return informationItemItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.InitialNode} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InitialNodeItemProvider initialNodeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.InitialNode}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInitialNodeAdapter() {
+		if (initialNodeItemProvider == null) {
+			initialNodeItemProvider = new InitialNodeItemProvider(this);
+		}
+
+		return initialNodeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.InstanceValue} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InstanceValueItemProvider instanceValueItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.InstanceValue}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInstanceValueAdapter() {
+		if (instanceValueItemProvider == null) {
+			instanceValueItemProvider = new InstanceValueItemProvider(this);
+		}
+
+		return instanceValueItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.InteractionUse} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InteractionUseItemProvider interactionUseItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.InteractionUse}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInteractionUseAdapter() {
+		if (interactionUseItemProvider == null) {
+			interactionUseItemProvider = new InteractionUseItemProvider(this);
+		}
+
+		return interactionUseItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Interface} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InterfaceItemProvider interfaceItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Interface}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInterfaceAdapter() {
+		if (interfaceItemProvider == null) {
+			interfaceItemProvider = new InterfaceItemProvider(this);
+		}
+
+		return interfaceItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.InterfaceRealization} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InterfaceRealizationItemProvider interfaceRealizationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.InterfaceRealization}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInterfaceRealizationAdapter() {
+		if (interfaceRealizationItemProvider == null) {
+			interfaceRealizationItemProvider = new InterfaceRealizationItemProvider(this);
+		}
+
+		return interfaceRealizationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.InterruptibleActivityRegion} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InterruptibleActivityRegionItemProvider interruptibleActivityRegionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.InterruptibleActivityRegion}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInterruptibleActivityRegionAdapter() {
+		if (interruptibleActivityRegionItemProvider == null) {
+			interruptibleActivityRegionItemProvider = new InterruptibleActivityRegionItemProvider(this);
+		}
+
+		return interruptibleActivityRegionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.InputPin} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InputPinItemProvider inputPinItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.InputPin}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInputPinAdapter() {
+		if (inputPinItemProvider == null) {
+			inputPinItemProvider = new InputPinItemProvider(this);
+		}
+
+		return inputPinItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.JoinNode} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected JoinNodeItemProvider joinNodeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.JoinNode}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createJoinNodeAdapter() {
+		if (joinNodeItemProvider == null) {
+			joinNodeItemProvider = new JoinNodeItemProvider(this);
+		}
+
+		return joinNodeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Lifeline} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected LifelineItemProvider lifelineItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Lifeline}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createLifelineAdapter() {
+		if (lifelineItemProvider == null) {
+			lifelineItemProvider = new LifelineItemProvider(this);
+		}
+
+		return lifelineItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.LiteralBoolean} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected LiteralBooleanItemProvider literalBooleanItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.LiteralBoolean}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createLiteralBooleanAdapter() {
+		if (literalBooleanItemProvider == null) {
+			literalBooleanItemProvider = new LiteralBooleanItemProvider(this);
+		}
+
+		return literalBooleanItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.LiteralInteger} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected LiteralIntegerItemProvider literalIntegerItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.LiteralInteger}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createLiteralIntegerAdapter() {
+		if (literalIntegerItemProvider == null) {
+			literalIntegerItemProvider = new LiteralIntegerItemProvider(this);
+		}
+
+		return literalIntegerItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.LiteralNull} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected LiteralNullItemProvider literalNullItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.LiteralNull}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createLiteralNullAdapter() {
+		if (literalNullItemProvider == null) {
+			literalNullItemProvider = new LiteralNullItemProvider(this);
+		}
+
+		return literalNullItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.LiteralReal} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected LiteralRealItemProvider literalRealItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.LiteralReal}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createLiteralRealAdapter() {
+		if (literalRealItemProvider == null) {
+			literalRealItemProvider = new LiteralRealItemProvider(this);
+		}
+
+		return literalRealItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.LiteralString} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected LiteralStringItemProvider literalStringItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.LiteralString}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createLiteralStringAdapter() {
+		if (literalStringItemProvider == null) {
+			literalStringItemProvider = new LiteralStringItemProvider(this);
+		}
+
+		return literalStringItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.LiteralUnlimitedNatural} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected LiteralUnlimitedNaturalItemProvider literalUnlimitedNaturalItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.LiteralUnlimitedNatural}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createLiteralUnlimitedNaturalAdapter() {
+		if (literalUnlimitedNaturalItemProvider == null) {
+			literalUnlimitedNaturalItemProvider = new LiteralUnlimitedNaturalItemProvider(this);
+		}
+
+		return literalUnlimitedNaturalItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.LoopNode} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected LoopNodeItemProvider loopNodeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.LoopNode}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createLoopNodeAdapter() {
+		if (loopNodeItemProvider == null) {
+			loopNodeItemProvider = new LoopNodeItemProvider(this);
+		}
+
+		return loopNodeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Manifestation} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ManifestationItemProvider manifestationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Manifestation}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createManifestationAdapter() {
+		if (manifestationItemProvider == null) {
+			manifestationItemProvider = new ManifestationItemProvider(this);
+		}
+
+		return manifestationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.MergeNode} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MergeNodeItemProvider mergeNodeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.MergeNode}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMergeNodeAdapter() {
+		if (mergeNodeItemProvider == null) {
+			mergeNodeItemProvider = new MergeNodeItemProvider(this);
+		}
+
+		return mergeNodeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.OpaqueAction} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected OpaqueActionItemProvider opaqueActionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.OpaqueAction}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createOpaqueActionAdapter() {
+		if (opaqueActionItemProvider == null) {
+			opaqueActionItemProvider = new OpaqueActionItemProvider(this);
+		}
+
+		return opaqueActionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.OpaqueBehavior} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected OpaqueBehaviorItemProvider opaqueBehaviorItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.OpaqueBehavior}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createOpaqueBehaviorAdapter() {
+		if (opaqueBehaviorItemProvider == null) {
+			opaqueBehaviorItemProvider = new OpaqueBehaviorItemProvider(this);
+		}
+
+		return opaqueBehaviorItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.OpaqueExpression} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected OpaqueExpressionItemProvider opaqueExpressionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.OpaqueExpression}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createOpaqueExpressionAdapter() {
+		if (opaqueExpressionItemProvider == null) {
+			opaqueExpressionItemProvider = new OpaqueExpressionItemProvider(this);
+		}
+
+		return opaqueExpressionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Operation} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected OperationItemProvider operationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Operation}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createOperationAdapter() {
+		if (operationItemProvider == null) {
+			operationItemProvider = new OperationItemProvider(this);
+		}
+
+		return operationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.OperationTemplateParameter} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected OperationTemplateParameterItemProvider operationTemplateParameterItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.OperationTemplateParameter}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createOperationTemplateParameterAdapter() {
+		if (operationTemplateParameterItemProvider == null) {
+			operationTemplateParameterItemProvider = new OperationTemplateParameterItemProvider(this);
+		}
+
+		return operationTemplateParameterItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.OutputPin} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected OutputPinItemProvider outputPinItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.OutputPin}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createOutputPinAdapter() {
+		if (outputPinItemProvider == null) {
+			outputPinItemProvider = new OutputPinItemProvider(this);
+		}
+
+		return outputPinItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Package} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PackageItemProvider packageItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Package}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createPackageAdapter() {
+		if (packageItemProvider == null) {
+			packageItemProvider = new PackageItemProvider(this);
+		}
+
+		return packageItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.PackageImport} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PackageImportItemProvider packageImportItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.PackageImport}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createPackageImportAdapter() {
+		if (packageImportItemProvider == null) {
+			packageImportItemProvider = new PackageImportItemProvider(this);
+		}
+
+		return packageImportItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.PackageMerge} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PackageMergeItemProvider packageMergeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.PackageMerge}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createPackageMergeAdapter() {
+		if (packageMergeItemProvider == null) {
+			packageMergeItemProvider = new PackageMergeItemProvider(this);
+		}
+
+		return packageMergeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Parameter} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ParameterItemProvider parameterItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Parameter}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createParameterAdapter() {
+		if (parameterItemProvider == null) {
+			parameterItemProvider = new ParameterItemProvider(this);
+		}
+
+		return parameterItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.ParameterSet} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ParameterSetItemProvider parameterSetItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.ParameterSet}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createParameterSetAdapter() {
+		if (parameterSetItemProvider == null) {
+			parameterSetItemProvider = new ParameterSetItemProvider(this);
+		}
+
+		return parameterSetItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.PartDecomposition} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PartDecompositionItemProvider partDecompositionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.PartDecomposition}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createPartDecompositionAdapter() {
+		if (partDecompositionItemProvider == null) {
+			partDecompositionItemProvider = new PartDecompositionItemProvider(this);
+		}
+
+		return partDecompositionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Profile} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ProfileItemProvider profileItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Profile}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createProfileAdapter() {
+		if (profileItemProvider == null) {
+			profileItemProvider = new ProfileItemProvider(this);
+		}
+
+		return profileItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.ProfileApplication} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ProfileApplicationItemProvider profileApplicationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.ProfileApplication}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createProfileApplicationAdapter() {
+		if (profileApplicationItemProvider == null) {
+			profileApplicationItemProvider = new ProfileApplicationItemProvider(this);
+		}
+
+		return profileApplicationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Port} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PortItemProvider portItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Port}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createPortAdapter() {
+		if (portItemProvider == null) {
+			portItemProvider = new PortItemProvider(this);
+		}
+
+		return portItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Property} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PropertyItemProvider propertyItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Property}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createPropertyAdapter() {
+		if (propertyItemProvider == null) {
+			propertyItemProvider = new PropertyItemProvider(this);
+		}
+
+		return propertyItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.ProtocolConformance} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ProtocolConformanceItemProvider protocolConformanceItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.ProtocolConformance}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createProtocolConformanceAdapter() {
+		if (protocolConformanceItemProvider == null) {
+			protocolConformanceItemProvider = new ProtocolConformanceItemProvider(this);
+		}
+
+		return protocolConformanceItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.ProtocolStateMachine} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ProtocolStateMachineItemProvider protocolStateMachineItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.ProtocolStateMachine}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createProtocolStateMachineAdapter() {
+		if (protocolStateMachineItemProvider == null) {
+			protocolStateMachineItemProvider = new ProtocolStateMachineItemProvider(this);
+		}
+
+		return protocolStateMachineItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Pseudostate} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PseudostateItemProvider pseudostateItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Pseudostate}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createPseudostateAdapter() {
+		if (pseudostateItemProvider == null) {
+			pseudostateItemProvider = new PseudostateItemProvider(this);
+		}
+
+		return pseudostateItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Realization} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected RealizationItemProvider realizationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Realization}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createRealizationAdapter() {
+		if (realizationItemProvider == null) {
+			realizationItemProvider = new RealizationItemProvider(this);
+		}
+
+		return realizationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Reception} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ReceptionItemProvider receptionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Reception}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createReceptionAdapter() {
+		if (receptionItemProvider == null) {
+			receptionItemProvider = new ReceptionItemProvider(this);
+		}
+
+		return receptionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.RedefinableTemplateSignature} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected RedefinableTemplateSignatureItemProvider redefinableTemplateSignatureItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.RedefinableTemplateSignature}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createRedefinableTemplateSignatureAdapter() {
+		if (redefinableTemplateSignatureItemProvider == null) {
+			redefinableTemplateSignatureItemProvider = new RedefinableTemplateSignatureItemProvider(this);
+		}
+
+		return redefinableTemplateSignatureItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Region} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected RegionItemProvider regionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Region}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createRegionAdapter() {
+		if (regionItemProvider == null) {
+			regionItemProvider = new RegionItemProvider(this);
+		}
+
+		return regionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Signal} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected SignalItemProvider signalItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Signal}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createSignalAdapter() {
+		if (signalItemProvider == null) {
+			signalItemProvider = new SignalItemProvider(this);
+		}
+
+		return signalItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Substitution} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected SubstitutionItemProvider substitutionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Substitution}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createSubstitutionAdapter() {
+		if (substitutionItemProvider == null) {
+			substitutionItemProvider = new SubstitutionItemProvider(this);
+		}
+
+		return substitutionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.State} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected StateItemProvider stateItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.State}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createStateAdapter() {
+		if (stateItemProvider == null) {
+			stateItemProvider = new StateItemProvider(this);
+		}
+
+		return stateItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.StateMachine} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected StateMachineItemProvider stateMachineItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.StateMachine}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createStateMachineAdapter() {
+		if (stateMachineItemProvider == null) {
+			stateMachineItemProvider = new StateMachineItemProvider(this);
+		}
+
+		return stateMachineItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Stereotype} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected StereotypeItemProvider stereotypeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Stereotype}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createStereotypeAdapter() {
+		if (stereotypeItemProvider == null) {
+			stereotypeItemProvider = new StereotypeItemProvider(this);
+		}
+
+		return stereotypeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.StringExpression} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected StringExpressionItemProvider stringExpressionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.StringExpression}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createStringExpressionAdapter() {
+		if (stringExpressionItemProvider == null) {
+			stringExpressionItemProvider = new StringExpressionItemProvider(this);
+		}
+
+		return stringExpressionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.StructuredActivityNode} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected StructuredActivityNodeItemProvider structuredActivityNodeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.StructuredActivityNode}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createStructuredActivityNodeAdapter() {
+		if (structuredActivityNodeItemProvider == null) {
+			structuredActivityNodeItemProvider = new StructuredActivityNodeItemProvider(this);
+		}
+
+		return structuredActivityNodeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.TemplateParameter} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TemplateParameterItemProvider templateParameterItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.TemplateParameter}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTemplateParameterAdapter() {
+		if (templateParameterItemProvider == null) {
+			templateParameterItemProvider = new TemplateParameterItemProvider(this);
+		}
+
+		return templateParameterItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.TemplateSignature} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TemplateSignatureItemProvider templateSignatureItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.TemplateSignature}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTemplateSignatureAdapter() {
+		if (templateSignatureItemProvider == null) {
+			templateSignatureItemProvider = new TemplateSignatureItemProvider(this);
+		}
+
+		return templateSignatureItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.TemplateBinding} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TemplateBindingItemProvider templateBindingItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.TemplateBinding}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTemplateBindingAdapter() {
+		if (templateBindingItemProvider == null) {
+			templateBindingItemProvider = new TemplateBindingItemProvider(this);
+		}
+
+		return templateBindingItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.TemplateParameterSubstitution} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TemplateParameterSubstitutionItemProvider templateParameterSubstitutionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.TemplateParameterSubstitution}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTemplateParameterSubstitutionAdapter() {
+		if (templateParameterSubstitutionItemProvider == null) {
+			templateParameterSubstitutionItemProvider = new TemplateParameterSubstitutionItemProvider(this);
+		}
+
+		return templateParameterSubstitutionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Transition} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TransitionItemProvider transitionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Transition}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTransitionAdapter() {
+		if (transitionItemProvider == null) {
+			transitionItemProvider = new TransitionItemProvider(this);
+		}
+
+		return transitionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Trigger} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TriggerItemProvider triggerItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Trigger}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTriggerAdapter() {
+		if (triggerItemProvider == null) {
+			triggerItemProvider = new TriggerItemProvider(this);
+		}
+
+		return triggerItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.UseCase} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected UseCaseItemProvider useCaseItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.UseCase}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createUseCaseAdapter() {
+		if (useCaseItemProvider == null) {
+			useCaseItemProvider = new UseCaseItemProvider(this);
+		}
+
+		return useCaseItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Variable} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected VariableItemProvider variableItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Variable}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createVariableAdapter() {
+		if (variableItemProvider == null) {
+			variableItemProvider = new VariableItemProvider(this);
+		}
+
+		return variableItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.ActionExecutionSpecification} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ActionExecutionSpecificationItemProvider actionExecutionSpecificationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.ActionExecutionSpecification}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createActionExecutionSpecificationAdapter() {
+		if (actionExecutionSpecificationItemProvider == null) {
+			actionExecutionSpecificationItemProvider = new ActionExecutionSpecificationItemProvider(this);
+		}
+
+		return actionExecutionSpecificationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.ExceptionHandler} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ExceptionHandlerItemProvider exceptionHandlerItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.ExceptionHandler}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createExceptionHandlerAdapter() {
+		if (exceptionHandlerItemProvider == null) {
+			exceptionHandlerItemProvider = new ExceptionHandlerItemProvider(this);
+		}
+
+		return exceptionHandlerItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Gate} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected GateItemProvider gateItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Gate}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createGateAdapter() {
+		if (gateItemProvider == null) {
+			gateItemProvider = new GateItemProvider(this);
+		}
+
+		return gateItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Message} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MessageItemProvider messageItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Message}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMessageAdapter() {
+		if (messageItemProvider == null) {
+			messageItemProvider = new MessageItemProvider(this);
+		}
+
+		return messageItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Interaction} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InteractionItemProvider interactionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Interaction}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInteractionAdapter() {
+		if (interactionItemProvider == null) {
+			interactionItemProvider = new InteractionItemProvider(this);
+		}
+
+		return interactionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.Model} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ModelItemProvider modelItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.Model}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createModelAdapter() {
+		if (modelItemProvider == null) {
+			modelItemProvider = new ModelItemProvider(this);
+		}
+
+		return modelItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.InteractionOperand} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InteractionOperandItemProvider interactionOperandItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.InteractionOperand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInteractionOperandAdapter() {
+		if (interactionOperandItemProvider == null) {
+			interactionOperandItemProvider = new InteractionOperandItemProvider(this);
+		}
+
+		return interactionOperandItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.InteractionConstraint} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InteractionConstraintItemProvider interactionConstraintItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.InteractionConstraint}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInteractionConstraintAdapter() {
+		if (interactionConstraintItemProvider == null) {
+			interactionConstraintItemProvider = new InteractionConstraintItemProvider(this);
+		}
+
+		return interactionConstraintItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link uml2.OccurrenceSpecification} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected OccurrenceSpecificationItemProvider occurrenceSpecificationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uml2.OccurrenceSpecification}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createOccurrenceSpecificationAdapter() {
+		if (occurrenceSpecificationItemProvider == null) {
+			occurrenceSpecificationItemProvider = new OccurrenceSpecificationItemProvider(this);
+		}
+
+		return occurrenceSpecificationItemProvider;
 	}
 
 	/**
@@ -3380,351 +3748,6 @@ public class Uml2ItemProviderAdapterFactory extends Uml2AdapterFactory implement
 		}
 
 		return functionBehaviorItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.OpaqueBehavior} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected OpaqueBehaviorItemProvider opaqueBehaviorItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.OpaqueBehavior}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createOpaqueBehaviorAdapter() {
-		if (opaqueBehaviorItemProvider == null) {
-			opaqueBehaviorItemProvider = new OpaqueBehaviorItemProvider(this);
-		}
-
-		return opaqueBehaviorItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.InformationFlow} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected InformationFlowItemProvider informationFlowItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.InformationFlow}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createInformationFlowAdapter() {
-		if (informationFlowItemProvider == null) {
-			informationFlowItemProvider = new InformationFlowItemProvider(this);
-		}
-
-		return informationFlowItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.InformationItem} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected InformationItemItemProvider informationItemItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.InformationItem}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createInformationItemAdapter() {
-		if (informationItemItemProvider == null) {
-			informationItemItemProvider = new InformationItemItemProvider(this);
-		}
-
-		return informationItemItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.InitialNode} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected InitialNodeItemProvider initialNodeItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.InitialNode}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createInitialNodeAdapter() {
-		if (initialNodeItemProvider == null) {
-			initialNodeItemProvider = new InitialNodeItemProvider(this);
-		}
-
-		return initialNodeItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.InstanceValue} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected InstanceValueItemProvider instanceValueItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.InstanceValue}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createInstanceValueAdapter() {
-		if (instanceValueItemProvider == null) {
-			instanceValueItemProvider = new InstanceValueItemProvider(this);
-		}
-
-		return instanceValueItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.JoinNode} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected JoinNodeItemProvider joinNodeItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.JoinNode}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createJoinNodeAdapter() {
-		if (joinNodeItemProvider == null) {
-			joinNodeItemProvider = new JoinNodeItemProvider(this);
-		}
-
-		return joinNodeItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.LiteralBoolean} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected LiteralBooleanItemProvider literalBooleanItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.LiteralBoolean}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createLiteralBooleanAdapter() {
-		if (literalBooleanItemProvider == null) {
-			literalBooleanItemProvider = new LiteralBooleanItemProvider(this);
-		}
-
-		return literalBooleanItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.LiteralInteger} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected LiteralIntegerItemProvider literalIntegerItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.LiteralInteger}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createLiteralIntegerAdapter() {
-		if (literalIntegerItemProvider == null) {
-			literalIntegerItemProvider = new LiteralIntegerItemProvider(this);
-		}
-
-		return literalIntegerItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.LiteralNull} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected LiteralNullItemProvider literalNullItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.LiteralNull}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createLiteralNullAdapter() {
-		if (literalNullItemProvider == null) {
-			literalNullItemProvider = new LiteralNullItemProvider(this);
-		}
-
-		return literalNullItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.LiteralReal} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected LiteralRealItemProvider literalRealItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.LiteralReal}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createLiteralRealAdapter() {
-		if (literalRealItemProvider == null) {
-			literalRealItemProvider = new LiteralRealItemProvider(this);
-		}
-
-		return literalRealItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.LiteralString} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected LiteralStringItemProvider literalStringItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.LiteralString}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createLiteralStringAdapter() {
-		if (literalStringItemProvider == null) {
-			literalStringItemProvider = new LiteralStringItemProvider(this);
-		}
-
-		return literalStringItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.LiteralUnlimitedNatural} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected LiteralUnlimitedNaturalItemProvider literalUnlimitedNaturalItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.LiteralUnlimitedNatural}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createLiteralUnlimitedNaturalAdapter() {
-		if (literalUnlimitedNaturalItemProvider == null) {
-			literalUnlimitedNaturalItemProvider = new LiteralUnlimitedNaturalItemProvider(this);
-		}
-
-		return literalUnlimitedNaturalItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.LoopNode} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected LoopNodeItemProvider loopNodeItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.LoopNode}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createLoopNodeAdapter() {
-		if (loopNodeItemProvider == null) {
-			loopNodeItemProvider = new LoopNodeItemProvider(this);
-		}
-
-		return loopNodeItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.MergeNode} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected MergeNodeItemProvider mergeNodeItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.MergeNode}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createMergeNodeAdapter() {
-		if (mergeNodeItemProvider == null) {
-			mergeNodeItemProvider = new MergeNodeItemProvider(this);
-		}
-
-		return mergeNodeItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uml2.OpaqueAction} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected OpaqueActionItemProvider opaqueActionItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uml2.OpaqueAction}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createOpaqueActionAdapter() {
-		if (opaqueActionItemProvider == null) {
-			opaqueActionItemProvider = new OpaqueActionItemProvider(this);
-		}
-
-		return opaqueActionItemProvider;
 	}
 
 	/**

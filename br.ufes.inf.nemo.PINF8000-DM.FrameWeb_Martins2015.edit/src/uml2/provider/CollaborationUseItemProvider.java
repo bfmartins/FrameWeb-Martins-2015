@@ -175,22 +175,7 @@ public class CollaborationUseItemProvider extends NamedElementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COLLABORATION_USE__ROLE_BINDING,
-				 Uml2Factory.eINSTANCE.createRealization()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.COLLABORATION_USE__ROLE_BINDING,
-				 Uml2Factory.eINSTANCE.createComponentRealization()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.COLLABORATION_USE__ROLE_BINDING,
 				 Uml2Factory.eINSTANCE.createDeployment()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.COLLABORATION_USE__ROLE_BINDING,
-				 Uml2Factory.eINSTANCE.createInterfaceRealization()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -200,7 +185,22 @@ public class CollaborationUseItemProvider extends NamedElementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.COLLABORATION_USE__ROLE_BINDING,
+				 Uml2Factory.eINSTANCE.createRealization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.COLLABORATION_USE__ROLE_BINDING,
 				 Uml2Factory.eINSTANCE.createSubstitution()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.COLLABORATION_USE__ROLE_BINDING,
+				 Uml2Factory.eINSTANCE.createInterfaceRealization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.COLLABORATION_USE__ROLE_BINDING,
+				 Uml2Factory.eINSTANCE.createComponentRealization()));
 
 		newChildDescriptors.add
 			(createChildParameter

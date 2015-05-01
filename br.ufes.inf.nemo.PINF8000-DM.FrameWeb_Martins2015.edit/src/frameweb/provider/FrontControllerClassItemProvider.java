@@ -15,7 +15,7 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 import uml2.Uml2Package;
-import uml2.provider.ClassItemProvider;
+import uml2.provider.StereotypeItemProvider;
 
 /**
  * This is the item provider adapter for a {@link frameweb.FrontControllerClass} object.
@@ -23,8 +23,7 @@ import uml2.provider.ClassItemProvider;
  * <!-- end-user-doc -->
  * @generated
  */
-public class FrontControllerClassItemProvider 
-	extends ClassItemProvider {
+public class FrontControllerClassItemProvider extends StereotypeItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->

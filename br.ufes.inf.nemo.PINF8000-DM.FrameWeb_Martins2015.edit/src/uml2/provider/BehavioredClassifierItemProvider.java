@@ -159,16 +159,6 @@ public class BehavioredClassifierItemProvider extends ClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR,
-				 Uml2Factory.eINSTANCE.createActivity()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR,
-				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR,
 				 Uml2Factory.eINSTANCE.createStateMachine()));
 
 		newChildDescriptors.add
@@ -179,7 +169,17 @@ public class BehavioredClassifierItemProvider extends ClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR,
+				 Uml2Factory.eINSTANCE.createActivity()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR,
 				 Uml2Factory.eINSTANCE.createInteraction()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR,
+				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
 
 		newChildDescriptors.add
 			(createChildParameter

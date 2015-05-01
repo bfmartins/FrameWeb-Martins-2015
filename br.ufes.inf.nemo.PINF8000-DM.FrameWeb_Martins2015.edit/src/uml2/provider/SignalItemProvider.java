@@ -146,12 +146,12 @@ public class SignalItemProvider extends ClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SIGNAL__OWNED_ATTRIBUTE,
-				 Uml2Factory.eINSTANCE.createExtensionEnd()));
+				 Uml2Factory.eINSTANCE.createPort()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.SIGNAL__OWNED_ATTRIBUTE,
-				 Uml2Factory.eINSTANCE.createPort()));
+				 Uml2Factory.eINSTANCE.createExtensionEnd()));
 
 		newChildDescriptors.add
 			(createChildParameter

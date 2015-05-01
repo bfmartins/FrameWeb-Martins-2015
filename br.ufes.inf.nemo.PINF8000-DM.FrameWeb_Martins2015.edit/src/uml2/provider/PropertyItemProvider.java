@@ -487,12 +487,12 @@ public class PropertyItemProvider extends StructuralFeatureItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__QUALIFIER,
-				 Uml2Factory.eINSTANCE.createExtensionEnd()));
+				 Uml2Factory.eINSTANCE.createPort()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__QUALIFIER,
-				 Uml2Factory.eINSTANCE.createPort()));
+				 Uml2Factory.eINSTANCE.createExtensionEnd()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -562,6 +562,31 @@ public class PropertyItemProvider extends StructuralFeatureItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__DEFAULT_VALUE,
+				 Uml2Factory.eINSTANCE.createStringExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PROPERTY__DEFAULT_VALUE,
+				 Uml2Factory.eINSTANCE.createOpaqueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PROPERTY__DEFAULT_VALUE,
+				 Uml2Factory.eINSTANCE.createDuration()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PROPERTY__DEFAULT_VALUE,
+				 Uml2Factory.eINSTANCE.createInterval()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PROPERTY__DEFAULT_VALUE,
+				 Uml2Factory.eINSTANCE.createDurationInterval()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PROPERTY__DEFAULT_VALUE,
 				 Uml2Factory.eINSTANCE.createInstanceValue()));
 
 		newChildDescriptors.add
@@ -593,31 +618,6 @@ public class PropertyItemProvider extends StructuralFeatureItemProvider {
 			(createChildParameter
 				(Uml2Package.Literals.PROPERTY__DEFAULT_VALUE,
 				 Uml2Factory.eINSTANCE.createLiteralUnlimitedNatural()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PROPERTY__DEFAULT_VALUE,
-				 Uml2Factory.eINSTANCE.createOpaqueExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PROPERTY__DEFAULT_VALUE,
-				 Uml2Factory.eINSTANCE.createStringExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PROPERTY__DEFAULT_VALUE,
-				 Uml2Factory.eINSTANCE.createDuration()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PROPERTY__DEFAULT_VALUE,
-				 Uml2Factory.eINSTANCE.createInterval()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PROPERTY__DEFAULT_VALUE,
-				 Uml2Factory.eINSTANCE.createDurationInterval()));
 
 		newChildDescriptors.add
 			(createChildParameter

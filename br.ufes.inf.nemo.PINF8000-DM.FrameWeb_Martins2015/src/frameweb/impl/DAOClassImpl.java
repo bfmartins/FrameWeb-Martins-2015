@@ -8,23 +8,16 @@ import frameweb.DAOClass;
 import frameweb.DAOClassName;
 import frameweb.DAOOperation;
 import frameweb.FramewebPackage;
-
 import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
-
-import uml2.impl.ClassImpl;
+import uml2.impl.StereotypeImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +35,7 @@ import uml2.impl.ClassImpl;
  *
  * @generated
  */
-public class DAOClassImpl extends ClassImpl implements DAOClass {
+public class DAOClassImpl extends StereotypeImpl implements DAOClass {
 	/**
 	 * The cached value of the '{@link #getBaseImplements() <em>Base Implements</em>}' containment reference list.
 	 * <!-- begin-user-doc -->

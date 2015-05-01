@@ -250,16 +250,6 @@ public class ClassItemProvider extends EncapsulatedClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR,
-				 Uml2Factory.eINSTANCE.createActivity()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR,
-				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR,
 				 Uml2Factory.eINSTANCE.createStateMachine()));
 
 		newChildDescriptors.add
@@ -270,7 +260,17 @@ public class ClassItemProvider extends EncapsulatedClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR,
+				 Uml2Factory.eINSTANCE.createActivity()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR,
 				 Uml2Factory.eINSTANCE.createInteraction()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR,
+				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -310,12 +310,7 @@ public class ClassItemProvider extends EncapsulatedClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createActivity()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createActor()));
+				 Uml2Factory.eINSTANCE.createStereotype()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -325,27 +320,7 @@ public class ClassItemProvider extends EncapsulatedClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createAssociation()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createAssociationClass()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createCollaboration()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createCommunicationPath()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createComponent()));
+				 Uml2Factory.eINSTANCE.createDeploymentSpecification()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -355,27 +330,12 @@ public class ClassItemProvider extends EncapsulatedClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createDeploymentSpecification()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createExtension()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createInformationItem()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
 				 Uml2Factory.eINSTANCE.createInterface()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
+				 Uml2Factory.eINSTANCE.createSignal()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -390,12 +350,12 @@ public class ClassItemProvider extends EncapsulatedClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createSignal()));
+				 Uml2Factory.eINSTANCE.createAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
-				 Uml2Factory.eINSTANCE.createStereotype()));
+				 Uml2Factory.eINSTANCE.createCollaboration()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -405,7 +365,37 @@ public class ClassItemProvider extends EncapsulatedClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createActivity()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
 				 Uml2Factory.eINSTANCE.createInteraction()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createActor()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createAssociationClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createCommunicationPath()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -430,7 +420,17 @@ public class ClassItemProvider extends EncapsulatedClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
 				 Uml2Factory.eINSTANCE.createFunctionBehavior()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.CLASS__NESTED_CLASSIFIER,
+				 Uml2Factory.eINSTANCE.createInformationItem()));
 
 		newChildDescriptors.add
 			(createChildParameter

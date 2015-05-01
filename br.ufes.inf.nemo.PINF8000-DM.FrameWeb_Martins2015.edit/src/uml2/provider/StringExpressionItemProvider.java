@@ -148,12 +148,12 @@ public class StringExpressionItemProvider extends ExpressionItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATEABLE_ELEMENT__OWNED_TEMPLATE_SIGNATURE,
-				 Uml2Factory.eINSTANCE.createRedefinableTemplateSignature()));
+				 Uml2Factory.eINSTANCE.createTemplateSignature()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATEABLE_ELEMENT__OWNED_TEMPLATE_SIGNATURE,
-				 Uml2Factory.eINSTANCE.createTemplateSignature()));
+				 Uml2Factory.eINSTANCE.createRedefinableTemplateSignature()));
 
 		newChildDescriptors.add
 			(createChildParameter

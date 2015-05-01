@@ -6,23 +6,16 @@ import frameweb.FramewebPackage;
 import frameweb.ServiceAttribute;
 import frameweb.ServiceClass;
 import frameweb.ServiceOperation;
-
 import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
-
-import uml2.impl.ClassImpl;
+import uml2.impl.StereotypeImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,7 +31,7 @@ import uml2.impl.ClassImpl;
  *
  * @generated
  */
-public class ServiceClassImpl extends ClassImpl implements ServiceClass {
+public class ServiceClassImpl extends StereotypeImpl implements ServiceClass {
 	/**
 	 * The cached value of the '{@link #getServiceClassAttribute() <em>Service Class Attribute</em>}' containment reference.
 	 * <!-- begin-user-doc -->

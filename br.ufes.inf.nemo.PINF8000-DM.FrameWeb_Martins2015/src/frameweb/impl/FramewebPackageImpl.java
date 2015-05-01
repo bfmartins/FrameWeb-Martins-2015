@@ -2975,6 +2975,8 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		mappedClassEClass.getESuperTypes().add(this.getDomainClass());
 		persistentClassEClass.getESuperTypes().add(this.getDomainClass());
 		transientClassEClass.getESuperTypes().add(this.getDomainClass());
+		frameWebModelEClass.getESuperTypes().add(theUml2Package.getPackage());
+		frameworkEClass.getESuperTypes().add(theUml2Package.getPackage());
 		domainModelEClass.getESuperTypes().add(this.getFrameWebModel());
 		navigationModelEClass.getESuperTypes().add(this.getFrameWebModel());
 		applicationModelEClass.getESuperTypes().add(this.getFrameWebModel());
@@ -2993,19 +2995,19 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		formEClass.getESuperTypes().add(this.getTag());
 		binaryEClass.getESuperTypes().add(this.getNavigationClass());
 		daoInterfaceEClass.getESuperTypes().add(theUml2Package.getInterface());
-		daoClassEClass.getESuperTypes().add(theUml2Package.getClass_());
+		daoClassEClass.getESuperTypes().add(theUml2Package.getStereotype());
 		daoGeneralizationEClass.getESuperTypes().add(theUml2Package.getGeneralization());
-		frontControllerClassEClass.getESuperTypes().add(theUml2Package.getClass_());
+		frontControllerClassEClass.getESuperTypes().add(theUml2Package.getStereotype());
 		userViewAttributeEClass.getESuperTypes().add(this.getNavigationAttribute());
 		ioParameterEClass.getESuperTypes().add(this.getNavigationAttribute());
 		resultDependencyEClass.getESuperTypes().add(this.getNavigationDependency());
 		navigationCompositionEClass.getESuperTypes().add(theUml2Package.getAssociation());
 		frontControllerMethodEClass.getESuperTypes().add(theUml2Package.getOperation());
-		serviceClassEClass.getESuperTypes().add(theUml2Package.getClass_());
+		serviceClassEClass.getESuperTypes().add(theUml2Package.getStereotype());
 		serviceInterfaceEClass.getESuperTypes().add(theUml2Package.getInterface());
 		serviceGeneralizationEClass.getESuperTypes().add(theUml2Package.getGeneralization());
 		serviceNavigationAssociationEClass.getESuperTypes().add(this.getServiceAssociation());
-		domainClassEClass.getESuperTypes().add(theUml2Package.getClass_());
+		domainClassEClass.getESuperTypes().add(theUml2Package.getStereotype());
 		binaryAttributeEClass.getESuperTypes().add(this.getNavigationAttribute());
 		constantNameEClass.getESuperTypes().add(this.getFrameWebName());
 		domainTableNameEClass.getESuperTypes().add(this.getFrameWebName());
@@ -3018,7 +3020,7 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		chainingDependenceEClass.getESuperTypes().add(this.getNavigationDependency());
 		daoServiceAssociationEClass.getESuperTypes().add(this.getServiceAssociation());
 		navigationAttributeEClass.getESuperTypes().add(theUml2Package.getProperty());
-		navigationClassEClass.getESuperTypes().add(theUml2Package.getClass_());
+		navigationClassEClass.getESuperTypes().add(theUml2Package.getStereotype());
 		domainOperationEClass.getESuperTypes().add(theUml2Package.getOperation());
 		daoAttributeEClass.getESuperTypes().add(theUml2Package.getProperty());
 		serviceOperationEClass.getESuperTypes().add(theUml2Package.getOperation());
@@ -3026,9 +3028,13 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		serviceAssociationEClass.getESuperTypes().add(theUml2Package.getAssociation());
 		navigationDependencyEClass.getESuperTypes().add(theUml2Package.getDependency());
 		daoOperationEClass.getESuperTypes().add(theUml2Package.getOperation());
+		domainPackageEClass.getESuperTypes().add(theUml2Package.getPackage());
 		viewPackageEClass.getESuperTypes().add(this.getNavigationPackage());
 		controllerPackageEClass.getESuperTypes().add(this.getNavigationPackage());
+		persistencePackageEClass.getESuperTypes().add(theUml2Package.getPackage());
+		applicationPackageEClass.getESuperTypes().add(theUml2Package.getPackage());
 		componentEClass.getESuperTypes().add(this.getNavigationClass());
+		navigationPackageEClass.getESuperTypes().add(theUml2Package.getPackage());
 		domainGeneralizationEClass.getESuperTypes().add(theUml2Package.getGeneralization());
 		jQueryEClass.getESuperTypes().add(this.getNavigationClass());
 		formComponentEClass.getESuperTypes().add(this.getNavigationAttribute());
@@ -3374,6 +3380,25 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 
 		// Create resource
 		createResource(eNS_URI);
+
+		// Create annotations
+		// http:///org/eclipse/emf/ecore/util/ExtendedMetaData
+		createExtendedMetaDataAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>http:///org/eclipse/emf/ecore/util/ExtendedMetaData</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createExtendedMetaDataAnnotations() {
+		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";	
+		addAnnotation
+		  (domainPackageEClass, 
+		   source, 
+		   new String[] {
+		   });
 	}
 
 } //FramewebPackageImpl

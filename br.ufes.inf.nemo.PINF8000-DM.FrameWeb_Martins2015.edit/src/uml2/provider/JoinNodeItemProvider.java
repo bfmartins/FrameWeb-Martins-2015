@@ -172,6 +172,31 @@ public class JoinNodeItemProvider extends ControlNodeItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.JOIN_NODE__JOIN_SPEC,
+				 Uml2Factory.eINSTANCE.createStringExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.JOIN_NODE__JOIN_SPEC,
+				 Uml2Factory.eINSTANCE.createOpaqueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.JOIN_NODE__JOIN_SPEC,
+				 Uml2Factory.eINSTANCE.createDuration()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.JOIN_NODE__JOIN_SPEC,
+				 Uml2Factory.eINSTANCE.createInterval()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.JOIN_NODE__JOIN_SPEC,
+				 Uml2Factory.eINSTANCE.createDurationInterval()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.JOIN_NODE__JOIN_SPEC,
 				 Uml2Factory.eINSTANCE.createInstanceValue()));
 
 		newChildDescriptors.add
@@ -203,31 +228,6 @@ public class JoinNodeItemProvider extends ControlNodeItemProvider {
 			(createChildParameter
 				(Uml2Package.Literals.JOIN_NODE__JOIN_SPEC,
 				 Uml2Factory.eINSTANCE.createLiteralUnlimitedNatural()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.JOIN_NODE__JOIN_SPEC,
-				 Uml2Factory.eINSTANCE.createOpaqueExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.JOIN_NODE__JOIN_SPEC,
-				 Uml2Factory.eINSTANCE.createStringExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.JOIN_NODE__JOIN_SPEC,
-				 Uml2Factory.eINSTANCE.createDuration()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.JOIN_NODE__JOIN_SPEC,
-				 Uml2Factory.eINSTANCE.createInterval()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.JOIN_NODE__JOIN_SPEC,
-				 Uml2Factory.eINSTANCE.createDurationInterval()));
 
 		newChildDescriptors.add
 			(createChildParameter

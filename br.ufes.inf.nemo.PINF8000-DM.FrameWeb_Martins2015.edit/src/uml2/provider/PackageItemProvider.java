@@ -296,12 +296,12 @@ public class PackageItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATEABLE_ELEMENT__OWNED_TEMPLATE_SIGNATURE,
-				 Uml2Factory.eINSTANCE.createRedefinableTemplateSignature()));
+				 Uml2Factory.eINSTANCE.createTemplateSignature()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATEABLE_ELEMENT__OWNED_TEMPLATE_SIGNATURE,
-				 Uml2Factory.eINSTANCE.createTemplateSignature()));
+				 Uml2Factory.eINSTANCE.createRedefinableTemplateSignature()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -321,12 +321,142 @@ public class PackageItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createStringExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createPackage()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 Uml2Factory.eINSTANCE.createClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createStereotype()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createDeployment()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createArtifact()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createDeploymentSpecification()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createManifestation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createDataType()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createInterface()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createSignal()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createStateMachine()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createProtocolStateMachine()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createAssociation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createCollaboration()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createGeneralizationSet()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createUseCase()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createRealization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createSubstitution()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createInterfaceRealization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createProfile()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createOpaqueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 Uml2Factory.eINSTANCE.createActivity()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createInteraction()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createInteractionConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -337,16 +467,6 @@ public class PackageItemProvider extends NamespaceItemProvider {
 			(createChildParameter
 				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 Uml2Factory.eINSTANCE.createAnyReceiveEvent()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createArtifact()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -366,11 +486,6 @@ public class PackageItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createCollaboration()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 Uml2Factory.eINSTANCE.createCommunicationPath()));
 
 		newChildDescriptors.add
@@ -381,172 +496,7 @@ public class PackageItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createRealization()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 Uml2Factory.eINSTANCE.createComponentRealization()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createDataType()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createDeployment()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createDeploymentSpecification()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createExtension()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createGeneralizationSet()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createInformationFlow()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createInformationItem()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createInstanceValue()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createInterface()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createInterfaceRealization()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createLiteralBoolean()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createLiteralInteger()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createLiteralNull()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createLiteralReal()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createLiteralString()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createLiteralUnlimitedNatural()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createManifestation()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createOpaqueExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createPackage()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createProfile()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createStateMachine()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createProtocolStateMachine()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createSignal()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createSubstitution()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createStereotype()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createStringExpression()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createUseCase()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createInteraction()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 Uml2Factory.eINSTANCE.createInteractionConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -611,7 +561,62 @@ public class PackageItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createOpaqueBehavior()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 Uml2Factory.eINSTANCE.createFunctionBehavior()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createInformationFlow()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createInformationItem()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createInstanceValue()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createLiteralBoolean()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createLiteralInteger()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createLiteralNull()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createLiteralReal()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createLiteralString()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createLiteralUnlimitedNatural()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 Uml2Factory.eINSTANCE.createModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -667,6 +672,31 @@ public class PackageItemProvider extends NamespaceItemProvider {
 			(createChildParameter
 				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 FramewebFactory.eINSTANCE.createTransientClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createFramework()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createDomainModel()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createNavigationModel()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createApplicationModel()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createPersistenceModel()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -752,6 +782,31 @@ public class PackageItemProvider extends NamespaceItemProvider {
 			(createChildParameter
 				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 FramewebFactory.eINSTANCE.createDAOServiceAssociation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createDomainPackage()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createViewPackage()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createControllerPackage()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createPersistencePackage()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createApplicationPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter

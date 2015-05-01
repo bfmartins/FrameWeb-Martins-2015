@@ -3,6 +3,7 @@
 package frameweb;
 
 import org.eclipse.emf.common.util.EList;
+import uml2.Stereotype;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +24,7 @@ import org.eclipse.emf.common.util.EList;
  * @model
  * @generated
  */
-public interface DAOClass extends uml2.Class {
+public interface DAOClass extends Stereotype {
 	/**
 	 * Returns the value of the '<em><b>Base Implements</b></em>' containment reference list.
 	 * The list contents are of type {@link frameweb.DAOBaseOperation}.

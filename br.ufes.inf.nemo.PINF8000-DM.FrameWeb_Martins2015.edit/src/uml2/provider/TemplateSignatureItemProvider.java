@@ -165,17 +165,17 @@ public class TemplateSignatureItemProvider extends ElementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_SIGNATURE__OWNED_PARAMETER,
-				 Uml2Factory.eINSTANCE.createClassifierTemplateParameter()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.TEMPLATE_SIGNATURE__OWNED_PARAMETER,
 				 Uml2Factory.eINSTANCE.createConnectableElementTemplateParameter()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.TEMPLATE_SIGNATURE__OWNED_PARAMETER,
 				 Uml2Factory.eINSTANCE.createOperationTemplateParameter()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.TEMPLATE_SIGNATURE__OWNED_PARAMETER,
+				 Uml2Factory.eINSTANCE.createClassifierTemplateParameter()));
 	}
 
 }

@@ -76,7 +76,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__OWNED_COMMENT = Uml2Package.CLASS__OWNED_COMMENT;
+	int DOMAIN_CLASS__OWNED_COMMENT = Uml2Package.STEREOTYPE__OWNED_COMMENT;
 
 	/**
 	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
@@ -85,7 +85,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__OWNED_ELEMENT = Uml2Package.CLASS__OWNED_ELEMENT;
+	int DOMAIN_CLASS__OWNED_ELEMENT = Uml2Package.STEREOTYPE__OWNED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Owner</b></em>' reference.
@@ -94,7 +94,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__OWNER = Uml2Package.CLASS__OWNER;
+	int DOMAIN_CLASS__OWNER = Uml2Package.STEREOTYPE__OWNER;
 
 	/**
 	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
@@ -103,7 +103,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__CLIENT_DEPENDENCY = Uml2Package.CLASS__CLIENT_DEPENDENCY;
+	int DOMAIN_CLASS__CLIENT_DEPENDENCY = Uml2Package.STEREOTYPE__CLIENT_DEPENDENCY;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -112,7 +112,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__NAME = Uml2Package.CLASS__NAME;
+	int DOMAIN_CLASS__NAME = Uml2Package.STEREOTYPE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
@@ -121,7 +121,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__NAME_EXPRESSION = Uml2Package.CLASS__NAME_EXPRESSION;
+	int DOMAIN_CLASS__NAME_EXPRESSION = Uml2Package.STEREOTYPE__NAME_EXPRESSION;
 
 	/**
 	 * The feature id for the '<em><b>Namespace</b></em>' reference.
@@ -130,7 +130,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__NAMESPACE = Uml2Package.CLASS__NAMESPACE;
+	int DOMAIN_CLASS__NAMESPACE = Uml2Package.STEREOTYPE__NAMESPACE;
 
 	/**
 	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
@@ -139,7 +139,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__QUALIFIED_NAME = Uml2Package.CLASS__QUALIFIED_NAME;
+	int DOMAIN_CLASS__QUALIFIED_NAME = Uml2Package.STEREOTYPE__QUALIFIED_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -148,7 +148,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__VISIBILITY = Uml2Package.CLASS__VISIBILITY;
+	int DOMAIN_CLASS__VISIBILITY = Uml2Package.STEREOTYPE__VISIBILITY;
 
 	/**
 	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
@@ -157,7 +157,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__ELEMENT_IMPORT = Uml2Package.CLASS__ELEMENT_IMPORT;
+	int DOMAIN_CLASS__ELEMENT_IMPORT = Uml2Package.STEREOTYPE__ELEMENT_IMPORT;
 
 	/**
 	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
@@ -166,7 +166,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__IMPORTED_MEMBER = Uml2Package.CLASS__IMPORTED_MEMBER;
+	int DOMAIN_CLASS__IMPORTED_MEMBER = Uml2Package.STEREOTYPE__IMPORTED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Member</b></em>' reference list.
@@ -175,7 +175,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__MEMBER = Uml2Package.CLASS__MEMBER;
+	int DOMAIN_CLASS__MEMBER = Uml2Package.STEREOTYPE__MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
@@ -184,7 +184,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__OWNED_MEMBER = Uml2Package.CLASS__OWNED_MEMBER;
+	int DOMAIN_CLASS__OWNED_MEMBER = Uml2Package.STEREOTYPE__OWNED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
@@ -193,7 +193,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__OWNED_RULE = Uml2Package.CLASS__OWNED_RULE;
+	int DOMAIN_CLASS__OWNED_RULE = Uml2Package.STEREOTYPE__OWNED_RULE;
 
 	/**
 	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
@@ -202,7 +202,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__PACKAGE_IMPORT = Uml2Package.CLASS__PACKAGE_IMPORT;
+	int DOMAIN_CLASS__PACKAGE_IMPORT = Uml2Package.STEREOTYPE__PACKAGE_IMPORT;
 
 	/**
 	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
@@ -211,7 +211,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__IS_LEAF = Uml2Package.CLASS__IS_LEAF;
+	int DOMAIN_CLASS__IS_LEAF = Uml2Package.STEREOTYPE__IS_LEAF;
 
 	/**
 	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
@@ -220,7 +220,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__REDEFINED_ELEMENT = Uml2Package.CLASS__REDEFINED_ELEMENT;
+	int DOMAIN_CLASS__REDEFINED_ELEMENT = Uml2Package.STEREOTYPE__REDEFINED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
@@ -229,7 +229,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__REDEFINITION_CONTEXT = Uml2Package.CLASS__REDEFINITION_CONTEXT;
+	int DOMAIN_CLASS__REDEFINITION_CONTEXT = Uml2Package.STEREOTYPE__REDEFINITION_CONTEXT;
 
 	/**
 	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
@@ -238,7 +238,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__OWNING_TEMPLATE_PARAMETER = Uml2Package.CLASS__OWNING_TEMPLATE_PARAMETER;
+	int DOMAIN_CLASS__OWNING_TEMPLATE_PARAMETER = Uml2Package.STEREOTYPE__OWNING_TEMPLATE_PARAMETER;
 
 	/**
 	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
@@ -247,7 +247,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__TEMPLATE_PARAMETER = Uml2Package.CLASS__TEMPLATE_PARAMETER;
+	int DOMAIN_CLASS__TEMPLATE_PARAMETER = Uml2Package.STEREOTYPE__TEMPLATE_PARAMETER;
 
 	/**
 	 * The feature id for the '<em><b>Package</b></em>' reference.
@@ -256,7 +256,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__PACKAGE = Uml2Package.CLASS__PACKAGE;
+	int DOMAIN_CLASS__PACKAGE = Uml2Package.STEREOTYPE__PACKAGE;
 
 	/**
 	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
@@ -265,7 +265,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__TEMPLATE_BINDING = Uml2Package.CLASS__TEMPLATE_BINDING;
+	int DOMAIN_CLASS__TEMPLATE_BINDING = Uml2Package.STEREOTYPE__TEMPLATE_BINDING;
 
 	/**
 	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
@@ -274,7 +274,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__OWNED_TEMPLATE_SIGNATURE = Uml2Package.CLASS__OWNED_TEMPLATE_SIGNATURE;
+	int DOMAIN_CLASS__OWNED_TEMPLATE_SIGNATURE = Uml2Package.STEREOTYPE__OWNED_TEMPLATE_SIGNATURE;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' reference list.
@@ -283,7 +283,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__ATTRIBUTE = Uml2Package.CLASS__ATTRIBUTE;
+	int DOMAIN_CLASS__ATTRIBUTE = Uml2Package.STEREOTYPE__ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Feature</b></em>' reference list.
@@ -292,7 +292,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__FEATURE = Uml2Package.CLASS__FEATURE;
+	int DOMAIN_CLASS__FEATURE = Uml2Package.STEREOTYPE__FEATURE;
 
 	/**
 	 * The feature id for the '<em><b>Collaboration Use</b></em>' containment reference list.
@@ -301,7 +301,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__COLLABORATION_USE = Uml2Package.CLASS__COLLABORATION_USE;
+	int DOMAIN_CLASS__COLLABORATION_USE = Uml2Package.STEREOTYPE__COLLABORATION_USE;
 
 	/**
 	 * The feature id for the '<em><b>General</b></em>' reference list.
@@ -310,7 +310,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__GENERAL = Uml2Package.CLASS__GENERAL;
+	int DOMAIN_CLASS__GENERAL = Uml2Package.STEREOTYPE__GENERAL;
 
 	/**
 	 * The feature id for the '<em><b>Generalization</b></em>' containment reference list.
@@ -319,7 +319,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__GENERALIZATION = Uml2Package.CLASS__GENERALIZATION;
+	int DOMAIN_CLASS__GENERALIZATION = Uml2Package.STEREOTYPE__GENERALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Powertype Extent</b></em>' reference list.
@@ -328,7 +328,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__POWERTYPE_EXTENT = Uml2Package.CLASS__POWERTYPE_EXTENT;
+	int DOMAIN_CLASS__POWERTYPE_EXTENT = Uml2Package.STEREOTYPE__POWERTYPE_EXTENT;
 
 	/**
 	 * The feature id for the '<em><b>Inherited Member</b></em>' reference list.
@@ -337,7 +337,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__INHERITED_MEMBER = Uml2Package.CLASS__INHERITED_MEMBER;
+	int DOMAIN_CLASS__INHERITED_MEMBER = Uml2Package.STEREOTYPE__INHERITED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
@@ -346,7 +346,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__IS_ABSTRACT = Uml2Package.CLASS__IS_ABSTRACT;
+	int DOMAIN_CLASS__IS_ABSTRACT = Uml2Package.STEREOTYPE__IS_ABSTRACT;
 
 	/**
 	 * The feature id for the '<em><b>Is Final Specialization</b></em>' attribute.
@@ -355,7 +355,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__IS_FINAL_SPECIALIZATION = Uml2Package.CLASS__IS_FINAL_SPECIALIZATION;
+	int DOMAIN_CLASS__IS_FINAL_SPECIALIZATION = Uml2Package.STEREOTYPE__IS_FINAL_SPECIALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Use Case</b></em>' containment reference list.
@@ -364,7 +364,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__OWNED_USE_CASE = Uml2Package.CLASS__OWNED_USE_CASE;
+	int DOMAIN_CLASS__OWNED_USE_CASE = Uml2Package.STEREOTYPE__OWNED_USE_CASE;
 
 	/**
 	 * The feature id for the '<em><b>Use Case</b></em>' reference list.
@@ -373,7 +373,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__USE_CASE = Uml2Package.CLASS__USE_CASE;
+	int DOMAIN_CLASS__USE_CASE = Uml2Package.STEREOTYPE__USE_CASE;
 
 	/**
 	 * The feature id for the '<em><b>Redefined Classifier</b></em>' reference list.
@@ -382,7 +382,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__REDEFINED_CLASSIFIER = Uml2Package.CLASS__REDEFINED_CLASSIFIER;
+	int DOMAIN_CLASS__REDEFINED_CLASSIFIER = Uml2Package.STEREOTYPE__REDEFINED_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Representation</b></em>' reference.
@@ -391,7 +391,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__REPRESENTATION = Uml2Package.CLASS__REPRESENTATION;
+	int DOMAIN_CLASS__REPRESENTATION = Uml2Package.STEREOTYPE__REPRESENTATION;
 
 	/**
 	 * The feature id for the '<em><b>Substitution</b></em>' containment reference list.
@@ -400,7 +400,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__SUBSTITUTION = Uml2Package.CLASS__SUBSTITUTION;
+	int DOMAIN_CLASS__SUBSTITUTION = Uml2Package.STEREOTYPE__SUBSTITUTION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Attribute</b></em>' containment reference list.
@@ -409,7 +409,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__OWNED_ATTRIBUTE = Uml2Package.CLASS__OWNED_ATTRIBUTE;
+	int DOMAIN_CLASS__OWNED_ATTRIBUTE = Uml2Package.STEREOTYPE__OWNED_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Owned Connector</b></em>' containment reference list.
@@ -418,7 +418,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__OWNED_CONNECTOR = Uml2Package.CLASS__OWNED_CONNECTOR;
+	int DOMAIN_CLASS__OWNED_CONNECTOR = Uml2Package.STEREOTYPE__OWNED_CONNECTOR;
 
 	/**
 	 * The feature id for the '<em><b>Part</b></em>' reference list.
@@ -427,7 +427,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__PART = Uml2Package.CLASS__PART;
+	int DOMAIN_CLASS__PART = Uml2Package.STEREOTYPE__PART;
 
 	/**
 	 * The feature id for the '<em><b>Role</b></em>' reference list.
@@ -436,7 +436,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__ROLE = Uml2Package.CLASS__ROLE;
+	int DOMAIN_CLASS__ROLE = Uml2Package.STEREOTYPE__ROLE;
 
 	/**
 	 * The feature id for the '<em><b>Owned Port</b></em>' reference list.
@@ -445,7 +445,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__OWNED_PORT = Uml2Package.CLASS__OWNED_PORT;
+	int DOMAIN_CLASS__OWNED_PORT = Uml2Package.STEREOTYPE__OWNED_PORT;
 
 	/**
 	 * The feature id for the '<em><b>Classifier Behavior</b></em>' reference.
@@ -454,7 +454,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__CLASSIFIER_BEHAVIOR = Uml2Package.CLASS__CLASSIFIER_BEHAVIOR;
+	int DOMAIN_CLASS__CLASSIFIER_BEHAVIOR = Uml2Package.STEREOTYPE__CLASSIFIER_BEHAVIOR;
 
 	/**
 	 * The feature id for the '<em><b>Interface Realization</b></em>' containment reference list.
@@ -463,7 +463,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__INTERFACE_REALIZATION = Uml2Package.CLASS__INTERFACE_REALIZATION;
+	int DOMAIN_CLASS__INTERFACE_REALIZATION = Uml2Package.STEREOTYPE__INTERFACE_REALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Behavior</b></em>' containment reference list.
@@ -472,7 +472,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__OWNED_BEHAVIOR = Uml2Package.CLASS__OWNED_BEHAVIOR;
+	int DOMAIN_CLASS__OWNED_BEHAVIOR = Uml2Package.STEREOTYPE__OWNED_BEHAVIOR;
 
 	/**
 	 * The feature id for the '<em><b>Owned Operation</b></em>' containment reference list.
@@ -481,7 +481,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__OWNED_OPERATION = Uml2Package.CLASS__OWNED_OPERATION;
+	int DOMAIN_CLASS__OWNED_OPERATION = Uml2Package.STEREOTYPE__OWNED_OPERATION;
 
 	/**
 	 * The feature id for the '<em><b>Extension</b></em>' reference list.
@@ -490,7 +490,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__EXTENSION = Uml2Package.CLASS__EXTENSION;
+	int DOMAIN_CLASS__EXTENSION = Uml2Package.STEREOTYPE__EXTENSION;
 
 	/**
 	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
@@ -499,7 +499,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__IS_ACTIVE = Uml2Package.CLASS__IS_ACTIVE;
+	int DOMAIN_CLASS__IS_ACTIVE = Uml2Package.STEREOTYPE__IS_ACTIVE;
 
 	/**
 	 * The feature id for the '<em><b>Nested Classifier</b></em>' containment reference list.
@@ -508,7 +508,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__NESTED_CLASSIFIER = Uml2Package.CLASS__NESTED_CLASSIFIER;
+	int DOMAIN_CLASS__NESTED_CLASSIFIER = Uml2Package.STEREOTYPE__NESTED_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Owned Reception</b></em>' containment reference list.
@@ -517,7 +517,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__OWNED_RECEPTION = Uml2Package.CLASS__OWNED_RECEPTION;
+	int DOMAIN_CLASS__OWNED_RECEPTION = Uml2Package.STEREOTYPE__OWNED_RECEPTION;
 
 	/**
 	 * The feature id for the '<em><b>Super Class</b></em>' reference list.
@@ -526,7 +526,25 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__SUPER_CLASS = Uml2Package.CLASS__SUPER_CLASS;
+	int DOMAIN_CLASS__SUPER_CLASS = Uml2Package.STEREOTYPE__SUPER_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_CLASS__ICON = Uml2Package.STEREOTYPE__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Profile</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_CLASS__PROFILE = Uml2Package.STEREOTYPE__PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Domain Class Attribute</b></em>' containment reference list.
@@ -535,7 +553,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE = Uml2Package.CLASS_FEATURE_COUNT + 0;
+	int DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE = Uml2Package.STEREOTYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Domain Class Operation</b></em>' containment reference list.
@@ -544,7 +562,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS__DOMAIN_CLASS_OPERATION = Uml2Package.CLASS_FEATURE_COUNT + 1;
+	int DOMAIN_CLASS__DOMAIN_CLASS_OPERATION = Uml2Package.STEREOTYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Domain Class</em>' class.
@@ -553,7 +571,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS_FEATURE_COUNT = Uml2Package.CLASS_FEATURE_COUNT + 2;
+	int DOMAIN_CLASS_FEATURE_COUNT = Uml2Package.STEREOTYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Not Own Self</em>' operation.
@@ -562,7 +580,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Has Owner</em>' operation.
@@ -571,7 +589,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>All Owned Elements</em>' operation.
@@ -580,7 +598,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___ALL_OWNED_ELEMENTS = Uml2Package.CLASS___ALL_OWNED_ELEMENTS;
+	int DOMAIN_CLASS___ALL_OWNED_ELEMENTS = Uml2Package.STEREOTYPE___ALL_OWNED_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>Must Be Owned</em>' operation.
@@ -589,7 +607,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___MUST_BE_OWNED = Uml2Package.CLASS___MUST_BE_OWNED;
+	int DOMAIN_CLASS___MUST_BE_OWNED = Uml2Package.STEREOTYPE___MUST_BE_OWNED;
 
 	/**
 	 * The operation id for the '<em>Has Qualified Name</em>' operation.
@@ -598,7 +616,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
@@ -607,7 +625,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
@@ -616,7 +634,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>All Namespaces</em>' operation.
@@ -625,7 +643,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___ALL_NAMESPACES = Uml2Package.CLASS___ALL_NAMESPACES;
+	int DOMAIN_CLASS___ALL_NAMESPACES = Uml2Package.STEREOTYPE___ALL_NAMESPACES;
 
 	/**
 	 * The operation id for the '<em>All Owning Packages</em>' operation.
@@ -634,7 +652,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___ALL_OWNING_PACKAGES = Uml2Package.CLASS___ALL_OWNING_PACKAGES;
+	int DOMAIN_CLASS___ALL_OWNING_PACKAGES = Uml2Package.STEREOTYPE___ALL_OWNING_PACKAGES;
 
 	/**
 	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
@@ -643,7 +661,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+	int DOMAIN_CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.STEREOTYPE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
 
 	/**
 	 * The operation id for the '<em>Namespace</em>' operation.
@@ -652,7 +670,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___NAMESPACE = Uml2Package.CLASS___NAMESPACE;
+	int DOMAIN_CLASS___NAMESPACE = Uml2Package.STEREOTYPE___NAMESPACE;
 
 	/**
 	 * The operation id for the '<em>Qualified Name</em>' operation.
@@ -661,7 +679,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___QUALIFIED_NAME = Uml2Package.CLASS___QUALIFIED_NAME;
+	int DOMAIN_CLASS___QUALIFIED_NAME = Uml2Package.STEREOTYPE___QUALIFIED_NAME;
 
 	/**
 	 * The operation id for the '<em>Separator</em>' operation.
@@ -670,7 +688,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___SEPARATOR = Uml2Package.CLASS___SEPARATOR;
+	int DOMAIN_CLASS___SEPARATOR = Uml2Package.STEREOTYPE___SEPARATOR;
 
 	/**
 	 * The operation id for the '<em>Members Distinguishable</em>' operation.
@@ -679,7 +697,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Exclude Collisions</em>' operation.
@@ -688,7 +706,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___EXCLUDE_COLLISIONS__ELIST = Uml2Package.CLASS___EXCLUDE_COLLISIONS__ELIST;
+	int DOMAIN_CLASS___EXCLUDE_COLLISIONS__ELIST = Uml2Package.STEREOTYPE___EXCLUDE_COLLISIONS__ELIST;
 
 	/**
 	 * The operation id for the '<em>Get Names Of Member</em>' operation.
@@ -697,7 +715,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+	int DOMAIN_CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.STEREOTYPE___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Import Members</em>' operation.
@@ -706,7 +724,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___IMPORT_MEMBERS__ELIST = Uml2Package.CLASS___IMPORT_MEMBERS__ELIST;
+	int DOMAIN_CLASS___IMPORT_MEMBERS__ELIST = Uml2Package.STEREOTYPE___IMPORT_MEMBERS__ELIST;
 
 	/**
 	 * The operation id for the '<em>Imported Member</em>' operation.
@@ -715,7 +733,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___IMPORTED_MEMBER = Uml2Package.CLASS___IMPORTED_MEMBER;
+	int DOMAIN_CLASS___IMPORTED_MEMBER = Uml2Package.STEREOTYPE___IMPORTED_MEMBER;
 
 	/**
 	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
@@ -724,7 +742,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.CLASS___MEMBERS_ARE_DISTINGUISHABLE;
+	int DOMAIN_CLASS___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.STEREOTYPE___MEMBERS_ARE_DISTINGUISHABLE;
 
 	/**
 	 * The operation id for the '<em>Owned Member</em>' operation.
@@ -733,7 +751,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___OWNED_MEMBER = Uml2Package.CLASS___OWNED_MEMBER;
+	int DOMAIN_CLASS___OWNED_MEMBER = Uml2Package.STEREOTYPE___OWNED_MEMBER;
 
 	/**
 	 * The operation id for the '<em>Non Leaf Redefinition</em>' operation.
@@ -742,7 +760,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Redefinition Context Valid</em>' operation.
@@ -751,7 +769,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Redefinition Consistent</em>' operation.
@@ -760,7 +778,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Is Consistent With</em>' operation.
@@ -769,7 +787,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = Uml2Package.CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
+	int DOMAIN_CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = Uml2Package.STEREOTYPE___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
@@ -778,7 +796,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = Uml2Package.CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
+	int DOMAIN_CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = Uml2Package.STEREOTYPE___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Compatible With</em>' operation.
@@ -787,7 +805,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+	int DOMAIN_CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.STEREOTYPE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Template Parameter</em>' operation.
@@ -796,7 +814,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___IS_TEMPLATE_PARAMETER = Uml2Package.CLASS___IS_TEMPLATE_PARAMETER;
+	int DOMAIN_CLASS___IS_TEMPLATE_PARAMETER = Uml2Package.STEREOTYPE___IS_TEMPLATE_PARAMETER;
 
 	/**
 	 * The operation id for the '<em>Conforms To</em>' operation.
@@ -805,7 +823,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___CONFORMS_TO__TYPE = Uml2Package.CLASS___CONFORMS_TO__TYPE;
+	int DOMAIN_CLASS___CONFORMS_TO__TYPE = Uml2Package.STEREOTYPE___CONFORMS_TO__TYPE;
 
 	/**
 	 * The operation id for the '<em>Is Template</em>' operation.
@@ -814,7 +832,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___IS_TEMPLATE = Uml2Package.CLASS___IS_TEMPLATE;
+	int DOMAIN_CLASS___IS_TEMPLATE = Uml2Package.STEREOTYPE___IS_TEMPLATE;
 
 	/**
 	 * The operation id for the '<em>Parameterable Elements</em>' operation.
@@ -823,7 +841,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___PARAMETERABLE_ELEMENTS = Uml2Package.CLASS___PARAMETERABLE_ELEMENTS;
+	int DOMAIN_CLASS___PARAMETERABLE_ELEMENTS = Uml2Package.STEREOTYPE___PARAMETERABLE_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>No Cycles In Generalization</em>' operation.
@@ -832,7 +850,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Specialize Type</em>' operation.
@@ -841,7 +859,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Non Final Parents</em>' operation.
@@ -850,7 +868,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Maps To Generalization Set</em>' operation.
@@ -859,7 +877,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>All Features</em>' operation.
@@ -868,7 +886,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___ALL_FEATURES = Uml2Package.CLASS___ALL_FEATURES;
+	int DOMAIN_CLASS___ALL_FEATURES = Uml2Package.STEREOTYPE___ALL_FEATURES;
 
 	/**
 	 * The operation id for the '<em>All Parents</em>' operation.
@@ -877,7 +895,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___ALL_PARENTS = Uml2Package.CLASS___ALL_PARENTS;
+	int DOMAIN_CLASS___ALL_PARENTS = Uml2Package.STEREOTYPE___ALL_PARENTS;
 
 	/**
 	 * The operation id for the '<em>Conforms To</em>' operation.
@@ -886,7 +904,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___CONFORMS_TO__CLASSIFIER = Uml2Package.CLASS___CONFORMS_TO__CLASSIFIER;
+	int DOMAIN_CLASS___CONFORMS_TO__CLASSIFIER = Uml2Package.STEREOTYPE___CONFORMS_TO__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>General</em>' operation.
@@ -895,7 +913,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___GENERAL = Uml2Package.CLASS___GENERAL;
+	int DOMAIN_CLASS___GENERAL = Uml2Package.STEREOTYPE___GENERAL;
 
 	/**
 	 * The operation id for the '<em>Has Visibility Of</em>' operation.
@@ -904,7 +922,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT = Uml2Package.CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT;
+	int DOMAIN_CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT = Uml2Package.STEREOTYPE___HAS_VISIBILITY_OF__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Inherit</em>' operation.
@@ -913,7 +931,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___INHERIT__ELIST = Uml2Package.CLASS___INHERIT__ELIST;
+	int DOMAIN_CLASS___INHERIT__ELIST = Uml2Package.STEREOTYPE___INHERIT__ELIST;
 
 	/**
 	 * The operation id for the '<em>Inheritable Members</em>' operation.
@@ -922,7 +940,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___INHERITABLE_MEMBERS__CLASSIFIER = Uml2Package.CLASS___INHERITABLE_MEMBERS__CLASSIFIER;
+	int DOMAIN_CLASS___INHERITABLE_MEMBERS__CLASSIFIER = Uml2Package.STEREOTYPE___INHERITABLE_MEMBERS__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>Inherited Member</em>' operation.
@@ -931,7 +949,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___INHERITED_MEMBER = Uml2Package.CLASS___INHERITED_MEMBER;
+	int DOMAIN_CLASS___INHERITED_MEMBER = Uml2Package.STEREOTYPE___INHERITED_MEMBER;
 
 	/**
 	 * The operation id for the '<em>May Specialize Type</em>' operation.
@@ -940,7 +958,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER = Uml2Package.CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER;
+	int DOMAIN_CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER = Uml2Package.STEREOTYPE___MAY_SPECIALIZE_TYPE__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>Parents</em>' operation.
@@ -949,7 +967,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___PARENTS = Uml2Package.CLASS___PARENTS;
+	int DOMAIN_CLASS___PARENTS = Uml2Package.STEREOTYPE___PARENTS;
 
 	/**
 	 * The operation id for the '<em>Multiplicities</em>' operation.
@@ -958,7 +976,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Part</em>' operation.
@@ -967,7 +985,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___PART = Uml2Package.CLASS___PART;
+	int DOMAIN_CLASS___PART = Uml2Package.STEREOTYPE___PART;
 
 	/**
 	 * The operation id for the '<em>Owned Port</em>' operation.
@@ -976,7 +994,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___OWNED_PORT = Uml2Package.CLASS___OWNED_PORT;
+	int DOMAIN_CLASS___OWNED_PORT = Uml2Package.STEREOTYPE___OWNED_PORT;
 
 	/**
 	 * The operation id for the '<em>Class Behavior</em>' operation.
@@ -985,7 +1003,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Passive Class</em>' operation.
@@ -994,7 +1012,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP;
+	int DOMAIN_CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Extension</em>' operation.
@@ -1003,7 +1021,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___EXTENSION = Uml2Package.CLASS___EXTENSION;
+	int DOMAIN_CLASS___EXTENSION = Uml2Package.STEREOTYPE___EXTENSION;
 
 	/**
 	 * The operation id for the '<em>Super Class</em>' operation.
@@ -1012,7 +1030,61 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS___SUPER_CLASS = Uml2Package.CLASS___SUPER_CLASS;
+	int DOMAIN_CLASS___SUPER_CLASS = Uml2Package.STEREOTYPE___SUPER_CLASS;
+
+	/**
+	 * The operation id for the '<em>Generalize</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___GENERALIZE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Association End Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Binary Associations Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Name Not Clash</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_CLASS___CONTAINING_PROFILE = Uml2Package.STEREOTYPE___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_CLASS___PROFILE = Uml2Package.STEREOTYPE___PROFILE;
 
 	/**
 	 * The number of operations of the '<em>Domain Class</em>' class.
@@ -1021,7 +1093,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_CLASS_OPERATION_COUNT = Uml2Package.CLASS_OPERATION_COUNT + 0;
+	int DOMAIN_CLASS_OPERATION_COUNT = Uml2Package.STEREOTYPE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.MappedClassImpl <em>Mapped Class</em>}' class.
@@ -1491,6 +1563,24 @@ public interface FramewebPackage extends EPackage {
 	 * @ordered
 	 */
 	int MAPPED_CLASS__SUPER_CLASS = DOMAIN_CLASS__SUPER_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAPPED_CLASS__ICON = DOMAIN_CLASS__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Profile</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAPPED_CLASS__PROFILE = DOMAIN_CLASS__PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Domain Class Attribute</b></em>' containment reference list.
@@ -1979,6 +2069,60 @@ public interface FramewebPackage extends EPackage {
 	int MAPPED_CLASS___SUPER_CLASS = DOMAIN_CLASS___SUPER_CLASS;
 
 	/**
+	 * The operation id for the '<em>Generalize</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAPPED_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP = DOMAIN_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Association End Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAPPED_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP = DOMAIN_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Binary Associations Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAPPED_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP = DOMAIN_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Name Not Clash</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAPPED_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP = DOMAIN_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAPPED_CLASS___CONTAINING_PROFILE = DOMAIN_CLASS___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAPPED_CLASS___PROFILE = DOMAIN_CLASS___PROFILE;
+
+	/**
 	 * The number of operations of the '<em>Mapped Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2455,6 +2599,24 @@ public interface FramewebPackage extends EPackage {
 	 * @ordered
 	 */
 	int PERSISTENT_CLASS__SUPER_CLASS = DOMAIN_CLASS__SUPER_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENT_CLASS__ICON = DOMAIN_CLASS__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Profile</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENT_CLASS__PROFILE = DOMAIN_CLASS__PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Domain Class Attribute</b></em>' containment reference list.
@@ -2952,6 +3114,60 @@ public interface FramewebPackage extends EPackage {
 	int PERSISTENT_CLASS___SUPER_CLASS = DOMAIN_CLASS___SUPER_CLASS;
 
 	/**
+	 * The operation id for the '<em>Generalize</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENT_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP = DOMAIN_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Association End Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENT_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP = DOMAIN_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Binary Associations Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENT_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP = DOMAIN_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Name Not Clash</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENT_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP = DOMAIN_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENT_CLASS___CONTAINING_PROFILE = DOMAIN_CLASS___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENT_CLASS___PROFILE = DOMAIN_CLASS___PROFILE;
+
+	/**
 	 * The number of operations of the '<em>Persistent Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3428,6 +3644,24 @@ public interface FramewebPackage extends EPackage {
 	 * @ordered
 	 */
 	int TRANSIENT_CLASS__SUPER_CLASS = DOMAIN_CLASS__SUPER_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSIENT_CLASS__ICON = DOMAIN_CLASS__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Profile</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSIENT_CLASS__PROFILE = DOMAIN_CLASS__PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Domain Class Attribute</b></em>' containment reference list.
@@ -3916,6 +4150,60 @@ public interface FramewebPackage extends EPackage {
 	int TRANSIENT_CLASS___SUPER_CLASS = DOMAIN_CLASS___SUPER_CLASS;
 
 	/**
+	 * The operation id for the '<em>Generalize</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSIENT_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP = DOMAIN_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Association End Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSIENT_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP = DOMAIN_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Binary Associations Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSIENT_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP = DOMAIN_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Name Not Clash</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSIENT_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP = DOMAIN_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSIENT_CLASS___CONTAINING_PROFILE = DOMAIN_CLASS___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSIENT_CLASS___PROFILE = DOMAIN_CLASS___PROFILE;
+
+	/**
 	 * The number of operations of the '<em>Transient Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3981,13 +4269,256 @@ public interface FramewebPackage extends EPackage {
 	int FRAME_WEB_MODEL = 4;
 
 	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__OWNED_COMMENT = Uml2Package.PACKAGE__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__OWNED_ELEMENT = Uml2Package.PACKAGE__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__OWNER = Uml2Package.PACKAGE__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__CLIENT_DEPENDENCY = Uml2Package.PACKAGE__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__NAME = Uml2Package.PACKAGE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__NAME_EXPRESSION = Uml2Package.PACKAGE__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__NAMESPACE = Uml2Package.PACKAGE__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__QUALIFIED_NAME = Uml2Package.PACKAGE__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__VISIBILITY = Uml2Package.PACKAGE__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__ELEMENT_IMPORT = Uml2Package.PACKAGE__ELEMENT_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__IMPORTED_MEMBER = Uml2Package.PACKAGE__IMPORTED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__MEMBER = Uml2Package.PACKAGE__MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__OWNED_MEMBER = Uml2Package.PACKAGE__OWNED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__OWNED_RULE = Uml2Package.PACKAGE__OWNED_RULE;
+
+	/**
+	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__PACKAGE_IMPORT = Uml2Package.PACKAGE__PACKAGE_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__OWNING_TEMPLATE_PARAMETER = Uml2Package.PACKAGE__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__TEMPLATE_PARAMETER = Uml2Package.PACKAGE__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__TEMPLATE_BINDING = Uml2Package.PACKAGE__TEMPLATE_BINDING;
+
+	/**
+	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__OWNED_TEMPLATE_SIGNATURE = Uml2Package.PACKAGE__OWNED_TEMPLATE_SIGNATURE;
+
+	/**
+	 * The feature id for the '<em><b>Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__URI = Uml2Package.PACKAGE__URI;
+
+	/**
+	 * The feature id for the '<em><b>Nested Package</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__NESTED_PACKAGE = Uml2Package.PACKAGE__NESTED_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Nesting Package</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__NESTING_PACKAGE = Uml2Package.PACKAGE__NESTING_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Stereotype</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__OWNED_STEREOTYPE = Uml2Package.PACKAGE__OWNED_STEREOTYPE;
+
+	/**
+	 * The feature id for the '<em><b>Package Merge</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__PACKAGE_MERGE = Uml2Package.PACKAGE__PACKAGE_MERGE;
+
+	/**
+	 * The feature id for the '<em><b>Packaged Element</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__PACKAGED_ELEMENT = Uml2Package.PACKAGE__PACKAGED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Profile Application</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__PROFILE_APPLICATION = Uml2Package.PACKAGE__PROFILE_APPLICATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Type</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL__OWNED_TYPE = Uml2Package.PACKAGE__OWNED_TYPE;
+
+	/**
 	 * The feature id for the '<em><b>Indite</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FRAME_WEB_MODEL__INDITE = 0;
+	int FRAME_WEB_MODEL__INDITE = Uml2Package.PACKAGE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Frame Web Model</em>' class.
@@ -3996,7 +4527,295 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRAME_WEB_MODEL_FEATURE_COUNT = 1;
+	int FRAME_WEB_MODEL_FEATURE_COUNT = Uml2Package.PACKAGE_FEATURE_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___ALL_OWNED_ELEMENTS = Uml2Package.PACKAGE___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___MUST_BE_OWNED = Uml2Package.PACKAGE___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___ALL_NAMESPACES = Uml2Package.PACKAGE___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___ALL_OWNING_PACKAGES = Uml2Package.PACKAGE___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.PACKAGE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___NAMESPACE = Uml2Package.PACKAGE___NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___QUALIFIED_NAME = Uml2Package.PACKAGE___QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___SEPARATOR = Uml2Package.PACKAGE___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Members Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Exclude Collisions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___EXCLUDE_COLLISIONS__ELIST = Uml2Package.PACKAGE___EXCLUDE_COLLISIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Names Of Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.PACKAGE___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Import Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___IMPORT_MEMBERS__ELIST = Uml2Package.PACKAGE___IMPORT_MEMBERS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Imported Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___IMPORTED_MEMBER = Uml2Package.PACKAGE___IMPORTED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.PACKAGE___MEMBERS_ARE_DISTINGUISHABLE;
+
+	/**
+	 * The operation id for the '<em>Owned Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___OWNED_MEMBER = Uml2Package.PACKAGE___OWNED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.PACKAGE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___IS_TEMPLATE_PARAMETER = Uml2Package.PACKAGE___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Is Template</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___IS_TEMPLATE = Uml2Package.PACKAGE___IS_TEMPLATE;
+
+	/**
+	 * The operation id for the '<em>Parameterable Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___PARAMETERABLE_ELEMENTS = Uml2Package.PACKAGE___PARAMETERABLE_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Elements Public Or Private</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___ALL_APPLICABLE_STEREOTYPES = Uml2Package.PACKAGE___ALL_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___CONTAINING_PROFILE = Uml2Package.PACKAGE___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Makes Visible</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___MAKES_VISIBLE__NAMEDELEMENT = Uml2Package.PACKAGE___MAKES_VISIBLE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Nested Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___NESTED_PACKAGE = Uml2Package.PACKAGE___NESTED_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Owned Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___OWNED_STEREOTYPE = Uml2Package.PACKAGE___OWNED_STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Owned Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___OWNED_TYPE = Uml2Package.PACKAGE___OWNED_TYPE;
+
+	/**
+	 * The operation id for the '<em>Visible Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME_WEB_MODEL___VISIBLE_MEMBERS = Uml2Package.PACKAGE___VISIBLE_MEMBERS;
 
 	/**
 	 * The number of operations of the '<em>Frame Web Model</em>' class.
@@ -4005,7 +4824,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRAME_WEB_MODEL_OPERATION_COUNT = 0;
+	int FRAME_WEB_MODEL_OPERATION_COUNT = Uml2Package.PACKAGE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.FrameworkImpl <em>Framework</em>}' class.
@@ -4018,13 +4837,256 @@ public interface FramewebPackage extends EPackage {
 	int FRAMEWORK = 5;
 
 	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__OWNED_COMMENT = Uml2Package.PACKAGE__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__OWNED_ELEMENT = Uml2Package.PACKAGE__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__OWNER = Uml2Package.PACKAGE__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__CLIENT_DEPENDENCY = Uml2Package.PACKAGE__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__NAME = Uml2Package.PACKAGE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__NAME_EXPRESSION = Uml2Package.PACKAGE__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__NAMESPACE = Uml2Package.PACKAGE__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__QUALIFIED_NAME = Uml2Package.PACKAGE__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__VISIBILITY = Uml2Package.PACKAGE__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__ELEMENT_IMPORT = Uml2Package.PACKAGE__ELEMENT_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__IMPORTED_MEMBER = Uml2Package.PACKAGE__IMPORTED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__MEMBER = Uml2Package.PACKAGE__MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__OWNED_MEMBER = Uml2Package.PACKAGE__OWNED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__OWNED_RULE = Uml2Package.PACKAGE__OWNED_RULE;
+
+	/**
+	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__PACKAGE_IMPORT = Uml2Package.PACKAGE__PACKAGE_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__OWNING_TEMPLATE_PARAMETER = Uml2Package.PACKAGE__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__TEMPLATE_PARAMETER = Uml2Package.PACKAGE__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__TEMPLATE_BINDING = Uml2Package.PACKAGE__TEMPLATE_BINDING;
+
+	/**
+	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__OWNED_TEMPLATE_SIGNATURE = Uml2Package.PACKAGE__OWNED_TEMPLATE_SIGNATURE;
+
+	/**
+	 * The feature id for the '<em><b>Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__URI = Uml2Package.PACKAGE__URI;
+
+	/**
+	 * The feature id for the '<em><b>Nested Package</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__NESTED_PACKAGE = Uml2Package.PACKAGE__NESTED_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Nesting Package</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__NESTING_PACKAGE = Uml2Package.PACKAGE__NESTING_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Stereotype</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__OWNED_STEREOTYPE = Uml2Package.PACKAGE__OWNED_STEREOTYPE;
+
+	/**
+	 * The feature id for the '<em><b>Package Merge</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__PACKAGE_MERGE = Uml2Package.PACKAGE__PACKAGE_MERGE;
+
+	/**
+	 * The feature id for the '<em><b>Packaged Element</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__PACKAGED_ELEMENT = Uml2Package.PACKAGE__PACKAGED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Profile Application</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__PROFILE_APPLICATION = Uml2Package.PACKAGE__PROFILE_APPLICATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Type</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__OWNED_TYPE = Uml2Package.PACKAGE__OWNED_TYPE;
+
+	/**
 	 * The feature id for the '<em><b>Framework Tag Lib</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FRAMEWORK__FRAMEWORK_TAG_LIB = 0;
+	int FRAMEWORK__FRAMEWORK_TAG_LIB = Uml2Package.PACKAGE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Framework Rule</b></em>' containment reference list.
@@ -4033,7 +5095,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRAMEWORK__FRAMEWORK_RULE = 1;
+	int FRAMEWORK__FRAMEWORK_RULE = Uml2Package.PACKAGE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>New EReference</b></em>' containment reference list.
@@ -4042,7 +5104,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRAMEWORK__NEW_EREFERENCE = 2;
+	int FRAMEWORK__NEW_EREFERENCE = Uml2Package.PACKAGE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Framework Anotation</b></em>' containment reference list.
@@ -4051,7 +5113,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRAMEWORK__FRAMEWORK_ANOTATION = 3;
+	int FRAMEWORK__FRAMEWORK_ANOTATION = Uml2Package.PACKAGE_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Framework</em>' class.
@@ -4060,7 +5122,295 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRAMEWORK_FEATURE_COUNT = 4;
+	int FRAMEWORK_FEATURE_COUNT = Uml2Package.PACKAGE_FEATURE_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___ALL_OWNED_ELEMENTS = Uml2Package.PACKAGE___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___MUST_BE_OWNED = Uml2Package.PACKAGE___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___ALL_NAMESPACES = Uml2Package.PACKAGE___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___ALL_OWNING_PACKAGES = Uml2Package.PACKAGE___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.PACKAGE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___NAMESPACE = Uml2Package.PACKAGE___NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___QUALIFIED_NAME = Uml2Package.PACKAGE___QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___SEPARATOR = Uml2Package.PACKAGE___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Members Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Exclude Collisions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___EXCLUDE_COLLISIONS__ELIST = Uml2Package.PACKAGE___EXCLUDE_COLLISIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Names Of Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.PACKAGE___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Import Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___IMPORT_MEMBERS__ELIST = Uml2Package.PACKAGE___IMPORT_MEMBERS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Imported Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___IMPORTED_MEMBER = Uml2Package.PACKAGE___IMPORTED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.PACKAGE___MEMBERS_ARE_DISTINGUISHABLE;
+
+	/**
+	 * The operation id for the '<em>Owned Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___OWNED_MEMBER = Uml2Package.PACKAGE___OWNED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.PACKAGE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___IS_TEMPLATE_PARAMETER = Uml2Package.PACKAGE___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Is Template</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___IS_TEMPLATE = Uml2Package.PACKAGE___IS_TEMPLATE;
+
+	/**
+	 * The operation id for the '<em>Parameterable Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___PARAMETERABLE_ELEMENTS = Uml2Package.PACKAGE___PARAMETERABLE_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Elements Public Or Private</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___ALL_APPLICABLE_STEREOTYPES = Uml2Package.PACKAGE___ALL_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___CONTAINING_PROFILE = Uml2Package.PACKAGE___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Makes Visible</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___MAKES_VISIBLE__NAMEDELEMENT = Uml2Package.PACKAGE___MAKES_VISIBLE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Nested Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___NESTED_PACKAGE = Uml2Package.PACKAGE___NESTED_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Owned Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___OWNED_STEREOTYPE = Uml2Package.PACKAGE___OWNED_STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Owned Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___OWNED_TYPE = Uml2Package.PACKAGE___OWNED_TYPE;
+
+	/**
+	 * The operation id for the '<em>Visible Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK___VISIBLE_MEMBERS = Uml2Package.PACKAGE___VISIBLE_MEMBERS;
 
 	/**
 	 * The number of operations of the '<em>Framework</em>' class.
@@ -4069,7 +5419,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRAMEWORK_OPERATION_COUNT = 0;
+	int FRAMEWORK_OPERATION_COUNT = Uml2Package.PACKAGE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.DomainModelImpl <em>Domain Model</em>}' class.
@@ -4080,6 +5430,249 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 */
 	int DOMAIN_MODEL = 6;
+
+	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__OWNED_COMMENT = FRAME_WEB_MODEL__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__OWNED_ELEMENT = FRAME_WEB_MODEL__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__OWNER = FRAME_WEB_MODEL__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__CLIENT_DEPENDENCY = FRAME_WEB_MODEL__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__NAME = FRAME_WEB_MODEL__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__NAME_EXPRESSION = FRAME_WEB_MODEL__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__NAMESPACE = FRAME_WEB_MODEL__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__QUALIFIED_NAME = FRAME_WEB_MODEL__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__VISIBILITY = FRAME_WEB_MODEL__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__ELEMENT_IMPORT = FRAME_WEB_MODEL__ELEMENT_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__IMPORTED_MEMBER = FRAME_WEB_MODEL__IMPORTED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__MEMBER = FRAME_WEB_MODEL__MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__OWNED_MEMBER = FRAME_WEB_MODEL__OWNED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__OWNED_RULE = FRAME_WEB_MODEL__OWNED_RULE;
+
+	/**
+	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__PACKAGE_IMPORT = FRAME_WEB_MODEL__PACKAGE_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__OWNING_TEMPLATE_PARAMETER = FRAME_WEB_MODEL__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__TEMPLATE_PARAMETER = FRAME_WEB_MODEL__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__TEMPLATE_BINDING = FRAME_WEB_MODEL__TEMPLATE_BINDING;
+
+	/**
+	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__OWNED_TEMPLATE_SIGNATURE = FRAME_WEB_MODEL__OWNED_TEMPLATE_SIGNATURE;
+
+	/**
+	 * The feature id for the '<em><b>Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__URI = FRAME_WEB_MODEL__URI;
+
+	/**
+	 * The feature id for the '<em><b>Nested Package</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__NESTED_PACKAGE = FRAME_WEB_MODEL__NESTED_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Nesting Package</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__NESTING_PACKAGE = FRAME_WEB_MODEL__NESTING_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Stereotype</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__OWNED_STEREOTYPE = FRAME_WEB_MODEL__OWNED_STEREOTYPE;
+
+	/**
+	 * The feature id for the '<em><b>Package Merge</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__PACKAGE_MERGE = FRAME_WEB_MODEL__PACKAGE_MERGE;
+
+	/**
+	 * The feature id for the '<em><b>Packaged Element</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__PACKAGED_ELEMENT = FRAME_WEB_MODEL__PACKAGED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Profile Application</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__PROFILE_APPLICATION = FRAME_WEB_MODEL__PROFILE_APPLICATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Type</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL__OWNED_TYPE = FRAME_WEB_MODEL__OWNED_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Indite</b></em>' containment reference.
@@ -4118,6 +5711,294 @@ public interface FramewebPackage extends EPackage {
 	int DOMAIN_MODEL_FEATURE_COUNT = FRAME_WEB_MODEL_FEATURE_COUNT + 2;
 
 	/**
+	 * The operation id for the '<em>Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___HAS_OWNER__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___ALL_OWNED_ELEMENTS = FRAME_WEB_MODEL___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___MUST_BE_OWNED = FRAME_WEB_MODEL___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___ALL_NAMESPACES = FRAME_WEB_MODEL___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___ALL_OWNING_PACKAGES = FRAME_WEB_MODEL___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = FRAME_WEB_MODEL___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___NAMESPACE = FRAME_WEB_MODEL___NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___QUALIFIED_NAME = FRAME_WEB_MODEL___QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___SEPARATOR = FRAME_WEB_MODEL___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Members Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Exclude Collisions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___EXCLUDE_COLLISIONS__ELIST = FRAME_WEB_MODEL___EXCLUDE_COLLISIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Names Of Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___GET_NAMES_OF_MEMBER__NAMEDELEMENT = FRAME_WEB_MODEL___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Import Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___IMPORT_MEMBERS__ELIST = FRAME_WEB_MODEL___IMPORT_MEMBERS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Imported Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___IMPORTED_MEMBER = FRAME_WEB_MODEL___IMPORTED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___MEMBERS_ARE_DISTINGUISHABLE = FRAME_WEB_MODEL___MEMBERS_ARE_DISTINGUISHABLE;
+
+	/**
+	 * The operation id for the '<em>Owned Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___OWNED_MEMBER = FRAME_WEB_MODEL___OWNED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = FRAME_WEB_MODEL___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___IS_TEMPLATE_PARAMETER = FRAME_WEB_MODEL___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Is Template</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___IS_TEMPLATE = FRAME_WEB_MODEL___IS_TEMPLATE;
+
+	/**
+	 * The operation id for the '<em>Parameterable Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___PARAMETERABLE_ELEMENTS = FRAME_WEB_MODEL___PARAMETERABLE_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Elements Public Or Private</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___ALL_APPLICABLE_STEREOTYPES = FRAME_WEB_MODEL___ALL_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___CONTAINING_PROFILE = FRAME_WEB_MODEL___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Makes Visible</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___MAKES_VISIBLE__NAMEDELEMENT = FRAME_WEB_MODEL___MAKES_VISIBLE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Nested Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___NESTED_PACKAGE = FRAME_WEB_MODEL___NESTED_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Owned Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___OWNED_STEREOTYPE = FRAME_WEB_MODEL___OWNED_STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Owned Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___OWNED_TYPE = FRAME_WEB_MODEL___OWNED_TYPE;
+
+	/**
+	 * The operation id for the '<em>Visible Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_MODEL___VISIBLE_MEMBERS = FRAME_WEB_MODEL___VISIBLE_MEMBERS;
+
+	/**
 	 * The number of operations of the '<em>Domain Model</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4135,6 +6016,249 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 */
 	int NAVIGATION_MODEL = 7;
+
+	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__OWNED_COMMENT = FRAME_WEB_MODEL__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__OWNED_ELEMENT = FRAME_WEB_MODEL__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__OWNER = FRAME_WEB_MODEL__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__CLIENT_DEPENDENCY = FRAME_WEB_MODEL__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__NAME = FRAME_WEB_MODEL__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__NAME_EXPRESSION = FRAME_WEB_MODEL__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__NAMESPACE = FRAME_WEB_MODEL__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__QUALIFIED_NAME = FRAME_WEB_MODEL__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__VISIBILITY = FRAME_WEB_MODEL__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__ELEMENT_IMPORT = FRAME_WEB_MODEL__ELEMENT_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__IMPORTED_MEMBER = FRAME_WEB_MODEL__IMPORTED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__MEMBER = FRAME_WEB_MODEL__MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__OWNED_MEMBER = FRAME_WEB_MODEL__OWNED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__OWNED_RULE = FRAME_WEB_MODEL__OWNED_RULE;
+
+	/**
+	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__PACKAGE_IMPORT = FRAME_WEB_MODEL__PACKAGE_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__OWNING_TEMPLATE_PARAMETER = FRAME_WEB_MODEL__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__TEMPLATE_PARAMETER = FRAME_WEB_MODEL__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__TEMPLATE_BINDING = FRAME_WEB_MODEL__TEMPLATE_BINDING;
+
+	/**
+	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__OWNED_TEMPLATE_SIGNATURE = FRAME_WEB_MODEL__OWNED_TEMPLATE_SIGNATURE;
+
+	/**
+	 * The feature id for the '<em><b>Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__URI = FRAME_WEB_MODEL__URI;
+
+	/**
+	 * The feature id for the '<em><b>Nested Package</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__NESTED_PACKAGE = FRAME_WEB_MODEL__NESTED_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Nesting Package</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__NESTING_PACKAGE = FRAME_WEB_MODEL__NESTING_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Stereotype</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__OWNED_STEREOTYPE = FRAME_WEB_MODEL__OWNED_STEREOTYPE;
+
+	/**
+	 * The feature id for the '<em><b>Package Merge</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__PACKAGE_MERGE = FRAME_WEB_MODEL__PACKAGE_MERGE;
+
+	/**
+	 * The feature id for the '<em><b>Packaged Element</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__PACKAGED_ELEMENT = FRAME_WEB_MODEL__PACKAGED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Profile Application</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__PROFILE_APPLICATION = FRAME_WEB_MODEL__PROFILE_APPLICATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Type</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL__OWNED_TYPE = FRAME_WEB_MODEL__OWNED_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Indite</b></em>' containment reference.
@@ -4191,6 +6315,294 @@ public interface FramewebPackage extends EPackage {
 	int NAVIGATION_MODEL_FEATURE_COUNT = FRAME_WEB_MODEL_FEATURE_COUNT + 4;
 
 	/**
+	 * The operation id for the '<em>Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___HAS_OWNER__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___ALL_OWNED_ELEMENTS = FRAME_WEB_MODEL___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___MUST_BE_OWNED = FRAME_WEB_MODEL___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___ALL_NAMESPACES = FRAME_WEB_MODEL___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___ALL_OWNING_PACKAGES = FRAME_WEB_MODEL___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = FRAME_WEB_MODEL___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___NAMESPACE = FRAME_WEB_MODEL___NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___QUALIFIED_NAME = FRAME_WEB_MODEL___QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___SEPARATOR = FRAME_WEB_MODEL___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Members Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Exclude Collisions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___EXCLUDE_COLLISIONS__ELIST = FRAME_WEB_MODEL___EXCLUDE_COLLISIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Names Of Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___GET_NAMES_OF_MEMBER__NAMEDELEMENT = FRAME_WEB_MODEL___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Import Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___IMPORT_MEMBERS__ELIST = FRAME_WEB_MODEL___IMPORT_MEMBERS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Imported Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___IMPORTED_MEMBER = FRAME_WEB_MODEL___IMPORTED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___MEMBERS_ARE_DISTINGUISHABLE = FRAME_WEB_MODEL___MEMBERS_ARE_DISTINGUISHABLE;
+
+	/**
+	 * The operation id for the '<em>Owned Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___OWNED_MEMBER = FRAME_WEB_MODEL___OWNED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = FRAME_WEB_MODEL___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___IS_TEMPLATE_PARAMETER = FRAME_WEB_MODEL___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Is Template</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___IS_TEMPLATE = FRAME_WEB_MODEL___IS_TEMPLATE;
+
+	/**
+	 * The operation id for the '<em>Parameterable Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___PARAMETERABLE_ELEMENTS = FRAME_WEB_MODEL___PARAMETERABLE_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Elements Public Or Private</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___ALL_APPLICABLE_STEREOTYPES = FRAME_WEB_MODEL___ALL_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___CONTAINING_PROFILE = FRAME_WEB_MODEL___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Makes Visible</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___MAKES_VISIBLE__NAMEDELEMENT = FRAME_WEB_MODEL___MAKES_VISIBLE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Nested Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___NESTED_PACKAGE = FRAME_WEB_MODEL___NESTED_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Owned Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___OWNED_STEREOTYPE = FRAME_WEB_MODEL___OWNED_STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Owned Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___OWNED_TYPE = FRAME_WEB_MODEL___OWNED_TYPE;
+
+	/**
+	 * The operation id for the '<em>Visible Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_MODEL___VISIBLE_MEMBERS = FRAME_WEB_MODEL___VISIBLE_MEMBERS;
+
+	/**
 	 * The number of operations of the '<em>Navigation Model</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4208,6 +6620,249 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 */
 	int APPLICATION_MODEL = 8;
+
+	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__OWNED_COMMENT = FRAME_WEB_MODEL__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__OWNED_ELEMENT = FRAME_WEB_MODEL__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__OWNER = FRAME_WEB_MODEL__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__CLIENT_DEPENDENCY = FRAME_WEB_MODEL__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__NAME = FRAME_WEB_MODEL__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__NAME_EXPRESSION = FRAME_WEB_MODEL__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__NAMESPACE = FRAME_WEB_MODEL__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__QUALIFIED_NAME = FRAME_WEB_MODEL__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__VISIBILITY = FRAME_WEB_MODEL__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__ELEMENT_IMPORT = FRAME_WEB_MODEL__ELEMENT_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__IMPORTED_MEMBER = FRAME_WEB_MODEL__IMPORTED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__MEMBER = FRAME_WEB_MODEL__MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__OWNED_MEMBER = FRAME_WEB_MODEL__OWNED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__OWNED_RULE = FRAME_WEB_MODEL__OWNED_RULE;
+
+	/**
+	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__PACKAGE_IMPORT = FRAME_WEB_MODEL__PACKAGE_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__OWNING_TEMPLATE_PARAMETER = FRAME_WEB_MODEL__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__TEMPLATE_PARAMETER = FRAME_WEB_MODEL__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__TEMPLATE_BINDING = FRAME_WEB_MODEL__TEMPLATE_BINDING;
+
+	/**
+	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__OWNED_TEMPLATE_SIGNATURE = FRAME_WEB_MODEL__OWNED_TEMPLATE_SIGNATURE;
+
+	/**
+	 * The feature id for the '<em><b>Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__URI = FRAME_WEB_MODEL__URI;
+
+	/**
+	 * The feature id for the '<em><b>Nested Package</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__NESTED_PACKAGE = FRAME_WEB_MODEL__NESTED_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Nesting Package</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__NESTING_PACKAGE = FRAME_WEB_MODEL__NESTING_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Stereotype</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__OWNED_STEREOTYPE = FRAME_WEB_MODEL__OWNED_STEREOTYPE;
+
+	/**
+	 * The feature id for the '<em><b>Package Merge</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__PACKAGE_MERGE = FRAME_WEB_MODEL__PACKAGE_MERGE;
+
+	/**
+	 * The feature id for the '<em><b>Packaged Element</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__PACKAGED_ELEMENT = FRAME_WEB_MODEL__PACKAGED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Profile Application</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__PROFILE_APPLICATION = FRAME_WEB_MODEL__PROFILE_APPLICATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Type</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL__OWNED_TYPE = FRAME_WEB_MODEL__OWNED_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Indite</b></em>' containment reference.
@@ -4246,6 +6901,294 @@ public interface FramewebPackage extends EPackage {
 	int APPLICATION_MODEL_FEATURE_COUNT = FRAME_WEB_MODEL_FEATURE_COUNT + 2;
 
 	/**
+	 * The operation id for the '<em>Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___HAS_OWNER__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___ALL_OWNED_ELEMENTS = FRAME_WEB_MODEL___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___MUST_BE_OWNED = FRAME_WEB_MODEL___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___ALL_NAMESPACES = FRAME_WEB_MODEL___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___ALL_OWNING_PACKAGES = FRAME_WEB_MODEL___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = FRAME_WEB_MODEL___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___NAMESPACE = FRAME_WEB_MODEL___NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___QUALIFIED_NAME = FRAME_WEB_MODEL___QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___SEPARATOR = FRAME_WEB_MODEL___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Members Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Exclude Collisions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___EXCLUDE_COLLISIONS__ELIST = FRAME_WEB_MODEL___EXCLUDE_COLLISIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Names Of Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___GET_NAMES_OF_MEMBER__NAMEDELEMENT = FRAME_WEB_MODEL___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Import Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___IMPORT_MEMBERS__ELIST = FRAME_WEB_MODEL___IMPORT_MEMBERS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Imported Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___IMPORTED_MEMBER = FRAME_WEB_MODEL___IMPORTED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___MEMBERS_ARE_DISTINGUISHABLE = FRAME_WEB_MODEL___MEMBERS_ARE_DISTINGUISHABLE;
+
+	/**
+	 * The operation id for the '<em>Owned Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___OWNED_MEMBER = FRAME_WEB_MODEL___OWNED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = FRAME_WEB_MODEL___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___IS_TEMPLATE_PARAMETER = FRAME_WEB_MODEL___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Is Template</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___IS_TEMPLATE = FRAME_WEB_MODEL___IS_TEMPLATE;
+
+	/**
+	 * The operation id for the '<em>Parameterable Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___PARAMETERABLE_ELEMENTS = FRAME_WEB_MODEL___PARAMETERABLE_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Elements Public Or Private</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___ALL_APPLICABLE_STEREOTYPES = FRAME_WEB_MODEL___ALL_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___CONTAINING_PROFILE = FRAME_WEB_MODEL___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Makes Visible</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___MAKES_VISIBLE__NAMEDELEMENT = FRAME_WEB_MODEL___MAKES_VISIBLE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Nested Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___NESTED_PACKAGE = FRAME_WEB_MODEL___NESTED_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Owned Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___OWNED_STEREOTYPE = FRAME_WEB_MODEL___OWNED_STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Owned Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___OWNED_TYPE = FRAME_WEB_MODEL___OWNED_TYPE;
+
+	/**
+	 * The operation id for the '<em>Visible Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MODEL___VISIBLE_MEMBERS = FRAME_WEB_MODEL___VISIBLE_MEMBERS;
+
+	/**
 	 * The number of operations of the '<em>Application Model</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4263,6 +7206,249 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 */
 	int PERSISTENCE_MODEL = 9;
+
+	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__OWNED_COMMENT = FRAME_WEB_MODEL__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__OWNED_ELEMENT = FRAME_WEB_MODEL__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__OWNER = FRAME_WEB_MODEL__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__CLIENT_DEPENDENCY = FRAME_WEB_MODEL__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__NAME = FRAME_WEB_MODEL__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__NAME_EXPRESSION = FRAME_WEB_MODEL__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__NAMESPACE = FRAME_WEB_MODEL__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__QUALIFIED_NAME = FRAME_WEB_MODEL__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__VISIBILITY = FRAME_WEB_MODEL__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__ELEMENT_IMPORT = FRAME_WEB_MODEL__ELEMENT_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__IMPORTED_MEMBER = FRAME_WEB_MODEL__IMPORTED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__MEMBER = FRAME_WEB_MODEL__MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__OWNED_MEMBER = FRAME_WEB_MODEL__OWNED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__OWNED_RULE = FRAME_WEB_MODEL__OWNED_RULE;
+
+	/**
+	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__PACKAGE_IMPORT = FRAME_WEB_MODEL__PACKAGE_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__OWNING_TEMPLATE_PARAMETER = FRAME_WEB_MODEL__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__TEMPLATE_PARAMETER = FRAME_WEB_MODEL__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__TEMPLATE_BINDING = FRAME_WEB_MODEL__TEMPLATE_BINDING;
+
+	/**
+	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__OWNED_TEMPLATE_SIGNATURE = FRAME_WEB_MODEL__OWNED_TEMPLATE_SIGNATURE;
+
+	/**
+	 * The feature id for the '<em><b>Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__URI = FRAME_WEB_MODEL__URI;
+
+	/**
+	 * The feature id for the '<em><b>Nested Package</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__NESTED_PACKAGE = FRAME_WEB_MODEL__NESTED_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Nesting Package</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__NESTING_PACKAGE = FRAME_WEB_MODEL__NESTING_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Stereotype</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__OWNED_STEREOTYPE = FRAME_WEB_MODEL__OWNED_STEREOTYPE;
+
+	/**
+	 * The feature id for the '<em><b>Package Merge</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__PACKAGE_MERGE = FRAME_WEB_MODEL__PACKAGE_MERGE;
+
+	/**
+	 * The feature id for the '<em><b>Packaged Element</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__PACKAGED_ELEMENT = FRAME_WEB_MODEL__PACKAGED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Profile Application</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__PROFILE_APPLICATION = FRAME_WEB_MODEL__PROFILE_APPLICATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Type</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL__OWNED_TYPE = FRAME_WEB_MODEL__OWNED_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Indite</b></em>' containment reference.
@@ -4290,6 +7476,294 @@ public interface FramewebPackage extends EPackage {
 	 * @ordered
 	 */
 	int PERSISTENCE_MODEL_FEATURE_COUNT = FRAME_WEB_MODEL_FEATURE_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___HAS_OWNER__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___ALL_OWNED_ELEMENTS = FRAME_WEB_MODEL___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___MUST_BE_OWNED = FRAME_WEB_MODEL___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___ALL_NAMESPACES = FRAME_WEB_MODEL___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___ALL_OWNING_PACKAGES = FRAME_WEB_MODEL___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = FRAME_WEB_MODEL___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___NAMESPACE = FRAME_WEB_MODEL___NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___QUALIFIED_NAME = FRAME_WEB_MODEL___QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___SEPARATOR = FRAME_WEB_MODEL___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Members Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Exclude Collisions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___EXCLUDE_COLLISIONS__ELIST = FRAME_WEB_MODEL___EXCLUDE_COLLISIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Names Of Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___GET_NAMES_OF_MEMBER__NAMEDELEMENT = FRAME_WEB_MODEL___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Import Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___IMPORT_MEMBERS__ELIST = FRAME_WEB_MODEL___IMPORT_MEMBERS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Imported Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___IMPORTED_MEMBER = FRAME_WEB_MODEL___IMPORTED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___MEMBERS_ARE_DISTINGUISHABLE = FRAME_WEB_MODEL___MEMBERS_ARE_DISTINGUISHABLE;
+
+	/**
+	 * The operation id for the '<em>Owned Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___OWNED_MEMBER = FRAME_WEB_MODEL___OWNED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = FRAME_WEB_MODEL___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___IS_TEMPLATE_PARAMETER = FRAME_WEB_MODEL___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Is Template</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___IS_TEMPLATE = FRAME_WEB_MODEL___IS_TEMPLATE;
+
+	/**
+	 * The operation id for the '<em>Parameterable Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___PARAMETERABLE_ELEMENTS = FRAME_WEB_MODEL___PARAMETERABLE_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Elements Public Or Private</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP = FRAME_WEB_MODEL___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___ALL_APPLICABLE_STEREOTYPES = FRAME_WEB_MODEL___ALL_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___CONTAINING_PROFILE = FRAME_WEB_MODEL___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Makes Visible</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___MAKES_VISIBLE__NAMEDELEMENT = FRAME_WEB_MODEL___MAKES_VISIBLE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Nested Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___NESTED_PACKAGE = FRAME_WEB_MODEL___NESTED_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Owned Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___OWNED_STEREOTYPE = FRAME_WEB_MODEL___OWNED_STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Owned Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___OWNED_TYPE = FRAME_WEB_MODEL___OWNED_TYPE;
+
+	/**
+	 * The operation id for the '<em>Visible Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_MODEL___VISIBLE_MEMBERS = FRAME_WEB_MODEL___VISIBLE_MEMBERS;
 
 	/**
 	 * The number of operations of the '<em>Persistence Model</em>' class.
@@ -11633,7 +15107,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__OWNED_COMMENT = Uml2Package.CLASS__OWNED_COMMENT;
+	int NAVIGATION_CLASS__OWNED_COMMENT = Uml2Package.STEREOTYPE__OWNED_COMMENT;
 
 	/**
 	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
@@ -11642,7 +15116,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__OWNED_ELEMENT = Uml2Package.CLASS__OWNED_ELEMENT;
+	int NAVIGATION_CLASS__OWNED_ELEMENT = Uml2Package.STEREOTYPE__OWNED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Owner</b></em>' reference.
@@ -11651,7 +15125,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__OWNER = Uml2Package.CLASS__OWNER;
+	int NAVIGATION_CLASS__OWNER = Uml2Package.STEREOTYPE__OWNER;
 
 	/**
 	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
@@ -11660,7 +15134,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__CLIENT_DEPENDENCY = Uml2Package.CLASS__CLIENT_DEPENDENCY;
+	int NAVIGATION_CLASS__CLIENT_DEPENDENCY = Uml2Package.STEREOTYPE__CLIENT_DEPENDENCY;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -11669,7 +15143,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__NAME = Uml2Package.CLASS__NAME;
+	int NAVIGATION_CLASS__NAME = Uml2Package.STEREOTYPE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
@@ -11678,7 +15152,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__NAME_EXPRESSION = Uml2Package.CLASS__NAME_EXPRESSION;
+	int NAVIGATION_CLASS__NAME_EXPRESSION = Uml2Package.STEREOTYPE__NAME_EXPRESSION;
 
 	/**
 	 * The feature id for the '<em><b>Namespace</b></em>' reference.
@@ -11687,7 +15161,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__NAMESPACE = Uml2Package.CLASS__NAMESPACE;
+	int NAVIGATION_CLASS__NAMESPACE = Uml2Package.STEREOTYPE__NAMESPACE;
 
 	/**
 	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
@@ -11696,7 +15170,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__QUALIFIED_NAME = Uml2Package.CLASS__QUALIFIED_NAME;
+	int NAVIGATION_CLASS__QUALIFIED_NAME = Uml2Package.STEREOTYPE__QUALIFIED_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -11705,7 +15179,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__VISIBILITY = Uml2Package.CLASS__VISIBILITY;
+	int NAVIGATION_CLASS__VISIBILITY = Uml2Package.STEREOTYPE__VISIBILITY;
 
 	/**
 	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
@@ -11714,7 +15188,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__ELEMENT_IMPORT = Uml2Package.CLASS__ELEMENT_IMPORT;
+	int NAVIGATION_CLASS__ELEMENT_IMPORT = Uml2Package.STEREOTYPE__ELEMENT_IMPORT;
 
 	/**
 	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
@@ -11723,7 +15197,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__IMPORTED_MEMBER = Uml2Package.CLASS__IMPORTED_MEMBER;
+	int NAVIGATION_CLASS__IMPORTED_MEMBER = Uml2Package.STEREOTYPE__IMPORTED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Member</b></em>' reference list.
@@ -11732,7 +15206,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__MEMBER = Uml2Package.CLASS__MEMBER;
+	int NAVIGATION_CLASS__MEMBER = Uml2Package.STEREOTYPE__MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
@@ -11741,7 +15215,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__OWNED_MEMBER = Uml2Package.CLASS__OWNED_MEMBER;
+	int NAVIGATION_CLASS__OWNED_MEMBER = Uml2Package.STEREOTYPE__OWNED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
@@ -11750,7 +15224,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__OWNED_RULE = Uml2Package.CLASS__OWNED_RULE;
+	int NAVIGATION_CLASS__OWNED_RULE = Uml2Package.STEREOTYPE__OWNED_RULE;
 
 	/**
 	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
@@ -11759,7 +15233,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__PACKAGE_IMPORT = Uml2Package.CLASS__PACKAGE_IMPORT;
+	int NAVIGATION_CLASS__PACKAGE_IMPORT = Uml2Package.STEREOTYPE__PACKAGE_IMPORT;
 
 	/**
 	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
@@ -11768,7 +15242,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__IS_LEAF = Uml2Package.CLASS__IS_LEAF;
+	int NAVIGATION_CLASS__IS_LEAF = Uml2Package.STEREOTYPE__IS_LEAF;
 
 	/**
 	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
@@ -11777,7 +15251,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__REDEFINED_ELEMENT = Uml2Package.CLASS__REDEFINED_ELEMENT;
+	int NAVIGATION_CLASS__REDEFINED_ELEMENT = Uml2Package.STEREOTYPE__REDEFINED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
@@ -11786,7 +15260,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__REDEFINITION_CONTEXT = Uml2Package.CLASS__REDEFINITION_CONTEXT;
+	int NAVIGATION_CLASS__REDEFINITION_CONTEXT = Uml2Package.STEREOTYPE__REDEFINITION_CONTEXT;
 
 	/**
 	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
@@ -11795,7 +15269,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__OWNING_TEMPLATE_PARAMETER = Uml2Package.CLASS__OWNING_TEMPLATE_PARAMETER;
+	int NAVIGATION_CLASS__OWNING_TEMPLATE_PARAMETER = Uml2Package.STEREOTYPE__OWNING_TEMPLATE_PARAMETER;
 
 	/**
 	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
@@ -11804,7 +15278,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__TEMPLATE_PARAMETER = Uml2Package.CLASS__TEMPLATE_PARAMETER;
+	int NAVIGATION_CLASS__TEMPLATE_PARAMETER = Uml2Package.STEREOTYPE__TEMPLATE_PARAMETER;
 
 	/**
 	 * The feature id for the '<em><b>Package</b></em>' reference.
@@ -11813,7 +15287,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__PACKAGE = Uml2Package.CLASS__PACKAGE;
+	int NAVIGATION_CLASS__PACKAGE = Uml2Package.STEREOTYPE__PACKAGE;
 
 	/**
 	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
@@ -11822,7 +15296,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__TEMPLATE_BINDING = Uml2Package.CLASS__TEMPLATE_BINDING;
+	int NAVIGATION_CLASS__TEMPLATE_BINDING = Uml2Package.STEREOTYPE__TEMPLATE_BINDING;
 
 	/**
 	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
@@ -11831,7 +15305,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__OWNED_TEMPLATE_SIGNATURE = Uml2Package.CLASS__OWNED_TEMPLATE_SIGNATURE;
+	int NAVIGATION_CLASS__OWNED_TEMPLATE_SIGNATURE = Uml2Package.STEREOTYPE__OWNED_TEMPLATE_SIGNATURE;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' reference list.
@@ -11840,7 +15314,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__ATTRIBUTE = Uml2Package.CLASS__ATTRIBUTE;
+	int NAVIGATION_CLASS__ATTRIBUTE = Uml2Package.STEREOTYPE__ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Feature</b></em>' reference list.
@@ -11849,7 +15323,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__FEATURE = Uml2Package.CLASS__FEATURE;
+	int NAVIGATION_CLASS__FEATURE = Uml2Package.STEREOTYPE__FEATURE;
 
 	/**
 	 * The feature id for the '<em><b>Collaboration Use</b></em>' containment reference list.
@@ -11858,7 +15332,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__COLLABORATION_USE = Uml2Package.CLASS__COLLABORATION_USE;
+	int NAVIGATION_CLASS__COLLABORATION_USE = Uml2Package.STEREOTYPE__COLLABORATION_USE;
 
 	/**
 	 * The feature id for the '<em><b>General</b></em>' reference list.
@@ -11867,7 +15341,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__GENERAL = Uml2Package.CLASS__GENERAL;
+	int NAVIGATION_CLASS__GENERAL = Uml2Package.STEREOTYPE__GENERAL;
 
 	/**
 	 * The feature id for the '<em><b>Generalization</b></em>' containment reference list.
@@ -11876,7 +15350,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__GENERALIZATION = Uml2Package.CLASS__GENERALIZATION;
+	int NAVIGATION_CLASS__GENERALIZATION = Uml2Package.STEREOTYPE__GENERALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Powertype Extent</b></em>' reference list.
@@ -11885,7 +15359,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__POWERTYPE_EXTENT = Uml2Package.CLASS__POWERTYPE_EXTENT;
+	int NAVIGATION_CLASS__POWERTYPE_EXTENT = Uml2Package.STEREOTYPE__POWERTYPE_EXTENT;
 
 	/**
 	 * The feature id for the '<em><b>Inherited Member</b></em>' reference list.
@@ -11894,7 +15368,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__INHERITED_MEMBER = Uml2Package.CLASS__INHERITED_MEMBER;
+	int NAVIGATION_CLASS__INHERITED_MEMBER = Uml2Package.STEREOTYPE__INHERITED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
@@ -11903,7 +15377,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__IS_ABSTRACT = Uml2Package.CLASS__IS_ABSTRACT;
+	int NAVIGATION_CLASS__IS_ABSTRACT = Uml2Package.STEREOTYPE__IS_ABSTRACT;
 
 	/**
 	 * The feature id for the '<em><b>Is Final Specialization</b></em>' attribute.
@@ -11912,7 +15386,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__IS_FINAL_SPECIALIZATION = Uml2Package.CLASS__IS_FINAL_SPECIALIZATION;
+	int NAVIGATION_CLASS__IS_FINAL_SPECIALIZATION = Uml2Package.STEREOTYPE__IS_FINAL_SPECIALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Use Case</b></em>' containment reference list.
@@ -11921,7 +15395,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__OWNED_USE_CASE = Uml2Package.CLASS__OWNED_USE_CASE;
+	int NAVIGATION_CLASS__OWNED_USE_CASE = Uml2Package.STEREOTYPE__OWNED_USE_CASE;
 
 	/**
 	 * The feature id for the '<em><b>Use Case</b></em>' reference list.
@@ -11930,7 +15404,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__USE_CASE = Uml2Package.CLASS__USE_CASE;
+	int NAVIGATION_CLASS__USE_CASE = Uml2Package.STEREOTYPE__USE_CASE;
 
 	/**
 	 * The feature id for the '<em><b>Redefined Classifier</b></em>' reference list.
@@ -11939,7 +15413,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__REDEFINED_CLASSIFIER = Uml2Package.CLASS__REDEFINED_CLASSIFIER;
+	int NAVIGATION_CLASS__REDEFINED_CLASSIFIER = Uml2Package.STEREOTYPE__REDEFINED_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Representation</b></em>' reference.
@@ -11948,7 +15422,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__REPRESENTATION = Uml2Package.CLASS__REPRESENTATION;
+	int NAVIGATION_CLASS__REPRESENTATION = Uml2Package.STEREOTYPE__REPRESENTATION;
 
 	/**
 	 * The feature id for the '<em><b>Substitution</b></em>' containment reference list.
@@ -11957,7 +15431,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__SUBSTITUTION = Uml2Package.CLASS__SUBSTITUTION;
+	int NAVIGATION_CLASS__SUBSTITUTION = Uml2Package.STEREOTYPE__SUBSTITUTION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Attribute</b></em>' containment reference list.
@@ -11966,7 +15440,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__OWNED_ATTRIBUTE = Uml2Package.CLASS__OWNED_ATTRIBUTE;
+	int NAVIGATION_CLASS__OWNED_ATTRIBUTE = Uml2Package.STEREOTYPE__OWNED_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Owned Connector</b></em>' containment reference list.
@@ -11975,7 +15449,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__OWNED_CONNECTOR = Uml2Package.CLASS__OWNED_CONNECTOR;
+	int NAVIGATION_CLASS__OWNED_CONNECTOR = Uml2Package.STEREOTYPE__OWNED_CONNECTOR;
 
 	/**
 	 * The feature id for the '<em><b>Part</b></em>' reference list.
@@ -11984,7 +15458,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__PART = Uml2Package.CLASS__PART;
+	int NAVIGATION_CLASS__PART = Uml2Package.STEREOTYPE__PART;
 
 	/**
 	 * The feature id for the '<em><b>Role</b></em>' reference list.
@@ -11993,7 +15467,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__ROLE = Uml2Package.CLASS__ROLE;
+	int NAVIGATION_CLASS__ROLE = Uml2Package.STEREOTYPE__ROLE;
 
 	/**
 	 * The feature id for the '<em><b>Owned Port</b></em>' reference list.
@@ -12002,7 +15476,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__OWNED_PORT = Uml2Package.CLASS__OWNED_PORT;
+	int NAVIGATION_CLASS__OWNED_PORT = Uml2Package.STEREOTYPE__OWNED_PORT;
 
 	/**
 	 * The feature id for the '<em><b>Classifier Behavior</b></em>' reference.
@@ -12011,7 +15485,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__CLASSIFIER_BEHAVIOR = Uml2Package.CLASS__CLASSIFIER_BEHAVIOR;
+	int NAVIGATION_CLASS__CLASSIFIER_BEHAVIOR = Uml2Package.STEREOTYPE__CLASSIFIER_BEHAVIOR;
 
 	/**
 	 * The feature id for the '<em><b>Interface Realization</b></em>' containment reference list.
@@ -12020,7 +15494,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__INTERFACE_REALIZATION = Uml2Package.CLASS__INTERFACE_REALIZATION;
+	int NAVIGATION_CLASS__INTERFACE_REALIZATION = Uml2Package.STEREOTYPE__INTERFACE_REALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Behavior</b></em>' containment reference list.
@@ -12029,7 +15503,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__OWNED_BEHAVIOR = Uml2Package.CLASS__OWNED_BEHAVIOR;
+	int NAVIGATION_CLASS__OWNED_BEHAVIOR = Uml2Package.STEREOTYPE__OWNED_BEHAVIOR;
 
 	/**
 	 * The feature id for the '<em><b>Owned Operation</b></em>' containment reference list.
@@ -12038,7 +15512,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__OWNED_OPERATION = Uml2Package.CLASS__OWNED_OPERATION;
+	int NAVIGATION_CLASS__OWNED_OPERATION = Uml2Package.STEREOTYPE__OWNED_OPERATION;
 
 	/**
 	 * The feature id for the '<em><b>Extension</b></em>' reference list.
@@ -12047,7 +15521,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__EXTENSION = Uml2Package.CLASS__EXTENSION;
+	int NAVIGATION_CLASS__EXTENSION = Uml2Package.STEREOTYPE__EXTENSION;
 
 	/**
 	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
@@ -12056,7 +15530,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__IS_ACTIVE = Uml2Package.CLASS__IS_ACTIVE;
+	int NAVIGATION_CLASS__IS_ACTIVE = Uml2Package.STEREOTYPE__IS_ACTIVE;
 
 	/**
 	 * The feature id for the '<em><b>Nested Classifier</b></em>' containment reference list.
@@ -12065,7 +15539,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__NESTED_CLASSIFIER = Uml2Package.CLASS__NESTED_CLASSIFIER;
+	int NAVIGATION_CLASS__NESTED_CLASSIFIER = Uml2Package.STEREOTYPE__NESTED_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Owned Reception</b></em>' containment reference list.
@@ -12074,7 +15548,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__OWNED_RECEPTION = Uml2Package.CLASS__OWNED_RECEPTION;
+	int NAVIGATION_CLASS__OWNED_RECEPTION = Uml2Package.STEREOTYPE__OWNED_RECEPTION;
 
 	/**
 	 * The feature id for the '<em><b>Super Class</b></em>' reference list.
@@ -12083,7 +15557,25 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS__SUPER_CLASS = Uml2Package.CLASS__SUPER_CLASS;
+	int NAVIGATION_CLASS__SUPER_CLASS = Uml2Package.STEREOTYPE__SUPER_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_CLASS__ICON = Uml2Package.STEREOTYPE__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Profile</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_CLASS__PROFILE = Uml2Package.STEREOTYPE__PROFILE;
 
 	/**
 	 * The number of structural features of the '<em>Navigation Class</em>' class.
@@ -12092,7 +15584,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS_FEATURE_COUNT = Uml2Package.CLASS_FEATURE_COUNT + 0;
+	int NAVIGATION_CLASS_FEATURE_COUNT = Uml2Package.STEREOTYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Not Own Self</em>' operation.
@@ -12101,7 +15593,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Has Owner</em>' operation.
@@ -12110,7 +15602,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>All Owned Elements</em>' operation.
@@ -12119,7 +15611,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___ALL_OWNED_ELEMENTS = Uml2Package.CLASS___ALL_OWNED_ELEMENTS;
+	int NAVIGATION_CLASS___ALL_OWNED_ELEMENTS = Uml2Package.STEREOTYPE___ALL_OWNED_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>Must Be Owned</em>' operation.
@@ -12128,7 +15620,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___MUST_BE_OWNED = Uml2Package.CLASS___MUST_BE_OWNED;
+	int NAVIGATION_CLASS___MUST_BE_OWNED = Uml2Package.STEREOTYPE___MUST_BE_OWNED;
 
 	/**
 	 * The operation id for the '<em>Has Qualified Name</em>' operation.
@@ -12137,7 +15629,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
@@ -12146,7 +15638,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
@@ -12155,7 +15647,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>All Namespaces</em>' operation.
@@ -12164,7 +15656,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___ALL_NAMESPACES = Uml2Package.CLASS___ALL_NAMESPACES;
+	int NAVIGATION_CLASS___ALL_NAMESPACES = Uml2Package.STEREOTYPE___ALL_NAMESPACES;
 
 	/**
 	 * The operation id for the '<em>All Owning Packages</em>' operation.
@@ -12173,7 +15665,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___ALL_OWNING_PACKAGES = Uml2Package.CLASS___ALL_OWNING_PACKAGES;
+	int NAVIGATION_CLASS___ALL_OWNING_PACKAGES = Uml2Package.STEREOTYPE___ALL_OWNING_PACKAGES;
 
 	/**
 	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
@@ -12182,7 +15674,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+	int NAVIGATION_CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.STEREOTYPE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
 
 	/**
 	 * The operation id for the '<em>Namespace</em>' operation.
@@ -12191,7 +15683,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___NAMESPACE = Uml2Package.CLASS___NAMESPACE;
+	int NAVIGATION_CLASS___NAMESPACE = Uml2Package.STEREOTYPE___NAMESPACE;
 
 	/**
 	 * The operation id for the '<em>Qualified Name</em>' operation.
@@ -12200,7 +15692,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___QUALIFIED_NAME = Uml2Package.CLASS___QUALIFIED_NAME;
+	int NAVIGATION_CLASS___QUALIFIED_NAME = Uml2Package.STEREOTYPE___QUALIFIED_NAME;
 
 	/**
 	 * The operation id for the '<em>Separator</em>' operation.
@@ -12209,7 +15701,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___SEPARATOR = Uml2Package.CLASS___SEPARATOR;
+	int NAVIGATION_CLASS___SEPARATOR = Uml2Package.STEREOTYPE___SEPARATOR;
 
 	/**
 	 * The operation id for the '<em>Members Distinguishable</em>' operation.
@@ -12218,7 +15710,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Exclude Collisions</em>' operation.
@@ -12227,7 +15719,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___EXCLUDE_COLLISIONS__ELIST = Uml2Package.CLASS___EXCLUDE_COLLISIONS__ELIST;
+	int NAVIGATION_CLASS___EXCLUDE_COLLISIONS__ELIST = Uml2Package.STEREOTYPE___EXCLUDE_COLLISIONS__ELIST;
 
 	/**
 	 * The operation id for the '<em>Get Names Of Member</em>' operation.
@@ -12236,7 +15728,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+	int NAVIGATION_CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.STEREOTYPE___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Import Members</em>' operation.
@@ -12245,7 +15737,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___IMPORT_MEMBERS__ELIST = Uml2Package.CLASS___IMPORT_MEMBERS__ELIST;
+	int NAVIGATION_CLASS___IMPORT_MEMBERS__ELIST = Uml2Package.STEREOTYPE___IMPORT_MEMBERS__ELIST;
 
 	/**
 	 * The operation id for the '<em>Imported Member</em>' operation.
@@ -12254,7 +15746,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___IMPORTED_MEMBER = Uml2Package.CLASS___IMPORTED_MEMBER;
+	int NAVIGATION_CLASS___IMPORTED_MEMBER = Uml2Package.STEREOTYPE___IMPORTED_MEMBER;
 
 	/**
 	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
@@ -12263,7 +15755,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.CLASS___MEMBERS_ARE_DISTINGUISHABLE;
+	int NAVIGATION_CLASS___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.STEREOTYPE___MEMBERS_ARE_DISTINGUISHABLE;
 
 	/**
 	 * The operation id for the '<em>Owned Member</em>' operation.
@@ -12272,7 +15764,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___OWNED_MEMBER = Uml2Package.CLASS___OWNED_MEMBER;
+	int NAVIGATION_CLASS___OWNED_MEMBER = Uml2Package.STEREOTYPE___OWNED_MEMBER;
 
 	/**
 	 * The operation id for the '<em>Non Leaf Redefinition</em>' operation.
@@ -12281,7 +15773,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Redefinition Context Valid</em>' operation.
@@ -12290,7 +15782,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Redefinition Consistent</em>' operation.
@@ -12299,7 +15791,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Is Consistent With</em>' operation.
@@ -12308,7 +15800,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = Uml2Package.CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
+	int NAVIGATION_CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = Uml2Package.STEREOTYPE___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
@@ -12317,7 +15809,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = Uml2Package.CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
+	int NAVIGATION_CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = Uml2Package.STEREOTYPE___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Compatible With</em>' operation.
@@ -12326,7 +15818,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+	int NAVIGATION_CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.STEREOTYPE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Template Parameter</em>' operation.
@@ -12335,7 +15827,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___IS_TEMPLATE_PARAMETER = Uml2Package.CLASS___IS_TEMPLATE_PARAMETER;
+	int NAVIGATION_CLASS___IS_TEMPLATE_PARAMETER = Uml2Package.STEREOTYPE___IS_TEMPLATE_PARAMETER;
 
 	/**
 	 * The operation id for the '<em>Conforms To</em>' operation.
@@ -12344,7 +15836,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___CONFORMS_TO__TYPE = Uml2Package.CLASS___CONFORMS_TO__TYPE;
+	int NAVIGATION_CLASS___CONFORMS_TO__TYPE = Uml2Package.STEREOTYPE___CONFORMS_TO__TYPE;
 
 	/**
 	 * The operation id for the '<em>Is Template</em>' operation.
@@ -12353,7 +15845,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___IS_TEMPLATE = Uml2Package.CLASS___IS_TEMPLATE;
+	int NAVIGATION_CLASS___IS_TEMPLATE = Uml2Package.STEREOTYPE___IS_TEMPLATE;
 
 	/**
 	 * The operation id for the '<em>Parameterable Elements</em>' operation.
@@ -12362,7 +15854,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___PARAMETERABLE_ELEMENTS = Uml2Package.CLASS___PARAMETERABLE_ELEMENTS;
+	int NAVIGATION_CLASS___PARAMETERABLE_ELEMENTS = Uml2Package.STEREOTYPE___PARAMETERABLE_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>No Cycles In Generalization</em>' operation.
@@ -12371,7 +15863,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Specialize Type</em>' operation.
@@ -12380,7 +15872,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Non Final Parents</em>' operation.
@@ -12389,7 +15881,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Maps To Generalization Set</em>' operation.
@@ -12398,7 +15890,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>All Features</em>' operation.
@@ -12407,7 +15899,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___ALL_FEATURES = Uml2Package.CLASS___ALL_FEATURES;
+	int NAVIGATION_CLASS___ALL_FEATURES = Uml2Package.STEREOTYPE___ALL_FEATURES;
 
 	/**
 	 * The operation id for the '<em>All Parents</em>' operation.
@@ -12416,7 +15908,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___ALL_PARENTS = Uml2Package.CLASS___ALL_PARENTS;
+	int NAVIGATION_CLASS___ALL_PARENTS = Uml2Package.STEREOTYPE___ALL_PARENTS;
 
 	/**
 	 * The operation id for the '<em>Conforms To</em>' operation.
@@ -12425,7 +15917,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___CONFORMS_TO__CLASSIFIER = Uml2Package.CLASS___CONFORMS_TO__CLASSIFIER;
+	int NAVIGATION_CLASS___CONFORMS_TO__CLASSIFIER = Uml2Package.STEREOTYPE___CONFORMS_TO__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>General</em>' operation.
@@ -12434,7 +15926,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___GENERAL = Uml2Package.CLASS___GENERAL;
+	int NAVIGATION_CLASS___GENERAL = Uml2Package.STEREOTYPE___GENERAL;
 
 	/**
 	 * The operation id for the '<em>Has Visibility Of</em>' operation.
@@ -12443,7 +15935,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT = Uml2Package.CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT;
+	int NAVIGATION_CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT = Uml2Package.STEREOTYPE___HAS_VISIBILITY_OF__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Inherit</em>' operation.
@@ -12452,7 +15944,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___INHERIT__ELIST = Uml2Package.CLASS___INHERIT__ELIST;
+	int NAVIGATION_CLASS___INHERIT__ELIST = Uml2Package.STEREOTYPE___INHERIT__ELIST;
 
 	/**
 	 * The operation id for the '<em>Inheritable Members</em>' operation.
@@ -12461,7 +15953,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___INHERITABLE_MEMBERS__CLASSIFIER = Uml2Package.CLASS___INHERITABLE_MEMBERS__CLASSIFIER;
+	int NAVIGATION_CLASS___INHERITABLE_MEMBERS__CLASSIFIER = Uml2Package.STEREOTYPE___INHERITABLE_MEMBERS__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>Inherited Member</em>' operation.
@@ -12470,7 +15962,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___INHERITED_MEMBER = Uml2Package.CLASS___INHERITED_MEMBER;
+	int NAVIGATION_CLASS___INHERITED_MEMBER = Uml2Package.STEREOTYPE___INHERITED_MEMBER;
 
 	/**
 	 * The operation id for the '<em>May Specialize Type</em>' operation.
@@ -12479,7 +15971,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER = Uml2Package.CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER;
+	int NAVIGATION_CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER = Uml2Package.STEREOTYPE___MAY_SPECIALIZE_TYPE__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>Parents</em>' operation.
@@ -12488,7 +15980,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___PARENTS = Uml2Package.CLASS___PARENTS;
+	int NAVIGATION_CLASS___PARENTS = Uml2Package.STEREOTYPE___PARENTS;
 
 	/**
 	 * The operation id for the '<em>Multiplicities</em>' operation.
@@ -12497,7 +15989,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Part</em>' operation.
@@ -12506,7 +15998,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___PART = Uml2Package.CLASS___PART;
+	int NAVIGATION_CLASS___PART = Uml2Package.STEREOTYPE___PART;
 
 	/**
 	 * The operation id for the '<em>Owned Port</em>' operation.
@@ -12515,7 +16007,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___OWNED_PORT = Uml2Package.CLASS___OWNED_PORT;
+	int NAVIGATION_CLASS___OWNED_PORT = Uml2Package.STEREOTYPE___OWNED_PORT;
 
 	/**
 	 * The operation id for the '<em>Class Behavior</em>' operation.
@@ -12524,7 +16016,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Passive Class</em>' operation.
@@ -12533,7 +16025,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Extension</em>' operation.
@@ -12542,7 +16034,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___EXTENSION = Uml2Package.CLASS___EXTENSION;
+	int NAVIGATION_CLASS___EXTENSION = Uml2Package.STEREOTYPE___EXTENSION;
 
 	/**
 	 * The operation id for the '<em>Super Class</em>' operation.
@@ -12551,7 +16043,61 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS___SUPER_CLASS = Uml2Package.CLASS___SUPER_CLASS;
+	int NAVIGATION_CLASS___SUPER_CLASS = Uml2Package.STEREOTYPE___SUPER_CLASS;
+
+	/**
+	 * The operation id for the '<em>Generalize</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___GENERALIZE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Association End Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Binary Associations Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Name Not Clash</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_CLASS___CONTAINING_PROFILE = Uml2Package.STEREOTYPE___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_CLASS___PROFILE = Uml2Package.STEREOTYPE___PROFILE;
 
 	/**
 	 * The number of operations of the '<em>Navigation Class</em>' class.
@@ -12560,7 +16106,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_CLASS_OPERATION_COUNT = Uml2Package.CLASS_OPERATION_COUNT + 0;
+	int NAVIGATION_CLASS_OPERATION_COUNT = Uml2Package.STEREOTYPE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.PageImpl <em>Page</em>}' class.
@@ -13030,6 +16576,24 @@ public interface FramewebPackage extends EPackage {
 	 * @ordered
 	 */
 	int PAGE__SUPER_CLASS = NAVIGATION_CLASS__SUPER_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAGE__ICON = NAVIGATION_CLASS__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Profile</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAGE__PROFILE = NAVIGATION_CLASS__PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Page Class Attribute</b></em>' containment reference list.
@@ -13527,6 +17091,60 @@ public interface FramewebPackage extends EPackage {
 	int PAGE___SUPER_CLASS = NAVIGATION_CLASS___SUPER_CLASS;
 
 	/**
+	 * The operation id for the '<em>Generalize</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAGE___GENERALIZE__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Association End Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAGE___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Binary Associations Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAGE___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Name Not Clash</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAGE___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAGE___CONTAINING_PROFILE = NAVIGATION_CLASS___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAGE___PROFILE = NAVIGATION_CLASS___PROFILE;
+
+	/**
 	 * The number of operations of the '<em>Page</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14003,6 +17621,24 @@ public interface FramewebPackage extends EPackage {
 	 * @ordered
 	 */
 	int TEMPLATE__SUPER_CLASS = NAVIGATION_CLASS__SUPER_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEMPLATE__ICON = NAVIGATION_CLASS__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Profile</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEMPLATE__PROFILE = NAVIGATION_CLASS__PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Template Class Attribute</b></em>' containment reference list.
@@ -14482,6 +18118,60 @@ public interface FramewebPackage extends EPackage {
 	int TEMPLATE___SUPER_CLASS = NAVIGATION_CLASS___SUPER_CLASS;
 
 	/**
+	 * The operation id for the '<em>Generalize</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEMPLATE___GENERALIZE__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Association End Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEMPLATE___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Binary Associations Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEMPLATE___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Name Not Clash</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEMPLATE___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEMPLATE___CONTAINING_PROFILE = NAVIGATION_CLASS___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEMPLATE___PROFILE = NAVIGATION_CLASS___PROFILE;
+
+	/**
 	 * The number of operations of the '<em>Template</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14958,6 +18648,24 @@ public interface FramewebPackage extends EPackage {
 	 * @ordered
 	 */
 	int FORM__SUPER_CLASS = NAVIGATION_CLASS__SUPER_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORM__ICON = NAVIGATION_CLASS__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Profile</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORM__PROFILE = NAVIGATION_CLASS__PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Sub Tag</b></em>' containment reference list.
@@ -15446,6 +19154,60 @@ public interface FramewebPackage extends EPackage {
 	int FORM___SUPER_CLASS = NAVIGATION_CLASS___SUPER_CLASS;
 
 	/**
+	 * The operation id for the '<em>Generalize</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORM___GENERALIZE__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Association End Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORM___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Binary Associations Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORM___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Name Not Clash</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORM___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORM___CONTAINING_PROFILE = NAVIGATION_CLASS___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORM___PROFILE = NAVIGATION_CLASS___PROFILE;
+
+	/**
 	 * The number of operations of the '<em>Form</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -15924,6 +19686,24 @@ public interface FramewebPackage extends EPackage {
 	int BINARY__SUPER_CLASS = NAVIGATION_CLASS__SUPER_CLASS;
 
 	/**
+	 * The feature id for the '<em><b>Icon</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BINARY__ICON = NAVIGATION_CLASS__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Profile</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BINARY__PROFILE = NAVIGATION_CLASS__PROFILE;
+
+	/**
 	 * The feature id for the '<em><b>Binary Class Attribute</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -16399,6 +20179,60 @@ public interface FramewebPackage extends EPackage {
 	 * @ordered
 	 */
 	int BINARY___SUPER_CLASS = NAVIGATION_CLASS___SUPER_CLASS;
+
+	/**
+	 * The operation id for the '<em>Generalize</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BINARY___GENERALIZE__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Association End Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BINARY___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Binary Associations Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BINARY___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Name Not Clash</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BINARY___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BINARY___CONTAINING_PROFILE = NAVIGATION_CLASS___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BINARY___PROFILE = NAVIGATION_CLASS___PROFILE;
 
 	/**
 	 * The number of operations of the '<em>Binary</em>' class.
@@ -17282,7 +21116,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__OWNED_COMMENT = Uml2Package.CLASS__OWNED_COMMENT;
+	int DAO_CLASS__OWNED_COMMENT = Uml2Package.STEREOTYPE__OWNED_COMMENT;
 
 	/**
 	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
@@ -17291,7 +21125,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__OWNED_ELEMENT = Uml2Package.CLASS__OWNED_ELEMENT;
+	int DAO_CLASS__OWNED_ELEMENT = Uml2Package.STEREOTYPE__OWNED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Owner</b></em>' reference.
@@ -17300,7 +21134,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__OWNER = Uml2Package.CLASS__OWNER;
+	int DAO_CLASS__OWNER = Uml2Package.STEREOTYPE__OWNER;
 
 	/**
 	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
@@ -17309,7 +21143,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__CLIENT_DEPENDENCY = Uml2Package.CLASS__CLIENT_DEPENDENCY;
+	int DAO_CLASS__CLIENT_DEPENDENCY = Uml2Package.STEREOTYPE__CLIENT_DEPENDENCY;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -17318,7 +21152,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__NAME = Uml2Package.CLASS__NAME;
+	int DAO_CLASS__NAME = Uml2Package.STEREOTYPE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
@@ -17327,7 +21161,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__NAME_EXPRESSION = Uml2Package.CLASS__NAME_EXPRESSION;
+	int DAO_CLASS__NAME_EXPRESSION = Uml2Package.STEREOTYPE__NAME_EXPRESSION;
 
 	/**
 	 * The feature id for the '<em><b>Namespace</b></em>' reference.
@@ -17336,7 +21170,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__NAMESPACE = Uml2Package.CLASS__NAMESPACE;
+	int DAO_CLASS__NAMESPACE = Uml2Package.STEREOTYPE__NAMESPACE;
 
 	/**
 	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
@@ -17345,7 +21179,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__QUALIFIED_NAME = Uml2Package.CLASS__QUALIFIED_NAME;
+	int DAO_CLASS__QUALIFIED_NAME = Uml2Package.STEREOTYPE__QUALIFIED_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -17354,7 +21188,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__VISIBILITY = Uml2Package.CLASS__VISIBILITY;
+	int DAO_CLASS__VISIBILITY = Uml2Package.STEREOTYPE__VISIBILITY;
 
 	/**
 	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
@@ -17363,7 +21197,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__ELEMENT_IMPORT = Uml2Package.CLASS__ELEMENT_IMPORT;
+	int DAO_CLASS__ELEMENT_IMPORT = Uml2Package.STEREOTYPE__ELEMENT_IMPORT;
 
 	/**
 	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
@@ -17372,7 +21206,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__IMPORTED_MEMBER = Uml2Package.CLASS__IMPORTED_MEMBER;
+	int DAO_CLASS__IMPORTED_MEMBER = Uml2Package.STEREOTYPE__IMPORTED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Member</b></em>' reference list.
@@ -17381,7 +21215,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__MEMBER = Uml2Package.CLASS__MEMBER;
+	int DAO_CLASS__MEMBER = Uml2Package.STEREOTYPE__MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
@@ -17390,7 +21224,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__OWNED_MEMBER = Uml2Package.CLASS__OWNED_MEMBER;
+	int DAO_CLASS__OWNED_MEMBER = Uml2Package.STEREOTYPE__OWNED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
@@ -17399,7 +21233,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__OWNED_RULE = Uml2Package.CLASS__OWNED_RULE;
+	int DAO_CLASS__OWNED_RULE = Uml2Package.STEREOTYPE__OWNED_RULE;
 
 	/**
 	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
@@ -17408,7 +21242,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__PACKAGE_IMPORT = Uml2Package.CLASS__PACKAGE_IMPORT;
+	int DAO_CLASS__PACKAGE_IMPORT = Uml2Package.STEREOTYPE__PACKAGE_IMPORT;
 
 	/**
 	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
@@ -17417,7 +21251,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__IS_LEAF = Uml2Package.CLASS__IS_LEAF;
+	int DAO_CLASS__IS_LEAF = Uml2Package.STEREOTYPE__IS_LEAF;
 
 	/**
 	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
@@ -17426,7 +21260,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__REDEFINED_ELEMENT = Uml2Package.CLASS__REDEFINED_ELEMENT;
+	int DAO_CLASS__REDEFINED_ELEMENT = Uml2Package.STEREOTYPE__REDEFINED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
@@ -17435,7 +21269,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__REDEFINITION_CONTEXT = Uml2Package.CLASS__REDEFINITION_CONTEXT;
+	int DAO_CLASS__REDEFINITION_CONTEXT = Uml2Package.STEREOTYPE__REDEFINITION_CONTEXT;
 
 	/**
 	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
@@ -17444,7 +21278,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__OWNING_TEMPLATE_PARAMETER = Uml2Package.CLASS__OWNING_TEMPLATE_PARAMETER;
+	int DAO_CLASS__OWNING_TEMPLATE_PARAMETER = Uml2Package.STEREOTYPE__OWNING_TEMPLATE_PARAMETER;
 
 	/**
 	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
@@ -17453,7 +21287,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__TEMPLATE_PARAMETER = Uml2Package.CLASS__TEMPLATE_PARAMETER;
+	int DAO_CLASS__TEMPLATE_PARAMETER = Uml2Package.STEREOTYPE__TEMPLATE_PARAMETER;
 
 	/**
 	 * The feature id for the '<em><b>Package</b></em>' reference.
@@ -17462,7 +21296,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__PACKAGE = Uml2Package.CLASS__PACKAGE;
+	int DAO_CLASS__PACKAGE = Uml2Package.STEREOTYPE__PACKAGE;
 
 	/**
 	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
@@ -17471,7 +21305,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__TEMPLATE_BINDING = Uml2Package.CLASS__TEMPLATE_BINDING;
+	int DAO_CLASS__TEMPLATE_BINDING = Uml2Package.STEREOTYPE__TEMPLATE_BINDING;
 
 	/**
 	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
@@ -17480,7 +21314,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__OWNED_TEMPLATE_SIGNATURE = Uml2Package.CLASS__OWNED_TEMPLATE_SIGNATURE;
+	int DAO_CLASS__OWNED_TEMPLATE_SIGNATURE = Uml2Package.STEREOTYPE__OWNED_TEMPLATE_SIGNATURE;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' reference list.
@@ -17489,7 +21323,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__ATTRIBUTE = Uml2Package.CLASS__ATTRIBUTE;
+	int DAO_CLASS__ATTRIBUTE = Uml2Package.STEREOTYPE__ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Feature</b></em>' reference list.
@@ -17498,7 +21332,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__FEATURE = Uml2Package.CLASS__FEATURE;
+	int DAO_CLASS__FEATURE = Uml2Package.STEREOTYPE__FEATURE;
 
 	/**
 	 * The feature id for the '<em><b>Collaboration Use</b></em>' containment reference list.
@@ -17507,7 +21341,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__COLLABORATION_USE = Uml2Package.CLASS__COLLABORATION_USE;
+	int DAO_CLASS__COLLABORATION_USE = Uml2Package.STEREOTYPE__COLLABORATION_USE;
 
 	/**
 	 * The feature id for the '<em><b>General</b></em>' reference list.
@@ -17516,7 +21350,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__GENERAL = Uml2Package.CLASS__GENERAL;
+	int DAO_CLASS__GENERAL = Uml2Package.STEREOTYPE__GENERAL;
 
 	/**
 	 * The feature id for the '<em><b>Generalization</b></em>' containment reference list.
@@ -17525,7 +21359,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__GENERALIZATION = Uml2Package.CLASS__GENERALIZATION;
+	int DAO_CLASS__GENERALIZATION = Uml2Package.STEREOTYPE__GENERALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Powertype Extent</b></em>' reference list.
@@ -17534,7 +21368,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__POWERTYPE_EXTENT = Uml2Package.CLASS__POWERTYPE_EXTENT;
+	int DAO_CLASS__POWERTYPE_EXTENT = Uml2Package.STEREOTYPE__POWERTYPE_EXTENT;
 
 	/**
 	 * The feature id for the '<em><b>Inherited Member</b></em>' reference list.
@@ -17543,7 +21377,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__INHERITED_MEMBER = Uml2Package.CLASS__INHERITED_MEMBER;
+	int DAO_CLASS__INHERITED_MEMBER = Uml2Package.STEREOTYPE__INHERITED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
@@ -17552,7 +21386,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__IS_ABSTRACT = Uml2Package.CLASS__IS_ABSTRACT;
+	int DAO_CLASS__IS_ABSTRACT = Uml2Package.STEREOTYPE__IS_ABSTRACT;
 
 	/**
 	 * The feature id for the '<em><b>Is Final Specialization</b></em>' attribute.
@@ -17561,7 +21395,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__IS_FINAL_SPECIALIZATION = Uml2Package.CLASS__IS_FINAL_SPECIALIZATION;
+	int DAO_CLASS__IS_FINAL_SPECIALIZATION = Uml2Package.STEREOTYPE__IS_FINAL_SPECIALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Use Case</b></em>' containment reference list.
@@ -17570,7 +21404,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__OWNED_USE_CASE = Uml2Package.CLASS__OWNED_USE_CASE;
+	int DAO_CLASS__OWNED_USE_CASE = Uml2Package.STEREOTYPE__OWNED_USE_CASE;
 
 	/**
 	 * The feature id for the '<em><b>Use Case</b></em>' reference list.
@@ -17579,7 +21413,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__USE_CASE = Uml2Package.CLASS__USE_CASE;
+	int DAO_CLASS__USE_CASE = Uml2Package.STEREOTYPE__USE_CASE;
 
 	/**
 	 * The feature id for the '<em><b>Redefined Classifier</b></em>' reference list.
@@ -17588,7 +21422,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__REDEFINED_CLASSIFIER = Uml2Package.CLASS__REDEFINED_CLASSIFIER;
+	int DAO_CLASS__REDEFINED_CLASSIFIER = Uml2Package.STEREOTYPE__REDEFINED_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Representation</b></em>' reference.
@@ -17597,7 +21431,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__REPRESENTATION = Uml2Package.CLASS__REPRESENTATION;
+	int DAO_CLASS__REPRESENTATION = Uml2Package.STEREOTYPE__REPRESENTATION;
 
 	/**
 	 * The feature id for the '<em><b>Substitution</b></em>' containment reference list.
@@ -17606,7 +21440,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__SUBSTITUTION = Uml2Package.CLASS__SUBSTITUTION;
+	int DAO_CLASS__SUBSTITUTION = Uml2Package.STEREOTYPE__SUBSTITUTION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Attribute</b></em>' containment reference list.
@@ -17615,7 +21449,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__OWNED_ATTRIBUTE = Uml2Package.CLASS__OWNED_ATTRIBUTE;
+	int DAO_CLASS__OWNED_ATTRIBUTE = Uml2Package.STEREOTYPE__OWNED_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Owned Connector</b></em>' containment reference list.
@@ -17624,7 +21458,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__OWNED_CONNECTOR = Uml2Package.CLASS__OWNED_CONNECTOR;
+	int DAO_CLASS__OWNED_CONNECTOR = Uml2Package.STEREOTYPE__OWNED_CONNECTOR;
 
 	/**
 	 * The feature id for the '<em><b>Part</b></em>' reference list.
@@ -17633,7 +21467,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__PART = Uml2Package.CLASS__PART;
+	int DAO_CLASS__PART = Uml2Package.STEREOTYPE__PART;
 
 	/**
 	 * The feature id for the '<em><b>Role</b></em>' reference list.
@@ -17642,7 +21476,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__ROLE = Uml2Package.CLASS__ROLE;
+	int DAO_CLASS__ROLE = Uml2Package.STEREOTYPE__ROLE;
 
 	/**
 	 * The feature id for the '<em><b>Owned Port</b></em>' reference list.
@@ -17651,7 +21485,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__OWNED_PORT = Uml2Package.CLASS__OWNED_PORT;
+	int DAO_CLASS__OWNED_PORT = Uml2Package.STEREOTYPE__OWNED_PORT;
 
 	/**
 	 * The feature id for the '<em><b>Classifier Behavior</b></em>' reference.
@@ -17660,7 +21494,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__CLASSIFIER_BEHAVIOR = Uml2Package.CLASS__CLASSIFIER_BEHAVIOR;
+	int DAO_CLASS__CLASSIFIER_BEHAVIOR = Uml2Package.STEREOTYPE__CLASSIFIER_BEHAVIOR;
 
 	/**
 	 * The feature id for the '<em><b>Interface Realization</b></em>' containment reference list.
@@ -17669,7 +21503,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__INTERFACE_REALIZATION = Uml2Package.CLASS__INTERFACE_REALIZATION;
+	int DAO_CLASS__INTERFACE_REALIZATION = Uml2Package.STEREOTYPE__INTERFACE_REALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Behavior</b></em>' containment reference list.
@@ -17678,7 +21512,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__OWNED_BEHAVIOR = Uml2Package.CLASS__OWNED_BEHAVIOR;
+	int DAO_CLASS__OWNED_BEHAVIOR = Uml2Package.STEREOTYPE__OWNED_BEHAVIOR;
 
 	/**
 	 * The feature id for the '<em><b>Owned Operation</b></em>' containment reference list.
@@ -17687,7 +21521,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__OWNED_OPERATION = Uml2Package.CLASS__OWNED_OPERATION;
+	int DAO_CLASS__OWNED_OPERATION = Uml2Package.STEREOTYPE__OWNED_OPERATION;
 
 	/**
 	 * The feature id for the '<em><b>Extension</b></em>' reference list.
@@ -17696,7 +21530,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__EXTENSION = Uml2Package.CLASS__EXTENSION;
+	int DAO_CLASS__EXTENSION = Uml2Package.STEREOTYPE__EXTENSION;
 
 	/**
 	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
@@ -17705,7 +21539,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__IS_ACTIVE = Uml2Package.CLASS__IS_ACTIVE;
+	int DAO_CLASS__IS_ACTIVE = Uml2Package.STEREOTYPE__IS_ACTIVE;
 
 	/**
 	 * The feature id for the '<em><b>Nested Classifier</b></em>' containment reference list.
@@ -17714,7 +21548,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__NESTED_CLASSIFIER = Uml2Package.CLASS__NESTED_CLASSIFIER;
+	int DAO_CLASS__NESTED_CLASSIFIER = Uml2Package.STEREOTYPE__NESTED_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Owned Reception</b></em>' containment reference list.
@@ -17723,7 +21557,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__OWNED_RECEPTION = Uml2Package.CLASS__OWNED_RECEPTION;
+	int DAO_CLASS__OWNED_RECEPTION = Uml2Package.STEREOTYPE__OWNED_RECEPTION;
 
 	/**
 	 * The feature id for the '<em><b>Super Class</b></em>' reference list.
@@ -17732,7 +21566,25 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__SUPER_CLASS = Uml2Package.CLASS__SUPER_CLASS;
+	int DAO_CLASS__SUPER_CLASS = Uml2Package.STEREOTYPE__SUPER_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DAO_CLASS__ICON = Uml2Package.STEREOTYPE__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Profile</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DAO_CLASS__PROFILE = Uml2Package.STEREOTYPE__PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Base Implements</b></em>' containment reference list.
@@ -17741,7 +21593,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__BASE_IMPLEMENTS = Uml2Package.CLASS_FEATURE_COUNT + 0;
+	int DAO_CLASS__BASE_IMPLEMENTS = Uml2Package.STEREOTYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>DAO Implements</b></em>' containment reference list.
@@ -17750,7 +21602,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__DAO_IMPLEMENTS = Uml2Package.CLASS_FEATURE_COUNT + 1;
+	int DAO_CLASS__DAO_IMPLEMENTS = Uml2Package.STEREOTYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>DAO Class Name</b></em>' reference.
@@ -17759,7 +21611,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__DAO_CLASS_NAME = Uml2Package.CLASS_FEATURE_COUNT + 2;
+	int DAO_CLASS__DAO_CLASS_NAME = Uml2Package.STEREOTYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>DAO Class Attribute</b></em>' containment reference list.
@@ -17768,7 +21620,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS__DAO_CLASS_ATTRIBUTE = Uml2Package.CLASS_FEATURE_COUNT + 3;
+	int DAO_CLASS__DAO_CLASS_ATTRIBUTE = Uml2Package.STEREOTYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>DAO Class</em>' class.
@@ -17777,7 +21629,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS_FEATURE_COUNT = Uml2Package.CLASS_FEATURE_COUNT + 4;
+	int DAO_CLASS_FEATURE_COUNT = Uml2Package.STEREOTYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The operation id for the '<em>Not Own Self</em>' operation.
@@ -17786,7 +21638,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Has Owner</em>' operation.
@@ -17795,7 +21647,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>All Owned Elements</em>' operation.
@@ -17804,7 +21656,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___ALL_OWNED_ELEMENTS = Uml2Package.CLASS___ALL_OWNED_ELEMENTS;
+	int DAO_CLASS___ALL_OWNED_ELEMENTS = Uml2Package.STEREOTYPE___ALL_OWNED_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>Must Be Owned</em>' operation.
@@ -17813,7 +21665,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___MUST_BE_OWNED = Uml2Package.CLASS___MUST_BE_OWNED;
+	int DAO_CLASS___MUST_BE_OWNED = Uml2Package.STEREOTYPE___MUST_BE_OWNED;
 
 	/**
 	 * The operation id for the '<em>Has Qualified Name</em>' operation.
@@ -17822,7 +21674,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
@@ -17831,7 +21683,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
@@ -17840,7 +21692,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>All Namespaces</em>' operation.
@@ -17849,7 +21701,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___ALL_NAMESPACES = Uml2Package.CLASS___ALL_NAMESPACES;
+	int DAO_CLASS___ALL_NAMESPACES = Uml2Package.STEREOTYPE___ALL_NAMESPACES;
 
 	/**
 	 * The operation id for the '<em>All Owning Packages</em>' operation.
@@ -17858,7 +21710,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___ALL_OWNING_PACKAGES = Uml2Package.CLASS___ALL_OWNING_PACKAGES;
+	int DAO_CLASS___ALL_OWNING_PACKAGES = Uml2Package.STEREOTYPE___ALL_OWNING_PACKAGES;
 
 	/**
 	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
@@ -17867,7 +21719,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+	int DAO_CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.STEREOTYPE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
 
 	/**
 	 * The operation id for the '<em>Namespace</em>' operation.
@@ -17876,7 +21728,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___NAMESPACE = Uml2Package.CLASS___NAMESPACE;
+	int DAO_CLASS___NAMESPACE = Uml2Package.STEREOTYPE___NAMESPACE;
 
 	/**
 	 * The operation id for the '<em>Qualified Name</em>' operation.
@@ -17885,7 +21737,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___QUALIFIED_NAME = Uml2Package.CLASS___QUALIFIED_NAME;
+	int DAO_CLASS___QUALIFIED_NAME = Uml2Package.STEREOTYPE___QUALIFIED_NAME;
 
 	/**
 	 * The operation id for the '<em>Separator</em>' operation.
@@ -17894,7 +21746,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___SEPARATOR = Uml2Package.CLASS___SEPARATOR;
+	int DAO_CLASS___SEPARATOR = Uml2Package.STEREOTYPE___SEPARATOR;
 
 	/**
 	 * The operation id for the '<em>Members Distinguishable</em>' operation.
@@ -17903,7 +21755,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Exclude Collisions</em>' operation.
@@ -17912,7 +21764,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___EXCLUDE_COLLISIONS__ELIST = Uml2Package.CLASS___EXCLUDE_COLLISIONS__ELIST;
+	int DAO_CLASS___EXCLUDE_COLLISIONS__ELIST = Uml2Package.STEREOTYPE___EXCLUDE_COLLISIONS__ELIST;
 
 	/**
 	 * The operation id for the '<em>Get Names Of Member</em>' operation.
@@ -17921,7 +21773,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+	int DAO_CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.STEREOTYPE___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Import Members</em>' operation.
@@ -17930,7 +21782,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___IMPORT_MEMBERS__ELIST = Uml2Package.CLASS___IMPORT_MEMBERS__ELIST;
+	int DAO_CLASS___IMPORT_MEMBERS__ELIST = Uml2Package.STEREOTYPE___IMPORT_MEMBERS__ELIST;
 
 	/**
 	 * The operation id for the '<em>Imported Member</em>' operation.
@@ -17939,7 +21791,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___IMPORTED_MEMBER = Uml2Package.CLASS___IMPORTED_MEMBER;
+	int DAO_CLASS___IMPORTED_MEMBER = Uml2Package.STEREOTYPE___IMPORTED_MEMBER;
 
 	/**
 	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
@@ -17948,7 +21800,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.CLASS___MEMBERS_ARE_DISTINGUISHABLE;
+	int DAO_CLASS___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.STEREOTYPE___MEMBERS_ARE_DISTINGUISHABLE;
 
 	/**
 	 * The operation id for the '<em>Owned Member</em>' operation.
@@ -17957,7 +21809,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___OWNED_MEMBER = Uml2Package.CLASS___OWNED_MEMBER;
+	int DAO_CLASS___OWNED_MEMBER = Uml2Package.STEREOTYPE___OWNED_MEMBER;
 
 	/**
 	 * The operation id for the '<em>Non Leaf Redefinition</em>' operation.
@@ -17966,7 +21818,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Redefinition Context Valid</em>' operation.
@@ -17975,7 +21827,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Redefinition Consistent</em>' operation.
@@ -17984,7 +21836,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Is Consistent With</em>' operation.
@@ -17993,7 +21845,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = Uml2Package.CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
+	int DAO_CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = Uml2Package.STEREOTYPE___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
@@ -18002,7 +21854,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = Uml2Package.CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
+	int DAO_CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = Uml2Package.STEREOTYPE___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Compatible With</em>' operation.
@@ -18011,7 +21863,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+	int DAO_CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.STEREOTYPE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Template Parameter</em>' operation.
@@ -18020,7 +21872,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___IS_TEMPLATE_PARAMETER = Uml2Package.CLASS___IS_TEMPLATE_PARAMETER;
+	int DAO_CLASS___IS_TEMPLATE_PARAMETER = Uml2Package.STEREOTYPE___IS_TEMPLATE_PARAMETER;
 
 	/**
 	 * The operation id for the '<em>Conforms To</em>' operation.
@@ -18029,7 +21881,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___CONFORMS_TO__TYPE = Uml2Package.CLASS___CONFORMS_TO__TYPE;
+	int DAO_CLASS___CONFORMS_TO__TYPE = Uml2Package.STEREOTYPE___CONFORMS_TO__TYPE;
 
 	/**
 	 * The operation id for the '<em>Is Template</em>' operation.
@@ -18038,7 +21890,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___IS_TEMPLATE = Uml2Package.CLASS___IS_TEMPLATE;
+	int DAO_CLASS___IS_TEMPLATE = Uml2Package.STEREOTYPE___IS_TEMPLATE;
 
 	/**
 	 * The operation id for the '<em>Parameterable Elements</em>' operation.
@@ -18047,7 +21899,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___PARAMETERABLE_ELEMENTS = Uml2Package.CLASS___PARAMETERABLE_ELEMENTS;
+	int DAO_CLASS___PARAMETERABLE_ELEMENTS = Uml2Package.STEREOTYPE___PARAMETERABLE_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>No Cycles In Generalization</em>' operation.
@@ -18056,7 +21908,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Specialize Type</em>' operation.
@@ -18065,7 +21917,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Non Final Parents</em>' operation.
@@ -18074,7 +21926,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Maps To Generalization Set</em>' operation.
@@ -18083,7 +21935,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>All Features</em>' operation.
@@ -18092,7 +21944,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___ALL_FEATURES = Uml2Package.CLASS___ALL_FEATURES;
+	int DAO_CLASS___ALL_FEATURES = Uml2Package.STEREOTYPE___ALL_FEATURES;
 
 	/**
 	 * The operation id for the '<em>All Parents</em>' operation.
@@ -18101,7 +21953,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___ALL_PARENTS = Uml2Package.CLASS___ALL_PARENTS;
+	int DAO_CLASS___ALL_PARENTS = Uml2Package.STEREOTYPE___ALL_PARENTS;
 
 	/**
 	 * The operation id for the '<em>Conforms To</em>' operation.
@@ -18110,7 +21962,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___CONFORMS_TO__CLASSIFIER = Uml2Package.CLASS___CONFORMS_TO__CLASSIFIER;
+	int DAO_CLASS___CONFORMS_TO__CLASSIFIER = Uml2Package.STEREOTYPE___CONFORMS_TO__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>General</em>' operation.
@@ -18119,7 +21971,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___GENERAL = Uml2Package.CLASS___GENERAL;
+	int DAO_CLASS___GENERAL = Uml2Package.STEREOTYPE___GENERAL;
 
 	/**
 	 * The operation id for the '<em>Has Visibility Of</em>' operation.
@@ -18128,7 +21980,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT = Uml2Package.CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT;
+	int DAO_CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT = Uml2Package.STEREOTYPE___HAS_VISIBILITY_OF__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Inherit</em>' operation.
@@ -18137,7 +21989,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___INHERIT__ELIST = Uml2Package.CLASS___INHERIT__ELIST;
+	int DAO_CLASS___INHERIT__ELIST = Uml2Package.STEREOTYPE___INHERIT__ELIST;
 
 	/**
 	 * The operation id for the '<em>Inheritable Members</em>' operation.
@@ -18146,7 +21998,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___INHERITABLE_MEMBERS__CLASSIFIER = Uml2Package.CLASS___INHERITABLE_MEMBERS__CLASSIFIER;
+	int DAO_CLASS___INHERITABLE_MEMBERS__CLASSIFIER = Uml2Package.STEREOTYPE___INHERITABLE_MEMBERS__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>Inherited Member</em>' operation.
@@ -18155,7 +22007,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___INHERITED_MEMBER = Uml2Package.CLASS___INHERITED_MEMBER;
+	int DAO_CLASS___INHERITED_MEMBER = Uml2Package.STEREOTYPE___INHERITED_MEMBER;
 
 	/**
 	 * The operation id for the '<em>May Specialize Type</em>' operation.
@@ -18164,7 +22016,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER = Uml2Package.CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER;
+	int DAO_CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER = Uml2Package.STEREOTYPE___MAY_SPECIALIZE_TYPE__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>Parents</em>' operation.
@@ -18173,7 +22025,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___PARENTS = Uml2Package.CLASS___PARENTS;
+	int DAO_CLASS___PARENTS = Uml2Package.STEREOTYPE___PARENTS;
 
 	/**
 	 * The operation id for the '<em>Multiplicities</em>' operation.
@@ -18182,7 +22034,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Part</em>' operation.
@@ -18191,7 +22043,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___PART = Uml2Package.CLASS___PART;
+	int DAO_CLASS___PART = Uml2Package.STEREOTYPE___PART;
 
 	/**
 	 * The operation id for the '<em>Owned Port</em>' operation.
@@ -18200,7 +22052,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___OWNED_PORT = Uml2Package.CLASS___OWNED_PORT;
+	int DAO_CLASS___OWNED_PORT = Uml2Package.STEREOTYPE___OWNED_PORT;
 
 	/**
 	 * The operation id for the '<em>Class Behavior</em>' operation.
@@ -18209,7 +22061,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Passive Class</em>' operation.
@@ -18218,7 +22070,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP;
+	int DAO_CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Extension</em>' operation.
@@ -18227,7 +22079,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___EXTENSION = Uml2Package.CLASS___EXTENSION;
+	int DAO_CLASS___EXTENSION = Uml2Package.STEREOTYPE___EXTENSION;
 
 	/**
 	 * The operation id for the '<em>Super Class</em>' operation.
@@ -18236,7 +22088,61 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS___SUPER_CLASS = Uml2Package.CLASS___SUPER_CLASS;
+	int DAO_CLASS___SUPER_CLASS = Uml2Package.STEREOTYPE___SUPER_CLASS;
+
+	/**
+	 * The operation id for the '<em>Generalize</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DAO_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___GENERALIZE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Association End Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DAO_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Binary Associations Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DAO_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Name Not Clash</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DAO_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DAO_CLASS___CONTAINING_PROFILE = Uml2Package.STEREOTYPE___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DAO_CLASS___PROFILE = Uml2Package.STEREOTYPE___PROFILE;
 
 	/**
 	 * The number of operations of the '<em>DAO Class</em>' class.
@@ -18245,7 +22151,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DAO_CLASS_OPERATION_COUNT = Uml2Package.CLASS_OPERATION_COUNT + 0;
+	int DAO_CLASS_OPERATION_COUNT = Uml2Package.STEREOTYPE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.DAOGeneralizationImpl <em>DAO Generalization</em>}' class.
@@ -18445,7 +22351,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_COMMENT = Uml2Package.CLASS__OWNED_COMMENT;
+	int FRONT_CONTROLLER_CLASS__OWNED_COMMENT = Uml2Package.STEREOTYPE__OWNED_COMMENT;
 
 	/**
 	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
@@ -18454,7 +22360,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_ELEMENT = Uml2Package.CLASS__OWNED_ELEMENT;
+	int FRONT_CONTROLLER_CLASS__OWNED_ELEMENT = Uml2Package.STEREOTYPE__OWNED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Owner</b></em>' reference.
@@ -18463,7 +22369,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__OWNER = Uml2Package.CLASS__OWNER;
+	int FRONT_CONTROLLER_CLASS__OWNER = Uml2Package.STEREOTYPE__OWNER;
 
 	/**
 	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
@@ -18472,7 +22378,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__CLIENT_DEPENDENCY = Uml2Package.CLASS__CLIENT_DEPENDENCY;
+	int FRONT_CONTROLLER_CLASS__CLIENT_DEPENDENCY = Uml2Package.STEREOTYPE__CLIENT_DEPENDENCY;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -18481,7 +22387,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__NAME = Uml2Package.CLASS__NAME;
+	int FRONT_CONTROLLER_CLASS__NAME = Uml2Package.STEREOTYPE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
@@ -18490,7 +22396,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__NAME_EXPRESSION = Uml2Package.CLASS__NAME_EXPRESSION;
+	int FRONT_CONTROLLER_CLASS__NAME_EXPRESSION = Uml2Package.STEREOTYPE__NAME_EXPRESSION;
 
 	/**
 	 * The feature id for the '<em><b>Namespace</b></em>' reference.
@@ -18499,7 +22405,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__NAMESPACE = Uml2Package.CLASS__NAMESPACE;
+	int FRONT_CONTROLLER_CLASS__NAMESPACE = Uml2Package.STEREOTYPE__NAMESPACE;
 
 	/**
 	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
@@ -18508,7 +22414,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__QUALIFIED_NAME = Uml2Package.CLASS__QUALIFIED_NAME;
+	int FRONT_CONTROLLER_CLASS__QUALIFIED_NAME = Uml2Package.STEREOTYPE__QUALIFIED_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -18517,7 +22423,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__VISIBILITY = Uml2Package.CLASS__VISIBILITY;
+	int FRONT_CONTROLLER_CLASS__VISIBILITY = Uml2Package.STEREOTYPE__VISIBILITY;
 
 	/**
 	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
@@ -18526,7 +22432,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__ELEMENT_IMPORT = Uml2Package.CLASS__ELEMENT_IMPORT;
+	int FRONT_CONTROLLER_CLASS__ELEMENT_IMPORT = Uml2Package.STEREOTYPE__ELEMENT_IMPORT;
 
 	/**
 	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
@@ -18535,7 +22441,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__IMPORTED_MEMBER = Uml2Package.CLASS__IMPORTED_MEMBER;
+	int FRONT_CONTROLLER_CLASS__IMPORTED_MEMBER = Uml2Package.STEREOTYPE__IMPORTED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Member</b></em>' reference list.
@@ -18544,7 +22450,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__MEMBER = Uml2Package.CLASS__MEMBER;
+	int FRONT_CONTROLLER_CLASS__MEMBER = Uml2Package.STEREOTYPE__MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
@@ -18553,7 +22459,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_MEMBER = Uml2Package.CLASS__OWNED_MEMBER;
+	int FRONT_CONTROLLER_CLASS__OWNED_MEMBER = Uml2Package.STEREOTYPE__OWNED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
@@ -18562,7 +22468,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_RULE = Uml2Package.CLASS__OWNED_RULE;
+	int FRONT_CONTROLLER_CLASS__OWNED_RULE = Uml2Package.STEREOTYPE__OWNED_RULE;
 
 	/**
 	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
@@ -18571,7 +22477,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__PACKAGE_IMPORT = Uml2Package.CLASS__PACKAGE_IMPORT;
+	int FRONT_CONTROLLER_CLASS__PACKAGE_IMPORT = Uml2Package.STEREOTYPE__PACKAGE_IMPORT;
 
 	/**
 	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
@@ -18580,7 +22486,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__IS_LEAF = Uml2Package.CLASS__IS_LEAF;
+	int FRONT_CONTROLLER_CLASS__IS_LEAF = Uml2Package.STEREOTYPE__IS_LEAF;
 
 	/**
 	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
@@ -18589,7 +22495,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__REDEFINED_ELEMENT = Uml2Package.CLASS__REDEFINED_ELEMENT;
+	int FRONT_CONTROLLER_CLASS__REDEFINED_ELEMENT = Uml2Package.STEREOTYPE__REDEFINED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
@@ -18598,7 +22504,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__REDEFINITION_CONTEXT = Uml2Package.CLASS__REDEFINITION_CONTEXT;
+	int FRONT_CONTROLLER_CLASS__REDEFINITION_CONTEXT = Uml2Package.STEREOTYPE__REDEFINITION_CONTEXT;
 
 	/**
 	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
@@ -18607,7 +22513,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__OWNING_TEMPLATE_PARAMETER = Uml2Package.CLASS__OWNING_TEMPLATE_PARAMETER;
+	int FRONT_CONTROLLER_CLASS__OWNING_TEMPLATE_PARAMETER = Uml2Package.STEREOTYPE__OWNING_TEMPLATE_PARAMETER;
 
 	/**
 	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
@@ -18616,7 +22522,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__TEMPLATE_PARAMETER = Uml2Package.CLASS__TEMPLATE_PARAMETER;
+	int FRONT_CONTROLLER_CLASS__TEMPLATE_PARAMETER = Uml2Package.STEREOTYPE__TEMPLATE_PARAMETER;
 
 	/**
 	 * The feature id for the '<em><b>Package</b></em>' reference.
@@ -18625,7 +22531,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__PACKAGE = Uml2Package.CLASS__PACKAGE;
+	int FRONT_CONTROLLER_CLASS__PACKAGE = Uml2Package.STEREOTYPE__PACKAGE;
 
 	/**
 	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
@@ -18634,7 +22540,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__TEMPLATE_BINDING = Uml2Package.CLASS__TEMPLATE_BINDING;
+	int FRONT_CONTROLLER_CLASS__TEMPLATE_BINDING = Uml2Package.STEREOTYPE__TEMPLATE_BINDING;
 
 	/**
 	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
@@ -18643,7 +22549,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_TEMPLATE_SIGNATURE = Uml2Package.CLASS__OWNED_TEMPLATE_SIGNATURE;
+	int FRONT_CONTROLLER_CLASS__OWNED_TEMPLATE_SIGNATURE = Uml2Package.STEREOTYPE__OWNED_TEMPLATE_SIGNATURE;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' reference list.
@@ -18652,7 +22558,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__ATTRIBUTE = Uml2Package.CLASS__ATTRIBUTE;
+	int FRONT_CONTROLLER_CLASS__ATTRIBUTE = Uml2Package.STEREOTYPE__ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Feature</b></em>' reference list.
@@ -18661,7 +22567,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__FEATURE = Uml2Package.CLASS__FEATURE;
+	int FRONT_CONTROLLER_CLASS__FEATURE = Uml2Package.STEREOTYPE__FEATURE;
 
 	/**
 	 * The feature id for the '<em><b>Collaboration Use</b></em>' containment reference list.
@@ -18670,7 +22576,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__COLLABORATION_USE = Uml2Package.CLASS__COLLABORATION_USE;
+	int FRONT_CONTROLLER_CLASS__COLLABORATION_USE = Uml2Package.STEREOTYPE__COLLABORATION_USE;
 
 	/**
 	 * The feature id for the '<em><b>General</b></em>' reference list.
@@ -18679,7 +22585,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__GENERAL = Uml2Package.CLASS__GENERAL;
+	int FRONT_CONTROLLER_CLASS__GENERAL = Uml2Package.STEREOTYPE__GENERAL;
 
 	/**
 	 * The feature id for the '<em><b>Generalization</b></em>' containment reference list.
@@ -18688,7 +22594,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__GENERALIZATION = Uml2Package.CLASS__GENERALIZATION;
+	int FRONT_CONTROLLER_CLASS__GENERALIZATION = Uml2Package.STEREOTYPE__GENERALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Powertype Extent</b></em>' reference list.
@@ -18697,7 +22603,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__POWERTYPE_EXTENT = Uml2Package.CLASS__POWERTYPE_EXTENT;
+	int FRONT_CONTROLLER_CLASS__POWERTYPE_EXTENT = Uml2Package.STEREOTYPE__POWERTYPE_EXTENT;
 
 	/**
 	 * The feature id for the '<em><b>Inherited Member</b></em>' reference list.
@@ -18706,7 +22612,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__INHERITED_MEMBER = Uml2Package.CLASS__INHERITED_MEMBER;
+	int FRONT_CONTROLLER_CLASS__INHERITED_MEMBER = Uml2Package.STEREOTYPE__INHERITED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
@@ -18715,7 +22621,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__IS_ABSTRACT = Uml2Package.CLASS__IS_ABSTRACT;
+	int FRONT_CONTROLLER_CLASS__IS_ABSTRACT = Uml2Package.STEREOTYPE__IS_ABSTRACT;
 
 	/**
 	 * The feature id for the '<em><b>Is Final Specialization</b></em>' attribute.
@@ -18724,7 +22630,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__IS_FINAL_SPECIALIZATION = Uml2Package.CLASS__IS_FINAL_SPECIALIZATION;
+	int FRONT_CONTROLLER_CLASS__IS_FINAL_SPECIALIZATION = Uml2Package.STEREOTYPE__IS_FINAL_SPECIALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Use Case</b></em>' containment reference list.
@@ -18733,7 +22639,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_USE_CASE = Uml2Package.CLASS__OWNED_USE_CASE;
+	int FRONT_CONTROLLER_CLASS__OWNED_USE_CASE = Uml2Package.STEREOTYPE__OWNED_USE_CASE;
 
 	/**
 	 * The feature id for the '<em><b>Use Case</b></em>' reference list.
@@ -18742,7 +22648,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__USE_CASE = Uml2Package.CLASS__USE_CASE;
+	int FRONT_CONTROLLER_CLASS__USE_CASE = Uml2Package.STEREOTYPE__USE_CASE;
 
 	/**
 	 * The feature id for the '<em><b>Redefined Classifier</b></em>' reference list.
@@ -18751,7 +22657,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__REDEFINED_CLASSIFIER = Uml2Package.CLASS__REDEFINED_CLASSIFIER;
+	int FRONT_CONTROLLER_CLASS__REDEFINED_CLASSIFIER = Uml2Package.STEREOTYPE__REDEFINED_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Representation</b></em>' reference.
@@ -18760,7 +22666,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__REPRESENTATION = Uml2Package.CLASS__REPRESENTATION;
+	int FRONT_CONTROLLER_CLASS__REPRESENTATION = Uml2Package.STEREOTYPE__REPRESENTATION;
 
 	/**
 	 * The feature id for the '<em><b>Substitution</b></em>' containment reference list.
@@ -18769,7 +22675,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__SUBSTITUTION = Uml2Package.CLASS__SUBSTITUTION;
+	int FRONT_CONTROLLER_CLASS__SUBSTITUTION = Uml2Package.STEREOTYPE__SUBSTITUTION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Attribute</b></em>' containment reference list.
@@ -18778,7 +22684,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_ATTRIBUTE = Uml2Package.CLASS__OWNED_ATTRIBUTE;
+	int FRONT_CONTROLLER_CLASS__OWNED_ATTRIBUTE = Uml2Package.STEREOTYPE__OWNED_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Owned Connector</b></em>' containment reference list.
@@ -18787,7 +22693,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_CONNECTOR = Uml2Package.CLASS__OWNED_CONNECTOR;
+	int FRONT_CONTROLLER_CLASS__OWNED_CONNECTOR = Uml2Package.STEREOTYPE__OWNED_CONNECTOR;
 
 	/**
 	 * The feature id for the '<em><b>Part</b></em>' reference list.
@@ -18796,7 +22702,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__PART = Uml2Package.CLASS__PART;
+	int FRONT_CONTROLLER_CLASS__PART = Uml2Package.STEREOTYPE__PART;
 
 	/**
 	 * The feature id for the '<em><b>Role</b></em>' reference list.
@@ -18805,7 +22711,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__ROLE = Uml2Package.CLASS__ROLE;
+	int FRONT_CONTROLLER_CLASS__ROLE = Uml2Package.STEREOTYPE__ROLE;
 
 	/**
 	 * The feature id for the '<em><b>Owned Port</b></em>' reference list.
@@ -18814,7 +22720,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_PORT = Uml2Package.CLASS__OWNED_PORT;
+	int FRONT_CONTROLLER_CLASS__OWNED_PORT = Uml2Package.STEREOTYPE__OWNED_PORT;
 
 	/**
 	 * The feature id for the '<em><b>Classifier Behavior</b></em>' reference.
@@ -18823,7 +22729,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__CLASSIFIER_BEHAVIOR = Uml2Package.CLASS__CLASSIFIER_BEHAVIOR;
+	int FRONT_CONTROLLER_CLASS__CLASSIFIER_BEHAVIOR = Uml2Package.STEREOTYPE__CLASSIFIER_BEHAVIOR;
 
 	/**
 	 * The feature id for the '<em><b>Interface Realization</b></em>' containment reference list.
@@ -18832,7 +22738,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__INTERFACE_REALIZATION = Uml2Package.CLASS__INTERFACE_REALIZATION;
+	int FRONT_CONTROLLER_CLASS__INTERFACE_REALIZATION = Uml2Package.STEREOTYPE__INTERFACE_REALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Behavior</b></em>' containment reference list.
@@ -18841,7 +22747,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_BEHAVIOR = Uml2Package.CLASS__OWNED_BEHAVIOR;
+	int FRONT_CONTROLLER_CLASS__OWNED_BEHAVIOR = Uml2Package.STEREOTYPE__OWNED_BEHAVIOR;
 
 	/**
 	 * The feature id for the '<em><b>Owned Operation</b></em>' containment reference list.
@@ -18850,7 +22756,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_OPERATION = Uml2Package.CLASS__OWNED_OPERATION;
+	int FRONT_CONTROLLER_CLASS__OWNED_OPERATION = Uml2Package.STEREOTYPE__OWNED_OPERATION;
 
 	/**
 	 * The feature id for the '<em><b>Extension</b></em>' reference list.
@@ -18859,7 +22765,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__EXTENSION = Uml2Package.CLASS__EXTENSION;
+	int FRONT_CONTROLLER_CLASS__EXTENSION = Uml2Package.STEREOTYPE__EXTENSION;
 
 	/**
 	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
@@ -18868,7 +22774,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__IS_ACTIVE = Uml2Package.CLASS__IS_ACTIVE;
+	int FRONT_CONTROLLER_CLASS__IS_ACTIVE = Uml2Package.STEREOTYPE__IS_ACTIVE;
 
 	/**
 	 * The feature id for the '<em><b>Nested Classifier</b></em>' containment reference list.
@@ -18877,7 +22783,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__NESTED_CLASSIFIER = Uml2Package.CLASS__NESTED_CLASSIFIER;
+	int FRONT_CONTROLLER_CLASS__NESTED_CLASSIFIER = Uml2Package.STEREOTYPE__NESTED_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Owned Reception</b></em>' containment reference list.
@@ -18886,7 +22792,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__OWNED_RECEPTION = Uml2Package.CLASS__OWNED_RECEPTION;
+	int FRONT_CONTROLLER_CLASS__OWNED_RECEPTION = Uml2Package.STEREOTYPE__OWNED_RECEPTION;
 
 	/**
 	 * The feature id for the '<em><b>Super Class</b></em>' reference list.
@@ -18895,7 +22801,25 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__SUPER_CLASS = Uml2Package.CLASS__SUPER_CLASS;
+	int FRONT_CONTROLLER_CLASS__SUPER_CLASS = Uml2Package.STEREOTYPE__SUPER_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRONT_CONTROLLER_CLASS__ICON = Uml2Package.STEREOTYPE__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Profile</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRONT_CONTROLLER_CLASS__PROFILE = Uml2Package.STEREOTYPE__PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Front Controller Attribute</b></em>' containment reference list.
@@ -18904,7 +22828,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE = Uml2Package.CLASS_FEATURE_COUNT + 0;
+	int FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_ATTRIBUTE = Uml2Package.STEREOTYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Front Controller Class Method</b></em>' containment reference list.
@@ -18913,7 +22837,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD = Uml2Package.CLASS_FEATURE_COUNT + 1;
+	int FRONT_CONTROLLER_CLASS__FRONT_CONTROLLER_CLASS_METHOD = Uml2Package.STEREOTYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Front Controller Class</em>' class.
@@ -18922,7 +22846,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS_FEATURE_COUNT = Uml2Package.CLASS_FEATURE_COUNT + 2;
+	int FRONT_CONTROLLER_CLASS_FEATURE_COUNT = Uml2Package.STEREOTYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Not Own Self</em>' operation.
@@ -18931,7 +22855,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Has Owner</em>' operation.
@@ -18940,7 +22864,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>All Owned Elements</em>' operation.
@@ -18949,7 +22873,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___ALL_OWNED_ELEMENTS = Uml2Package.CLASS___ALL_OWNED_ELEMENTS;
+	int FRONT_CONTROLLER_CLASS___ALL_OWNED_ELEMENTS = Uml2Package.STEREOTYPE___ALL_OWNED_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>Must Be Owned</em>' operation.
@@ -18958,7 +22882,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___MUST_BE_OWNED = Uml2Package.CLASS___MUST_BE_OWNED;
+	int FRONT_CONTROLLER_CLASS___MUST_BE_OWNED = Uml2Package.STEREOTYPE___MUST_BE_OWNED;
 
 	/**
 	 * The operation id for the '<em>Has Qualified Name</em>' operation.
@@ -18967,7 +22891,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
@@ -18976,7 +22900,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
@@ -18985,7 +22909,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>All Namespaces</em>' operation.
@@ -18994,7 +22918,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___ALL_NAMESPACES = Uml2Package.CLASS___ALL_NAMESPACES;
+	int FRONT_CONTROLLER_CLASS___ALL_NAMESPACES = Uml2Package.STEREOTYPE___ALL_NAMESPACES;
 
 	/**
 	 * The operation id for the '<em>All Owning Packages</em>' operation.
@@ -19003,7 +22927,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___ALL_OWNING_PACKAGES = Uml2Package.CLASS___ALL_OWNING_PACKAGES;
+	int FRONT_CONTROLLER_CLASS___ALL_OWNING_PACKAGES = Uml2Package.STEREOTYPE___ALL_OWNING_PACKAGES;
 
 	/**
 	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
@@ -19012,7 +22936,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+	int FRONT_CONTROLLER_CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.STEREOTYPE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
 
 	/**
 	 * The operation id for the '<em>Namespace</em>' operation.
@@ -19021,7 +22945,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___NAMESPACE = Uml2Package.CLASS___NAMESPACE;
+	int FRONT_CONTROLLER_CLASS___NAMESPACE = Uml2Package.STEREOTYPE___NAMESPACE;
 
 	/**
 	 * The operation id for the '<em>Qualified Name</em>' operation.
@@ -19030,7 +22954,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___QUALIFIED_NAME = Uml2Package.CLASS___QUALIFIED_NAME;
+	int FRONT_CONTROLLER_CLASS___QUALIFIED_NAME = Uml2Package.STEREOTYPE___QUALIFIED_NAME;
 
 	/**
 	 * The operation id for the '<em>Separator</em>' operation.
@@ -19039,7 +22963,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___SEPARATOR = Uml2Package.CLASS___SEPARATOR;
+	int FRONT_CONTROLLER_CLASS___SEPARATOR = Uml2Package.STEREOTYPE___SEPARATOR;
 
 	/**
 	 * The operation id for the '<em>Members Distinguishable</em>' operation.
@@ -19048,7 +22972,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Exclude Collisions</em>' operation.
@@ -19057,7 +22981,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___EXCLUDE_COLLISIONS__ELIST = Uml2Package.CLASS___EXCLUDE_COLLISIONS__ELIST;
+	int FRONT_CONTROLLER_CLASS___EXCLUDE_COLLISIONS__ELIST = Uml2Package.STEREOTYPE___EXCLUDE_COLLISIONS__ELIST;
 
 	/**
 	 * The operation id for the '<em>Get Names Of Member</em>' operation.
@@ -19066,7 +22990,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+	int FRONT_CONTROLLER_CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.STEREOTYPE___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Import Members</em>' operation.
@@ -19075,7 +22999,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___IMPORT_MEMBERS__ELIST = Uml2Package.CLASS___IMPORT_MEMBERS__ELIST;
+	int FRONT_CONTROLLER_CLASS___IMPORT_MEMBERS__ELIST = Uml2Package.STEREOTYPE___IMPORT_MEMBERS__ELIST;
 
 	/**
 	 * The operation id for the '<em>Imported Member</em>' operation.
@@ -19084,7 +23008,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___IMPORTED_MEMBER = Uml2Package.CLASS___IMPORTED_MEMBER;
+	int FRONT_CONTROLLER_CLASS___IMPORTED_MEMBER = Uml2Package.STEREOTYPE___IMPORTED_MEMBER;
 
 	/**
 	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
@@ -19093,7 +23017,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.CLASS___MEMBERS_ARE_DISTINGUISHABLE;
+	int FRONT_CONTROLLER_CLASS___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.STEREOTYPE___MEMBERS_ARE_DISTINGUISHABLE;
 
 	/**
 	 * The operation id for the '<em>Owned Member</em>' operation.
@@ -19102,7 +23026,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___OWNED_MEMBER = Uml2Package.CLASS___OWNED_MEMBER;
+	int FRONT_CONTROLLER_CLASS___OWNED_MEMBER = Uml2Package.STEREOTYPE___OWNED_MEMBER;
 
 	/**
 	 * The operation id for the '<em>Non Leaf Redefinition</em>' operation.
@@ -19111,7 +23035,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Redefinition Context Valid</em>' operation.
@@ -19120,7 +23044,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Redefinition Consistent</em>' operation.
@@ -19129,7 +23053,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Is Consistent With</em>' operation.
@@ -19138,7 +23062,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = Uml2Package.CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
+	int FRONT_CONTROLLER_CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = Uml2Package.STEREOTYPE___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
@@ -19147,7 +23071,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = Uml2Package.CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
+	int FRONT_CONTROLLER_CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = Uml2Package.STEREOTYPE___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Compatible With</em>' operation.
@@ -19156,7 +23080,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+	int FRONT_CONTROLLER_CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.STEREOTYPE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Template Parameter</em>' operation.
@@ -19165,7 +23089,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___IS_TEMPLATE_PARAMETER = Uml2Package.CLASS___IS_TEMPLATE_PARAMETER;
+	int FRONT_CONTROLLER_CLASS___IS_TEMPLATE_PARAMETER = Uml2Package.STEREOTYPE___IS_TEMPLATE_PARAMETER;
 
 	/**
 	 * The operation id for the '<em>Conforms To</em>' operation.
@@ -19174,7 +23098,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___CONFORMS_TO__TYPE = Uml2Package.CLASS___CONFORMS_TO__TYPE;
+	int FRONT_CONTROLLER_CLASS___CONFORMS_TO__TYPE = Uml2Package.STEREOTYPE___CONFORMS_TO__TYPE;
 
 	/**
 	 * The operation id for the '<em>Is Template</em>' operation.
@@ -19183,7 +23107,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___IS_TEMPLATE = Uml2Package.CLASS___IS_TEMPLATE;
+	int FRONT_CONTROLLER_CLASS___IS_TEMPLATE = Uml2Package.STEREOTYPE___IS_TEMPLATE;
 
 	/**
 	 * The operation id for the '<em>Parameterable Elements</em>' operation.
@@ -19192,7 +23116,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___PARAMETERABLE_ELEMENTS = Uml2Package.CLASS___PARAMETERABLE_ELEMENTS;
+	int FRONT_CONTROLLER_CLASS___PARAMETERABLE_ELEMENTS = Uml2Package.STEREOTYPE___PARAMETERABLE_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>No Cycles In Generalization</em>' operation.
@@ -19201,7 +23125,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Specialize Type</em>' operation.
@@ -19210,7 +23134,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Non Final Parents</em>' operation.
@@ -19219,7 +23143,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Maps To Generalization Set</em>' operation.
@@ -19228,7 +23152,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>All Features</em>' operation.
@@ -19237,7 +23161,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___ALL_FEATURES = Uml2Package.CLASS___ALL_FEATURES;
+	int FRONT_CONTROLLER_CLASS___ALL_FEATURES = Uml2Package.STEREOTYPE___ALL_FEATURES;
 
 	/**
 	 * The operation id for the '<em>All Parents</em>' operation.
@@ -19246,7 +23170,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___ALL_PARENTS = Uml2Package.CLASS___ALL_PARENTS;
+	int FRONT_CONTROLLER_CLASS___ALL_PARENTS = Uml2Package.STEREOTYPE___ALL_PARENTS;
 
 	/**
 	 * The operation id for the '<em>Conforms To</em>' operation.
@@ -19255,7 +23179,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___CONFORMS_TO__CLASSIFIER = Uml2Package.CLASS___CONFORMS_TO__CLASSIFIER;
+	int FRONT_CONTROLLER_CLASS___CONFORMS_TO__CLASSIFIER = Uml2Package.STEREOTYPE___CONFORMS_TO__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>General</em>' operation.
@@ -19264,7 +23188,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___GENERAL = Uml2Package.CLASS___GENERAL;
+	int FRONT_CONTROLLER_CLASS___GENERAL = Uml2Package.STEREOTYPE___GENERAL;
 
 	/**
 	 * The operation id for the '<em>Has Visibility Of</em>' operation.
@@ -19273,7 +23197,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT = Uml2Package.CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT;
+	int FRONT_CONTROLLER_CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT = Uml2Package.STEREOTYPE___HAS_VISIBILITY_OF__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Inherit</em>' operation.
@@ -19282,7 +23206,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___INHERIT__ELIST = Uml2Package.CLASS___INHERIT__ELIST;
+	int FRONT_CONTROLLER_CLASS___INHERIT__ELIST = Uml2Package.STEREOTYPE___INHERIT__ELIST;
 
 	/**
 	 * The operation id for the '<em>Inheritable Members</em>' operation.
@@ -19291,7 +23215,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___INHERITABLE_MEMBERS__CLASSIFIER = Uml2Package.CLASS___INHERITABLE_MEMBERS__CLASSIFIER;
+	int FRONT_CONTROLLER_CLASS___INHERITABLE_MEMBERS__CLASSIFIER = Uml2Package.STEREOTYPE___INHERITABLE_MEMBERS__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>Inherited Member</em>' operation.
@@ -19300,7 +23224,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___INHERITED_MEMBER = Uml2Package.CLASS___INHERITED_MEMBER;
+	int FRONT_CONTROLLER_CLASS___INHERITED_MEMBER = Uml2Package.STEREOTYPE___INHERITED_MEMBER;
 
 	/**
 	 * The operation id for the '<em>May Specialize Type</em>' operation.
@@ -19309,7 +23233,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER = Uml2Package.CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER;
+	int FRONT_CONTROLLER_CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER = Uml2Package.STEREOTYPE___MAY_SPECIALIZE_TYPE__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>Parents</em>' operation.
@@ -19318,7 +23242,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___PARENTS = Uml2Package.CLASS___PARENTS;
+	int FRONT_CONTROLLER_CLASS___PARENTS = Uml2Package.STEREOTYPE___PARENTS;
 
 	/**
 	 * The operation id for the '<em>Multiplicities</em>' operation.
@@ -19327,7 +23251,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Part</em>' operation.
@@ -19336,7 +23260,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___PART = Uml2Package.CLASS___PART;
+	int FRONT_CONTROLLER_CLASS___PART = Uml2Package.STEREOTYPE___PART;
 
 	/**
 	 * The operation id for the '<em>Owned Port</em>' operation.
@@ -19345,7 +23269,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___OWNED_PORT = Uml2Package.CLASS___OWNED_PORT;
+	int FRONT_CONTROLLER_CLASS___OWNED_PORT = Uml2Package.STEREOTYPE___OWNED_PORT;
 
 	/**
 	 * The operation id for the '<em>Class Behavior</em>' operation.
@@ -19354,7 +23278,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Passive Class</em>' operation.
@@ -19363,7 +23287,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP;
+	int FRONT_CONTROLLER_CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Extension</em>' operation.
@@ -19372,7 +23296,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___EXTENSION = Uml2Package.CLASS___EXTENSION;
+	int FRONT_CONTROLLER_CLASS___EXTENSION = Uml2Package.STEREOTYPE___EXTENSION;
 
 	/**
 	 * The operation id for the '<em>Super Class</em>' operation.
@@ -19381,7 +23305,61 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS___SUPER_CLASS = Uml2Package.CLASS___SUPER_CLASS;
+	int FRONT_CONTROLLER_CLASS___SUPER_CLASS = Uml2Package.STEREOTYPE___SUPER_CLASS;
+
+	/**
+	 * The operation id for the '<em>Generalize</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRONT_CONTROLLER_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___GENERALIZE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Association End Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRONT_CONTROLLER_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Binary Associations Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRONT_CONTROLLER_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Name Not Clash</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRONT_CONTROLLER_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRONT_CONTROLLER_CLASS___CONTAINING_PROFILE = Uml2Package.STEREOTYPE___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRONT_CONTROLLER_CLASS___PROFILE = Uml2Package.STEREOTYPE___PROFILE;
 
 	/**
 	 * The number of operations of the '<em>Front Controller Class</em>' class.
@@ -19390,7 +23368,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_CLASS_OPERATION_COUNT = Uml2Package.CLASS_OPERATION_COUNT + 0;
+	int FRONT_CONTROLLER_CLASS_OPERATION_COUNT = Uml2Package.STEREOTYPE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.NavigationAttributeImpl <em>Navigation Attribute</em>}' class.
@@ -24485,7 +28463,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__OWNED_COMMENT = Uml2Package.CLASS__OWNED_COMMENT;
+	int SERVICE_CLASS__OWNED_COMMENT = Uml2Package.STEREOTYPE__OWNED_COMMENT;
 
 	/**
 	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
@@ -24494,7 +28472,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__OWNED_ELEMENT = Uml2Package.CLASS__OWNED_ELEMENT;
+	int SERVICE_CLASS__OWNED_ELEMENT = Uml2Package.STEREOTYPE__OWNED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Owner</b></em>' reference.
@@ -24503,7 +28481,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__OWNER = Uml2Package.CLASS__OWNER;
+	int SERVICE_CLASS__OWNER = Uml2Package.STEREOTYPE__OWNER;
 
 	/**
 	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
@@ -24512,7 +28490,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__CLIENT_DEPENDENCY = Uml2Package.CLASS__CLIENT_DEPENDENCY;
+	int SERVICE_CLASS__CLIENT_DEPENDENCY = Uml2Package.STEREOTYPE__CLIENT_DEPENDENCY;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -24521,7 +28499,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__NAME = Uml2Package.CLASS__NAME;
+	int SERVICE_CLASS__NAME = Uml2Package.STEREOTYPE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
@@ -24530,7 +28508,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__NAME_EXPRESSION = Uml2Package.CLASS__NAME_EXPRESSION;
+	int SERVICE_CLASS__NAME_EXPRESSION = Uml2Package.STEREOTYPE__NAME_EXPRESSION;
 
 	/**
 	 * The feature id for the '<em><b>Namespace</b></em>' reference.
@@ -24539,7 +28517,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__NAMESPACE = Uml2Package.CLASS__NAMESPACE;
+	int SERVICE_CLASS__NAMESPACE = Uml2Package.STEREOTYPE__NAMESPACE;
 
 	/**
 	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
@@ -24548,7 +28526,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__QUALIFIED_NAME = Uml2Package.CLASS__QUALIFIED_NAME;
+	int SERVICE_CLASS__QUALIFIED_NAME = Uml2Package.STEREOTYPE__QUALIFIED_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -24557,7 +28535,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__VISIBILITY = Uml2Package.CLASS__VISIBILITY;
+	int SERVICE_CLASS__VISIBILITY = Uml2Package.STEREOTYPE__VISIBILITY;
 
 	/**
 	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
@@ -24566,7 +28544,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__ELEMENT_IMPORT = Uml2Package.CLASS__ELEMENT_IMPORT;
+	int SERVICE_CLASS__ELEMENT_IMPORT = Uml2Package.STEREOTYPE__ELEMENT_IMPORT;
 
 	/**
 	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
@@ -24575,7 +28553,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__IMPORTED_MEMBER = Uml2Package.CLASS__IMPORTED_MEMBER;
+	int SERVICE_CLASS__IMPORTED_MEMBER = Uml2Package.STEREOTYPE__IMPORTED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Member</b></em>' reference list.
@@ -24584,7 +28562,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__MEMBER = Uml2Package.CLASS__MEMBER;
+	int SERVICE_CLASS__MEMBER = Uml2Package.STEREOTYPE__MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
@@ -24593,7 +28571,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__OWNED_MEMBER = Uml2Package.CLASS__OWNED_MEMBER;
+	int SERVICE_CLASS__OWNED_MEMBER = Uml2Package.STEREOTYPE__OWNED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
@@ -24602,7 +28580,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__OWNED_RULE = Uml2Package.CLASS__OWNED_RULE;
+	int SERVICE_CLASS__OWNED_RULE = Uml2Package.STEREOTYPE__OWNED_RULE;
 
 	/**
 	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
@@ -24611,7 +28589,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__PACKAGE_IMPORT = Uml2Package.CLASS__PACKAGE_IMPORT;
+	int SERVICE_CLASS__PACKAGE_IMPORT = Uml2Package.STEREOTYPE__PACKAGE_IMPORT;
 
 	/**
 	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
@@ -24620,7 +28598,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__IS_LEAF = Uml2Package.CLASS__IS_LEAF;
+	int SERVICE_CLASS__IS_LEAF = Uml2Package.STEREOTYPE__IS_LEAF;
 
 	/**
 	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
@@ -24629,7 +28607,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__REDEFINED_ELEMENT = Uml2Package.CLASS__REDEFINED_ELEMENT;
+	int SERVICE_CLASS__REDEFINED_ELEMENT = Uml2Package.STEREOTYPE__REDEFINED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
@@ -24638,7 +28616,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__REDEFINITION_CONTEXT = Uml2Package.CLASS__REDEFINITION_CONTEXT;
+	int SERVICE_CLASS__REDEFINITION_CONTEXT = Uml2Package.STEREOTYPE__REDEFINITION_CONTEXT;
 
 	/**
 	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
@@ -24647,7 +28625,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__OWNING_TEMPLATE_PARAMETER = Uml2Package.CLASS__OWNING_TEMPLATE_PARAMETER;
+	int SERVICE_CLASS__OWNING_TEMPLATE_PARAMETER = Uml2Package.STEREOTYPE__OWNING_TEMPLATE_PARAMETER;
 
 	/**
 	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
@@ -24656,7 +28634,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__TEMPLATE_PARAMETER = Uml2Package.CLASS__TEMPLATE_PARAMETER;
+	int SERVICE_CLASS__TEMPLATE_PARAMETER = Uml2Package.STEREOTYPE__TEMPLATE_PARAMETER;
 
 	/**
 	 * The feature id for the '<em><b>Package</b></em>' reference.
@@ -24665,7 +28643,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__PACKAGE = Uml2Package.CLASS__PACKAGE;
+	int SERVICE_CLASS__PACKAGE = Uml2Package.STEREOTYPE__PACKAGE;
 
 	/**
 	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
@@ -24674,7 +28652,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__TEMPLATE_BINDING = Uml2Package.CLASS__TEMPLATE_BINDING;
+	int SERVICE_CLASS__TEMPLATE_BINDING = Uml2Package.STEREOTYPE__TEMPLATE_BINDING;
 
 	/**
 	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
@@ -24683,7 +28661,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__OWNED_TEMPLATE_SIGNATURE = Uml2Package.CLASS__OWNED_TEMPLATE_SIGNATURE;
+	int SERVICE_CLASS__OWNED_TEMPLATE_SIGNATURE = Uml2Package.STEREOTYPE__OWNED_TEMPLATE_SIGNATURE;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' reference list.
@@ -24692,7 +28670,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__ATTRIBUTE = Uml2Package.CLASS__ATTRIBUTE;
+	int SERVICE_CLASS__ATTRIBUTE = Uml2Package.STEREOTYPE__ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Feature</b></em>' reference list.
@@ -24701,7 +28679,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__FEATURE = Uml2Package.CLASS__FEATURE;
+	int SERVICE_CLASS__FEATURE = Uml2Package.STEREOTYPE__FEATURE;
 
 	/**
 	 * The feature id for the '<em><b>Collaboration Use</b></em>' containment reference list.
@@ -24710,7 +28688,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__COLLABORATION_USE = Uml2Package.CLASS__COLLABORATION_USE;
+	int SERVICE_CLASS__COLLABORATION_USE = Uml2Package.STEREOTYPE__COLLABORATION_USE;
 
 	/**
 	 * The feature id for the '<em><b>General</b></em>' reference list.
@@ -24719,7 +28697,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__GENERAL = Uml2Package.CLASS__GENERAL;
+	int SERVICE_CLASS__GENERAL = Uml2Package.STEREOTYPE__GENERAL;
 
 	/**
 	 * The feature id for the '<em><b>Generalization</b></em>' containment reference list.
@@ -24728,7 +28706,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__GENERALIZATION = Uml2Package.CLASS__GENERALIZATION;
+	int SERVICE_CLASS__GENERALIZATION = Uml2Package.STEREOTYPE__GENERALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Powertype Extent</b></em>' reference list.
@@ -24737,7 +28715,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__POWERTYPE_EXTENT = Uml2Package.CLASS__POWERTYPE_EXTENT;
+	int SERVICE_CLASS__POWERTYPE_EXTENT = Uml2Package.STEREOTYPE__POWERTYPE_EXTENT;
 
 	/**
 	 * The feature id for the '<em><b>Inherited Member</b></em>' reference list.
@@ -24746,7 +28724,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__INHERITED_MEMBER = Uml2Package.CLASS__INHERITED_MEMBER;
+	int SERVICE_CLASS__INHERITED_MEMBER = Uml2Package.STEREOTYPE__INHERITED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
@@ -24755,7 +28733,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__IS_ABSTRACT = Uml2Package.CLASS__IS_ABSTRACT;
+	int SERVICE_CLASS__IS_ABSTRACT = Uml2Package.STEREOTYPE__IS_ABSTRACT;
 
 	/**
 	 * The feature id for the '<em><b>Is Final Specialization</b></em>' attribute.
@@ -24764,7 +28742,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__IS_FINAL_SPECIALIZATION = Uml2Package.CLASS__IS_FINAL_SPECIALIZATION;
+	int SERVICE_CLASS__IS_FINAL_SPECIALIZATION = Uml2Package.STEREOTYPE__IS_FINAL_SPECIALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Use Case</b></em>' containment reference list.
@@ -24773,7 +28751,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__OWNED_USE_CASE = Uml2Package.CLASS__OWNED_USE_CASE;
+	int SERVICE_CLASS__OWNED_USE_CASE = Uml2Package.STEREOTYPE__OWNED_USE_CASE;
 
 	/**
 	 * The feature id for the '<em><b>Use Case</b></em>' reference list.
@@ -24782,7 +28760,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__USE_CASE = Uml2Package.CLASS__USE_CASE;
+	int SERVICE_CLASS__USE_CASE = Uml2Package.STEREOTYPE__USE_CASE;
 
 	/**
 	 * The feature id for the '<em><b>Redefined Classifier</b></em>' reference list.
@@ -24791,7 +28769,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__REDEFINED_CLASSIFIER = Uml2Package.CLASS__REDEFINED_CLASSIFIER;
+	int SERVICE_CLASS__REDEFINED_CLASSIFIER = Uml2Package.STEREOTYPE__REDEFINED_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Representation</b></em>' reference.
@@ -24800,7 +28778,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__REPRESENTATION = Uml2Package.CLASS__REPRESENTATION;
+	int SERVICE_CLASS__REPRESENTATION = Uml2Package.STEREOTYPE__REPRESENTATION;
 
 	/**
 	 * The feature id for the '<em><b>Substitution</b></em>' containment reference list.
@@ -24809,7 +28787,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__SUBSTITUTION = Uml2Package.CLASS__SUBSTITUTION;
+	int SERVICE_CLASS__SUBSTITUTION = Uml2Package.STEREOTYPE__SUBSTITUTION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Attribute</b></em>' containment reference list.
@@ -24818,7 +28796,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__OWNED_ATTRIBUTE = Uml2Package.CLASS__OWNED_ATTRIBUTE;
+	int SERVICE_CLASS__OWNED_ATTRIBUTE = Uml2Package.STEREOTYPE__OWNED_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Owned Connector</b></em>' containment reference list.
@@ -24827,7 +28805,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__OWNED_CONNECTOR = Uml2Package.CLASS__OWNED_CONNECTOR;
+	int SERVICE_CLASS__OWNED_CONNECTOR = Uml2Package.STEREOTYPE__OWNED_CONNECTOR;
 
 	/**
 	 * The feature id for the '<em><b>Part</b></em>' reference list.
@@ -24836,7 +28814,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__PART = Uml2Package.CLASS__PART;
+	int SERVICE_CLASS__PART = Uml2Package.STEREOTYPE__PART;
 
 	/**
 	 * The feature id for the '<em><b>Role</b></em>' reference list.
@@ -24845,7 +28823,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__ROLE = Uml2Package.CLASS__ROLE;
+	int SERVICE_CLASS__ROLE = Uml2Package.STEREOTYPE__ROLE;
 
 	/**
 	 * The feature id for the '<em><b>Owned Port</b></em>' reference list.
@@ -24854,7 +28832,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__OWNED_PORT = Uml2Package.CLASS__OWNED_PORT;
+	int SERVICE_CLASS__OWNED_PORT = Uml2Package.STEREOTYPE__OWNED_PORT;
 
 	/**
 	 * The feature id for the '<em><b>Classifier Behavior</b></em>' reference.
@@ -24863,7 +28841,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__CLASSIFIER_BEHAVIOR = Uml2Package.CLASS__CLASSIFIER_BEHAVIOR;
+	int SERVICE_CLASS__CLASSIFIER_BEHAVIOR = Uml2Package.STEREOTYPE__CLASSIFIER_BEHAVIOR;
 
 	/**
 	 * The feature id for the '<em><b>Interface Realization</b></em>' containment reference list.
@@ -24872,7 +28850,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__INTERFACE_REALIZATION = Uml2Package.CLASS__INTERFACE_REALIZATION;
+	int SERVICE_CLASS__INTERFACE_REALIZATION = Uml2Package.STEREOTYPE__INTERFACE_REALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Behavior</b></em>' containment reference list.
@@ -24881,7 +28859,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__OWNED_BEHAVIOR = Uml2Package.CLASS__OWNED_BEHAVIOR;
+	int SERVICE_CLASS__OWNED_BEHAVIOR = Uml2Package.STEREOTYPE__OWNED_BEHAVIOR;
 
 	/**
 	 * The feature id for the '<em><b>Owned Operation</b></em>' containment reference list.
@@ -24890,7 +28868,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__OWNED_OPERATION = Uml2Package.CLASS__OWNED_OPERATION;
+	int SERVICE_CLASS__OWNED_OPERATION = Uml2Package.STEREOTYPE__OWNED_OPERATION;
 
 	/**
 	 * The feature id for the '<em><b>Extension</b></em>' reference list.
@@ -24899,7 +28877,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__EXTENSION = Uml2Package.CLASS__EXTENSION;
+	int SERVICE_CLASS__EXTENSION = Uml2Package.STEREOTYPE__EXTENSION;
 
 	/**
 	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
@@ -24908,7 +28886,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__IS_ACTIVE = Uml2Package.CLASS__IS_ACTIVE;
+	int SERVICE_CLASS__IS_ACTIVE = Uml2Package.STEREOTYPE__IS_ACTIVE;
 
 	/**
 	 * The feature id for the '<em><b>Nested Classifier</b></em>' containment reference list.
@@ -24917,7 +28895,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__NESTED_CLASSIFIER = Uml2Package.CLASS__NESTED_CLASSIFIER;
+	int SERVICE_CLASS__NESTED_CLASSIFIER = Uml2Package.STEREOTYPE__NESTED_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Owned Reception</b></em>' containment reference list.
@@ -24926,7 +28904,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__OWNED_RECEPTION = Uml2Package.CLASS__OWNED_RECEPTION;
+	int SERVICE_CLASS__OWNED_RECEPTION = Uml2Package.STEREOTYPE__OWNED_RECEPTION;
 
 	/**
 	 * The feature id for the '<em><b>Super Class</b></em>' reference list.
@@ -24935,7 +28913,25 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__SUPER_CLASS = Uml2Package.CLASS__SUPER_CLASS;
+	int SERVICE_CLASS__SUPER_CLASS = Uml2Package.STEREOTYPE__SUPER_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_CLASS__ICON = Uml2Package.STEREOTYPE__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Profile</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_CLASS__PROFILE = Uml2Package.STEREOTYPE__PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Service Class Attribute</b></em>' containment reference.
@@ -24944,7 +28940,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE = Uml2Package.CLASS_FEATURE_COUNT + 0;
+	int SERVICE_CLASS__SERVICE_CLASS_ATTRIBUTE = Uml2Package.STEREOTYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Service Class Operation</b></em>' containment reference list.
@@ -24953,7 +28949,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS__SERVICE_CLASS_OPERATION = Uml2Package.CLASS_FEATURE_COUNT + 1;
+	int SERVICE_CLASS__SERVICE_CLASS_OPERATION = Uml2Package.STEREOTYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Service Class</em>' class.
@@ -24962,7 +28958,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS_FEATURE_COUNT = Uml2Package.CLASS_FEATURE_COUNT + 2;
+	int SERVICE_CLASS_FEATURE_COUNT = Uml2Package.STEREOTYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Not Own Self</em>' operation.
@@ -24971,7 +28967,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Has Owner</em>' operation.
@@ -24980,7 +28976,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>All Owned Elements</em>' operation.
@@ -24989,7 +28985,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___ALL_OWNED_ELEMENTS = Uml2Package.CLASS___ALL_OWNED_ELEMENTS;
+	int SERVICE_CLASS___ALL_OWNED_ELEMENTS = Uml2Package.STEREOTYPE___ALL_OWNED_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>Must Be Owned</em>' operation.
@@ -24998,7 +28994,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___MUST_BE_OWNED = Uml2Package.CLASS___MUST_BE_OWNED;
+	int SERVICE_CLASS___MUST_BE_OWNED = Uml2Package.STEREOTYPE___MUST_BE_OWNED;
 
 	/**
 	 * The operation id for the '<em>Has Qualified Name</em>' operation.
@@ -25007,7 +29003,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
@@ -25016,7 +29012,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
@@ -25025,7 +29021,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>All Namespaces</em>' operation.
@@ -25034,7 +29030,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___ALL_NAMESPACES = Uml2Package.CLASS___ALL_NAMESPACES;
+	int SERVICE_CLASS___ALL_NAMESPACES = Uml2Package.STEREOTYPE___ALL_NAMESPACES;
 
 	/**
 	 * The operation id for the '<em>All Owning Packages</em>' operation.
@@ -25043,7 +29039,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___ALL_OWNING_PACKAGES = Uml2Package.CLASS___ALL_OWNING_PACKAGES;
+	int SERVICE_CLASS___ALL_OWNING_PACKAGES = Uml2Package.STEREOTYPE___ALL_OWNING_PACKAGES;
 
 	/**
 	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
@@ -25052,7 +29048,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+	int SERVICE_CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.STEREOTYPE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
 
 	/**
 	 * The operation id for the '<em>Namespace</em>' operation.
@@ -25061,7 +29057,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___NAMESPACE = Uml2Package.CLASS___NAMESPACE;
+	int SERVICE_CLASS___NAMESPACE = Uml2Package.STEREOTYPE___NAMESPACE;
 
 	/**
 	 * The operation id for the '<em>Qualified Name</em>' operation.
@@ -25070,7 +29066,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___QUALIFIED_NAME = Uml2Package.CLASS___QUALIFIED_NAME;
+	int SERVICE_CLASS___QUALIFIED_NAME = Uml2Package.STEREOTYPE___QUALIFIED_NAME;
 
 	/**
 	 * The operation id for the '<em>Separator</em>' operation.
@@ -25079,7 +29075,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___SEPARATOR = Uml2Package.CLASS___SEPARATOR;
+	int SERVICE_CLASS___SEPARATOR = Uml2Package.STEREOTYPE___SEPARATOR;
 
 	/**
 	 * The operation id for the '<em>Members Distinguishable</em>' operation.
@@ -25088,7 +29084,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Exclude Collisions</em>' operation.
@@ -25097,7 +29093,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___EXCLUDE_COLLISIONS__ELIST = Uml2Package.CLASS___EXCLUDE_COLLISIONS__ELIST;
+	int SERVICE_CLASS___EXCLUDE_COLLISIONS__ELIST = Uml2Package.STEREOTYPE___EXCLUDE_COLLISIONS__ELIST;
 
 	/**
 	 * The operation id for the '<em>Get Names Of Member</em>' operation.
@@ -25106,7 +29102,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+	int SERVICE_CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.STEREOTYPE___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Import Members</em>' operation.
@@ -25115,7 +29111,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___IMPORT_MEMBERS__ELIST = Uml2Package.CLASS___IMPORT_MEMBERS__ELIST;
+	int SERVICE_CLASS___IMPORT_MEMBERS__ELIST = Uml2Package.STEREOTYPE___IMPORT_MEMBERS__ELIST;
 
 	/**
 	 * The operation id for the '<em>Imported Member</em>' operation.
@@ -25124,7 +29120,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___IMPORTED_MEMBER = Uml2Package.CLASS___IMPORTED_MEMBER;
+	int SERVICE_CLASS___IMPORTED_MEMBER = Uml2Package.STEREOTYPE___IMPORTED_MEMBER;
 
 	/**
 	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
@@ -25133,7 +29129,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.CLASS___MEMBERS_ARE_DISTINGUISHABLE;
+	int SERVICE_CLASS___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.STEREOTYPE___MEMBERS_ARE_DISTINGUISHABLE;
 
 	/**
 	 * The operation id for the '<em>Owned Member</em>' operation.
@@ -25142,7 +29138,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___OWNED_MEMBER = Uml2Package.CLASS___OWNED_MEMBER;
+	int SERVICE_CLASS___OWNED_MEMBER = Uml2Package.STEREOTYPE___OWNED_MEMBER;
 
 	/**
 	 * The operation id for the '<em>Non Leaf Redefinition</em>' operation.
@@ -25151,7 +29147,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Redefinition Context Valid</em>' operation.
@@ -25160,7 +29156,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Redefinition Consistent</em>' operation.
@@ -25169,7 +29165,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Is Consistent With</em>' operation.
@@ -25178,7 +29174,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = Uml2Package.CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
+	int SERVICE_CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = Uml2Package.STEREOTYPE___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
@@ -25187,7 +29183,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = Uml2Package.CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
+	int SERVICE_CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = Uml2Package.STEREOTYPE___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Compatible With</em>' operation.
@@ -25196,7 +29192,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+	int SERVICE_CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.STEREOTYPE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Template Parameter</em>' operation.
@@ -25205,7 +29201,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___IS_TEMPLATE_PARAMETER = Uml2Package.CLASS___IS_TEMPLATE_PARAMETER;
+	int SERVICE_CLASS___IS_TEMPLATE_PARAMETER = Uml2Package.STEREOTYPE___IS_TEMPLATE_PARAMETER;
 
 	/**
 	 * The operation id for the '<em>Conforms To</em>' operation.
@@ -25214,7 +29210,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___CONFORMS_TO__TYPE = Uml2Package.CLASS___CONFORMS_TO__TYPE;
+	int SERVICE_CLASS___CONFORMS_TO__TYPE = Uml2Package.STEREOTYPE___CONFORMS_TO__TYPE;
 
 	/**
 	 * The operation id for the '<em>Is Template</em>' operation.
@@ -25223,7 +29219,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___IS_TEMPLATE = Uml2Package.CLASS___IS_TEMPLATE;
+	int SERVICE_CLASS___IS_TEMPLATE = Uml2Package.STEREOTYPE___IS_TEMPLATE;
 
 	/**
 	 * The operation id for the '<em>Parameterable Elements</em>' operation.
@@ -25232,7 +29228,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___PARAMETERABLE_ELEMENTS = Uml2Package.CLASS___PARAMETERABLE_ELEMENTS;
+	int SERVICE_CLASS___PARAMETERABLE_ELEMENTS = Uml2Package.STEREOTYPE___PARAMETERABLE_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>No Cycles In Generalization</em>' operation.
@@ -25241,7 +29237,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Specialize Type</em>' operation.
@@ -25250,7 +29246,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Non Final Parents</em>' operation.
@@ -25259,7 +29255,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Maps To Generalization Set</em>' operation.
@@ -25268,7 +29264,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>All Features</em>' operation.
@@ -25277,7 +29273,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___ALL_FEATURES = Uml2Package.CLASS___ALL_FEATURES;
+	int SERVICE_CLASS___ALL_FEATURES = Uml2Package.STEREOTYPE___ALL_FEATURES;
 
 	/**
 	 * The operation id for the '<em>All Parents</em>' operation.
@@ -25286,7 +29282,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___ALL_PARENTS = Uml2Package.CLASS___ALL_PARENTS;
+	int SERVICE_CLASS___ALL_PARENTS = Uml2Package.STEREOTYPE___ALL_PARENTS;
 
 	/**
 	 * The operation id for the '<em>Conforms To</em>' operation.
@@ -25295,7 +29291,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___CONFORMS_TO__CLASSIFIER = Uml2Package.CLASS___CONFORMS_TO__CLASSIFIER;
+	int SERVICE_CLASS___CONFORMS_TO__CLASSIFIER = Uml2Package.STEREOTYPE___CONFORMS_TO__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>General</em>' operation.
@@ -25304,7 +29300,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___GENERAL = Uml2Package.CLASS___GENERAL;
+	int SERVICE_CLASS___GENERAL = Uml2Package.STEREOTYPE___GENERAL;
 
 	/**
 	 * The operation id for the '<em>Has Visibility Of</em>' operation.
@@ -25313,7 +29309,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT = Uml2Package.CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT;
+	int SERVICE_CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT = Uml2Package.STEREOTYPE___HAS_VISIBILITY_OF__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Inherit</em>' operation.
@@ -25322,7 +29318,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___INHERIT__ELIST = Uml2Package.CLASS___INHERIT__ELIST;
+	int SERVICE_CLASS___INHERIT__ELIST = Uml2Package.STEREOTYPE___INHERIT__ELIST;
 
 	/**
 	 * The operation id for the '<em>Inheritable Members</em>' operation.
@@ -25331,7 +29327,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___INHERITABLE_MEMBERS__CLASSIFIER = Uml2Package.CLASS___INHERITABLE_MEMBERS__CLASSIFIER;
+	int SERVICE_CLASS___INHERITABLE_MEMBERS__CLASSIFIER = Uml2Package.STEREOTYPE___INHERITABLE_MEMBERS__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>Inherited Member</em>' operation.
@@ -25340,7 +29336,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___INHERITED_MEMBER = Uml2Package.CLASS___INHERITED_MEMBER;
+	int SERVICE_CLASS___INHERITED_MEMBER = Uml2Package.STEREOTYPE___INHERITED_MEMBER;
 
 	/**
 	 * The operation id for the '<em>May Specialize Type</em>' operation.
@@ -25349,7 +29345,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER = Uml2Package.CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER;
+	int SERVICE_CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER = Uml2Package.STEREOTYPE___MAY_SPECIALIZE_TYPE__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>Parents</em>' operation.
@@ -25358,7 +29354,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___PARENTS = Uml2Package.CLASS___PARENTS;
+	int SERVICE_CLASS___PARENTS = Uml2Package.STEREOTYPE___PARENTS;
 
 	/**
 	 * The operation id for the '<em>Multiplicities</em>' operation.
@@ -25367,7 +29363,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___MULTIPLICITIES__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Part</em>' operation.
@@ -25376,7 +29372,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___PART = Uml2Package.CLASS___PART;
+	int SERVICE_CLASS___PART = Uml2Package.STEREOTYPE___PART;
 
 	/**
 	 * The operation id for the '<em>Owned Port</em>' operation.
@@ -25385,7 +29381,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___OWNED_PORT = Uml2Package.CLASS___OWNED_PORT;
+	int SERVICE_CLASS___OWNED_PORT = Uml2Package.STEREOTYPE___OWNED_PORT;
 
 	/**
 	 * The operation id for the '<em>Class Behavior</em>' operation.
@@ -25394,7 +29390,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Passive Class</em>' operation.
@@ -25403,7 +29399,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = Uml2Package.CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CLASS___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Extension</em>' operation.
@@ -25412,7 +29408,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___EXTENSION = Uml2Package.CLASS___EXTENSION;
+	int SERVICE_CLASS___EXTENSION = Uml2Package.STEREOTYPE___EXTENSION;
 
 	/**
 	 * The operation id for the '<em>Super Class</em>' operation.
@@ -25421,7 +29417,61 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS___SUPER_CLASS = Uml2Package.CLASS___SUPER_CLASS;
+	int SERVICE_CLASS___SUPER_CLASS = Uml2Package.STEREOTYPE___SUPER_CLASS;
+
+	/**
+	 * The operation id for the '<em>Generalize</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___GENERALIZE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Association End Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Binary Associations Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Name Not Clash</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP = Uml2Package.STEREOTYPE___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_CLASS___CONTAINING_PROFILE = Uml2Package.STEREOTYPE___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_CLASS___PROFILE = Uml2Package.STEREOTYPE___PROFILE;
 
 	/**
 	 * The number of operations of the '<em>Service Class</em>' class.
@@ -25430,7 +29480,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_CLASS_OPERATION_COUNT = Uml2Package.CLASS_OPERATION_COUNT + 0;
+	int SERVICE_CLASS_OPERATION_COUNT = Uml2Package.STEREOTYPE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.ServiceInterfaceImpl <em>Service Interface</em>}' class.
@@ -35320,13 +39370,256 @@ public interface FramewebPackage extends EPackage {
 	int DOMAIN_PACKAGE = 60;
 
 	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__OWNED_COMMENT = Uml2Package.PACKAGE__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__OWNED_ELEMENT = Uml2Package.PACKAGE__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__OWNER = Uml2Package.PACKAGE__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__CLIENT_DEPENDENCY = Uml2Package.PACKAGE__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__NAME = Uml2Package.PACKAGE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__NAME_EXPRESSION = Uml2Package.PACKAGE__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__NAMESPACE = Uml2Package.PACKAGE__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__QUALIFIED_NAME = Uml2Package.PACKAGE__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__VISIBILITY = Uml2Package.PACKAGE__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__ELEMENT_IMPORT = Uml2Package.PACKAGE__ELEMENT_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__IMPORTED_MEMBER = Uml2Package.PACKAGE__IMPORTED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__MEMBER = Uml2Package.PACKAGE__MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__OWNED_MEMBER = Uml2Package.PACKAGE__OWNED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__OWNED_RULE = Uml2Package.PACKAGE__OWNED_RULE;
+
+	/**
+	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__PACKAGE_IMPORT = Uml2Package.PACKAGE__PACKAGE_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__OWNING_TEMPLATE_PARAMETER = Uml2Package.PACKAGE__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__TEMPLATE_PARAMETER = Uml2Package.PACKAGE__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__TEMPLATE_BINDING = Uml2Package.PACKAGE__TEMPLATE_BINDING;
+
+	/**
+	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__OWNED_TEMPLATE_SIGNATURE = Uml2Package.PACKAGE__OWNED_TEMPLATE_SIGNATURE;
+
+	/**
+	 * The feature id for the '<em><b>Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__URI = Uml2Package.PACKAGE__URI;
+
+	/**
+	 * The feature id for the '<em><b>Nested Package</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__NESTED_PACKAGE = Uml2Package.PACKAGE__NESTED_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Nesting Package</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__NESTING_PACKAGE = Uml2Package.PACKAGE__NESTING_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Stereotype</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__OWNED_STEREOTYPE = Uml2Package.PACKAGE__OWNED_STEREOTYPE;
+
+	/**
+	 * The feature id for the '<em><b>Package Merge</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__PACKAGE_MERGE = Uml2Package.PACKAGE__PACKAGE_MERGE;
+
+	/**
+	 * The feature id for the '<em><b>Packaged Element</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__PACKAGED_ELEMENT = Uml2Package.PACKAGE__PACKAGED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Profile Application</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__PROFILE_APPLICATION = Uml2Package.PACKAGE__PROFILE_APPLICATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Type</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE__OWNED_TYPE = Uml2Package.PACKAGE__OWNED_TYPE;
+
+	/**
 	 * The feature id for the '<em><b>Domain Package Class</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS = 0;
+	int DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS = Uml2Package.PACKAGE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Domain Package</em>' class.
@@ -35335,7 +39628,295 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_PACKAGE_FEATURE_COUNT = 1;
+	int DOMAIN_PACKAGE_FEATURE_COUNT = Uml2Package.PACKAGE_FEATURE_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___ALL_OWNED_ELEMENTS = Uml2Package.PACKAGE___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___MUST_BE_OWNED = Uml2Package.PACKAGE___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___ALL_NAMESPACES = Uml2Package.PACKAGE___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___ALL_OWNING_PACKAGES = Uml2Package.PACKAGE___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.PACKAGE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___NAMESPACE = Uml2Package.PACKAGE___NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___QUALIFIED_NAME = Uml2Package.PACKAGE___QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___SEPARATOR = Uml2Package.PACKAGE___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Members Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Exclude Collisions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___EXCLUDE_COLLISIONS__ELIST = Uml2Package.PACKAGE___EXCLUDE_COLLISIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Names Of Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.PACKAGE___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Import Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___IMPORT_MEMBERS__ELIST = Uml2Package.PACKAGE___IMPORT_MEMBERS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Imported Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___IMPORTED_MEMBER = Uml2Package.PACKAGE___IMPORTED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.PACKAGE___MEMBERS_ARE_DISTINGUISHABLE;
+
+	/**
+	 * The operation id for the '<em>Owned Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___OWNED_MEMBER = Uml2Package.PACKAGE___OWNED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.PACKAGE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___IS_TEMPLATE_PARAMETER = Uml2Package.PACKAGE___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Is Template</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___IS_TEMPLATE = Uml2Package.PACKAGE___IS_TEMPLATE;
+
+	/**
+	 * The operation id for the '<em>Parameterable Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___PARAMETERABLE_ELEMENTS = Uml2Package.PACKAGE___PARAMETERABLE_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Elements Public Or Private</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___ALL_APPLICABLE_STEREOTYPES = Uml2Package.PACKAGE___ALL_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___CONTAINING_PROFILE = Uml2Package.PACKAGE___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Makes Visible</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___MAKES_VISIBLE__NAMEDELEMENT = Uml2Package.PACKAGE___MAKES_VISIBLE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Nested Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___NESTED_PACKAGE = Uml2Package.PACKAGE___NESTED_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Owned Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___OWNED_STEREOTYPE = Uml2Package.PACKAGE___OWNED_STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Owned Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___OWNED_TYPE = Uml2Package.PACKAGE___OWNED_TYPE;
+
+	/**
+	 * The operation id for the '<em>Visible Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_PACKAGE___VISIBLE_MEMBERS = Uml2Package.PACKAGE___VISIBLE_MEMBERS;
 
 	/**
 	 * The number of operations of the '<em>Domain Package</em>' class.
@@ -35344,7 +39925,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_PACKAGE_OPERATION_COUNT = 0;
+	int DOMAIN_PACKAGE_OPERATION_COUNT = Uml2Package.PACKAGE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.NavigationPackageImpl <em>Navigation Package</em>}' class.
@@ -35357,13 +39938,544 @@ public interface FramewebPackage extends EPackage {
 	int NAVIGATION_PACKAGE = 67;
 
 	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__OWNED_COMMENT = Uml2Package.PACKAGE__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__OWNED_ELEMENT = Uml2Package.PACKAGE__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__OWNER = Uml2Package.PACKAGE__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__CLIENT_DEPENDENCY = Uml2Package.PACKAGE__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__NAME = Uml2Package.PACKAGE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__NAME_EXPRESSION = Uml2Package.PACKAGE__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__NAMESPACE = Uml2Package.PACKAGE__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__QUALIFIED_NAME = Uml2Package.PACKAGE__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__VISIBILITY = Uml2Package.PACKAGE__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__ELEMENT_IMPORT = Uml2Package.PACKAGE__ELEMENT_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__IMPORTED_MEMBER = Uml2Package.PACKAGE__IMPORTED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__MEMBER = Uml2Package.PACKAGE__MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__OWNED_MEMBER = Uml2Package.PACKAGE__OWNED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__OWNED_RULE = Uml2Package.PACKAGE__OWNED_RULE;
+
+	/**
+	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__PACKAGE_IMPORT = Uml2Package.PACKAGE__PACKAGE_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__OWNING_TEMPLATE_PARAMETER = Uml2Package.PACKAGE__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__TEMPLATE_PARAMETER = Uml2Package.PACKAGE__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__TEMPLATE_BINDING = Uml2Package.PACKAGE__TEMPLATE_BINDING;
+
+	/**
+	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__OWNED_TEMPLATE_SIGNATURE = Uml2Package.PACKAGE__OWNED_TEMPLATE_SIGNATURE;
+
+	/**
+	 * The feature id for the '<em><b>Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__URI = Uml2Package.PACKAGE__URI;
+
+	/**
+	 * The feature id for the '<em><b>Nested Package</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__NESTED_PACKAGE = Uml2Package.PACKAGE__NESTED_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Nesting Package</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__NESTING_PACKAGE = Uml2Package.PACKAGE__NESTING_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Stereotype</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__OWNED_STEREOTYPE = Uml2Package.PACKAGE__OWNED_STEREOTYPE;
+
+	/**
+	 * The feature id for the '<em><b>Package Merge</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__PACKAGE_MERGE = Uml2Package.PACKAGE__PACKAGE_MERGE;
+
+	/**
+	 * The feature id for the '<em><b>Packaged Element</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__PACKAGED_ELEMENT = Uml2Package.PACKAGE__PACKAGED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Profile Application</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__PROFILE_APPLICATION = Uml2Package.PACKAGE__PROFILE_APPLICATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Type</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE__OWNED_TYPE = Uml2Package.PACKAGE__OWNED_TYPE;
+
+	/**
 	 * The number of structural features of the '<em>Navigation Package</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_PACKAGE_FEATURE_COUNT = 0;
+	int NAVIGATION_PACKAGE_FEATURE_COUNT = Uml2Package.PACKAGE_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___ALL_OWNED_ELEMENTS = Uml2Package.PACKAGE___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___MUST_BE_OWNED = Uml2Package.PACKAGE___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___ALL_NAMESPACES = Uml2Package.PACKAGE___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___ALL_OWNING_PACKAGES = Uml2Package.PACKAGE___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.PACKAGE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___NAMESPACE = Uml2Package.PACKAGE___NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___QUALIFIED_NAME = Uml2Package.PACKAGE___QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___SEPARATOR = Uml2Package.PACKAGE___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Members Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Exclude Collisions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___EXCLUDE_COLLISIONS__ELIST = Uml2Package.PACKAGE___EXCLUDE_COLLISIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Names Of Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.PACKAGE___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Import Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___IMPORT_MEMBERS__ELIST = Uml2Package.PACKAGE___IMPORT_MEMBERS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Imported Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___IMPORTED_MEMBER = Uml2Package.PACKAGE___IMPORTED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.PACKAGE___MEMBERS_ARE_DISTINGUISHABLE;
+
+	/**
+	 * The operation id for the '<em>Owned Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___OWNED_MEMBER = Uml2Package.PACKAGE___OWNED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.PACKAGE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___IS_TEMPLATE_PARAMETER = Uml2Package.PACKAGE___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Is Template</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___IS_TEMPLATE = Uml2Package.PACKAGE___IS_TEMPLATE;
+
+	/**
+	 * The operation id for the '<em>Parameterable Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___PARAMETERABLE_ELEMENTS = Uml2Package.PACKAGE___PARAMETERABLE_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Elements Public Or Private</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___ALL_APPLICABLE_STEREOTYPES = Uml2Package.PACKAGE___ALL_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___CONTAINING_PROFILE = Uml2Package.PACKAGE___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Makes Visible</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___MAKES_VISIBLE__NAMEDELEMENT = Uml2Package.PACKAGE___MAKES_VISIBLE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Nested Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___NESTED_PACKAGE = Uml2Package.PACKAGE___NESTED_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Owned Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___OWNED_STEREOTYPE = Uml2Package.PACKAGE___OWNED_STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Owned Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___OWNED_TYPE = Uml2Package.PACKAGE___OWNED_TYPE;
+
+	/**
+	 * The operation id for the '<em>Visible Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PACKAGE___VISIBLE_MEMBERS = Uml2Package.PACKAGE___VISIBLE_MEMBERS;
 
 	/**
 	 * The number of operations of the '<em>Navigation Package</em>' class.
@@ -35372,7 +40484,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_PACKAGE_OPERATION_COUNT = 0;
+	int NAVIGATION_PACKAGE_OPERATION_COUNT = Uml2Package.PACKAGE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.ViewPackageImpl <em>View Package</em>}' class.
@@ -35383,6 +40495,249 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 */
 	int VIEW_PACKAGE = 61;
+
+	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__OWNED_COMMENT = NAVIGATION_PACKAGE__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__OWNED_ELEMENT = NAVIGATION_PACKAGE__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__OWNER = NAVIGATION_PACKAGE__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__CLIENT_DEPENDENCY = NAVIGATION_PACKAGE__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__NAME = NAVIGATION_PACKAGE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__NAME_EXPRESSION = NAVIGATION_PACKAGE__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__NAMESPACE = NAVIGATION_PACKAGE__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__QUALIFIED_NAME = NAVIGATION_PACKAGE__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__VISIBILITY = NAVIGATION_PACKAGE__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__ELEMENT_IMPORT = NAVIGATION_PACKAGE__ELEMENT_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__IMPORTED_MEMBER = NAVIGATION_PACKAGE__IMPORTED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__MEMBER = NAVIGATION_PACKAGE__MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__OWNED_MEMBER = NAVIGATION_PACKAGE__OWNED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__OWNED_RULE = NAVIGATION_PACKAGE__OWNED_RULE;
+
+	/**
+	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__PACKAGE_IMPORT = NAVIGATION_PACKAGE__PACKAGE_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__OWNING_TEMPLATE_PARAMETER = NAVIGATION_PACKAGE__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__TEMPLATE_PARAMETER = NAVIGATION_PACKAGE__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__TEMPLATE_BINDING = NAVIGATION_PACKAGE__TEMPLATE_BINDING;
+
+	/**
+	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__OWNED_TEMPLATE_SIGNATURE = NAVIGATION_PACKAGE__OWNED_TEMPLATE_SIGNATURE;
+
+	/**
+	 * The feature id for the '<em><b>Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__URI = NAVIGATION_PACKAGE__URI;
+
+	/**
+	 * The feature id for the '<em><b>Nested Package</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__NESTED_PACKAGE = NAVIGATION_PACKAGE__NESTED_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Nesting Package</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__NESTING_PACKAGE = NAVIGATION_PACKAGE__NESTING_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Stereotype</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__OWNED_STEREOTYPE = NAVIGATION_PACKAGE__OWNED_STEREOTYPE;
+
+	/**
+	 * The feature id for the '<em><b>Package Merge</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__PACKAGE_MERGE = NAVIGATION_PACKAGE__PACKAGE_MERGE;
+
+	/**
+	 * The feature id for the '<em><b>Packaged Element</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__PACKAGED_ELEMENT = NAVIGATION_PACKAGE__PACKAGED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Profile Application</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__PROFILE_APPLICATION = NAVIGATION_PACKAGE__PROFILE_APPLICATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Type</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE__OWNED_TYPE = NAVIGATION_PACKAGE__OWNED_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>View Package Class</b></em>' containment reference list.
@@ -35401,6 +40756,294 @@ public interface FramewebPackage extends EPackage {
 	 * @ordered
 	 */
 	int VIEW_PACKAGE_FEATURE_COUNT = NAVIGATION_PACKAGE_FEATURE_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = NAVIGATION_PACKAGE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___HAS_OWNER__DIAGNOSTICCHAIN_MAP = NAVIGATION_PACKAGE___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___ALL_OWNED_ELEMENTS = NAVIGATION_PACKAGE___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___MUST_BE_OWNED = NAVIGATION_PACKAGE___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = NAVIGATION_PACKAGE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = NAVIGATION_PACKAGE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = NAVIGATION_PACKAGE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___ALL_NAMESPACES = NAVIGATION_PACKAGE___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___ALL_OWNING_PACKAGES = NAVIGATION_PACKAGE___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = NAVIGATION_PACKAGE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___NAMESPACE = NAVIGATION_PACKAGE___NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___QUALIFIED_NAME = NAVIGATION_PACKAGE___QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___SEPARATOR = NAVIGATION_PACKAGE___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Members Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = NAVIGATION_PACKAGE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Exclude Collisions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___EXCLUDE_COLLISIONS__ELIST = NAVIGATION_PACKAGE___EXCLUDE_COLLISIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Names Of Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___GET_NAMES_OF_MEMBER__NAMEDELEMENT = NAVIGATION_PACKAGE___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Import Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___IMPORT_MEMBERS__ELIST = NAVIGATION_PACKAGE___IMPORT_MEMBERS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Imported Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___IMPORTED_MEMBER = NAVIGATION_PACKAGE___IMPORTED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___MEMBERS_ARE_DISTINGUISHABLE = NAVIGATION_PACKAGE___MEMBERS_ARE_DISTINGUISHABLE;
+
+	/**
+	 * The operation id for the '<em>Owned Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___OWNED_MEMBER = NAVIGATION_PACKAGE___OWNED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = NAVIGATION_PACKAGE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___IS_TEMPLATE_PARAMETER = NAVIGATION_PACKAGE___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Is Template</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___IS_TEMPLATE = NAVIGATION_PACKAGE___IS_TEMPLATE;
+
+	/**
+	 * The operation id for the '<em>Parameterable Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___PARAMETERABLE_ELEMENTS = NAVIGATION_PACKAGE___PARAMETERABLE_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Elements Public Or Private</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP = NAVIGATION_PACKAGE___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___ALL_APPLICABLE_STEREOTYPES = NAVIGATION_PACKAGE___ALL_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___CONTAINING_PROFILE = NAVIGATION_PACKAGE___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Makes Visible</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___MAKES_VISIBLE__NAMEDELEMENT = NAVIGATION_PACKAGE___MAKES_VISIBLE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Nested Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___NESTED_PACKAGE = NAVIGATION_PACKAGE___NESTED_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Owned Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___OWNED_STEREOTYPE = NAVIGATION_PACKAGE___OWNED_STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Owned Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___OWNED_TYPE = NAVIGATION_PACKAGE___OWNED_TYPE;
+
+	/**
+	 * The operation id for the '<em>Visible Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_PACKAGE___VISIBLE_MEMBERS = NAVIGATION_PACKAGE___VISIBLE_MEMBERS;
 
 	/**
 	 * The number of operations of the '<em>View Package</em>' class.
@@ -35422,6 +41065,249 @@ public interface FramewebPackage extends EPackage {
 	int CONTROLLER_PACKAGE = 62;
 
 	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__OWNED_COMMENT = NAVIGATION_PACKAGE__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__OWNED_ELEMENT = NAVIGATION_PACKAGE__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__OWNER = NAVIGATION_PACKAGE__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__CLIENT_DEPENDENCY = NAVIGATION_PACKAGE__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__NAME = NAVIGATION_PACKAGE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__NAME_EXPRESSION = NAVIGATION_PACKAGE__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__NAMESPACE = NAVIGATION_PACKAGE__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__QUALIFIED_NAME = NAVIGATION_PACKAGE__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__VISIBILITY = NAVIGATION_PACKAGE__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__ELEMENT_IMPORT = NAVIGATION_PACKAGE__ELEMENT_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__IMPORTED_MEMBER = NAVIGATION_PACKAGE__IMPORTED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__MEMBER = NAVIGATION_PACKAGE__MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__OWNED_MEMBER = NAVIGATION_PACKAGE__OWNED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__OWNED_RULE = NAVIGATION_PACKAGE__OWNED_RULE;
+
+	/**
+	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__PACKAGE_IMPORT = NAVIGATION_PACKAGE__PACKAGE_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__OWNING_TEMPLATE_PARAMETER = NAVIGATION_PACKAGE__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__TEMPLATE_PARAMETER = NAVIGATION_PACKAGE__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__TEMPLATE_BINDING = NAVIGATION_PACKAGE__TEMPLATE_BINDING;
+
+	/**
+	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__OWNED_TEMPLATE_SIGNATURE = NAVIGATION_PACKAGE__OWNED_TEMPLATE_SIGNATURE;
+
+	/**
+	 * The feature id for the '<em><b>Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__URI = NAVIGATION_PACKAGE__URI;
+
+	/**
+	 * The feature id for the '<em><b>Nested Package</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__NESTED_PACKAGE = NAVIGATION_PACKAGE__NESTED_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Nesting Package</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__NESTING_PACKAGE = NAVIGATION_PACKAGE__NESTING_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Stereotype</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__OWNED_STEREOTYPE = NAVIGATION_PACKAGE__OWNED_STEREOTYPE;
+
+	/**
+	 * The feature id for the '<em><b>Package Merge</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__PACKAGE_MERGE = NAVIGATION_PACKAGE__PACKAGE_MERGE;
+
+	/**
+	 * The feature id for the '<em><b>Packaged Element</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__PACKAGED_ELEMENT = NAVIGATION_PACKAGE__PACKAGED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Profile Application</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__PROFILE_APPLICATION = NAVIGATION_PACKAGE__PROFILE_APPLICATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Type</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE__OWNED_TYPE = NAVIGATION_PACKAGE__OWNED_TYPE;
+
+	/**
 	 * The feature id for the '<em><b>Controller Package Class</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -35438,6 +41324,294 @@ public interface FramewebPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONTROLLER_PACKAGE_FEATURE_COUNT = NAVIGATION_PACKAGE_FEATURE_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = NAVIGATION_PACKAGE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___HAS_OWNER__DIAGNOSTICCHAIN_MAP = NAVIGATION_PACKAGE___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___ALL_OWNED_ELEMENTS = NAVIGATION_PACKAGE___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___MUST_BE_OWNED = NAVIGATION_PACKAGE___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = NAVIGATION_PACKAGE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = NAVIGATION_PACKAGE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = NAVIGATION_PACKAGE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___ALL_NAMESPACES = NAVIGATION_PACKAGE___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___ALL_OWNING_PACKAGES = NAVIGATION_PACKAGE___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = NAVIGATION_PACKAGE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___NAMESPACE = NAVIGATION_PACKAGE___NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___QUALIFIED_NAME = NAVIGATION_PACKAGE___QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___SEPARATOR = NAVIGATION_PACKAGE___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Members Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = NAVIGATION_PACKAGE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Exclude Collisions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___EXCLUDE_COLLISIONS__ELIST = NAVIGATION_PACKAGE___EXCLUDE_COLLISIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Names Of Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___GET_NAMES_OF_MEMBER__NAMEDELEMENT = NAVIGATION_PACKAGE___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Import Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___IMPORT_MEMBERS__ELIST = NAVIGATION_PACKAGE___IMPORT_MEMBERS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Imported Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___IMPORTED_MEMBER = NAVIGATION_PACKAGE___IMPORTED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___MEMBERS_ARE_DISTINGUISHABLE = NAVIGATION_PACKAGE___MEMBERS_ARE_DISTINGUISHABLE;
+
+	/**
+	 * The operation id for the '<em>Owned Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___OWNED_MEMBER = NAVIGATION_PACKAGE___OWNED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = NAVIGATION_PACKAGE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___IS_TEMPLATE_PARAMETER = NAVIGATION_PACKAGE___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Is Template</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___IS_TEMPLATE = NAVIGATION_PACKAGE___IS_TEMPLATE;
+
+	/**
+	 * The operation id for the '<em>Parameterable Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___PARAMETERABLE_ELEMENTS = NAVIGATION_PACKAGE___PARAMETERABLE_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Elements Public Or Private</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP = NAVIGATION_PACKAGE___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___ALL_APPLICABLE_STEREOTYPES = NAVIGATION_PACKAGE___ALL_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___CONTAINING_PROFILE = NAVIGATION_PACKAGE___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Makes Visible</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___MAKES_VISIBLE__NAMEDELEMENT = NAVIGATION_PACKAGE___MAKES_VISIBLE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Nested Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___NESTED_PACKAGE = NAVIGATION_PACKAGE___NESTED_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Owned Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___OWNED_STEREOTYPE = NAVIGATION_PACKAGE___OWNED_STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Owned Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___OWNED_TYPE = NAVIGATION_PACKAGE___OWNED_TYPE;
+
+	/**
+	 * The operation id for the '<em>Visible Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER_PACKAGE___VISIBLE_MEMBERS = NAVIGATION_PACKAGE___VISIBLE_MEMBERS;
 
 	/**
 	 * The number of operations of the '<em>Controller Package</em>' class.
@@ -35459,13 +41633,256 @@ public interface FramewebPackage extends EPackage {
 	int PERSISTENCE_PACKAGE = 63;
 
 	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__OWNED_COMMENT = Uml2Package.PACKAGE__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__OWNED_ELEMENT = Uml2Package.PACKAGE__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__OWNER = Uml2Package.PACKAGE__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__CLIENT_DEPENDENCY = Uml2Package.PACKAGE__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__NAME = Uml2Package.PACKAGE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__NAME_EXPRESSION = Uml2Package.PACKAGE__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__NAMESPACE = Uml2Package.PACKAGE__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__QUALIFIED_NAME = Uml2Package.PACKAGE__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__VISIBILITY = Uml2Package.PACKAGE__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__ELEMENT_IMPORT = Uml2Package.PACKAGE__ELEMENT_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__IMPORTED_MEMBER = Uml2Package.PACKAGE__IMPORTED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__MEMBER = Uml2Package.PACKAGE__MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__OWNED_MEMBER = Uml2Package.PACKAGE__OWNED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__OWNED_RULE = Uml2Package.PACKAGE__OWNED_RULE;
+
+	/**
+	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__PACKAGE_IMPORT = Uml2Package.PACKAGE__PACKAGE_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__OWNING_TEMPLATE_PARAMETER = Uml2Package.PACKAGE__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__TEMPLATE_PARAMETER = Uml2Package.PACKAGE__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__TEMPLATE_BINDING = Uml2Package.PACKAGE__TEMPLATE_BINDING;
+
+	/**
+	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__OWNED_TEMPLATE_SIGNATURE = Uml2Package.PACKAGE__OWNED_TEMPLATE_SIGNATURE;
+
+	/**
+	 * The feature id for the '<em><b>Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__URI = Uml2Package.PACKAGE__URI;
+
+	/**
+	 * The feature id for the '<em><b>Nested Package</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__NESTED_PACKAGE = Uml2Package.PACKAGE__NESTED_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Nesting Package</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__NESTING_PACKAGE = Uml2Package.PACKAGE__NESTING_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Stereotype</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__OWNED_STEREOTYPE = Uml2Package.PACKAGE__OWNED_STEREOTYPE;
+
+	/**
+	 * The feature id for the '<em><b>Package Merge</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__PACKAGE_MERGE = Uml2Package.PACKAGE__PACKAGE_MERGE;
+
+	/**
+	 * The feature id for the '<em><b>Packaged Element</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__PACKAGED_ELEMENT = Uml2Package.PACKAGE__PACKAGED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Profile Application</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__PROFILE_APPLICATION = Uml2Package.PACKAGE__PROFILE_APPLICATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Type</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE__OWNED_TYPE = Uml2Package.PACKAGE__OWNED_TYPE;
+
+	/**
 	 * The feature id for the '<em><b>Persistence Package Interface</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE = 0;
+	int PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_INTERFACE = Uml2Package.PACKAGE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Persistence Package Class</b></em>' containment reference list.
@@ -35474,7 +41891,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS = 1;
+	int PERSISTENCE_PACKAGE__PERSISTENCE_PACKAGE_CLASS = Uml2Package.PACKAGE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Persistence Package</em>' class.
@@ -35483,7 +41900,295 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSISTENCE_PACKAGE_FEATURE_COUNT = 2;
+	int PERSISTENCE_PACKAGE_FEATURE_COUNT = Uml2Package.PACKAGE_FEATURE_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___ALL_OWNED_ELEMENTS = Uml2Package.PACKAGE___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___MUST_BE_OWNED = Uml2Package.PACKAGE___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___ALL_NAMESPACES = Uml2Package.PACKAGE___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___ALL_OWNING_PACKAGES = Uml2Package.PACKAGE___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.PACKAGE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___NAMESPACE = Uml2Package.PACKAGE___NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___QUALIFIED_NAME = Uml2Package.PACKAGE___QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___SEPARATOR = Uml2Package.PACKAGE___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Members Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Exclude Collisions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___EXCLUDE_COLLISIONS__ELIST = Uml2Package.PACKAGE___EXCLUDE_COLLISIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Names Of Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.PACKAGE___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Import Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___IMPORT_MEMBERS__ELIST = Uml2Package.PACKAGE___IMPORT_MEMBERS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Imported Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___IMPORTED_MEMBER = Uml2Package.PACKAGE___IMPORTED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.PACKAGE___MEMBERS_ARE_DISTINGUISHABLE;
+
+	/**
+	 * The operation id for the '<em>Owned Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___OWNED_MEMBER = Uml2Package.PACKAGE___OWNED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.PACKAGE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___IS_TEMPLATE_PARAMETER = Uml2Package.PACKAGE___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Is Template</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___IS_TEMPLATE = Uml2Package.PACKAGE___IS_TEMPLATE;
+
+	/**
+	 * The operation id for the '<em>Parameterable Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___PARAMETERABLE_ELEMENTS = Uml2Package.PACKAGE___PARAMETERABLE_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Elements Public Or Private</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___ALL_APPLICABLE_STEREOTYPES = Uml2Package.PACKAGE___ALL_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___CONTAINING_PROFILE = Uml2Package.PACKAGE___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Makes Visible</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___MAKES_VISIBLE__NAMEDELEMENT = Uml2Package.PACKAGE___MAKES_VISIBLE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Nested Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___NESTED_PACKAGE = Uml2Package.PACKAGE___NESTED_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Owned Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___OWNED_STEREOTYPE = Uml2Package.PACKAGE___OWNED_STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Owned Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___OWNED_TYPE = Uml2Package.PACKAGE___OWNED_TYPE;
+
+	/**
+	 * The operation id for the '<em>Visible Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSISTENCE_PACKAGE___VISIBLE_MEMBERS = Uml2Package.PACKAGE___VISIBLE_MEMBERS;
 
 	/**
 	 * The number of operations of the '<em>Persistence Package</em>' class.
@@ -35492,7 +42197,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSISTENCE_PACKAGE_OPERATION_COUNT = 0;
+	int PERSISTENCE_PACKAGE_OPERATION_COUNT = Uml2Package.PACKAGE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.ApplicationPackageImpl <em>Application Package</em>}' class.
@@ -35505,13 +42210,256 @@ public interface FramewebPackage extends EPackage {
 	int APPLICATION_PACKAGE = 64;
 
 	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__OWNED_COMMENT = Uml2Package.PACKAGE__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__OWNED_ELEMENT = Uml2Package.PACKAGE__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__OWNER = Uml2Package.PACKAGE__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__CLIENT_DEPENDENCY = Uml2Package.PACKAGE__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__NAME = Uml2Package.PACKAGE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__NAME_EXPRESSION = Uml2Package.PACKAGE__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__NAMESPACE = Uml2Package.PACKAGE__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__QUALIFIED_NAME = Uml2Package.PACKAGE__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__VISIBILITY = Uml2Package.PACKAGE__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__ELEMENT_IMPORT = Uml2Package.PACKAGE__ELEMENT_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__IMPORTED_MEMBER = Uml2Package.PACKAGE__IMPORTED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__MEMBER = Uml2Package.PACKAGE__MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__OWNED_MEMBER = Uml2Package.PACKAGE__OWNED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__OWNED_RULE = Uml2Package.PACKAGE__OWNED_RULE;
+
+	/**
+	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__PACKAGE_IMPORT = Uml2Package.PACKAGE__PACKAGE_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__OWNING_TEMPLATE_PARAMETER = Uml2Package.PACKAGE__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__TEMPLATE_PARAMETER = Uml2Package.PACKAGE__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__TEMPLATE_BINDING = Uml2Package.PACKAGE__TEMPLATE_BINDING;
+
+	/**
+	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__OWNED_TEMPLATE_SIGNATURE = Uml2Package.PACKAGE__OWNED_TEMPLATE_SIGNATURE;
+
+	/**
+	 * The feature id for the '<em><b>Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__URI = Uml2Package.PACKAGE__URI;
+
+	/**
+	 * The feature id for the '<em><b>Nested Package</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__NESTED_PACKAGE = Uml2Package.PACKAGE__NESTED_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Nesting Package</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__NESTING_PACKAGE = Uml2Package.PACKAGE__NESTING_PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Stereotype</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__OWNED_STEREOTYPE = Uml2Package.PACKAGE__OWNED_STEREOTYPE;
+
+	/**
+	 * The feature id for the '<em><b>Package Merge</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__PACKAGE_MERGE = Uml2Package.PACKAGE__PACKAGE_MERGE;
+
+	/**
+	 * The feature id for the '<em><b>Packaged Element</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__PACKAGED_ELEMENT = Uml2Package.PACKAGE__PACKAGED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Profile Application</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__PROFILE_APPLICATION = Uml2Package.PACKAGE__PROFILE_APPLICATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Type</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE__OWNED_TYPE = Uml2Package.PACKAGE__OWNED_TYPE;
+
+	/**
 	 * The feature id for the '<em><b>Service Package Class</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS = 0;
+	int APPLICATION_PACKAGE__SERVICE_PACKAGE_CLASS = Uml2Package.PACKAGE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Service Package Interface</b></em>' containment reference list.
@@ -35520,7 +42468,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE = 1;
+	int APPLICATION_PACKAGE__SERVICE_PACKAGE_INTERFACE = Uml2Package.PACKAGE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Application Package</em>' class.
@@ -35529,7 +42477,295 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_PACKAGE_FEATURE_COUNT = 2;
+	int APPLICATION_PACKAGE_FEATURE_COUNT = Uml2Package.PACKAGE_FEATURE_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___HAS_OWNER__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___ALL_OWNED_ELEMENTS = Uml2Package.PACKAGE___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___MUST_BE_OWNED = Uml2Package.PACKAGE___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___ALL_NAMESPACES = Uml2Package.PACKAGE___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___ALL_OWNING_PACKAGES = Uml2Package.PACKAGE___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = Uml2Package.PACKAGE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___NAMESPACE = Uml2Package.PACKAGE___NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___QUALIFIED_NAME = Uml2Package.PACKAGE___QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___SEPARATOR = Uml2Package.PACKAGE___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Members Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Exclude Collisions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___EXCLUDE_COLLISIONS__ELIST = Uml2Package.PACKAGE___EXCLUDE_COLLISIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Names Of Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___GET_NAMES_OF_MEMBER__NAMEDELEMENT = Uml2Package.PACKAGE___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Import Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___IMPORT_MEMBERS__ELIST = Uml2Package.PACKAGE___IMPORT_MEMBERS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Imported Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___IMPORTED_MEMBER = Uml2Package.PACKAGE___IMPORTED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___MEMBERS_ARE_DISTINGUISHABLE = Uml2Package.PACKAGE___MEMBERS_ARE_DISTINGUISHABLE;
+
+	/**
+	 * The operation id for the '<em>Owned Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___OWNED_MEMBER = Uml2Package.PACKAGE___OWNED_MEMBER;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = Uml2Package.PACKAGE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___IS_TEMPLATE_PARAMETER = Uml2Package.PACKAGE___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Is Template</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___IS_TEMPLATE = Uml2Package.PACKAGE___IS_TEMPLATE;
+
+	/**
+	 * The operation id for the '<em>Parameterable Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___PARAMETERABLE_ELEMENTS = Uml2Package.PACKAGE___PARAMETERABLE_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Elements Public Or Private</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP = Uml2Package.PACKAGE___ELEMENTS_PUBLIC_OR_PRIVATE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>All Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___ALL_APPLICABLE_STEREOTYPES = Uml2Package.PACKAGE___ALL_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___CONTAINING_PROFILE = Uml2Package.PACKAGE___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Makes Visible</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___MAKES_VISIBLE__NAMEDELEMENT = Uml2Package.PACKAGE___MAKES_VISIBLE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Nested Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___NESTED_PACKAGE = Uml2Package.PACKAGE___NESTED_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Owned Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___OWNED_STEREOTYPE = Uml2Package.PACKAGE___OWNED_STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Owned Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___OWNED_TYPE = Uml2Package.PACKAGE___OWNED_TYPE;
+
+	/**
+	 * The operation id for the '<em>Visible Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_PACKAGE___VISIBLE_MEMBERS = Uml2Package.PACKAGE___VISIBLE_MEMBERS;
 
 	/**
 	 * The number of operations of the '<em>Application Package</em>' class.
@@ -35538,7 +42774,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_PACKAGE_OPERATION_COUNT = 0;
+	int APPLICATION_PACKAGE_OPERATION_COUNT = Uml2Package.PACKAGE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.ComponentImpl <em>Component</em>}' class.
@@ -36010,6 +43246,24 @@ public interface FramewebPackage extends EPackage {
 	int COMPONENT__SUPER_CLASS = NAVIGATION_CLASS__SUPER_CLASS;
 
 	/**
+	 * The feature id for the '<em><b>Icon</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT__ICON = NAVIGATION_CLASS__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Profile</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT__PROFILE = NAVIGATION_CLASS__PROFILE;
+
+	/**
 	 * The number of structural features of the '<em>Component</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -36476,6 +43730,60 @@ public interface FramewebPackage extends EPackage {
 	 * @ordered
 	 */
 	int COMPONENT___SUPER_CLASS = NAVIGATION_CLASS___SUPER_CLASS;
+
+	/**
+	 * The operation id for the '<em>Generalize</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT___GENERALIZE__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Association End Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Binary Associations Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Name Not Clash</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT___CONTAINING_PROFILE = NAVIGATION_CLASS___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT___PROFILE = NAVIGATION_CLASS___PROFILE;
 
 	/**
 	 * The number of operations of the '<em>Component</em>' class.
@@ -37174,6 +44482,24 @@ public interface FramewebPackage extends EPackage {
 	int JQUERY__SUPER_CLASS = NAVIGATION_CLASS__SUPER_CLASS;
 
 	/**
+	 * The feature id for the '<em><b>Icon</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__ICON = NAVIGATION_CLASS__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Profile</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY__PROFILE = NAVIGATION_CLASS__PROFILE;
+
+	/**
 	 * The number of structural features of the '<em>JQuery</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -37640,6 +44966,60 @@ public interface FramewebPackage extends EPackage {
 	 * @ordered
 	 */
 	int JQUERY___SUPER_CLASS = NAVIGATION_CLASS___SUPER_CLASS;
+
+	/**
+	 * The operation id for the '<em>Generalize</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___GENERALIZE__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___GENERALIZE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Association End Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___ASSOCIATION_END_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Binary Associations Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___BINARY_ASSOCIATIONS_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Name Not Clash</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP = NAVIGATION_CLASS___NAME_NOT_CLASH__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Containing Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___CONTAINING_PROFILE = NAVIGATION_CLASS___CONTAINING_PROFILE;
+
+	/**
+	 * The operation id for the '<em>Profile</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JQUERY___PROFILE = NAVIGATION_CLASS___PROFILE;
 
 	/**
 	 * The number of operations of the '<em>JQuery</em>' class.

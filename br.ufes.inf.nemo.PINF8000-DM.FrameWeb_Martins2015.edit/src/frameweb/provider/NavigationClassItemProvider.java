@@ -4,20 +4,14 @@ package frameweb.provider;
 
 
 import frameweb.NavigationClass;
-
 import java.util.Collection;
 import java.util.List;
-
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-
 import uml2.Uml2Package;
-
-import uml2.provider.ClassItemProvider;
+import uml2.provider.StereotypeItemProvider;
 
 /**
  * This is the item provider adapter for a {@link frameweb.NavigationClass} object.
@@ -25,7 +19,7 @@ import uml2.provider.ClassItemProvider;
  * <!-- end-user-doc -->
  * @generated
  */
-public class NavigationClassItemProvider extends ClassItemProvider {
+public class NavigationClassItemProvider extends StereotypeItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->

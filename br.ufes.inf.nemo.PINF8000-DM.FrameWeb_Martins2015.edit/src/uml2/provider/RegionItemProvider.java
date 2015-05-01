@@ -248,17 +248,17 @@ public class RegionItemProvider extends NamespaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.REGION__SUBVERTEX,
-				 Uml2Factory.eINSTANCE.createConnectionPointReference()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.REGION__SUBVERTEX,
 				 Uml2Factory.eINSTANCE.createPseudostate()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.REGION__SUBVERTEX,
 				 Uml2Factory.eINSTANCE.createState()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.REGION__SUBVERTEX,
+				 Uml2Factory.eINSTANCE.createConnectionPointReference()));
 
 		newChildDescriptors.add
 			(createChildParameter

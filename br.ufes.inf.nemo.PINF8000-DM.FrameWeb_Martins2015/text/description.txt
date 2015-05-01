@@ -8,7 +8,7 @@ This can be disabled with -vmargs -Dorg.eclipse.emf.examples.generator.validator
 Contains packages:
   frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
   uml2 <http://www.omg.org/spec/UML/20110701>
-  primitiveTypes <http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi>
+  primitiveTypes <http://schema.omg.org/spec/QVT/1.1/primitivetypes.xml>
 
 Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
 
@@ -23,10 +23,10 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference Compose : FrameWebModel<<1..*>>
     Reference Uses : Framework<<1..*>>
 
-  Class FrameWebModel
+  Class FrameWebModel -> Package
     Reference Indite : NamingMethod<<1..1>>
 
-  Class Framework
+  Class Framework -> Package
     Reference FrameworkTagLib : TagLib<<1..1>>
     Reference FrameworkRule : Rule<<0..*>>
     Reference newEReference : Talvez_Method<<0..*>>
@@ -99,7 +99,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference DAOInterfaceName : DAOInterfaceName<<1..1>>
     Reference DAOInterfaceAttribute : DAOAttribute<<0..*>>
 
-  Class DAOClass -> Class
+  Class DAOClass -> Stereotype
     Reference BaseImplements : DAOBaseOperation<<4..4>>
     Reference DAOImplements : DAOOperation<<0..*>>
     Reference DAOClassName : DAOClassName<<1..1>>
@@ -109,7 +109,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference TargetDAOClass : DAOClass<<1..1>>
     Reference SourceDAOInterface : DAOInterface<<1..1>>
 
-  Class FrontControllerClass -> Class
+  Class FrontControllerClass -> Stereotype
     Reference FrontControllerAttribute : IOParameter<<1..*>>
     Reference FrontControllerClassMethod : FrontControllerMethod<<1..*>>
 
@@ -147,7 +147,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
   Class NamingMethod
     Reference Contains : FrameWebName<<1..*>>
 
-  Class ServiceClass -> Class
+  Class ServiceClass -> Stereotype
     Reference ServiceClassAttribute : ServiceAttribute
     Reference ServiceClassOperation : ServiceOperation<<0..*>>
 
@@ -163,7 +163,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference SourceServiceClass : ServiceInterface<<1..1>>
     Reference TargetFrontController : FrontControllerClass<<1..1>>
 
-  Class DomainClass -> Class
+  Class DomainClass -> Stereotype
     Reference DomainClassAttribute : DomainAttribute<<1..*>>
     Reference DomainClassOperation : DomainOperation<<0..*>>
 
@@ -220,7 +220,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
 
   Class NavigationAttribute -> Property
 
-  Class NavigationClass -> Class
+  Class NavigationClass -> Stereotype
 
   Class DomainOperation -> Operation
 
@@ -236,7 +236,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
 
   Class DAOOperation -> Operation
 
-  Class DomainPackage
+  Class DomainPackage -> Package
     Reference DomainPackageClass : DomainClass<<1..*>>
 
   Class ViewPackage -> NavigationPackage
@@ -245,11 +245,11 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
   Class ControllerPackage -> NavigationPackage
     Reference ControllerPackageClass : FrontControllerClass<<1..*>>
 
-  Class PersistencePackage
+  Class PersistencePackage -> Package
     Reference PersistencePackageInterface : DAOInterface<<1..*>>
     Reference PersistencePackageClass : DAOClass<<1..*>>
 
-  Class ApplicationPackage
+  Class ApplicationPackage -> Package
     Reference ServicePackageClass : ServiceClass<<1..*>>
     Reference ServicePackageInterface : ServiceInterface<<1..*>>
 
@@ -257,7 +257,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
 
   Class ResultType
 
-  Class NavigationPackage
+  Class NavigationPackage -> Package
 
   Class DomainGeneralization -> Generalization
     Attribute mapping : InheritanceMapping
@@ -352,434 +352,16 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
   Class Abstraction -> Dependency
     Reference mapping : OpaqueExpression
 
-  Class AcceptCallAction -> AcceptEventAction
-    Reference returnInformation : OutputPin<<1..1>>
-    Operation triggerCallEvent(EDiagnosticChain, EMap) : EBoolean
-    Operation resultPins(EDiagnosticChain, EMap) : EBoolean
-    Operation unmarshall(EDiagnosticChain, EMap) : EBoolean
-
-  Class AcceptEventAction -> Action
-    Attribute isUnmarshall : Boolean<<1..1>>
-    Reference result : OutputPin<<0..*>>
-    Reference trigger : Trigger<<1..*>>
-    Operation triggerEvents(EDiagnosticChain, EMap) : EBoolean
-    Operation noInputPins(EDiagnosticChain, EMap) : EBoolean
-    Operation unmarshallSignalEvents(EDiagnosticChain, EMap) : EBoolean
-    Operation noOutputPins(EDiagnosticChain, EMap) : EBoolean
-
-  Class Action -> ExecutableNode
-    Reference /context : Classifier
-    Reference /input : InputPin<<0..*>>
-    Attribute isLocallyReentrant : Boolean<<1..1>>
-    Reference localPostcondition : Constraint<<0..*>>
-    Reference localPrecondition : Constraint<<0..*>>
-    Reference /output : OutputPin<<0..*>>
-    Operation context() : Classifier
-
-  Class ActionInputPin -> InputPin
-    Reference fromAction : Action<<1..1>>
-    Operation noControlOrDataFlow(EDiagnosticChain, EMap) : EBoolean
-    Operation oneOutputPin(EDiagnosticChain, EMap) : EBoolean
-    Operation inputPin(EDiagnosticChain, EMap) : EBoolean
-
-  Class Activity -> Behavior
-    Reference edge : ActivityEdge<<0..*>>
-    Reference group : ActivityGroup<<0..*>>
-    Reference /structuredNode : StructuredActivityNode<<0..*>>
-    Reference variable : Variable<<0..*>>
-    Attribute isReadOnly : Boolean<<1..1>>
-    Attribute isSingleExecution : Boolean<<1..1>>
-    Reference partition : ActivityPartition<<0..*>>
-    Reference node : ActivityNode<<0..*>>
-    Operation autonomous(EDiagnosticChain, EMap) : EBoolean
-    Operation noSupergroups(EDiagnosticChain, EMap) : EBoolean
-    Operation activityParameterNode(EDiagnosticChain, EMap) : EBoolean
-    Operation structuredNode() : StructuredActivityNode<<0..*>>
-
-  Class ActivityEdge -> RedefinableElement
-    Reference guard : ValueSpecification<<1..1>>
-    Reference /inGroup : ActivityGroup<<0..*>>
-    Reference inPartition : ActivityPartition<<0..*>>
-    Reference inStructuredNode : StructuredActivityNode
-    Reference interrupts : InterruptibleActivityRegion
-    Reference redefinedEdge : ActivityEdge<<0..*>>
-    Reference source : ActivityNode<<1..1>>
-    Reference target : ActivityNode<<1..1>>
-    Reference weight : ValueSpecification<<1..1>>
-    Reference activity : Activity
-    Operation sourceAndTarget(EDiagnosticChain, EMap) : EBoolean
-    Operation owned(EDiagnosticChain, EMap) : EBoolean
-    Operation structuredNode(EDiagnosticChain, EMap) : EBoolean
-
-  Class ActivityFinalNode -> FinalNode
-
-  Class ActivityGroup -> NamedElement
-    Reference /containedNode : ActivityNode<<0..*>>
-    Reference inActivity : Activity
-    Reference /subgroup : ActivityGroup<<0..*>>
-    Reference /superGroup : ActivityGroup
-    Reference /containedEdge : ActivityEdge<<0..*>>
-    Operation groupOwned(EDiagnosticChain, EMap) : EBoolean
-    Operation nodesAndEdges(EDiagnosticChain, EMap) : EBoolean
-    Operation notContained(EDiagnosticChain, EMap) : EBoolean
-
-  Class ActivityNode -> RedefinableElement
-    Reference activity : Activity
-    Reference /inGroup : ActivityGroup<<0..*>>
-    Reference inPartition : ActivityPartition<<0..*>>
-    Reference inStructuredNode : StructuredActivityNode
-    Reference inInterruptibleRegion : InterruptibleActivityRegion<<0..*>>
-    Reference outgoing : ActivityEdge<<0..*>>
-    Reference incoming : ActivityEdge<<0..*>>
-    Reference redefinedNode : ActivityNode<<0..*>>
-    Operation ownedStructuredNode(EDiagnosticChain, EMap) : EBoolean
-    Operation owned(EDiagnosticChain, EMap) : EBoolean
-
-  Class ActivityParameterNode
-    Reference parameter : Parameter<<1..1>>
-    Operation hasParameters(EDiagnosticChain, EMap) : EBoolean
-    Operation noIncomingEdges(EDiagnosticChain, EMap) : EBoolean
-    Operation maximumOneParameterNode(EDiagnosticChain, EMap) : EBoolean
-    Operation sameType(EDiagnosticChain, EMap) : EBoolean
-    Operation noEdges(EDiagnosticChain, EMap) : EBoolean
-    Operation noOutgoingEdges(EDiagnosticChain, EMap) : EBoolean
-    Operation maximumTwoParameterNodes(EDiagnosticChain, EMap) : EBoolean
-
-  Class ActivityPartition -> ActivityGroup
-    Attribute isDimension : Boolean<<1..1>>
-    Attribute isExternal : Boolean<<1..1>>
-    Reference node : ActivityNode<<0..*>>
-    Reference represents : Element
-    Reference subpartition : ActivityPartition<<0..*>>
-    Reference superPartition : ActivityPartition
-    Reference edge : ActivityEdge<<0..*>>
-    Operation representsPartAndIsContained(EDiagnosticChain, EMap) : EBoolean
-    Operation representsPart(EDiagnosticChain, EMap) : EBoolean
-    Operation representsClassifier(EDiagnosticChain, EMap) : EBoolean
-    Operation dimensionNotContained(EDiagnosticChain, EMap) : EBoolean
-
-  Class Actor -> BehavioredClassifier
-    Operation associations(EDiagnosticChain, EMap) : EBoolean
-    Operation mustHaveName(EDiagnosticChain, EMap) : EBoolean
-
-  Class AddStructuralFeatureValueAction -> WriteStructuralFeatureAction
-    Reference insertAt : InputPin
-    Attribute isReplaceAll : Boolean<<1..1>>
-    Operation requiredValue(EDiagnosticChain, EMap) : EBoolean
-    Operation unlimitedNaturalAndMultiplicity(EDiagnosticChain, EMap) : EBoolean
-
-  Class AddVariableValueAction -> WriteVariableAction
-    Reference insertAt : InputPin
-    Attribute isReplaceAll : Boolean<<1..1>>
-    Operation singleInputPin(EDiagnosticChain, EMap) : EBoolean
-    Operation requiredValue(EDiagnosticChain, EMap) : EBoolean
-
-  Class AnyReceiveEvent -> MessageEvent
-
-  Class Artifact -> Classifier, DeployedArtifact
-    Attribute fileName : String
-    Reference manifestation : Manifestation<<0..*>>
-    Reference nestedArtifact : Artifact<<0..*>>
-    Reference ownedAttribute : Property<<0..*>>
-    Reference ownedOperation : Operation<<0..*>>
-
-  Class Association -> Classifier, Relationship
-    Reference /endType : Type<<1..*>>
-    Attribute isDerived : Boolean<<1..1>>
-    Reference navigableOwnedEnd : Property<<0..*>>
-    Reference ownedEnd : Property<<0..*>>
-    Reference memberEnd : Property<<2..*>>
-    Operation specializedEndTypes(EDiagnosticChain, EMap) : EBoolean
-    Operation binaryAssociations(EDiagnosticChain, EMap) : EBoolean
-    Operation specializedEndNumber(EDiagnosticChain, EMap) : EBoolean
-    Operation associationEnds(EDiagnosticChain, EMap) : EBoolean
-    Operation endType() : Type<<0..*>>
-
-  Class AssociationClass -> Class, Association
-    Operation cannotBeDefined(EDiagnosticChain, EMap) : EBoolean
-    Operation disjointAttributesEnds(EDiagnosticChain, EMap) : EBoolean
-
-  Class Behavior -> Class
-    Reference /context : BehavioredClassifier
-    Attribute isReentrant : Boolean<<1..1>>
-    Reference ownedParameter : Parameter<<0..*>>
-    Reference ownedParameterSet : ParameterSet<<0..*>>
-    Reference postcondition : Constraint<<0..*>>
-    Reference precondition : Constraint<<0..*>>
-    Reference redefinedBehavior : Behavior<<0..*>>
-    Reference specification : BehavioralFeature
-    Operation mustRealize(EDiagnosticChain, EMap) : EBoolean
-    Operation parametersMatch(EDiagnosticChain, EMap) : EBoolean
-    Operation featureOfContextClassifier(EDiagnosticChain, EMap) : EBoolean
-    Operation mostOneBehaviour(EDiagnosticChain, EMap) : EBoolean
-    Operation context() : BehavioredClassifier
-
-  Class BehavioralFeature -> Namespace, Feature
-    Attribute concurrency : CallConcurrencyKind<<1..1>>
-    Attribute isAbstract : Boolean<<1..1>>
-    Reference method : Behavior<<0..*>>
-    Reference ownedParameter : Parameter<<0..*>>
-    Reference ownedParameterSet : ParameterSet<<0..*>>
-    Reference raisedException : Type<<0..*>>
-
-  Class BehavioredClassifier -> Classifier
-    Reference classifierBehavior : Behavior
-    Reference interfaceRealization : InterfaceRealization<<0..*>>
-    Reference ownedBehavior : Behavior<<0..*>>
-    Operation classBehavior(EDiagnosticChain, EMap) : EBoolean
-
-  Class BehaviorExecutionSpecification -> ExecutionSpecification
-    Reference behavior : Behavior
-
-  Class BroadcastSignalAction -> InvocationAction
-    Reference signal : Signal<<1..1>>
-    Operation typeOrderingMultiplicity(EDiagnosticChain, EMap) : EBoolean
-    Operation numberAndOrder(EDiagnosticChain, EMap) : EBoolean
-
-  Class ControlNode -> ActivityNode
-
-  Class CallAction -> InvocationAction
-    Attribute isSynchronous : Boolean<<1..1>>
-    Reference result : OutputPin<<0..*>>
-    Operation synchronousCall(EDiagnosticChain, EMap) : EBoolean
-    Operation numberAndOrder(EDiagnosticChain, EMap) : EBoolean
-    Operation typeOrderingMultiplicity(EDiagnosticChain, EMap) : EBoolean
-
-  Class CallBehaviorAction -> CallAction
-    Reference behavior : Behavior<<1..1>>
-    Operation argumentPinEqualParameter(EDiagnosticChain, EMap) : EBoolean
-    Operation resultPinEqualParameter(EDiagnosticChain, EMap) : EBoolean
-
-  Class CallEvent -> MessageEvent
-    Reference operation : Operation<<1..1>>
-
-  Class Clause -> Element
-    Reference body : ExecutableNode<<0..*>>
-    Reference bodyOutput : OutputPin<<0..*>>
-    Reference decider : OutputPin<<1..1>>
-    Reference predecessorClause : Clause<<0..*>>
-    Reference successorClause : Clause<<0..*>>
-    Reference test : ExecutableNode<<1..*>>
-    Operation bodyOutputPins(EDiagnosticChain, EMap) : EBoolean
-    Operation testAndBody(EDiagnosticChain, EMap) : EBoolean
-    Operation deciderOutput(EDiagnosticChain, EMap) : EBoolean
-
-  Class CallOperationAction -> CallAction
-    Reference operation : Operation<<1..1>>
-    Reference target : InputPin<<1..1>>
-    Operation argumentPinEqualParameter(EDiagnosticChain, EMap) : EBoolean
-    Operation typeTargetPin(EDiagnosticChain, EMap) : EBoolean
-    Operation resultPinEqualParameter(EDiagnosticChain, EMap) : EBoolean
-
-  Class CentralBufferNode
-
-  Class ChangeEvent -> Event
-    Reference changeExpression : ValueSpecification<<1..1>>
-
-  Class Class -> EncapsulatedClassifier, BehavioredClassifier
-    Reference ownedOperation : Operation<<0..*>>
-    Reference /extension : Extension<<0..*>>
-    Attribute isActive : Boolean<<1..1>>
-    Reference nestedClassifier : Classifier<<0..*>>
-    Reference ownedReception : Reception<<0..*>>
-    Reference /superClass : Class<<0..*>>
-    Operation passiveClass(EDiagnosticChain, EMap) : EBoolean
-    Operation extension() : Extension<<0..*>>
-    Operation superClass() : Class<<0..*>>
-
-  Class Classifier -> Namespace, RedefinableElement, Type, TemplateableElement
-    Reference /attribute : Property<<0..*>>
-    Reference /feature : Feature<<0..*>>
-    Reference collaborationUse : CollaborationUse<<0..*>>
-    Reference /general : Classifier<<0..*>>
-    Reference generalization : Generalization<<0..*>>
-    Reference powertypeExtent : GeneralizationSet<<0..*>>
-    Reference /inheritedMember : NamedElement<<0..*>>
-    Attribute isAbstract : Boolean<<1..1>>
-    Attribute isFinalSpecialization : Boolean<<1..1>>
-    Reference ownedUseCase : UseCase<<0..*>>
-    Reference useCase : UseCase<<0..*>>
-    Reference redefinedClassifier : Classifier<<0..*>>
-    Reference representation : CollaborationUse
-    Reference substitution : Substitution<<0..*>>
-    Operation noCyclesInGeneralization(EDiagnosticChain, EMap) : EBoolean
-    Operation specializeType(EDiagnosticChain, EMap) : EBoolean
-    Operation nonFinalParents(EDiagnosticChain, EMap) : EBoolean
-    Operation mapsToGeneralizationSet(EDiagnosticChain, EMap) : EBoolean
-    Operation allFeatures() : Feature<<0..*>>
-    Operation allParents() : Classifier<<0..*>>
-    Operation conformsTo(Classifier<<1..1>>) : Boolean<<1..1>>
-    Operation general() : Classifier<<0..*>>
-    Operation hasVisibilityOf(NamedElement<<1..1>>) : Boolean<<1..1>>
-    Operation inherit(NamedElement<<0..*>>) : NamedElement<<0..*>>
-    Operation inheritableMembers(Classifier<<1..1>>) : NamedElement<<0..*>>
-    Operation inheritedMember() : NamedElement<<0..*>>
-    Operation maySpecializeType(Classifier<<1..1>>) : Boolean<<1..1>>
-    Operation parents() : Classifier<<0..*>>
-
-  Class ClassifierTemplateParameter -> TemplateParameter
-    Attribute allowSubstitutable : Boolean<<1..1>>
-    Reference constrainingClassifier : Classifier<<0..*>>
-    Operation hasConstrainingClassifier(EDiagnosticChain, EMap) : EBoolean
-
-  Class ClearAssociationAction -> Action
-    Reference association : Association<<1..1>>
-    Reference object : InputPin<<1..1>>
-    Operation sameType(EDiagnosticChain, EMap) : EBoolean
-    Operation multiplicity(EDiagnosticChain, EMap) : EBoolean
-
-  Class ClearStructuralFeatureAction -> StructuralFeatureAction
-    Reference result : OutputPin
-    Operation typeOfResult(EDiagnosticChain, EMap) : EBoolean
-    Operation multiplicityOfResult(EDiagnosticChain, EMap) : EBoolean
-
-  Class ClearVariableAction -> VariableAction
-
-  Class Collaboration -> StructuredClassifier, BehavioredClassifier
-    Reference collaborationRole : ConnectableElement<<0..*>>
-
-  Class CollaborationUse -> NamedElement
-    Reference roleBinding : Dependency<<0..*>>
-    Reference type : Collaboration<<1..1>>
-    Operation everyRole(EDiagnosticChain, EMap) : EBoolean
-    Operation clientElements(EDiagnosticChain, EMap) : EBoolean
-    Operation connectors(EDiagnosticChain, EMap) : EBoolean
-
-  Class CombinedFragment -> InteractionFragment
-    Reference cfragmentGate : Gate<<0..*>>
-    Attribute interactionOperator : InteractionOperatorKind<<1..1>>
-    Reference operand : InteractionOperand<<1..*>>
-    Operation minintAndMaxint(EDiagnosticChain, EMap) : EBoolean
-    Operation optLoopBreakNeg(EDiagnosticChain, EMap) : EBoolean
-    Operation break_(EDiagnosticChain, EMap) : EBoolean
-    Operation considerAndIgnore(EDiagnosticChain, EMap) : EBoolean
-
-  Class Comment -> Element
-    Reference annotatedElement : Element<<0..*>>
-    Attribute body : String
-
-  Class CommunicationPath -> Association
-
-  Class Component -> Class
-    Attribute isIndirectlyInstantiated : Boolean<<1..1>>
-    Reference packagedElement : PackageableElement<<0..*>>
-    Reference /provided : Interface<<0..*>>
-    Reference realization : ComponentRealization<<0..*>>
-    Reference /required : Interface<<0..*>>
-    Operation noPackagedElements(EDiagnosticChain, EMap) : EBoolean
-    Operation noNestedClassifiers(EDiagnosticChain, EMap) : EBoolean
-    Operation provided() : Interface<<0..*>>
-    Operation realizedInterfaces(Classifier<<1..1>>) : Interface<<0..*>>
-    Operation required() : Interface<<0..*>>
-    Operation usedInterfaces(Classifier<<1..1>>) : Interface<<0..*>>
-
-  Class ComponentRealization -> Realization
-    Reference realizingClassifier : Classifier<<1..*>>
-    Reference abstraction : Component
-
-  Class ConditionalNode -> StructuredActivityNode
-    Reference clause : Clause<<1..*>>
-    Attribute isAssured : Boolean<<1..1>>
-    Attribute isDeterminate : Boolean<<1..1>>
-    Reference result : OutputPin<<0..*>>
-    Operation noInputPins(EDiagnosticChain, EMap) : EBoolean
-    Operation resultNoIncoming(EDiagnosticChain, EMap) : EBoolean
-    Operation clauseNoPredecessor(EDiagnosticChain, EMap) : EBoolean
-    Operation executableNodes(EDiagnosticChain, EMap) : EBoolean
-    Operation matchingOutputPins(EDiagnosticChain, EMap) : EBoolean
-    Operation oneClauseWithExecutableNode(EDiagnosticChain, EMap) : EBoolean
-
-  Class Connector -> Feature
-    Reference contract : Behavior<<0..*>>
-    Reference end : ConnectorEnd<<2..*>>
-    Attribute /kind : ConnectorKind<<1..1>>
-    Reference redefinedConnector : Connector<<0..*>>
-    Reference type : Association
-    Operation betweenInterfacesPorts(EDiagnosticChain, EMap) : EBoolean
-    Operation compatible(EDiagnosticChain, EMap) : EBoolean
-    Operation roles(EDiagnosticChain, EMap) : EBoolean
-    Operation types(EDiagnosticChain, EMap) : EBoolean
-    Operation kind() : ConnectorKind<<1..1>>
-
-  Class ConnectableElement -> TypedElement, ParameterableElement
-    Reference /end : ConnectorEnd<<0..*>>
-    Operation end() : ConnectorEnd<<0..*>>
-
-  Class ConnectableElementTemplateParameter -> TemplateParameter
-
-  Class ConnectionPointReference -> Vertex
-    Reference entry : Pseudostate<<0..*>>
-    Reference exit : Pseudostate<<0..*>>
-    Reference state : State
-    Operation entryPseudostates(EDiagnosticChain, EMap) : EBoolean
-    Operation exitPseudostates(EDiagnosticChain, EMap) : EBoolean
-
-  Class ConnectorEnd -> MultiplicityElement
-    Reference /definingEnd : Property
-    Reference partWithPort : Property
-    Reference /role : ConnectableElement<<1..1>>
-    Operation selfPartWithPort(EDiagnosticChain, EMap) : EBoolean
-    Operation multiplicity(EDiagnosticChain, EMap) : EBoolean
-    Operation roleAndPartWithPort(EDiagnosticChain, EMap) : EBoolean
-    Operation partWithPortEmpty(EDiagnosticChain, EMap) : EBoolean
-    Operation definingEnd() : Property
-
-  Class ConsiderIgnoreFragment -> CombinedFragment
-    Reference message : NamedElement<<0..*>>
-    Operation considerOrIgnore(EDiagnosticChain, EMap) : EBoolean
-    Operation type(EDiagnosticChain, EMap) : EBoolean
-
-  Class Constraint -> PackageableElement
-    Reference constrainedElement : Element<<0..*>>
-    Reference specification : ValueSpecification<<1..1>>
-    Reference context : Namespace
-    Operation notApplyToSelf(EDiagnosticChain, EMap) : EBoolean
-    Operation booleanValue(EDiagnosticChain, EMap) : EBoolean
-    Operation noSideEffects(EDiagnosticChain, EMap) : EBoolean
-    Operation valueSpecificationBoolean(EDiagnosticChain, EMap) : EBoolean
-
-  Class Continuation -> InteractionFragment
-    Attribute setting : Boolean<<1..1>>
-    Operation global(EDiagnosticChain, EMap) : EBoolean
-    Operation firstOrLastInteractionFragment(EDiagnosticChain, EMap) : EBoolean
-    Operation sameName(EDiagnosticChain, EMap) : EBoolean
-
-  Class ControlFlow -> ActivityEdge
-    Operation objectNodes(EDiagnosticChain, EMap) : EBoolean
-
-  Class CreateLinkAction -> WriteLinkAction
-    Operation associationNotAbstract(EDiagnosticChain, EMap) : EBoolean
-
-  Class DataType -> Classifier
-    Reference ownedAttribute : Property<<0..*>>
-    Reference ownedOperation : Operation<<0..*>>
-
   Class Dependency -> PackageableElement, DirectedRelationship
     Reference client : NamedElement<<1..*>>
     Reference supplier : NamedElement<<1..*>>
 
-  Class DeployedArtifact -> NamedElement
-
-  Class Deployment -> Dependency
-    Reference configuration : DeploymentSpecification<<0..*>>
-    Reference deployedArtifact : DeployedArtifact<<0..*>>
-    Reference location : DeploymentTarget<<1..1>>
-
-  Class DeploymentSpecification -> Artifact
-    Attribute deploymentLocation : String
-    Attribute executionLocation : String
-    Reference deployment : Deployment
-    Operation deployedElements(EDiagnosticChain, EMap) : EBoolean
-    Operation deploymentTarget(EDiagnosticChain, EMap) : EBoolean
-
-  Class DeploymentTarget -> NamedElement
-    Reference /deployedElement : PackageableElement<<0..*>>
-    Reference deployment : Deployment<<0..*>>
-    Operation deployedElement() : PackageableElement<<0..*>>
-
   Class DirectedRelationship -> Relationship
     Reference /source : Element<<1..*>>
     Reference /target : Element<<1..*>>
+
+  Class Relationship -> Element
+    Reference /relatedElement : Element<<1..*>>
 
   Class Element
     Reference ownedComment : Comment<<0..*>>
@@ -790,311 +372,9 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
     Operation allOwnedElements() : Element<<0..*>>
     Operation mustBeOwned() : Boolean<<1..1>>
 
-  Class ElementImport -> DirectedRelationship
-    Attribute alias : String
-    Reference importedElement : PackageableElement<<1..1>>
-    Attribute visibility : VisibilityKind<<1..1>>
-    Reference importingNamespace : Namespace<<1..1>>
-    Operation visibilityPublicOrPrivate(EDiagnosticChain, EMap) : EBoolean
-    Operation importedElementIsPublic(EDiagnosticChain, EMap) : EBoolean
-    Operation getName() : String<<1..1>>
-
-  Class EncapsulatedClassifier -> StructuredClassifier
-    Reference /ownedPort : Port<<0..*>>
-    Operation ownedPort() : Port<<0..*>>
-
-  Class Event -> PackageableElement
-
-  Class Extend -> NamedElement, DirectedRelationship
-    Reference condition : Constraint
-    Reference extendedCase : UseCase<<1..1>>
-    Reference extensionLocation : ExtensionPoint<<1..*>>
-    Reference extension : UseCase<<1..1>>
-    Operation extensionPoints(EDiagnosticChain, EMap) : EBoolean
-
-  Class ExtensionPoint -> RedefinableElement
-    Reference useCase : UseCase<<1..1>>
-    Operation mustHaveName(EDiagnosticChain, EMap) : EBoolean
-
-  Class Extension -> Association
-    Attribute /isRequired : Boolean<<1..1>>
-    Reference /metaclass : Class<<1..1>>
-    Operation nonOwnedEnd(EDiagnosticChain, EMap) : EBoolean
-    Operation isBinary(EDiagnosticChain, EMap) : EBoolean
-    Operation isRequired() : Boolean<<1..1>>
-    Operation metaclass() : Class<<1..1>>
-    Operation metaclassEnd() : Property<<1..1>>
-
-  Class ExtensionEnd -> Property
-    Operation multiplicity(EDiagnosticChain, EMap) : EBoolean
-    Operation aggregation(EDiagnosticChain, EMap) : EBoolean
-
-  Class Expression -> ValueSpecification
-    Reference operand : ValueSpecification<<0..*>>
-    Attribute symbol : String
-
-  Class Feature -> RedefinableElement
-    Reference /featuringClassifier : Classifier<<0..*>>
-    Attribute isStatic : Boolean<<1..1>>
-
-  Class FinalNode -> ControlNode
-    Operation noOutgoingEdges(EDiagnosticChain, EMap) : EBoolean
-
-  Class Generalization -> DirectedRelationship
-    Reference general : Classifier<<1..1>>
-    Reference generalizationSet : GeneralizationSet<<0..*>>
-    Attribute isSubstitutable : Boolean
-    Reference specific : Classifier<<1..1>>
-    Operation generalizationSameClassifier(EDiagnosticChain, EMap) : EBoolean
-
-  Class GeneralizationSet -> PackageableElement
-    Attribute isCovering : Boolean<<1..1>>
-    Attribute isDisjoint : Boolean<<1..1>>
-    Reference powertype : Classifier
-    Reference generalization : Generalization<<0..*>>
-    Operation mapsToGeneralizationSet(EDiagnosticChain, EMap) : EBoolean
-    Operation generalizationSameClassifier(EDiagnosticChain, EMap) : EBoolean
-
-  Class GeneralOrdering -> NamedElement
-    Reference after : OccurrenceSpecification<<1..1>>
-    Reference before : OccurrenceSpecification<<1..1>>
-    Operation irreflexsiveTransitiveClosure(EDiagnosticChain, EMap) : EBoolean
-
-  Class Image -> Element
-    Attribute content : String
-    Attribute format : String
-    Attribute location : String
-
-  Class Include -> NamedElement, DirectedRelationship
-    Reference addition : UseCase<<1..1>>
-    Reference includingCase : UseCase<<1..1>>
-
-  Class InformationFlow -> PackageableElement, DirectedRelationship
-    Reference conveyed : Classifier<<1..*>>
-    Reference informationSource : NamedElement<<1..*>>
-    Reference informationTarget : NamedElement<<1..*>>
-    Reference realization : Relationship<<0..*>>
-    Reference realizingActivityEdge : ActivityEdge<<0..*>>
-    Reference realizingConnector : Connector<<0..*>>
-    Reference realizingMessage : Message<<0..*>>
-    Operation conveyClassifiers(EDiagnosticChain, EMap) : EBoolean
-    Operation mustConform(EDiagnosticChain, EMap) : EBoolean
-    Operation sourcesAndTargetsKind(EDiagnosticChain, EMap) : EBoolean
-
-  Class InformationItem -> Classifier
-    Reference represented : Classifier<<0..*>>
-    Operation hasNo(EDiagnosticChain, EMap) : EBoolean
-    Operation sourcesAndTargets(EDiagnosticChain, EMap) : EBoolean
-    Operation notInstantiable(EDiagnosticChain, EMap) : EBoolean
-
-  Class InitialNode -> ControlNode
-    Operation controlEdges(EDiagnosticChain, EMap) : EBoolean
-    Operation noIncomingEdges(EDiagnosticChain, EMap) : EBoolean
-
-  Class InstanceValue -> ValueSpecification
-    Reference instance : InstanceSpecification<<1..1>>
-
-  Class InteractionFragment -> NamedElement
-    Reference covered : Lifeline<<0..*>>
-    Reference enclosingInteraction : Interaction
-    Reference enclosingOperand : InteractionOperand
-    Reference generalOrdering : GeneralOrdering<<0..*>>
-
-  Class InteractionUse -> InteractionFragment
-    Reference actualGate : Gate<<0..*>>
-    Reference argument : ValueSpecification<<0..*>>
-    Reference refersTo : Interaction<<1..1>>
-    Reference returnValue : ValueSpecification
-    Reference returnValueRecipient : Property
-    Operation argumentsCorrespondToParameters(EDiagnosticChain, EMap) : EBoolean
-    Operation returnValueTypeRecipientCorrespondence(EDiagnosticChain, EMap) : EBoolean
-    Operation allLifelines(EDiagnosticChain, EMap) : EBoolean
-    Operation returnValueRecipientCoverage(EDiagnosticChain, EMap) : EBoolean
-    Operation argumentsAreConstants(EDiagnosticChain, EMap) : EBoolean
-    Operation gatesMatch(EDiagnosticChain, EMap) : EBoolean
-
-  Class Interface -> Classifier
-    Reference nestedClassifier : Classifier<<0..*>>
-    Reference ownedAttribute : Property<<0..*>>
-    Reference ownedReception : Reception<<0..*>>
-    Reference protocol : ProtocolStateMachine
-    Reference redefinedInterface : Interface<<0..*>>
-    Reference ownedOperation : Operation<<0..*>>
-    Operation visibility(EDiagnosticChain, EMap) : EBoolean
-
-  Class InterfaceRealization -> Realization
-    Reference contract : Interface<<1..1>>
-    Reference implementingClassifier : BehavioredClassifier<<1..1>>
-
-  Class InterruptibleActivityRegion -> ActivityGroup
-    Reference node : ActivityNode<<0..*>>
-    Reference interruptingEdge : ActivityEdge<<0..*>>
-    Operation interruptingEdges(EDiagnosticChain, EMap) : EBoolean
-
-  Class InputPin -> Pin
-    Operation outgoingEdgesStructuredOnly(EDiagnosticChain, EMap) : EBoolean
-
-  Class JoinNode -> ControlNode
-    Attribute isCombineDuplicate : Boolean<<1..1>>
-    Reference joinSpec : ValueSpecification<<1..1>>
-    Operation oneOutgoingEdge(EDiagnosticChain, EMap) : EBoolean
-    Operation incomingObjectFlow(EDiagnosticChain, EMap) : EBoolean
-
-  Class Lifeline -> NamedElement
-    Reference decomposedAs : PartDecomposition
-    Reference interaction : Interaction<<1..1>>
-    Reference represents : ConnectableElement
-    Reference selector : ValueSpecification
-    Reference coveredBy : InteractionFragment<<0..*>>
-    Operation selectorSpecified(EDiagnosticChain, EMap) : EBoolean
-    Operation interactionUsesShareLifeline(EDiagnosticChain, EMap) : EBoolean
-    Operation sameClassifier(EDiagnosticChain, EMap) : EBoolean
-
-  Class LiteralBoolean -> LiteralSpecification
-    Attribute value : Boolean<<1..1>>
-
-  Class LiteralSpecification -> ValueSpecification
-
-  Class LiteralInteger -> LiteralSpecification
-    Attribute value : Integer<<1..1>>
-
-  Class LiteralNull -> LiteralSpecification
-
-  Class LiteralReal -> LiteralSpecification
-    Attribute value : Real<<1..1>>
-
-  Class LiteralString -> LiteralSpecification
-    Attribute value : String
-
-  Class LiteralUnlimitedNatural -> LiteralSpecification
-    Attribute value : UnlimitedNatural<<1..1>>
-
-  Class LoopNode -> StructuredActivityNode
-    Reference bodyOutput : OutputPin<<0..*>>
-    Reference bodyPart : ExecutableNode<<0..*>>
-    Reference decider : OutputPin<<1..1>>
-    Attribute isTestedFirst : Boolean<<1..1>>
-    Reference loopVariable : OutputPin<<0..*>>
-    Reference loopVariableInput : InputPin<<0..*>>
-    Reference result : OutputPin<<0..*>>
-    Reference setupPart : ExecutableNode<<0..*>>
-    Reference test : ExecutableNode<<1..*>>
-    Operation inputEdges(EDiagnosticChain, EMap) : EBoolean
-    Operation resultNoIncoming(EDiagnosticChain, EMap) : EBoolean
-    Operation executableNodes(EDiagnosticChain, EMap) : EBoolean
-    Operation bodyOutputPins(EDiagnosticChain, EMap) : EBoolean
-
-  Class Manifestation -> Abstraction
-    Reference utilizedElement : PackageableElement<<1..1>>
-
-  Class MergeNode -> ControlNode
-    Operation edges(EDiagnosticChain, EMap) : EBoolean
-    Operation oneOutgoingEdge(EDiagnosticChain, EMap) : EBoolean
-
-  Class MultiplicityElement -> Element
-    Attribute isOrdered : Boolean<<1..1>>
-    Attribute isUnique : Boolean<<1..1>>
-    Attribute /lower : Integer
-    Reference lowerValue : ValueSpecification
-    Attribute /upper : UnlimitedNatural
-    Reference upperValue : ValueSpecification
-    Operation valueSpecificationConstant(EDiagnosticChain, EMap) : EBoolean
-    Operation lowerGe0(EDiagnosticChain, EMap) : EBoolean
-    Operation upperGeLower(EDiagnosticChain, EMap) : EBoolean
-    Operation valueSpecificationNoSideEffects(EDiagnosticChain, EMap) : EBoolean
-    Operation compatibleWith(MultiplicityElement<<1..1>>) : Boolean<<1..1>>
-    Operation includesCardinality(Integer<<1..1>>) : Boolean<<1..1>>
-    Operation includesMultiplicity(MultiplicityElement<<1..1>>) : Boolean<<1..1>>
-    Operation is(Integer<<1..1>>, Integer<<1..1>>) : Boolean<<1..1>>
-    Operation isMultivalued() : Boolean<<1..1>>
-    Operation lower() : Integer
-    Operation lowerBound() : Integer
-    Operation upper() : UnlimitedNatural
-    Operation upperBound() : UnlimitedNatural
-
-  Class NamedElement -> Element
-    Reference clientDependency : Dependency<<0..*>>
-    Attribute name : String
-    Reference nameExpression : StringExpression
-    Reference /namespace : Namespace
-    Attribute /qualifiedName : String
-    Attribute visibility : VisibilityKind
-    Operation hasQualifiedName(EDiagnosticChain, EMap) : EBoolean
-    Operation hasNoQualifiedName(EDiagnosticChain, EMap) : EBoolean
-    Operation visibilityNeedsOwnership(EDiagnosticChain, EMap) : EBoolean
-    Operation allNamespaces() : Namespace<<0..*>>
-    Operation allOwningPackages() : Package<<0..*>>
-    Operation isDistinguishableFrom(NamedElement<<1..1>>, Namespace<<1..1>>) : Boolean<<1..1>>
-    Operation namespace() : Namespace
-    Operation qualifiedName() : String<<1..1>>
-    Operation separator() : String<<1..1>>
-
-  Class Namespace -> NamedElement
-    Reference elementImport : ElementImport<<0..*>>
-    Reference /importedMember : PackageableElement<<0..*>>
-    Reference /member : NamedElement<<0..*>>
-    Reference /ownedMember : NamedElement<<0..*>>
-    Reference ownedRule : Constraint<<0..*>>
-    Reference packageImport : PackageImport<<0..*>>
-    Operation membersDistinguishable(EDiagnosticChain, EMap) : EBoolean
-    Operation excludeCollisions(PackageableElement<<0..*>>) : PackageableElement<<0..*>>
-    Operation getNamesOfMember(NamedElement<<1..1>>) : String<<0..*>>
-    Operation importMembers(PackageableElement<<0..*>>) : PackageableElement<<0..*>>
-    Operation importedMember() : PackageableElement<<0..*>>
-    Operation membersAreDistinguishable() : Boolean<<1..1>>
-    Operation ownedMember() : NamedElement<<0..*>>
-
-  Class OpaqueAction -> Action
-    Attribute body : String<<0..*>>
-    Reference inputValue : InputPin<<0..*>>
-    Attribute language : String<<0..*>>
-    Reference outputValue : OutputPin<<0..*>>
-
-  Class OpaqueBehavior -> Behavior
-    Attribute body : String<<0..*>>
-    Attribute language : String<<0..*>>
-
-  Class OpaqueExpression -> ValueSpecification
-    Reference behavior : Behavior
-    Attribute body : String<<0..*>>
-    Attribute language : String<<0..*>>
-    Reference /result : Parameter
-    Operation oneReturnResultParameter(EDiagnosticChain, EMap) : EBoolean
-    Operation onlyReturnResultParameters(EDiagnosticChain, EMap) : EBoolean
-    Operation languageBodySize(EDiagnosticChain, EMap) : EBoolean
-    Operation isIntegral() : Boolean<<1..1>>
-    Operation isNonNegative() : Boolean<<1..1>>
-    Operation isPositive() : Boolean<<1..1>>
-    Operation result() : Parameter
-    Operation value() : Integer<<1..1>>
-
-  Class Operation -> BehavioralFeature, ParameterableElement, TemplateableElement
-    Reference bodyCondition : Constraint
-    Reference class : Class
-    Reference datatype : DataType
-    Reference interface : Interface
-    Attribute /isOrdered : Boolean<<1..1>>
-    Attribute isQuery : Boolean<<1..1>>
-    Attribute /isUnique : Boolean<<1..1>>
-    Attribute /lower : Integer
-    Reference postcondition : Constraint<<0..*>>
-    Reference precondition : Constraint<<0..*>>
-    Reference redefinedOperation : Operation<<0..*>>
-    Reference /type : Type
-    Attribute /upper : UnlimitedNatural
-    Operation onlyBodyForQuery(EDiagnosticChain, EMap) : EBoolean
-    Operation atMostOneReturn(EDiagnosticChain, EMap) : EBoolean
-    Operation isOrdered() : Boolean<<1..1>>
-    Operation isUnique() : Boolean<<1..1>>
-    Operation lower() : Integer<<1..1>>
-    Operation returnResult() : Parameter<<0..*>>
-    Operation type() : Type<<1..1>>
-    Operation upper() : UnlimitedNatural<<1..1>>
-
-  Class OperationTemplateParameter -> TemplateParameter
-
-  Class OutputPin -> Pin
-    Operation incomingEdgesStructuredOnly(EDiagnosticChain, EMap) : EBoolean
+  Class Comment -> Element
+    Reference annotatedElement : Element<<0..*>>
+    Attribute body : String
 
   Class PackageableElement -> NamedElement, ParameterableElement
 
@@ -1103,276 +383,6 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
     Reference templateParameter : TemplateParameter
     Operation isCompatibleWith(ParameterableElement<<1..1>>) : Boolean<<1..1>>
     Operation isTemplateParameter() : Boolean<<1..1>>
-
-  Class Package -> Namespace, PackageableElement, TemplateableElement
-    Attribute uri : String
-    Reference /nestedPackage : Package<<0..*>>
-    Reference /nestingPackage : Package
-    Reference /ownedStereotype : Stereotype<<0..*>>
-    Reference packageMerge : PackageMerge<<0..*>>
-    Reference packagedElement : PackageableElement<<0..*>>
-    Reference profileApplication : ProfileApplication<<0..*>>
-    Reference /ownedType : Type<<0..*>>
-    Operation elementsPublicOrPrivate(EDiagnosticChain, EMap) : EBoolean
-    Operation allApplicableStereotypes() : Stereotype<<0..*>>
-    Operation containingProfile() : Profile
-    Operation makesVisible(NamedElement<<1..1>>) : Boolean<<1..1>>
-    Operation nestedPackage() : Package<<0..*>>
-    Operation ownedStereotype() : Stereotype<<0..*>>
-    Operation ownedType() : Type<<0..*>>
-    Operation visibleMembers() : PackageableElement<<0..*>>
-
-  Class PackageImport -> DirectedRelationship
-    Reference importedPackage : Package<<1..1>>
-    Attribute visibility : VisibilityKind<<1..1>>
-    Reference importingNamespace : Namespace<<1..1>>
-    Operation publicOrPrivate(EDiagnosticChain, EMap) : EBoolean
-
-  Class PackageMerge -> DirectedRelationship
-    Reference mergedPackage : Package<<1..1>>
-    Reference receivingPackage : Package<<1..1>>
-
-  Class Parameter -> ConnectableElement, MultiplicityElement
-    Attribute /default : String
-    Reference defaultValue : ValueSpecification
-    Attribute direction : ParameterDirectionKind<<1..1>>
-    Attribute effect : ParameterEffectKind
-    Attribute isException : Boolean<<1..1>>
-    Attribute isStream : Boolean<<1..1>>
-    Reference operation : Operation
-    Reference parameterSet : ParameterSet<<0..*>>
-    Operation notException(EDiagnosticChain, EMap) : EBoolean
-    Operation inAndOut(EDiagnosticChain, EMap) : EBoolean
-    Operation connectorEnd(EDiagnosticChain, EMap) : EBoolean
-    Operation reentrantBehaviors(EDiagnosticChain, EMap) : EBoolean
-    Operation streamAndException(EDiagnosticChain, EMap) : EBoolean
-    Operation default_() : String
-
-  Class ParameterSet -> NamedElement
-    Reference condition : Constraint<<0..*>>
-    Reference parameter : Parameter<<1..*>>
-    Operation sameParameterizedEntity(EDiagnosticChain, EMap) : EBoolean
-    Operation input(EDiagnosticChain, EMap) : EBoolean
-    Operation twoParameterSets(EDiagnosticChain, EMap) : EBoolean
-
-  Class PartDecomposition -> InteractionUse
-    Operation commutativityOfDecomposition(EDiagnosticChain, EMap) : EBoolean
-    Operation assume(EDiagnosticChain, EMap) : EBoolean
-    Operation partsOfInternalStructures(EDiagnosticChain, EMap) : EBoolean
-
-  Class Pin -> MultiplicityElement
-    Attribute isControl : Boolean<<1..1>>
-    Operation controlPins(EDiagnosticChain, EMap) : EBoolean
-
-  Class Profile -> Package
-    Reference metaclassReference : ElementImport<<0..*>>
-    Reference metamodelReference : PackageImport<<0..*>>
-    Operation referencesSameMetamodel(EDiagnosticChain, EMap) : EBoolean
-    Operation metaclassReferenceNotSpecialized(EDiagnosticChain, EMap) : EBoolean
-
-  Class ProfileApplication -> DirectedRelationship
-    Reference appliedProfile : Profile<<1..1>>
-    Attribute isStrict : Boolean<<1..1>>
-    Reference applyingPackage : Package<<1..1>>
-
-  Class Port -> Property
-    Attribute isBehavior : Boolean<<1..1>>
-    Attribute isConjugated : Boolean<<1..1>>
-    Attribute isService : Boolean<<1..1>>
-    Reference protocol : ProtocolStateMachine
-    Reference /provided : Interface<<0..*>>
-    Reference redefinedPort : Port<<0..*>>
-    Reference /required : Interface<<0..*>>
-    Operation portDestroyed(EDiagnosticChain, EMap) : EBoolean
-    Operation defaultValue(EDiagnosticChain, EMap) : EBoolean
-    Operation portAggregation(EDiagnosticChain, EMap) : EBoolean
-    Operation provided() : Interface<<0..*>>
-    Operation required() : Interface<<0..*>>
-
-  Class Property -> StructuralFeature, ConnectableElement, DeploymentTarget
-    Reference datatype : DataType
-    Reference interface : Interface
-    Attribute aggregation : AggregationKind<<1..1>>
-    Reference association : Association
-    Reference owningAssociation : Association
-    Reference associationEnd : Property
-    Reference qualifier : Property<<0..*>>
-    Reference class : Class
-    Attribute /default : String
-    Reference defaultValue : ValueSpecification
-    Attribute /isComposite : Boolean<<1..1>>
-    Attribute isDerived : Boolean<<1..1>>
-    Attribute isDerivedUnion : Boolean<<1..1>>
-    Attribute isId : Boolean<<1..1>>
-    Reference /opposite : Property
-    Reference redefinedProperty : Property<<0..*>>
-    Reference subsettedProperty : Property<<0..*>>
-    Operation subsettedPropertyNames(EDiagnosticChain, EMap) : EBoolean
-    Operation bindingToAttribute(EDiagnosticChain, EMap) : EBoolean
-    Operation multiplicityOfComposite(EDiagnosticChain, EMap) : EBoolean
-    Operation derivedUnionIsReadOnly(EDiagnosticChain, EMap) : EBoolean
-    Operation redefinedPropertyInherited(EDiagnosticChain, EMap) : EBoolean
-    Operation subsettingRules(EDiagnosticChain, EMap) : EBoolean
-    Operation deploymentTarget(EDiagnosticChain, EMap) : EBoolean
-    Operation derivedUnionIsDerived(EDiagnosticChain, EMap) : EBoolean
-    Operation subsettingContextConforms(EDiagnosticChain, EMap) : EBoolean
-    Operation default_() : String
-    Operation isAttribute(Property<<1..1>>) : Boolean<<1..1>>
-    Operation isComposite() : Boolean<<1..1>>
-    Operation isNavigable() : Boolean<<1..1>>
-    Operation opposite() : Property<<1..1>>
-    Operation subsettingContext() : Type<<0..*>>
-
-  Class ProtocolConformance -> DirectedRelationship
-    Reference generalMachine : ProtocolStateMachine<<1..1>>
-    Reference specificMachine : ProtocolStateMachine<<1..1>>
-
-  Class ProtocolStateMachine -> StateMachine
-    Reference conformance : ProtocolConformance<<0..*>>
-    Operation deepOrShallowHistory(EDiagnosticChain, EMap) : EBoolean
-    Operation entryExitDo(EDiagnosticChain, EMap) : EBoolean
-    Operation portsConnected(EDiagnosticChain, EMap) : EBoolean
-    Operation protocolTransitions(EDiagnosticChain, EMap) : EBoolean
-
-  Class Pseudostate -> Vertex
-    Reference state : State
-    Attribute kind : PseudostateKind<<1..1>>
-    Reference stateMachine : StateMachine
-    Operation junctionVertex(EDiagnosticChain, EMap) : EBoolean
-    Operation choiceVertex(EDiagnosticChain, EMap) : EBoolean
-    Operation initialVertex(EDiagnosticChain, EMap) : EBoolean
-    Operation transitionsIncoming(EDiagnosticChain, EMap) : EBoolean
-    Operation forkVertex(EDiagnosticChain, EMap) : EBoolean
-    Operation joinVertex(EDiagnosticChain, EMap) : EBoolean
-    Operation transitionsOutgoing(EDiagnosticChain, EMap) : EBoolean
-    Operation outgoingFromInitial(EDiagnosticChain, EMap) : EBoolean
-    Operation historyVertices(EDiagnosticChain, EMap) : EBoolean
-
-  Class Realization -> Abstraction
-
-  Class Reception -> BehavioralFeature
-    Reference signal : Signal<<1..1>>
-    Operation notQuery(EDiagnosticChain, EMap) : EBoolean
-
-  Class RedefinableElement -> NamedElement
-    Attribute isLeaf : Boolean<<1..1>>
-    Reference /redefinedElement : RedefinableElement<<0..*>>
-    Reference /redefinitionContext : Classifier<<0..*>>
-    Operation nonLeafRedefinition(EDiagnosticChain, EMap) : EBoolean
-    Operation redefinitionContextValid(EDiagnosticChain, EMap) : EBoolean
-    Operation redefinitionConsistent(EDiagnosticChain, EMap) : EBoolean
-    Operation isConsistentWith(RedefinableElement<<1..1>>) : Boolean<<1..1>>
-    Operation isRedefinitionContextValid(RedefinableElement<<1..1>>) : Boolean<<1..1>>
-
-  Class RedefinableTemplateSignature -> RedefinableElement, TemplateSignature
-    Reference extendedSignature : RedefinableTemplateSignature<<0..*>>
-    Reference /inheritedParameter : TemplateParameter<<0..*>>
-    Reference classifier : Classifier<<1..1>>
-    Operation inheritedParameters(EDiagnosticChain, EMap) : EBoolean
-    Operation inheritedParameter() : TemplateParameter<<0..*>>
-
-  Class Region -> Namespace, RedefinableElement
-    Reference extendedRegion : Region
-    Reference state : State
-    Reference stateMachine : StateMachine
-    Reference transition : Transition<<0..*>>
-    Reference subvertex : Vertex<<0..*>>
-    Operation deepHistoryVertex(EDiagnosticChain, EMap) : EBoolean
-    Operation owned(EDiagnosticChain, EMap) : EBoolean
-    Operation initialVertex(EDiagnosticChain, EMap) : EBoolean
-    Operation shallowHistoryVertex(EDiagnosticChain, EMap) : EBoolean
-    Operation belongsToPsm() : Boolean<<1..1>>
-    Operation containingStateMachine() : StateMachine<<1..1>>
-    Operation isRedefinitionContextValid(Region<<1..1>>) : Boolean<<1..1>>
-    Operation redefinitionContext() : Classifier<<1..1>>
-
-  Class Relationship -> Element
-    Reference /relatedElement : Element<<1..*>>
-
-  Class Signal -> Classifier
-    Reference ownedAttribute : Property<<0..*>>
-
-  Class Substitution -> Realization
-    Reference contract : Classifier<<1..1>>
-    Reference substitutingClassifier : Classifier<<1..1>>
-
-  Class State -> Namespace, RedefinableElement, Vertex
-    Reference connection : ConnectionPointReference<<0..*>>
-    Reference connectionPoint : Pseudostate<<0..*>>
-    Reference deferrableTrigger : Trigger<<0..*>>
-    Reference doActivity : Behavior
-    Reference entry : Behavior
-    Reference exit : Behavior
-    Attribute /isComposite : Boolean<<1..1>>
-    Attribute /isOrthogonal : Boolean<<1..1>>
-    Attribute /isSimple : Boolean<<1..1>>
-    Attribute /isSubmachineState : Boolean<<1..1>>
-    Reference redefinedState : State
-    Reference stateInvariant : Constraint
-    Reference submachine : StateMachine
-    Reference region : Region<<0..*>>
-    Operation compositeStates(EDiagnosticChain, EMap) : EBoolean
-    Operation submachineStates(EDiagnosticChain, EMap) : EBoolean
-    Operation entryOrExit(EDiagnosticChain, EMap) : EBoolean
-    Operation submachineOrRegions(EDiagnosticChain, EMap) : EBoolean
-    Operation destinationsOrSourcesOfTransitions(EDiagnosticChain, EMap) : EBoolean
-    Operation isComposite() : Boolean<<1..1>>
-    Operation isOrthogonal() : Boolean<<1..1>>
-    Operation isRedefinitionContextValid(State<<1..1>>) : Boolean<<1..1>>
-    Operation isSimple() : Boolean<<1..1>>
-    Operation isSubmachineState() : Boolean<<1..1>>
-    Operation redefinitionContext() : Classifier<<1..1>>
-
-  Class StateMachine -> Behavior
-    Reference connectionPoint : Pseudostate<<0..*>>
-    Reference submachineState : State<<0..*>>
-    Reference region : Region<<1..*>>
-    Reference extendedStateMachine : StateMachine<<0..*>>
-    Operation contextClassifier(EDiagnosticChain, EMap) : EBoolean
-    Operation classifierContext(EDiagnosticChain, EMap) : EBoolean
-    Operation method(EDiagnosticChain, EMap) : EBoolean
-    Operation connectionPoints(EDiagnosticChain, EMap) : EBoolean
-    Operation lca(State<<1..1>>, State<<1..1>>) : Namespace<<1..1>>
-    Operation ancestor(State<<1..1>>, State<<1..1>>) : Boolean<<1..1>>
-    Operation isRedefinitionContextValid(StateMachine<<1..1>>) : Boolean<<1..1>>
-
-  Class Stereotype -> Class
-    Reference icon : Image<<0..*>>
-    Reference /profile : Profile<<1..1>>
-    Operation generalize(EDiagnosticChain, EMap) : EBoolean
-    Operation associationEndOwnership(EDiagnosticChain, EMap) : EBoolean
-    Operation binaryAssociationsOnly(EDiagnosticChain, EMap) : EBoolean
-    Operation nameNotClash(EDiagnosticChain, EMap) : EBoolean
-    Operation containingProfile() : Profile<<1..1>>
-    Operation profile() : Profile<<1..1>>
-
-  Class StringExpression -> Expression, TemplateableElement
-    Reference owningExpression : StringExpression
-    Reference subExpression : StringExpression<<0..*>>
-    Operation subexpressions(EDiagnosticChain, EMap) : EBoolean
-    Operation operands(EDiagnosticChain, EMap) : EBoolean
-
-  Class StructuralFeature -> Feature, TypedElement, MultiplicityElement
-    Attribute isReadOnly : Boolean<<1..1>>
-
-  Class StructuredActivityNode -> Action, Namespace, ActivityGroup
-    Attribute mustIsolate : Boolean<<1..1>>
-    Reference node : ActivityNode<<0..*>>
-    Reference structuredNodeInput : InputPin<<0..*>>
-    Reference structuredNodeOutput : OutputPin<<0..*>>
-    Reference variable : Variable<<0..*>>
-    Reference edge : ActivityEdge<<0..*>>
-    Operation outputPinEdges(EDiagnosticChain, EMap) : EBoolean
-    Operation edges(EDiagnosticChain, EMap) : EBoolean
-    Operation inputPinEdges(EDiagnosticChain, EMap) : EBoolean
-
-  Class StructuredClassifier -> Classifier
-    Reference ownedAttribute : Property<<0..*>>
-    Reference ownedConnector : Connector<<0..*>>
-    Reference /part : Property<<0..*>>
-    Reference /role : ConnectableElement<<0..*>>
-    Operation multiplicities(EDiagnosticChain, EMap) : EBoolean
-    Operation part() : Property<<0..*>>
 
   Class TemplateParameter -> Element
     Reference default : ParameterableElement
@@ -1408,6 +418,480 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
     Reference templateBinding : TemplateBinding<<1..1>>
     Operation mustBeCompatible(EDiagnosticChain, EMap) : EBoolean
 
+  Class NamedElement -> Element
+    Reference clientDependency : Dependency<<0..*>>
+    Attribute name : String
+    Reference nameExpression : StringExpression
+    Reference /namespace : Namespace
+    Attribute /qualifiedName : String
+    Attribute visibility : VisibilityKind
+    Operation hasQualifiedName(EDiagnosticChain, EMap) : EBoolean
+    Operation hasNoQualifiedName(EDiagnosticChain, EMap) : EBoolean
+    Operation visibilityNeedsOwnership(EDiagnosticChain, EMap) : EBoolean
+    Operation allNamespaces() : Namespace<<0..*>>
+    Operation allOwningPackages() : Package<<0..*>>
+    Operation isDistinguishableFrom(NamedElement<<1..1>>, Namespace<<1..1>>) : Boolean<<1..1>>
+    Operation namespace() : Namespace
+    Operation qualifiedName() : String<<1..1>>
+    Operation separator() : String<<1..1>>
+
+  Class StringExpression -> Expression, TemplateableElement
+    Reference owningExpression : StringExpression
+    Reference subExpression : StringExpression<<0..*>>
+    Operation subexpressions(EDiagnosticChain, EMap) : EBoolean
+    Operation operands(EDiagnosticChain, EMap) : EBoolean
+
+  Class Expression -> ValueSpecification
+    Reference operand : ValueSpecification<<0..*>>
+    Attribute symbol : String
+
+  Class ValueSpecification -> PackageableElement, TypedElement
+    Operation booleanValue() : Boolean
+    Operation integerValue() : Integer
+    Operation isComputable() : Boolean<<1..1>>
+    Operation isNull() : Boolean<<1..1>>
+    Operation realValue() : Real
+    Operation stringValue() : String
+    Operation unlimitedValue() : UnlimitedNatural
+
+  Class TypedElement -> NamedElement
+    Reference type : Type
+
+  Class Type -> PackageableElement
+    Reference /package : Package
+    Operation conformsTo(Type<<1..1>>) : Boolean<<1..1>>
+
+  Class Package -> Namespace, PackageableElement, TemplateableElement
+    Attribute uri : String
+    Reference /nestedPackage : Package<<0..*>>
+    Reference /nestingPackage : Package
+    Reference /ownedStereotype : Stereotype<<0..*>>
+    Reference packageMerge : PackageMerge<<0..*>>
+    Reference packagedElement : PackageableElement<<0..*>>
+    Reference profileApplication : ProfileApplication<<0..*>>
+    Reference /ownedType : Type<<0..*>>
+    Operation elementsPublicOrPrivate(EDiagnosticChain, EMap) : EBoolean
+    Operation allApplicableStereotypes() : Stereotype<<0..*>>
+    Operation containingProfile() : Profile
+    Operation makesVisible(NamedElement<<1..1>>) : Boolean<<1..1>>
+    Operation nestedPackage() : Package<<0..*>>
+    Operation ownedStereotype() : Stereotype<<0..*>>
+    Operation ownedType() : Type<<0..*>>
+    Operation visibleMembers() : PackageableElement<<0..*>>
+
+  Class Namespace -> NamedElement
+    Reference elementImport : ElementImport<<0..*>>
+    Reference /importedMember : PackageableElement<<0..*>>
+    Reference /member : NamedElement<<0..*>>
+    Reference /ownedMember : NamedElement<<0..*>>
+    Reference ownedRule : Constraint<<0..*>>
+    Reference packageImport : PackageImport<<0..*>>
+    Operation membersDistinguishable(EDiagnosticChain, EMap) : EBoolean
+    Operation excludeCollisions(PackageableElement<<0..*>>) : PackageableElement<<0..*>>
+    Operation getNamesOfMember(NamedElement<<1..1>>) : String<<0..*>>
+    Operation importMembers(PackageableElement<<0..*>>) : PackageableElement<<0..*>>
+    Operation importedMember() : PackageableElement<<0..*>>
+    Operation membersAreDistinguishable() : Boolean<<1..1>>
+    Operation ownedMember() : NamedElement<<0..*>>
+
+  Class ElementImport -> DirectedRelationship
+    Attribute alias : String
+    Reference importedElement : PackageableElement<<1..1>>
+    Attribute visibility : VisibilityKind<<1..1>>
+    Reference importingNamespace : Namespace<<1..1>>
+    Operation visibilityPublicOrPrivate(EDiagnosticChain, EMap) : EBoolean
+    Operation importedElementIsPublic(EDiagnosticChain, EMap) : EBoolean
+    Operation getName() : String<<1..1>>
+
+  Class Constraint -> PackageableElement
+    Reference constrainedElement : Element<<0..*>>
+    Reference specification : ValueSpecification<<1..1>>
+    Reference context : Namespace
+    Operation notApplyToSelf(EDiagnosticChain, EMap) : EBoolean
+    Operation booleanValue(EDiagnosticChain, EMap) : EBoolean
+    Operation noSideEffects(EDiagnosticChain, EMap) : EBoolean
+    Operation valueSpecificationBoolean(EDiagnosticChain, EMap) : EBoolean
+
+  Class PackageImport -> DirectedRelationship
+    Reference importedPackage : Package<<1..1>>
+    Attribute visibility : VisibilityKind<<1..1>>
+    Reference importingNamespace : Namespace<<1..1>>
+    Operation publicOrPrivate(EDiagnosticChain, EMap) : EBoolean
+
+  Class Stereotype -> Class
+    Reference icon : Image<<0..*>>
+    Reference /profile : Profile<<1..1>>
+    Operation generalize(EDiagnosticChain, EMap) : EBoolean
+    Operation associationEndOwnership(EDiagnosticChain, EMap) : EBoolean
+    Operation binaryAssociationsOnly(EDiagnosticChain, EMap) : EBoolean
+    Operation nameNotClash(EDiagnosticChain, EMap) : EBoolean
+    Operation containingProfile() : Profile<<1..1>>
+    Operation profile() : Profile<<1..1>>
+
+  Class Class -> EncapsulatedClassifier, BehavioredClassifier
+    Reference ownedOperation : Operation<<0..*>>
+    Reference /extension : Extension<<0..*>>
+    Attribute isActive : Boolean<<1..1>>
+    Reference nestedClassifier : Classifier<<0..*>>
+    Reference ownedReception : Reception<<0..*>>
+    Reference /superClass : Class<<0..*>>
+    Operation passiveClass(EDiagnosticChain, EMap) : EBoolean
+    Operation extension() : Extension<<0..*>>
+    Operation superClass() : Class<<0..*>>
+
+  Class BehavioredClassifier -> Classifier
+    Reference classifierBehavior : Behavior
+    Reference interfaceRealization : InterfaceRealization<<0..*>>
+    Reference ownedBehavior : Behavior<<0..*>>
+    Operation classBehavior(EDiagnosticChain, EMap) : EBoolean
+
+  Class Classifier -> Namespace, RedefinableElement, Type, TemplateableElement
+    Reference /attribute : Property<<0..*>>
+    Reference /feature : Feature<<0..*>>
+    Reference collaborationUse : CollaborationUse<<0..*>>
+    Reference /general : Classifier<<0..*>>
+    Reference generalization : Generalization<<0..*>>
+    Reference powertypeExtent : GeneralizationSet<<0..*>>
+    Reference /inheritedMember : NamedElement<<0..*>>
+    Attribute isAbstract : Boolean<<1..1>>
+    Attribute isFinalSpecialization : Boolean<<1..1>>
+    Reference ownedUseCase : UseCase<<0..*>>
+    Reference useCase : UseCase<<0..*>>
+    Reference redefinedClassifier : Classifier<<0..*>>
+    Reference representation : CollaborationUse
+    Reference substitution : Substitution<<0..*>>
+    Operation noCyclesInGeneralization(EDiagnosticChain, EMap) : EBoolean
+    Operation specializeType(EDiagnosticChain, EMap) : EBoolean
+    Operation nonFinalParents(EDiagnosticChain, EMap) : EBoolean
+    Operation mapsToGeneralizationSet(EDiagnosticChain, EMap) : EBoolean
+    Operation allFeatures() : Feature<<0..*>>
+    Operation allParents() : Classifier<<0..*>>
+    Operation conformsTo(Classifier<<1..1>>) : Boolean<<1..1>>
+    Operation general() : Classifier<<0..*>>
+    Operation hasVisibilityOf(NamedElement<<1..1>>) : Boolean<<1..1>>
+    Operation inherit(NamedElement<<0..*>>) : NamedElement<<0..*>>
+    Operation inheritableMembers(Classifier<<1..1>>) : NamedElement<<0..*>>
+    Operation inheritedMember() : NamedElement<<0..*>>
+    Operation maySpecializeType(Classifier<<1..1>>) : Boolean<<1..1>>
+    Operation parents() : Classifier<<0..*>>
+
+  Class RedefinableElement -> NamedElement
+    Attribute isLeaf : Boolean<<1..1>>
+    Reference /redefinedElement : RedefinableElement<<0..*>>
+    Reference /redefinitionContext : Classifier<<0..*>>
+    Operation nonLeafRedefinition(EDiagnosticChain, EMap) : EBoolean
+    Operation redefinitionContextValid(EDiagnosticChain, EMap) : EBoolean
+    Operation redefinitionConsistent(EDiagnosticChain, EMap) : EBoolean
+    Operation isConsistentWith(RedefinableElement<<1..1>>) : Boolean<<1..1>>
+    Operation isRedefinitionContextValid(RedefinableElement<<1..1>>) : Boolean<<1..1>>
+
+  Class Property -> StructuralFeature, ConnectableElement, DeploymentTarget
+    Reference datatype : DataType
+    Reference interface : Interface
+    Attribute aggregation : AggregationKind<<1..1>>
+    Reference association : Association
+    Reference owningAssociation : Association
+    Reference associationEnd : Property
+    Reference qualifier : Property<<0..*>>
+    Reference class : Class
+    Attribute /default : String
+    Reference defaultValue : ValueSpecification
+    Attribute /isComposite : Boolean<<1..1>>
+    Attribute isDerived : Boolean<<1..1>>
+    Attribute isDerivedUnion : Boolean<<1..1>>
+    Attribute isId : Boolean<<1..1>>
+    Reference /opposite : Property
+    Reference redefinedProperty : Property<<0..*>>
+    Reference subsettedProperty : Property<<0..*>>
+    Operation subsettedPropertyNames(EDiagnosticChain, EMap) : EBoolean
+    Operation bindingToAttribute(EDiagnosticChain, EMap) : EBoolean
+    Operation multiplicityOfComposite(EDiagnosticChain, EMap) : EBoolean
+    Operation derivedUnionIsReadOnly(EDiagnosticChain, EMap) : EBoolean
+    Operation redefinedPropertyInherited(EDiagnosticChain, EMap) : EBoolean
+    Operation subsettingRules(EDiagnosticChain, EMap) : EBoolean
+    Operation deploymentTarget(EDiagnosticChain, EMap) : EBoolean
+    Operation derivedUnionIsDerived(EDiagnosticChain, EMap) : EBoolean
+    Operation subsettingContextConforms(EDiagnosticChain, EMap) : EBoolean
+    Operation default_() : String
+    Operation isAttribute(Property<<1..1>>) : Boolean<<1..1>>
+    Operation isComposite() : Boolean<<1..1>>
+    Operation isNavigable() : Boolean<<1..1>>
+    Operation opposite() : Property<<1..1>>
+    Operation subsettingContext() : Type<<0..*>>
+
+  Class StructuralFeature -> Feature, TypedElement, MultiplicityElement
+    Attribute isReadOnly : Boolean<<1..1>>
+
+  Class MultiplicityElement -> Element
+    Attribute isOrdered : Boolean<<1..1>>
+    Attribute isUnique : Boolean<<1..1>>
+    Attribute /lower : Integer
+    Reference lowerValue : ValueSpecification
+    Attribute /upper : UnlimitedNatural
+    Reference upperValue : ValueSpecification
+    Operation valueSpecificationConstant(EDiagnosticChain, EMap) : EBoolean
+    Operation lowerGe0(EDiagnosticChain, EMap) : EBoolean
+    Operation upperGeLower(EDiagnosticChain, EMap) : EBoolean
+    Operation valueSpecificationNoSideEffects(EDiagnosticChain, EMap) : EBoolean
+    Operation compatibleWith(MultiplicityElement<<1..1>>) : Boolean<<1..1>>
+    Operation includesCardinality(Integer<<1..1>>) : Boolean<<1..1>>
+    Operation includesMultiplicity(MultiplicityElement<<1..1>>) : Boolean<<1..1>>
+    Operation is(Integer<<1..1>>, Integer<<1..1>>) : Boolean<<1..1>>
+    Operation isMultivalued() : Boolean<<1..1>>
+    Operation lower() : Integer
+    Operation lowerBound() : Integer
+    Operation upper() : UnlimitedNatural
+    Operation upperBound() : UnlimitedNatural
+
+  Class Feature -> RedefinableElement
+    Reference /featuringClassifier : Classifier<<0..*>>
+    Attribute isStatic : Boolean<<1..1>>
+
+  Class DeploymentTarget -> NamedElement
+    Reference /deployedElement : PackageableElement<<0..*>>
+    Reference deployment : Deployment<<0..*>>
+    Operation deployedElement() : PackageableElement<<0..*>>
+
+  Class Deployment -> Dependency
+    Reference configuration : DeploymentSpecification<<0..*>>
+    Reference deployedArtifact : DeployedArtifact<<0..*>>
+    Reference location : DeploymentTarget<<1..1>>
+
+  Class DeploymentSpecification -> Artifact
+    Attribute deploymentLocation : String
+    Attribute executionLocation : String
+    Reference deployment : Deployment
+    Operation deployedElements(EDiagnosticChain, EMap) : EBoolean
+    Operation deploymentTarget(EDiagnosticChain, EMap) : EBoolean
+
+  Class Artifact -> Classifier, DeployedArtifact
+    Attribute fileName : String
+    Reference manifestation : Manifestation<<0..*>>
+    Reference nestedArtifact : Artifact<<0..*>>
+    Reference ownedAttribute : Property<<0..*>>
+    Reference ownedOperation : Operation<<0..*>>
+
+  Class DeployedArtifact -> NamedElement
+
+  Class Manifestation -> Abstraction
+    Reference utilizedElement : PackageableElement<<1..1>>
+
+  Class Operation -> BehavioralFeature, ParameterableElement, TemplateableElement
+    Reference bodyCondition : Constraint
+    Reference class : Class
+    Reference datatype : DataType
+    Reference interface : Interface
+    Attribute /isOrdered : Boolean<<1..1>>
+    Attribute isQuery : Boolean<<1..1>>
+    Attribute /isUnique : Boolean<<1..1>>
+    Attribute /lower : Integer
+    Reference postcondition : Constraint<<0..*>>
+    Reference precondition : Constraint<<0..*>>
+    Reference redefinedOperation : Operation<<0..*>>
+    Reference /type : Type
+    Attribute /upper : UnlimitedNatural
+    Operation onlyBodyForQuery(EDiagnosticChain, EMap) : EBoolean
+    Operation atMostOneReturn(EDiagnosticChain, EMap) : EBoolean
+    Operation isOrdered() : Boolean<<1..1>>
+    Operation isUnique() : Boolean<<1..1>>
+    Operation lower() : Integer<<1..1>>
+    Operation returnResult() : Parameter<<0..*>>
+    Operation type() : Type<<1..1>>
+    Operation upper() : UnlimitedNatural<<1..1>>
+
+  Class BehavioralFeature -> Namespace, Feature
+    Attribute concurrency : CallConcurrencyKind<<1..1>>
+    Attribute isAbstract : Boolean<<1..1>>
+    Reference method : Behavior<<0..*>>
+    Reference ownedParameter : Parameter<<0..*>>
+    Reference ownedParameterSet : ParameterSet<<0..*>>
+    Reference raisedException : Type<<0..*>>
+
+  Class Behavior -> Class
+    Reference /context : BehavioredClassifier
+    Attribute isReentrant : Boolean<<1..1>>
+    Reference ownedParameter : Parameter<<0..*>>
+    Reference ownedParameterSet : ParameterSet<<0..*>>
+    Reference postcondition : Constraint<<0..*>>
+    Reference precondition : Constraint<<0..*>>
+    Reference redefinedBehavior : Behavior<<0..*>>
+    Reference specification : BehavioralFeature
+    Operation mustRealize(EDiagnosticChain, EMap) : EBoolean
+    Operation parametersMatch(EDiagnosticChain, EMap) : EBoolean
+    Operation featureOfContextClassifier(EDiagnosticChain, EMap) : EBoolean
+    Operation mostOneBehaviour(EDiagnosticChain, EMap) : EBoolean
+    Operation context() : BehavioredClassifier
+
+  Class Parameter -> ConnectableElement, MultiplicityElement
+    Attribute /default : String
+    Reference defaultValue : ValueSpecification
+    Attribute direction : ParameterDirectionKind<<1..1>>
+    Attribute effect : ParameterEffectKind
+    Attribute isException : Boolean<<1..1>>
+    Attribute isStream : Boolean<<1..1>>
+    Reference operation : Operation
+    Reference parameterSet : ParameterSet<<0..*>>
+    Operation notException(EDiagnosticChain, EMap) : EBoolean
+    Operation inAndOut(EDiagnosticChain, EMap) : EBoolean
+    Operation connectorEnd(EDiagnosticChain, EMap) : EBoolean
+    Operation reentrantBehaviors(EDiagnosticChain, EMap) : EBoolean
+    Operation streamAndException(EDiagnosticChain, EMap) : EBoolean
+    Operation default_() : String
+
+  Class ConnectableElement -> TypedElement, ParameterableElement
+    Reference /end : ConnectorEnd<<0..*>>
+    Operation end() : ConnectorEnd<<0..*>>
+
+  Class ConnectorEnd -> MultiplicityElement
+    Reference /definingEnd : Property
+    Reference partWithPort : Property
+    Reference /role : ConnectableElement<<1..1>>
+    Operation selfPartWithPort(EDiagnosticChain, EMap) : EBoolean
+    Operation multiplicity(EDiagnosticChain, EMap) : EBoolean
+    Operation roleAndPartWithPort(EDiagnosticChain, EMap) : EBoolean
+    Operation partWithPortEmpty(EDiagnosticChain, EMap) : EBoolean
+    Operation definingEnd() : Property
+
+  Class ConnectableElementTemplateParameter -> TemplateParameter
+
+  Class ParameterSet -> NamedElement
+    Reference condition : Constraint<<0..*>>
+    Reference parameter : Parameter<<1..*>>
+    Operation sameParameterizedEntity(EDiagnosticChain, EMap) : EBoolean
+    Operation input(EDiagnosticChain, EMap) : EBoolean
+    Operation twoParameterSets(EDiagnosticChain, EMap) : EBoolean
+
+  Class DataType -> Classifier
+    Reference ownedAttribute : Property<<0..*>>
+    Reference ownedOperation : Operation<<0..*>>
+
+  Class Interface -> Classifier
+    Reference nestedClassifier : Classifier<<0..*>>
+    Reference ownedAttribute : Property<<0..*>>
+    Reference ownedReception : Reception<<0..*>>
+    Reference protocol : ProtocolStateMachine
+    Reference redefinedInterface : Interface<<0..*>>
+    Reference ownedOperation : Operation<<0..*>>
+    Operation visibility(EDiagnosticChain, EMap) : EBoolean
+
+  Class Reception -> BehavioralFeature
+    Reference signal : Signal<<1..1>>
+    Operation notQuery(EDiagnosticChain, EMap) : EBoolean
+
+  Class Signal -> Classifier
+    Reference ownedAttribute : Property<<0..*>>
+
+  Class ProtocolStateMachine -> StateMachine
+    Reference conformance : ProtocolConformance<<0..*>>
+    Operation deepOrShallowHistory(EDiagnosticChain, EMap) : EBoolean
+    Operation entryExitDo(EDiagnosticChain, EMap) : EBoolean
+    Operation portsConnected(EDiagnosticChain, EMap) : EBoolean
+    Operation protocolTransitions(EDiagnosticChain, EMap) : EBoolean
+
+  Class StateMachine -> Behavior
+    Reference connectionPoint : Pseudostate<<0..*>>
+    Reference submachineState : State<<0..*>>
+    Reference region : Region<<1..*>>
+    Reference extendedStateMachine : StateMachine<<0..*>>
+    Operation contextClassifier(EDiagnosticChain, EMap) : EBoolean
+    Operation classifierContext(EDiagnosticChain, EMap) : EBoolean
+    Operation method(EDiagnosticChain, EMap) : EBoolean
+    Operation connectionPoints(EDiagnosticChain, EMap) : EBoolean
+    Operation lca(State<<1..1>>, State<<1..1>>) : Namespace<<1..1>>
+    Operation ancestor(State<<1..1>>, State<<1..1>>) : Boolean<<1..1>>
+    Operation isRedefinitionContextValid(StateMachine<<1..1>>) : Boolean<<1..1>>
+
+  Class Pseudostate -> Vertex
+    Reference state : State
+    Attribute kind : PseudostateKind<<1..1>>
+    Reference stateMachine : StateMachine
+    Operation junctionVertex(EDiagnosticChain, EMap) : EBoolean
+    Operation choiceVertex(EDiagnosticChain, EMap) : EBoolean
+    Operation initialVertex(EDiagnosticChain, EMap) : EBoolean
+    Operation transitionsIncoming(EDiagnosticChain, EMap) : EBoolean
+    Operation forkVertex(EDiagnosticChain, EMap) : EBoolean
+    Operation joinVertex(EDiagnosticChain, EMap) : EBoolean
+    Operation transitionsOutgoing(EDiagnosticChain, EMap) : EBoolean
+    Operation outgoingFromInitial(EDiagnosticChain, EMap) : EBoolean
+    Operation historyVertices(EDiagnosticChain, EMap) : EBoolean
+
+  Class Vertex -> NamedElement
+    Reference container : Region
+    Reference /outgoing : Transition<<0..*>>
+    Reference /incoming : Transition<<0..*>>
+    Operation containingStateMachine() : StateMachine<<1..1>>
+    Operation incoming() : Transition<<0..*>>
+    Operation outgoing() : Transition<<0..*>>
+
+  Class Region -> Namespace, RedefinableElement
+    Reference extendedRegion : Region
+    Reference state : State
+    Reference stateMachine : StateMachine
+    Reference transition : Transition<<0..*>>
+    Reference subvertex : Vertex<<0..*>>
+    Operation deepHistoryVertex(EDiagnosticChain, EMap) : EBoolean
+    Operation owned(EDiagnosticChain, EMap) : EBoolean
+    Operation initialVertex(EDiagnosticChain, EMap) : EBoolean
+    Operation shallowHistoryVertex(EDiagnosticChain, EMap) : EBoolean
+    Operation belongsToPsm() : Boolean<<1..1>>
+    Operation containingStateMachine() : StateMachine<<1..1>>
+    Operation isRedefinitionContextValid(Region<<1..1>>) : Boolean<<1..1>>
+    Operation redefinitionContext() : Classifier<<1..1>>
+
+  Class State -> Namespace, RedefinableElement, Vertex
+    Reference connection : ConnectionPointReference<<0..*>>
+    Reference connectionPoint : Pseudostate<<0..*>>
+    Reference deferrableTrigger : Trigger<<0..*>>
+    Reference doActivity : Behavior
+    Reference entry : Behavior
+    Reference exit : Behavior
+    Attribute /isComposite : Boolean<<1..1>>
+    Attribute /isOrthogonal : Boolean<<1..1>>
+    Attribute /isSimple : Boolean<<1..1>>
+    Attribute /isSubmachineState : Boolean<<1..1>>
+    Reference redefinedState : State
+    Reference stateInvariant : Constraint
+    Reference submachine : StateMachine
+    Reference region : Region<<0..*>>
+    Operation compositeStates(EDiagnosticChain, EMap) : EBoolean
+    Operation submachineStates(EDiagnosticChain, EMap) : EBoolean
+    Operation entryOrExit(EDiagnosticChain, EMap) : EBoolean
+    Operation submachineOrRegions(EDiagnosticChain, EMap) : EBoolean
+    Operation destinationsOrSourcesOfTransitions(EDiagnosticChain, EMap) : EBoolean
+    Operation isComposite() : Boolean<<1..1>>
+    Operation isOrthogonal() : Boolean<<1..1>>
+    Operation isRedefinitionContextValid(State<<1..1>>) : Boolean<<1..1>>
+    Operation isSimple() : Boolean<<1..1>>
+    Operation isSubmachineState() : Boolean<<1..1>>
+    Operation redefinitionContext() : Classifier<<1..1>>
+
+  Class ConnectionPointReference -> Vertex
+    Reference entry : Pseudostate<<0..*>>
+    Reference exit : Pseudostate<<0..*>>
+    Reference state : State
+    Operation entryPseudostates(EDiagnosticChain, EMap) : EBoolean
+    Operation exitPseudostates(EDiagnosticChain, EMap) : EBoolean
+
+  Class Trigger -> NamedElement
+    Reference event : Event<<1..1>>
+    Reference port : Port<<0..*>>
+
+  Class Event -> PackageableElement
+
+  Class Port -> Property
+    Attribute isBehavior : Boolean<<1..1>>
+    Attribute isConjugated : Boolean<<1..1>>
+    Attribute isService : Boolean<<1..1>>
+    Reference protocol : ProtocolStateMachine
+    Reference /provided : Interface<<0..*>>
+    Reference redefinedPort : Port<<0..*>>
+    Reference /required : Interface<<0..*>>
+    Operation portDestroyed(EDiagnosticChain, EMap) : EBoolean
+    Operation defaultValue(EDiagnosticChain, EMap) : EBoolean
+    Operation portAggregation(EDiagnosticChain, EMap) : EBoolean
+    Operation provided() : Interface<<0..*>>
+    Operation required() : Interface<<0..*>>
+
   Class Transition -> Namespace, RedefinableElement
     Reference effect : Behavior
     Reference guard : Constraint
@@ -1430,16 +914,75 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
     Operation containingStateMachine() : StateMachine<<1..1>>
     Operation redefinitionContext() : Classifier<<1..1>>
 
-  Class Trigger -> NamedElement
-    Reference event : Event<<1..1>>
-    Reference port : Port<<0..*>>
+  Class ProtocolConformance -> DirectedRelationship
+    Reference generalMachine : ProtocolStateMachine<<1..1>>
+    Reference specificMachine : ProtocolStateMachine<<1..1>>
 
-  Class Type -> PackageableElement
-    Reference /package : Package
-    Operation conformsTo(Type<<1..1>>) : Boolean<<1..1>>
+  Class OperationTemplateParameter -> TemplateParameter
 
-  Class TypedElement -> NamedElement
-    Reference type : Type
+  Class Association -> Classifier, Relationship
+    Reference /endType : Type<<1..*>>
+    Attribute isDerived : Boolean<<1..1>>
+    Reference navigableOwnedEnd : Property<<0..*>>
+    Reference ownedEnd : Property<<0..*>>
+    Reference memberEnd : Property<<2..*>>
+    Operation specializedEndTypes(EDiagnosticChain, EMap) : EBoolean
+    Operation binaryAssociations(EDiagnosticChain, EMap) : EBoolean
+    Operation specializedEndNumber(EDiagnosticChain, EMap) : EBoolean
+    Operation associationEnds(EDiagnosticChain, EMap) : EBoolean
+    Operation endType() : Type<<0..*>>
+
+  Class CollaborationUse -> NamedElement
+    Reference roleBinding : Dependency<<0..*>>
+    Reference type : Collaboration<<1..1>>
+    Operation everyRole(EDiagnosticChain, EMap) : EBoolean
+    Operation clientElements(EDiagnosticChain, EMap) : EBoolean
+    Operation connectors(EDiagnosticChain, EMap) : EBoolean
+
+  Class Collaboration -> StructuredClassifier, BehavioredClassifier
+    Reference collaborationRole : ConnectableElement<<0..*>>
+
+  Class StructuredClassifier -> Classifier
+    Reference ownedAttribute : Property<<0..*>>
+    Reference ownedConnector : Connector<<0..*>>
+    Reference /part : Property<<0..*>>
+    Reference /role : ConnectableElement<<0..*>>
+    Operation multiplicities(EDiagnosticChain, EMap) : EBoolean
+    Operation part() : Property<<0..*>>
+
+  Class Connector -> Feature
+    Reference contract : Behavior<<0..*>>
+    Reference end : ConnectorEnd<<2..*>>
+    Attribute /kind : ConnectorKind<<1..1>>
+    Reference redefinedConnector : Connector<<0..*>>
+    Reference type : Association
+    Operation betweenInterfacesPorts(EDiagnosticChain, EMap) : EBoolean
+    Operation compatible(EDiagnosticChain, EMap) : EBoolean
+    Operation roles(EDiagnosticChain, EMap) : EBoolean
+    Operation types(EDiagnosticChain, EMap) : EBoolean
+    Operation kind() : ConnectorKind<<1..1>>
+
+  Class Generalization -> DirectedRelationship
+    Reference general : Classifier<<1..1>>
+    Reference generalizationSet : GeneralizationSet<<0..*>>
+    Attribute isSubstitutable : Boolean
+    Reference specific : Classifier<<1..1>>
+    Operation generalizationSameClassifier(EDiagnosticChain, EMap) : EBoolean
+
+  Class GeneralizationSet -> PackageableElement
+    Attribute isCovering : Boolean<<1..1>>
+    Attribute isDisjoint : Boolean<<1..1>>
+    Reference powertype : Classifier
+    Reference generalization : Generalization<<0..*>>
+    Operation mapsToGeneralizationSet(EDiagnosticChain, EMap) : EBoolean
+    Operation generalizationSameClassifier(EDiagnosticChain, EMap) : EBoolean
+
+  Class RedefinableTemplateSignature -> RedefinableElement, TemplateSignature
+    Reference extendedSignature : RedefinableTemplateSignature<<0..*>>
+    Reference /inheritedParameter : TemplateParameter<<0..*>>
+    Reference classifier : Classifier<<1..1>>
+    Operation inheritedParameters(EDiagnosticChain, EMap) : EBoolean
+    Operation inheritedParameter() : TemplateParameter<<0..*>>
 
   Class UseCase -> BehavioredClassifier
     Reference extend : Extend<<0..*>>
@@ -1452,14 +995,198 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
     Operation noAssociationToUseCase(EDiagnosticChain, EMap) : EBoolean
     Operation allIncludedUseCases() : UseCase<<0..*>>
 
-  Class ValueSpecification -> PackageableElement, TypedElement
-    Operation booleanValue() : Boolean
-    Operation integerValue() : Integer
-    Operation isComputable() : Boolean<<1..1>>
-    Operation isNull() : Boolean<<1..1>>
-    Operation realValue() : Real
-    Operation stringValue() : String
-    Operation unlimitedValue() : UnlimitedNatural
+  Class Extend -> NamedElement, DirectedRelationship
+    Reference condition : Constraint
+    Reference extendedCase : UseCase<<1..1>>
+    Reference extensionLocation : ExtensionPoint<<1..*>>
+    Reference extension : UseCase<<1..1>>
+    Operation extensionPoints(EDiagnosticChain, EMap) : EBoolean
+
+  Class ExtensionPoint -> RedefinableElement
+    Reference useCase : UseCase<<1..1>>
+    Operation mustHaveName(EDiagnosticChain, EMap) : EBoolean
+
+  Class Include -> NamedElement, DirectedRelationship
+    Reference addition : UseCase<<1..1>>
+    Reference includingCase : UseCase<<1..1>>
+
+  Class Substitution -> Realization
+    Reference contract : Classifier<<1..1>>
+    Reference substitutingClassifier : Classifier<<1..1>>
+
+  Class Realization -> Abstraction
+
+  Class ClassifierTemplateParameter -> TemplateParameter
+    Attribute allowSubstitutable : Boolean<<1..1>>
+    Reference constrainingClassifier : Classifier<<0..*>>
+    Operation hasConstrainingClassifier(EDiagnosticChain, EMap) : EBoolean
+
+  Class InterfaceRealization -> Realization
+    Reference contract : Interface<<1..1>>
+    Reference implementingClassifier : BehavioredClassifier<<1..1>>
+
+  Class EncapsulatedClassifier -> StructuredClassifier
+    Reference /ownedPort : Port<<0..*>>
+    Operation ownedPort() : Port<<0..*>>
+
+  Class Extension -> Association
+    Attribute /isRequired : Boolean<<1..1>>
+    Reference /metaclass : Class<<1..1>>
+    Operation nonOwnedEnd(EDiagnosticChain, EMap) : EBoolean
+    Operation isBinary(EDiagnosticChain, EMap) : EBoolean
+    Operation isRequired() : Boolean<<1..1>>
+    Operation metaclass() : Class<<1..1>>
+    Operation metaclassEnd() : Property<<1..1>>
+
+  Class ExtensionEnd -> Property
+    Operation multiplicity(EDiagnosticChain, EMap) : EBoolean
+    Operation aggregation(EDiagnosticChain, EMap) : EBoolean
+
+  Class Image -> Element
+    Attribute content : String
+    Attribute format : String
+    Attribute location : String
+
+  Class Profile -> Package
+    Reference metaclassReference : ElementImport<<0..*>>
+    Reference metamodelReference : PackageImport<<0..*>>
+    Operation referencesSameMetamodel(EDiagnosticChain, EMap) : EBoolean
+    Operation metaclassReferenceNotSpecialized(EDiagnosticChain, EMap) : EBoolean
+
+  Class PackageMerge -> DirectedRelationship
+    Reference mergedPackage : Package<<1..1>>
+    Reference receivingPackage : Package<<1..1>>
+
+  Class ProfileApplication -> DirectedRelationship
+    Reference appliedProfile : Profile<<1..1>>
+    Attribute isStrict : Boolean<<1..1>>
+    Reference applyingPackage : Package<<1..1>>
+
+  Class OpaqueExpression -> ValueSpecification
+    Reference behavior : Behavior
+    Attribute body : String<<0..*>>
+    Attribute language : String<<0..*>>
+    Reference /result : Parameter
+    Operation oneReturnResultParameter(EDiagnosticChain, EMap) : EBoolean
+    Operation onlyReturnResultParameters(EDiagnosticChain, EMap) : EBoolean
+    Operation languageBodySize(EDiagnosticChain, EMap) : EBoolean
+    Operation isIntegral() : Boolean<<1..1>>
+    Operation isNonNegative() : Boolean<<1..1>>
+    Operation isPositive() : Boolean<<1..1>>
+    Operation result() : Parameter
+    Operation value() : Integer<<1..1>>
+
+  Class AcceptCallAction -> AcceptEventAction
+    Reference returnInformation : OutputPin<<1..1>>
+    Operation triggerCallEvent(EDiagnosticChain, EMap) : EBoolean
+    Operation resultPins(EDiagnosticChain, EMap) : EBoolean
+    Operation unmarshall(EDiagnosticChain, EMap) : EBoolean
+
+  Class AcceptEventAction -> Action
+    Attribute isUnmarshall : Boolean<<1..1>>
+    Reference result : OutputPin<<0..*>>
+    Reference trigger : Trigger<<1..*>>
+    Operation triggerEvents(EDiagnosticChain, EMap) : EBoolean
+    Operation noInputPins(EDiagnosticChain, EMap) : EBoolean
+    Operation unmarshallSignalEvents(EDiagnosticChain, EMap) : EBoolean
+    Operation noOutputPins(EDiagnosticChain, EMap) : EBoolean
+
+  Class Action -> ExecutableNode
+    Reference /context : Classifier
+    Reference /input : InputPin<<0..*>>
+    Attribute isLocallyReentrant : Boolean<<1..1>>
+    Reference localPostcondition : Constraint<<0..*>>
+    Reference localPrecondition : Constraint<<0..*>>
+    Reference /output : OutputPin<<0..*>>
+    Operation context() : Classifier
+
+  Class ExecutableNode -> ActivityNode
+    Reference handler : ExceptionHandler<<0..*>>
+
+  Class ActivityNode -> RedefinableElement
+    Reference activity : Activity
+    Reference /inGroup : ActivityGroup<<0..*>>
+    Reference inPartition : ActivityPartition<<0..*>>
+    Reference inStructuredNode : StructuredActivityNode
+    Reference inInterruptibleRegion : InterruptibleActivityRegion<<0..*>>
+    Reference outgoing : ActivityEdge<<0..*>>
+    Reference incoming : ActivityEdge<<0..*>>
+    Reference redefinedNode : ActivityNode<<0..*>>
+    Operation ownedStructuredNode(EDiagnosticChain, EMap) : EBoolean
+    Operation owned(EDiagnosticChain, EMap) : EBoolean
+
+  Class Activity -> Behavior
+    Reference edge : ActivityEdge<<0..*>>
+    Reference group : ActivityGroup<<0..*>>
+    Reference /structuredNode : StructuredActivityNode<<0..*>>
+    Reference variable : Variable<<0..*>>
+    Attribute isReadOnly : Boolean<<1..1>>
+    Attribute isSingleExecution : Boolean<<1..1>>
+    Reference partition : ActivityPartition<<0..*>>
+    Reference node : ActivityNode<<0..*>>
+    Operation autonomous(EDiagnosticChain, EMap) : EBoolean
+    Operation noSupergroups(EDiagnosticChain, EMap) : EBoolean
+    Operation activityParameterNode(EDiagnosticChain, EMap) : EBoolean
+    Operation structuredNode() : StructuredActivityNode<<0..*>>
+
+  Class ActivityEdge -> RedefinableElement
+    Reference guard : ValueSpecification<<1..1>>
+    Reference /inGroup : ActivityGroup<<0..*>>
+    Reference inPartition : ActivityPartition<<0..*>>
+    Reference inStructuredNode : StructuredActivityNode
+    Reference interrupts : InterruptibleActivityRegion
+    Reference redefinedEdge : ActivityEdge<<0..*>>
+    Reference source : ActivityNode<<1..1>>
+    Reference target : ActivityNode<<1..1>>
+    Reference weight : ValueSpecification<<1..1>>
+    Reference activity : Activity
+    Operation sourceAndTarget(EDiagnosticChain, EMap) : EBoolean
+    Operation owned(EDiagnosticChain, EMap) : EBoolean
+    Operation structuredNode(EDiagnosticChain, EMap) : EBoolean
+
+  Class ActivityGroup -> NamedElement
+    Reference /containedNode : ActivityNode<<0..*>>
+    Reference inActivity : Activity
+    Reference /subgroup : ActivityGroup<<0..*>>
+    Reference /superGroup : ActivityGroup
+    Reference /containedEdge : ActivityEdge<<0..*>>
+    Operation groupOwned(EDiagnosticChain, EMap) : EBoolean
+    Operation nodesAndEdges(EDiagnosticChain, EMap) : EBoolean
+    Operation notContained(EDiagnosticChain, EMap) : EBoolean
+
+  Class ActivityPartition -> ActivityGroup
+    Attribute isDimension : Boolean<<1..1>>
+    Attribute isExternal : Boolean<<1..1>>
+    Reference node : ActivityNode<<0..*>>
+    Reference represents : Element
+    Reference subpartition : ActivityPartition<<0..*>>
+    Reference superPartition : ActivityPartition
+    Reference edge : ActivityEdge<<0..*>>
+    Operation representsPartAndIsContained(EDiagnosticChain, EMap) : EBoolean
+    Operation representsPart(EDiagnosticChain, EMap) : EBoolean
+    Operation representsClassifier(EDiagnosticChain, EMap) : EBoolean
+    Operation dimensionNotContained(EDiagnosticChain, EMap) : EBoolean
+
+  Class StructuredActivityNode -> Action, Namespace, ActivityGroup
+    Attribute mustIsolate : Boolean<<1..1>>
+    Reference node : ActivityNode<<0..*>>
+    Reference structuredNodeInput : InputPin<<0..*>>
+    Reference structuredNodeOutput : OutputPin<<0..*>>
+    Reference variable : Variable<<0..*>>
+    Reference edge : ActivityEdge<<0..*>>
+    Operation outputPinEdges(EDiagnosticChain, EMap) : EBoolean
+    Operation edges(EDiagnosticChain, EMap) : EBoolean
+    Operation inputPinEdges(EDiagnosticChain, EMap) : EBoolean
+
+  Class InputPin -> Pin
+    Operation outgoingEdgesStructuredOnly(EDiagnosticChain, EMap) : EBoolean
+
+  Class Pin -> MultiplicityElement
+    Attribute isControl : Boolean<<1..1>>
+    Operation controlPins(EDiagnosticChain, EMap) : EBoolean
+
+  Class OutputPin -> Pin
+    Operation incomingEdgesStructuredOnly(EDiagnosticChain, EMap) : EBoolean
 
   Class Variable -> ConnectableElement, MultiplicityElement
     Reference activityScope : Activity
@@ -1467,13 +1194,19 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
     Operation owned(EDiagnosticChain, EMap) : EBoolean
     Operation isAccessibleBy(Action<<1..1>>) : Boolean<<1..1>>
 
-  Class Vertex -> NamedElement
-    Reference container : Region
-    Reference /outgoing : Transition<<0..*>>
-    Reference /incoming : Transition<<0..*>>
-    Operation containingStateMachine() : StateMachine<<1..1>>
-    Operation incoming() : Transition<<0..*>>
-    Operation outgoing() : Transition<<0..*>>
+  Class InterruptibleActivityRegion -> ActivityGroup
+    Reference node : ActivityNode<<0..*>>
+    Reference interruptingEdge : ActivityEdge<<0..*>>
+    Operation interruptingEdges(EDiagnosticChain, EMap) : EBoolean
+
+  Class ExceptionHandler -> Element
+    Reference exceptionType : Classifier<<1..*>>
+    Reference handlerBody : ExecutableNode<<1..1>>
+    Reference protectedNode : ExecutableNode<<1..1>>
+    Operation resultPins(EDiagnosticChain, EMap) : EBoolean
+    Operation oneInput(EDiagnosticChain, EMap) : EBoolean
+    Operation edgeSourceTarget(EDiagnosticChain, EMap) : EBoolean
+    Operation exceptionBody(EDiagnosticChain, EMap) : EBoolean
 
   Class ActionExecutionSpecification -> ExecutionSpecification
     Reference action : Action<<1..1>>
@@ -1484,17 +1217,39 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
     Reference start : OccurrenceSpecification<<1..1>>
     Operation sameLifeline(EDiagnosticChain, EMap) : EBoolean
 
-  Class ExecutableNode -> ActivityNode
-    Reference handler : ExceptionHandler<<0..*>>
+  Class InteractionFragment -> NamedElement
+    Reference covered : Lifeline<<0..*>>
+    Reference enclosingInteraction : Interaction
+    Reference enclosingOperand : InteractionOperand
+    Reference generalOrdering : GeneralOrdering<<0..*>>
 
-  Class ExceptionHandler -> Element
-    Reference exceptionType : Classifier<<1..*>>
-    Reference handlerBody : ExecutableNode<<1..1>>
-    Reference protectedNode : ExecutableNode<<1..1>>
-    Operation resultPins(EDiagnosticChain, EMap) : EBoolean
-    Operation oneInput(EDiagnosticChain, EMap) : EBoolean
-    Operation edgeSourceTarget(EDiagnosticChain, EMap) : EBoolean
-    Operation exceptionBody(EDiagnosticChain, EMap) : EBoolean
+  Class Lifeline -> NamedElement
+    Reference decomposedAs : PartDecomposition
+    Reference interaction : Interaction<<1..1>>
+    Reference represents : ConnectableElement
+    Reference selector : ValueSpecification
+    Reference coveredBy : InteractionFragment<<0..*>>
+    Operation selectorSpecified(EDiagnosticChain, EMap) : EBoolean
+    Operation interactionUsesShareLifeline(EDiagnosticChain, EMap) : EBoolean
+    Operation sameClassifier(EDiagnosticChain, EMap) : EBoolean
+
+  Class PartDecomposition -> InteractionUse
+    Operation commutativityOfDecomposition(EDiagnosticChain, EMap) : EBoolean
+    Operation assume(EDiagnosticChain, EMap) : EBoolean
+    Operation partsOfInternalStructures(EDiagnosticChain, EMap) : EBoolean
+
+  Class InteractionUse -> InteractionFragment
+    Reference actualGate : Gate<<0..*>>
+    Reference argument : ValueSpecification<<0..*>>
+    Reference refersTo : Interaction<<1..1>>
+    Reference returnValue : ValueSpecification
+    Reference returnValueRecipient : Property
+    Operation argumentsCorrespondToParameters(EDiagnosticChain, EMap) : EBoolean
+    Operation returnValueTypeRecipientCorrespondence(EDiagnosticChain, EMap) : EBoolean
+    Operation allLifelines(EDiagnosticChain, EMap) : EBoolean
+    Operation returnValueRecipientCoverage(EDiagnosticChain, EMap) : EBoolean
+    Operation argumentsAreConstants(EDiagnosticChain, EMap) : EBoolean
+    Operation gatesMatch(EDiagnosticChain, EMap) : EBoolean
 
   Class Gate -> MessageEnd
     Operation messagesActualGate(EDiagnosticChain, EMap) : EBoolean
@@ -1544,9 +1299,47 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
     Operation minintMaxint(EDiagnosticChain, EMap) : EBoolean
     Operation maxintGreaterEqualMinint(EDiagnosticChain, EMap) : EBoolean
 
+  Class GeneralOrdering -> NamedElement
+    Reference after : OccurrenceSpecification<<1..1>>
+    Reference before : OccurrenceSpecification<<1..1>>
+    Operation irreflexsiveTransitiveClosure(EDiagnosticChain, EMap) : EBoolean
+
   Class OccurrenceSpecification -> InteractionFragment
     Reference toAfter : GeneralOrdering<<0..*>>
     Reference toBefore : GeneralOrdering<<0..*>>
+
+  Class ActionInputPin -> InputPin
+    Reference fromAction : Action<<1..1>>
+    Operation noControlOrDataFlow(EDiagnosticChain, EMap) : EBoolean
+    Operation oneOutputPin(EDiagnosticChain, EMap) : EBoolean
+    Operation inputPin(EDiagnosticChain, EMap) : EBoolean
+
+  Class ActivityFinalNode -> FinalNode
+
+  Class FinalNode -> ControlNode
+    Operation noOutgoingEdges(EDiagnosticChain, EMap) : EBoolean
+
+  Class ControlNode -> ActivityNode
+
+  Class ActivityParameterNode
+    Reference parameter : Parameter<<1..1>>
+    Operation hasParameters(EDiagnosticChain, EMap) : EBoolean
+    Operation noIncomingEdges(EDiagnosticChain, EMap) : EBoolean
+    Operation maximumOneParameterNode(EDiagnosticChain, EMap) : EBoolean
+    Operation sameType(EDiagnosticChain, EMap) : EBoolean
+    Operation noEdges(EDiagnosticChain, EMap) : EBoolean
+    Operation noOutgoingEdges(EDiagnosticChain, EMap) : EBoolean
+    Operation maximumTwoParameterNodes(EDiagnosticChain, EMap) : EBoolean
+
+  Class Actor -> BehavioredClassifier
+    Operation associations(EDiagnosticChain, EMap) : EBoolean
+    Operation mustHaveName(EDiagnosticChain, EMap) : EBoolean
+
+  Class AddStructuralFeatureValueAction -> WriteStructuralFeatureAction
+    Reference insertAt : InputPin
+    Attribute isReplaceAll : Boolean<<1..1>>
+    Operation requiredValue(EDiagnosticChain, EMap) : EBoolean
+    Operation unlimitedNaturalAndMultiplicity(EDiagnosticChain, EMap) : EBoolean
 
   Class WriteStructuralFeatureAction -> StructuralFeatureAction
     Reference result : OutputPin
@@ -1564,6 +1357,12 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
     Operation oneFeaturingClassifier(EDiagnosticChain, EMap) : EBoolean
     Operation sameType(EDiagnosticChain, EMap) : EBoolean
 
+  Class AddVariableValueAction -> WriteVariableAction
+    Reference insertAt : InputPin
+    Attribute isReplaceAll : Boolean<<1..1>>
+    Operation singleInputPin(EDiagnosticChain, EMap) : EBoolean
+    Operation requiredValue(EDiagnosticChain, EMap) : EBoolean
+
   Class WriteVariableAction -> VariableAction
     Reference value : InputPin
     Operation multiplicity(EDiagnosticChain, EMap) : EBoolean
@@ -1573,12 +1372,134 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
     Reference variable : Variable<<1..1>>
     Operation scopeOfVariable(EDiagnosticChain, EMap) : EBoolean
 
+  Class AnyReceiveEvent -> MessageEvent
+
   Class MessageEvent -> Event
+
+  Class AssociationClass -> Class, Association
+    Operation cannotBeDefined(EDiagnosticChain, EMap) : EBoolean
+    Operation disjointAttributesEnds(EDiagnosticChain, EMap) : EBoolean
+
+  Class BehaviorExecutionSpecification -> ExecutionSpecification
+    Reference behavior : Behavior
+
+  Class BroadcastSignalAction -> InvocationAction
+    Reference signal : Signal<<1..1>>
+    Operation typeOrderingMultiplicity(EDiagnosticChain, EMap) : EBoolean
+    Operation numberAndOrder(EDiagnosticChain, EMap) : EBoolean
 
   Class InvocationAction -> Action
     Reference argument : InputPin<<0..*>>
     Reference onPort : Port
     Operation onPortReceiver(EDiagnosticChain, EMap) : EBoolean
+
+  Class CallAction -> InvocationAction
+    Attribute isSynchronous : Boolean<<1..1>>
+    Reference result : OutputPin<<0..*>>
+    Operation synchronousCall(EDiagnosticChain, EMap) : EBoolean
+    Operation numberAndOrder(EDiagnosticChain, EMap) : EBoolean
+    Operation typeOrderingMultiplicity(EDiagnosticChain, EMap) : EBoolean
+
+  Class CallBehaviorAction -> CallAction
+    Reference behavior : Behavior<<1..1>>
+    Operation argumentPinEqualParameter(EDiagnosticChain, EMap) : EBoolean
+    Operation resultPinEqualParameter(EDiagnosticChain, EMap) : EBoolean
+
+  Class CallEvent -> MessageEvent
+    Reference operation : Operation<<1..1>>
+
+  Class CallOperationAction -> CallAction
+    Reference operation : Operation<<1..1>>
+    Reference target : InputPin<<1..1>>
+    Operation argumentPinEqualParameter(EDiagnosticChain, EMap) : EBoolean
+    Operation typeTargetPin(EDiagnosticChain, EMap) : EBoolean
+    Operation resultPinEqualParameter(EDiagnosticChain, EMap) : EBoolean
+
+  Class CentralBufferNode
+
+  Class ChangeEvent -> Event
+    Reference changeExpression : ValueSpecification<<1..1>>
+
+  Class Clause -> Element
+    Reference body : ExecutableNode<<0..*>>
+    Reference bodyOutput : OutputPin<<0..*>>
+    Reference decider : OutputPin<<1..1>>
+    Reference predecessorClause : Clause<<0..*>>
+    Reference successorClause : Clause<<0..*>>
+    Reference test : ExecutableNode<<1..*>>
+    Operation bodyOutputPins(EDiagnosticChain, EMap) : EBoolean
+    Operation testAndBody(EDiagnosticChain, EMap) : EBoolean
+    Operation deciderOutput(EDiagnosticChain, EMap) : EBoolean
+
+  Class ClearAssociationAction -> Action
+    Reference association : Association<<1..1>>
+    Reference object : InputPin<<1..1>>
+    Operation sameType(EDiagnosticChain, EMap) : EBoolean
+    Operation multiplicity(EDiagnosticChain, EMap) : EBoolean
+
+  Class ClearStructuralFeatureAction -> StructuralFeatureAction
+    Reference result : OutputPin
+    Operation typeOfResult(EDiagnosticChain, EMap) : EBoolean
+    Operation multiplicityOfResult(EDiagnosticChain, EMap) : EBoolean
+
+  Class ClearVariableAction -> VariableAction
+
+  Class CombinedFragment -> InteractionFragment
+    Reference cfragmentGate : Gate<<0..*>>
+    Attribute interactionOperator : InteractionOperatorKind<<1..1>>
+    Reference operand : InteractionOperand<<1..*>>
+    Operation minintAndMaxint(EDiagnosticChain, EMap) : EBoolean
+    Operation optLoopBreakNeg(EDiagnosticChain, EMap) : EBoolean
+    Operation break_(EDiagnosticChain, EMap) : EBoolean
+    Operation considerAndIgnore(EDiagnosticChain, EMap) : EBoolean
+
+  Class CommunicationPath -> Association
+
+  Class Component -> Class
+    Attribute isIndirectlyInstantiated : Boolean<<1..1>>
+    Reference packagedElement : PackageableElement<<0..*>>
+    Reference /provided : Interface<<0..*>>
+    Reference realization : ComponentRealization<<0..*>>
+    Reference /required : Interface<<0..*>>
+    Operation noPackagedElements(EDiagnosticChain, EMap) : EBoolean
+    Operation noNestedClassifiers(EDiagnosticChain, EMap) : EBoolean
+    Operation provided() : Interface<<0..*>>
+    Operation realizedInterfaces(Classifier<<1..1>>) : Interface<<0..*>>
+    Operation required() : Interface<<0..*>>
+    Operation usedInterfaces(Classifier<<1..1>>) : Interface<<0..*>>
+
+  Class ComponentRealization -> Realization
+    Reference realizingClassifier : Classifier<<1..*>>
+    Reference abstraction : Component
+
+  Class ConditionalNode -> StructuredActivityNode
+    Reference clause : Clause<<1..*>>
+    Attribute isAssured : Boolean<<1..1>>
+    Attribute isDeterminate : Boolean<<1..1>>
+    Reference result : OutputPin<<0..*>>
+    Operation noInputPins(EDiagnosticChain, EMap) : EBoolean
+    Operation resultNoIncoming(EDiagnosticChain, EMap) : EBoolean
+    Operation clauseNoPredecessor(EDiagnosticChain, EMap) : EBoolean
+    Operation executableNodes(EDiagnosticChain, EMap) : EBoolean
+    Operation matchingOutputPins(EDiagnosticChain, EMap) : EBoolean
+    Operation oneClauseWithExecutableNode(EDiagnosticChain, EMap) : EBoolean
+
+  Class ConsiderIgnoreFragment -> CombinedFragment
+    Reference message : NamedElement<<0..*>>
+    Operation considerOrIgnore(EDiagnosticChain, EMap) : EBoolean
+    Operation type(EDiagnosticChain, EMap) : EBoolean
+
+  Class Continuation -> InteractionFragment
+    Attribute setting : Boolean<<1..1>>
+    Operation global(EDiagnosticChain, EMap) : EBoolean
+    Operation firstOrLastInteractionFragment(EDiagnosticChain, EMap) : EBoolean
+    Operation sameName(EDiagnosticChain, EMap) : EBoolean
+
+  Class ControlFlow -> ActivityEdge
+    Operation objectNodes(EDiagnosticChain, EMap) : EBoolean
+
+  Class CreateLinkAction -> WriteLinkAction
+    Operation associationNotAbstract(EDiagnosticChain, EMap) : EBoolean
 
   Class WriteLinkAction -> LinkAction
     Operation allowAccess(EDiagnosticChain, EMap) : EBoolean
@@ -1760,6 +1681,88 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
   Class FunctionBehavior -> OpaqueBehavior
     Operation oneOutputParameter(EDiagnosticChain, EMap) : EBoolean
     Operation typesOfParameters(EDiagnosticChain, EMap) : EBoolean
+
+  Class OpaqueBehavior -> Behavior
+    Attribute body : String<<0..*>>
+    Attribute language : String<<0..*>>
+
+  Class InformationFlow -> PackageableElement, DirectedRelationship
+    Reference conveyed : Classifier<<1..*>>
+    Reference informationSource : NamedElement<<1..*>>
+    Reference informationTarget : NamedElement<<1..*>>
+    Reference realization : Relationship<<0..*>>
+    Reference realizingActivityEdge : ActivityEdge<<0..*>>
+    Reference realizingConnector : Connector<<0..*>>
+    Reference realizingMessage : Message<<0..*>>
+    Operation conveyClassifiers(EDiagnosticChain, EMap) : EBoolean
+    Operation mustConform(EDiagnosticChain, EMap) : EBoolean
+    Operation sourcesAndTargetsKind(EDiagnosticChain, EMap) : EBoolean
+
+  Class InformationItem -> Classifier
+    Reference represented : Classifier<<0..*>>
+    Operation hasNo(EDiagnosticChain, EMap) : EBoolean
+    Operation sourcesAndTargets(EDiagnosticChain, EMap) : EBoolean
+    Operation notInstantiable(EDiagnosticChain, EMap) : EBoolean
+
+  Class InitialNode -> ControlNode
+    Operation controlEdges(EDiagnosticChain, EMap) : EBoolean
+    Operation noIncomingEdges(EDiagnosticChain, EMap) : EBoolean
+
+  Class InstanceValue -> ValueSpecification
+    Reference instance : InstanceSpecification<<1..1>>
+
+  Class JoinNode -> ControlNode
+    Attribute isCombineDuplicate : Boolean<<1..1>>
+    Reference joinSpec : ValueSpecification<<1..1>>
+    Operation oneOutgoingEdge(EDiagnosticChain, EMap) : EBoolean
+    Operation incomingObjectFlow(EDiagnosticChain, EMap) : EBoolean
+
+  Class LiteralBoolean -> LiteralSpecification
+    Attribute value : Boolean<<1..1>>
+
+  Class LiteralSpecification -> ValueSpecification
+
+  Class LiteralInteger -> LiteralSpecification
+    Attribute value : Integer<<1..1>>
+
+  Class LiteralNull -> LiteralSpecification
+
+  Class LiteralReal -> LiteralSpecification
+    Attribute value : Real<<1..1>>
+
+  Class LiteralString -> LiteralSpecification
+    Attribute value : String
+
+  Class LiteralUnlimitedNatural -> LiteralSpecification
+    Attribute value : UnlimitedNatural<<1..1>>
+
+  Class LoopNode -> StructuredActivityNode
+    Reference bodyOutput : OutputPin<<0..*>>
+    Reference bodyPart : ExecutableNode<<0..*>>
+    Reference decider : OutputPin<<1..1>>
+    Attribute isTestedFirst : Boolean<<1..1>>
+    Reference loopVariable : OutputPin<<0..*>>
+    Reference loopVariableInput : InputPin<<0..*>>
+    Reference result : OutputPin<<0..*>>
+    Reference setupPart : ExecutableNode<<0..*>>
+    Reference test : ExecutableNode<<1..*>>
+    Operation inputEdges(EDiagnosticChain, EMap) : EBoolean
+    Operation resultNoIncoming(EDiagnosticChain, EMap) : EBoolean
+    Operation executableNodes(EDiagnosticChain, EMap) : EBoolean
+    Operation bodyOutputPins(EDiagnosticChain, EMap) : EBoolean
+
+  Class MergeNode -> ControlNode
+    Operation edges(EDiagnosticChain, EMap) : EBoolean
+    Operation oneOutgoingEdge(EDiagnosticChain, EMap) : EBoolean
+
+  Class Model -> Package
+    Attribute viewpoint : String
+
+  Class OpaqueAction -> Action
+    Attribute body : String<<0..*>>
+    Reference inputValue : InputPin<<0..*>>
+    Attribute language : String<<0..*>>
+    Reference outputValue : OutputPin<<0..*>>
 
   Class PrimitiveType -> DataType
 
@@ -1959,19 +1962,16 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
     Operation multiplicity(EDiagnosticChain, EMap) : EBoolean
     Operation compatibleType(EDiagnosticChain, EMap) : EBoolean
 
-  Enum AggregationKind
-    Literal none = 0
-    Literal shared = 1
-    Literal composite = 2
+  Enum VisibilityKind
+    Literal public = 0
+    Literal private = 1
+    Literal protected = 2
+    Literal package = 3
 
   Enum CallConcurrencyKind
     Literal sequential = 0
     Literal guarded = 1
     Literal concurrent = 2
-
-  Enum ConnectorKind
-    Literal assembly = 0
-    Literal delegation = 1
 
   Enum ParameterDirectionKind
     Literal in = 0
@@ -1985,6 +1985,11 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
     Literal update = 2
     Literal delete = 3
 
+  Enum TransitionKind
+    Literal internal = 0
+    Literal local = 1
+    Literal external = 2
+
   Enum PseudostateKind
     Literal initial = 0
     Literal deepHistory = 1
@@ -1997,16 +2002,14 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
     Literal exitPoint = 8
     Literal terminate = 9
 
-  Enum TransitionKind
-    Literal internal = 0
-    Literal local = 1
-    Literal external = 2
+  Enum AggregationKind
+    Literal none = 0
+    Literal shared = 1
+    Literal composite = 2
 
-  Enum VisibilityKind
-    Literal public = 0
-    Literal private = 1
-    Literal protected = 2
-    Literal package = 3
+  Enum ConnectorKind
+    Literal assembly = 0
+    Literal delegation = 1
 
   Enum MessageKind
     Literal complete = 0
@@ -2041,7 +2044,7 @@ Package uml2 <http://www.omg.org/spec/UML/20110701>
     Literal iterative = 1
     Literal stream = 2
 
-Package primitiveTypes <http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi>
+Package primitiveTypes <http://schema.omg.org/spec/QVT/1.1/primitivetypes.xml>
 
   DataType Boolean <java.lang.Boolean>
 

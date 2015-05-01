@@ -7,7 +7,7 @@ import frameweb.NavigationPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import uml2.impl.PackageImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public abstract class NavigationPackageImpl extends MinimalEObjectImpl.Container implements NavigationPackage {
+public abstract class NavigationPackageImpl extends PackageImpl implements NavigationPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -263,22 +263,22 @@ public class ActivityItemProvider extends BehaviorItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.ACTIVITY__GROUP,
-				 Uml2Factory.eINSTANCE.createConditionalNode()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.ACTIVITY__GROUP,
 				 Uml2Factory.eINSTANCE.createInterruptibleActivityRegion()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.ACTIVITY__GROUP,
-				 Uml2Factory.eINSTANCE.createLoopNode()));
+				 Uml2Factory.eINSTANCE.createConditionalNode()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.ACTIVITY__GROUP,
 				 Uml2Factory.eINSTANCE.createExpansionRegion()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.ACTIVITY__GROUP,
+				 Uml2Factory.eINSTANCE.createLoopNode()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -299,6 +299,11 @@ public class ActivityItemProvider extends BehaviorItemProvider {
 			(createChildParameter
 				(Uml2Package.Literals.ACTIVITY__NODE,
 				 Uml2Factory.eINSTANCE.createAcceptCallAction()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.ACTIVITY__NODE,
+				 Uml2Factory.eINSTANCE.createStructuredActivityNode()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -348,42 +353,12 @@ public class ActivityItemProvider extends BehaviorItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.ACTIVITY__NODE,
-				 Uml2Factory.eINSTANCE.createStructuredActivityNode()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.ACTIVITY__NODE,
 				 Uml2Factory.eINSTANCE.createConditionalNode()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(Uml2Package.Literals.ACTIVITY__NODE,
 				 Uml2Factory.eINSTANCE.createCreateLinkAction()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.ACTIVITY__NODE,
-				 Uml2Factory.eINSTANCE.createInitialNode()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.ACTIVITY__NODE,
-				 Uml2Factory.eINSTANCE.createJoinNode()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.ACTIVITY__NODE,
-				 Uml2Factory.eINSTANCE.createLoopNode()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.ACTIVITY__NODE,
-				 Uml2Factory.eINSTANCE.createMergeNode()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Uml2Package.Literals.ACTIVITY__NODE,
-				 Uml2Factory.eINSTANCE.createOpaqueAction()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -424,6 +399,31 @@ public class ActivityItemProvider extends BehaviorItemProvider {
 			(createChildParameter
 				(Uml2Package.Literals.ACTIVITY__NODE,
 				 Uml2Factory.eINSTANCE.createForkNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.ACTIVITY__NODE,
+				 Uml2Factory.eINSTANCE.createInitialNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.ACTIVITY__NODE,
+				 Uml2Factory.eINSTANCE.createJoinNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.ACTIVITY__NODE,
+				 Uml2Factory.eINSTANCE.createLoopNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.ACTIVITY__NODE,
+				 Uml2Factory.eINSTANCE.createMergeNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Uml2Package.Literals.ACTIVITY__NODE,
+				 Uml2Factory.eINSTANCE.createOpaqueAction()));
 
 		newChildDescriptors.add
 			(createChildParameter

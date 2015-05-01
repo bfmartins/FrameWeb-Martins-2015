@@ -3,6 +3,7 @@
 package frameweb;
 
 import org.eclipse.emf.common.util.EList;
+import uml2.Stereotype;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,7 +22,7 @@ import org.eclipse.emf.common.util.EList;
  * @model
  * @generated
  */
-public interface FrontControllerClass extends uml2.Class {
+public interface FrontControllerClass extends Stereotype {
 	/**
 	 * Returns the value of the '<em><b>Front Controller Attribute</b></em>' containment reference list.
 	 * The list contents are of type {@link frameweb.IOParameter}.
