@@ -31,6 +31,7 @@ import uml2.ParameterableElement;
 import uml2.Property;
 import uml2.RedefinableElement;
 import uml2.Relationship;
+import uml2.Stereotype;
 import uml2.StructuralFeature;
 import uml2.StructuredClassifier;
 import uml2.TemplateableElement;
@@ -98,6 +99,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				MappedClass mappedClass = (MappedClass)theEObject;
 				T result = caseMappedClass(mappedClass);
 				if (result == null) result = caseDomainClass(mappedClass);
+				if (result == null) result = caseStereotype(mappedClass);
 				if (result == null) result = caseClass(mappedClass);
 				if (result == null) result = caseEncapsulatedClassifier(mappedClass);
 				if (result == null) result = caseBehavioredClassifier(mappedClass);
@@ -118,6 +120,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				PersistentClass persistentClass = (PersistentClass)theEObject;
 				T result = casePersistentClass(persistentClass);
 				if (result == null) result = caseDomainClass(persistentClass);
+				if (result == null) result = caseStereotype(persistentClass);
 				if (result == null) result = caseClass(persistentClass);
 				if (result == null) result = caseEncapsulatedClassifier(persistentClass);
 				if (result == null) result = caseBehavioredClassifier(persistentClass);
@@ -138,6 +141,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				TransientClass transientClass = (TransientClass)theEObject;
 				T result = caseTransientClass(transientClass);
 				if (result == null) result = caseDomainClass(transientClass);
+				if (result == null) result = caseStereotype(transientClass);
 				if (result == null) result = caseClass(transientClass);
 				if (result == null) result = caseEncapsulatedClassifier(transientClass);
 				if (result == null) result = caseBehavioredClassifier(transientClass);
@@ -163,12 +167,26 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case FramewebPackage.FRAME_WEB_MODEL: {
 				FrameWebModel frameWebModel = (FrameWebModel)theEObject;
 				T result = caseFrameWebModel(frameWebModel);
+				if (result == null) result = casePackage(frameWebModel);
+				if (result == null) result = caseNamespace(frameWebModel);
+				if (result == null) result = casePackageableElement(frameWebModel);
+				if (result == null) result = caseTemplateableElement(frameWebModel);
+				if (result == null) result = caseNamedElement(frameWebModel);
+				if (result == null) result = caseParameterableElement(frameWebModel);
+				if (result == null) result = caseElement(frameWebModel);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case FramewebPackage.FRAMEWORK: {
 				Framework framework = (Framework)theEObject;
 				T result = caseFramework(framework);
+				if (result == null) result = casePackage(framework);
+				if (result == null) result = caseNamespace(framework);
+				if (result == null) result = casePackageableElement(framework);
+				if (result == null) result = caseTemplateableElement(framework);
+				if (result == null) result = caseNamedElement(framework);
+				if (result == null) result = caseParameterableElement(framework);
+				if (result == null) result = caseElement(framework);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -176,6 +194,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 				DomainModel domainModel = (DomainModel)theEObject;
 				T result = caseDomainModel(domainModel);
 				if (result == null) result = caseFrameWebModel(domainModel);
+				if (result == null) result = casePackage(domainModel);
+				if (result == null) result = caseNamespace(domainModel);
+				if (result == null) result = casePackageableElement(domainModel);
+				if (result == null) result = caseTemplateableElement(domainModel);
+				if (result == null) result = caseNamedElement(domainModel);
+				if (result == null) result = caseParameterableElement(domainModel);
+				if (result == null) result = caseElement(domainModel);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -183,6 +208,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 				NavigationModel navigationModel = (NavigationModel)theEObject;
 				T result = caseNavigationModel(navigationModel);
 				if (result == null) result = caseFrameWebModel(navigationModel);
+				if (result == null) result = casePackage(navigationModel);
+				if (result == null) result = caseNamespace(navigationModel);
+				if (result == null) result = casePackageableElement(navigationModel);
+				if (result == null) result = caseTemplateableElement(navigationModel);
+				if (result == null) result = caseNamedElement(navigationModel);
+				if (result == null) result = caseParameterableElement(navigationModel);
+				if (result == null) result = caseElement(navigationModel);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -190,6 +222,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 				ApplicationModel applicationModel = (ApplicationModel)theEObject;
 				T result = caseApplicationModel(applicationModel);
 				if (result == null) result = caseFrameWebModel(applicationModel);
+				if (result == null) result = casePackage(applicationModel);
+				if (result == null) result = caseNamespace(applicationModel);
+				if (result == null) result = casePackageableElement(applicationModel);
+				if (result == null) result = caseTemplateableElement(applicationModel);
+				if (result == null) result = caseNamedElement(applicationModel);
+				if (result == null) result = caseParameterableElement(applicationModel);
+				if (result == null) result = caseElement(applicationModel);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -197,6 +236,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 				PersistenceModel persistenceModel = (PersistenceModel)theEObject;
 				T result = casePersistenceModel(persistenceModel);
 				if (result == null) result = caseFrameWebModel(persistenceModel);
+				if (result == null) result = casePackage(persistenceModel);
+				if (result == null) result = caseNamespace(persistenceModel);
+				if (result == null) result = casePackageableElement(persistenceModel);
+				if (result == null) result = caseTemplateableElement(persistenceModel);
+				if (result == null) result = caseNamedElement(persistenceModel);
+				if (result == null) result = caseParameterableElement(persistenceModel);
+				if (result == null) result = caseElement(persistenceModel);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -346,6 +392,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				Page page = (Page)theEObject;
 				T result = casePage(page);
 				if (result == null) result = caseNavigationClass(page);
+				if (result == null) result = caseStereotype(page);
 				if (result == null) result = caseClass(page);
 				if (result == null) result = caseEncapsulatedClassifier(page);
 				if (result == null) result = caseBehavioredClassifier(page);
@@ -366,6 +413,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				Template template = (Template)theEObject;
 				T result = caseTemplate(template);
 				if (result == null) result = caseNavigationClass(template);
+				if (result == null) result = caseStereotype(template);
 				if (result == null) result = caseClass(template);
 				if (result == null) result = caseEncapsulatedClassifier(template);
 				if (result == null) result = caseBehavioredClassifier(template);
@@ -387,6 +435,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				T result = caseForm(form);
 				if (result == null) result = caseNavigationClass(form);
 				if (result == null) result = caseTag(form);
+				if (result == null) result = caseStereotype(form);
 				if (result == null) result = caseClass(form);
 				if (result == null) result = caseEncapsulatedClassifier(form);
 				if (result == null) result = caseBehavioredClassifier(form);
@@ -407,6 +456,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				Binary binary = (Binary)theEObject;
 				T result = caseBinary(binary);
 				if (result == null) result = caseNavigationClass(binary);
+				if (result == null) result = caseStereotype(binary);
 				if (result == null) result = caseClass(binary);
 				if (result == null) result = caseEncapsulatedClassifier(binary);
 				if (result == null) result = caseBehavioredClassifier(binary);
@@ -442,6 +492,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case FramewebPackage.DAO_CLASS: {
 				DAOClass daoClass = (DAOClass)theEObject;
 				T result = caseDAOClass(daoClass);
+				if (result == null) result = caseStereotype(daoClass);
 				if (result == null) result = caseClass(daoClass);
 				if (result == null) result = caseEncapsulatedClassifier(daoClass);
 				if (result == null) result = caseBehavioredClassifier(daoClass);
@@ -471,6 +522,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case FramewebPackage.FRONT_CONTROLLER_CLASS: {
 				FrontControllerClass frontControllerClass = (FrontControllerClass)theEObject;
 				T result = caseFrontControllerClass(frontControllerClass);
+				if (result == null) result = caseStereotype(frontControllerClass);
 				if (result == null) result = caseClass(frontControllerClass);
 				if (result == null) result = caseEncapsulatedClassifier(frontControllerClass);
 				if (result == null) result = caseBehavioredClassifier(frontControllerClass);
@@ -584,6 +636,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case FramewebPackage.SERVICE_CLASS: {
 				ServiceClass serviceClass = (ServiceClass)theEObject;
 				T result = caseServiceClass(serviceClass);
+				if (result == null) result = caseStereotype(serviceClass);
 				if (result == null) result = caseClass(serviceClass);
 				if (result == null) result = caseEncapsulatedClassifier(serviceClass);
 				if (result == null) result = caseBehavioredClassifier(serviceClass);
@@ -647,6 +700,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case FramewebPackage.DOMAIN_CLASS: {
 				DomainClass domainClass = (DomainClass)theEObject;
 				T result = caseDomainClass(domainClass);
+				if (result == null) result = caseStereotype(domainClass);
 				if (result == null) result = caseClass(domainClass);
 				if (result == null) result = caseEncapsulatedClassifier(domainClass);
 				if (result == null) result = caseBehavioredClassifier(domainClass);
@@ -818,6 +872,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case FramewebPackage.NAVIGATION_CLASS: {
 				NavigationClass navigationClass = (NavigationClass)theEObject;
 				T result = caseNavigationClass(navigationClass);
+				if (result == null) result = caseStereotype(navigationClass);
 				if (result == null) result = caseClass(navigationClass);
 				if (result == null) result = caseEncapsulatedClassifier(navigationClass);
 				if (result == null) result = caseBehavioredClassifier(navigationClass);
@@ -946,6 +1001,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case FramewebPackage.DOMAIN_PACKAGE: {
 				DomainPackage domainPackage = (DomainPackage)theEObject;
 				T result = caseDomainPackage(domainPackage);
+				if (result == null) result = casePackage(domainPackage);
+				if (result == null) result = caseNamespace(domainPackage);
+				if (result == null) result = casePackageableElement(domainPackage);
+				if (result == null) result = caseTemplateableElement(domainPackage);
+				if (result == null) result = caseNamedElement(domainPackage);
+				if (result == null) result = caseParameterableElement(domainPackage);
+				if (result == null) result = caseElement(domainPackage);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -953,6 +1015,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 				ViewPackage viewPackage = (ViewPackage)theEObject;
 				T result = caseViewPackage(viewPackage);
 				if (result == null) result = caseNavigationPackage(viewPackage);
+				if (result == null) result = casePackage(viewPackage);
+				if (result == null) result = caseNamespace(viewPackage);
+				if (result == null) result = casePackageableElement(viewPackage);
+				if (result == null) result = caseTemplateableElement(viewPackage);
+				if (result == null) result = caseNamedElement(viewPackage);
+				if (result == null) result = caseParameterableElement(viewPackage);
+				if (result == null) result = caseElement(viewPackage);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -960,18 +1029,39 @@ public class FramewebSwitch<T> extends Switch<T> {
 				ControllerPackage controllerPackage = (ControllerPackage)theEObject;
 				T result = caseControllerPackage(controllerPackage);
 				if (result == null) result = caseNavigationPackage(controllerPackage);
+				if (result == null) result = casePackage(controllerPackage);
+				if (result == null) result = caseNamespace(controllerPackage);
+				if (result == null) result = casePackageableElement(controllerPackage);
+				if (result == null) result = caseTemplateableElement(controllerPackage);
+				if (result == null) result = caseNamedElement(controllerPackage);
+				if (result == null) result = caseParameterableElement(controllerPackage);
+				if (result == null) result = caseElement(controllerPackage);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case FramewebPackage.PERSISTENCE_PACKAGE: {
 				PersistencePackage persistencePackage = (PersistencePackage)theEObject;
 				T result = casePersistencePackage(persistencePackage);
+				if (result == null) result = casePackage(persistencePackage);
+				if (result == null) result = caseNamespace(persistencePackage);
+				if (result == null) result = casePackageableElement(persistencePackage);
+				if (result == null) result = caseTemplateableElement(persistencePackage);
+				if (result == null) result = caseNamedElement(persistencePackage);
+				if (result == null) result = caseParameterableElement(persistencePackage);
+				if (result == null) result = caseElement(persistencePackage);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case FramewebPackage.APPLICATION_PACKAGE: {
 				ApplicationPackage applicationPackage = (ApplicationPackage)theEObject;
 				T result = caseApplicationPackage(applicationPackage);
+				if (result == null) result = casePackage(applicationPackage);
+				if (result == null) result = caseNamespace(applicationPackage);
+				if (result == null) result = casePackageableElement(applicationPackage);
+				if (result == null) result = caseTemplateableElement(applicationPackage);
+				if (result == null) result = caseNamedElement(applicationPackage);
+				if (result == null) result = caseParameterableElement(applicationPackage);
+				if (result == null) result = caseElement(applicationPackage);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -979,6 +1069,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				Component component = (Component)theEObject;
 				T result = caseComponent(component);
 				if (result == null) result = caseNavigationClass(component);
+				if (result == null) result = caseStereotype(component);
 				if (result == null) result = caseClass(component);
 				if (result == null) result = caseEncapsulatedClassifier(component);
 				if (result == null) result = caseBehavioredClassifier(component);
@@ -1004,6 +1095,13 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case FramewebPackage.NAVIGATION_PACKAGE: {
 				NavigationPackage navigationPackage = (NavigationPackage)theEObject;
 				T result = caseNavigationPackage(navigationPackage);
+				if (result == null) result = casePackage(navigationPackage);
+				if (result == null) result = caseNamespace(navigationPackage);
+				if (result == null) result = casePackageableElement(navigationPackage);
+				if (result == null) result = caseTemplateableElement(navigationPackage);
+				if (result == null) result = caseNamedElement(navigationPackage);
+				if (result == null) result = caseParameterableElement(navigationPackage);
+				if (result == null) result = caseElement(navigationPackage);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1021,6 +1119,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				JQuery jQuery = (JQuery)theEObject;
 				T result = caseJQuery(jQuery);
 				if (result == null) result = caseNavigationClass(jQuery);
+				if (result == null) result = caseStereotype(jQuery);
 				if (result == null) result = caseClass(jQuery);
 				if (result == null) result = caseEncapsulatedClassifier(jQuery);
 				if (result == null) result = caseBehavioredClassifier(jQuery);
@@ -2445,6 +2544,36 @@ public class FramewebSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseClass(uml2.Class object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Stereotype</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Stereotype</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStereotype(Stereotype object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Package</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Package</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePackage(uml2.Package object) {
 		return null;
 	}
 

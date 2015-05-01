@@ -33,6 +33,7 @@ import uml2.ParameterableElement;
 import uml2.Property;
 import uml2.RedefinableElement;
 import uml2.Relationship;
+import uml2.Stereotype;
 import uml2.StructuralFeature;
 import uml2.StructuredClassifier;
 import uml2.TemplateableElement;
@@ -454,6 +455,14 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseClass(uml2.Class object) {
 				return createClassAdapter();
+			}
+			@Override
+			public Adapter caseStereotype(Stereotype object) {
+				return createStereotypeAdapter();
+			}
+			@Override
+			public Adapter casePackage(uml2.Package object) {
+				return createPackageAdapter();
 			}
 			@Override
 			public Adapter caseRelationship(Relationship object) {
@@ -1792,6 +1801,34 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createClassAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link uml2.Stereotype <em>Stereotype</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see uml2.Stereotype
+	 * @generated
+	 */
+	public Adapter createStereotypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link uml2.Package <em>Package</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see uml2.Package
+	 * @generated
+	 */
+	public Adapter createPackageAdapter() {
 		return null;
 	}
 
