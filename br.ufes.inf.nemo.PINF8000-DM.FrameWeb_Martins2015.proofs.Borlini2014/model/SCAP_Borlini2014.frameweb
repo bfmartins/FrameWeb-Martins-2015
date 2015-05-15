@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015">
+  <Compose xsi:type="frameweb:NavigationModel" name="SCAP_NM">
+    <ViewUMLPackage name="PersonRegistration">
+      <packagedElement xsi:type="frameweb:Form" name="Message"/>
+      <ViewPackageClass xsi:type="frameweb:Page" name="PersonRegistration"/>
+      <ViewPackageClass xsi:type="frameweb:Form" name="PersonRegistrationForm"/>
+    </ViewUMLPackage>
+    <ControllerUMLPackage name="PersonRegistration">
+      <ControllerPackageClass name="PersonRegistrationBean"/>
+    </ControllerUMLPackage>
+  </Compose>
+</frameweb:Frameweb>
