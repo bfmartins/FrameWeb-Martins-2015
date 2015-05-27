@@ -23,8 +23,8 @@ import org.eclipse.emf.common.util.EList;
 public interface IOParameter extends NavigationAttribute {
 	/**
 	 * Returns the value of the '<em><b>Display</b></em>' reference list.
-	 * The list contents are of type {@link frameweb.FormComponent}.
-	 * It is bidirectional and its opposite is '{@link frameweb.FormComponent#getInject <em>Inject</em>}'.
+	 * The list contents are of type {@link FrameworkTag}.
+	 * It is bidirectional and its opposite is '{@link FrameworkTag#getInject <em>Inject</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Display</em>' reference list isn't clear,
@@ -33,10 +33,10 @@ public interface IOParameter extends NavigationAttribute {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Display</em>' reference list.
 	 * @see frameweb.FramewebPackage#getIOParameter_Display()
-	 * @see frameweb.FormComponent#getInject
-	 * @model opposite="inject" derived="true"
+	 * @see FrameworkTag#getInject
+	 * @model type="frameweb.FormComponent" opposite="inject" derived="true"
 	 * @generated
 	 */
-	EList<FormComponent> getDisplay();
+	EList<FrameworkTag> getDisplay();
 
 } // IOParameter

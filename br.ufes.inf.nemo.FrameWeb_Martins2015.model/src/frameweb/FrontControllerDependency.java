@@ -61,12 +61,12 @@ public interface FrontControllerDependency extends NavigationDependency {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Form</em>' reference.
-	 * @see #setSourceForm(Form)
+	 * @see #setSourceForm(Tag)
 	 * @see frameweb.FramewebPackage#getFrontControllerDependency_SourceForm()
-	 * @model
+	 * @model type="frameweb.Form"
 	 * @generated
 	 */
-	Form getSourceForm();
+	Tag getSourceForm();
 
 	/**
 	 * Sets the value of the '{@link frameweb.FrontControllerDependency#getSourceForm <em>Source Form</em>}' reference.
@@ -76,7 +76,7 @@ public interface FrontControllerDependency extends NavigationDependency {
 	 * @see #getSourceForm()
 	 * @generated
 	 */
-	void setSourceForm(Form value);
+	void setSourceForm(Tag value);
 
 	/**
 	 * Returns the value of the '<em><b>Target Front Controller</b></em>' reference.

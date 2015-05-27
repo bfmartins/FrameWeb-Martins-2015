@@ -5,11 +5,11 @@
 package frameweb.validation;
 
 import frameweb.Component;
-import frameweb.Form;
 import frameweb.FrontControllerClass;
 import frameweb.FrontControllerMethod;
 import frameweb.JQuery;
 import frameweb.Page;
+import frameweb.Tag; //*********************************************** linha adicionada
 import frameweb.Template;
 
 /**
@@ -22,7 +22,7 @@ public interface FrontControllerDependencyValidator {
 	boolean validate();
 
 	boolean validateMethod(FrontControllerMethod value);
-	boolean validateSourceForm(Form value);
+	boolean validateSourceForm(Tag value);
 	boolean validateTargetFrontController(FrontControllerClass value);
 	boolean validateSourcePage(Page value);
 	boolean validateSourceTemplate(Template value);

@@ -202,12 +202,12 @@ public interface ResultDependency extends NavigationDependency {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Form</em>' reference.
-	 * @see #setTargetForm(Form)
+	 * @see #setTargetForm(Tag)
 	 * @see frameweb.FramewebPackage#getResultDependency_TargetForm()
-	 * @model
+	 * @model type="frameweb.Form"
 	 * @generated
 	 */
-	Form getTargetForm();
+	Tag getTargetForm();
 
 	/**
 	 * Sets the value of the '{@link frameweb.ResultDependency#getTargetForm <em>Target Form</em>}' reference.
@@ -217,7 +217,7 @@ public interface ResultDependency extends NavigationDependency {
 	 * @see #getTargetForm()
 	 * @generated
 	 */
-	void setTargetForm(Form value);
+	void setTargetForm(Tag value);
 
 	/**
 	 * Returns the value of the '<em><b>Target Component</b></em>' reference.
@@ -280,12 +280,12 @@ public interface ResultDependency extends NavigationDependency {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Form Component</em>' reference.
-	 * @see #setTargetFormComponent(FormComponent)
+	 * @see #setTargetFormComponent(FrameworkTag)
 	 * @see frameweb.FramewebPackage#getResultDependency_TargetFormComponent()
-	 * @model
+	 * @model type="frameweb.FormComponent"
 	 * @generated
 	 */
-	FormComponent getTargetFormComponent();
+	FrameworkTag getTargetFormComponent();
 
 	/**
 	 * Sets the value of the '{@link frameweb.ResultDependency#getTargetFormComponent <em>Target Form Component</em>}' reference.
@@ -295,6 +295,6 @@ public interface ResultDependency extends NavigationDependency {
 	 * @see #getTargetFormComponent()
 	 * @generated
 	 */
-	void setTargetFormComponent(FormComponent value);
+	void setTargetFormComponent(FrameworkTag value);
 
 } // ResultDependency

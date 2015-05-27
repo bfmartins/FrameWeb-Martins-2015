@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015">
+  <Compose xsi:type="frameweb:NavigationModel" name="SCAP Navigation Model">
+    <packagedElement xsi:type="frameweb:ResultDependency" name="Failure" ReturnMethod="//@Compose.0/@ControllerUMLPackage.0/RequestLeaveController/submit" SourceFrontController="//@Compose.0/@ControllerUMLPackage.0/RequestLeaveController" TargetPage="//@Compose.0/SCAP%20View/form.xhtml"/>
+    <packagedElement xsi:type="frameweb:ResultDependency" name="Success" ReturnMethod="//@Compose.0/@ControllerUMLPackage.0/RequestLeaveController/submit" SourceFrontController="//@Compose.0/@ControllerUMLPackage.0/RequestLeaveController" TargetPage="//@Compose.0/SCAP%20View/success.xhtml"/>
+    <NavigationUMLDependency xsi:type="frameweb:FrontControllerDependency" name="Submission" Method="//@Compose.0/@ControllerUMLPackage.0/RequestLeaveController/submit" SourceForm="//@Compose.0/SCAP%20View/frmRequestLeave" TargetFrontController="//@Compose.0/@ControllerUMLPackage.0/RequestLeaveController"/>
+    <ViewUMLPackage name="SCAP View">
+      <packagedElement xsi:type="frameweb:Page" name="success.xhtml">
+        <PageClassAttribute name="request">
+          <type xsi:type="frameweb:FrameworkTag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Uses.0/JSF%20Tag%20Lib/outputText"/>
+        </PageClassAttribute>
+        <Mention href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Uses.0/JSF%20Tag%20Lib"/>
+      </packagedElement>
+      <ViewPackageClass xsi:type="frameweb:Page" name="form.xhtml"/>
+      <ViewPackageClass xsi:type="frameweb:Form" name="frmRequestLeave">
+        <ownedAttribute xsi:type="frameweb:FormComponent" name="request.leaveType">
+          <type xsi:type="frameweb:FrameworkTag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Uses.0/JSF%20Tag%20Lib/selectOneMenu"/>
+        </ownedAttribute>
+        <ownedAttribute xsi:type="frameweb:FormComponent" name="request.onus">
+          <type xsi:type="frameweb:FrameworkTag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Uses.0/JSF%20Tag%20Lib/selectOneMenu"/>
+        </ownedAttribute>
+        <ownedAttribute xsi:type="frameweb:FormComponent" name="request.eventName">
+          <type xsi:type="frameweb:FrameworkTag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Uses.0/JSF%20Tag%20Lib/imputText"/>
+        </ownedAttribute>
+        <ownedAttribute xsi:type="frameweb:FormComponent" name="request.eventCity">
+          <type xsi:type="frameweb:FrameworkTag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Uses.0/JSF%20Tag%20Lib/imputText"/>
+        </ownedAttribute>
+        <ownedAttribute xsi:type="frameweb:FormComponent" name="request.eventBeginDate">
+          <type xsi:type="frameweb:FrameworkTag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Uses.0/JSF%20Tag%20Lib/imputText"/>
+        </ownedAttribute>
+        <FormClassAttribute name="request.eventEndDate">
+          <type xsi:type="frameweb:FrameworkTag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Uses.0/JSF%20Tag%20Lib/imputText"/>
+        </FormClassAttribute>
+      </ViewPackageClass>
+    </ViewUMLPackage>
+    <ControllerUMLPackage>
+      <ControllerPackageClass name="RequestLeaveController">
+        <FrontControllerAttribute name="request"/>
+        <FrontControllerClassMethod name="submit"/>
+      </ControllerPackageClass>
+    </ControllerUMLPackage>
+  </Compose>
+</frameweb:Frameweb>

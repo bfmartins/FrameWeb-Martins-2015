@@ -6,15 +6,20 @@ package frameweb.provider;
 import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
 import frameweb.Page;
+
 import java.util.Collection;
 import java.util.List;
+
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EStructuralFeature;
+
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-import uml.UmlPackage;
+
+import org.eclipse.uml2.uml.UMLPackage;
 
 /**
  * This is the item provider adapter for a {@link frameweb.Page} object.
@@ -167,16 +172,6 @@ public class PageItemProvider extends NavigationClassItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(FramewebPackage.Literals.PAGE__PAGE_TAG_LIB,
-				 FramewebFactory.eINSTANCE.createForm()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FramewebPackage.Literals.PAGE__PAGE_TAG_LIB,
-				 FramewebFactory.eINSTANCE.createFormComponent()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FramewebPackage.Literals.PAGE__PAGE_TAG_LIB,
 				 FramewebFactory.eINSTANCE.createFrameworkTag()));
 	}
 
@@ -192,12 +187,16 @@ public class PageItemProvider extends NavigationClassItemProvider {
 		Object childObject = child;
 
 		boolean qualify =
-			childFeature == UmlPackage.Literals.CLASSIFIER__OWNED_USE_CASE ||
-			childFeature == UmlPackage.Literals.CLASS__NESTED_CLASSIFIER ||
-			childFeature == UmlPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
+			childFeature == UMLPackage.Literals.CLASSIFIER__COLLABORATION_USE ||
+			childFeature == UMLPackage.Literals.CLASSIFIER__REPRESENTATION ||
+			childFeature == UMLPackage.Literals.CLASSIFIER__OWNED_USE_CASE ||
+			childFeature == UMLPackage.Literals.CLASS__NESTED_CLASSIFIER ||
+			childFeature == UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
 			childFeature == FramewebPackage.Literals.PAGE__PAGE_CLASS_ATTRIBUTE ||
-			childFeature == FramewebPackage.Literals.PAGE__PAGE_TAG_LIB ||
-			childFeature == UmlPackage.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR;
+			childFeature == UMLPackage.Literals.ENCAPSULATED_CLASSIFIER__OWNED_PORT ||
+			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__CLASSIFIER_BEHAVIOR ||
+			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR ||
+			childFeature == FramewebPackage.Literals.PAGE__PAGE_TAG_LIB;
 
 		if (qualify) {
 			return getString

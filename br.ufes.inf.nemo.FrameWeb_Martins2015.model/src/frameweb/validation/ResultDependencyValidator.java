@@ -6,14 +6,14 @@ package frameweb.validation;
 
 import frameweb.Binary;
 import frameweb.Component;
-import frameweb.Form;
-import frameweb.FormComponent;
 import frameweb.FrontControllerClass;
 import frameweb.FrontControllerMethod;
 import frameweb.JQuery;
 import frameweb.Page;
 import frameweb.Result;
 import frameweb.ResultType;
+import frameweb.Tag; //*********************************************** linha adicionada
+import frameweb.FrameworkTag; //*********************************************** linha adicionada
 import frameweb.Template;
 
 import org.eclipse.emf.common.util.EList;
@@ -34,8 +34,8 @@ public interface ResultDependencyValidator {
 	boolean validateTargetPage(Page value);
 	boolean validateTargetBinary(Binary value);
 	boolean validateReturnResultType(EList<ResultType> value);
-	boolean validateTargetForm(Form value);
+	boolean validateTargetForm(Tag value);
 	boolean validateTargetComponent(Component value);
 	boolean validateTargetJQuery(JQuery value);
-	boolean validateTargetFormComponent(FormComponent value);
+	boolean validateTargetFormComponent(FrameworkTag value);
 }

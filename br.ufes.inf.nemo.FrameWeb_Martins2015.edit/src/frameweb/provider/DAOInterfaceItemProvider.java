@@ -6,16 +6,24 @@ package frameweb.provider;
 import frameweb.DAOInterface;
 import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
+
 import java.util.Collection;
 import java.util.List;
+
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.common.util.ResourceLocator;
+
 import org.eclipse.emf.ecore.EStructuralFeature;
+
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-import uml.UmlPackage;
+
+import org.eclipse.uml2.uml.UMLPackage;
+
+import org.eclipse.uml2.uml.edit.providers.InterfaceItemProvider;
 
 /**
  * This is the item provider adapter for a {@link frameweb.DAOInterface} object.
@@ -23,7 +31,7 @@ import uml.UmlPackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class DAOInterfaceItemProvider extends uml.provider.InterfaceItemProvider {
+public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -164,6 +172,196 @@ public class DAOInterfaceItemProvider extends uml.provider.InterfaceItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createDAOGeneralization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createServiceGeneralization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createDomainGeneralization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createMappedClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createPersistentClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createTransientClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createDomainAssociation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createPage()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createTemplate()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createForm()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createBinary()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createDAOInterface()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createDAOClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createFrontControllerClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createNavigationComposition()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createServiceClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createServiceInterface()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createServiceNavigationAssociation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createDAOServiceAssociation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createComponent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createJQuery()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createFrameworkTag()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createVersionAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createIdAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createLOBAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createEmbeddedAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createDecimalAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createDateTimeAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createUserViewAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createIOParameter()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createBinaryAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createDAOAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createServiceAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createFormComponent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_OPERATION,
+				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_OPERATION,
+				 FramewebFactory.eINSTANCE.createDomainOperation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_OPERATION,
+				 FramewebFactory.eINSTANCE.createServiceOperation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_OPERATION,
+				 FramewebFactory.eINSTANCE.createDAOOperation()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(FramewebPackage.Literals.DAO_INTERFACE__OWN_BASE_OPERATION,
 				 FramewebFactory.eINSTANCE.createDAOBaseOperation()));
 
@@ -190,12 +388,14 @@ public class DAOInterfaceItemProvider extends uml.provider.InterfaceItemProvider
 		Object childObject = child;
 
 		boolean qualify =
-			childFeature == UmlPackage.Literals.CLASSIFIER__OWNED_USE_CASE ||
-			childFeature == UmlPackage.Literals.INTERFACE__NESTED_CLASSIFIER ||
-			childFeature == UmlPackage.Literals.INTERFACE__OWNED_ATTRIBUTE ||
-			childFeature == UmlPackage.Literals.INTERFACE__PROTOCOL ||
+			childFeature == UMLPackage.Literals.CLASSIFIER__COLLABORATION_USE ||
+			childFeature == UMLPackage.Literals.CLASSIFIER__REPRESENTATION ||
+			childFeature == UMLPackage.Literals.CLASSIFIER__OWNED_USE_CASE ||
+			childFeature == UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER ||
+			childFeature == UMLPackage.Literals.INTERFACE__PROTOCOL ||
+			childFeature == UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE ||
 			childFeature == FramewebPackage.Literals.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE ||
-			childFeature == UmlPackage.Literals.INTERFACE__OWNED_OPERATION ||
+			childFeature == UMLPackage.Literals.INTERFACE__OWNED_OPERATION ||
 			childFeature == FramewebPackage.Literals.DAO_INTERFACE__OWN_OPERATION;
 
 		if (qualify) {

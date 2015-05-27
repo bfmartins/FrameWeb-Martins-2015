@@ -75,7 +75,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.DATE_TIME_ATTRIBUTE: return createDateTimeAttribute();
 			case FramewebPackage.PAGE: return createPage();
 			case FramewebPackage.TEMPLATE: return createTemplate();
-			case FramewebPackage.FORM: return createForm();
+			case FramewebPackage.FORM: return (EObject)createForm();
 			case FramewebPackage.BINARY: return createBinary();
 			case FramewebPackage.DAO_INTERFACE: return createDAOInterface();
 			case FramewebPackage.DAO_CLASS: return createDAOClass();
@@ -117,7 +117,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.RESULT_TYPE: return createResultType();
 			case FramewebPackage.DOMAIN_GENERALIZATION: return createDomainGeneralization();
 			case FramewebPackage.JQUERY: return createJQuery();
-			case FramewebPackage.FORM_COMPONENT: return createFormComponent();
+			case FramewebPackage.FORM_COMPONENT: return (EObject)createFormComponent();
 			case FramewebPackage.TAG_LIB: return createTagLib();
 			case FramewebPackage.FRAMEWORK_TAG: return createFrameworkTag();
 			case FramewebPackage.RULE: return createRule();
@@ -378,7 +378,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Form createForm() {
+	public Tag createForm() {
 		FormImpl form = new FormImpl();
 		return form;
 	}
@@ -798,7 +798,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FormComponent createFormComponent() {
+	public FrameworkTag createFormComponent() {
 		FormComponentImpl formComponent = new FormComponentImpl();
 		return formComponent;
 	}

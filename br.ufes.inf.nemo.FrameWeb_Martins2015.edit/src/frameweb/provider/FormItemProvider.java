@@ -3,20 +3,22 @@
 package frameweb.provider;
 
 
-import frameweb.Form;
 import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
+import frameweb.Tag;
+
 import java.util.Collection;
 import java.util.List;
+
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-import uml.UmlPackage;
+import org.eclipse.uml2.uml.UMLPackage;
 
 /**
- * This is the item provider adapter for a {@link frameweb.Form} object.
+ * This is the item provider adapter for a {@link Tag} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -59,7 +61,6 @@ public class FormItemProvider extends NavigationClassItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FramewebPackage.Literals.TAG__SUB_TAG);
 			childrenFeatures.add(FramewebPackage.Literals.FORM__FORM_CLASS_ATTRIBUTE);
 		}
 		return childrenFeatures;
@@ -97,7 +98,7 @@ public class FormItemProvider extends NavigationClassItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Form)object).getName();
+		String label = ((Tag)object).getName();
 		return label == null || label.length() == 0 ?
 			getString("_UI_Form_type") :
 			getString("_UI_Form_type") + " " + label;
@@ -115,8 +116,7 @@ public class FormItemProvider extends NavigationClassItemProvider {
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(Form.class)) {
-			case FramewebPackage.FORM__SUB_TAG:
+		switch (notification.getFeatureID(Object.class)) {
 			case FramewebPackage.FORM__FORM_CLASS_ATTRIBUTE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -137,21 +137,6 @@ public class FormItemProvider extends NavigationClassItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FramewebPackage.Literals.TAG__SUB_TAG,
-				 FramewebFactory.eINSTANCE.createForm()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FramewebPackage.Literals.TAG__SUB_TAG,
-				 FramewebFactory.eINSTANCE.createFormComponent()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FramewebPackage.Literals.TAG__SUB_TAG,
-				 FramewebFactory.eINSTANCE.createFrameworkTag()));
-
-		newChildDescriptors.add
-			(createChildParameter
 				(FramewebPackage.Literals.FORM__FORM_CLASS_ATTRIBUTE,
 				 FramewebFactory.eINSTANCE.createFormComponent()));
 	}
@@ -168,12 +153,15 @@ public class FormItemProvider extends NavigationClassItemProvider {
 		Object childObject = child;
 
 		boolean qualify =
-			childFeature == UmlPackage.Literals.CLASSIFIER__OWNED_USE_CASE ||
-			childFeature == UmlPackage.Literals.CLASS__NESTED_CLASSIFIER ||
-			childFeature == UmlPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
-			childFeature == FramewebPackage.Literals.TAG__SUB_TAG ||
+			childFeature == UMLPackage.Literals.CLASSIFIER__COLLABORATION_USE ||
+			childFeature == UMLPackage.Literals.CLASSIFIER__REPRESENTATION ||
+			childFeature == UMLPackage.Literals.CLASSIFIER__OWNED_USE_CASE ||
+			childFeature == UMLPackage.Literals.CLASS__NESTED_CLASSIFIER ||
+			childFeature == UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
 			childFeature == FramewebPackage.Literals.FORM__FORM_CLASS_ATTRIBUTE ||
-			childFeature == UmlPackage.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR;
+			childFeature == UMLPackage.Literals.ENCAPSULATED_CLASSIFIER__OWNED_PORT ||
+			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__CLASSIFIER_BEHAVIOR ||
+			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR;
 
 		if (qualify) {
 			return getString

@@ -5,9 +5,9 @@
 package frameweb.validation;
 
 import frameweb.Component;
-import frameweb.Form;
 import frameweb.JQuery;
 import frameweb.Page;
+import frameweb.Tag; //*********************************************** linha adicionada
 import frameweb.Template;
 
 /**
@@ -21,7 +21,7 @@ public interface NavigationCompositionValidator {
 
 	boolean validateSourceTemplate(Template value);
 	boolean validateSourcePage(Page value);
-	boolean validateTargetForm(Form value);
+	boolean validateTargetForm(Tag value);
 	boolean validateTargetComponent(Component value);
 	boolean validateTargetJQuery(JQuery value);
 }

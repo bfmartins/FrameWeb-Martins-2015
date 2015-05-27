@@ -38,8 +38,6 @@ import frameweb.DomainPackage;
 import frameweb.DomainTableName;
 import frameweb.EmbeddedAttribute;
 import frameweb.Fetch;
-import frameweb.Form;
-import frameweb.FormComponent;
 import frameweb.FrameWebModel;
 import frameweb.FrameWebName;
 import frameweb.FrameWorkName;
@@ -889,6 +887,15 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 	 */
 	public EReference getFramework_FrameworkAnotation() {
 		return (EReference)frameworkEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getFramework_FrameworkCategory() {
+		return (EAttribute)frameworkEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -2638,6 +2645,7 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		createEReference(frameworkEClass, FRAMEWORK__FRAMEWORK_TAG_LIB);
 		createEReference(frameworkEClass, FRAMEWORK__FRAMEWORK_RULE);
 		createEReference(frameworkEClass, FRAMEWORK__FRAMEWORK_ANOTATION);
+		createEAttribute(frameworkEClass, FRAMEWORK__FRAMEWORK_CATEGORY);
 
 		domainModelEClass = createEClass(DOMAIN_MODEL);
 		createEReference(domainModelEClass, DOMAIN_MODEL__DOMAIN_UML_PACKAGE);
@@ -2952,7 +2960,6 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		pageEClass.getESuperTypes().add(this.getNavigationClass());
 		templateEClass.getESuperTypes().add(this.getNavigationClass());
 		formEClass.getESuperTypes().add(this.getNavigationClass());
-		formEClass.getESuperTypes().add(this.getTag());
 		binaryEClass.getESuperTypes().add(this.getNavigationClass());
 		daoInterfaceEClass.getESuperTypes().add(theUMLPackage.getInterface());
 		daoClassEClass.getESuperTypes().add(theUMLPackage.getClass_());
@@ -2998,7 +3005,6 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		domainGeneralizationEClass.getESuperTypes().add(theUMLPackage.getGeneralization());
 		jQueryEClass.getESuperTypes().add(this.getNavigationClass());
 		formComponentEClass.getESuperTypes().add(this.getNavigationAttribute());
-		formComponentEClass.getESuperTypes().add(this.getFrameworkTag());
 		tagLibEClass.getESuperTypes().add(theUMLPackage.getPackage());
 		frameworkTagEClass.getESuperTypes().add(this.getTag());
 		tagEClass.getESuperTypes().add(theUMLPackage.getClass_());
@@ -3022,6 +3028,7 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		initEReference(getFramework_FrameworkTagLib(), this.getTagLib(), null, "FrameworkTagLib", null, 1, 1, Framework.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFramework_FrameworkRule(), this.getRule(), null, "FrameworkRule", null, 0, -1, Framework.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFramework_FrameworkAnotation(), this.getAnotation(), null, "FrameworkAnotation", null, 1, -1, Framework.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFramework_FrameworkCategory(), this.getFrameworkCategoryList(), "frameworkCategory", null, 0, 1, Framework.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(domainModelEClass, DomainModel.class, "DomainModel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDomainModel_DomainUMLPackage(), this.getDomainPackage(), null, "DomainUMLPackage", null, 1, -1, DomainModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3078,8 +3085,8 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		initEClass(templateEClass, Template.class, "Template", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTemplate_TemplateClassAttribute(), this.getUserViewAttribute(), null, "TemplateClassAttribute", null, 0, -1, Template.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(formEClass, Form.class, "Form", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getForm_FormClassAttribute(), this.getFormComponent(), null, "FormClassAttribute", null, 0, -1, Form.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(formEClass, Object.class, "Form", !IS_ABSTRACT, !IS_INTERFACE, !IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getForm_FormClassAttribute(), this.getFormComponent(), null, "FormClassAttribute", null, 0, -1, Tag.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(binaryEClass, Binary.class, "Binary", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getBinary_BinaryClassAttribute(), this.getBinaryAttribute(), null, "BinaryClassAttribute", null, 1, -1, Binary.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3257,8 +3264,8 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 
 		initEClass(jQueryEClass, JQuery.class, "JQuery", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(formComponentEClass, FormComponent.class, "FormComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getFormComponent_Inject(), this.getIOParameter(), this.getIOParameter_Display(), "inject", null, 0, 1, FormComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(formComponentEClass, Object.class, "FormComponent", !IS_ABSTRACT, !IS_INTERFACE, !IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getFormComponent_Inject(), this.getIOParameter(), this.getIOParameter_Display(), "inject", null, 0, 1, FrameworkTag.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(tagLibEClass, TagLib.class, "TagLib", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTagLib_TagLibTag(), this.getFrameworkTag(), null, "TagLibTag", null, 1, -1, TagLib.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

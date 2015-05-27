@@ -5,13 +5,19 @@ package frameweb.provider;
 
 import frameweb.FramewebPackage;
 import frameweb.ServiceGeneralization;
+
 import java.util.Collection;
 import java.util.List;
+
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.common.util.ResourceLocator;
+
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+
+import org.eclipse.uml2.uml.edit.providers.GeneralizationItemProvider;
 
 /**
  * This is the item provider adapter for a {@link frameweb.ServiceGeneralization} object.
@@ -19,7 +25,7 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ServiceGeneralizationItemProvider extends uml.provider.GeneralizationItemProvider {
+public class ServiceGeneralizationItemProvider extends GeneralizationItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -111,7 +117,7 @@ public class ServiceGeneralizationItemProvider extends uml.provider.Generalizati
 	@Override
 	public String getText(Object object) {
 		ServiceGeneralization serviceGeneralization = (ServiceGeneralization)object;
-		return getString("_UI_ServiceGeneralization_type") + " " + serviceGeneralization.isIsSubstitutable();
+		return getString("_UI_ServiceGeneralization_type") + " " + serviceGeneralization.isSubstitutable();
 	}
 	
 

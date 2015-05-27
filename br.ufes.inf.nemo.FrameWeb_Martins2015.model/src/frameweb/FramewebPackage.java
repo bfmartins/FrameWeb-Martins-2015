@@ -7762,13 +7762,22 @@ public interface FramewebPackage extends EPackage {
 	int FRAMEWORK__FRAMEWORK_ANOTATION = UMLPackage.PACKAGE_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Framework Category</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAMEWORK__FRAMEWORK_CATEGORY = UMLPackage.PACKAGE_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>Framework</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FRAMEWORK_FEATURE_COUNT = UMLPackage.PACKAGE_FEATURE_COUNT + 3;
+	int FRAMEWORK_FEATURE_COUNT = UMLPackage.PACKAGE_FEATURE_COUNT + 4;
 
 	/**
 	 * The operation id for the '<em>Get EAnnotation</em>' operation.
@@ -29810,22 +29819,13 @@ public interface FramewebPackage extends EPackage {
 	int FORM__SUPER_CLASS = NAVIGATION_CLASS__SUPER_CLASS;
 
 	/**
-	 * The feature id for the '<em><b>Sub Tag</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM__SUB_TAG = NAVIGATION_CLASS_FEATURE_COUNT + 0;
-
-	/**
 	 * The feature id for the '<em><b>Form Class Attribute</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FORM__FORM_CLASS_ATTRIBUTE = NAVIGATION_CLASS_FEATURE_COUNT + 1;
+	int FORM__FORM_CLASS_ATTRIBUTE = NAVIGATION_CLASS_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Form</em>' class.
@@ -29834,7 +29834,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FORM_FEATURE_COUNT = NAVIGATION_CLASS_FEATURE_COUNT + 2;
+	int FORM_FEATURE_COUNT = NAVIGATION_CLASS_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get EAnnotation</em>' operation.
@@ -74750,355 +74750,13 @@ public interface FramewebPackage extends EPackage {
 	int FORM_COMPONENT__ASSOCIATION = NAVIGATION_ATTRIBUTE__ASSOCIATION;
 
 	/**
-	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__OWNED_RULE = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__ELEMENT_IMPORT = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__PACKAGE_IMPORT = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__OWNED_MEMBER = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__IMPORTED_MEMBER = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__MEMBER = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 5;
-
-	/**
-	 * The feature id for the '<em><b>Package</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__PACKAGE = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 6;
-
-	/**
-	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__TEMPLATE_BINDING = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 7;
-
-	/**
-	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__OWNED_TEMPLATE_SIGNATURE = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 8;
-
-	/**
-	 * The feature id for the '<em><b>Feature</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__FEATURE = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 9;
-
-	/**
-	 * The feature id for the '<em><b>Attribute</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__ATTRIBUTE = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 10;
-
-	/**
-	 * The feature id for the '<em><b>Collaboration Use</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__COLLABORATION_USE = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 11;
-
-	/**
-	 * The feature id for the '<em><b>General</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__GENERAL = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 12;
-
-	/**
-	 * The feature id for the '<em><b>Generalization</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__GENERALIZATION = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 13;
-
-	/**
-	 * The feature id for the '<em><b>Powertype Extent</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__POWERTYPE_EXTENT = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 14;
-
-	/**
-	 * The feature id for the '<em><b>Inherited Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__INHERITED_MEMBER = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 15;
-
-	/**
-	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__IS_ABSTRACT = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 16;
-
-	/**
-	 * The feature id for the '<em><b>Is Final Specialization</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__IS_FINAL_SPECIALIZATION = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 17;
-
-	/**
-	 * The feature id for the '<em><b>Owned Use Case</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__OWNED_USE_CASE = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 18;
-
-	/**
-	 * The feature id for the '<em><b>Use Case</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__USE_CASE = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 19;
-
-	/**
-	 * The feature id for the '<em><b>Redefined Classifier</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__REDEFINED_CLASSIFIER = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 20;
-
-	/**
-	 * The feature id for the '<em><b>Representation</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__REPRESENTATION = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 21;
-
-	/**
-	 * The feature id for the '<em><b>Substitution</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__SUBSTITUTION = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 22;
-
-	/**
-	 * The feature id for the '<em><b>Owned Attribute</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__OWNED_ATTRIBUTE = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 23;
-
-	/**
-	 * The feature id for the '<em><b>Owned Connector</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__OWNED_CONNECTOR = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 24;
-
-	/**
-	 * The feature id for the '<em><b>Part</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__PART = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 25;
-
-	/**
-	 * The feature id for the '<em><b>Role</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__ROLE = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 26;
-
-	/**
-	 * The feature id for the '<em><b>Owned Port</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__OWNED_PORT = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 27;
-
-	/**
-	 * The feature id for the '<em><b>Classifier Behavior</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__CLASSIFIER_BEHAVIOR = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 28;
-
-	/**
-	 * The feature id for the '<em><b>Interface Realization</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__INTERFACE_REALIZATION = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 29;
-
-	/**
-	 * The feature id for the '<em><b>Owned Behavior</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__OWNED_BEHAVIOR = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 30;
-
-	/**
-	 * The feature id for the '<em><b>Owned Operation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__OWNED_OPERATION = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 31;
-
-	/**
-	 * The feature id for the '<em><b>Extension</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__EXTENSION = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 32;
-
-	/**
-	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__IS_ACTIVE = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 33;
-
-	/**
-	 * The feature id for the '<em><b>Nested Classifier</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__NESTED_CLASSIFIER = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 34;
-
-	/**
-	 * The feature id for the '<em><b>Owned Reception</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__OWNED_RECEPTION = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 35;
-
-	/**
-	 * The feature id for the '<em><b>Super Class</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__SUPER_CLASS = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 36;
-
-	/**
-	 * The feature id for the '<em><b>Sub Tag</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT__SUB_TAG = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 37;
-
-	/**
 	 * The feature id for the '<em><b>Inject</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FORM_COMPONENT__INJECT = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 38;
+	int FORM_COMPONENT__INJECT = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Form Component</em>' class.
@@ -75107,7 +74765,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FORM_COMPONENT_FEATURE_COUNT = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 39;
+	int FORM_COMPONENT_FEATURE_COUNT = NAVIGATION_ATTRIBUTE_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get EAnnotation</em>' operation.
@@ -76064,535 +75722,13 @@ public interface FramewebPackage extends EPackage {
 	int FORM_COMPONENT___SUBSETTING_CONTEXT = NAVIGATION_ATTRIBUTE___SUBSETTING_CONTEXT;
 
 	/**
-	 * The operation id for the '<em>Validate Members Distinguishable</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Validate Cannot Import Self</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Validate Cannot Import Owned Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 2;
-
-	/**
-	 * The operation id for the '<em>Create Element Import</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 3;
-
-	/**
-	 * The operation id for the '<em>Create Package Import</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 4;
-
-	/**
-	 * The operation id for the '<em>Get Imported Elements</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_IMPORTED_ELEMENTS = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 5;
-
-	/**
-	 * The operation id for the '<em>Get Imported Packages</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_IMPORTED_PACKAGES = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 6;
-
-	/**
-	 * The operation id for the '<em>Get Owned Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_OWNED_MEMBERS = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 7;
-
-	/**
-	 * The operation id for the '<em>Exclude Collisions</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___EXCLUDE_COLLISIONS__ELIST = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 8;
-
-	/**
-	 * The operation id for the '<em>Get Names Of Member</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_NAMES_OF_MEMBER__NAMEDELEMENT = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 9;
-
-	/**
-	 * The operation id for the '<em>Import Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___IMPORT_MEMBERS__ELIST = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 10;
-
-	/**
-	 * The operation id for the '<em>Get Imported Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_IMPORTED_MEMBERS = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 11;
-
-	/**
-	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___MEMBERS_ARE_DISTINGUISHABLE = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 12;
-
-	/**
-	 * The operation id for the '<em>Validate Namespace Needs Visibility</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 13;
-
-	/**
-	 * The operation id for the '<em>Create Association</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 14;
-
-	/**
-	 * The operation id for the '<em>Get Associations</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_ASSOCIATIONS = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 15;
-
-	/**
-	 * The operation id for the '<em>Conforms To</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___CONFORMS_TO__TYPE = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 16;
-
-	/**
-	 * The operation id for the '<em>Is Template</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___IS_TEMPLATE = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 17;
-
-	/**
-	 * The operation id for the '<em>Parameterable Elements</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___PARAMETERABLE_ELEMENTS = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 18;
-
-	/**
-	 * The operation id for the '<em>Validate Specialize Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 19;
-
-	/**
-	 * The operation id for the '<em>Validate Maps To Generalization Set</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 20;
-
-	/**
-	 * The operation id for the '<em>Validate Non Final Parents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 21;
-
-	/**
-	 * The operation id for the '<em>Validate No Cycles In Generalization</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 22;
-
-	/**
-	 * The operation id for the '<em>Get All Attributes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_ALL_ATTRIBUTES = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 23;
-
-	/**
-	 * The operation id for the '<em>Get All Operations</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_ALL_OPERATIONS = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 24;
-
-	/**
-	 * The operation id for the '<em>Get All Used Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_ALL_USED_INTERFACES = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 25;
-
-	/**
-	 * The operation id for the '<em>Get Operation</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_OPERATION__STRING_ELIST_ELIST = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 26;
-
-	/**
-	 * The operation id for the '<em>Get Operation</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 27;
-
-	/**
-	 * The operation id for the '<em>Get Operations</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_OPERATIONS = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 28;
-
-	/**
-	 * The operation id for the '<em>Get Used Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_USED_INTERFACES = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 29;
-
-	/**
-	 * The operation id for the '<em>All Features</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___ALL_FEATURES = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 30;
-
-	/**
-	 * The operation id for the '<em>All Parents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___ALL_PARENTS = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 31;
-
-	/**
-	 * The operation id for the '<em>Get Generals</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_GENERALS = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 32;
-
-	/**
-	 * The operation id for the '<em>Has Visibility Of</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___HAS_VISIBILITY_OF__NAMEDELEMENT = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 33;
-
-	/**
-	 * The operation id for the '<em>Inherit</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___INHERIT__ELIST = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 34;
-
-	/**
-	 * The operation id for the '<em>Inheritable Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___INHERITABLE_MEMBERS__CLASSIFIER = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 35;
-
-	/**
-	 * The operation id for the '<em>Get Inherited Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_INHERITED_MEMBERS = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 36;
-
-	/**
-	 * The operation id for the '<em>May Specialize Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___MAY_SPECIALIZE_TYPE__CLASSIFIER = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 37;
-
-	/**
-	 * The operation id for the '<em>Parents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___PARENTS = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 38;
-
-	/**
-	 * The operation id for the '<em>Directly Realized Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___DIRECTLY_REALIZED_INTERFACES = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 39;
-
-	/**
-	 * The operation id for the '<em>Directly Used Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___DIRECTLY_USED_INTERFACES = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 40;
-
-	/**
-	 * The operation id for the '<em>All Realized Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___ALL_REALIZED_INTERFACES = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 41;
-
-	/**
-	 * The operation id for the '<em>All Used Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___ALL_USED_INTERFACES = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 42;
-
-	/**
-	 * The operation id for the '<em>Is Substitutable For</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___IS_SUBSTITUTABLE_FOR__CLASSIFIER = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 43;
-
-	/**
-	 * The operation id for the '<em>All Attributes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___ALL_ATTRIBUTES = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 44;
-
-	/**
-	 * The operation id for the '<em>All Slottable Features</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___ALL_SLOTTABLE_FEATURES = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 45;
-
-	/**
-	 * The operation id for the '<em>Create Owned Attribute</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___CREATE_OWNED_ATTRIBUTE__STRING_TYPE_INT_INT = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 46;
-
-	/**
-	 * The operation id for the '<em>Get Parts</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_PARTS = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 47;
-
-	/**
-	 * The operation id for the '<em>All Roles</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___ALL_ROLES = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 48;
-
-	/**
-	 * The operation id for the '<em>Get Owned Ports</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_OWNED_PORTS = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 49;
-
-	/**
-	 * The operation id for the '<em>Validate Class Behavior</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___VALIDATE_CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 50;
-
-	/**
-	 * The operation id for the '<em>Get All Implemented Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_ALL_IMPLEMENTED_INTERFACES = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 51;
-
-	/**
-	 * The operation id for the '<em>Get Implemented Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_IMPLEMENTED_INTERFACES = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 52;
-
-	/**
-	 * The operation id for the '<em>Validate Passive Class</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___VALIDATE_PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 53;
-
-	/**
-	 * The operation id for the '<em>Create Owned Operation</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___CREATE_OWNED_OPERATION__STRING_ELIST_ELIST_TYPE = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 54;
-
-	/**
-	 * The operation id for the '<em>Is Metaclass</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___IS_METACLASS = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 55;
-
-	/**
-	 * The operation id for the '<em>Get Extensions</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_EXTENSIONS = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 56;
-
-	/**
-	 * The operation id for the '<em>Get Super Classes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM_COMPONENT___GET_SUPER_CLASSES = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 57;
-
-	/**
 	 * The number of operations of the '<em>Form Component</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FORM_COMPONENT_OPERATION_COUNT = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 58;
+	int FORM_COMPONENT_OPERATION_COUNT = NAVIGATION_ATTRIBUTE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.TagLibImpl <em>Tag Lib</em>}' class.
@@ -81113,6 +80249,17 @@ public interface FramewebPackage extends EPackage {
 	EReference getFramework_FrameworkAnotation();
 
 	/**
+	 * Returns the meta object for the attribute '{@link frameweb.Framework#getFrameworkCategory <em>Framework Category</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Framework Category</em>'.
+	 * @see frameweb.Framework#getFrameworkCategory()
+	 * @see #getFramework()
+	 * @generated
+	 */
+	EAttribute getFramework_FrameworkCategory();
+
+	/**
 	 * Returns the meta object for class '{@link frameweb.DomainModel <em>Domain Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -81550,21 +80697,22 @@ public interface FramewebPackage extends EPackage {
 	EReference getTemplate_TemplateClassAttribute();
 
 	/**
-	 * Returns the meta object for class '{@link frameweb.Form <em>Form</em>}'.
+	 * Returns the meta object for class '{@link Tag <em>Form</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Form</em>'.
-	 * @see frameweb.Form
+	 * @see Tag
+	 * @model instanceClass="Tag"
 	 * @generated
 	 */
 	EClass getForm();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link frameweb.Form#getFormClassAttribute <em>Form Class Attribute</em>}'.
+	 * Returns the meta object for the containment reference list '{@link Tag#getFormClassAttribute <em>Form Class Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Form Class Attribute</em>'.
-	 * @see frameweb.Form#getFormClassAttribute()
+	 * @see Tag#getFormClassAttribute()
 	 * @see #getForm()
 	 * @generated
 	 */
@@ -82919,21 +82067,22 @@ public interface FramewebPackage extends EPackage {
 	EClass getJQuery();
 
 	/**
-	 * Returns the meta object for class '{@link frameweb.FormComponent <em>Form Component</em>}'.
+	 * Returns the meta object for class '{@link FrameworkTag <em>Form Component</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Form Component</em>'.
-	 * @see frameweb.FormComponent
+	 * @see FrameworkTag
+	 * @model instanceClass="FrameworkTag"
 	 * @generated
 	 */
 	EClass getFormComponent();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.FormComponent#getInject <em>Inject</em>}'.
+	 * Returns the meta object for the reference '{@link FrameworkTag#getInject <em>Inject</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Inject</em>'.
-	 * @see frameweb.FormComponent#getInject()
+	 * @see FrameworkTag#getInject()
 	 * @see #getFormComponent()
 	 * @generated
 	 */
@@ -83249,6 +82398,14 @@ public interface FramewebPackage extends EPackage {
 		 * @generated
 		 */
 		EReference FRAMEWORK__FRAMEWORK_ANOTATION = eINSTANCE.getFramework_FrameworkAnotation();
+
+		/**
+		 * The meta object literal for the '<em><b>Framework Category</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FRAMEWORK__FRAMEWORK_CATEGORY = eINSTANCE.getFramework_FrameworkCategory();
 
 		/**
 		 * The meta object literal for the '{@link frameweb.impl.DomainModelImpl <em>Domain Model</em>}' class.

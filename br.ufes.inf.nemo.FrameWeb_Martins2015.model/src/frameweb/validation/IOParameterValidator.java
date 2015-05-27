@@ -4,9 +4,8 @@
  */
 package frameweb.validation;
 
-import frameweb.FormComponent;
-
 import org.eclipse.emf.common.util.EList;
+import frameweb.FrameworkTag; //*********************************************** linha adicionada
 
 /**
  * A sample validator interface for {@link frameweb.IOParameter}.
@@ -17,5 +16,5 @@ import org.eclipse.emf.common.util.EList;
 public interface IOParameterValidator {
 	boolean validate();
 
-	boolean validateDisplay(EList<FormComponent> value);
+	boolean validateDisplay(EList<FrameworkTag> value);
 }

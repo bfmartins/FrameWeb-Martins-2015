@@ -25,6 +25,7 @@
         eType="#//Rule" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrameworkAnotation" lowerBound="1"
         upperBound="-1" eType="#//Anotation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="frameworkCategory" eType="#//FrameworkCategoryList"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DomainModel" eSuperTypes="#//FrameWebModel">
     <eStructuralFeatures xsi:type="ecore:EReference" name="DomainUMLPackage" lowerBound="1"
@@ -129,7 +130,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="TemplateClassAttribute"
         upperBound="-1" eType="#//UserViewAttribute" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Form" eSuperTypes="#//NavigationClass #//Tag">
+  <eClassifiers xsi:type="ecore:EClass" name="Form" instanceTypeName="Tag" eSuperTypes="#//NavigationClass">
     <eStructuralFeatures xsi:type="ecore:EReference" name="FormClassAttribute" upperBound="-1"
         eType="#//FormComponent" containment="true"/>
   </eClassifiers>
@@ -377,7 +378,8 @@
         eType="#//DomainClass"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="JQuery" eSuperTypes="#//NavigationClass"/>
-  <eClassifiers xsi:type="ecore:EClass" name="FormComponent" eSuperTypes="#//NavigationAttribute #//FrameworkTag">
+  <eClassifiers xsi:type="ecore:EClass" name="FormComponent" instanceTypeName="FrameworkTag"
+      eSuperTypes="#//NavigationAttribute">
     <eStructuralFeatures xsi:type="ecore:EReference" name="inject" eType="#//IOParameter"
         eOpposite="#//IOParameter/display"/>
   </eClassifiers>

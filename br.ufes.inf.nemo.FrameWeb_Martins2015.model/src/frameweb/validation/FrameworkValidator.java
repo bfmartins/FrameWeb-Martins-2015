@@ -5,6 +5,7 @@
 package frameweb.validation;
 
 import frameweb.Anotation;
+import frameweb.FrameworkCategoryList;
 import frameweb.Rule;
 import frameweb.TagLib;
 
@@ -22,4 +23,5 @@ public interface FrameworkValidator {
 	boolean validateFrameworkTagLib(TagLib value);
 	boolean validateFrameworkRule(EList<Rule> value);
 	boolean validateFrameworkAnotation(EList<Anotation> value);
+	boolean validateFrameworkCategory(FrameworkCategoryList value);
 }

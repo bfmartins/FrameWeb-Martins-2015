@@ -7,9 +7,7 @@ import frameweb.*;
 import org.eclipse.emf.ecore.EModelElement;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.util.Switch;
-
 import org.eclipse.uml2.uml.Association;
 import org.eclipse.uml2.uml.BehavioralFeature;
 import org.eclipse.uml2.uml.BehavioredClassifier;
@@ -445,10 +443,9 @@ public class FramewebSwitch<T> extends Switch<T> {
 				return result;
 			}
 			case FramewebPackage.FORM: {
-				Form form = (Form)theEObject;
+				Tag form = (Tag)theEObject;
 				T result = caseForm(form);
-				if (result == null) result = caseNavigationClass(form);
-				if (result == null) result = caseTag(form);
+				if (result == null) result = caseNavigationClass((NavigationClass) form);
 				if (result == null) result = caseClass(form);
 				if (result == null) result = caseEncapsulatedClassifier(form);
 				if (result == null) result = caseBehavioredClassifier(form);
@@ -1181,32 +1178,21 @@ public class FramewebSwitch<T> extends Switch<T> {
 				return result;
 			}
 			case FramewebPackage.FORM_COMPONENT: {
-				FormComponent formComponent = (FormComponent)theEObject;
+				FrameworkTag formComponent = (FrameworkTag)theEObject;
 				T result = caseFormComponent(formComponent);
-				if (result == null) result = caseNavigationAttribute(formComponent);
-				if (result == null) result = caseFrameworkTag(formComponent);
-				if (result == null) result = caseProperty(formComponent);
-				if (result == null) result = caseTag(formComponent);
-				if (result == null) result = caseStructuralFeature(formComponent);
-				if (result == null) result = caseConnectableElement(formComponent);
-				if (result == null) result = caseDeploymentTarget(formComponent);
-				if (result == null) result = caseClass(formComponent);
-				if (result == null) result = caseFeature(formComponent);
-				if (result == null) result = caseTypedElement(formComponent);
-				if (result == null) result = caseMultiplicityElement(formComponent);
-				if (result == null) result = caseEncapsulatedClassifier(formComponent);
-				if (result == null) result = caseBehavioredClassifier(formComponent);
-				if (result == null) result = caseStructuredClassifier(formComponent);
-				if (result == null) result = caseClassifier(formComponent);
+				if (result == null) result = caseNavigationAttribute((NavigationAttribute) formComponent);
+				if (result == null) result = caseProperty((Property) formComponent);
+				if (result == null) result = caseStructuralFeature((StructuralFeature) formComponent);
+				if (result == null) result = caseConnectableElement((ConnectableElement) formComponent);
+				if (result == null) result = caseDeploymentTarget((DeploymentTarget) formComponent);
+				if (result == null) result = caseFeature((Feature) formComponent);
+				if (result == null) result = caseTypedElement((TypedElement) formComponent);
+				if (result == null) result = caseMultiplicityElement((MultiplicityElement) formComponent);
+				if (result == null) result = caseParameterableElement(formComponent);
 				if (result == null) result = caseRedefinableElement(formComponent);
-				if (result == null) result = caseNamespace(formComponent);
-				if (result == null) result = caseType(formComponent);
-				if (result == null) result = caseTemplateableElement(formComponent);
+				if (result == null) result = caseNamedElement(formComponent);
 				if (result == null) result = caseElement(formComponent);
 				if (result == null) result = caseEModelElement(formComponent);
-				if (result == null) result = casePackageableElement(formComponent);
-				if (result == null) result = caseNamedElement(formComponent);
-				if (result == null) result = caseParameterableElement(formComponent);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1592,7 +1578,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseForm(Form object) {
+	public T caseForm(Tag object) {
 		return null;
 	}
 
@@ -2342,7 +2328,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFormComponent(FormComponent object) {
+	public T caseFormComponent(FrameworkTag object) {
 		return null;
 	}
 

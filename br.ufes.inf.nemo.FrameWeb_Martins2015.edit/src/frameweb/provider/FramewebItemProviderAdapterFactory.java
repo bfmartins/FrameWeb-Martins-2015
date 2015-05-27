@@ -486,7 +486,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.Form} instances.
+	 * This keeps track of the one adapter used for all {@link Tag} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -494,7 +494,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	protected FormItemProvider formItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.Form}.
+	 * This creates an adapter for a {@link Tag}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1452,7 +1452,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.FormComponent} instances.
+	 * This keeps track of the one adapter used for all {@link FrameworkTag} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1460,7 +1460,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	protected FormComponentItemProvider formComponentItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.FormComponent}.
+	 * This creates an adapter for a {@link FrameworkTag}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1541,29 +1541,6 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		}
 
 		return ruleItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.Talvez_Method} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Talvez_MethodItemProvider talvez_MethodItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link frameweb.Talvez_Method}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createTalvez_MethodAdapter() {
-		if (talvez_MethodItemProvider == null) {
-			talvez_MethodItemProvider = new Talvez_MethodItemProvider(this);
-		}
-
-		return talvez_MethodItemProvider;
 	}
 
 	/**
@@ -1752,7 +1729,6 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (tagLibItemProvider != null) tagLibItemProvider.dispose();
 		if (frameworkTagItemProvider != null) frameworkTagItemProvider.dispose();
 		if (ruleItemProvider != null) ruleItemProvider.dispose();
-		if (talvez_MethodItemProvider != null) talvez_MethodItemProvider.dispose();
 		if (anotationItemProvider != null) anotationItemProvider.dispose();
 	}
 

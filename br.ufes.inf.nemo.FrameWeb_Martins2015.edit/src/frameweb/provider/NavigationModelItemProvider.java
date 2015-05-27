@@ -6,14 +6,19 @@ package frameweb.provider;
 import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
 import frameweb.NavigationModel;
+
 import java.util.Collection;
 import java.util.List;
+
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EStructuralFeature;
+
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-import uml.UmlPackage;
+
+import org.eclipse.uml2.uml.UMLPackage;
 
 /**
  * This is the item provider adapter for a {@link frameweb.NavigationModel} object.
@@ -187,13 +192,16 @@ public class NavigationModelItemProvider extends FrameWebModelItemProvider {
 		Object childObject = child;
 
 		boolean qualify =
-			childFeature == UmlPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
-			childFeature == UmlPackage.Literals.PACKAGE__PACKAGED_ELEMENT ||
-			childFeature == UmlPackage.Literals.NAMESPACE__OWNED_RULE ||
-			childFeature == FramewebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCY ||
-			childFeature == FramewebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION ||
+			childFeature == UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
+			childFeature == UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT ||
+			childFeature == UMLPackage.Literals.NAMESPACE__OWNED_RULE ||
+			childFeature == UMLPackage.Literals.PACKAGE__NESTED_PACKAGE ||
 			childFeature == FramewebPackage.Literals.NAVIGATION_MODEL__VIEW_UML_PACKAGE ||
-			childFeature == FramewebPackage.Literals.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE;
+			childFeature == FramewebPackage.Literals.NAVIGATION_MODEL__CONTROLLER_UML_PACKAGE ||
+			childFeature == UMLPackage.Literals.PACKAGE__OWNED_STEREOTYPE ||
+			childFeature == UMLPackage.Literals.PACKAGE__OWNED_TYPE ||
+			childFeature == FramewebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION ||
+			childFeature == FramewebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_DEPENDENCY;
 
 		if (qualify) {
 			return getString

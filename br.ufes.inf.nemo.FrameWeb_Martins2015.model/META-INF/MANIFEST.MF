@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
-Bundle-SymbolicName: br.ufes.inf.nemo.FrameWeb_Martins2015;singleton:=true
+Bundle-SymbolicName: br.ufes.inf.nemo.FrameWeb_Martins2015.model;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName

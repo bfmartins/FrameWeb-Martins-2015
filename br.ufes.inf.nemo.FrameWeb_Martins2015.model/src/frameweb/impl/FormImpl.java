@@ -2,10 +2,9 @@
  */
 package frameweb.impl;
 
-import frameweb.Form;
-import frameweb.FormComponent;
+import frameweb.Tag; //*********************************************** linha adicionada
+import frameweb.FrameworkTag; //*********************************************** linha adicionada
 import frameweb.FramewebPackage;
-import frameweb.Tag;
 
 import java.util.Collection;
 
@@ -26,24 +25,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link frameweb.impl.FormImpl#getSubTag <em>Sub Tag</em>}</li>
  *   <li>{@link frameweb.impl.FormImpl#getFormClassAttribute <em>Form Class Attribute</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class FormImpl extends NavigationClassImpl implements Form {
-	/**
-	 * The cached value of the '{@link #getSubTag() <em>Sub Tag</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSubTag()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Tag> subTag;
-
+public class FormImpl extends NavigationClassImpl implements Tag {
 	/**
 	 * The cached value of the '{@link #getFormClassAttribute() <em>Form Class Attribute</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -52,7 +40,7 @@ public class FormImpl extends NavigationClassImpl implements Form {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<FormComponent> formClassAttribute;
+	protected EList<FrameworkTag> formClassAttribute;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,21 +66,9 @@ public class FormImpl extends NavigationClassImpl implements Form {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Tag> getSubTag() {
-		if (subTag == null) {
-			subTag = new EObjectContainmentEList<Tag>(Tag.class, this, FramewebPackage.FORM__SUB_TAG);
-		}
-		return subTag;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<FormComponent> getFormClassAttribute() {
+	public EList<FrameworkTag> getFormClassAttribute() {
 		if (formClassAttribute == null) {
-			formClassAttribute = new EObjectContainmentEList<FormComponent>(FormComponent.class, this, FramewebPackage.FORM__FORM_CLASS_ATTRIBUTE);
+			formClassAttribute = new EObjectContainmentEList<FrameworkTag>(FrameworkTag.class, this, FramewebPackage.FORM__FORM_CLASS_ATTRIBUTE);
 		}
 		return formClassAttribute;
 	}
@@ -105,8 +81,6 @@ public class FormImpl extends NavigationClassImpl implements Form {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FramewebPackage.FORM__SUB_TAG:
-				return ((InternalEList<?>)getSubTag()).basicRemove(otherEnd, msgs);
 			case FramewebPackage.FORM__FORM_CLASS_ATTRIBUTE:
 				return ((InternalEList<?>)getFormClassAttribute()).basicRemove(otherEnd, msgs);
 		}
@@ -121,8 +95,6 @@ public class FormImpl extends NavigationClassImpl implements Form {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FramewebPackage.FORM__SUB_TAG:
-				return getSubTag();
 			case FramewebPackage.FORM__FORM_CLASS_ATTRIBUTE:
 				return getFormClassAttribute();
 		}
@@ -138,13 +110,9 @@ public class FormImpl extends NavigationClassImpl implements Form {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FramewebPackage.FORM__SUB_TAG:
-				getSubTag().clear();
-				getSubTag().addAll((Collection<? extends Tag>)newValue);
-				return;
 			case FramewebPackage.FORM__FORM_CLASS_ATTRIBUTE:
 				getFormClassAttribute().clear();
-				getFormClassAttribute().addAll((Collection<? extends FormComponent>)newValue);
+				getFormClassAttribute().addAll((Collection<? extends FrameworkTag>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -158,9 +126,6 @@ public class FormImpl extends NavigationClassImpl implements Form {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FramewebPackage.FORM__SUB_TAG:
-				getSubTag().clear();
-				return;
 			case FramewebPackage.FORM__FORM_CLASS_ATTRIBUTE:
 				getFormClassAttribute().clear();
 				return;
@@ -176,44 +141,18 @@ public class FormImpl extends NavigationClassImpl implements Form {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FramewebPackage.FORM__SUB_TAG:
-				return subTag != null && !subTag.isEmpty();
 			case FramewebPackage.FORM__FORM_CLASS_ATTRIBUTE:
 				return formClassAttribute != null && !formClassAttribute.isEmpty();
 		}
-		return super.eIsSet(featureID);
+		return super.eIsSet(featureID); 
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	//************************** imports adicionados para o tipo Tag
+	
 	@Override
-	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
-		if (baseClass == Tag.class) {
-			switch (derivedFeatureID) {
-				case FramewebPackage.FORM__SUB_TAG: return FramewebPackage.TAG__SUB_TAG;
-				default: return -1;
-			}
-		}
-		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
-		if (baseClass == Tag.class) {
-			switch (baseFeatureID) {
-				case FramewebPackage.TAG__SUB_TAG: return FramewebPackage.FORM__SUB_TAG;
-				default: return -1;
-			}
-		}
-		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
+	public EList<Tag> getSubTag() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 } //FormImpl

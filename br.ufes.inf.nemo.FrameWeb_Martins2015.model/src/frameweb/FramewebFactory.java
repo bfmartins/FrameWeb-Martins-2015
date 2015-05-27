@@ -190,7 +190,7 @@ public interface FramewebFactory extends EFactory {
 	 * @return a new object of class '<em>Form</em>'.
 	 * @generated
 	 */
-	Form createForm();
+	Tag createForm();
 
 	/**
 	 * Returns a new object of class '<em>Binary</em>'.
@@ -568,7 +568,7 @@ public interface FramewebFactory extends EFactory {
 	 * @return a new object of class '<em>Form Component</em>'.
 	 * @generated
 	 */
-	FormComponent createFormComponent();
+	FrameworkTag createFormComponent();
 
 	/**
 	 * Returns a new object of class '<em>Tag Lib</em>'.

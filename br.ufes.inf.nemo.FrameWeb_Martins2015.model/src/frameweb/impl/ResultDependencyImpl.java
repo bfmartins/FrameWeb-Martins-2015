@@ -4,8 +4,6 @@ package frameweb.impl;
 
 import frameweb.Binary;
 import frameweb.Component;
-import frameweb.Form;
-import frameweb.FormComponent;
 import frameweb.FramewebPackage;
 import frameweb.FrontControllerClass;
 import frameweb.FrontControllerMethod;
@@ -14,6 +12,8 @@ import frameweb.Page;
 import frameweb.Result;
 import frameweb.ResultDependency;
 import frameweb.ResultType;
+import frameweb.Tag; //*********************************************** linha adicionada
+import frameweb.FrameworkTag; //*********************************************** linha adicionada
 import frameweb.Template;
 
 import java.util.Collection;
@@ -23,6 +23,7 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
@@ -131,7 +132,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 	 * @generated
 	 * @ordered
 	 */
-	protected Form targetForm;
+	protected Tag targetForm;
 
 	/**
 	 * The cached value of the '{@link #getTargetComponent() <em>Target Component</em>}' reference.
@@ -161,7 +162,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 	 * @generated
 	 * @ordered
 	 */
-	protected FormComponent targetFormComponent;
+	protected FrameworkTag targetFormComponent;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -401,10 +402,11 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Form getTargetForm() {
-		if (targetForm != null && targetForm.eIsProxy()) {
+	@SuppressWarnings("unchecked")
+	public Tag getTargetForm() {
+		if (targetForm != null && ((EObject)targetForm).eIsProxy()) {
 			InternalEObject oldTargetForm = (InternalEObject)targetForm;
-			targetForm = (Form)eResolveProxy(oldTargetForm);
+			targetForm = (Tag)eResolveProxy(oldTargetForm);
 			if (targetForm != oldTargetForm) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.RESULT_DEPENDENCY__TARGET_FORM, oldTargetForm, targetForm));
@@ -418,7 +420,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Form basicGetTargetForm() {
+	public Tag basicGetTargetForm() {
 		return targetForm;
 	}
 
@@ -427,8 +429,8 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTargetForm(Form newTargetForm) {
-		Form oldTargetForm = targetForm;
+	public void setTargetForm(Tag newTargetForm) {
+		Tag oldTargetForm = targetForm;
 		targetForm = newTargetForm;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.RESULT_DEPENDENCY__TARGET_FORM, oldTargetForm, targetForm));
@@ -515,10 +517,11 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FormComponent getTargetFormComponent() {
-		if (targetFormComponent != null && targetFormComponent.eIsProxy()) {
+	@SuppressWarnings("unchecked")
+	public FrameworkTag getTargetFormComponent() {
+		if (targetFormComponent != null && ((EObject)targetFormComponent).eIsProxy()) {
 			InternalEObject oldTargetFormComponent = (InternalEObject)targetFormComponent;
-			targetFormComponent = (FormComponent)eResolveProxy(oldTargetFormComponent);
+			targetFormComponent = (FrameworkTag)eResolveProxy(oldTargetFormComponent);
 			if (targetFormComponent != oldTargetFormComponent) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT, oldTargetFormComponent, targetFormComponent));
@@ -532,7 +535,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FormComponent basicGetTargetFormComponent() {
+	public FrameworkTag basicGetTargetFormComponent() {
 		return targetFormComponent;
 	}
 
@@ -541,8 +544,8 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTargetFormComponent(FormComponent newTargetFormComponent) {
-		FormComponent oldTargetFormComponent = targetFormComponent;
+	public void setTargetFormComponent(FrameworkTag newTargetFormComponent) {
+		FrameworkTag oldTargetFormComponent = targetFormComponent;
 		targetFormComponent = newTargetFormComponent;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT, oldTargetFormComponent, targetFormComponent));
@@ -624,7 +627,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 				getReturnResultType().addAll((Collection<? extends ResultType>)newValue);
 				return;
 			case FramewebPackage.RESULT_DEPENDENCY__TARGET_FORM:
-				setTargetForm((Form)newValue);
+				setTargetForm((Tag)newValue);
 				return;
 			case FramewebPackage.RESULT_DEPENDENCY__TARGET_COMPONENT:
 				setTargetComponent((Component)newValue);
@@ -633,7 +636,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 				setTargetJQuery((JQuery)newValue);
 				return;
 			case FramewebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT:
-				setTargetFormComponent((FormComponent)newValue);
+				setTargetFormComponent((FrameworkTag)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -669,7 +672,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 				getReturnResultType().clear();
 				return;
 			case FramewebPackage.RESULT_DEPENDENCY__TARGET_FORM:
-				setTargetForm((Form)null);
+				setTargetForm((Tag)null);
 				return;
 			case FramewebPackage.RESULT_DEPENDENCY__TARGET_COMPONENT:
 				setTargetComponent((Component)null);
@@ -678,7 +681,7 @@ public class ResultDependencyImpl extends NavigationDependencyImpl implements Re
 				setTargetJQuery((JQuery)null);
 				return;
 			case FramewebPackage.RESULT_DEPENDENCY__TARGET_FORM_COMPONENT:
-				setTargetFormComponent((FormComponent)null);
+				setTargetFormComponent((FrameworkTag)null);
 				return;
 		}
 		super.eUnset(featureID);

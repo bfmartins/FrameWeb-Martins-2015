@@ -6,14 +6,19 @@ package frameweb.provider;
 import frameweb.ApplicationModel;
 import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
+
 import java.util.Collection;
 import java.util.List;
+
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EStructuralFeature;
+
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-import uml.UmlPackage;
+
+import org.eclipse.uml2.uml.UMLPackage;
 
 /**
  * This is the item provider adapter for a {@link frameweb.ApplicationModel} object.
@@ -163,11 +168,14 @@ public class ApplicationModelItemProvider extends FrameWebModelItemProvider {
 		Object childObject = child;
 
 		boolean qualify =
-			childFeature == UmlPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
-			childFeature == UmlPackage.Literals.PACKAGE__PACKAGED_ELEMENT ||
-			childFeature == UmlPackage.Literals.NAMESPACE__OWNED_RULE ||
-			childFeature == FramewebPackage.Literals.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION ||
-			childFeature == FramewebPackage.Literals.APPLICATION_MODEL__APPLICATION_UML_PACKAGE;
+			childFeature == UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
+			childFeature == UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT ||
+			childFeature == UMLPackage.Literals.NAMESPACE__OWNED_RULE ||
+			childFeature == UMLPackage.Literals.PACKAGE__NESTED_PACKAGE ||
+			childFeature == FramewebPackage.Literals.APPLICATION_MODEL__APPLICATION_UML_PACKAGE ||
+			childFeature == UMLPackage.Literals.PACKAGE__OWNED_STEREOTYPE ||
+			childFeature == UMLPackage.Literals.PACKAGE__OWNED_TYPE ||
+			childFeature == FramewebPackage.Literals.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION;
 
 		if (qualify) {
 			return getString

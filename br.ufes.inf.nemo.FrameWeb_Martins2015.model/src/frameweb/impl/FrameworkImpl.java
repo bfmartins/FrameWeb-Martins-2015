@@ -5,6 +5,7 @@ package frameweb.impl;
 import frameweb.Anotation;
 import frameweb.FramewebPackage;
 import frameweb.Framework;
+import frameweb.FrameworkCategoryList;
 import frameweb.Rule;
 import frameweb.TagLib;
 
@@ -35,6 +36,7 @@ import org.eclipse.uml2.uml.internal.impl.PackageImpl;
  *   <li>{@link frameweb.impl.FrameworkImpl#getFrameworkTagLib <em>Framework Tag Lib</em>}</li>
  *   <li>{@link frameweb.impl.FrameworkImpl#getFrameworkRule <em>Framework Rule</em>}</li>
  *   <li>{@link frameweb.impl.FrameworkImpl#getFrameworkAnotation <em>Framework Anotation</em>}</li>
+ *   <li>{@link frameweb.impl.FrameworkImpl#getFrameworkCategory <em>Framework Category</em>}</li>
  * </ul>
  * </p>
  *
@@ -70,6 +72,26 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 	 * @ordered
 	 */
 	protected EList<Anotation> frameworkAnotation;
+
+	/**
+	 * The default value of the '{@link #getFrameworkCategory() <em>Framework Category</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFrameworkCategory()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final FrameworkCategoryList FRAMEWORK_CATEGORY_EDEFAULT = FrameworkCategoryList.MVC;
+
+	/**
+	 * The cached value of the '{@link #getFrameworkCategory() <em>Framework Category</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFrameworkCategory()
+	 * @generated
+	 * @ordered
+	 */
+	protected FrameworkCategoryList frameworkCategory = FRAMEWORK_CATEGORY_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -162,6 +184,27 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public FrameworkCategoryList getFrameworkCategory() {
+		return frameworkCategory;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setFrameworkCategory(FrameworkCategoryList newFrameworkCategory) {
+		FrameworkCategoryList oldFrameworkCategory = frameworkCategory;
+		frameworkCategory = newFrameworkCategory == null ? FRAMEWORK_CATEGORY_EDEFAULT : newFrameworkCategory;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRAMEWORK__FRAMEWORK_CATEGORY, oldFrameworkCategory, frameworkCategory));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -189,6 +232,8 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 				return getFrameworkRule();
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
 				return getFrameworkAnotation();
+			case FramewebPackage.FRAMEWORK__FRAMEWORK_CATEGORY:
+				return getFrameworkCategory();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -213,6 +258,9 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 				getFrameworkAnotation().clear();
 				getFrameworkAnotation().addAll((Collection<? extends Anotation>)newValue);
 				return;
+			case FramewebPackage.FRAMEWORK__FRAMEWORK_CATEGORY:
+				setFrameworkCategory((FrameworkCategoryList)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -234,6 +282,9 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
 				getFrameworkAnotation().clear();
 				return;
+			case FramewebPackage.FRAMEWORK__FRAMEWORK_CATEGORY:
+				setFrameworkCategory(FRAMEWORK_CATEGORY_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -252,8 +303,26 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 				return frameworkRule != null && !frameworkRule.isEmpty();
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
 				return frameworkAnotation != null && !frameworkAnotation.isEmpty();
+			case FramewebPackage.FRAMEWORK__FRAMEWORK_CATEGORY:
+				return frameworkCategory != FRAMEWORK_CATEGORY_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (frameworkCategory: ");
+		result.append(frameworkCategory);
+		result.append(')');
+		return result.toString();
 	}
 
 } //FrameworkImpl

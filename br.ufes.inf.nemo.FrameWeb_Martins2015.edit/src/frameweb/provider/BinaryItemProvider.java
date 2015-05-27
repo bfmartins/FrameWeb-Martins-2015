@@ -6,14 +6,19 @@ package frameweb.provider;
 import frameweb.Binary;
 import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
+
 import java.util.Collection;
 import java.util.List;
+
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EStructuralFeature;
+
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-import uml.UmlPackage;
+
+import org.eclipse.uml2.uml.UMLPackage;
 
 /**
  * This is the item provider adapter for a {@link frameweb.Binary} object.
@@ -151,11 +156,15 @@ public class BinaryItemProvider extends NavigationClassItemProvider {
 		Object childObject = child;
 
 		boolean qualify =
-			childFeature == UmlPackage.Literals.CLASSIFIER__OWNED_USE_CASE ||
-			childFeature == UmlPackage.Literals.CLASS__NESTED_CLASSIFIER ||
-			childFeature == UmlPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
+			childFeature == UMLPackage.Literals.CLASSIFIER__COLLABORATION_USE ||
+			childFeature == UMLPackage.Literals.CLASSIFIER__REPRESENTATION ||
+			childFeature == UMLPackage.Literals.CLASSIFIER__OWNED_USE_CASE ||
+			childFeature == UMLPackage.Literals.CLASS__NESTED_CLASSIFIER ||
+			childFeature == UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
 			childFeature == FramewebPackage.Literals.BINARY__BINARY_CLASS_ATTRIBUTE ||
-			childFeature == UmlPackage.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR;
+			childFeature == UMLPackage.Literals.ENCAPSULATED_CLASSIFIER__OWNED_PORT ||
+			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__CLASSIFIER_BEHAVIOR ||
+			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR;
 
 		if (qualify) {
 			return getString

@@ -25,6 +25,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference FrameworkTagLib : TagLib<<1..1>>
     Reference FrameworkRule : Rule<<0..*>>
     Reference FrameworkAnotation : Anotation<<1..*>>
+    Attribute frameworkCategory : FrameworkCategoryList
 
   Class DomainModel -> FrameWebModel
     Reference DomainUMLPackage : DomainPackage<<1..*>>
@@ -81,7 +82,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
   Class Template -> NavigationClass
     Reference TemplateClassAttribute : UserViewAttribute<<0..*>>
 
-  Class Form -> NavigationClass, Tag
+  Class Form -> NavigationClass
     Reference FormClassAttribute : FormComponent<<0..*>>
 
   Class Binary -> NavigationClass
@@ -260,7 +261,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
 
   Class JQuery -> NavigationClass
 
-  Class FormComponent -> NavigationAttribute, FrameworkTag
+  Class FormComponent -> NavigationAttribute
     Reference inject : IOParameter
 
   Class TagLib -> Package

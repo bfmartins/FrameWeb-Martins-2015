@@ -4,10 +4,7 @@
 
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated FrameWeb -->
-      <package
-            uri="https://github.com/bfmartins/FrameWeb-Martins-2015"
-            class="frameweb.FramewebPackage"
-            genModel="model/FrameWeb.genmodel"/>
+      <package uri="https://github.com/bfmartins/FrameWeb-Martins-2015" class="frameweb.FramewebPackage" genModel="model/FrameWeb.genmodel"></package>
    </extension>
 
 </plugin>

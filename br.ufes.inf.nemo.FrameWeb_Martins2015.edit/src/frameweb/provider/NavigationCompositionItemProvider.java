@@ -3,15 +3,24 @@
 package frameweb.provider;
 
 
+import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
 import frameweb.NavigationComposition;
+
 import java.util.Collection;
 import java.util.List;
+
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.common.util.ResourceLocator;
+
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+
+import org.eclipse.uml2.uml.UMLPackage;
+
+import org.eclipse.uml2.uml.edit.providers.AssociationItemProvider;
 
 /**
  * This is the item provider adapter for a {@link frameweb.NavigationComposition} object.
@@ -19,7 +28,7 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
  * <!-- end-user-doc -->
  * @generated
  */
-public class NavigationCompositionItemProvider extends uml.provider.AssociationItemProvider {
+public class NavigationCompositionItemProvider extends AssociationItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -209,6 +218,166 @@ public class NavigationCompositionItemProvider extends uml.provider.AssociationI
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createDAOGeneralization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createServiceGeneralization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createDomainGeneralization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createVersionAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createIdAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createLOBAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createEmbeddedAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createDecimalAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createDateTimeAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createUserViewAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createIOParameter()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createBinaryAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createDAOAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createServiceAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createFormComponent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createVersionAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createIdAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createLOBAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createEmbeddedAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createDecimalAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createDateTimeAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createUserViewAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createIOParameter()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createBinaryAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createDAOAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createServiceAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createFormComponent()));
+	}
+
+	/**
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify =
+			childFeature == UMLPackage.Literals.CLASSIFIER__COLLABORATION_USE ||
+			childFeature == UMLPackage.Literals.CLASSIFIER__REPRESENTATION ||
+			childFeature == UMLPackage.Literals.ASSOCIATION__OWNED_END ||
+			childFeature == UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END;
+
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 	/**

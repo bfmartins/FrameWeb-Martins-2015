@@ -2,19 +2,16 @@
  */
 package frameweb.impl;
 
-import frameweb.FormComponent;
 import frameweb.FramewebPackage;
+import frameweb.FrameworkTag; //*********************************************** linha adicionada
 import frameweb.IOParameter;
 
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -40,7 +37,7 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<FormComponent> display;
+	protected EList<FrameworkTag> display;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -66,9 +63,9 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<FormComponent> getDisplay() {
+	public EList<FrameworkTag> getDisplay() {
 		if (display == null) {
-			display = new EObjectWithInverseResolvingEList<FormComponent>(FormComponent.class, this, FramewebPackage.IO_PARAMETER__DISPLAY, FramewebPackage.FORM_COMPONENT__INJECT);
+			display = new EObjectWithInverseResolvingEList<FrameworkTag>(FrameworkTag.class, this, FramewebPackage.IO_PARAMETER__DISPLAY, FramewebPackage.FORM_COMPONENT__INJECT);
 		}
 		return display;
 	}
@@ -127,7 +124,7 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 		switch (featureID) {
 			case FramewebPackage.IO_PARAMETER__DISPLAY:
 				getDisplay().clear();
-				getDisplay().addAll((Collection<? extends FormComponent>)newValue);
+				getDisplay().addAll((Collection<? extends FrameworkTag>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

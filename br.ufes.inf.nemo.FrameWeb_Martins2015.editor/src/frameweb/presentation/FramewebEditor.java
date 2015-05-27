@@ -622,7 +622,7 @@ public class FramewebEditor
 			BasicDiagnostic diagnostic =
 				new BasicDiagnostic
 					(Diagnostic.OK,
-					 "br.ufes.inf.nemo.PINF8000-DM.FrameWeb_Martins2015.editor",
+					 "br.ufes.inf.nemo.FrameWeb_Martins2015.editor",
 					 0,
 					 null,
 					 new Object [] { editingDomain.getResourceSet() });
@@ -987,7 +987,7 @@ public class FramewebEditor
 			BasicDiagnostic basicDiagnostic =
 				new BasicDiagnostic
 					(Diagnostic.ERROR,
-					 "br.ufes.inf.nemo.PINF8000-DM.FrameWeb_Martins2015.editor",
+					 "br.ufes.inf.nemo.FrameWeb_Martins2015.editor",
 					 0,
 					 getString("_UI_CreateModelError_message", resource.getURI()),
 					 new Object [] { exception == null ? (Object)resource : exception });
@@ -998,7 +998,7 @@ public class FramewebEditor
 			return
 				new BasicDiagnostic
 					(Diagnostic.ERROR,
-					 "br.ufes.inf.nemo.PINF8000-DM.FrameWeb_Martins2015.editor",
+					 "br.ufes.inf.nemo.FrameWeb_Martins2015.editor",
 					 0,
 					 getString("_UI_CreateModelError_message", resource.getURI()),
 					 new Object[] { exception });

@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link frameweb.Framework#getFrameworkTagLib <em>Framework Tag Lib</em>}</li>
  *   <li>{@link frameweb.Framework#getFrameworkRule <em>Framework Rule</em>}</li>
  *   <li>{@link frameweb.Framework#getFrameworkAnotation <em>Framework Anotation</em>}</li>
+ *   <li>{@link frameweb.Framework#getFrameworkCategory <em>Framework Category</em>}</li>
  * </ul>
  * </p>
  *
@@ -80,5 +81,34 @@ public interface Framework extends org.eclipse.uml2.uml.Package {
 	 * @generated
 	 */
 	EList<Anotation> getFrameworkAnotation();
+
+	/**
+	 * Returns the value of the '<em><b>Framework Category</b></em>' attribute.
+	 * The literals are from the enumeration {@link frameweb.FrameworkCategoryList}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Framework Category</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Framework Category</em>' attribute.
+	 * @see frameweb.FrameworkCategoryList
+	 * @see #setFrameworkCategory(FrameworkCategoryList)
+	 * @see frameweb.FramewebPackage#getFramework_FrameworkCategory()
+	 * @model
+	 * @generated
+	 */
+	FrameworkCategoryList getFrameworkCategory();
+
+	/**
+	 * Sets the value of the '{@link frameweb.Framework#getFrameworkCategory <em>Framework Category</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Framework Category</em>' attribute.
+	 * @see frameweb.FrameworkCategoryList
+	 * @see #getFrameworkCategory()
+	 * @generated
+	 */
+	void setFrameworkCategory(FrameworkCategoryList value);
 
 } // Framework

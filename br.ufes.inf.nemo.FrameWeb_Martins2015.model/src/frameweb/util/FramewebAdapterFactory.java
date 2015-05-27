@@ -177,7 +177,7 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createTemplateAdapter();
 			}
 			@Override
-			public Adapter caseForm(Form object) {
+			public Adapter caseForm(Tag object) {
 				return createFormAdapter();
 			}
 			@Override
@@ -377,7 +377,7 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createJQueryAdapter();
 			}
 			@Override
-			public Adapter caseFormComponent(FormComponent object) {
+			public Adapter caseFormComponent(FrameworkTag object) {
 				return createFormComponentAdapter();
 			}
 			@Override
@@ -821,13 +821,13 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.Form <em>Form</em>}'.
+	 * Creates a new adapter for an object of class '{@link Tag <em>Form</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.Form
+	 * @see Tag
 	 * @generated
 	 */
 	public Adapter createFormAdapter() {
@@ -1521,13 +1521,13 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.FormComponent <em>Form Component</em>}'.
+	 * Creates a new adapter for an object of class '{@link FrameworkTag <em>Form Component</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.FormComponent
+	 * @see FrameworkTag
 	 * @generated
 	 */
 	public Adapter createFormComponentAdapter() {

@@ -3,16 +3,17 @@
 package frameweb.impl;
 
 import frameweb.Component;
-import frameweb.Form;
 import frameweb.FramewebPackage;
 import frameweb.JQuery;
 import frameweb.NavigationComposition;
 import frameweb.Page;
+import frameweb.Tag; //*********************************************** linha adicionada
 import frameweb.Template;
 
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
@@ -65,7 +66,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 	 * @generated
 	 * @ordered
 	 */
-	protected Form targetForm;
+	protected Tag targetForm;
 
 	/**
 	 * The cached value of the '{@link #getTargetComponent() <em>Target Component</em>}' reference.
@@ -187,10 +188,11 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Form getTargetForm() {
-		if (targetForm != null && targetForm.eIsProxy()) {
+	@SuppressWarnings("unchecked")
+	public Tag getTargetForm() {
+		if (targetForm != null && ((EObject)targetForm).eIsProxy()) {
 			InternalEObject oldTargetForm = (InternalEObject)targetForm;
-			targetForm = (Form)eResolveProxy(oldTargetForm);
+			targetForm = (Tag)eResolveProxy(oldTargetForm);
 			if (targetForm != oldTargetForm) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.NAVIGATION_COMPOSITION__TARGET_FORM, oldTargetForm, targetForm));
@@ -204,7 +206,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Form basicGetTargetForm() {
+	public Tag basicGetTargetForm() {
 		return targetForm;
 	}
 
@@ -213,8 +215,8 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTargetForm(Form newTargetForm) {
-		Form oldTargetForm = targetForm;
+	public void setTargetForm(Tag newTargetForm) {
+		Tag oldTargetForm = targetForm;
 		targetForm = newTargetForm;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.NAVIGATION_COMPOSITION__TARGET_FORM, oldTargetForm, targetForm));
@@ -328,6 +330,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -338,7 +341,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 				setSourcePage((Page)newValue);
 				return;
 			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_FORM:
-				setTargetForm((Form)newValue);
+				setTargetForm((Tag)newValue);
 				return;
 			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_COMPONENT:
 				setTargetComponent((Component)newValue);
@@ -365,7 +368,7 @@ public class NavigationCompositionImpl extends AssociationImpl implements Naviga
 				setSourcePage((Page)null);
 				return;
 			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_FORM:
-				setTargetForm((Form)null);
+				setTargetForm((Tag)null);
 				return;
 			case FramewebPackage.NAVIGATION_COMPOSITION__TARGET_COMPONENT:
 				setTargetComponent((Component)null);

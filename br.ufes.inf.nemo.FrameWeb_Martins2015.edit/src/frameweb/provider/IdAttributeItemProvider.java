@@ -5,15 +5,19 @@ package frameweb.provider;
 
 import frameweb.FramewebPackage;
 import frameweb.IdAttribute;
+
 import java.util.Collection;
 import java.util.List;
+
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-import uml.UmlPackage;
+
+import org.eclipse.uml2.uml.UMLPackage;
 
 /**
  * This is the item provider adapter for a {@link frameweb.IdAttribute} object.
@@ -139,10 +143,10 @@ public class IdAttributeItemProvider extends DomainAttributeItemProvider {
 		Object childObject = child;
 
 		boolean qualify =
-			childFeature == UmlPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
-			childFeature == UmlPackage.Literals.MULTIPLICITY_ELEMENT__LOWER_VALUE ||
-			childFeature == UmlPackage.Literals.MULTIPLICITY_ELEMENT__UPPER_VALUE ||
-			childFeature == UmlPackage.Literals.PROPERTY__DEFAULT_VALUE;
+			childFeature == UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
+			childFeature == UMLPackage.Literals.MULTIPLICITY_ELEMENT__LOWER_VALUE ||
+			childFeature == UMLPackage.Literals.MULTIPLICITY_ELEMENT__UPPER_VALUE ||
+			childFeature == UMLPackage.Literals.PROPERTY__DEFAULT_VALUE;
 
 		if (qualify) {
 			return getString

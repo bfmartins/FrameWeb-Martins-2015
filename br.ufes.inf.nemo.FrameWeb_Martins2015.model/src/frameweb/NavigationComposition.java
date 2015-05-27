@@ -86,12 +86,12 @@ public interface NavigationComposition extends Association {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Form</em>' reference.
-	 * @see #setTargetForm(Form)
+	 * @see #setTargetForm(Tag)
 	 * @see frameweb.FramewebPackage#getNavigationComposition_TargetForm()
-	 * @model required="true"
+	 * @model type="frameweb.Form" required="true"
 	 * @generated
 	 */
-	Form getTargetForm();
+	Tag getTargetForm();
 
 	/**
 	 * Sets the value of the '{@link frameweb.NavigationComposition#getTargetForm <em>Target Form</em>}' reference.
@@ -101,7 +101,7 @@ public interface NavigationComposition extends Association {
 	 * @see #getTargetForm()
 	 * @generated
 	 */
-	void setTargetForm(Form value);
+	void setTargetForm(Tag value);
 
 	/**
 	 * Returns the value of the '<em><b>Target Component</b></em>' reference.

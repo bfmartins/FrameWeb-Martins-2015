@@ -8,9 +8,7 @@ Bundle-Activator: frameweb.provider.FrameWebEditPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Export-Package: ecore.provider,
- frameweb.provider,
- uml.provider
+Export-Package: frameweb.provider
 Require-Bundle: org.eclipse.core.runtime,
  br.ufes.inf.nemo.FrameWeb_Martins2015.model;visibility:=reexport,
  org.eclipse.emf.edit;visibility:=reexport,

@@ -3,20 +3,19 @@
 package frameweb.impl;
 
 import frameweb.Component;
-import frameweb.Form;
 import frameweb.FramewebPackage;
 import frameweb.FrontControllerClass;
 import frameweb.FrontControllerDependency;
 import frameweb.FrontControllerMethod;
 import frameweb.JQuery;
 import frameweb.Page;
+import frameweb.Tag; //*********************************************** linha adicionada
 import frameweb.Template;
 
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
@@ -57,7 +56,7 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * @generated
 	 * @ordered
 	 */
-	protected Form sourceForm;
+	protected Tag sourceForm;
 
 	/**
 	 * The cached value of the '{@link #getTargetFrontController() <em>Target Front Controller</em>}' reference.
@@ -171,10 +170,11 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Form getSourceForm() {
-		if (sourceForm != null && sourceForm.eIsProxy()) {
+	@SuppressWarnings("unchecked")
+	public Tag getSourceForm() {
+		if (sourceForm != null && ((EObject)sourceForm).eIsProxy()) {
 			InternalEObject oldSourceForm = (InternalEObject)sourceForm;
-			sourceForm = (Form)eResolveProxy(oldSourceForm);
+			sourceForm = (Tag)eResolveProxy(oldSourceForm);
 			if (sourceForm != oldSourceForm) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_FORM, oldSourceForm, sourceForm));
@@ -188,7 +188,7 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Form basicGetSourceForm() {
+	public Tag basicGetSourceForm() {
 		return sourceForm;
 	}
 
@@ -197,8 +197,8 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSourceForm(Form newSourceForm) {
-		Form oldSourceForm = sourceForm;
+	public void setSourceForm(Tag newSourceForm) {
+		Tag oldSourceForm = sourceForm;
 		sourceForm = newSourceForm;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_FORM, oldSourceForm, sourceForm));
@@ -432,6 +432,7 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -439,7 +440,7 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 				setMethod((FrontControllerMethod)newValue);
 				return;
 			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_FORM:
-				setSourceForm((Form)newValue);
+				setSourceForm((Tag)newValue);
 				return;
 			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__TARGET_FRONT_CONTROLLER:
 				setTargetFrontController((FrontControllerClass)newValue);
@@ -472,7 +473,7 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 				setMethod((FrontControllerMethod)null);
 				return;
 			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_FORM:
-				setSourceForm((Form)null);
+				setSourceForm((Tag)null);
 				return;
 			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__TARGET_FRONT_CONTROLLER:
 				setTargetFrontController((FrontControllerClass)null);
