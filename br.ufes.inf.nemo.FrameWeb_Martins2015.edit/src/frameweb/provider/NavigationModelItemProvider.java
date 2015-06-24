@@ -177,7 +177,7 @@ public class NavigationModelItemProvider extends FrameWebModelItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(FramewebPackage.Literals.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION,
-				 FramewebFactory.eINSTANCE.createNavigationComposition()));
+				 FramewebFactory.eINSTANCE.createNavigationAssociation()));
 	}
 
 	/**

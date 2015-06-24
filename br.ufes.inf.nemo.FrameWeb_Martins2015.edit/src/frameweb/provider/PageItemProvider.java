@@ -49,25 +49,25 @@ public class PageItemProvider extends NavigationClassItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addMentionPropertyDescriptor(object);
+			addPageTagLibPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Mention feature.
+	 * This adds a property descriptor for the Page Tag Lib feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addMentionPropertyDescriptor(Object object) {
+	protected void addPageTagLibPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Page_Mention_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Page_Mention_feature", "_UI_Page_type"),
-				 FramewebPackage.Literals.PAGE__MENTION,
+				 getString("_UI_Page_PageTagLib_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Page_PageTagLib_feature", "_UI_Page_type"),
+				 FramewebPackage.Literals.PAGE__PAGE_TAG_LIB,
 				 true,
 				 false,
 				 true,
@@ -89,7 +89,7 @@ public class PageItemProvider extends NavigationClassItemProvider {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(FramewebPackage.Literals.PAGE__PAGE_CLASS_ATTRIBUTE);
-			childrenFeatures.add(FramewebPackage.Literals.PAGE__PAGE_TAG_LIB);
+			childrenFeatures.add(FramewebPackage.Literals.PAGE__PAGE_COMPOSITION);
 		}
 		return childrenFeatures;
 	}
@@ -146,7 +146,7 @@ public class PageItemProvider extends NavigationClassItemProvider {
 
 		switch (notification.getFeatureID(Page.class)) {
 			case FramewebPackage.PAGE__PAGE_CLASS_ATTRIBUTE:
-			case FramewebPackage.PAGE__PAGE_TAG_LIB:
+			case FramewebPackage.PAGE__PAGE_COMPOSITION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -171,8 +171,8 @@ public class PageItemProvider extends NavigationClassItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FramewebPackage.Literals.PAGE__PAGE_TAG_LIB,
-				 FramewebFactory.eINSTANCE.createFrameworkTag()));
+				(FramewebPackage.Literals.PAGE__PAGE_COMPOSITION,
+				 FramewebFactory.eINSTANCE.createNavigationComposition()));
 	}
 
 	/**
@@ -193,10 +193,10 @@ public class PageItemProvider extends NavigationClassItemProvider {
 			childFeature == UMLPackage.Literals.CLASS__NESTED_CLASSIFIER ||
 			childFeature == UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
 			childFeature == FramewebPackage.Literals.PAGE__PAGE_CLASS_ATTRIBUTE ||
+			childFeature == FramewebPackage.Literals.PAGE__PAGE_COMPOSITION ||
 			childFeature == UMLPackage.Literals.ENCAPSULATED_CLASSIFIER__OWNED_PORT ||
 			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__CLASSIFIER_BEHAVIOR ||
-			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR ||
-			childFeature == FramewebPackage.Literals.PAGE__PAGE_TAG_LIB;
+			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR;
 
 		if (qualify) {
 			return getString

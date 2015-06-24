@@ -4,7 +4,7 @@ package frameweb.provider;
 
 
 import frameweb.FramewebPackage;
-import frameweb.FrameworkTag;
+import frameweb.Tag;
 
 import java.util.Collection;
 import java.util.List;
@@ -16,7 +16,7 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.uml2.uml.UMLPackage;
 
 /**
- * This is the item provider adapter for a {@link FrameworkTag} object.
+ * This is the item provider adapter for a {@link Tag} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -89,7 +89,7 @@ public class FormComponentItemProvider extends NavigationAttributeItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((FrameworkTag)object).getName();
+		String label = ((Tag)object).getName();
 		return label == null || label.length() == 0 ?
 			getString("_UI_FormComponent_type") :
 			getString("_UI_FormComponent_type") + " " + label;

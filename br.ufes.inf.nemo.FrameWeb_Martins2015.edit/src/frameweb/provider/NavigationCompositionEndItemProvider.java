@@ -3,8 +3,7 @@
 package frameweb.provider;
 
 
-import frameweb.FramewebPackage;
-import frameweb.FrameworkTag;
+import frameweb.NavigationCompositionEnd;
 
 import java.util.Collection;
 import java.util.List;
@@ -17,19 +16,19 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.uml2.uml.UMLPackage;
 
 /**
- * This is the item provider adapter for a {@link frameweb.FrameworkTag} object.
+ * This is the item provider adapter for a {@link frameweb.NavigationCompositionEnd} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class FrameworkTagItemProvider extends TagItemProvider {
+public class NavigationCompositionEndItemProvider extends NavigationPropertyItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrameworkTagItemProvider(AdapterFactory adapterFactory) {
+	public NavigationCompositionEndItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -49,14 +48,14 @@ public class FrameworkTagItemProvider extends TagItemProvider {
 	}
 
 	/**
-	 * This returns FrameworkTag.gif.
+	 * This returns NavigationCompositionEnd.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/FrameworkTag"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/NavigationCompositionEnd"));
 	}
 
 	/**
@@ -67,10 +66,10 @@ public class FrameworkTagItemProvider extends TagItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((FrameworkTag)object).getName();
+		String label = ((NavigationCompositionEnd)object).getName();
 		return label == null || label.length() == 0 ?
-			getString("_UI_FrameworkTag_type") :
-			getString("_UI_FrameworkTag_type") + " " + label;
+			getString("_UI_NavigationCompositionEnd_type") :
+			getString("_UI_NavigationCompositionEnd_type") + " " + label;
 	}
 	
 
@@ -111,15 +110,10 @@ public class FrameworkTagItemProvider extends TagItemProvider {
 		Object childObject = child;
 
 		boolean qualify =
-			childFeature == UMLPackage.Literals.CLASSIFIER__COLLABORATION_USE ||
-			childFeature == UMLPackage.Literals.CLASSIFIER__REPRESENTATION ||
-			childFeature == UMLPackage.Literals.CLASSIFIER__OWNED_USE_CASE ||
-			childFeature == UMLPackage.Literals.CLASS__NESTED_CLASSIFIER ||
-			childFeature == UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
-			childFeature == UMLPackage.Literals.ENCAPSULATED_CLASSIFIER__OWNED_PORT ||
-			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__CLASSIFIER_BEHAVIOR ||
-			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR ||
-			childFeature == FramewebPackage.Literals.TAG__SUB_TAG;
+			childFeature == UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
+			childFeature == UMLPackage.Literals.MULTIPLICITY_ELEMENT__LOWER_VALUE ||
+			childFeature == UMLPackage.Literals.MULTIPLICITY_ELEMENT__UPPER_VALUE ||
+			childFeature == UMLPackage.Literals.PROPERTY__DEFAULT_VALUE;
 
 		if (qualify) {
 			return getString

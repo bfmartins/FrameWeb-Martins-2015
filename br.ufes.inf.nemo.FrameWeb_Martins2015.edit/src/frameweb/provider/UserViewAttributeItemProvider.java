@@ -3,7 +3,7 @@
 package frameweb.provider;
 
 
-import frameweb.UserViewAttribute;
+import frameweb.Tag;
 
 import java.util.Collection;
 import java.util.List;
@@ -16,7 +16,7 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.uml2.uml.UMLPackage;
 
 /**
- * This is the item provider adapter for a {@link frameweb.UserViewAttribute} object.
+ * This is the item provider adapter for a {@link Tag} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -66,7 +66,7 @@ public class UserViewAttributeItemProvider extends NavigationAttributeItemProvid
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((UserViewAttribute)object).getName();
+		String label = ((Tag)object).getName();
 		return label == null || label.length() == 0 ?
 			getString("_UI_UserViewAttribute_type") :
 			getString("_UI_UserViewAttribute_type") + " " + label;

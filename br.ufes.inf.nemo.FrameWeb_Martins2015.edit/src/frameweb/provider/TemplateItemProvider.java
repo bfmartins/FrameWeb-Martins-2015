@@ -15,6 +15,7 @@ import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EStructuralFeature;
 
+import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
@@ -48,8 +49,31 @@ public class TemplateItemProvider extends NavigationClassItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addTemplateTagLibPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Template Tag Lib feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addTemplateTagLibPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Template_TemplateTagLib_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Template_TemplateTagLib_feature", "_UI_Template_type"),
+				 FramewebPackage.Literals.TEMPLATE__TEMPLATE_TAG_LIB,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**
@@ -65,6 +89,7 @@ public class TemplateItemProvider extends NavigationClassItemProvider {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(FramewebPackage.Literals.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE);
+			childrenFeatures.add(FramewebPackage.Literals.TEMPLATE__TEMPLATE_COMPOSITION);
 		}
 		return childrenFeatures;
 	}
@@ -121,6 +146,7 @@ public class TemplateItemProvider extends NavigationClassItemProvider {
 
 		switch (notification.getFeatureID(Template.class)) {
 			case FramewebPackage.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE:
+			case FramewebPackage.TEMPLATE__TEMPLATE_COMPOSITION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -142,6 +168,11 @@ public class TemplateItemProvider extends NavigationClassItemProvider {
 			(createChildParameter
 				(FramewebPackage.Literals.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE,
 				 FramewebFactory.eINSTANCE.createUserViewAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FramewebPackage.Literals.TEMPLATE__TEMPLATE_COMPOSITION,
+				 FramewebFactory.eINSTANCE.createNavigationComposition()));
 	}
 
 	/**
@@ -162,6 +193,7 @@ public class TemplateItemProvider extends NavigationClassItemProvider {
 			childFeature == UMLPackage.Literals.CLASS__NESTED_CLASSIFIER ||
 			childFeature == UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
 			childFeature == FramewebPackage.Literals.TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE ||
+			childFeature == FramewebPackage.Literals.TEMPLATE__TEMPLATE_COMPOSITION ||
 			childFeature == UMLPackage.Literals.ENCAPSULATED_CLASSIFIER__OWNED_PORT ||
 			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__CLASSIFIER_BEHAVIOR ||
 			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR;

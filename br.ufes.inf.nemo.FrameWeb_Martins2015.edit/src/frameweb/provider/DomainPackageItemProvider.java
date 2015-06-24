@@ -255,7 +255,7 @@ public class DomainPackageItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
-				 FramewebFactory.eINSTANCE.createNavigationComposition()));
+				 FramewebFactory.eINSTANCE.createNavigationAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -275,6 +275,11 @@ public class DomainPackageItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
+				 FramewebFactory.eINSTANCE.createResult()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
 				 FramewebFactory.eINSTANCE.createDAOServiceAssociation()));
 
 		newChildDescriptors.add
@@ -285,12 +290,17 @@ public class DomainPackageItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
+				 FramewebFactory.eINSTANCE.createResultType()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
 				 FramewebFactory.eINSTANCE.createJQuery()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
-				 FramewebFactory.eINSTANCE.createFrameworkTag()));
+				 FramewebFactory.eINSTANCE.createTag()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -380,7 +390,7 @@ public class DomainPackageItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createNavigationComposition()));
+				 FramewebFactory.eINSTANCE.createNavigationAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -396,6 +406,11 @@ public class DomainPackageItemProvider extends PackageItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 FramewebFactory.eINSTANCE.createServiceNavigationAssociation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createResult()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -450,6 +465,11 @@ public class DomainPackageItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createResultType()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 FramewebFactory.eINSTANCE.createJQuery()));
 
 		newChildDescriptors.add
@@ -460,7 +480,7 @@ public class DomainPackageItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createFrameworkTag()));
+				 FramewebFactory.eINSTANCE.createTag()));
 
 		newChildDescriptors.add
 			(createChildParameter

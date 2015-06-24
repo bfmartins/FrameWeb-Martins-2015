@@ -45,28 +45,28 @@ public class PageDependencyItemProvider extends NavigationDependencyItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addTargetPagePropertyDescriptor(object);
-			addSourceTemplatePropertyDescriptor(object);
+			addSupplierPagePropertyDescriptor(object);
+			addClientTemplatePropertyDescriptor(object);
 			addLinkHTMLPropertyDescriptor(object);
-			addSourcePagePropertyDescriptor(object);
+			addClientPagePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Target Page feature.
+	 * This adds a property descriptor for the Supplier Page feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addTargetPagePropertyDescriptor(Object object) {
+	protected void addSupplierPagePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_PageDependency_TargetPage_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_PageDependency_TargetPage_feature", "_UI_PageDependency_type"),
-				 FramewebPackage.Literals.PAGE_DEPENDENCY__TARGET_PAGE,
+				 getString("_UI_PageDependency_SupplierPage_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_PageDependency_SupplierPage_feature", "_UI_PageDependency_type"),
+				 FramewebPackage.Literals.PAGE_DEPENDENCY__SUPPLIER_PAGE,
 				 true,
 				 false,
 				 true,
@@ -76,19 +76,19 @@ public class PageDependencyItemProvider extends NavigationDependencyItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Source Template feature.
+	 * This adds a property descriptor for the Client Template feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addSourceTemplatePropertyDescriptor(Object object) {
+	protected void addClientTemplatePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_PageDependency_SourceTemplate_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_PageDependency_SourceTemplate_feature", "_UI_PageDependency_type"),
-				 FramewebPackage.Literals.PAGE_DEPENDENCY__SOURCE_TEMPLATE,
+				 getString("_UI_PageDependency_ClientTemplate_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_PageDependency_ClientTemplate_feature", "_UI_PageDependency_type"),
+				 FramewebPackage.Literals.PAGE_DEPENDENCY__CLIENT_TEMPLATE,
 				 true,
 				 false,
 				 true,
@@ -120,19 +120,19 @@ public class PageDependencyItemProvider extends NavigationDependencyItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Source Page feature.
+	 * This adds a property descriptor for the Client Page feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addSourcePagePropertyDescriptor(Object object) {
+	protected void addClientPagePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_PageDependency_SourcePage_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_PageDependency_SourcePage_feature", "_UI_PageDependency_type"),
-				 FramewebPackage.Literals.PAGE_DEPENDENCY__SOURCE_PAGE,
+				 getString("_UI_PageDependency_ClientPage_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_PageDependency_ClientPage_feature", "_UI_PageDependency_type"),
+				 FramewebPackage.Literals.PAGE_DEPENDENCY__CLIENT_PAGE,
 				 true,
 				 false,
 				 true,

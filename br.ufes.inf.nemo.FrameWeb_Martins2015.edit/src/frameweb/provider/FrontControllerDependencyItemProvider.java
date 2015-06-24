@@ -44,12 +44,12 @@ public class FrontControllerDependencyItemProvider extends NavigationDependencyI
 			super.getPropertyDescriptors(object);
 
 			addMethodPropertyDescriptor(object);
-			addSourceFormPropertyDescriptor(object);
-			addTargetFrontControllerPropertyDescriptor(object);
-			addSourcePagePropertyDescriptor(object);
-			addSourceTemplatePropertyDescriptor(object);
-			addSourceComponentPropertyDescriptor(object);
-			addSourceJQueryPropertyDescriptor(object);
+			addClientFormPropertyDescriptor(object);
+			addSupplierFrontControllerPropertyDescriptor(object);
+			addClientPagePropertyDescriptor(object);
+			addClientTemplatePropertyDescriptor(object);
+			addClientComponentPropertyDescriptor(object);
+			addClientJQueryPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -77,19 +77,19 @@ public class FrontControllerDependencyItemProvider extends NavigationDependencyI
 	}
 
 	/**
-	 * This adds a property descriptor for the Source Form feature.
+	 * This adds a property descriptor for the Client Form feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addSourceFormPropertyDescriptor(Object object) {
+	protected void addClientFormPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_FrontControllerDependency_SourceForm_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_SourceForm_feature", "_UI_FrontControllerDependency_type"),
-				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__SOURCE_FORM,
+				 getString("_UI_FrontControllerDependency_ClientForm_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_ClientForm_feature", "_UI_FrontControllerDependency_type"),
+				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__CLIENT_FORM,
 				 true,
 				 false,
 				 true,
@@ -99,19 +99,19 @@ public class FrontControllerDependencyItemProvider extends NavigationDependencyI
 	}
 
 	/**
-	 * This adds a property descriptor for the Target Front Controller feature.
+	 * This adds a property descriptor for the Supplier Front Controller feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addTargetFrontControllerPropertyDescriptor(Object object) {
+	protected void addSupplierFrontControllerPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_FrontControllerDependency_TargetFrontController_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_TargetFrontController_feature", "_UI_FrontControllerDependency_type"),
-				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__TARGET_FRONT_CONTROLLER,
+				 getString("_UI_FrontControllerDependency_SupplierFrontController_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_SupplierFrontController_feature", "_UI_FrontControllerDependency_type"),
+				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER,
 				 true,
 				 false,
 				 true,
@@ -121,19 +121,19 @@ public class FrontControllerDependencyItemProvider extends NavigationDependencyI
 	}
 
 	/**
-	 * This adds a property descriptor for the Source Page feature.
+	 * This adds a property descriptor for the Client Page feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addSourcePagePropertyDescriptor(Object object) {
+	protected void addClientPagePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_FrontControllerDependency_SourcePage_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_SourcePage_feature", "_UI_FrontControllerDependency_type"),
-				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__SOURCE_PAGE,
+				 getString("_UI_FrontControllerDependency_ClientPage_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_ClientPage_feature", "_UI_FrontControllerDependency_type"),
+				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__CLIENT_PAGE,
 				 true,
 				 false,
 				 true,
@@ -143,19 +143,19 @@ public class FrontControllerDependencyItemProvider extends NavigationDependencyI
 	}
 
 	/**
-	 * This adds a property descriptor for the Source Template feature.
+	 * This adds a property descriptor for the Client Template feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addSourceTemplatePropertyDescriptor(Object object) {
+	protected void addClientTemplatePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_FrontControllerDependency_SourceTemplate_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_SourceTemplate_feature", "_UI_FrontControllerDependency_type"),
-				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__SOURCE_TEMPLATE,
+				 getString("_UI_FrontControllerDependency_ClientTemplate_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_ClientTemplate_feature", "_UI_FrontControllerDependency_type"),
+				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__CLIENT_TEMPLATE,
 				 true,
 				 false,
 				 true,
@@ -165,19 +165,19 @@ public class FrontControllerDependencyItemProvider extends NavigationDependencyI
 	}
 
 	/**
-	 * This adds a property descriptor for the Source Component feature.
+	 * This adds a property descriptor for the Client Component feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addSourceComponentPropertyDescriptor(Object object) {
+	protected void addClientComponentPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_FrontControllerDependency_SourceComponent_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_SourceComponent_feature", "_UI_FrontControllerDependency_type"),
-				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__SOURCE_COMPONENT,
+				 getString("_UI_FrontControllerDependency_ClientComponent_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_ClientComponent_feature", "_UI_FrontControllerDependency_type"),
+				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__CLIENT_COMPONENT,
 				 true,
 				 false,
 				 true,
@@ -187,19 +187,19 @@ public class FrontControllerDependencyItemProvider extends NavigationDependencyI
 	}
 
 	/**
-	 * This adds a property descriptor for the Source JQuery feature.
+	 * This adds a property descriptor for the Client JQuery feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addSourceJQueryPropertyDescriptor(Object object) {
+	protected void addClientJQueryPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_FrontControllerDependency_SourceJQuery_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_SourceJQuery_feature", "_UI_FrontControllerDependency_type"),
-				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__SOURCE_JQUERY,
+				 getString("_UI_FrontControllerDependency_ClientJQuery_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_ClientJQuery_feature", "_UI_FrontControllerDependency_type"),
+				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__CLIENT_JQUERY,
 				 true,
 				 false,
 				 true,

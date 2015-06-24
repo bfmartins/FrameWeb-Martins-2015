@@ -45,8 +45,8 @@ public class ChainingDependencyItemProvider extends NavigationDependencyItemProv
 
 			addOutMethodPropertyDescriptor(object);
 			addInMethodPropertyDescriptor(object);
-			addTargetFrontControllerPropertyDescriptor(object);
-			addSourceFrontControllerPropertyDescriptor(object);
+			addSupplierFrontControllerPropertyDescriptor(object);
+			addClientFrontControllerPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -96,19 +96,19 @@ public class ChainingDependencyItemProvider extends NavigationDependencyItemProv
 	}
 
 	/**
-	 * This adds a property descriptor for the Target Front Controller feature.
+	 * This adds a property descriptor for the Supplier Front Controller feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addTargetFrontControllerPropertyDescriptor(Object object) {
+	protected void addSupplierFrontControllerPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_ChainingDependency_TargetFrontController_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_ChainingDependency_TargetFrontController_feature", "_UI_ChainingDependency_type"),
-				 FramewebPackage.Literals.CHAINING_DEPENDENCY__TARGET_FRONT_CONTROLLER,
+				 getString("_UI_ChainingDependency_SupplierFrontController_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ChainingDependency_SupplierFrontController_feature", "_UI_ChainingDependency_type"),
+				 FramewebPackage.Literals.CHAINING_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER,
 				 true,
 				 false,
 				 true,
@@ -118,19 +118,19 @@ public class ChainingDependencyItemProvider extends NavigationDependencyItemProv
 	}
 
 	/**
-	 * This adds a property descriptor for the Source Front Controller feature.
+	 * This adds a property descriptor for the Client Front Controller feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addSourceFrontControllerPropertyDescriptor(Object object) {
+	protected void addClientFrontControllerPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_ChainingDependency_SourceFrontController_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_ChainingDependency_SourceFrontController_feature", "_UI_ChainingDependency_type"),
-				 FramewebPackage.Literals.CHAINING_DEPENDENCY__SOURCE_FRONT_CONTROLLER,
+				 getString("_UI_ChainingDependency_ClientFrontController_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ChainingDependency_ClientFrontController_feature", "_UI_ChainingDependency_type"),
+				 FramewebPackage.Literals.CHAINING_DEPENDENCY__CLIENT_FRONT_CONTROLLER,
 				 true,
 				 false,
 				 true,
