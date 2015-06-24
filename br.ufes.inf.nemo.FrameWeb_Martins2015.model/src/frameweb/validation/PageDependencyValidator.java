@@ -16,8 +16,8 @@ import frameweb.Template;
 public interface PageDependencyValidator {
 	boolean validate();
 
-	boolean validateTargetPage(Page value);
-	boolean validateSourceTemplate(Template value);
+	boolean validateSupplierPage(Page value);
+	boolean validateClientTemplate(Template value);
 	boolean validateLinkHTML(String value);
-	boolean validateSourcePage(Page value);
+	boolean validateClientPage(Page value);
 }

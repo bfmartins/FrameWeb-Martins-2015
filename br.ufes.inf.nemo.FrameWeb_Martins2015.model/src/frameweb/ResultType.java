@@ -2,7 +2,6 @@
  */
 package frameweb;
 
-import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -14,5 +13,5 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface ResultType extends EObject {
+public interface ResultType extends org.eclipse.uml2.uml.Class {
 } // ResultType

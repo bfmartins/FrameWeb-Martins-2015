@@ -3,17 +3,20 @@
 package frameweb.impl;
 
 import frameweb.FramewebPackage;
-import frameweb.FrameworkTag;
+import frameweb.Tag;
 import frameweb.TagLib;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -28,6 +31,7 @@ import org.eclipse.uml2.uml.internal.impl.PackageImpl;
  * The following features are implemented:
  * <ul>
  *   <li>{@link frameweb.impl.TagLibImpl#getTagLibTag <em>Tag Lib Tag</em>}</li>
+ *   <li>{@link frameweb.impl.TagLibImpl#getPrefix <em>Prefix</em>}</li>
  * </ul>
  * </p>
  *
@@ -42,7 +46,27 @@ public class TagLibImpl extends PackageImpl implements TagLib {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<FrameworkTag> tagLibTag;
+	protected EList<Tag> tagLibTag;
+
+	/**
+	 * The default value of the '{@link #getPrefix() <em>Prefix</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPrefix()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PREFIX_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getPrefix() <em>Prefix</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPrefix()
+	 * @generated
+	 * @ordered
+	 */
+	protected String prefix = PREFIX_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -68,11 +92,32 @@ public class TagLibImpl extends PackageImpl implements TagLib {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<FrameworkTag> getTagLibTag() {
+	public EList<Tag> getTagLibTag() {
 		if (tagLibTag == null) {
-			tagLibTag = new EObjectContainmentEList<FrameworkTag>(FrameworkTag.class, this, FramewebPackage.TAG_LIB__TAG_LIB_TAG);
+			tagLibTag = new EObjectContainmentEList<Tag>(Tag.class, this, FramewebPackage.TAG_LIB__TAG_LIB_TAG);
 		}
 		return tagLibTag;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getPrefix() {
+		return prefix;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPrefix(String newPrefix) {
+		String oldPrefix = prefix;
+		prefix = newPrefix;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.TAG_LIB__PREFIX, oldPrefix, prefix));
 	}
 
 	/**
@@ -99,6 +144,8 @@ public class TagLibImpl extends PackageImpl implements TagLib {
 		switch (featureID) {
 			case FramewebPackage.TAG_LIB__TAG_LIB_TAG:
 				return getTagLibTag();
+			case FramewebPackage.TAG_LIB__PREFIX:
+				return getPrefix();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -114,7 +161,10 @@ public class TagLibImpl extends PackageImpl implements TagLib {
 		switch (featureID) {
 			case FramewebPackage.TAG_LIB__TAG_LIB_TAG:
 				getTagLibTag().clear();
-				getTagLibTag().addAll((Collection<? extends FrameworkTag>)newValue);
+				getTagLibTag().addAll((Collection<? extends Tag>)newValue);
+				return;
+			case FramewebPackage.TAG_LIB__PREFIX:
+				setPrefix((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -131,6 +181,9 @@ public class TagLibImpl extends PackageImpl implements TagLib {
 			case FramewebPackage.TAG_LIB__TAG_LIB_TAG:
 				getTagLibTag().clear();
 				return;
+			case FramewebPackage.TAG_LIB__PREFIX:
+				setPrefix(PREFIX_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -145,8 +198,26 @@ public class TagLibImpl extends PackageImpl implements TagLib {
 		switch (featureID) {
 			case FramewebPackage.TAG_LIB__TAG_LIB_TAG:
 				return tagLibTag != null && !tagLibTag.isEmpty();
+			case FramewebPackage.TAG_LIB__PREFIX:
+				return PREFIX_EDEFAULT == null ? prefix != null : !PREFIX_EDEFAULT.equals(prefix);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (prefix: ");
+		result.append(prefix);
+		result.append(')');
+		return result.toString();
 	}
 
 } //TagLibImpl

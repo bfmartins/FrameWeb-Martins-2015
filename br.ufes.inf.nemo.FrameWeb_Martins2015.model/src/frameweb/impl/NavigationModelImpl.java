@@ -4,7 +4,7 @@ package frameweb.impl;
 
 import frameweb.ControllerPackage;
 import frameweb.FramewebPackage;
-import frameweb.NavigationComposition;
+import frameweb.NavigationAssociation;
 import frameweb.NavigationDependency;
 import frameweb.NavigationModel;
 import frameweb.ViewPackage;
@@ -76,7 +76,7 @@ public class NavigationModelImpl extends FrameWebModelImpl implements Navigation
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<NavigationComposition> navigationUMLComposition;
+	protected EList<NavigationAssociation> navigationUMLComposition;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -138,9 +138,9 @@ public class NavigationModelImpl extends FrameWebModelImpl implements Navigation
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<NavigationComposition> getNavigationUMLComposition() {
+	public EList<NavigationAssociation> getNavigationUMLComposition() {
 		if (navigationUMLComposition == null) {
-			navigationUMLComposition = new EObjectContainmentEList<NavigationComposition>(NavigationComposition.class, this, FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION);
+			navigationUMLComposition = new EObjectContainmentEList<NavigationAssociation>(NavigationAssociation.class, this, FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION);
 		}
 		return navigationUMLComposition;
 	}
@@ -208,7 +208,7 @@ public class NavigationModelImpl extends FrameWebModelImpl implements Navigation
 				return;
 			case FramewebPackage.NAVIGATION_MODEL__NAVIGATION_UML_COMPOSITION:
 				getNavigationUMLComposition().clear();
-				getNavigationUMLComposition().addAll((Collection<? extends NavigationComposition>)newValue);
+				getNavigationUMLComposition().addAll((Collection<? extends NavigationAssociation>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

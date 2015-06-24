@@ -7,7 +7,7 @@ import frameweb.ResultType;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import org.eclipse.uml2.uml.internal.impl.ClassImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class ResultTypeImpl extends MinimalEObjectImpl.Container implements ResultType {
+public class ResultTypeImpl extends ClassImpl implements ResultType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

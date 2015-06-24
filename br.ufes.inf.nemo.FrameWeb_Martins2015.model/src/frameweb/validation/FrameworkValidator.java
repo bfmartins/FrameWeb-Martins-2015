@@ -20,6 +20,8 @@ import org.eclipse.emf.common.util.EList;
 public interface FrameworkValidator {
 	boolean validate();
 
+	boolean validateFrameworkTagLib(EList<TagLib> value);
+
 	boolean validateFrameworkTagLib(TagLib value);
 	boolean validateFrameworkRule(EList<Rule> value);
 	boolean validateFrameworkAnotation(EList<Anotation> value);

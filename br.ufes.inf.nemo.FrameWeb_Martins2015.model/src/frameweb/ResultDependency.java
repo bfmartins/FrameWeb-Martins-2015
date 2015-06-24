@@ -14,26 +14,20 @@ import org.eclipse.emf.common.util.EList;
  * <ul>
  *   <li>{@link frameweb.ResultDependency#getReturnResult <em>Return Result</em>}</li>
  *   <li>{@link frameweb.ResultDependency#getReturnMethod <em>Return Method</em>}</li>
- *   <li>{@link frameweb.ResultDependency#getSourceFrontController <em>Source Front Controller</em>}</li>
- *   <li>{@link frameweb.ResultDependency#getTargetTemplate <em>Target Template</em>}</li>
- *   <li>{@link frameweb.ResultDependency#getTargetPage <em>Target Page</em>}</li>
- *   <li>{@link frameweb.ResultDependency#getTargetBinary <em>Target Binary</em>}</li>
  *   <li>{@link frameweb.ResultDependency#getReturnResultType <em>Return Result Type</em>}</li>
- *   <li>{@link frameweb.ResultDependency#getTargetForm <em>Target Form</em>}</li>
- *   <li>{@link frameweb.ResultDependency#getTargetComponent <em>Target Component</em>}</li>
- *   <li>{@link frameweb.ResultDependency#getTargetJQuery <em>Target JQuery</em>}</li>
- *   <li>{@link frameweb.ResultDependency#getTargetFormComponent <em>Target Form Component</em>}</li>
  * </ul>
  * </p>
  *
  * @see frameweb.FramewebPackage#getResultDependency()
- * @model
+ * @model annotation="Ecore constraints='ResultDependencyConstraint\r\n'"
+ *        annotation="Comments ResultDependencyConstraint='The supplier of a ResultDependency must be only navigation classes (NavigationClass) and the client has to be always and obligatorily a FrontControllerClass.'"
+ *        annotation="OCL ResultDependencyConstraint='context ResultDependency \r\n inv: \r\n  (self.oclAsType(Dependency).client.oclIsTypeOf(FrontControllerClass)) and\r\n  ((self.oclAsType(Dependency).supplier.oclIsTypeOf(NavigationClass)) or \r\n  (self.oclAsType(Dependency).supplier.oclIsTypeOf(FormComponent)))'"
  * @generated
  */
 public interface ResultDependency extends NavigationDependency {
 	/**
 	 * Returns the value of the '<em><b>Return Result</b></em>' reference list.
-	 * The list contents are of type {@link frameweb.Result}.
+	 * The list contents are of type {@link ResultType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Return Result</em>' reference list isn't clear,
@@ -42,10 +36,10 @@ public interface ResultDependency extends NavigationDependency {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Return Result</em>' reference list.
 	 * @see frameweb.FramewebPackage#getResultDependency_ReturnResult()
-	 * @model
+	 * @model type="frameweb.Result"
 	 * @generated
 	 */
-	EList<Result> getReturnResult();
+	EList<ResultType> getReturnResult();
 
 	/**
 	 * Returns the value of the '<em><b>Return Method</b></em>' reference.
@@ -74,110 +68,6 @@ public interface ResultDependency extends NavigationDependency {
 	void setReturnMethod(FrontControllerMethod value);
 
 	/**
-	 * Returns the value of the '<em><b>Source Front Controller</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Source Front Controller</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Source Front Controller</em>' reference.
-	 * @see #setSourceFrontController(FrontControllerClass)
-	 * @see frameweb.FramewebPackage#getResultDependency_SourceFrontController()
-	 * @model required="true"
-	 * @generated
-	 */
-	FrontControllerClass getSourceFrontController();
-
-	/**
-	 * Sets the value of the '{@link frameweb.ResultDependency#getSourceFrontController <em>Source Front Controller</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Source Front Controller</em>' reference.
-	 * @see #getSourceFrontController()
-	 * @generated
-	 */
-	void setSourceFrontController(FrontControllerClass value);
-
-	/**
-	 * Returns the value of the '<em><b>Target Template</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target Template</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Target Template</em>' reference.
-	 * @see #setTargetTemplate(Template)
-	 * @see frameweb.FramewebPackage#getResultDependency_TargetTemplate()
-	 * @model
-	 * @generated
-	 */
-	Template getTargetTemplate();
-
-	/**
-	 * Sets the value of the '{@link frameweb.ResultDependency#getTargetTemplate <em>Target Template</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target Template</em>' reference.
-	 * @see #getTargetTemplate()
-	 * @generated
-	 */
-	void setTargetTemplate(Template value);
-
-	/**
-	 * Returns the value of the '<em><b>Target Page</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target Page</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Target Page</em>' reference.
-	 * @see #setTargetPage(Page)
-	 * @see frameweb.FramewebPackage#getResultDependency_TargetPage()
-	 * @model
-	 * @generated
-	 */
-	Page getTargetPage();
-
-	/**
-	 * Sets the value of the '{@link frameweb.ResultDependency#getTargetPage <em>Target Page</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target Page</em>' reference.
-	 * @see #getTargetPage()
-	 * @generated
-	 */
-	void setTargetPage(Page value);
-
-	/**
-	 * Returns the value of the '<em><b>Target Binary</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target Binary</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Target Binary</em>' reference.
-	 * @see #setTargetBinary(Binary)
-	 * @see frameweb.FramewebPackage#getResultDependency_TargetBinary()
-	 * @model
-	 * @generated
-	 */
-	Binary getTargetBinary();
-
-	/**
-	 * Sets the value of the '{@link frameweb.ResultDependency#getTargetBinary <em>Target Binary</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target Binary</em>' reference.
-	 * @see #getTargetBinary()
-	 * @generated
-	 */
-	void setTargetBinary(Binary value);
-
-	/**
 	 * Returns the value of the '<em><b>Return Result Type</b></em>' reference list.
 	 * The list contents are of type {@link frameweb.ResultType}.
 	 * <!-- begin-user-doc -->
@@ -192,109 +82,5 @@ public interface ResultDependency extends NavigationDependency {
 	 * @generated
 	 */
 	EList<ResultType> getReturnResultType();
-
-	/**
-	 * Returns the value of the '<em><b>Target Form</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target Form</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Target Form</em>' reference.
-	 * @see #setTargetForm(Tag)
-	 * @see frameweb.FramewebPackage#getResultDependency_TargetForm()
-	 * @model type="frameweb.Form"
-	 * @generated
-	 */
-	Tag getTargetForm();
-
-	/**
-	 * Sets the value of the '{@link frameweb.ResultDependency#getTargetForm <em>Target Form</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target Form</em>' reference.
-	 * @see #getTargetForm()
-	 * @generated
-	 */
-	void setTargetForm(Tag value);
-
-	/**
-	 * Returns the value of the '<em><b>Target Component</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target Component</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Target Component</em>' reference.
-	 * @see #setTargetComponent(Component)
-	 * @see frameweb.FramewebPackage#getResultDependency_TargetComponent()
-	 * @model
-	 * @generated
-	 */
-	Component getTargetComponent();
-
-	/**
-	 * Sets the value of the '{@link frameweb.ResultDependency#getTargetComponent <em>Target Component</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target Component</em>' reference.
-	 * @see #getTargetComponent()
-	 * @generated
-	 */
-	void setTargetComponent(Component value);
-
-	/**
-	 * Returns the value of the '<em><b>Target JQuery</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target JQuery</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Target JQuery</em>' reference.
-	 * @see #setTargetJQuery(JQuery)
-	 * @see frameweb.FramewebPackage#getResultDependency_TargetJQuery()
-	 * @model
-	 * @generated
-	 */
-	JQuery getTargetJQuery();
-
-	/**
-	 * Sets the value of the '{@link frameweb.ResultDependency#getTargetJQuery <em>Target JQuery</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target JQuery</em>' reference.
-	 * @see #getTargetJQuery()
-	 * @generated
-	 */
-	void setTargetJQuery(JQuery value);
-
-	/**
-	 * Returns the value of the '<em><b>Target Form Component</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target Form Component</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Target Form Component</em>' reference.
-	 * @see #setTargetFormComponent(FrameworkTag)
-	 * @see frameweb.FramewebPackage#getResultDependency_TargetFormComponent()
-	 * @model type="frameweb.FormComponent"
-	 * @generated
-	 */
-	FrameworkTag getTargetFormComponent();
-
-	/**
-	 * Sets the value of the '{@link frameweb.ResultDependency#getTargetFormComponent <em>Target Form Component</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target Form Component</em>' reference.
-	 * @see #getTargetFormComponent()
-	 * @generated
-	 */
-	void setTargetFormComponent(FrameworkTag value);
 
 } // ResultDependency

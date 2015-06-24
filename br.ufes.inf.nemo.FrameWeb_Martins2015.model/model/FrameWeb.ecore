@@ -9,23 +9,21 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TransientClass" eSuperTypes="#//DomainClass"/>
   <eClassifiers xsi:type="ecore:EClass" name="Frameweb">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Compose" lowerBound="1"
-        upperBound="-1" eType="#//FrameWebModel" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Uses" lowerBound="1" upperBound="-1"
-        eType="#//Framework" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Compose" upperBound="-1"
+        eType="#//FrameWebModel" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Uses" upperBound="-1" eType="#//Framework"
+        containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FrameWebModel" abstract="true" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Package">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Indite" lowerBound="1"
-        eType="#//NamingMethod" containment="true"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FrameWebModel" abstract="true" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Package"/>
   <eClassifiers xsi:type="ecore:EClass" name="Framework" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Package">
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrameworkTagLib" lowerBound="1"
-        eType="#//TagLib" containment="true"/>
+        upperBound="-1" eType="#//TagLib" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrameworkRule" upperBound="-1"
         eType="#//Rule" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrameworkAnotation" lowerBound="1"
         upperBound="-1" eType="#//Anotation" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="frameworkCategory" eType="#//FrameworkCategoryList"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="frameworkCategory" eType="#//FrameworkCategoryList"
+        defaultValueLiteral="standard"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DomainModel" eSuperTypes="#//FrameWebModel">
     <eStructuralFeatures xsi:type="ecore:EReference" name="DomainUMLPackage" lowerBound="1"
@@ -41,7 +39,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="ControllerUMLPackage" lowerBound="1"
         upperBound="-1" eType="#//ControllerPackage" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="NavigationUMLComposition"
-        upperBound="-1" eType="#//NavigationComposition" containment="true"/>
+        upperBound="-1" eType="#//NavigationAssociation" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ApplicationModel" eSuperTypes="#//FrameWebModel">
     <eStructuralFeatures xsi:type="ecore:EReference" name="ServiceUMLAssociation"
@@ -122,13 +120,17 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="PageClassAttribute" upperBound="-1"
         eType="#//UserViewAttribute" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="PageTagLib" lowerBound="1"
-        upperBound="-1" eType="#//Tag" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Mention" lowerBound="1"
         upperBound="-1" eType="#//TagLib"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="PageComposition" upperBound="-1"
+        eType="#//NavigationComposition" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Template" eSuperTypes="#//NavigationClass">
     <eStructuralFeatures xsi:type="ecore:EReference" name="TemplateClassAttribute"
         upperBound="-1" eType="#//UserViewAttribute" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="TemplateTagLib" lowerBound="1"
+        upperBound="-1" eType="#//TagLib"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="TemplateComposition" upperBound="-1"
+        eType="#//NavigationComposition" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Form" instanceTypeName="Tag" eSuperTypes="#//NavigationClass">
     <eStructuralFeatures xsi:type="ecore:EReference" name="FormClassAttribute" upperBound="-1"
@@ -170,7 +172,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrontControllerClassMethod"
         lowerBound="1" upperBound="-1" eType="#//FrontControllerMethod" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="UserViewAttribute" eSuperTypes="#//NavigationAttribute"/>
+  <eClassifiers xsi:type="ecore:EClass" name="UserViewAttribute" instanceTypeName="Tag"
+      eSuperTypes="#//NavigationAttribute"/>
   <eClassifiers xsi:type="ecore:EClass" name="IOParameter" eSuperTypes="#//NavigationAttribute">
     <eStructuralFeatures xsi:type="ecore:EReference" name="display" upperBound="-1"
         eType="#//FormComponent" derived="true" eOpposite="#//FormComponent/inject"/>
@@ -185,37 +188,45 @@
     <eLiterals name="delete" value="3"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="FrameworkCategoryList">
-    <eLiterals name="MVC" literal="mvc"/>
-    <eLiterals name="DependencyInjection" value="1"/>
-    <eLiterals name="ORM" value="2"/>
-    <eLiterals name="Decorator" value="3"/>
+    <eLiterals name="MVC" value="1" literal="mvc"/>
+    <eLiterals name="DependencyInjection" value="2" literal="dependencyInjection"/>
+    <eLiterals name="ORM" value="3" literal="orm"/>
+    <eLiterals name="Decorator" value="4" literal="decorator"/>
+    <eLiterals name="Standard" literal="standard"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResultDependency" eSuperTypes="#//NavigationDependency">
+    <eAnnotations source="Ecore">
+      <details key="constraints" value="ResultDependencyConstraint&#xD;&#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="Comments" references="#//ResultDependency/%Ecore%/@details.0">
+      <details key="ResultDependencyConstraint" value="The supplier of a ResultDependency must be only navigation classes (NavigationClass) and the client has to be always and obligatorily a FrontControllerClass."/>
+    </eAnnotations>
+    <eAnnotations source="OCL" references="#//ResultDependency/%Ecore%/@details.0">
+      <details key="ResultDependencyConstraint" value="context ResultDependency &#xD;&#xA; inv: &#xD;&#xA;  (self.oclAsType(Dependency).client.oclIsTypeOf(FrontControllerClass)) and&#xD;&#xA;  ((self.oclAsType(Dependency).supplier.oclIsTypeOf(NavigationClass)) or &#xD;&#xA;  (self.oclAsType(Dependency).supplier.oclIsTypeOf(FormComponent)))"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ReturnResult" upperBound="-1"
         eType="#//Result"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ReturnMethod" lowerBound="1"
         eType="#//FrontControllerMethod"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="SourceFrontController"
-        lowerBound="1" eType="#//FrontControllerClass"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetTemplate" eType="#//Template"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetPage" eType="#//Page"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetBinary" eType="#//Binary"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ReturnResultType" upperBound="-1"
         eType="#//ResultType"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetForm" eType="#//Form"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetComponent" eType="#//Component"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetJQuery" eType="#//JQuery"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetFormComponent" eType="#//FormComponent"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NavigationComposition" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Association">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="SourceTemplate" eType="#//Template"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="SourcePage" eType="#//Page"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetForm" lowerBound="1"
-        eType="#//Form"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NavigationAssociation" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Association">
+    <eAnnotations source="Ecore">
+      <details key="constraints" value="NavigationAssociationConstraint&#xD;&#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="Comments" references="#//NavigationAssociation/%Ecore%/@details.0">
+      <details key="NavigationAssociationConstraint" value="The NavigationAssociation must have, as property ownedEnd, obligatorily a navigation composition (NavigationComposition) and only navigation classes (NavigationClass) are alowed as memberEnd.&#xD;&#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="OCL" references="#//NavigationAssociation/%Ecore%/@details.0">
+      <details key="NavigationAssociationConstraint" value="context NavigationAssociation&#xD;&#xA;  inv: &#xD;&#xA;    (self.oclAsType(Association).ownedEnd.oclIsTypeOf(NavigationComposition)) and &#xD;&#xA;    ((self.oclAsType(Association).memberEnd.oclIsTypeOf(NavigationComposition)) or &#xD;&#xA;    (self.oclAsType(Association).memberEnd.oclIsTypeOf(NavigationCompositionEnd)))"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetComponent" lowerBound="1"
         eType="#//Component"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetJQuery" lowerBound="1"
         eType="#//JQuery"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="NavigationProperty" lowerBound="1"
+        eType="#//NavigationCompositionEnd" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FrontControllerMethod" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Operation">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isDefault" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
@@ -290,33 +301,34 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="FrameWorkNameSufix" lowerBound="1"
         eType="#//FrameWorkName"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Result"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Result" instanceTypeName="ResultType"
+      eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
   <eClassifiers xsi:type="ecore:EClass" name="FrontControllerDependency" eSuperTypes="#//NavigationDependency">
     <eStructuralFeatures xsi:type="ecore:EReference" name="Method" lowerBound="1"
         eType="#//FrontControllerMethod"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="SourceForm" eType="#//Form"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetFrontController"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ClientForm" eType="#//Form"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="SupplierFrontController"
         lowerBound="1" eType="#//FrontControllerClass"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="SourcePage" eType="#//Page"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="SourceTemplate" eType="#//Template"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="SourceComponent" eType="#//Component"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="SourceJQuery" eType="#//JQuery"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ClientPage" eType="#//Page"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ClientTemplate" eType="#//Template"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ClientComponent" eType="#//Component"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ClientJQuery" eType="#//JQuery"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PageDependency" eSuperTypes="#//NavigationDependency">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetPage" lowerBound="1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="SupplierPage" lowerBound="1"
         eType="#//Page"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="SourceTemplate" eType="#//Template"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ClientTemplate" eType="#//Template"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="linkHTML" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="SourcePage" eType="#//Page"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ClientPage" eType="#//Page"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ChainingDependency" eSuperTypes="#//NavigationDependency">
     <eStructuralFeatures xsi:type="ecore:EReference" name="OutMethod" lowerBound="1"
         eType="#//FrontControllerMethod"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="InMethod" lowerBound="1"
         eType="#//FrontControllerMethod"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetFrontController"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="SupplierFrontController"
         lowerBound="1" eType="#//FrontControllerClass"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="SourceFrontController"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ClientFrontController"
         lowerBound="1" eType="#//FrontControllerClass"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DAOServiceAssociation" eSuperTypes="#//ServiceAssociation">
@@ -368,7 +380,7 @@
         lowerBound="1" upperBound="-1" eType="#//ServiceInterface" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Component" eSuperTypes="#//NavigationClass"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ResultType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ResultType" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
   <eClassifiers xsi:type="ecore:EClass" name="NavigationPackage" abstract="true" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Package"/>
   <eClassifiers xsi:type="ecore:EClass" name="DomainGeneralization" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Generalization">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mapping" eType="#//InheritanceMapping"/>
@@ -378,20 +390,45 @@
         eType="#//DomainClass"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="JQuery" eSuperTypes="#//NavigationClass"/>
-  <eClassifiers xsi:type="ecore:EClass" name="FormComponent" instanceTypeName="FrameworkTag"
+  <eClassifiers xsi:type="ecore:EClass" name="FormComponent" instanceTypeName="Tag"
       eSuperTypes="#//NavigationAttribute">
     <eStructuralFeatures xsi:type="ecore:EReference" name="inject" eType="#//IOParameter"
         eOpposite="#//IOParameter/display"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TagLib" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Package">
     <eStructuralFeatures xsi:type="ecore:EReference" name="TagLibTag" lowerBound="1"
-        upperBound="-1" eType="#//FrameworkTag" containment="true"/>
+        upperBound="-1" eType="#//Tag" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="prefix" lowerBound="1"
+        eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//String"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FrameworkTag" eSuperTypes="#//Tag"/>
   <eClassifiers xsi:type="ecore:EClass" name="Rule"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Tag" abstract="true" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Class">
+  <eClassifiers xsi:type="ecore:EClass" name="Tag" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Class">
     <eStructuralFeatures xsi:type="ecore:EReference" name="SubTag" upperBound="-1"
         eType="#//Tag" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Anotation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NavigationCompositionEnd" eSuperTypes="#//NavigationProperty">
+    <eAnnotations source="Ecore">
+      <details key="constraints" value="NavigationCompositionEndConstraint&#xD;&#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="Comments" references="#//NavigationCompositionEnd/%Ecore%/@details.0">
+      <details key="NavigationCompositionEndConstraint" value="The NavigationCompositionEnd must have, as association owningAssociation, obligatorily a navigation association (Navigation Association) and only navigation classes (NavigationClass) are alowed as association, and type must be only pages (Page) or templates (Template)."/>
+    </eAnnotations>
+    <eAnnotations source="OCL" references="#//NavigationCompositionEnd/%Ecore%/@details.0">
+      <details key="NavigationCompositionEndConstraint" value="context NavigationCompositionEnd &#xD;&#xA;  inv:     &#xD;&#xA;    (self.oclAsType(Property).owningAssociation.oclIsTypeOf(NavigationAssociation)) and&#xD;&#xA;    ((self.oclAsType(Property).type.oclIsTypeOf(Page)) or &#xD;&#xA;    (self.oclAsType(Property).type.oclIsTypeOf(Template)))"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NavigationComposition" eSuperTypes="#//NavigationProperty">
+    <eAnnotations source="Ecore">
+      <details key="constraints" value="NavigationCompositionConstraint&#xD;&#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="Comments" references="#//NavigationComposition/%Ecore%/@details.0">
+      <details key="NavigationCompositionConstraint" value=""/>
+    </eAnnotations>
+    <eAnnotations source="OCL" references="#//NavigationComposition/%Ecore%/@details.0">
+      <details key="NavigationCompositionConstraint" value="context NavigationComposition &#xD;&#xA;  inv:&#xD;&#xA;    ((self.oclAsType(Property).owningAssociation.oclIsTypeOf(Page)) or&#xD;&#xA;    (self.oclAsType(Property).owningAssociation.oclIsTypeOf(Template))) and&#xD;&#xA;    (self.oclAsType(Property).association.oclIsTypeOf(NavigationAssociation)) and &#xD;&#xA;    (self.oclAsType(Property).aggregation = 'composite')"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NavigationProperty" abstract="true"
+      eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Property"/>
 </ecore:EPackage>

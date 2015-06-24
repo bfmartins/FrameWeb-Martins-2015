@@ -4,7 +4,7 @@
  */
 package frameweb.validation;
 
-import frameweb.FrameworkTag;
+import frameweb.Tag;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -17,5 +17,6 @@ import org.eclipse.emf.common.util.EList;
 public interface TagLibValidator {
 	boolean validate();
 
-	boolean validateTagLibTag(EList<FrameworkTag> value);
+	boolean validateTagLibTag(EList<Tag> value);
+	boolean validatePrefix(String value);
 }

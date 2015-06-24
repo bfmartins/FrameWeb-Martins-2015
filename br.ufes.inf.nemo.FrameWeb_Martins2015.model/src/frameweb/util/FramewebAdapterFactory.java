@@ -201,7 +201,7 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createFrontControllerClassAdapter();
 			}
 			@Override
-			public Adapter caseUserViewAttribute(UserViewAttribute object) {
+			public Adapter caseUserViewAttribute(Tag object) {
 				return createUserViewAttributeAdapter();
 			}
 			@Override
@@ -217,8 +217,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createResultDependencyAdapter();
 			}
 			@Override
-			public Adapter caseNavigationComposition(NavigationComposition object) {
-				return createNavigationCompositionAdapter();
+			public Adapter caseNavigationAssociation(NavigationAssociation object) {
+				return createNavigationAssociationAdapter();
 			}
 			@Override
 			public Adapter caseFrontControllerMethod(FrontControllerMethod object) {
@@ -281,7 +281,7 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createDAOClassNameAdapter();
 			}
 			@Override
-			public Adapter caseResult(Result object) {
+			public Adapter caseResult(ResultType object) {
 				return createResultAdapter();
 			}
 			@Override
@@ -377,16 +377,12 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createJQueryAdapter();
 			}
 			@Override
-			public Adapter caseFormComponent(FrameworkTag object) {
+			public Adapter caseFormComponent(Tag object) {
 				return createFormComponentAdapter();
 			}
 			@Override
 			public Adapter caseTagLib(TagLib object) {
 				return createTagLibAdapter();
-			}
-			@Override
-			public Adapter caseFrameworkTag(FrameworkTag object) {
-				return createFrameworkTagAdapter();
 			}
 			@Override
 			public Adapter caseRule(Rule object) {
@@ -399,6 +395,18 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseAnotation(Anotation object) {
 				return createAnotationAdapter();
+			}
+			@Override
+			public Adapter caseNavigationCompositionEnd(NavigationCompositionEnd object) {
+				return createNavigationCompositionEndAdapter();
+			}
+			@Override
+			public Adapter caseNavigationComposition(NavigationComposition object) {
+				return createNavigationCompositionAdapter();
+			}
+			@Override
+			public Adapter caseNavigationProperty(NavigationProperty object) {
+				return createNavigationPropertyAdapter();
 			}
 			@Override
 			public Adapter caseEModelElement(EModelElement object) {
@@ -905,13 +913,13 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.UserViewAttribute <em>User View Attribute</em>}'.
+	 * Creates a new adapter for an object of class '{@link Tag <em>User View Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.UserViewAttribute
+	 * @see Tag
 	 * @generated
 	 */
 	public Adapter createUserViewAttributeAdapter() {
@@ -961,16 +969,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.NavigationComposition <em>Navigation Composition</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.NavigationAssociation <em>Navigation Association</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.NavigationComposition
+	 * @see frameweb.NavigationAssociation
 	 * @generated
 	 */
-	public Adapter createNavigationCompositionAdapter() {
+	public Adapter createNavigationAssociationAdapter() {
 		return null;
 	}
 
@@ -1185,13 +1193,13 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.Result <em>Result</em>}'.
+	 * Creates a new adapter for an object of class '{@link ResultType <em>Result</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.Result
+	 * @see ResultType
 	 * @generated
 	 */
 	public Adapter createResultAdapter() {
@@ -1521,13 +1529,13 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link FrameworkTag <em>Form Component</em>}'.
+	 * Creates a new adapter for an object of class '{@link Tag <em>Form Component</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see FrameworkTag
+	 * @see Tag
 	 * @generated
 	 */
 	public Adapter createFormComponentAdapter() {
@@ -1545,20 +1553,6 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createTagLibAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.FrameworkTag <em>Framework Tag</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see frameweb.FrameworkTag
-	 * @generated
-	 */
-	public Adapter createFrameworkTagAdapter() {
 		return null;
 	}
 
@@ -1601,6 +1595,48 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAnotationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.NavigationCompositionEnd <em>Navigation Composition End</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.NavigationCompositionEnd
+	 * @generated
+	 */
+	public Adapter createNavigationCompositionEndAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.NavigationComposition <em>Navigation Composition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.NavigationComposition
+	 * @generated
+	 */
+	public Adapter createNavigationCompositionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.NavigationProperty <em>Navigation Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.NavigationProperty
+	 * @generated
+	 */
+	public Adapter createNavigationPropertyAdapter() {
 		return null;
 	}
 

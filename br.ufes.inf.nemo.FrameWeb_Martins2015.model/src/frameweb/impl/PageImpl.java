@@ -3,20 +3,17 @@
 package frameweb.impl;
 
 import frameweb.FramewebPackage;
+import frameweb.NavigationComposition;
 import frameweb.Page;
 import frameweb.Tag;
 import frameweb.TagLib;
-import frameweb.UserViewAttribute;
 
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -30,7 +27,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link frameweb.impl.PageImpl#getPageClassAttribute <em>Page Class Attribute</em>}</li>
  *   <li>{@link frameweb.impl.PageImpl#getPageTagLib <em>Page Tag Lib</em>}</li>
- *   <li>{@link frameweb.impl.PageImpl#getMention <em>Mention</em>}</li>
+ *   <li>{@link frameweb.impl.PageImpl#getPageComposition <em>Page Composition</em>}</li>
  * </ul>
  * </p>
  *
@@ -45,27 +42,27 @@ public class PageImpl extends NavigationClassImpl implements Page {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<UserViewAttribute> pageClassAttribute;
+	protected EList<Tag> pageClassAttribute;
 
 	/**
-	 * The cached value of the '{@link #getPageTagLib() <em>Page Tag Lib</em>}' containment reference list.
+	 * The cached value of the '{@link #getPageTagLib() <em>Page Tag Lib</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPageTagLib()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Tag> pageTagLib;
+	protected EList<TagLib> pageTagLib;
 
 	/**
-	 * The cached value of the '{@link #getMention() <em>Mention</em>}' reference list.
+	 * The cached value of the '{@link #getPageComposition() <em>Page Composition</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMention()
+	 * @see #getPageComposition()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<TagLib> mention;
+	protected EList<NavigationComposition> pageComposition;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,9 +88,9 @@ public class PageImpl extends NavigationClassImpl implements Page {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<UserViewAttribute> getPageClassAttribute() {
+	public EList<Tag> getPageClassAttribute() {
 		if (pageClassAttribute == null) {
-			pageClassAttribute = new EObjectContainmentEList<UserViewAttribute>(UserViewAttribute.class, this, FramewebPackage.PAGE__PAGE_CLASS_ATTRIBUTE);
+			pageClassAttribute = new EObjectContainmentEList<Tag>(Tag.class, this, FramewebPackage.PAGE__PAGE_CLASS_ATTRIBUTE);
 		}
 		return pageClassAttribute;
 	}
@@ -103,9 +100,9 @@ public class PageImpl extends NavigationClassImpl implements Page {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Tag> getPageTagLib() {
+	public EList<TagLib> getPageTagLib() {
 		if (pageTagLib == null) {
-			pageTagLib = new EObjectContainmentEList<Tag>(Tag.class, this, FramewebPackage.PAGE__PAGE_TAG_LIB);
+			pageTagLib = new EObjectResolvingEList<TagLib>(TagLib.class, this, FramewebPackage.PAGE__PAGE_TAG_LIB);
 		}
 		return pageTagLib;
 	}
@@ -115,11 +112,11 @@ public class PageImpl extends NavigationClassImpl implements Page {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TagLib> getMention() {
-		if (mention == null) {
-			mention = new EObjectResolvingEList<TagLib>(TagLib.class, this, FramewebPackage.PAGE__MENTION);
+	public EList<NavigationComposition> getPageComposition() {
+		if (pageComposition == null) {
+			pageComposition = new EObjectContainmentEList<NavigationComposition>(NavigationComposition.class, this, FramewebPackage.PAGE__PAGE_COMPOSITION);
 		}
-		return mention;
+		return pageComposition;
 	}
 
 	/**
@@ -132,8 +129,8 @@ public class PageImpl extends NavigationClassImpl implements Page {
 		switch (featureID) {
 			case FramewebPackage.PAGE__PAGE_CLASS_ATTRIBUTE:
 				return ((InternalEList<?>)getPageClassAttribute()).basicRemove(otherEnd, msgs);
-			case FramewebPackage.PAGE__PAGE_TAG_LIB:
-				return ((InternalEList<?>)getPageTagLib()).basicRemove(otherEnd, msgs);
+			case FramewebPackage.PAGE__PAGE_COMPOSITION:
+				return ((InternalEList<?>)getPageComposition()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -150,8 +147,8 @@ public class PageImpl extends NavigationClassImpl implements Page {
 				return getPageClassAttribute();
 			case FramewebPackage.PAGE__PAGE_TAG_LIB:
 				return getPageTagLib();
-			case FramewebPackage.PAGE__MENTION:
-				return getMention();
+			case FramewebPackage.PAGE__PAGE_COMPOSITION:
+				return getPageComposition();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -167,15 +164,15 @@ public class PageImpl extends NavigationClassImpl implements Page {
 		switch (featureID) {
 			case FramewebPackage.PAGE__PAGE_CLASS_ATTRIBUTE:
 				getPageClassAttribute().clear();
-				getPageClassAttribute().addAll((Collection<? extends UserViewAttribute>)newValue);
+				getPageClassAttribute().addAll((Collection<? extends Tag>)newValue);
 				return;
 			case FramewebPackage.PAGE__PAGE_TAG_LIB:
 				getPageTagLib().clear();
-				getPageTagLib().addAll((Collection<? extends Tag>)newValue);
+				getPageTagLib().addAll((Collection<? extends TagLib>)newValue);
 				return;
-			case FramewebPackage.PAGE__MENTION:
-				getMention().clear();
-				getMention().addAll((Collection<? extends TagLib>)newValue);
+			case FramewebPackage.PAGE__PAGE_COMPOSITION:
+				getPageComposition().clear();
+				getPageComposition().addAll((Collection<? extends NavigationComposition>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -195,8 +192,8 @@ public class PageImpl extends NavigationClassImpl implements Page {
 			case FramewebPackage.PAGE__PAGE_TAG_LIB:
 				getPageTagLib().clear();
 				return;
-			case FramewebPackage.PAGE__MENTION:
-				getMention().clear();
+			case FramewebPackage.PAGE__PAGE_COMPOSITION:
+				getPageComposition().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -214,8 +211,8 @@ public class PageImpl extends NavigationClassImpl implements Page {
 				return pageClassAttribute != null && !pageClassAttribute.isEmpty();
 			case FramewebPackage.PAGE__PAGE_TAG_LIB:
 				return pageTagLib != null && !pageTagLib.isEmpty();
-			case FramewebPackage.PAGE__MENTION:
-				return mention != null && !mention.isEmpty();
+			case FramewebPackage.PAGE__PAGE_COMPOSITION:
+				return pageComposition != null && !pageComposition.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

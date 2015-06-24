@@ -12,12 +12,12 @@ package frameweb;
  * The following features are supported:
  * <ul>
  *   <li>{@link frameweb.FrontControllerDependency#getMethod <em>Method</em>}</li>
- *   <li>{@link frameweb.FrontControllerDependency#getSourceForm <em>Source Form</em>}</li>
- *   <li>{@link frameweb.FrontControllerDependency#getTargetFrontController <em>Target Front Controller</em>}</li>
- *   <li>{@link frameweb.FrontControllerDependency#getSourcePage <em>Source Page</em>}</li>
- *   <li>{@link frameweb.FrontControllerDependency#getSourceTemplate <em>Source Template</em>}</li>
- *   <li>{@link frameweb.FrontControllerDependency#getSourceComponent <em>Source Component</em>}</li>
- *   <li>{@link frameweb.FrontControllerDependency#getSourceJQuery <em>Source JQuery</em>}</li>
+ *   <li>{@link frameweb.FrontControllerDependency#getClientForm <em>Client Form</em>}</li>
+ *   <li>{@link frameweb.FrontControllerDependency#getSupplierFrontController <em>Supplier Front Controller</em>}</li>
+ *   <li>{@link frameweb.FrontControllerDependency#getClientPage <em>Client Page</em>}</li>
+ *   <li>{@link frameweb.FrontControllerDependency#getClientTemplate <em>Client Template</em>}</li>
+ *   <li>{@link frameweb.FrontControllerDependency#getClientComponent <em>Client Component</em>}</li>
+ *   <li>{@link frameweb.FrontControllerDependency#getClientJQuery <em>Client JQuery</em>}</li>
  * </ul>
  * </p>
  *
@@ -53,159 +53,159 @@ public interface FrontControllerDependency extends NavigationDependency {
 	void setMethod(FrontControllerMethod value);
 
 	/**
-	 * Returns the value of the '<em><b>Source Form</b></em>' reference.
+	 * Returns the value of the '<em><b>Client Form</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Source Form</em>' reference isn't clear,
+	 * If the meaning of the '<em>Client Form</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Source Form</em>' reference.
-	 * @see #setSourceForm(Tag)
-	 * @see frameweb.FramewebPackage#getFrontControllerDependency_SourceForm()
+	 * @return the value of the '<em>Client Form</em>' reference.
+	 * @see #setClientForm(Tag)
+	 * @see frameweb.FramewebPackage#getFrontControllerDependency_ClientForm()
 	 * @model type="frameweb.Form"
 	 * @generated
 	 */
-	Tag getSourceForm();
+	Tag getClientForm();
 
 	/**
-	 * Sets the value of the '{@link frameweb.FrontControllerDependency#getSourceForm <em>Source Form</em>}' reference.
+	 * Sets the value of the '{@link frameweb.FrontControllerDependency#getClientForm <em>Client Form</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Source Form</em>' reference.
-	 * @see #getSourceForm()
+	 * @param value the new value of the '<em>Client Form</em>' reference.
+	 * @see #getClientForm()
 	 * @generated
 	 */
-	void setSourceForm(Tag value);
+	void setClientForm(Tag value);
 
 	/**
-	 * Returns the value of the '<em><b>Target Front Controller</b></em>' reference.
+	 * Returns the value of the '<em><b>Supplier Front Controller</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Target Front Controller</em>' reference isn't clear,
+	 * If the meaning of the '<em>Supplier Front Controller</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Target Front Controller</em>' reference.
-	 * @see #setTargetFrontController(FrontControllerClass)
-	 * @see frameweb.FramewebPackage#getFrontControllerDependency_TargetFrontController()
+	 * @return the value of the '<em>Supplier Front Controller</em>' reference.
+	 * @see #setSupplierFrontController(FrontControllerClass)
+	 * @see frameweb.FramewebPackage#getFrontControllerDependency_SupplierFrontController()
 	 * @model required="true"
 	 * @generated
 	 */
-	FrontControllerClass getTargetFrontController();
+	FrontControllerClass getSupplierFrontController();
 
 	/**
-	 * Sets the value of the '{@link frameweb.FrontControllerDependency#getTargetFrontController <em>Target Front Controller</em>}' reference.
+	 * Sets the value of the '{@link frameweb.FrontControllerDependency#getSupplierFrontController <em>Supplier Front Controller</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target Front Controller</em>' reference.
-	 * @see #getTargetFrontController()
+	 * @param value the new value of the '<em>Supplier Front Controller</em>' reference.
+	 * @see #getSupplierFrontController()
 	 * @generated
 	 */
-	void setTargetFrontController(FrontControllerClass value);
+	void setSupplierFrontController(FrontControllerClass value);
 
 	/**
-	 * Returns the value of the '<em><b>Source Page</b></em>' reference.
+	 * Returns the value of the '<em><b>Client Page</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Source Page</em>' reference isn't clear,
+	 * If the meaning of the '<em>Client Page</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Source Page</em>' reference.
-	 * @see #setSourcePage(Page)
-	 * @see frameweb.FramewebPackage#getFrontControllerDependency_SourcePage()
+	 * @return the value of the '<em>Client Page</em>' reference.
+	 * @see #setClientPage(Page)
+	 * @see frameweb.FramewebPackage#getFrontControllerDependency_ClientPage()
 	 * @model
 	 * @generated
 	 */
-	Page getSourcePage();
+	Page getClientPage();
 
 	/**
-	 * Sets the value of the '{@link frameweb.FrontControllerDependency#getSourcePage <em>Source Page</em>}' reference.
+	 * Sets the value of the '{@link frameweb.FrontControllerDependency#getClientPage <em>Client Page</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Source Page</em>' reference.
-	 * @see #getSourcePage()
+	 * @param value the new value of the '<em>Client Page</em>' reference.
+	 * @see #getClientPage()
 	 * @generated
 	 */
-	void setSourcePage(Page value);
+	void setClientPage(Page value);
 
 	/**
-	 * Returns the value of the '<em><b>Source Template</b></em>' reference.
+	 * Returns the value of the '<em><b>Client Template</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Source Template</em>' reference isn't clear,
+	 * If the meaning of the '<em>Client Template</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Source Template</em>' reference.
-	 * @see #setSourceTemplate(Template)
-	 * @see frameweb.FramewebPackage#getFrontControllerDependency_SourceTemplate()
+	 * @return the value of the '<em>Client Template</em>' reference.
+	 * @see #setClientTemplate(Template)
+	 * @see frameweb.FramewebPackage#getFrontControllerDependency_ClientTemplate()
 	 * @model
 	 * @generated
 	 */
-	Template getSourceTemplate();
+	Template getClientTemplate();
 
 	/**
-	 * Sets the value of the '{@link frameweb.FrontControllerDependency#getSourceTemplate <em>Source Template</em>}' reference.
+	 * Sets the value of the '{@link frameweb.FrontControllerDependency#getClientTemplate <em>Client Template</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Source Template</em>' reference.
-	 * @see #getSourceTemplate()
+	 * @param value the new value of the '<em>Client Template</em>' reference.
+	 * @see #getClientTemplate()
 	 * @generated
 	 */
-	void setSourceTemplate(Template value);
+	void setClientTemplate(Template value);
 
 	/**
-	 * Returns the value of the '<em><b>Source Component</b></em>' reference.
+	 * Returns the value of the '<em><b>Client Component</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Source Component</em>' reference isn't clear,
+	 * If the meaning of the '<em>Client Component</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Source Component</em>' reference.
-	 * @see #setSourceComponent(Component)
-	 * @see frameweb.FramewebPackage#getFrontControllerDependency_SourceComponent()
+	 * @return the value of the '<em>Client Component</em>' reference.
+	 * @see #setClientComponent(Component)
+	 * @see frameweb.FramewebPackage#getFrontControllerDependency_ClientComponent()
 	 * @model
 	 * @generated
 	 */
-	Component getSourceComponent();
+	Component getClientComponent();
 
 	/**
-	 * Sets the value of the '{@link frameweb.FrontControllerDependency#getSourceComponent <em>Source Component</em>}' reference.
+	 * Sets the value of the '{@link frameweb.FrontControllerDependency#getClientComponent <em>Client Component</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Source Component</em>' reference.
-	 * @see #getSourceComponent()
+	 * @param value the new value of the '<em>Client Component</em>' reference.
+	 * @see #getClientComponent()
 	 * @generated
 	 */
-	void setSourceComponent(Component value);
+	void setClientComponent(Component value);
 
 	/**
-	 * Returns the value of the '<em><b>Source JQuery</b></em>' reference.
+	 * Returns the value of the '<em><b>Client JQuery</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Source JQuery</em>' reference isn't clear,
+	 * If the meaning of the '<em>Client JQuery</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Source JQuery</em>' reference.
-	 * @see #setSourceJQuery(JQuery)
-	 * @see frameweb.FramewebPackage#getFrontControllerDependency_SourceJQuery()
+	 * @return the value of the '<em>Client JQuery</em>' reference.
+	 * @see #setClientJQuery(JQuery)
+	 * @see frameweb.FramewebPackage#getFrontControllerDependency_ClientJQuery()
 	 * @model
 	 * @generated
 	 */
-	JQuery getSourceJQuery();
+	JQuery getClientJQuery();
 
 	/**
-	 * Sets the value of the '{@link frameweb.FrontControllerDependency#getSourceJQuery <em>Source JQuery</em>}' reference.
+	 * Sets the value of the '{@link frameweb.FrontControllerDependency#getClientJQuery <em>Client JQuery</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Source JQuery</em>' reference.
-	 * @see #getSourceJQuery()
+	 * @param value the new value of the '<em>Client JQuery</em>' reference.
+	 * @see #getClientJQuery()
 	 * @generated
 	 */
-	void setSourceJQuery(JQuery value);
+	void setClientJQuery(JQuery value);
 
 } // FrontControllerDependency

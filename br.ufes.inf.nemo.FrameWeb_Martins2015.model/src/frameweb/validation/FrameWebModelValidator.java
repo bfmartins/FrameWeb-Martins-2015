@@ -4,7 +4,6 @@
  */
 package frameweb.validation;
 
-import frameweb.NamingMethod;
 
 /**
  * A sample validator interface for {@link frameweb.FrameWebModel}.
@@ -15,5 +14,4 @@ import frameweb.NamingMethod;
 public interface FrameWebModelValidator {
 	boolean validate();
 
-	boolean validateIndite(NamingMethod value);
 }

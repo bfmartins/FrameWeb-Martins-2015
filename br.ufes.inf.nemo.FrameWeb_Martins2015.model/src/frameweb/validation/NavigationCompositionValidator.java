@@ -4,11 +4,6 @@
  */
 package frameweb.validation;
 
-import frameweb.Component;
-import frameweb.JQuery;
-import frameweb.Page;
-import frameweb.Tag; //*********************************************** linha adicionada
-import frameweb.Template;
 
 /**
  * A sample validator interface for {@link frameweb.NavigationComposition}.
@@ -19,9 +14,4 @@ import frameweb.Template;
 public interface NavigationCompositionValidator {
 	boolean validate();
 
-	boolean validateSourceTemplate(Template value);
-	boolean validateSourcePage(Page value);
-	boolean validateTargetForm(Tag value);
-	boolean validateTargetComponent(Component value);
-	boolean validateTargetJQuery(JQuery value);
 }

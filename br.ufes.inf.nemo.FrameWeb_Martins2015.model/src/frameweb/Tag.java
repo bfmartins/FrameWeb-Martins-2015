@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see frameweb.FramewebPackage#getTag()
- * @model abstract="true"
+ * @model
  * @generated
  */
 public interface Tag extends org.eclipse.uml2.uml.Class {

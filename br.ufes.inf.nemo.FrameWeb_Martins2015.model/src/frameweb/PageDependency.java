@@ -11,10 +11,10 @@ package frameweb;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link frameweb.PageDependency#getTargetPage <em>Target Page</em>}</li>
- *   <li>{@link frameweb.PageDependency#getSourceTemplate <em>Source Template</em>}</li>
+ *   <li>{@link frameweb.PageDependency#getSupplierPage <em>Supplier Page</em>}</li>
+ *   <li>{@link frameweb.PageDependency#getClientTemplate <em>Client Template</em>}</li>
  *   <li>{@link frameweb.PageDependency#getLinkHTML <em>Link HTML</em>}</li>
- *   <li>{@link frameweb.PageDependency#getSourcePage <em>Source Page</em>}</li>
+ *   <li>{@link frameweb.PageDependency#getClientPage <em>Client Page</em>}</li>
  * </ul>
  * </p>
  *
@@ -24,56 +24,56 @@ package frameweb;
  */
 public interface PageDependency extends NavigationDependency {
 	/**
-	 * Returns the value of the '<em><b>Target Page</b></em>' reference.
+	 * Returns the value of the '<em><b>Supplier Page</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Target Page</em>' reference isn't clear,
+	 * If the meaning of the '<em>Supplier Page</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Target Page</em>' reference.
-	 * @see #setTargetPage(Page)
-	 * @see frameweb.FramewebPackage#getPageDependency_TargetPage()
+	 * @return the value of the '<em>Supplier Page</em>' reference.
+	 * @see #setSupplierPage(Page)
+	 * @see frameweb.FramewebPackage#getPageDependency_SupplierPage()
 	 * @model required="true"
 	 * @generated
 	 */
-	Page getTargetPage();
+	Page getSupplierPage();
 
 	/**
-	 * Sets the value of the '{@link frameweb.PageDependency#getTargetPage <em>Target Page</em>}' reference.
+	 * Sets the value of the '{@link frameweb.PageDependency#getSupplierPage <em>Supplier Page</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target Page</em>' reference.
-	 * @see #getTargetPage()
+	 * @param value the new value of the '<em>Supplier Page</em>' reference.
+	 * @see #getSupplierPage()
 	 * @generated
 	 */
-	void setTargetPage(Page value);
+	void setSupplierPage(Page value);
 
 	/**
-	 * Returns the value of the '<em><b>Source Template</b></em>' reference.
+	 * Returns the value of the '<em><b>Client Template</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Source Template</em>' reference isn't clear,
+	 * If the meaning of the '<em>Client Template</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Source Template</em>' reference.
-	 * @see #setSourceTemplate(Template)
-	 * @see frameweb.FramewebPackage#getPageDependency_SourceTemplate()
+	 * @return the value of the '<em>Client Template</em>' reference.
+	 * @see #setClientTemplate(Template)
+	 * @see frameweb.FramewebPackage#getPageDependency_ClientTemplate()
 	 * @model
 	 * @generated
 	 */
-	Template getSourceTemplate();
+	Template getClientTemplate();
 
 	/**
-	 * Sets the value of the '{@link frameweb.PageDependency#getSourceTemplate <em>Source Template</em>}' reference.
+	 * Sets the value of the '{@link frameweb.PageDependency#getClientTemplate <em>Client Template</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Source Template</em>' reference.
-	 * @see #getSourceTemplate()
+	 * @param value the new value of the '<em>Client Template</em>' reference.
+	 * @see #getClientTemplate()
 	 * @generated
 	 */
-	void setSourceTemplate(Template value);
+	void setClientTemplate(Template value);
 
 	/**
 	 * Returns the value of the '<em><b>Link HTML</b></em>' attribute.
@@ -102,29 +102,29 @@ public interface PageDependency extends NavigationDependency {
 	void setLinkHTML(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Source Page</b></em>' reference.
+	 * Returns the value of the '<em><b>Client Page</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Source Page</em>' reference isn't clear,
+	 * If the meaning of the '<em>Client Page</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Source Page</em>' reference.
-	 * @see #setSourcePage(Page)
-	 * @see frameweb.FramewebPackage#getPageDependency_SourcePage()
+	 * @return the value of the '<em>Client Page</em>' reference.
+	 * @see #setClientPage(Page)
+	 * @see frameweb.FramewebPackage#getPageDependency_ClientPage()
 	 * @model
 	 * @generated
 	 */
-	Page getSourcePage();
+	Page getClientPage();
 
 	/**
-	 * Sets the value of the '{@link frameweb.PageDependency#getSourcePage <em>Source Page</em>}' reference.
+	 * Sets the value of the '{@link frameweb.PageDependency#getClientPage <em>Client Page</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Source Page</em>' reference.
-	 * @see #getSourcePage()
+	 * @param value the new value of the '<em>Client Page</em>' reference.
+	 * @see #getClientPage()
 	 * @generated
 	 */
-	void setSourcePage(Page value);
+	void setClientPage(Page value);
 
 } // PageDependency

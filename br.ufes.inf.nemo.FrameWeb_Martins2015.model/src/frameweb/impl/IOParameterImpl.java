@@ -3,8 +3,8 @@
 package frameweb.impl;
 
 import frameweb.FramewebPackage;
-import frameweb.FrameworkTag; //*********************************************** linha adicionada
 import frameweb.IOParameter;
+import frameweb.Tag;
 
 import java.util.Collection;
 
@@ -37,7 +37,7 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<FrameworkTag> display;
+	protected EList<Tag> display;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -63,9 +63,9 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<FrameworkTag> getDisplay() {
+	public EList<Tag> getDisplay() {
 		if (display == null) {
-			display = new EObjectWithInverseResolvingEList<FrameworkTag>(FrameworkTag.class, this, FramewebPackage.IO_PARAMETER__DISPLAY, FramewebPackage.FORM_COMPONENT__INJECT);
+			display = new EObjectWithInverseResolvingEList<Tag>(Tag.class, this, FramewebPackage.IO_PARAMETER__DISPLAY, FramewebPackage.FORM_COMPONENT__INJECT);
 		}
 		return display;
 	}
@@ -124,7 +124,7 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 		switch (featureID) {
 			case FramewebPackage.IO_PARAMETER__DISPLAY:
 				getDisplay().clear();
-				getDisplay().addAll((Collection<? extends FrameworkTag>)newValue);
+				getDisplay().addAll((Collection<? extends Tag>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

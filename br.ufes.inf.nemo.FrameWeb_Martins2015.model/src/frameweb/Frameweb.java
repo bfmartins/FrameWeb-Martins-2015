@@ -35,7 +35,7 @@ public interface Frameweb extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Compose</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getFrameweb_Compose()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<FrameWebModel> getCompose();
@@ -51,7 +51,7 @@ public interface Frameweb extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uses</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getFrameweb_Uses()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Framework> getUses();

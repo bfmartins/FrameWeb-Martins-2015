@@ -9,7 +9,7 @@ import frameweb.FrontControllerClass;
 import frameweb.FrontControllerMethod;
 import frameweb.JQuery;
 import frameweb.Page;
-import frameweb.Tag; //*********************************************** linha adicionada
+import frameweb.Tag;
 import frameweb.Template;
 
 /**
@@ -22,10 +22,10 @@ public interface FrontControllerDependencyValidator {
 	boolean validate();
 
 	boolean validateMethod(FrontControllerMethod value);
-	boolean validateSourceForm(Tag value);
-	boolean validateTargetFrontController(FrontControllerClass value);
-	boolean validateSourcePage(Page value);
-	boolean validateSourceTemplate(Template value);
-	boolean validateSourceComponent(Component value);
-	boolean validateSourceJQuery(JQuery value);
+	boolean validateClientForm(Tag value);
+	boolean validateSupplierFrontController(FrontControllerClass value);
+	boolean validateClientPage(Page value);
+	boolean validateClientTemplate(Template value);
+	boolean validateClientComponent(Component value);
+	boolean validateClientJQuery(JQuery value);
 }

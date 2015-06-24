@@ -9,7 +9,7 @@ import frameweb.FrontControllerDependency;
 import frameweb.FrontControllerMethod;
 import frameweb.JQuery;
 import frameweb.Page;
-import frameweb.Tag; //*********************************************** linha adicionada
+import frameweb.Tag;
 import frameweb.Template;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -26,12 +26,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * <ul>
  *   <li>{@link frameweb.impl.FrontControllerDependencyImpl#getMethod <em>Method</em>}</li>
- *   <li>{@link frameweb.impl.FrontControllerDependencyImpl#getSourceForm <em>Source Form</em>}</li>
- *   <li>{@link frameweb.impl.FrontControllerDependencyImpl#getTargetFrontController <em>Target Front Controller</em>}</li>
- *   <li>{@link frameweb.impl.FrontControllerDependencyImpl#getSourcePage <em>Source Page</em>}</li>
- *   <li>{@link frameweb.impl.FrontControllerDependencyImpl#getSourceTemplate <em>Source Template</em>}</li>
- *   <li>{@link frameweb.impl.FrontControllerDependencyImpl#getSourceComponent <em>Source Component</em>}</li>
- *   <li>{@link frameweb.impl.FrontControllerDependencyImpl#getSourceJQuery <em>Source JQuery</em>}</li>
+ *   <li>{@link frameweb.impl.FrontControllerDependencyImpl#getClientForm <em>Client Form</em>}</li>
+ *   <li>{@link frameweb.impl.FrontControllerDependencyImpl#getSupplierFrontController <em>Supplier Front Controller</em>}</li>
+ *   <li>{@link frameweb.impl.FrontControllerDependencyImpl#getClientPage <em>Client Page</em>}</li>
+ *   <li>{@link frameweb.impl.FrontControllerDependencyImpl#getClientTemplate <em>Client Template</em>}</li>
+ *   <li>{@link frameweb.impl.FrontControllerDependencyImpl#getClientComponent <em>Client Component</em>}</li>
+ *   <li>{@link frameweb.impl.FrontControllerDependencyImpl#getClientJQuery <em>Client JQuery</em>}</li>
  * </ul>
  * </p>
  *
@@ -49,64 +49,64 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	protected FrontControllerMethod method;
 
 	/**
-	 * The cached value of the '{@link #getSourceForm() <em>Source Form</em>}' reference.
+	 * The cached value of the '{@link #getClientForm() <em>Client Form</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSourceForm()
+	 * @see #getClientForm()
 	 * @generated
 	 * @ordered
 	 */
-	protected Tag sourceForm;
+	protected Tag clientForm;
 
 	/**
-	 * The cached value of the '{@link #getTargetFrontController() <em>Target Front Controller</em>}' reference.
+	 * The cached value of the '{@link #getSupplierFrontController() <em>Supplier Front Controller</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTargetFrontController()
+	 * @see #getSupplierFrontController()
 	 * @generated
 	 * @ordered
 	 */
-	protected FrontControllerClass targetFrontController;
+	protected FrontControllerClass supplierFrontController;
 
 	/**
-	 * The cached value of the '{@link #getSourcePage() <em>Source Page</em>}' reference.
+	 * The cached value of the '{@link #getClientPage() <em>Client Page</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSourcePage()
+	 * @see #getClientPage()
 	 * @generated
 	 * @ordered
 	 */
-	protected Page sourcePage;
+	protected Page clientPage;
 
 	/**
-	 * The cached value of the '{@link #getSourceTemplate() <em>Source Template</em>}' reference.
+	 * The cached value of the '{@link #getClientTemplate() <em>Client Template</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSourceTemplate()
+	 * @see #getClientTemplate()
 	 * @generated
 	 * @ordered
 	 */
-	protected Template sourceTemplate;
+	protected Template clientTemplate;
 
 	/**
-	 * The cached value of the '{@link #getSourceComponent() <em>Source Component</em>}' reference.
+	 * The cached value of the '{@link #getClientComponent() <em>Client Component</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSourceComponent()
+	 * @see #getClientComponent()
 	 * @generated
 	 * @ordered
 	 */
-	protected Component sourceComponent;
+	protected Component clientComponent;
 
 	/**
-	 * The cached value of the '{@link #getSourceJQuery() <em>Source JQuery</em>}' reference.
+	 * The cached value of the '{@link #getClientJQuery() <em>Client JQuery</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSourceJQuery()
+	 * @see #getClientJQuery()
 	 * @generated
 	 * @ordered
 	 */
-	protected JQuery sourceJQuery;
+	protected JQuery clientJQuery;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,16 +171,16 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public Tag getSourceForm() {
-		if (sourceForm != null && ((EObject)sourceForm).eIsProxy()) {
-			InternalEObject oldSourceForm = (InternalEObject)sourceForm;
-			sourceForm = (Tag)eResolveProxy(oldSourceForm);
-			if (sourceForm != oldSourceForm) {
+	public Tag getClientForm() {
+		if (clientForm != null && ((EObject)clientForm).eIsProxy()) {
+			InternalEObject oldClientForm = (InternalEObject)clientForm;
+			clientForm = (Tag)eResolveProxy(oldClientForm);
+			if (clientForm != oldClientForm) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_FORM, oldSourceForm, sourceForm));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_FORM, oldClientForm, clientForm));
 			}
 		}
-		return sourceForm;
+		return clientForm;
 	}
 
 	/**
@@ -188,8 +188,8 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Tag basicGetSourceForm() {
-		return sourceForm;
+	public Tag basicGetClientForm() {
+		return clientForm;
 	}
 
 	/**
@@ -197,11 +197,11 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSourceForm(Tag newSourceForm) {
-		Tag oldSourceForm = sourceForm;
-		sourceForm = newSourceForm;
+	public void setClientForm(Tag newClientForm) {
+		Tag oldClientForm = clientForm;
+		clientForm = newClientForm;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_FORM, oldSourceForm, sourceForm));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_FORM, oldClientForm, clientForm));
 	}
 
 	/**
@@ -209,16 +209,16 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrontControllerClass getTargetFrontController() {
-		if (targetFrontController != null && targetFrontController.eIsProxy()) {
-			InternalEObject oldTargetFrontController = (InternalEObject)targetFrontController;
-			targetFrontController = (FrontControllerClass)eResolveProxy(oldTargetFrontController);
-			if (targetFrontController != oldTargetFrontController) {
+	public FrontControllerClass getSupplierFrontController() {
+		if (supplierFrontController != null && supplierFrontController.eIsProxy()) {
+			InternalEObject oldSupplierFrontController = (InternalEObject)supplierFrontController;
+			supplierFrontController = (FrontControllerClass)eResolveProxy(oldSupplierFrontController);
+			if (supplierFrontController != oldSupplierFrontController) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER, oldSupplierFrontController, supplierFrontController));
 			}
 		}
-		return targetFrontController;
+		return supplierFrontController;
 	}
 
 	/**
@@ -226,8 +226,8 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrontControllerClass basicGetTargetFrontController() {
-		return targetFrontController;
+	public FrontControllerClass basicGetSupplierFrontController() {
+		return supplierFrontController;
 	}
 
 	/**
@@ -235,11 +235,11 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTargetFrontController(FrontControllerClass newTargetFrontController) {
-		FrontControllerClass oldTargetFrontController = targetFrontController;
-		targetFrontController = newTargetFrontController;
+	public void setSupplierFrontController(FrontControllerClass newSupplierFrontController) {
+		FrontControllerClass oldSupplierFrontController = supplierFrontController;
+		supplierFrontController = newSupplierFrontController;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER, oldSupplierFrontController, supplierFrontController));
 	}
 
 	/**
@@ -247,16 +247,16 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Page getSourcePage() {
-		if (sourcePage != null && sourcePage.eIsProxy()) {
-			InternalEObject oldSourcePage = (InternalEObject)sourcePage;
-			sourcePage = (Page)eResolveProxy(oldSourcePage);
-			if (sourcePage != oldSourcePage) {
+	public Page getClientPage() {
+		if (clientPage != null && clientPage.eIsProxy()) {
+			InternalEObject oldClientPage = (InternalEObject)clientPage;
+			clientPage = (Page)eResolveProxy(oldClientPage);
+			if (clientPage != oldClientPage) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_PAGE, oldSourcePage, sourcePage));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_PAGE, oldClientPage, clientPage));
 			}
 		}
-		return sourcePage;
+		return clientPage;
 	}
 
 	/**
@@ -264,8 +264,8 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Page basicGetSourcePage() {
-		return sourcePage;
+	public Page basicGetClientPage() {
+		return clientPage;
 	}
 
 	/**
@@ -273,11 +273,11 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSourcePage(Page newSourcePage) {
-		Page oldSourcePage = sourcePage;
-		sourcePage = newSourcePage;
+	public void setClientPage(Page newClientPage) {
+		Page oldClientPage = clientPage;
+		clientPage = newClientPage;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_PAGE, oldSourcePage, sourcePage));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_PAGE, oldClientPage, clientPage));
 	}
 
 	/**
@@ -285,16 +285,16 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Template getSourceTemplate() {
-		if (sourceTemplate != null && sourceTemplate.eIsProxy()) {
-			InternalEObject oldSourceTemplate = (InternalEObject)sourceTemplate;
-			sourceTemplate = (Template)eResolveProxy(oldSourceTemplate);
-			if (sourceTemplate != oldSourceTemplate) {
+	public Template getClientTemplate() {
+		if (clientTemplate != null && clientTemplate.eIsProxy()) {
+			InternalEObject oldClientTemplate = (InternalEObject)clientTemplate;
+			clientTemplate = (Template)eResolveProxy(oldClientTemplate);
+			if (clientTemplate != oldClientTemplate) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_TEMPLATE, oldSourceTemplate, sourceTemplate));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_TEMPLATE, oldClientTemplate, clientTemplate));
 			}
 		}
-		return sourceTemplate;
+		return clientTemplate;
 	}
 
 	/**
@@ -302,8 +302,8 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Template basicGetSourceTemplate() {
-		return sourceTemplate;
+	public Template basicGetClientTemplate() {
+		return clientTemplate;
 	}
 
 	/**
@@ -311,11 +311,11 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSourceTemplate(Template newSourceTemplate) {
-		Template oldSourceTemplate = sourceTemplate;
-		sourceTemplate = newSourceTemplate;
+	public void setClientTemplate(Template newClientTemplate) {
+		Template oldClientTemplate = clientTemplate;
+		clientTemplate = newClientTemplate;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_TEMPLATE, oldSourceTemplate, sourceTemplate));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_TEMPLATE, oldClientTemplate, clientTemplate));
 	}
 
 	/**
@@ -323,16 +323,16 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Component getSourceComponent() {
-		if (sourceComponent != null && sourceComponent.eIsProxy()) {
-			InternalEObject oldSourceComponent = (InternalEObject)sourceComponent;
-			sourceComponent = (Component)eResolveProxy(oldSourceComponent);
-			if (sourceComponent != oldSourceComponent) {
+	public Component getClientComponent() {
+		if (clientComponent != null && clientComponent.eIsProxy()) {
+			InternalEObject oldClientComponent = (InternalEObject)clientComponent;
+			clientComponent = (Component)eResolveProxy(oldClientComponent);
+			if (clientComponent != oldClientComponent) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_COMPONENT, oldSourceComponent, sourceComponent));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_COMPONENT, oldClientComponent, clientComponent));
 			}
 		}
-		return sourceComponent;
+		return clientComponent;
 	}
 
 	/**
@@ -340,8 +340,8 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Component basicGetSourceComponent() {
-		return sourceComponent;
+	public Component basicGetClientComponent() {
+		return clientComponent;
 	}
 
 	/**
@@ -349,11 +349,11 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSourceComponent(Component newSourceComponent) {
-		Component oldSourceComponent = sourceComponent;
-		sourceComponent = newSourceComponent;
+	public void setClientComponent(Component newClientComponent) {
+		Component oldClientComponent = clientComponent;
+		clientComponent = newClientComponent;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_COMPONENT, oldSourceComponent, sourceComponent));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_COMPONENT, oldClientComponent, clientComponent));
 	}
 
 	/**
@@ -361,16 +361,16 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public JQuery getSourceJQuery() {
-		if (sourceJQuery != null && sourceJQuery.eIsProxy()) {
-			InternalEObject oldSourceJQuery = (InternalEObject)sourceJQuery;
-			sourceJQuery = (JQuery)eResolveProxy(oldSourceJQuery);
-			if (sourceJQuery != oldSourceJQuery) {
+	public JQuery getClientJQuery() {
+		if (clientJQuery != null && clientJQuery.eIsProxy()) {
+			InternalEObject oldClientJQuery = (InternalEObject)clientJQuery;
+			clientJQuery = (JQuery)eResolveProxy(oldClientJQuery);
+			if (clientJQuery != oldClientJQuery) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_JQUERY, oldSourceJQuery, sourceJQuery));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_JQUERY, oldClientJQuery, clientJQuery));
 			}
 		}
-		return sourceJQuery;
+		return clientJQuery;
 	}
 
 	/**
@@ -378,8 +378,8 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public JQuery basicGetSourceJQuery() {
-		return sourceJQuery;
+	public JQuery basicGetClientJQuery() {
+		return clientJQuery;
 	}
 
 	/**
@@ -387,11 +387,11 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSourceJQuery(JQuery newSourceJQuery) {
-		JQuery oldSourceJQuery = sourceJQuery;
-		sourceJQuery = newSourceJQuery;
+	public void setClientJQuery(JQuery newClientJQuery) {
+		JQuery oldClientJQuery = clientJQuery;
+		clientJQuery = newClientJQuery;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_JQUERY, oldSourceJQuery, sourceJQuery));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_JQUERY, oldClientJQuery, clientJQuery));
 	}
 
 	/**
@@ -405,24 +405,24 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__METHOD:
 				if (resolve) return getMethod();
 				return basicGetMethod();
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_FORM:
-				if (resolve) return getSourceForm();
-				return basicGetSourceForm();
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__TARGET_FRONT_CONTROLLER:
-				if (resolve) return getTargetFrontController();
-				return basicGetTargetFrontController();
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_PAGE:
-				if (resolve) return getSourcePage();
-				return basicGetSourcePage();
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_TEMPLATE:
-				if (resolve) return getSourceTemplate();
-				return basicGetSourceTemplate();
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_COMPONENT:
-				if (resolve) return getSourceComponent();
-				return basicGetSourceComponent();
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_JQUERY:
-				if (resolve) return getSourceJQuery();
-				return basicGetSourceJQuery();
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_FORM:
+				if (resolve) return getClientForm();
+				return basicGetClientForm();
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER:
+				if (resolve) return getSupplierFrontController();
+				return basicGetSupplierFrontController();
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_PAGE:
+				if (resolve) return getClientPage();
+				return basicGetClientPage();
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_TEMPLATE:
+				if (resolve) return getClientTemplate();
+				return basicGetClientTemplate();
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_COMPONENT:
+				if (resolve) return getClientComponent();
+				return basicGetClientComponent();
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_JQUERY:
+				if (resolve) return getClientJQuery();
+				return basicGetClientJQuery();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -439,23 +439,23 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__METHOD:
 				setMethod((FrontControllerMethod)newValue);
 				return;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_FORM:
-				setSourceForm((Tag)newValue);
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_FORM:
+				setClientForm((Tag)newValue);
 				return;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__TARGET_FRONT_CONTROLLER:
-				setTargetFrontController((FrontControllerClass)newValue);
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER:
+				setSupplierFrontController((FrontControllerClass)newValue);
 				return;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_PAGE:
-				setSourcePage((Page)newValue);
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_PAGE:
+				setClientPage((Page)newValue);
 				return;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_TEMPLATE:
-				setSourceTemplate((Template)newValue);
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_TEMPLATE:
+				setClientTemplate((Template)newValue);
 				return;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_COMPONENT:
-				setSourceComponent((Component)newValue);
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_COMPONENT:
+				setClientComponent((Component)newValue);
 				return;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_JQUERY:
-				setSourceJQuery((JQuery)newValue);
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_JQUERY:
+				setClientJQuery((JQuery)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -472,23 +472,23 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__METHOD:
 				setMethod((FrontControllerMethod)null);
 				return;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_FORM:
-				setSourceForm((Tag)null);
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_FORM:
+				setClientForm((Tag)null);
 				return;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__TARGET_FRONT_CONTROLLER:
-				setTargetFrontController((FrontControllerClass)null);
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER:
+				setSupplierFrontController((FrontControllerClass)null);
 				return;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_PAGE:
-				setSourcePage((Page)null);
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_PAGE:
+				setClientPage((Page)null);
 				return;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_TEMPLATE:
-				setSourceTemplate((Template)null);
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_TEMPLATE:
+				setClientTemplate((Template)null);
 				return;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_COMPONENT:
-				setSourceComponent((Component)null);
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_COMPONENT:
+				setClientComponent((Component)null);
 				return;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_JQUERY:
-				setSourceJQuery((JQuery)null);
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_JQUERY:
+				setClientJQuery((JQuery)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -504,18 +504,18 @@ public class FrontControllerDependencyImpl extends NavigationDependencyImpl impl
 		switch (featureID) {
 			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__METHOD:
 				return method != null;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_FORM:
-				return sourceForm != null;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__TARGET_FRONT_CONTROLLER:
-				return targetFrontController != null;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_PAGE:
-				return sourcePage != null;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_TEMPLATE:
-				return sourceTemplate != null;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_COMPONENT:
-				return sourceComponent != null;
-			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SOURCE_JQUERY:
-				return sourceJQuery != null;
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_FORM:
+				return clientForm != null;
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER:
+				return supplierFrontController != null;
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_PAGE:
+				return clientPage != null;
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_TEMPLATE:
+				return clientTemplate != null;
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_COMPONENT:
+				return clientComponent != null;
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__CLIENT_JQUERY:
+				return clientJQuery != null;
 		}
 		return super.eIsSet(featureID);
 	}

@@ -23,8 +23,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link frameweb.impl.ChainingDependencyImpl#getOutMethod <em>Out Method</em>}</li>
  *   <li>{@link frameweb.impl.ChainingDependencyImpl#getInMethod <em>In Method</em>}</li>
- *   <li>{@link frameweb.impl.ChainingDependencyImpl#getTargetFrontController <em>Target Front Controller</em>}</li>
- *   <li>{@link frameweb.impl.ChainingDependencyImpl#getSourceFrontController <em>Source Front Controller</em>}</li>
+ *   <li>{@link frameweb.impl.ChainingDependencyImpl#getSupplierFrontController <em>Supplier Front Controller</em>}</li>
+ *   <li>{@link frameweb.impl.ChainingDependencyImpl#getClientFrontController <em>Client Front Controller</em>}</li>
  * </ul>
  * </p>
  *
@@ -52,24 +52,24 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 	protected FrontControllerMethod inMethod;
 
 	/**
-	 * The cached value of the '{@link #getTargetFrontController() <em>Target Front Controller</em>}' reference.
+	 * The cached value of the '{@link #getSupplierFrontController() <em>Supplier Front Controller</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTargetFrontController()
+	 * @see #getSupplierFrontController()
 	 * @generated
 	 * @ordered
 	 */
-	protected FrontControllerClass targetFrontController;
+	protected FrontControllerClass supplierFrontController;
 
 	/**
-	 * The cached value of the '{@link #getSourceFrontController() <em>Source Front Controller</em>}' reference.
+	 * The cached value of the '{@link #getClientFrontController() <em>Client Front Controller</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSourceFrontController()
+	 * @see #getClientFrontController()
 	 * @generated
 	 * @ordered
 	 */
-	protected FrontControllerClass sourceFrontController;
+	protected FrontControllerClass clientFrontController;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,16 +171,16 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrontControllerClass getTargetFrontController() {
-		if (targetFrontController != null && targetFrontController.eIsProxy()) {
-			InternalEObject oldTargetFrontController = (InternalEObject)targetFrontController;
-			targetFrontController = (FrontControllerClass)eResolveProxy(oldTargetFrontController);
-			if (targetFrontController != oldTargetFrontController) {
+	public FrontControllerClass getSupplierFrontController() {
+		if (supplierFrontController != null && supplierFrontController.eIsProxy()) {
+			InternalEObject oldSupplierFrontController = (InternalEObject)supplierFrontController;
+			supplierFrontController = (FrontControllerClass)eResolveProxy(oldSupplierFrontController);
+			if (supplierFrontController != oldSupplierFrontController) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.CHAINING_DEPENDENCY__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.CHAINING_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER, oldSupplierFrontController, supplierFrontController));
 			}
 		}
-		return targetFrontController;
+		return supplierFrontController;
 	}
 
 	/**
@@ -188,8 +188,8 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrontControllerClass basicGetTargetFrontController() {
-		return targetFrontController;
+	public FrontControllerClass basicGetSupplierFrontController() {
+		return supplierFrontController;
 	}
 
 	/**
@@ -197,11 +197,11 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTargetFrontController(FrontControllerClass newTargetFrontController) {
-		FrontControllerClass oldTargetFrontController = targetFrontController;
-		targetFrontController = newTargetFrontController;
+	public void setSupplierFrontController(FrontControllerClass newSupplierFrontController) {
+		FrontControllerClass oldSupplierFrontController = supplierFrontController;
+		supplierFrontController = newSupplierFrontController;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.CHAINING_DEPENDENCY__TARGET_FRONT_CONTROLLER, oldTargetFrontController, targetFrontController));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.CHAINING_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER, oldSupplierFrontController, supplierFrontController));
 	}
 
 	/**
@@ -209,16 +209,16 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrontControllerClass getSourceFrontController() {
-		if (sourceFrontController != null && sourceFrontController.eIsProxy()) {
-			InternalEObject oldSourceFrontController = (InternalEObject)sourceFrontController;
-			sourceFrontController = (FrontControllerClass)eResolveProxy(oldSourceFrontController);
-			if (sourceFrontController != oldSourceFrontController) {
+	public FrontControllerClass getClientFrontController() {
+		if (clientFrontController != null && clientFrontController.eIsProxy()) {
+			InternalEObject oldClientFrontController = (InternalEObject)clientFrontController;
+			clientFrontController = (FrontControllerClass)eResolveProxy(oldClientFrontController);
+			if (clientFrontController != oldClientFrontController) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.CHAINING_DEPENDENCY__SOURCE_FRONT_CONTROLLER, oldSourceFrontController, sourceFrontController));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.CHAINING_DEPENDENCY__CLIENT_FRONT_CONTROLLER, oldClientFrontController, clientFrontController));
 			}
 		}
-		return sourceFrontController;
+		return clientFrontController;
 	}
 
 	/**
@@ -226,8 +226,8 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrontControllerClass basicGetSourceFrontController() {
-		return sourceFrontController;
+	public FrontControllerClass basicGetClientFrontController() {
+		return clientFrontController;
 	}
 
 	/**
@@ -235,11 +235,11 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSourceFrontController(FrontControllerClass newSourceFrontController) {
-		FrontControllerClass oldSourceFrontController = sourceFrontController;
-		sourceFrontController = newSourceFrontController;
+	public void setClientFrontController(FrontControllerClass newClientFrontController) {
+		FrontControllerClass oldClientFrontController = clientFrontController;
+		clientFrontController = newClientFrontController;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.CHAINING_DEPENDENCY__SOURCE_FRONT_CONTROLLER, oldSourceFrontController, sourceFrontController));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.CHAINING_DEPENDENCY__CLIENT_FRONT_CONTROLLER, oldClientFrontController, clientFrontController));
 	}
 
 	/**
@@ -256,12 +256,12 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 			case FramewebPackage.CHAINING_DEPENDENCY__IN_METHOD:
 				if (resolve) return getInMethod();
 				return basicGetInMethod();
-			case FramewebPackage.CHAINING_DEPENDENCY__TARGET_FRONT_CONTROLLER:
-				if (resolve) return getTargetFrontController();
-				return basicGetTargetFrontController();
-			case FramewebPackage.CHAINING_DEPENDENCY__SOURCE_FRONT_CONTROLLER:
-				if (resolve) return getSourceFrontController();
-				return basicGetSourceFrontController();
+			case FramewebPackage.CHAINING_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER:
+				if (resolve) return getSupplierFrontController();
+				return basicGetSupplierFrontController();
+			case FramewebPackage.CHAINING_DEPENDENCY__CLIENT_FRONT_CONTROLLER:
+				if (resolve) return getClientFrontController();
+				return basicGetClientFrontController();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -280,11 +280,11 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 			case FramewebPackage.CHAINING_DEPENDENCY__IN_METHOD:
 				setInMethod((FrontControllerMethod)newValue);
 				return;
-			case FramewebPackage.CHAINING_DEPENDENCY__TARGET_FRONT_CONTROLLER:
-				setTargetFrontController((FrontControllerClass)newValue);
+			case FramewebPackage.CHAINING_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER:
+				setSupplierFrontController((FrontControllerClass)newValue);
 				return;
-			case FramewebPackage.CHAINING_DEPENDENCY__SOURCE_FRONT_CONTROLLER:
-				setSourceFrontController((FrontControllerClass)newValue);
+			case FramewebPackage.CHAINING_DEPENDENCY__CLIENT_FRONT_CONTROLLER:
+				setClientFrontController((FrontControllerClass)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -304,11 +304,11 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 			case FramewebPackage.CHAINING_DEPENDENCY__IN_METHOD:
 				setInMethod((FrontControllerMethod)null);
 				return;
-			case FramewebPackage.CHAINING_DEPENDENCY__TARGET_FRONT_CONTROLLER:
-				setTargetFrontController((FrontControllerClass)null);
+			case FramewebPackage.CHAINING_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER:
+				setSupplierFrontController((FrontControllerClass)null);
 				return;
-			case FramewebPackage.CHAINING_DEPENDENCY__SOURCE_FRONT_CONTROLLER:
-				setSourceFrontController((FrontControllerClass)null);
+			case FramewebPackage.CHAINING_DEPENDENCY__CLIENT_FRONT_CONTROLLER:
+				setClientFrontController((FrontControllerClass)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -326,10 +326,10 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 				return outMethod != null;
 			case FramewebPackage.CHAINING_DEPENDENCY__IN_METHOD:
 				return inMethod != null;
-			case FramewebPackage.CHAINING_DEPENDENCY__TARGET_FRONT_CONTROLLER:
-				return targetFrontController != null;
-			case FramewebPackage.CHAINING_DEPENDENCY__SOURCE_FRONT_CONTROLLER:
-				return sourceFrontController != null;
+			case FramewebPackage.CHAINING_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER:
+				return supplierFrontController != null;
+			case FramewebPackage.CHAINING_DEPENDENCY__CLIENT_FRONT_CONTROLLER:
+				return clientFrontController != null;
 		}
 		return super.eIsSet(featureID);
 	}

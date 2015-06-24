@@ -26,7 +26,7 @@ public enum FrameworkCategoryList implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	MVC(0, "MVC", "mvc"),
+	MVC(1, "MVC", "mvc"),
 
 	/**
 	 * The '<em><b>Dependency Injection</b></em>' literal object.
@@ -36,7 +36,7 @@ public enum FrameworkCategoryList implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	DEPENDENCY_INJECTION(1, "DependencyInjection", "DependencyInjection"),
+	DEPENDENCY_INJECTION(2, "DependencyInjection", "dependencyInjection"),
 
 	/**
 	 * The '<em><b>ORM</b></em>' literal object.
@@ -46,7 +46,7 @@ public enum FrameworkCategoryList implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ORM(2, "ORM", "ORM"),
+	ORM(3, "ORM", "orm"),
 
 	/**
 	 * The '<em><b>Decorator</b></em>' literal object.
@@ -56,7 +56,15 @@ public enum FrameworkCategoryList implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	DECORATOR(3, "Decorator", "Decorator");
+	DECORATOR(4, "Decorator", "decorator"), /**
+	 * The '<em><b>Standard</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #STANDARD_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	STANDARD(0, "Standard", "standard");
 
 	/**
 	 * The '<em><b>MVC</b></em>' literal value.
@@ -71,7 +79,7 @@ public enum FrameworkCategoryList implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int MVC_VALUE = 0;
+	public static final int MVC_VALUE = 1;
 
 	/**
 	 * The '<em><b>Dependency Injection</b></em>' literal value.
@@ -82,11 +90,11 @@ public enum FrameworkCategoryList implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #DEPENDENCY_INJECTION
-	 * @model name="DependencyInjection"
+	 * @model name="DependencyInjection" literal="dependencyInjection"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int DEPENDENCY_INJECTION_VALUE = 1;
+	public static final int DEPENDENCY_INJECTION_VALUE = 2;
 
 	/**
 	 * The '<em><b>ORM</b></em>' literal value.
@@ -97,11 +105,11 @@ public enum FrameworkCategoryList implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #ORM
-	 * @model
+	 * @model literal="orm"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ORM_VALUE = 2;
+	public static final int ORM_VALUE = 3;
 
 	/**
 	 * The '<em><b>Decorator</b></em>' literal value.
@@ -112,11 +120,26 @@ public enum FrameworkCategoryList implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #DECORATOR
-	 * @model name="Decorator"
+	 * @model name="Decorator" literal="decorator"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int DECORATOR_VALUE = 3;
+	public static final int DECORATOR_VALUE = 4;
+
+	/**
+	 * The '<em><b>Standard</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Standard</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #STANDARD
+	 * @model name="Standard" literal="standard"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int STANDARD_VALUE = 0;
 
 	/**
 	 * An array of all the '<em><b>Framework Category List</b></em>' enumerators.
@@ -130,6 +153,7 @@ public enum FrameworkCategoryList implements Enumerator {
 			DEPENDENCY_INJECTION,
 			ORM,
 			DECORATOR,
+			STANDARD,
 		};
 
 	/**
@@ -184,6 +208,7 @@ public enum FrameworkCategoryList implements Enumerator {
 			case DEPENDENCY_INJECTION_VALUE: return DEPENDENCY_INJECTION;
 			case ORM_VALUE: return ORM;
 			case DECORATOR_VALUE: return DECORATOR;
+			case STANDARD_VALUE: return STANDARD;
 		}
 		return null;
 	}

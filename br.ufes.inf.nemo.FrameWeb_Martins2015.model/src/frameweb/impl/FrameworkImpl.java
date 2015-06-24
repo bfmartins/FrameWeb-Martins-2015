@@ -44,14 +44,14 @@ import org.eclipse.uml2.uml.internal.impl.PackageImpl;
  */
 public class FrameworkImpl extends PackageImpl implements Framework {
 	/**
-	 * The cached value of the '{@link #getFrameworkTagLib() <em>Framework Tag Lib</em>}' containment reference.
+	 * The cached value of the '{@link #getFrameworkTagLib() <em>Framework Tag Lib</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getFrameworkTagLib()
 	 * @generated
 	 * @ordered
 	 */
-	protected TagLib frameworkTagLib;
+	protected EList<TagLib> frameworkTagLib;
 
 	/**
 	 * The cached value of the '{@link #getFrameworkRule() <em>Framework Rule</em>}' containment reference list.
@@ -81,7 +81,7 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final FrameworkCategoryList FRAMEWORK_CATEGORY_EDEFAULT = FrameworkCategoryList.MVC;
+	protected static final FrameworkCategoryList FRAMEWORK_CATEGORY_EDEFAULT = FrameworkCategoryList.STANDARD;
 
 	/**
 	 * The cached value of the '{@link #getFrameworkCategory() <em>Framework Category</em>}' attribute.
@@ -117,42 +117,11 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TagLib getFrameworkTagLib() {
+	public EList<TagLib> getFrameworkTagLib() {
+		if (frameworkTagLib == null) {
+			frameworkTagLib = new EObjectContainmentEList<TagLib>(TagLib.class, this, FramewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB);
+		}
 		return frameworkTagLib;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetFrameworkTagLib(TagLib newFrameworkTagLib, NotificationChain msgs) {
-		TagLib oldFrameworkTagLib = frameworkTagLib;
-		frameworkTagLib = newFrameworkTagLib;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FramewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB, oldFrameworkTagLib, newFrameworkTagLib);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setFrameworkTagLib(TagLib newFrameworkTagLib) {
-		if (newFrameworkTagLib != frameworkTagLib) {
-			NotificationChain msgs = null;
-			if (frameworkTagLib != null)
-				msgs = ((InternalEObject)frameworkTagLib).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - FramewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB, null, msgs);
-			if (newFrameworkTagLib != null)
-				msgs = ((InternalEObject)newFrameworkTagLib).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - FramewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB, null, msgs);
-			msgs = basicSetFrameworkTagLib(newFrameworkTagLib, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB, newFrameworkTagLib, newFrameworkTagLib));
 	}
 
 	/**
@@ -209,7 +178,7 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
-				return basicSetFrameworkTagLib(null, msgs);
+				return ((InternalEList<?>)getFrameworkTagLib()).basicRemove(otherEnd, msgs);
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_RULE:
 				return ((InternalEList<?>)getFrameworkRule()).basicRemove(otherEnd, msgs);
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
@@ -248,7 +217,8 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
-				setFrameworkTagLib((TagLib)newValue);
+				getFrameworkTagLib().clear();
+				getFrameworkTagLib().addAll((Collection<? extends TagLib>)newValue);
 				return;
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_RULE:
 				getFrameworkRule().clear();
@@ -274,7 +244,7 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
-				setFrameworkTagLib((TagLib)null);
+				getFrameworkTagLib().clear();
 				return;
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_RULE:
 				getFrameworkRule().clear();
@@ -298,7 +268,7 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
-				return frameworkTagLib != null;
+				return frameworkTagLib != null && !frameworkTagLib.isEmpty();
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_RULE:
 				return frameworkRule != null && !frameworkRule.isEmpty();
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:

@@ -4,22 +4,17 @@ package frameweb.impl;
 
 import java.util.Map;
 
-import frameweb.FrameworkTag; //*********************************************** linha adicionada
 import frameweb.FramewebPackage;
 import frameweb.IOParameter;
 import frameweb.Tag;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-//************************** imports adicionados para o tipo Tag
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.uml2.uml.AggregationKind;
 import org.eclipse.uml2.uml.Association;
 import org.eclipse.uml2.uml.Behavior;
@@ -66,7 +61,7 @@ import org.eclipse.uml2.uml.VisibilityKind;
  *
  * @generated
  */
-public class FormComponentImpl extends NavigationAttributeImpl implements FrameworkTag {
+public class FormComponentImpl extends NavigationAttributeImpl implements Tag {
 	/**
 	 * The cached value of the '{@link #getInject() <em>Inject</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -243,14 +238,6 @@ public class FormComponentImpl extends NavigationAttributeImpl implements Framew
 				return inject != null;
 		}
 		return super.eIsSet(featureID);
-	}
-
-	//*************************** inicio dos métodos adicionados para o tipo Tag	
-
-	@Override
-	public EList<Tag> getSubTag() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	@Override
@@ -1365,6 +1352,12 @@ public class FormComponentImpl extends NavigationAttributeImpl implements Framew
 
 	@Override
 	public EList<Interface> getAllImplementedInterfaces() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EList<Tag> getSubTag() {
 		// TODO Auto-generated method stub
 		return null;
 	}

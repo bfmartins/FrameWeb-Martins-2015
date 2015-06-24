@@ -74,7 +74,7 @@ public interface NavigationModel extends FrameWebModel {
 
 	/**
 	 * Returns the value of the '<em><b>Navigation UML Composition</b></em>' containment reference list.
-	 * The list contents are of type {@link frameweb.NavigationComposition}.
+	 * The list contents are of type {@link frameweb.NavigationAssociation}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Navigation UML Composition</em>' containment reference list isn't clear,
@@ -86,6 +86,6 @@ public interface NavigationModel extends FrameWebModel {
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<NavigationComposition> getNavigationUMLComposition();
+	EList<NavigationAssociation> getNavigationUMLComposition();
 
 } // NavigationModel

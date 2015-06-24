@@ -244,7 +244,7 @@ public interface FramewebFactory extends EFactory {
 	 * @return a new object of class '<em>User View Attribute</em>'.
 	 * @generated
 	 */
-	UserViewAttribute createUserViewAttribute();
+	Tag createUserViewAttribute();
 
 	/**
 	 * Returns a new object of class '<em>IO Parameter</em>'.
@@ -274,13 +274,13 @@ public interface FramewebFactory extends EFactory {
 	ResultDependency createResultDependency();
 
 	/**
-	 * Returns a new object of class '<em>Navigation Composition</em>'.
+	 * Returns a new object of class '<em>Navigation Association</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Navigation Composition</em>'.
+	 * @return a new object of class '<em>Navigation Association</em>'.
 	 * @generated
 	 */
-	NavigationComposition createNavigationComposition();
+	NavigationAssociation createNavigationAssociation();
 
 	/**
 	 * Returns a new object of class '<em>Front Controller Method</em>'.
@@ -397,7 +397,7 @@ public interface FramewebFactory extends EFactory {
 	 * @return a new object of class '<em>Result</em>'.
 	 * @generated
 	 */
-	Result createResult();
+	ResultType createResult();
 
 	/**
 	 * Returns a new object of class '<em>Front Controller Dependency</em>'.
@@ -568,7 +568,7 @@ public interface FramewebFactory extends EFactory {
 	 * @return a new object of class '<em>Form Component</em>'.
 	 * @generated
 	 */
-	FrameworkTag createFormComponent();
+	Tag createFormComponent();
 
 	/**
 	 * Returns a new object of class '<em>Tag Lib</em>'.
@@ -580,15 +580,6 @@ public interface FramewebFactory extends EFactory {
 	TagLib createTagLib();
 
 	/**
-	 * Returns a new object of class '<em>Framework Tag</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Framework Tag</em>'.
-	 * @generated
-	 */
-	FrameworkTag createFrameworkTag();
-
-	/**
 	 * Returns a new object of class '<em>Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -598,6 +589,15 @@ public interface FramewebFactory extends EFactory {
 	Rule createRule();
 
 	/**
+	 * Returns a new object of class '<em>Tag</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Tag</em>'.
+	 * @generated
+	 */
+	Tag createTag();
+
+	/**
 	 * Returns a new object of class '<em>Anotation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -605,6 +605,24 @@ public interface FramewebFactory extends EFactory {
 	 * @generated
 	 */
 	Anotation createAnotation();
+
+	/**
+	 * Returns a new object of class '<em>Navigation Composition End</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Navigation Composition End</em>'.
+	 * @generated
+	 */
+	NavigationCompositionEnd createNavigationCompositionEnd();
+
+	/**
+	 * Returns a new object of class '<em>Navigation Composition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Navigation Composition</em>'.
+	 * @generated
+	 */
+	NavigationComposition createNavigationComposition();
 
 	/**
 	 * Returns the package supported by this factory.

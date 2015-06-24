@@ -2,19 +2,15 @@
  */
 package frameweb.impl;
 
-import frameweb.Tag; //*********************************************** linha adicionada
-import frameweb.FrameworkTag; //*********************************************** linha adicionada
 import frameweb.FramewebPackage;
+import frameweb.Tag;
 
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -40,7 +36,7 @@ public class FormImpl extends NavigationClassImpl implements Tag {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<FrameworkTag> formClassAttribute;
+	protected EList<Tag> formClassAttribute;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -66,9 +62,9 @@ public class FormImpl extends NavigationClassImpl implements Tag {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<FrameworkTag> getFormClassAttribute() {
+	public EList<Tag> getFormClassAttribute() {
 		if (formClassAttribute == null) {
-			formClassAttribute = new EObjectContainmentEList<FrameworkTag>(FrameworkTag.class, this, FramewebPackage.FORM__FORM_CLASS_ATTRIBUTE);
+			formClassAttribute = new EObjectContainmentEList<Tag>(Tag.class, this, FramewebPackage.FORM__FORM_CLASS_ATTRIBUTE);
 		}
 		return formClassAttribute;
 	}
@@ -112,7 +108,7 @@ public class FormImpl extends NavigationClassImpl implements Tag {
 		switch (featureID) {
 			case FramewebPackage.FORM__FORM_CLASS_ATTRIBUTE:
 				getFormClassAttribute().clear();
-				getFormClassAttribute().addAll((Collection<? extends FrameworkTag>)newValue);
+				getFormClassAttribute().addAll((Collection<? extends Tag>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -144,11 +140,9 @@ public class FormImpl extends NavigationClassImpl implements Tag {
 			case FramewebPackage.FORM__FORM_CLASS_ATTRIBUTE:
 				return formClassAttribute != null && !formClassAttribute.isEmpty();
 		}
-		return super.eIsSet(featureID); 
+		return super.eIsSet(featureID);
 	}
 
-	//************************** imports adicionados para o tipo Tag
-	
 	@Override
 	public EList<Tag> getSubTag() {
 		// TODO Auto-generated method stub

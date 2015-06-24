@@ -15,14 +15,13 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
   Class TransientClass -> DomainClass
 
   Class Frameweb
-    Reference Compose : FrameWebModel<<1..*>>
-    Reference Uses : Framework<<1..*>>
+    Reference Compose : FrameWebModel<<0..*>>
+    Reference Uses : Framework<<0..*>>
 
   Class FrameWebModel -> Package
-    Reference Indite : NamingMethod<<1..1>>
 
   Class Framework -> Package
-    Reference FrameworkTagLib : TagLib<<1..1>>
+    Reference FrameworkTagLib : TagLib<<1..*>>
     Reference FrameworkRule : Rule<<0..*>>
     Reference FrameworkAnotation : Anotation<<1..*>>
     Attribute frameworkCategory : FrameworkCategoryList
@@ -35,7 +34,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference NavigationUMLDependency : NavigationDependency<<0..*>>
     Reference ViewUMLPackage : ViewPackage<<1..*>>
     Reference ControllerUMLPackage : ControllerPackage<<1..*>>
-    Reference NavigationUMLComposition : NavigationComposition<<0..*>>
+    Reference NavigationUMLComposition : NavigationAssociation<<0..*>>
 
   Class ApplicationModel -> FrameWebModel
     Reference ServiceUMLAssociation : ServiceAssociation<<1..*>>
@@ -76,11 +75,13 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
 
   Class Page -> NavigationClass
     Reference PageClassAttribute : UserViewAttribute<<0..*>>
-    Reference PageTagLib : Tag<<1..*>>
-    Reference Mention : TagLib<<1..*>>
+    Reference PageTagLib : TagLib<<1..*>>
+    Reference PageComposition : NavigationComposition<<0..*>>
 
   Class Template -> NavigationClass
     Reference TemplateClassAttribute : UserViewAttribute<<0..*>>
+    Reference TemplateTagLib : TagLib<<1..*>>
+    Reference TemplateComposition : NavigationComposition<<0..*>>
 
   Class Form -> NavigationClass
     Reference FormClassAttribute : FormComponent<<0..*>>
@@ -119,22 +120,12 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
   Class ResultDependency -> NavigationDependency
     Reference ReturnResult : Result<<0..*>>
     Reference ReturnMethod : FrontControllerMethod<<1..1>>
-    Reference SourceFrontController : FrontControllerClass<<1..1>>
-    Reference TargetTemplate : Template
-    Reference TargetPage : Page
-    Reference TargetBinary : Binary
     Reference ReturnResultType : ResultType<<0..*>>
-    Reference TargetForm : Form
-    Reference TargetComponent : Component
-    Reference TargetJQuery : JQuery
-    Reference TargetFormComponent : FormComponent
 
-  Class NavigationComposition -> Association
-    Reference SourceTemplate : Template
-    Reference SourcePage : Page
-    Reference TargetForm : Form<<1..1>>
+  Class NavigationAssociation -> Association
     Reference TargetComponent : Component<<1..1>>
     Reference TargetJQuery : JQuery<<1..1>>
+    Reference NavigationProperty : NavigationCompositionEnd<<1..1>>
 
   Class FrontControllerMethod -> Operation
     Attribute isDefault : EBoolean
@@ -186,28 +177,28 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
   Class DAOClassName -> DAOInterfaceName
     Reference FrameWorkNameSufix : FrameWorkName<<1..1>>
 
-  Class Result
+  Class Result -> Class
 
   Class FrontControllerDependency -> NavigationDependency
     Reference Method : FrontControllerMethod<<1..1>>
-    Reference SourceForm : Form
-    Reference TargetFrontController : FrontControllerClass<<1..1>>
-    Reference SourcePage : Page
-    Reference SourceTemplate : Template
-    Reference SourceComponent : Component
-    Reference SourceJQuery : JQuery
+    Reference ClientForm : Form
+    Reference SupplierFrontController : FrontControllerClass<<1..1>>
+    Reference ClientPage : Page
+    Reference ClientTemplate : Template
+    Reference ClientComponent : Component
+    Reference ClientJQuery : JQuery
 
   Class PageDependency -> NavigationDependency
-    Reference TargetPage : Page<<1..1>>
-    Reference SourceTemplate : Template
+    Reference SupplierPage : Page<<1..1>>
+    Reference ClientTemplate : Template
     Attribute linkHTML : EString
-    Reference SourcePage : Page
+    Reference ClientPage : Page
 
   Class ChainingDependency -> NavigationDependency
     Reference OutMethod : FrontControllerMethod<<1..1>>
     Reference InMethod : FrontControllerMethod<<1..1>>
-    Reference TargetFrontController : FrontControllerClass<<1..1>>
-    Reference SourceFrontController : FrontControllerClass<<1..1>>
+    Reference SupplierFrontController : FrontControllerClass<<1..1>>
+    Reference ClientFrontController : FrontControllerClass<<1..1>>
 
   Class DAOServiceAssociation -> ServiceAssociation
     Reference SourceDAOClass : DAOInterface<<1..1>>
@@ -250,7 +241,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
 
   Class Component -> NavigationClass
 
-  Class ResultType
+  Class ResultType -> Class
 
   Class NavigationPackage -> Package
 
@@ -265,9 +256,8 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference inject : IOParameter
 
   Class TagLib -> Package
-    Reference TagLibTag : FrameworkTag<<1..*>>
-
-  Class FrameworkTag -> Tag
+    Reference TagLibTag : Tag<<1..*>>
+    Attribute prefix : String<<1..1>>
 
   Class Rule
 
@@ -275,6 +265,12 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference SubTag : Tag<<0..*>>
 
   Class Anotation
+
+  Class NavigationCompositionEnd -> NavigationProperty
+
+  Class NavigationComposition -> NavigationProperty
+
+  Class NavigationProperty -> Property
 
   Enum DateTimePrecision
     Literal timestamp = 0
@@ -318,10 +314,11 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Literal delete = 3
 
   Enum FrameworkCategoryList
-    Literal MVC = 0
-    Literal DependencyInjection = 1
-    Literal ORM = 2
-    Literal Decorator = 3
+    Literal MVC = 1
+    Literal DependencyInjection = 2
+    Literal ORM = 3
+    Literal Decorator = 4
+    Literal Standard = 0
 
   Enum ConstantNameList
     Literal DAO = 0

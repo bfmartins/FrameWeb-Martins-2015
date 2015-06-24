@@ -6,7 +6,7 @@ package frameweb.validation;
 
 import org.eclipse.emf.common.util.EList;
 
-import frameweb.FrameworkTag; //*********************************************** linha adicionada
+import frameweb.Tag;
 
 /**
  * A sample validator interface for {@link Tag}.
@@ -17,5 +17,5 @@ import frameweb.FrameworkTag; //*********************************************** 
 public interface FormValidator {
 	boolean validate();
 
-	boolean validateFormClassAttribute(EList<FrameworkTag> value);
+	boolean validateFormClassAttribute(EList<Tag> value);
 }

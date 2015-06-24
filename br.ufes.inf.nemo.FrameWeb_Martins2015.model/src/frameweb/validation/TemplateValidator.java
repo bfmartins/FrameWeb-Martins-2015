@@ -4,7 +4,9 @@
  */
 package frameweb.validation;
 
-import frameweb.UserViewAttribute;
+import frameweb.NavigationComposition;
+import frameweb.Tag;
+import frameweb.TagLib;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -17,5 +19,8 @@ import org.eclipse.emf.common.util.EList;
 public interface TemplateValidator {
 	boolean validate();
 
-	boolean validateTemplateClassAttribute(EList<UserViewAttribute> value);
+	boolean validateTemplateClassAttribute(EList<Tag> value);
+	boolean validateTemplateTagLib(EList<TagLib> value);
+
+	boolean validateTemplateComposition(EList<NavigationComposition> value);
 }

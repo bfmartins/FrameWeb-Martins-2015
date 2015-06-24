@@ -6609,22 +6609,13 @@ public interface FramewebPackage extends EPackage {
 	int FRAME_WEB_MODEL__PROFILE_APPLICATION = UMLPackage.PACKAGE__PROFILE_APPLICATION;
 
 	/**
-	 * The feature id for the '<em><b>Indite</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAME_WEB_MODEL__INDITE = UMLPackage.PACKAGE_FEATURE_COUNT + 0;
-
-	/**
 	 * The number of structural features of the '<em>Frame Web Model</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FRAME_WEB_MODEL_FEATURE_COUNT = UMLPackage.PACKAGE_FEATURE_COUNT + 1;
+	int FRAME_WEB_MODEL_FEATURE_COUNT = UMLPackage.PACKAGE_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Get EAnnotation</em>' operation.
@@ -7735,7 +7726,7 @@ public interface FramewebPackage extends EPackage {
 	int FRAMEWORK__PROFILE_APPLICATION = UMLPackage.PACKAGE__PROFILE_APPLICATION;
 
 	/**
-	 * The feature id for the '<em><b>Framework Tag Lib</b></em>' containment reference.
+	 * The feature id for the '<em><b>Framework Tag Lib</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -8888,15 +8879,6 @@ public interface FramewebPackage extends EPackage {
 	int DOMAIN_MODEL__PROFILE_APPLICATION = FRAME_WEB_MODEL__PROFILE_APPLICATION;
 
 	/**
-	 * The feature id for the '<em><b>Indite</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOMAIN_MODEL__INDITE = FRAME_WEB_MODEL__INDITE;
-
-	/**
 	 * The feature id for the '<em><b>Domain UML Package</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10030,15 +10012,6 @@ public interface FramewebPackage extends EPackage {
 	 * @ordered
 	 */
 	int NAVIGATION_MODEL__PROFILE_APPLICATION = FRAME_WEB_MODEL__PROFILE_APPLICATION;
-
-	/**
-	 * The feature id for the '<em><b>Indite</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NAVIGATION_MODEL__INDITE = FRAME_WEB_MODEL__INDITE;
 
 	/**
 	 * The feature id for the '<em><b>Navigation UML Dependency</b></em>' containment reference list.
@@ -11194,15 +11167,6 @@ public interface FramewebPackage extends EPackage {
 	int APPLICATION_MODEL__PROFILE_APPLICATION = FRAME_WEB_MODEL__PROFILE_APPLICATION;
 
 	/**
-	 * The feature id for the '<em><b>Indite</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int APPLICATION_MODEL__INDITE = FRAME_WEB_MODEL__INDITE;
-
-	/**
 	 * The feature id for the '<em><b>Service UML Association</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12336,15 +12300,6 @@ public interface FramewebPackage extends EPackage {
 	 * @ordered
 	 */
 	int PERSISTENCE_MODEL__PROFILE_APPLICATION = FRAME_WEB_MODEL__PROFILE_APPLICATION;
-
-	/**
-	 * The feature id for the '<em><b>Indite</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PERSISTENCE_MODEL__INDITE = FRAME_WEB_MODEL__INDITE;
 
 	/**
 	 * The feature id for the '<em><b>Persistence UML Package</b></em>' containment reference list.
@@ -26712,7 +26667,7 @@ public interface FramewebPackage extends EPackage {
 	int PAGE__PAGE_CLASS_ATTRIBUTE = NAVIGATION_CLASS_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Page Tag Lib</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Page Tag Lib</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -26721,13 +26676,13 @@ public interface FramewebPackage extends EPackage {
 	int PAGE__PAGE_TAG_LIB = NAVIGATION_CLASS_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Mention</b></em>' reference list.
+	 * The feature id for the '<em><b>Page Composition</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PAGE__MENTION = NAVIGATION_CLASS_FEATURE_COUNT + 2;
+	int PAGE__PAGE_COMPOSITION = NAVIGATION_CLASS_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Page</em>' class.
@@ -28279,13 +28234,31 @@ public interface FramewebPackage extends EPackage {
 	int TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE = NAVIGATION_CLASS_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Template Tag Lib</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEMPLATE__TEMPLATE_TAG_LIB = NAVIGATION_CLASS_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Template Composition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEMPLATE__TEMPLATE_COMPOSITION = NAVIGATION_CLASS_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Template</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TEMPLATE_FEATURE_COUNT = NAVIGATION_CLASS_FEATURE_COUNT + 1;
+	int TEMPLATE_FEATURE_COUNT = NAVIGATION_CLASS_FEATURE_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Get EAnnotation</em>' operation.
@@ -42529,85 +42502,13 @@ public interface FramewebPackage extends EPackage {
 	int RESULT_DEPENDENCY__RETURN_METHOD = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Source Front Controller</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESULT_DEPENDENCY__SOURCE_FRONT_CONTROLLER = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Target Template</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESULT_DEPENDENCY__TARGET_TEMPLATE = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Target Page</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESULT_DEPENDENCY__TARGET_PAGE = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Target Binary</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESULT_DEPENDENCY__TARGET_BINARY = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 5;
-
-	/**
 	 * The feature id for the '<em><b>Return Result Type</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_DEPENDENCY__RETURN_RESULT_TYPE = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 6;
-
-	/**
-	 * The feature id for the '<em><b>Target Form</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESULT_DEPENDENCY__TARGET_FORM = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 7;
-
-	/**
-	 * The feature id for the '<em><b>Target Component</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESULT_DEPENDENCY__TARGET_COMPONENT = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 8;
-
-	/**
-	 * The feature id for the '<em><b>Target JQuery</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESULT_DEPENDENCY__TARGET_JQUERY = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 9;
-
-	/**
-	 * The feature id for the '<em><b>Target Form Component</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESULT_DEPENDENCY__TARGET_FORM_COMPONENT = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 10;
+	int RESULT_DEPENDENCY__RETURN_RESULT_TYPE = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Result Dependency</em>' class.
@@ -42616,7 +42517,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_DEPENDENCY_FEATURE_COUNT = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 11;
+	int RESULT_DEPENDENCY_FEATURE_COUNT = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Get EAnnotation</em>' operation.
@@ -43114,14 +43015,14 @@ public interface FramewebPackage extends EPackage {
 	int RESULT_DEPENDENCY_OPERATION_COUNT = NAVIGATION_DEPENDENCY_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link frameweb.impl.NavigationCompositionImpl <em>Navigation Composition</em>}' class.
+	 * The meta object id for the '{@link frameweb.impl.NavigationAssociationImpl <em>Navigation Association</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see frameweb.impl.NavigationCompositionImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getNavigationComposition()
+	 * @see frameweb.impl.NavigationAssociationImpl
+	 * @see frameweb.impl.FramewebPackageImpl#getNavigationAssociation()
 	 * @generated
 	 */
-	int NAVIGATION_COMPOSITION = 30;
+	int NAVIGATION_ASSOCIATION = 30;
 
 	/**
 	 * The feature id for the '<em><b>EAnnotations</b></em>' containment reference list.
@@ -43130,7 +43031,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__EANNOTATIONS = UMLPackage.ASSOCIATION__EANNOTATIONS;
+	int NAVIGATION_ASSOCIATION__EANNOTATIONS = UMLPackage.ASSOCIATION__EANNOTATIONS;
 
 	/**
 	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
@@ -43139,7 +43040,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__OWNED_COMMENT = UMLPackage.ASSOCIATION__OWNED_COMMENT;
+	int NAVIGATION_ASSOCIATION__OWNED_COMMENT = UMLPackage.ASSOCIATION__OWNED_COMMENT;
 
 	/**
 	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
@@ -43148,7 +43049,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__OWNED_ELEMENT = UMLPackage.ASSOCIATION__OWNED_ELEMENT;
+	int NAVIGATION_ASSOCIATION__OWNED_ELEMENT = UMLPackage.ASSOCIATION__OWNED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Owner</b></em>' reference.
@@ -43157,7 +43058,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__OWNER = UMLPackage.ASSOCIATION__OWNER;
+	int NAVIGATION_ASSOCIATION__OWNER = UMLPackage.ASSOCIATION__OWNER;
 
 	/**
 	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
@@ -43166,7 +43067,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__CLIENT_DEPENDENCY = UMLPackage.ASSOCIATION__CLIENT_DEPENDENCY;
+	int NAVIGATION_ASSOCIATION__CLIENT_DEPENDENCY = UMLPackage.ASSOCIATION__CLIENT_DEPENDENCY;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -43175,7 +43076,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__NAME = UMLPackage.ASSOCIATION__NAME;
+	int NAVIGATION_ASSOCIATION__NAME = UMLPackage.ASSOCIATION__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
@@ -43184,7 +43085,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__NAME_EXPRESSION = UMLPackage.ASSOCIATION__NAME_EXPRESSION;
+	int NAVIGATION_ASSOCIATION__NAME_EXPRESSION = UMLPackage.ASSOCIATION__NAME_EXPRESSION;
 
 	/**
 	 * The feature id for the '<em><b>Namespace</b></em>' reference.
@@ -43193,7 +43094,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__NAMESPACE = UMLPackage.ASSOCIATION__NAMESPACE;
+	int NAVIGATION_ASSOCIATION__NAMESPACE = UMLPackage.ASSOCIATION__NAMESPACE;
 
 	/**
 	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
@@ -43202,7 +43103,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__QUALIFIED_NAME = UMLPackage.ASSOCIATION__QUALIFIED_NAME;
+	int NAVIGATION_ASSOCIATION__QUALIFIED_NAME = UMLPackage.ASSOCIATION__QUALIFIED_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -43211,7 +43112,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__VISIBILITY = UMLPackage.ASSOCIATION__VISIBILITY;
+	int NAVIGATION_ASSOCIATION__VISIBILITY = UMLPackage.ASSOCIATION__VISIBILITY;
 
 	/**
 	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
@@ -43220,7 +43121,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__OWNED_RULE = UMLPackage.ASSOCIATION__OWNED_RULE;
+	int NAVIGATION_ASSOCIATION__OWNED_RULE = UMLPackage.ASSOCIATION__OWNED_RULE;
 
 	/**
 	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
@@ -43229,7 +43130,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__ELEMENT_IMPORT = UMLPackage.ASSOCIATION__ELEMENT_IMPORT;
+	int NAVIGATION_ASSOCIATION__ELEMENT_IMPORT = UMLPackage.ASSOCIATION__ELEMENT_IMPORT;
 
 	/**
 	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
@@ -43238,7 +43139,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__PACKAGE_IMPORT = UMLPackage.ASSOCIATION__PACKAGE_IMPORT;
+	int NAVIGATION_ASSOCIATION__PACKAGE_IMPORT = UMLPackage.ASSOCIATION__PACKAGE_IMPORT;
 
 	/**
 	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
@@ -43247,7 +43148,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__OWNED_MEMBER = UMLPackage.ASSOCIATION__OWNED_MEMBER;
+	int NAVIGATION_ASSOCIATION__OWNED_MEMBER = UMLPackage.ASSOCIATION__OWNED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
@@ -43256,7 +43157,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__IMPORTED_MEMBER = UMLPackage.ASSOCIATION__IMPORTED_MEMBER;
+	int NAVIGATION_ASSOCIATION__IMPORTED_MEMBER = UMLPackage.ASSOCIATION__IMPORTED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Member</b></em>' reference list.
@@ -43265,7 +43166,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__MEMBER = UMLPackage.ASSOCIATION__MEMBER;
+	int NAVIGATION_ASSOCIATION__MEMBER = UMLPackage.ASSOCIATION__MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
@@ -43274,7 +43175,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__IS_LEAF = UMLPackage.ASSOCIATION__IS_LEAF;
+	int NAVIGATION_ASSOCIATION__IS_LEAF = UMLPackage.ASSOCIATION__IS_LEAF;
 
 	/**
 	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
@@ -43283,7 +43184,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__REDEFINED_ELEMENT = UMLPackage.ASSOCIATION__REDEFINED_ELEMENT;
+	int NAVIGATION_ASSOCIATION__REDEFINED_ELEMENT = UMLPackage.ASSOCIATION__REDEFINED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
@@ -43292,7 +43193,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__REDEFINITION_CONTEXT = UMLPackage.ASSOCIATION__REDEFINITION_CONTEXT;
+	int NAVIGATION_ASSOCIATION__REDEFINITION_CONTEXT = UMLPackage.ASSOCIATION__REDEFINITION_CONTEXT;
 
 	/**
 	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
@@ -43301,7 +43202,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__OWNING_TEMPLATE_PARAMETER = UMLPackage.ASSOCIATION__OWNING_TEMPLATE_PARAMETER;
+	int NAVIGATION_ASSOCIATION__OWNING_TEMPLATE_PARAMETER = UMLPackage.ASSOCIATION__OWNING_TEMPLATE_PARAMETER;
 
 	/**
 	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
@@ -43310,7 +43211,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__TEMPLATE_PARAMETER = UMLPackage.ASSOCIATION__TEMPLATE_PARAMETER;
+	int NAVIGATION_ASSOCIATION__TEMPLATE_PARAMETER = UMLPackage.ASSOCIATION__TEMPLATE_PARAMETER;
 
 	/**
 	 * The feature id for the '<em><b>Package</b></em>' reference.
@@ -43319,7 +43220,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__PACKAGE = UMLPackage.ASSOCIATION__PACKAGE;
+	int NAVIGATION_ASSOCIATION__PACKAGE = UMLPackage.ASSOCIATION__PACKAGE;
 
 	/**
 	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
@@ -43328,7 +43229,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__TEMPLATE_BINDING = UMLPackage.ASSOCIATION__TEMPLATE_BINDING;
+	int NAVIGATION_ASSOCIATION__TEMPLATE_BINDING = UMLPackage.ASSOCIATION__TEMPLATE_BINDING;
 
 	/**
 	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
@@ -43337,7 +43238,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__OWNED_TEMPLATE_SIGNATURE = UMLPackage.ASSOCIATION__OWNED_TEMPLATE_SIGNATURE;
+	int NAVIGATION_ASSOCIATION__OWNED_TEMPLATE_SIGNATURE = UMLPackage.ASSOCIATION__OWNED_TEMPLATE_SIGNATURE;
 
 	/**
 	 * The feature id for the '<em><b>Feature</b></em>' reference list.
@@ -43346,7 +43247,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__FEATURE = UMLPackage.ASSOCIATION__FEATURE;
+	int NAVIGATION_ASSOCIATION__FEATURE = UMLPackage.ASSOCIATION__FEATURE;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' reference list.
@@ -43355,7 +43256,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__ATTRIBUTE = UMLPackage.ASSOCIATION__ATTRIBUTE;
+	int NAVIGATION_ASSOCIATION__ATTRIBUTE = UMLPackage.ASSOCIATION__ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Collaboration Use</b></em>' containment reference list.
@@ -43364,7 +43265,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__COLLABORATION_USE = UMLPackage.ASSOCIATION__COLLABORATION_USE;
+	int NAVIGATION_ASSOCIATION__COLLABORATION_USE = UMLPackage.ASSOCIATION__COLLABORATION_USE;
 
 	/**
 	 * The feature id for the '<em><b>General</b></em>' reference list.
@@ -43373,7 +43274,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__GENERAL = UMLPackage.ASSOCIATION__GENERAL;
+	int NAVIGATION_ASSOCIATION__GENERAL = UMLPackage.ASSOCIATION__GENERAL;
 
 	/**
 	 * The feature id for the '<em><b>Generalization</b></em>' containment reference list.
@@ -43382,7 +43283,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__GENERALIZATION = UMLPackage.ASSOCIATION__GENERALIZATION;
+	int NAVIGATION_ASSOCIATION__GENERALIZATION = UMLPackage.ASSOCIATION__GENERALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Powertype Extent</b></em>' reference list.
@@ -43391,7 +43292,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__POWERTYPE_EXTENT = UMLPackage.ASSOCIATION__POWERTYPE_EXTENT;
+	int NAVIGATION_ASSOCIATION__POWERTYPE_EXTENT = UMLPackage.ASSOCIATION__POWERTYPE_EXTENT;
 
 	/**
 	 * The feature id for the '<em><b>Inherited Member</b></em>' reference list.
@@ -43400,7 +43301,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__INHERITED_MEMBER = UMLPackage.ASSOCIATION__INHERITED_MEMBER;
+	int NAVIGATION_ASSOCIATION__INHERITED_MEMBER = UMLPackage.ASSOCIATION__INHERITED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
@@ -43409,7 +43310,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__IS_ABSTRACT = UMLPackage.ASSOCIATION__IS_ABSTRACT;
+	int NAVIGATION_ASSOCIATION__IS_ABSTRACT = UMLPackage.ASSOCIATION__IS_ABSTRACT;
 
 	/**
 	 * The feature id for the '<em><b>Is Final Specialization</b></em>' attribute.
@@ -43418,7 +43319,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__IS_FINAL_SPECIALIZATION = UMLPackage.ASSOCIATION__IS_FINAL_SPECIALIZATION;
+	int NAVIGATION_ASSOCIATION__IS_FINAL_SPECIALIZATION = UMLPackage.ASSOCIATION__IS_FINAL_SPECIALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Use Case</b></em>' containment reference list.
@@ -43427,7 +43328,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__OWNED_USE_CASE = UMLPackage.ASSOCIATION__OWNED_USE_CASE;
+	int NAVIGATION_ASSOCIATION__OWNED_USE_CASE = UMLPackage.ASSOCIATION__OWNED_USE_CASE;
 
 	/**
 	 * The feature id for the '<em><b>Use Case</b></em>' reference list.
@@ -43436,7 +43337,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__USE_CASE = UMLPackage.ASSOCIATION__USE_CASE;
+	int NAVIGATION_ASSOCIATION__USE_CASE = UMLPackage.ASSOCIATION__USE_CASE;
 
 	/**
 	 * The feature id for the '<em><b>Redefined Classifier</b></em>' reference list.
@@ -43445,7 +43346,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__REDEFINED_CLASSIFIER = UMLPackage.ASSOCIATION__REDEFINED_CLASSIFIER;
+	int NAVIGATION_ASSOCIATION__REDEFINED_CLASSIFIER = UMLPackage.ASSOCIATION__REDEFINED_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Representation</b></em>' reference.
@@ -43454,7 +43355,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__REPRESENTATION = UMLPackage.ASSOCIATION__REPRESENTATION;
+	int NAVIGATION_ASSOCIATION__REPRESENTATION = UMLPackage.ASSOCIATION__REPRESENTATION;
 
 	/**
 	 * The feature id for the '<em><b>Substitution</b></em>' containment reference list.
@@ -43463,7 +43364,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__SUBSTITUTION = UMLPackage.ASSOCIATION__SUBSTITUTION;
+	int NAVIGATION_ASSOCIATION__SUBSTITUTION = UMLPackage.ASSOCIATION__SUBSTITUTION;
 
 	/**
 	 * The feature id for the '<em><b>Related Element</b></em>' reference list.
@@ -43472,7 +43373,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__RELATED_ELEMENT = UMLPackage.ASSOCIATION__RELATED_ELEMENT;
+	int NAVIGATION_ASSOCIATION__RELATED_ELEMENT = UMLPackage.ASSOCIATION__RELATED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>End Type</b></em>' reference list.
@@ -43481,7 +43382,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__END_TYPE = UMLPackage.ASSOCIATION__END_TYPE;
+	int NAVIGATION_ASSOCIATION__END_TYPE = UMLPackage.ASSOCIATION__END_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Is Derived</b></em>' attribute.
@@ -43490,7 +43391,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__IS_DERIVED = UMLPackage.ASSOCIATION__IS_DERIVED;
+	int NAVIGATION_ASSOCIATION__IS_DERIVED = UMLPackage.ASSOCIATION__IS_DERIVED;
 
 	/**
 	 * The feature id for the '<em><b>Member End</b></em>' reference list.
@@ -43499,7 +43400,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__MEMBER_END = UMLPackage.ASSOCIATION__MEMBER_END;
+	int NAVIGATION_ASSOCIATION__MEMBER_END = UMLPackage.ASSOCIATION__MEMBER_END;
 
 	/**
 	 * The feature id for the '<em><b>Owned End</b></em>' containment reference list.
@@ -43508,7 +43409,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__OWNED_END = UMLPackage.ASSOCIATION__OWNED_END;
+	int NAVIGATION_ASSOCIATION__OWNED_END = UMLPackage.ASSOCIATION__OWNED_END;
 
 	/**
 	 * The feature id for the '<em><b>Navigable Owned End</b></em>' reference list.
@@ -43517,34 +43418,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__NAVIGABLE_OWNED_END = UMLPackage.ASSOCIATION__NAVIGABLE_OWNED_END;
-
-	/**
-	 * The feature id for the '<em><b>Source Template</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NAVIGATION_COMPOSITION__SOURCE_TEMPLATE = UMLPackage.ASSOCIATION_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Source Page</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NAVIGATION_COMPOSITION__SOURCE_PAGE = UMLPackage.ASSOCIATION_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Target Form</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NAVIGATION_COMPOSITION__TARGET_FORM = UMLPackage.ASSOCIATION_FEATURE_COUNT + 2;
+	int NAVIGATION_ASSOCIATION__NAVIGABLE_OWNED_END = UMLPackage.ASSOCIATION__NAVIGABLE_OWNED_END;
 
 	/**
 	 * The feature id for the '<em><b>Target Component</b></em>' reference.
@@ -43553,7 +43427,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__TARGET_COMPONENT = UMLPackage.ASSOCIATION_FEATURE_COUNT + 3;
+	int NAVIGATION_ASSOCIATION__TARGET_COMPONENT = UMLPackage.ASSOCIATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Target JQuery</b></em>' reference.
@@ -43562,16 +43436,25 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION__TARGET_JQUERY = UMLPackage.ASSOCIATION_FEATURE_COUNT + 4;
+	int NAVIGATION_ASSOCIATION__TARGET_JQUERY = UMLPackage.ASSOCIATION_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of structural features of the '<em>Navigation Composition</em>' class.
+	 * The feature id for the '<em><b>Navigation Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION_FEATURE_COUNT = UMLPackage.ASSOCIATION_FEATURE_COUNT + 5;
+	int NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY = UMLPackage.ASSOCIATION_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Navigation Association</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_ASSOCIATION_FEATURE_COUNT = UMLPackage.ASSOCIATION_FEATURE_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Get EAnnotation</em>' operation.
@@ -43580,7 +43463,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_EANNOTATION__STRING = UMLPackage.ASSOCIATION___GET_EANNOTATION__STRING;
+	int NAVIGATION_ASSOCIATION___GET_EANNOTATION__STRING = UMLPackage.ASSOCIATION___GET_EANNOTATION__STRING;
 
 	/**
 	 * The operation id for the '<em>Validate Has Owner</em>' operation.
@@ -43589,7 +43472,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Not Own Self</em>' operation.
@@ -43598,7 +43481,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Add Keyword</em>' operation.
@@ -43607,7 +43490,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___ADD_KEYWORD__STRING = UMLPackage.ASSOCIATION___ADD_KEYWORD__STRING;
+	int NAVIGATION_ASSOCIATION___ADD_KEYWORD__STRING = UMLPackage.ASSOCIATION___ADD_KEYWORD__STRING;
 
 	/**
 	 * The operation id for the '<em>Apply Stereotype</em>' operation.
@@ -43616,7 +43499,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___APPLY_STEREOTYPE__STEREOTYPE = UMLPackage.ASSOCIATION___APPLY_STEREOTYPE__STEREOTYPE;
+	int NAVIGATION_ASSOCIATION___APPLY_STEREOTYPE__STEREOTYPE = UMLPackage.ASSOCIATION___APPLY_STEREOTYPE__STEREOTYPE;
 
 	/**
 	 * The operation id for the '<em>Create EAnnotation</em>' operation.
@@ -43625,7 +43508,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___CREATE_EANNOTATION__STRING = UMLPackage.ASSOCIATION___CREATE_EANNOTATION__STRING;
+	int NAVIGATION_ASSOCIATION___CREATE_EANNOTATION__STRING = UMLPackage.ASSOCIATION___CREATE_EANNOTATION__STRING;
 
 	/**
 	 * The operation id for the '<em>Destroy</em>' operation.
@@ -43634,7 +43517,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___DESTROY = UMLPackage.ASSOCIATION___DESTROY;
+	int NAVIGATION_ASSOCIATION___DESTROY = UMLPackage.ASSOCIATION___DESTROY;
 
 	/**
 	 * The operation id for the '<em>Get Keywords</em>' operation.
@@ -43643,7 +43526,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_KEYWORDS = UMLPackage.ASSOCIATION___GET_KEYWORDS;
+	int NAVIGATION_ASSOCIATION___GET_KEYWORDS = UMLPackage.ASSOCIATION___GET_KEYWORDS;
 
 	/**
 	 * The operation id for the '<em>Get Applicable Stereotype</em>' operation.
@@ -43652,7 +43535,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_APPLICABLE_STEREOTYPE__STRING = UMLPackage.ASSOCIATION___GET_APPLICABLE_STEREOTYPE__STRING;
+	int NAVIGATION_ASSOCIATION___GET_APPLICABLE_STEREOTYPE__STRING = UMLPackage.ASSOCIATION___GET_APPLICABLE_STEREOTYPE__STRING;
 
 	/**
 	 * The operation id for the '<em>Get Applicable Stereotypes</em>' operation.
@@ -43661,7 +43544,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_APPLICABLE_STEREOTYPES = UMLPackage.ASSOCIATION___GET_APPLICABLE_STEREOTYPES;
+	int NAVIGATION_ASSOCIATION___GET_APPLICABLE_STEREOTYPES = UMLPackage.ASSOCIATION___GET_APPLICABLE_STEREOTYPES;
 
 	/**
 	 * The operation id for the '<em>Get Applied Stereotype</em>' operation.
@@ -43670,7 +43553,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_APPLIED_STEREOTYPE__STRING = UMLPackage.ASSOCIATION___GET_APPLIED_STEREOTYPE__STRING;
+	int NAVIGATION_ASSOCIATION___GET_APPLIED_STEREOTYPE__STRING = UMLPackage.ASSOCIATION___GET_APPLIED_STEREOTYPE__STRING;
 
 	/**
 	 * The operation id for the '<em>Get Applied Stereotypes</em>' operation.
@@ -43679,7 +43562,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_APPLIED_STEREOTYPES = UMLPackage.ASSOCIATION___GET_APPLIED_STEREOTYPES;
+	int NAVIGATION_ASSOCIATION___GET_APPLIED_STEREOTYPES = UMLPackage.ASSOCIATION___GET_APPLIED_STEREOTYPES;
 
 	/**
 	 * The operation id for the '<em>Get Applied Substereotype</em>' operation.
@@ -43688,7 +43571,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING = UMLPackage.ASSOCIATION___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING;
+	int NAVIGATION_ASSOCIATION___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING = UMLPackage.ASSOCIATION___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING;
 
 	/**
 	 * The operation id for the '<em>Get Applied Substereotypes</em>' operation.
@@ -43697,7 +43580,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE = UMLPackage.ASSOCIATION___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE;
+	int NAVIGATION_ASSOCIATION___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE = UMLPackage.ASSOCIATION___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE;
 
 	/**
 	 * The operation id for the '<em>Get Model</em>' operation.
@@ -43706,7 +43589,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_MODEL = UMLPackage.ASSOCIATION___GET_MODEL;
+	int NAVIGATION_ASSOCIATION___GET_MODEL = UMLPackage.ASSOCIATION___GET_MODEL;
 
 	/**
 	 * The operation id for the '<em>Get Nearest Package</em>' operation.
@@ -43715,7 +43598,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_NEAREST_PACKAGE = UMLPackage.ASSOCIATION___GET_NEAREST_PACKAGE;
+	int NAVIGATION_ASSOCIATION___GET_NEAREST_PACKAGE = UMLPackage.ASSOCIATION___GET_NEAREST_PACKAGE;
 
 	/**
 	 * The operation id for the '<em>Get Relationships</em>' operation.
@@ -43724,7 +43607,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_RELATIONSHIPS = UMLPackage.ASSOCIATION___GET_RELATIONSHIPS;
+	int NAVIGATION_ASSOCIATION___GET_RELATIONSHIPS = UMLPackage.ASSOCIATION___GET_RELATIONSHIPS;
 
 	/**
 	 * The operation id for the '<em>Get Relationships</em>' operation.
@@ -43733,7 +43616,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_RELATIONSHIPS__ECLASS = UMLPackage.ASSOCIATION___GET_RELATIONSHIPS__ECLASS;
+	int NAVIGATION_ASSOCIATION___GET_RELATIONSHIPS__ECLASS = UMLPackage.ASSOCIATION___GET_RELATIONSHIPS__ECLASS;
 
 	/**
 	 * The operation id for the '<em>Get Required Stereotype</em>' operation.
@@ -43742,7 +43625,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_REQUIRED_STEREOTYPE__STRING = UMLPackage.ASSOCIATION___GET_REQUIRED_STEREOTYPE__STRING;
+	int NAVIGATION_ASSOCIATION___GET_REQUIRED_STEREOTYPE__STRING = UMLPackage.ASSOCIATION___GET_REQUIRED_STEREOTYPE__STRING;
 
 	/**
 	 * The operation id for the '<em>Get Required Stereotypes</em>' operation.
@@ -43751,7 +43634,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_REQUIRED_STEREOTYPES = UMLPackage.ASSOCIATION___GET_REQUIRED_STEREOTYPES;
+	int NAVIGATION_ASSOCIATION___GET_REQUIRED_STEREOTYPES = UMLPackage.ASSOCIATION___GET_REQUIRED_STEREOTYPES;
 
 	/**
 	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
@@ -43760,7 +43643,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_SOURCE_DIRECTED_RELATIONSHIPS = UMLPackage.ASSOCIATION___GET_SOURCE_DIRECTED_RELATIONSHIPS;
+	int NAVIGATION_ASSOCIATION___GET_SOURCE_DIRECTED_RELATIONSHIPS = UMLPackage.ASSOCIATION___GET_SOURCE_DIRECTED_RELATIONSHIPS;
 
 	/**
 	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
@@ -43769,7 +43652,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS = UMLPackage.ASSOCIATION___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS;
+	int NAVIGATION_ASSOCIATION___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS = UMLPackage.ASSOCIATION___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS;
 
 	/**
 	 * The operation id for the '<em>Get Stereotype Application</em>' operation.
@@ -43778,7 +43661,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_STEREOTYPE_APPLICATION__STEREOTYPE = UMLPackage.ASSOCIATION___GET_STEREOTYPE_APPLICATION__STEREOTYPE;
+	int NAVIGATION_ASSOCIATION___GET_STEREOTYPE_APPLICATION__STEREOTYPE = UMLPackage.ASSOCIATION___GET_STEREOTYPE_APPLICATION__STEREOTYPE;
 
 	/**
 	 * The operation id for the '<em>Get Stereotype Applications</em>' operation.
@@ -43787,7 +43670,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_STEREOTYPE_APPLICATIONS = UMLPackage.ASSOCIATION___GET_STEREOTYPE_APPLICATIONS;
+	int NAVIGATION_ASSOCIATION___GET_STEREOTYPE_APPLICATIONS = UMLPackage.ASSOCIATION___GET_STEREOTYPE_APPLICATIONS;
 
 	/**
 	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
@@ -43796,7 +43679,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_TARGET_DIRECTED_RELATIONSHIPS = UMLPackage.ASSOCIATION___GET_TARGET_DIRECTED_RELATIONSHIPS;
+	int NAVIGATION_ASSOCIATION___GET_TARGET_DIRECTED_RELATIONSHIPS = UMLPackage.ASSOCIATION___GET_TARGET_DIRECTED_RELATIONSHIPS;
 
 	/**
 	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
@@ -43805,7 +43688,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS = UMLPackage.ASSOCIATION___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS;
+	int NAVIGATION_ASSOCIATION___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS = UMLPackage.ASSOCIATION___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS;
 
 	/**
 	 * The operation id for the '<em>Get Value</em>' operation.
@@ -43814,7 +43697,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_VALUE__STEREOTYPE_STRING = UMLPackage.ASSOCIATION___GET_VALUE__STEREOTYPE_STRING;
+	int NAVIGATION_ASSOCIATION___GET_VALUE__STEREOTYPE_STRING = UMLPackage.ASSOCIATION___GET_VALUE__STEREOTYPE_STRING;
 
 	/**
 	 * The operation id for the '<em>Has Keyword</em>' operation.
@@ -43823,7 +43706,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___HAS_KEYWORD__STRING = UMLPackage.ASSOCIATION___HAS_KEYWORD__STRING;
+	int NAVIGATION_ASSOCIATION___HAS_KEYWORD__STRING = UMLPackage.ASSOCIATION___HAS_KEYWORD__STRING;
 
 	/**
 	 * The operation id for the '<em>Has Value</em>' operation.
@@ -43832,7 +43715,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___HAS_VALUE__STEREOTYPE_STRING = UMLPackage.ASSOCIATION___HAS_VALUE__STEREOTYPE_STRING;
+	int NAVIGATION_ASSOCIATION___HAS_VALUE__STEREOTYPE_STRING = UMLPackage.ASSOCIATION___HAS_VALUE__STEREOTYPE_STRING;
 
 	/**
 	 * The operation id for the '<em>Is Stereotype Applicable</em>' operation.
@@ -43841,7 +43724,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___IS_STEREOTYPE_APPLICABLE__STEREOTYPE = UMLPackage.ASSOCIATION___IS_STEREOTYPE_APPLICABLE__STEREOTYPE;
+	int NAVIGATION_ASSOCIATION___IS_STEREOTYPE_APPLICABLE__STEREOTYPE = UMLPackage.ASSOCIATION___IS_STEREOTYPE_APPLICABLE__STEREOTYPE;
 
 	/**
 	 * The operation id for the '<em>Is Stereotype Applied</em>' operation.
@@ -43850,7 +43733,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___IS_STEREOTYPE_APPLIED__STEREOTYPE = UMLPackage.ASSOCIATION___IS_STEREOTYPE_APPLIED__STEREOTYPE;
+	int NAVIGATION_ASSOCIATION___IS_STEREOTYPE_APPLIED__STEREOTYPE = UMLPackage.ASSOCIATION___IS_STEREOTYPE_APPLIED__STEREOTYPE;
 
 	/**
 	 * The operation id for the '<em>Is Stereotype Required</em>' operation.
@@ -43859,7 +43742,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___IS_STEREOTYPE_REQUIRED__STEREOTYPE = UMLPackage.ASSOCIATION___IS_STEREOTYPE_REQUIRED__STEREOTYPE;
+	int NAVIGATION_ASSOCIATION___IS_STEREOTYPE_REQUIRED__STEREOTYPE = UMLPackage.ASSOCIATION___IS_STEREOTYPE_REQUIRED__STEREOTYPE;
 
 	/**
 	 * The operation id for the '<em>Remove Keyword</em>' operation.
@@ -43868,7 +43751,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___REMOVE_KEYWORD__STRING = UMLPackage.ASSOCIATION___REMOVE_KEYWORD__STRING;
+	int NAVIGATION_ASSOCIATION___REMOVE_KEYWORD__STRING = UMLPackage.ASSOCIATION___REMOVE_KEYWORD__STRING;
 
 	/**
 	 * The operation id for the '<em>Set Value</em>' operation.
@@ -43877,7 +43760,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___SET_VALUE__STEREOTYPE_STRING_OBJECT = UMLPackage.ASSOCIATION___SET_VALUE__STEREOTYPE_STRING_OBJECT;
+	int NAVIGATION_ASSOCIATION___SET_VALUE__STEREOTYPE_STRING_OBJECT = UMLPackage.ASSOCIATION___SET_VALUE__STEREOTYPE_STRING_OBJECT;
 
 	/**
 	 * The operation id for the '<em>Unapply Stereotype</em>' operation.
@@ -43886,7 +43769,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___UNAPPLY_STEREOTYPE__STEREOTYPE = UMLPackage.ASSOCIATION___UNAPPLY_STEREOTYPE__STEREOTYPE;
+	int NAVIGATION_ASSOCIATION___UNAPPLY_STEREOTYPE__STEREOTYPE = UMLPackage.ASSOCIATION___UNAPPLY_STEREOTYPE__STEREOTYPE;
 
 	/**
 	 * The operation id for the '<em>All Owned Elements</em>' operation.
@@ -43895,7 +43778,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___ALL_OWNED_ELEMENTS = UMLPackage.ASSOCIATION___ALL_OWNED_ELEMENTS;
+	int NAVIGATION_ASSOCIATION___ALL_OWNED_ELEMENTS = UMLPackage.ASSOCIATION___ALL_OWNED_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>Must Be Owned</em>' operation.
@@ -43904,7 +43787,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___MUST_BE_OWNED = UMLPackage.ASSOCIATION___MUST_BE_OWNED;
+	int NAVIGATION_ASSOCIATION___MUST_BE_OWNED = UMLPackage.ASSOCIATION___MUST_BE_OWNED;
 
 	/**
 	 * The operation id for the '<em>Validate Visibility Needs Ownership</em>' operation.
@@ -43913,7 +43796,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Has Qualified Name</em>' operation.
@@ -43922,7 +43805,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Has No Qualified Name</em>' operation.
@@ -43931,7 +43814,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Create Dependency</em>' operation.
@@ -43940,7 +43823,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___CREATE_DEPENDENCY__NAMEDELEMENT = UMLPackage.ASSOCIATION___CREATE_DEPENDENCY__NAMEDELEMENT;
+	int NAVIGATION_ASSOCIATION___CREATE_DEPENDENCY__NAMEDELEMENT = UMLPackage.ASSOCIATION___CREATE_DEPENDENCY__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Create Usage</em>' operation.
@@ -43949,7 +43832,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___CREATE_USAGE__NAMEDELEMENT = UMLPackage.ASSOCIATION___CREATE_USAGE__NAMEDELEMENT;
+	int NAVIGATION_ASSOCIATION___CREATE_USAGE__NAMEDELEMENT = UMLPackage.ASSOCIATION___CREATE_USAGE__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Label</em>' operation.
@@ -43958,7 +43841,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_LABEL = UMLPackage.ASSOCIATION___GET_LABEL;
+	int NAVIGATION_ASSOCIATION___GET_LABEL = UMLPackage.ASSOCIATION___GET_LABEL;
 
 	/**
 	 * The operation id for the '<em>Get Label</em>' operation.
@@ -43967,7 +43850,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_LABEL__BOOLEAN = UMLPackage.ASSOCIATION___GET_LABEL__BOOLEAN;
+	int NAVIGATION_ASSOCIATION___GET_LABEL__BOOLEAN = UMLPackage.ASSOCIATION___GET_LABEL__BOOLEAN;
 
 	/**
 	 * The operation id for the '<em>Get Namespace</em>' operation.
@@ -43976,7 +43859,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_NAMESPACE = UMLPackage.ASSOCIATION___GET_NAMESPACE;
+	int NAVIGATION_ASSOCIATION___GET_NAMESPACE = UMLPackage.ASSOCIATION___GET_NAMESPACE;
 
 	/**
 	 * The operation id for the '<em>All Namespaces</em>' operation.
@@ -43985,7 +43868,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___ALL_NAMESPACES = UMLPackage.ASSOCIATION___ALL_NAMESPACES;
+	int NAVIGATION_ASSOCIATION___ALL_NAMESPACES = UMLPackage.ASSOCIATION___ALL_NAMESPACES;
 
 	/**
 	 * The operation id for the '<em>All Owning Packages</em>' operation.
@@ -43994,7 +43877,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___ALL_OWNING_PACKAGES = UMLPackage.ASSOCIATION___ALL_OWNING_PACKAGES;
+	int NAVIGATION_ASSOCIATION___ALL_OWNING_PACKAGES = UMLPackage.ASSOCIATION___ALL_OWNING_PACKAGES;
 
 	/**
 	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
@@ -44003,7 +43886,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = UMLPackage.ASSOCIATION___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+	int NAVIGATION_ASSOCIATION___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = UMLPackage.ASSOCIATION___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
 
 	/**
 	 * The operation id for the '<em>Get Qualified Name</em>' operation.
@@ -44012,7 +43895,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_QUALIFIED_NAME = UMLPackage.ASSOCIATION___GET_QUALIFIED_NAME;
+	int NAVIGATION_ASSOCIATION___GET_QUALIFIED_NAME = UMLPackage.ASSOCIATION___GET_QUALIFIED_NAME;
 
 	/**
 	 * The operation id for the '<em>Separator</em>' operation.
@@ -44021,7 +43904,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___SEPARATOR = UMLPackage.ASSOCIATION___SEPARATOR;
+	int NAVIGATION_ASSOCIATION___SEPARATOR = UMLPackage.ASSOCIATION___SEPARATOR;
 
 	/**
 	 * The operation id for the '<em>Get Client Dependencies</em>' operation.
@@ -44030,7 +43913,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_CLIENT_DEPENDENCIES = UMLPackage.ASSOCIATION___GET_CLIENT_DEPENDENCIES;
+	int NAVIGATION_ASSOCIATION___GET_CLIENT_DEPENDENCIES = UMLPackage.ASSOCIATION___GET_CLIENT_DEPENDENCIES;
 
 	/**
 	 * The operation id for the '<em>Validate Members Distinguishable</em>' operation.
@@ -44039,7 +43922,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Cannot Import Self</em>' operation.
@@ -44048,7 +43931,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Cannot Import Owned Members</em>' operation.
@@ -44057,7 +43940,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Create Element Import</em>' operation.
@@ -44066,7 +43949,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND = UMLPackage.ASSOCIATION___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND;
+	int NAVIGATION_ASSOCIATION___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND = UMLPackage.ASSOCIATION___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND;
 
 	/**
 	 * The operation id for the '<em>Create Package Import</em>' operation.
@@ -44075,7 +43958,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND = UMLPackage.ASSOCIATION___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND;
+	int NAVIGATION_ASSOCIATION___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND = UMLPackage.ASSOCIATION___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND;
 
 	/**
 	 * The operation id for the '<em>Get Imported Elements</em>' operation.
@@ -44084,7 +43967,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_IMPORTED_ELEMENTS = UMLPackage.ASSOCIATION___GET_IMPORTED_ELEMENTS;
+	int NAVIGATION_ASSOCIATION___GET_IMPORTED_ELEMENTS = UMLPackage.ASSOCIATION___GET_IMPORTED_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>Get Imported Packages</em>' operation.
@@ -44093,7 +43976,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_IMPORTED_PACKAGES = UMLPackage.ASSOCIATION___GET_IMPORTED_PACKAGES;
+	int NAVIGATION_ASSOCIATION___GET_IMPORTED_PACKAGES = UMLPackage.ASSOCIATION___GET_IMPORTED_PACKAGES;
 
 	/**
 	 * The operation id for the '<em>Get Owned Members</em>' operation.
@@ -44102,7 +43985,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_OWNED_MEMBERS = UMLPackage.ASSOCIATION___GET_OWNED_MEMBERS;
+	int NAVIGATION_ASSOCIATION___GET_OWNED_MEMBERS = UMLPackage.ASSOCIATION___GET_OWNED_MEMBERS;
 
 	/**
 	 * The operation id for the '<em>Exclude Collisions</em>' operation.
@@ -44111,7 +43994,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___EXCLUDE_COLLISIONS__ELIST = UMLPackage.ASSOCIATION___EXCLUDE_COLLISIONS__ELIST;
+	int NAVIGATION_ASSOCIATION___EXCLUDE_COLLISIONS__ELIST = UMLPackage.ASSOCIATION___EXCLUDE_COLLISIONS__ELIST;
 
 	/**
 	 * The operation id for the '<em>Get Names Of Member</em>' operation.
@@ -44120,7 +44003,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_NAMES_OF_MEMBER__NAMEDELEMENT = UMLPackage.ASSOCIATION___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+	int NAVIGATION_ASSOCIATION___GET_NAMES_OF_MEMBER__NAMEDELEMENT = UMLPackage.ASSOCIATION___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Import Members</em>' operation.
@@ -44129,7 +44012,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___IMPORT_MEMBERS__ELIST = UMLPackage.ASSOCIATION___IMPORT_MEMBERS__ELIST;
+	int NAVIGATION_ASSOCIATION___IMPORT_MEMBERS__ELIST = UMLPackage.ASSOCIATION___IMPORT_MEMBERS__ELIST;
 
 	/**
 	 * The operation id for the '<em>Get Imported Members</em>' operation.
@@ -44138,7 +44021,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_IMPORTED_MEMBERS = UMLPackage.ASSOCIATION___GET_IMPORTED_MEMBERS;
+	int NAVIGATION_ASSOCIATION___GET_IMPORTED_MEMBERS = UMLPackage.ASSOCIATION___GET_IMPORTED_MEMBERS;
 
 	/**
 	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
@@ -44147,7 +44030,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___MEMBERS_ARE_DISTINGUISHABLE = UMLPackage.ASSOCIATION___MEMBERS_ARE_DISTINGUISHABLE;
+	int NAVIGATION_ASSOCIATION___MEMBERS_ARE_DISTINGUISHABLE = UMLPackage.ASSOCIATION___MEMBERS_ARE_DISTINGUISHABLE;
 
 	/**
 	 * The operation id for the '<em>Validate Redefinition Consistent</em>' operation.
@@ -44156,7 +44039,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Non Leaf Redefinition</em>' operation.
@@ -44165,7 +44048,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Redefinition Context Valid</em>' operation.
@@ -44174,7 +44057,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Is Consistent With</em>' operation.
@@ -44183,7 +44066,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = UMLPackage.ASSOCIATION___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
+	int NAVIGATION_ASSOCIATION___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = UMLPackage.ASSOCIATION___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
@@ -44192,7 +44075,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = UMLPackage.ASSOCIATION___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
+	int NAVIGATION_ASSOCIATION___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = UMLPackage.ASSOCIATION___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Compatible With</em>' operation.
@@ -44201,7 +44084,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = UMLPackage.ASSOCIATION___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+	int NAVIGATION_ASSOCIATION___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = UMLPackage.ASSOCIATION___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Template Parameter</em>' operation.
@@ -44210,7 +44093,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___IS_TEMPLATE_PARAMETER = UMLPackage.ASSOCIATION___IS_TEMPLATE_PARAMETER;
+	int NAVIGATION_ASSOCIATION___IS_TEMPLATE_PARAMETER = UMLPackage.ASSOCIATION___IS_TEMPLATE_PARAMETER;
 
 	/**
 	 * The operation id for the '<em>Validate Namespace Needs Visibility</em>' operation.
@@ -44219,7 +44102,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Create Association</em>' operation.
@@ -44228,7 +44111,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT = UMLPackage.ASSOCIATION___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT;
+	int NAVIGATION_ASSOCIATION___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT = UMLPackage.ASSOCIATION___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT;
 
 	/**
 	 * The operation id for the '<em>Get Associations</em>' operation.
@@ -44237,7 +44120,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_ASSOCIATIONS = UMLPackage.ASSOCIATION___GET_ASSOCIATIONS;
+	int NAVIGATION_ASSOCIATION___GET_ASSOCIATIONS = UMLPackage.ASSOCIATION___GET_ASSOCIATIONS;
 
 	/**
 	 * The operation id for the '<em>Conforms To</em>' operation.
@@ -44246,7 +44129,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___CONFORMS_TO__TYPE = UMLPackage.ASSOCIATION___CONFORMS_TO__TYPE;
+	int NAVIGATION_ASSOCIATION___CONFORMS_TO__TYPE = UMLPackage.ASSOCIATION___CONFORMS_TO__TYPE;
 
 	/**
 	 * The operation id for the '<em>Is Template</em>' operation.
@@ -44255,7 +44138,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___IS_TEMPLATE = UMLPackage.ASSOCIATION___IS_TEMPLATE;
+	int NAVIGATION_ASSOCIATION___IS_TEMPLATE = UMLPackage.ASSOCIATION___IS_TEMPLATE;
 
 	/**
 	 * The operation id for the '<em>Parameterable Elements</em>' operation.
@@ -44264,7 +44147,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___PARAMETERABLE_ELEMENTS = UMLPackage.ASSOCIATION___PARAMETERABLE_ELEMENTS;
+	int NAVIGATION_ASSOCIATION___PARAMETERABLE_ELEMENTS = UMLPackage.ASSOCIATION___PARAMETERABLE_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>Validate Specialize Type</em>' operation.
@@ -44273,7 +44156,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Maps To Generalization Set</em>' operation.
@@ -44282,7 +44165,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Non Final Parents</em>' operation.
@@ -44291,7 +44174,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate No Cycles In Generalization</em>' operation.
@@ -44300,7 +44183,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Get All Attributes</em>' operation.
@@ -44309,7 +44192,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_ALL_ATTRIBUTES = UMLPackage.ASSOCIATION___GET_ALL_ATTRIBUTES;
+	int NAVIGATION_ASSOCIATION___GET_ALL_ATTRIBUTES = UMLPackage.ASSOCIATION___GET_ALL_ATTRIBUTES;
 
 	/**
 	 * The operation id for the '<em>Get All Operations</em>' operation.
@@ -44318,7 +44201,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_ALL_OPERATIONS = UMLPackage.ASSOCIATION___GET_ALL_OPERATIONS;
+	int NAVIGATION_ASSOCIATION___GET_ALL_OPERATIONS = UMLPackage.ASSOCIATION___GET_ALL_OPERATIONS;
 
 	/**
 	 * The operation id for the '<em>Get All Used Interfaces</em>' operation.
@@ -44327,7 +44210,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_ALL_USED_INTERFACES = UMLPackage.ASSOCIATION___GET_ALL_USED_INTERFACES;
+	int NAVIGATION_ASSOCIATION___GET_ALL_USED_INTERFACES = UMLPackage.ASSOCIATION___GET_ALL_USED_INTERFACES;
 
 	/**
 	 * The operation id for the '<em>Get Operation</em>' operation.
@@ -44336,7 +44219,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_OPERATION__STRING_ELIST_ELIST = UMLPackage.ASSOCIATION___GET_OPERATION__STRING_ELIST_ELIST;
+	int NAVIGATION_ASSOCIATION___GET_OPERATION__STRING_ELIST_ELIST = UMLPackage.ASSOCIATION___GET_OPERATION__STRING_ELIST_ELIST;
 
 	/**
 	 * The operation id for the '<em>Get Operation</em>' operation.
@@ -44345,7 +44228,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN = UMLPackage.ASSOCIATION___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN;
+	int NAVIGATION_ASSOCIATION___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN = UMLPackage.ASSOCIATION___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN;
 
 	/**
 	 * The operation id for the '<em>Get Operations</em>' operation.
@@ -44354,7 +44237,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_OPERATIONS = UMLPackage.ASSOCIATION___GET_OPERATIONS;
+	int NAVIGATION_ASSOCIATION___GET_OPERATIONS = UMLPackage.ASSOCIATION___GET_OPERATIONS;
 
 	/**
 	 * The operation id for the '<em>Get Used Interfaces</em>' operation.
@@ -44363,7 +44246,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_USED_INTERFACES = UMLPackage.ASSOCIATION___GET_USED_INTERFACES;
+	int NAVIGATION_ASSOCIATION___GET_USED_INTERFACES = UMLPackage.ASSOCIATION___GET_USED_INTERFACES;
 
 	/**
 	 * The operation id for the '<em>All Features</em>' operation.
@@ -44372,7 +44255,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___ALL_FEATURES = UMLPackage.ASSOCIATION___ALL_FEATURES;
+	int NAVIGATION_ASSOCIATION___ALL_FEATURES = UMLPackage.ASSOCIATION___ALL_FEATURES;
 
 	/**
 	 * The operation id for the '<em>All Parents</em>' operation.
@@ -44381,7 +44264,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___ALL_PARENTS = UMLPackage.ASSOCIATION___ALL_PARENTS;
+	int NAVIGATION_ASSOCIATION___ALL_PARENTS = UMLPackage.ASSOCIATION___ALL_PARENTS;
 
 	/**
 	 * The operation id for the '<em>Get Generals</em>' operation.
@@ -44390,7 +44273,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_GENERALS = UMLPackage.ASSOCIATION___GET_GENERALS;
+	int NAVIGATION_ASSOCIATION___GET_GENERALS = UMLPackage.ASSOCIATION___GET_GENERALS;
 
 	/**
 	 * The operation id for the '<em>Has Visibility Of</em>' operation.
@@ -44399,7 +44282,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___HAS_VISIBILITY_OF__NAMEDELEMENT = UMLPackage.ASSOCIATION___HAS_VISIBILITY_OF__NAMEDELEMENT;
+	int NAVIGATION_ASSOCIATION___HAS_VISIBILITY_OF__NAMEDELEMENT = UMLPackage.ASSOCIATION___HAS_VISIBILITY_OF__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Inherit</em>' operation.
@@ -44408,7 +44291,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___INHERIT__ELIST = UMLPackage.ASSOCIATION___INHERIT__ELIST;
+	int NAVIGATION_ASSOCIATION___INHERIT__ELIST = UMLPackage.ASSOCIATION___INHERIT__ELIST;
 
 	/**
 	 * The operation id for the '<em>Inheritable Members</em>' operation.
@@ -44417,7 +44300,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___INHERITABLE_MEMBERS__CLASSIFIER = UMLPackage.ASSOCIATION___INHERITABLE_MEMBERS__CLASSIFIER;
+	int NAVIGATION_ASSOCIATION___INHERITABLE_MEMBERS__CLASSIFIER = UMLPackage.ASSOCIATION___INHERITABLE_MEMBERS__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>Get Inherited Members</em>' operation.
@@ -44426,7 +44309,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_INHERITED_MEMBERS = UMLPackage.ASSOCIATION___GET_INHERITED_MEMBERS;
+	int NAVIGATION_ASSOCIATION___GET_INHERITED_MEMBERS = UMLPackage.ASSOCIATION___GET_INHERITED_MEMBERS;
 
 	/**
 	 * The operation id for the '<em>May Specialize Type</em>' operation.
@@ -44435,7 +44318,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___MAY_SPECIALIZE_TYPE__CLASSIFIER = UMLPackage.ASSOCIATION___MAY_SPECIALIZE_TYPE__CLASSIFIER;
+	int NAVIGATION_ASSOCIATION___MAY_SPECIALIZE_TYPE__CLASSIFIER = UMLPackage.ASSOCIATION___MAY_SPECIALIZE_TYPE__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>Parents</em>' operation.
@@ -44444,7 +44327,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___PARENTS = UMLPackage.ASSOCIATION___PARENTS;
+	int NAVIGATION_ASSOCIATION___PARENTS = UMLPackage.ASSOCIATION___PARENTS;
 
 	/**
 	 * The operation id for the '<em>Directly Realized Interfaces</em>' operation.
@@ -44453,7 +44336,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___DIRECTLY_REALIZED_INTERFACES = UMLPackage.ASSOCIATION___DIRECTLY_REALIZED_INTERFACES;
+	int NAVIGATION_ASSOCIATION___DIRECTLY_REALIZED_INTERFACES = UMLPackage.ASSOCIATION___DIRECTLY_REALIZED_INTERFACES;
 
 	/**
 	 * The operation id for the '<em>Directly Used Interfaces</em>' operation.
@@ -44462,7 +44345,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___DIRECTLY_USED_INTERFACES = UMLPackage.ASSOCIATION___DIRECTLY_USED_INTERFACES;
+	int NAVIGATION_ASSOCIATION___DIRECTLY_USED_INTERFACES = UMLPackage.ASSOCIATION___DIRECTLY_USED_INTERFACES;
 
 	/**
 	 * The operation id for the '<em>All Realized Interfaces</em>' operation.
@@ -44471,7 +44354,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___ALL_REALIZED_INTERFACES = UMLPackage.ASSOCIATION___ALL_REALIZED_INTERFACES;
+	int NAVIGATION_ASSOCIATION___ALL_REALIZED_INTERFACES = UMLPackage.ASSOCIATION___ALL_REALIZED_INTERFACES;
 
 	/**
 	 * The operation id for the '<em>All Used Interfaces</em>' operation.
@@ -44480,7 +44363,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___ALL_USED_INTERFACES = UMLPackage.ASSOCIATION___ALL_USED_INTERFACES;
+	int NAVIGATION_ASSOCIATION___ALL_USED_INTERFACES = UMLPackage.ASSOCIATION___ALL_USED_INTERFACES;
 
 	/**
 	 * The operation id for the '<em>Is Substitutable For</em>' operation.
@@ -44489,7 +44372,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___IS_SUBSTITUTABLE_FOR__CLASSIFIER = UMLPackage.ASSOCIATION___IS_SUBSTITUTABLE_FOR__CLASSIFIER;
+	int NAVIGATION_ASSOCIATION___IS_SUBSTITUTABLE_FOR__CLASSIFIER = UMLPackage.ASSOCIATION___IS_SUBSTITUTABLE_FOR__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>All Attributes</em>' operation.
@@ -44498,7 +44381,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___ALL_ATTRIBUTES = UMLPackage.ASSOCIATION___ALL_ATTRIBUTES;
+	int NAVIGATION_ASSOCIATION___ALL_ATTRIBUTES = UMLPackage.ASSOCIATION___ALL_ATTRIBUTES;
 
 	/**
 	 * The operation id for the '<em>All Slottable Features</em>' operation.
@@ -44507,7 +44390,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___ALL_SLOTTABLE_FEATURES = UMLPackage.ASSOCIATION___ALL_SLOTTABLE_FEATURES;
+	int NAVIGATION_ASSOCIATION___ALL_SLOTTABLE_FEATURES = UMLPackage.ASSOCIATION___ALL_SLOTTABLE_FEATURES;
 
 	/**
 	 * The operation id for the '<em>Validate Specialized End Number</em>' operation.
@@ -44516,7 +44399,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_SPECIALIZED_END_NUMBER__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_SPECIALIZED_END_NUMBER__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_SPECIALIZED_END_NUMBER__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_SPECIALIZED_END_NUMBER__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Specialized End Types</em>' operation.
@@ -44525,7 +44408,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_SPECIALIZED_END_TYPES__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_SPECIALIZED_END_TYPES__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_SPECIALIZED_END_TYPES__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_SPECIALIZED_END_TYPES__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Binary Associations</em>' operation.
@@ -44534,7 +44417,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_BINARY_ASSOCIATIONS__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_BINARY_ASSOCIATIONS__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_BINARY_ASSOCIATIONS__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_BINARY_ASSOCIATIONS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Association Ends</em>' operation.
@@ -44543,7 +44426,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_ASSOCIATION_ENDS__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_ASSOCIATION_ENDS__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_ASSOCIATION_ENDS__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_ASSOCIATION_ENDS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Ends Must Be Typed</em>' operation.
@@ -44552,7 +44435,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___VALIDATE_ENDS_MUST_BE_TYPED__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_ENDS_MUST_BE_TYPED__DIAGNOSTICCHAIN_MAP;
+	int NAVIGATION_ASSOCIATION___VALIDATE_ENDS_MUST_BE_TYPED__DIAGNOSTICCHAIN_MAP = UMLPackage.ASSOCIATION___VALIDATE_ENDS_MUST_BE_TYPED__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Is Binary</em>' operation.
@@ -44561,7 +44444,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___IS_BINARY = UMLPackage.ASSOCIATION___IS_BINARY;
+	int NAVIGATION_ASSOCIATION___IS_BINARY = UMLPackage.ASSOCIATION___IS_BINARY;
 
 	/**
 	 * The operation id for the '<em>Get End Types</em>' operation.
@@ -44570,16 +44453,16 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION___GET_END_TYPES = UMLPackage.ASSOCIATION___GET_END_TYPES;
+	int NAVIGATION_ASSOCIATION___GET_END_TYPES = UMLPackage.ASSOCIATION___GET_END_TYPES;
 
 	/**
-	 * The number of operations of the '<em>Navigation Composition</em>' class.
+	 * The number of operations of the '<em>Navigation Association</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_COMPOSITION_OPERATION_COUNT = UMLPackage.ASSOCIATION_OPERATION_COUNT + 0;
+	int NAVIGATION_ASSOCIATION_OPERATION_COUNT = UMLPackage.ASSOCIATION_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.FrontControllerMethodImpl <em>Front Controller Method</em>}' class.
@@ -53877,13 +53760,1525 @@ public interface FramewebPackage extends EPackage {
 	int RESULT = 46;
 
 	/**
+	 * The feature id for the '<em><b>EAnnotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__EANNOTATIONS = UMLPackage.CLASS__EANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__OWNED_COMMENT = UMLPackage.CLASS__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__OWNED_ELEMENT = UMLPackage.CLASS__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__OWNER = UMLPackage.CLASS__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__CLIENT_DEPENDENCY = UMLPackage.CLASS__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__NAME = UMLPackage.CLASS__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__NAME_EXPRESSION = UMLPackage.CLASS__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__NAMESPACE = UMLPackage.CLASS__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__QUALIFIED_NAME = UMLPackage.CLASS__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__VISIBILITY = UMLPackage.CLASS__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__OWNED_RULE = UMLPackage.CLASS__OWNED_RULE;
+
+	/**
+	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__ELEMENT_IMPORT = UMLPackage.CLASS__ELEMENT_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__PACKAGE_IMPORT = UMLPackage.CLASS__PACKAGE_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__OWNED_MEMBER = UMLPackage.CLASS__OWNED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__IMPORTED_MEMBER = UMLPackage.CLASS__IMPORTED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__MEMBER = UMLPackage.CLASS__MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__IS_LEAF = UMLPackage.CLASS__IS_LEAF;
+
+	/**
+	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__REDEFINED_ELEMENT = UMLPackage.CLASS__REDEFINED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__REDEFINITION_CONTEXT = UMLPackage.CLASS__REDEFINITION_CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__OWNING_TEMPLATE_PARAMETER = UMLPackage.CLASS__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__TEMPLATE_PARAMETER = UMLPackage.CLASS__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Package</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__PACKAGE = UMLPackage.CLASS__PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__TEMPLATE_BINDING = UMLPackage.CLASS__TEMPLATE_BINDING;
+
+	/**
+	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__OWNED_TEMPLATE_SIGNATURE = UMLPackage.CLASS__OWNED_TEMPLATE_SIGNATURE;
+
+	/**
+	 * The feature id for the '<em><b>Feature</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__FEATURE = UMLPackage.CLASS__FEATURE;
+
+	/**
+	 * The feature id for the '<em><b>Attribute</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__ATTRIBUTE = UMLPackage.CLASS__ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Collaboration Use</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__COLLABORATION_USE = UMLPackage.CLASS__COLLABORATION_USE;
+
+	/**
+	 * The feature id for the '<em><b>General</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__GENERAL = UMLPackage.CLASS__GENERAL;
+
+	/**
+	 * The feature id for the '<em><b>Generalization</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__GENERALIZATION = UMLPackage.CLASS__GENERALIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Powertype Extent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__POWERTYPE_EXTENT = UMLPackage.CLASS__POWERTYPE_EXTENT;
+
+	/**
+	 * The feature id for the '<em><b>Inherited Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__INHERITED_MEMBER = UMLPackage.CLASS__INHERITED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__IS_ABSTRACT = UMLPackage.CLASS__IS_ABSTRACT;
+
+	/**
+	 * The feature id for the '<em><b>Is Final Specialization</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__IS_FINAL_SPECIALIZATION = UMLPackage.CLASS__IS_FINAL_SPECIALIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Use Case</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__OWNED_USE_CASE = UMLPackage.CLASS__OWNED_USE_CASE;
+
+	/**
+	 * The feature id for the '<em><b>Use Case</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__USE_CASE = UMLPackage.CLASS__USE_CASE;
+
+	/**
+	 * The feature id for the '<em><b>Redefined Classifier</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__REDEFINED_CLASSIFIER = UMLPackage.CLASS__REDEFINED_CLASSIFIER;
+
+	/**
+	 * The feature id for the '<em><b>Representation</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__REPRESENTATION = UMLPackage.CLASS__REPRESENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Substitution</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__SUBSTITUTION = UMLPackage.CLASS__SUBSTITUTION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Attribute</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__OWNED_ATTRIBUTE = UMLPackage.CLASS__OWNED_ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Connector</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__OWNED_CONNECTOR = UMLPackage.CLASS__OWNED_CONNECTOR;
+
+	/**
+	 * The feature id for the '<em><b>Part</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__PART = UMLPackage.CLASS__PART;
+
+	/**
+	 * The feature id for the '<em><b>Role</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__ROLE = UMLPackage.CLASS__ROLE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Port</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__OWNED_PORT = UMLPackage.CLASS__OWNED_PORT;
+
+	/**
+	 * The feature id for the '<em><b>Classifier Behavior</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__CLASSIFIER_BEHAVIOR = UMLPackage.CLASS__CLASSIFIER_BEHAVIOR;
+
+	/**
+	 * The feature id for the '<em><b>Interface Realization</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__INTERFACE_REALIZATION = UMLPackage.CLASS__INTERFACE_REALIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Behavior</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__OWNED_BEHAVIOR = UMLPackage.CLASS__OWNED_BEHAVIOR;
+
+	/**
+	 * The feature id for the '<em><b>Owned Operation</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__OWNED_OPERATION = UMLPackage.CLASS__OWNED_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>Extension</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__EXTENSION = UMLPackage.CLASS__EXTENSION;
+
+	/**
+	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__IS_ACTIVE = UMLPackage.CLASS__IS_ACTIVE;
+
+	/**
+	 * The feature id for the '<em><b>Nested Classifier</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__NESTED_CLASSIFIER = UMLPackage.CLASS__NESTED_CLASSIFIER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Reception</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__OWNED_RECEPTION = UMLPackage.CLASS__OWNED_RECEPTION;
+
+	/**
+	 * The feature id for the '<em><b>Super Class</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__SUPER_CLASS = UMLPackage.CLASS__SUPER_CLASS;
+
+	/**
 	 * The number of structural features of the '<em>Result</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_FEATURE_COUNT = 0;
+	int RESULT_FEATURE_COUNT = UMLPackage.CLASS_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Get EAnnotation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_EANNOTATION__STRING = UMLPackage.CLASS___GET_EANNOTATION__STRING;
+
+	/**
+	 * The operation id for the '<em>Validate Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Add Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___ADD_KEYWORD__STRING = UMLPackage.CLASS___ADD_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Apply Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___APPLY_STEREOTYPE__STEREOTYPE = UMLPackage.CLASS___APPLY_STEREOTYPE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Create EAnnotation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___CREATE_EANNOTATION__STRING = UMLPackage.CLASS___CREATE_EANNOTATION__STRING;
+
+	/**
+	 * The operation id for the '<em>Destroy</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___DESTROY = UMLPackage.CLASS___DESTROY;
+
+	/**
+	 * The operation id for the '<em>Get Keywords</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_KEYWORDS = UMLPackage.CLASS___GET_KEYWORDS;
+
+	/**
+	 * The operation id for the '<em>Get Applicable Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_APPLICABLE_STEREOTYPE__STRING = UMLPackage.CLASS___GET_APPLICABLE_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_APPLICABLE_STEREOTYPES = UMLPackage.CLASS___GET_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Applied Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_APPLIED_STEREOTYPE__STRING = UMLPackage.CLASS___GET_APPLIED_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applied Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_APPLIED_STEREOTYPES = UMLPackage.CLASS___GET_APPLIED_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Applied Substereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING = UMLPackage.CLASS___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applied Substereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE = UMLPackage.CLASS___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Get Model</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_MODEL = UMLPackage.CLASS___GET_MODEL;
+
+	/**
+	 * The operation id for the '<em>Get Nearest Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_NEAREST_PACKAGE = UMLPackage.CLASS___GET_NEAREST_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Get Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_RELATIONSHIPS = UMLPackage.CLASS___GET_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_RELATIONSHIPS__ECLASS = UMLPackage.CLASS___GET_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Required Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_REQUIRED_STEREOTYPE__STRING = UMLPackage.CLASS___GET_REQUIRED_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Required Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_REQUIRED_STEREOTYPES = UMLPackage.CLASS___GET_REQUIRED_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_SOURCE_DIRECTED_RELATIONSHIPS = UMLPackage.CLASS___GET_SOURCE_DIRECTED_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS = UMLPackage.CLASS___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Stereotype Application</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_STEREOTYPE_APPLICATION__STEREOTYPE = UMLPackage.CLASS___GET_STEREOTYPE_APPLICATION__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Get Stereotype Applications</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_STEREOTYPE_APPLICATIONS = UMLPackage.CLASS___GET_STEREOTYPE_APPLICATIONS;
+
+	/**
+	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_TARGET_DIRECTED_RELATIONSHIPS = UMLPackage.CLASS___GET_TARGET_DIRECTED_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS = UMLPackage.CLASS___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_VALUE__STEREOTYPE_STRING = UMLPackage.CLASS___GET_VALUE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Has Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___HAS_KEYWORD__STRING = UMLPackage.CLASS___HAS_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Has Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___HAS_VALUE__STEREOTYPE_STRING = UMLPackage.CLASS___HAS_VALUE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Applicable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___IS_STEREOTYPE_APPLICABLE__STEREOTYPE = UMLPackage.CLASS___IS_STEREOTYPE_APPLICABLE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Applied</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___IS_STEREOTYPE_APPLIED__STEREOTYPE = UMLPackage.CLASS___IS_STEREOTYPE_APPLIED__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Required</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___IS_STEREOTYPE_REQUIRED__STEREOTYPE = UMLPackage.CLASS___IS_STEREOTYPE_REQUIRED__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Remove Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___REMOVE_KEYWORD__STRING = UMLPackage.CLASS___REMOVE_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Set Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___SET_VALUE__STEREOTYPE_STRING_OBJECT = UMLPackage.CLASS___SET_VALUE__STEREOTYPE_STRING_OBJECT;
+
+	/**
+	 * The operation id for the '<em>Unapply Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___UNAPPLY_STEREOTYPE__STEREOTYPE = UMLPackage.CLASS___UNAPPLY_STEREOTYPE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___ALL_OWNED_ELEMENTS = UMLPackage.CLASS___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___MUST_BE_OWNED = UMLPackage.CLASS___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Validate Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Create Dependency</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___CREATE_DEPENDENCY__NAMEDELEMENT = UMLPackage.CLASS___CREATE_DEPENDENCY__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Create Usage</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___CREATE_USAGE__NAMEDELEMENT = UMLPackage.CLASS___CREATE_USAGE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_LABEL = UMLPackage.CLASS___GET_LABEL;
+
+	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_LABEL__BOOLEAN = UMLPackage.CLASS___GET_LABEL__BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Get Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_NAMESPACE = UMLPackage.CLASS___GET_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___ALL_NAMESPACES = UMLPackage.CLASS___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___ALL_OWNING_PACKAGES = UMLPackage.CLASS___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = UMLPackage.CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Get Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_QUALIFIED_NAME = UMLPackage.CLASS___GET_QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___SEPARATOR = UMLPackage.CLASS___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Get Client Dependencies</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_CLIENT_DEPENDENCIES = UMLPackage.CLASS___GET_CLIENT_DEPENDENCIES;
+
+	/**
+	 * The operation id for the '<em>Validate Members Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Cannot Import Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Cannot Import Owned Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Create Element Import</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND = UMLPackage.CLASS___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND;
+
+	/**
+	 * The operation id for the '<em>Create Package Import</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND = UMLPackage.CLASS___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND;
+
+	/**
+	 * The operation id for the '<em>Get Imported Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_IMPORTED_ELEMENTS = UMLPackage.CLASS___GET_IMPORTED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Get Imported Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_IMPORTED_PACKAGES = UMLPackage.CLASS___GET_IMPORTED_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Get Owned Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_OWNED_MEMBERS = UMLPackage.CLASS___GET_OWNED_MEMBERS;
+
+	/**
+	 * The operation id for the '<em>Exclude Collisions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___EXCLUDE_COLLISIONS__ELIST = UMLPackage.CLASS___EXCLUDE_COLLISIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Names Of Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_NAMES_OF_MEMBER__NAMEDELEMENT = UMLPackage.CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Import Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___IMPORT_MEMBERS__ELIST = UMLPackage.CLASS___IMPORT_MEMBERS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Imported Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_IMPORTED_MEMBERS = UMLPackage.CLASS___GET_IMPORTED_MEMBERS;
+
+	/**
+	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___MEMBERS_ARE_DISTINGUISHABLE = UMLPackage.CLASS___MEMBERS_ARE_DISTINGUISHABLE;
+
+	/**
+	 * The operation id for the '<em>Validate Redefinition Consistent</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Non Leaf Redefinition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Redefinition Context Valid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Is Consistent With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = UMLPackage.CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = UMLPackage.CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = UMLPackage.CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___IS_TEMPLATE_PARAMETER = UMLPackage.CLASS___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Validate Namespace Needs Visibility</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Create Association</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT = UMLPackage.CLASS___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT;
+
+	/**
+	 * The operation id for the '<em>Get Associations</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_ASSOCIATIONS = UMLPackage.CLASS___GET_ASSOCIATIONS;
+
+	/**
+	 * The operation id for the '<em>Conforms To</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___CONFORMS_TO__TYPE = UMLPackage.CLASS___CONFORMS_TO__TYPE;
+
+	/**
+	 * The operation id for the '<em>Is Template</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___IS_TEMPLATE = UMLPackage.CLASS___IS_TEMPLATE;
+
+	/**
+	 * The operation id for the '<em>Parameterable Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___PARAMETERABLE_ELEMENTS = UMLPackage.CLASS___PARAMETERABLE_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Validate Specialize Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Maps To Generalization Set</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Non Final Parents</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate No Cycles In Generalization</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Get All Attributes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_ALL_ATTRIBUTES = UMLPackage.CLASS___GET_ALL_ATTRIBUTES;
+
+	/**
+	 * The operation id for the '<em>Get All Operations</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_ALL_OPERATIONS = UMLPackage.CLASS___GET_ALL_OPERATIONS;
+
+	/**
+	 * The operation id for the '<em>Get All Used Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_ALL_USED_INTERFACES = UMLPackage.CLASS___GET_ALL_USED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>Get Operation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_OPERATION__STRING_ELIST_ELIST = UMLPackage.CLASS___GET_OPERATION__STRING_ELIST_ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Operation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN = UMLPackage.CLASS___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Get Operations</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_OPERATIONS = UMLPackage.CLASS___GET_OPERATIONS;
+
+	/**
+	 * The operation id for the '<em>Get Used Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_USED_INTERFACES = UMLPackage.CLASS___GET_USED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>All Features</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___ALL_FEATURES = UMLPackage.CLASS___ALL_FEATURES;
+
+	/**
+	 * The operation id for the '<em>All Parents</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___ALL_PARENTS = UMLPackage.CLASS___ALL_PARENTS;
+
+	/**
+	 * The operation id for the '<em>Get Generals</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_GENERALS = UMLPackage.CLASS___GET_GENERALS;
+
+	/**
+	 * The operation id for the '<em>Has Visibility Of</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___HAS_VISIBILITY_OF__NAMEDELEMENT = UMLPackage.CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Inherit</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___INHERIT__ELIST = UMLPackage.CLASS___INHERIT__ELIST;
+
+	/**
+	 * The operation id for the '<em>Inheritable Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___INHERITABLE_MEMBERS__CLASSIFIER = UMLPackage.CLASS___INHERITABLE_MEMBERS__CLASSIFIER;
+
+	/**
+	 * The operation id for the '<em>Get Inherited Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_INHERITED_MEMBERS = UMLPackage.CLASS___GET_INHERITED_MEMBERS;
+
+	/**
+	 * The operation id for the '<em>May Specialize Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___MAY_SPECIALIZE_TYPE__CLASSIFIER = UMLPackage.CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER;
+
+	/**
+	 * The operation id for the '<em>Parents</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___PARENTS = UMLPackage.CLASS___PARENTS;
+
+	/**
+	 * The operation id for the '<em>Directly Realized Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___DIRECTLY_REALIZED_INTERFACES = UMLPackage.CLASS___DIRECTLY_REALIZED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>Directly Used Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___DIRECTLY_USED_INTERFACES = UMLPackage.CLASS___DIRECTLY_USED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>All Realized Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___ALL_REALIZED_INTERFACES = UMLPackage.CLASS___ALL_REALIZED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>All Used Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___ALL_USED_INTERFACES = UMLPackage.CLASS___ALL_USED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>Is Substitutable For</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___IS_SUBSTITUTABLE_FOR__CLASSIFIER = UMLPackage.CLASS___IS_SUBSTITUTABLE_FOR__CLASSIFIER;
+
+	/**
+	 * The operation id for the '<em>All Attributes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___ALL_ATTRIBUTES = UMLPackage.CLASS___ALL_ATTRIBUTES;
+
+	/**
+	 * The operation id for the '<em>All Slottable Features</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___ALL_SLOTTABLE_FEATURES = UMLPackage.CLASS___ALL_SLOTTABLE_FEATURES;
+
+	/**
+	 * The operation id for the '<em>Create Owned Attribute</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___CREATE_OWNED_ATTRIBUTE__STRING_TYPE_INT_INT = UMLPackage.CLASS___CREATE_OWNED_ATTRIBUTE__STRING_TYPE_INT_INT;
+
+	/**
+	 * The operation id for the '<em>Get Parts</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_PARTS = UMLPackage.CLASS___GET_PARTS;
+
+	/**
+	 * The operation id for the '<em>All Roles</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___ALL_ROLES = UMLPackage.CLASS___ALL_ROLES;
+
+	/**
+	 * The operation id for the '<em>Get Owned Ports</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_OWNED_PORTS = UMLPackage.CLASS___GET_OWNED_PORTS;
+
+	/**
+	 * The operation id for the '<em>Validate Class Behavior</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Get All Implemented Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_ALL_IMPLEMENTED_INTERFACES = UMLPackage.CLASS___GET_ALL_IMPLEMENTED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>Get Implemented Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_IMPLEMENTED_INTERFACES = UMLPackage.CLASS___GET_IMPLEMENTED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>Validate Passive Class</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___VALIDATE_PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Create Owned Operation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___CREATE_OWNED_OPERATION__STRING_ELIST_ELIST_TYPE = UMLPackage.CLASS___CREATE_OWNED_OPERATION__STRING_ELIST_ELIST_TYPE;
+
+	/**
+	 * The operation id for the '<em>Is Metaclass</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___IS_METACLASS = UMLPackage.CLASS___IS_METACLASS;
+
+	/**
+	 * The operation id for the '<em>Get Extensions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_EXTENSIONS = UMLPackage.CLASS___GET_EXTENSIONS;
+
+	/**
+	 * The operation id for the '<em>Get Super Classes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT___GET_SUPER_CLASSES = UMLPackage.CLASS___GET_SUPER_CLASSES;
 
 	/**
 	 * The number of operations of the '<em>Result</em>' class.
@@ -53892,7 +55287,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_OPERATION_COUNT = 0;
+	int RESULT_OPERATION_COUNT = UMLPackage.CLASS_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.FrontControllerDependencyImpl <em>Front Controller Dependency</em>}' class.
@@ -54067,58 +55462,58 @@ public interface FramewebPackage extends EPackage {
 	int FRONT_CONTROLLER_DEPENDENCY__METHOD = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Source Form</b></em>' reference.
+	 * The feature id for the '<em><b>Client Form</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_DEPENDENCY__SOURCE_FORM = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 1;
+	int FRONT_CONTROLLER_DEPENDENCY__CLIENT_FORM = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Target Front Controller</b></em>' reference.
+	 * The feature id for the '<em><b>Supplier Front Controller</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_DEPENDENCY__TARGET_FRONT_CONTROLLER = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 2;
+	int FRONT_CONTROLLER_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 2;
 
 	/**
-	 * The feature id for the '<em><b>Source Page</b></em>' reference.
+	 * The feature id for the '<em><b>Client Page</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_DEPENDENCY__SOURCE_PAGE = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 3;
+	int FRONT_CONTROLLER_DEPENDENCY__CLIENT_PAGE = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Source Template</b></em>' reference.
+	 * The feature id for the '<em><b>Client Template</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_DEPENDENCY__SOURCE_TEMPLATE = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 4;
+	int FRONT_CONTROLLER_DEPENDENCY__CLIENT_TEMPLATE = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Source Component</b></em>' reference.
+	 * The feature id for the '<em><b>Client Component</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_DEPENDENCY__SOURCE_COMPONENT = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 5;
+	int FRONT_CONTROLLER_DEPENDENCY__CLIENT_COMPONENT = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Source JQuery</b></em>' reference.
+	 * The feature id for the '<em><b>Client JQuery</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FRONT_CONTROLLER_DEPENDENCY__SOURCE_JQUERY = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 6;
+	int FRONT_CONTROLLER_DEPENDENCY__CLIENT_JQUERY = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Front Controller Dependency</em>' class.
@@ -54788,22 +56183,22 @@ public interface FramewebPackage extends EPackage {
 	int PAGE_DEPENDENCY__SUPPLIER = NAVIGATION_DEPENDENCY__SUPPLIER;
 
 	/**
-	 * The feature id for the '<em><b>Target Page</b></em>' reference.
+	 * The feature id for the '<em><b>Supplier Page</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PAGE_DEPENDENCY__TARGET_PAGE = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 0;
+	int PAGE_DEPENDENCY__SUPPLIER_PAGE = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Source Template</b></em>' reference.
+	 * The feature id for the '<em><b>Client Template</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PAGE_DEPENDENCY__SOURCE_TEMPLATE = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 1;
+	int PAGE_DEPENDENCY__CLIENT_TEMPLATE = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Link HTML</b></em>' attribute.
@@ -54815,13 +56210,13 @@ public interface FramewebPackage extends EPackage {
 	int PAGE_DEPENDENCY__LINK_HTML = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 2;
 
 	/**
-	 * The feature id for the '<em><b>Source Page</b></em>' reference.
+	 * The feature id for the '<em><b>Client Page</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PAGE_DEPENDENCY__SOURCE_PAGE = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 3;
+	int PAGE_DEPENDENCY__CLIENT_PAGE = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Page Dependency</em>' class.
@@ -55509,22 +56904,22 @@ public interface FramewebPackage extends EPackage {
 	int CHAINING_DEPENDENCY__IN_METHOD = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Target Front Controller</b></em>' reference.
+	 * The feature id for the '<em><b>Supplier Front Controller</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHAINING_DEPENDENCY__TARGET_FRONT_CONTROLLER = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 2;
+	int CHAINING_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 2;
 
 	/**
-	 * The feature id for the '<em><b>Source Front Controller</b></em>' reference.
+	 * The feature id for the '<em><b>Client Front Controller</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHAINING_DEPENDENCY__SOURCE_FRONT_CONTROLLER = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 3;
+	int CHAINING_DEPENDENCY__CLIENT_FRONT_CONTROLLER = NAVIGATION_DEPENDENCY_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Chaining Dependency</em>' class.
@@ -72290,13 +73685,1525 @@ public interface FramewebPackage extends EPackage {
 	int RESULT_TYPE = 66;
 
 	/**
+	 * The feature id for the '<em><b>EAnnotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__EANNOTATIONS = UMLPackage.CLASS__EANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__OWNED_COMMENT = UMLPackage.CLASS__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__OWNED_ELEMENT = UMLPackage.CLASS__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__OWNER = UMLPackage.CLASS__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__CLIENT_DEPENDENCY = UMLPackage.CLASS__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__NAME = UMLPackage.CLASS__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__NAME_EXPRESSION = UMLPackage.CLASS__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__NAMESPACE = UMLPackage.CLASS__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__QUALIFIED_NAME = UMLPackage.CLASS__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__VISIBILITY = UMLPackage.CLASS__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__OWNED_RULE = UMLPackage.CLASS__OWNED_RULE;
+
+	/**
+	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__ELEMENT_IMPORT = UMLPackage.CLASS__ELEMENT_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__PACKAGE_IMPORT = UMLPackage.CLASS__PACKAGE_IMPORT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__OWNED_MEMBER = UMLPackage.CLASS__OWNED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__IMPORTED_MEMBER = UMLPackage.CLASS__IMPORTED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__MEMBER = UMLPackage.CLASS__MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__IS_LEAF = UMLPackage.CLASS__IS_LEAF;
+
+	/**
+	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__REDEFINED_ELEMENT = UMLPackage.CLASS__REDEFINED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__REDEFINITION_CONTEXT = UMLPackage.CLASS__REDEFINITION_CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__OWNING_TEMPLATE_PARAMETER = UMLPackage.CLASS__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__TEMPLATE_PARAMETER = UMLPackage.CLASS__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Package</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__PACKAGE = UMLPackage.CLASS__PACKAGE;
+
+	/**
+	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__TEMPLATE_BINDING = UMLPackage.CLASS__TEMPLATE_BINDING;
+
+	/**
+	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__OWNED_TEMPLATE_SIGNATURE = UMLPackage.CLASS__OWNED_TEMPLATE_SIGNATURE;
+
+	/**
+	 * The feature id for the '<em><b>Feature</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__FEATURE = UMLPackage.CLASS__FEATURE;
+
+	/**
+	 * The feature id for the '<em><b>Attribute</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__ATTRIBUTE = UMLPackage.CLASS__ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Collaboration Use</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__COLLABORATION_USE = UMLPackage.CLASS__COLLABORATION_USE;
+
+	/**
+	 * The feature id for the '<em><b>General</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__GENERAL = UMLPackage.CLASS__GENERAL;
+
+	/**
+	 * The feature id for the '<em><b>Generalization</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__GENERALIZATION = UMLPackage.CLASS__GENERALIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Powertype Extent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__POWERTYPE_EXTENT = UMLPackage.CLASS__POWERTYPE_EXTENT;
+
+	/**
+	 * The feature id for the '<em><b>Inherited Member</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__INHERITED_MEMBER = UMLPackage.CLASS__INHERITED_MEMBER;
+
+	/**
+	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__IS_ABSTRACT = UMLPackage.CLASS__IS_ABSTRACT;
+
+	/**
+	 * The feature id for the '<em><b>Is Final Specialization</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__IS_FINAL_SPECIALIZATION = UMLPackage.CLASS__IS_FINAL_SPECIALIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Use Case</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__OWNED_USE_CASE = UMLPackage.CLASS__OWNED_USE_CASE;
+
+	/**
+	 * The feature id for the '<em><b>Use Case</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__USE_CASE = UMLPackage.CLASS__USE_CASE;
+
+	/**
+	 * The feature id for the '<em><b>Redefined Classifier</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__REDEFINED_CLASSIFIER = UMLPackage.CLASS__REDEFINED_CLASSIFIER;
+
+	/**
+	 * The feature id for the '<em><b>Representation</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__REPRESENTATION = UMLPackage.CLASS__REPRESENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Substitution</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__SUBSTITUTION = UMLPackage.CLASS__SUBSTITUTION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Attribute</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__OWNED_ATTRIBUTE = UMLPackage.CLASS__OWNED_ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Connector</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__OWNED_CONNECTOR = UMLPackage.CLASS__OWNED_CONNECTOR;
+
+	/**
+	 * The feature id for the '<em><b>Part</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__PART = UMLPackage.CLASS__PART;
+
+	/**
+	 * The feature id for the '<em><b>Role</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__ROLE = UMLPackage.CLASS__ROLE;
+
+	/**
+	 * The feature id for the '<em><b>Owned Port</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__OWNED_PORT = UMLPackage.CLASS__OWNED_PORT;
+
+	/**
+	 * The feature id for the '<em><b>Classifier Behavior</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__CLASSIFIER_BEHAVIOR = UMLPackage.CLASS__CLASSIFIER_BEHAVIOR;
+
+	/**
+	 * The feature id for the '<em><b>Interface Realization</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__INTERFACE_REALIZATION = UMLPackage.CLASS__INTERFACE_REALIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Owned Behavior</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__OWNED_BEHAVIOR = UMLPackage.CLASS__OWNED_BEHAVIOR;
+
+	/**
+	 * The feature id for the '<em><b>Owned Operation</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__OWNED_OPERATION = UMLPackage.CLASS__OWNED_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>Extension</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__EXTENSION = UMLPackage.CLASS__EXTENSION;
+
+	/**
+	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__IS_ACTIVE = UMLPackage.CLASS__IS_ACTIVE;
+
+	/**
+	 * The feature id for the '<em><b>Nested Classifier</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__NESTED_CLASSIFIER = UMLPackage.CLASS__NESTED_CLASSIFIER;
+
+	/**
+	 * The feature id for the '<em><b>Owned Reception</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__OWNED_RECEPTION = UMLPackage.CLASS__OWNED_RECEPTION;
+
+	/**
+	 * The feature id for the '<em><b>Super Class</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE__SUPER_CLASS = UMLPackage.CLASS__SUPER_CLASS;
+
+	/**
 	 * The number of structural features of the '<em>Result Type</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_TYPE_FEATURE_COUNT = 0;
+	int RESULT_TYPE_FEATURE_COUNT = UMLPackage.CLASS_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Get EAnnotation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_EANNOTATION__STRING = UMLPackage.CLASS___GET_EANNOTATION__STRING;
+
+	/**
+	 * The operation id for the '<em>Validate Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Add Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___ADD_KEYWORD__STRING = UMLPackage.CLASS___ADD_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Apply Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___APPLY_STEREOTYPE__STEREOTYPE = UMLPackage.CLASS___APPLY_STEREOTYPE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Create EAnnotation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___CREATE_EANNOTATION__STRING = UMLPackage.CLASS___CREATE_EANNOTATION__STRING;
+
+	/**
+	 * The operation id for the '<em>Destroy</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___DESTROY = UMLPackage.CLASS___DESTROY;
+
+	/**
+	 * The operation id for the '<em>Get Keywords</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_KEYWORDS = UMLPackage.CLASS___GET_KEYWORDS;
+
+	/**
+	 * The operation id for the '<em>Get Applicable Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_APPLICABLE_STEREOTYPE__STRING = UMLPackage.CLASS___GET_APPLICABLE_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_APPLICABLE_STEREOTYPES = UMLPackage.CLASS___GET_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Applied Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_APPLIED_STEREOTYPE__STRING = UMLPackage.CLASS___GET_APPLIED_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applied Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_APPLIED_STEREOTYPES = UMLPackage.CLASS___GET_APPLIED_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Applied Substereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING = UMLPackage.CLASS___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applied Substereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE = UMLPackage.CLASS___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Get Model</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_MODEL = UMLPackage.CLASS___GET_MODEL;
+
+	/**
+	 * The operation id for the '<em>Get Nearest Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_NEAREST_PACKAGE = UMLPackage.CLASS___GET_NEAREST_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Get Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_RELATIONSHIPS = UMLPackage.CLASS___GET_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_RELATIONSHIPS__ECLASS = UMLPackage.CLASS___GET_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Required Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_REQUIRED_STEREOTYPE__STRING = UMLPackage.CLASS___GET_REQUIRED_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Required Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_REQUIRED_STEREOTYPES = UMLPackage.CLASS___GET_REQUIRED_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_SOURCE_DIRECTED_RELATIONSHIPS = UMLPackage.CLASS___GET_SOURCE_DIRECTED_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS = UMLPackage.CLASS___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Stereotype Application</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_STEREOTYPE_APPLICATION__STEREOTYPE = UMLPackage.CLASS___GET_STEREOTYPE_APPLICATION__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Get Stereotype Applications</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_STEREOTYPE_APPLICATIONS = UMLPackage.CLASS___GET_STEREOTYPE_APPLICATIONS;
+
+	/**
+	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_TARGET_DIRECTED_RELATIONSHIPS = UMLPackage.CLASS___GET_TARGET_DIRECTED_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS = UMLPackage.CLASS___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_VALUE__STEREOTYPE_STRING = UMLPackage.CLASS___GET_VALUE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Has Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___HAS_KEYWORD__STRING = UMLPackage.CLASS___HAS_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Has Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___HAS_VALUE__STEREOTYPE_STRING = UMLPackage.CLASS___HAS_VALUE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Applicable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___IS_STEREOTYPE_APPLICABLE__STEREOTYPE = UMLPackage.CLASS___IS_STEREOTYPE_APPLICABLE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Applied</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___IS_STEREOTYPE_APPLIED__STEREOTYPE = UMLPackage.CLASS___IS_STEREOTYPE_APPLIED__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Required</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___IS_STEREOTYPE_REQUIRED__STEREOTYPE = UMLPackage.CLASS___IS_STEREOTYPE_REQUIRED__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Remove Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___REMOVE_KEYWORD__STRING = UMLPackage.CLASS___REMOVE_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Set Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___SET_VALUE__STEREOTYPE_STRING_OBJECT = UMLPackage.CLASS___SET_VALUE__STEREOTYPE_STRING_OBJECT;
+
+	/**
+	 * The operation id for the '<em>Unapply Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___UNAPPLY_STEREOTYPE__STEREOTYPE = UMLPackage.CLASS___UNAPPLY_STEREOTYPE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___ALL_OWNED_ELEMENTS = UMLPackage.CLASS___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___MUST_BE_OWNED = UMLPackage.CLASS___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Validate Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Create Dependency</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___CREATE_DEPENDENCY__NAMEDELEMENT = UMLPackage.CLASS___CREATE_DEPENDENCY__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Create Usage</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___CREATE_USAGE__NAMEDELEMENT = UMLPackage.CLASS___CREATE_USAGE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_LABEL = UMLPackage.CLASS___GET_LABEL;
+
+	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_LABEL__BOOLEAN = UMLPackage.CLASS___GET_LABEL__BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Get Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_NAMESPACE = UMLPackage.CLASS___GET_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___ALL_NAMESPACES = UMLPackage.CLASS___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___ALL_OWNING_PACKAGES = UMLPackage.CLASS___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = UMLPackage.CLASS___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Get Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_QUALIFIED_NAME = UMLPackage.CLASS___GET_QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___SEPARATOR = UMLPackage.CLASS___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Get Client Dependencies</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_CLIENT_DEPENDENCIES = UMLPackage.CLASS___GET_CLIENT_DEPENDENCIES;
+
+	/**
+	 * The operation id for the '<em>Validate Members Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Cannot Import Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Cannot Import Owned Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Create Element Import</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND = UMLPackage.CLASS___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND;
+
+	/**
+	 * The operation id for the '<em>Create Package Import</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND = UMLPackage.CLASS___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND;
+
+	/**
+	 * The operation id for the '<em>Get Imported Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_IMPORTED_ELEMENTS = UMLPackage.CLASS___GET_IMPORTED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Get Imported Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_IMPORTED_PACKAGES = UMLPackage.CLASS___GET_IMPORTED_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Get Owned Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_OWNED_MEMBERS = UMLPackage.CLASS___GET_OWNED_MEMBERS;
+
+	/**
+	 * The operation id for the '<em>Exclude Collisions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___EXCLUDE_COLLISIONS__ELIST = UMLPackage.CLASS___EXCLUDE_COLLISIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Names Of Member</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_NAMES_OF_MEMBER__NAMEDELEMENT = UMLPackage.CLASS___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Import Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___IMPORT_MEMBERS__ELIST = UMLPackage.CLASS___IMPORT_MEMBERS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Imported Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_IMPORTED_MEMBERS = UMLPackage.CLASS___GET_IMPORTED_MEMBERS;
+
+	/**
+	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___MEMBERS_ARE_DISTINGUISHABLE = UMLPackage.CLASS___MEMBERS_ARE_DISTINGUISHABLE;
+
+	/**
+	 * The operation id for the '<em>Validate Redefinition Consistent</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Non Leaf Redefinition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Redefinition Context Valid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Is Consistent With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = UMLPackage.CLASS___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = UMLPackage.CLASS___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = UMLPackage.CLASS___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___IS_TEMPLATE_PARAMETER = UMLPackage.CLASS___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Validate Namespace Needs Visibility</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Create Association</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT = UMLPackage.CLASS___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT;
+
+	/**
+	 * The operation id for the '<em>Get Associations</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_ASSOCIATIONS = UMLPackage.CLASS___GET_ASSOCIATIONS;
+
+	/**
+	 * The operation id for the '<em>Conforms To</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___CONFORMS_TO__TYPE = UMLPackage.CLASS___CONFORMS_TO__TYPE;
+
+	/**
+	 * The operation id for the '<em>Is Template</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___IS_TEMPLATE = UMLPackage.CLASS___IS_TEMPLATE;
+
+	/**
+	 * The operation id for the '<em>Parameterable Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___PARAMETERABLE_ELEMENTS = UMLPackage.CLASS___PARAMETERABLE_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Validate Specialize Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Maps To Generalization Set</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Non Final Parents</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate No Cycles In Generalization</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Get All Attributes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_ALL_ATTRIBUTES = UMLPackage.CLASS___GET_ALL_ATTRIBUTES;
+
+	/**
+	 * The operation id for the '<em>Get All Operations</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_ALL_OPERATIONS = UMLPackage.CLASS___GET_ALL_OPERATIONS;
+
+	/**
+	 * The operation id for the '<em>Get All Used Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_ALL_USED_INTERFACES = UMLPackage.CLASS___GET_ALL_USED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>Get Operation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_OPERATION__STRING_ELIST_ELIST = UMLPackage.CLASS___GET_OPERATION__STRING_ELIST_ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Operation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN = UMLPackage.CLASS___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Get Operations</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_OPERATIONS = UMLPackage.CLASS___GET_OPERATIONS;
+
+	/**
+	 * The operation id for the '<em>Get Used Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_USED_INTERFACES = UMLPackage.CLASS___GET_USED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>All Features</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___ALL_FEATURES = UMLPackage.CLASS___ALL_FEATURES;
+
+	/**
+	 * The operation id for the '<em>All Parents</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___ALL_PARENTS = UMLPackage.CLASS___ALL_PARENTS;
+
+	/**
+	 * The operation id for the '<em>Get Generals</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_GENERALS = UMLPackage.CLASS___GET_GENERALS;
+
+	/**
+	 * The operation id for the '<em>Has Visibility Of</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___HAS_VISIBILITY_OF__NAMEDELEMENT = UMLPackage.CLASS___HAS_VISIBILITY_OF__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Inherit</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___INHERIT__ELIST = UMLPackage.CLASS___INHERIT__ELIST;
+
+	/**
+	 * The operation id for the '<em>Inheritable Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___INHERITABLE_MEMBERS__CLASSIFIER = UMLPackage.CLASS___INHERITABLE_MEMBERS__CLASSIFIER;
+
+	/**
+	 * The operation id for the '<em>Get Inherited Members</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_INHERITED_MEMBERS = UMLPackage.CLASS___GET_INHERITED_MEMBERS;
+
+	/**
+	 * The operation id for the '<em>May Specialize Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___MAY_SPECIALIZE_TYPE__CLASSIFIER = UMLPackage.CLASS___MAY_SPECIALIZE_TYPE__CLASSIFIER;
+
+	/**
+	 * The operation id for the '<em>Parents</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___PARENTS = UMLPackage.CLASS___PARENTS;
+
+	/**
+	 * The operation id for the '<em>Directly Realized Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___DIRECTLY_REALIZED_INTERFACES = UMLPackage.CLASS___DIRECTLY_REALIZED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>Directly Used Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___DIRECTLY_USED_INTERFACES = UMLPackage.CLASS___DIRECTLY_USED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>All Realized Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___ALL_REALIZED_INTERFACES = UMLPackage.CLASS___ALL_REALIZED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>All Used Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___ALL_USED_INTERFACES = UMLPackage.CLASS___ALL_USED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>Is Substitutable For</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___IS_SUBSTITUTABLE_FOR__CLASSIFIER = UMLPackage.CLASS___IS_SUBSTITUTABLE_FOR__CLASSIFIER;
+
+	/**
+	 * The operation id for the '<em>All Attributes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___ALL_ATTRIBUTES = UMLPackage.CLASS___ALL_ATTRIBUTES;
+
+	/**
+	 * The operation id for the '<em>All Slottable Features</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___ALL_SLOTTABLE_FEATURES = UMLPackage.CLASS___ALL_SLOTTABLE_FEATURES;
+
+	/**
+	 * The operation id for the '<em>Create Owned Attribute</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___CREATE_OWNED_ATTRIBUTE__STRING_TYPE_INT_INT = UMLPackage.CLASS___CREATE_OWNED_ATTRIBUTE__STRING_TYPE_INT_INT;
+
+	/**
+	 * The operation id for the '<em>Get Parts</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_PARTS = UMLPackage.CLASS___GET_PARTS;
+
+	/**
+	 * The operation id for the '<em>All Roles</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___ALL_ROLES = UMLPackage.CLASS___ALL_ROLES;
+
+	/**
+	 * The operation id for the '<em>Get Owned Ports</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_OWNED_PORTS = UMLPackage.CLASS___GET_OWNED_PORTS;
+
+	/**
+	 * The operation id for the '<em>Validate Class Behavior</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Get All Implemented Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_ALL_IMPLEMENTED_INTERFACES = UMLPackage.CLASS___GET_ALL_IMPLEMENTED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>Get Implemented Interfaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_IMPLEMENTED_INTERFACES = UMLPackage.CLASS___GET_IMPLEMENTED_INTERFACES;
+
+	/**
+	 * The operation id for the '<em>Validate Passive Class</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___VALIDATE_PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = UMLPackage.CLASS___VALIDATE_PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Create Owned Operation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___CREATE_OWNED_OPERATION__STRING_ELIST_ELIST_TYPE = UMLPackage.CLASS___CREATE_OWNED_OPERATION__STRING_ELIST_ELIST_TYPE;
+
+	/**
+	 * The operation id for the '<em>Is Metaclass</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___IS_METACLASS = UMLPackage.CLASS___IS_METACLASS;
+
+	/**
+	 * The operation id for the '<em>Get Extensions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_EXTENSIONS = UMLPackage.CLASS___GET_EXTENSIONS;
+
+	/**
+	 * The operation id for the '<em>Get Super Classes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_TYPE___GET_SUPER_CLASSES = UMLPackage.CLASS___GET_SUPER_CLASSES;
 
 	/**
 	 * The number of operations of the '<em>Result Type</em>' class.
@@ -72305,7 +75212,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_TYPE_OPERATION_COUNT = 0;
+	int RESULT_TYPE_OPERATION_COUNT = UMLPackage.CLASS_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.DomainGeneralizationImpl <em>Domain Generalization</em>}' class.
@@ -76002,13 +78909,22 @@ public interface FramewebPackage extends EPackage {
 	int TAG_LIB__TAG_LIB_TAG = UMLPackage.PACKAGE_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Prefix</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TAG_LIB__PREFIX = UMLPackage.PACKAGE_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Tag Lib</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TAG_LIB_FEATURE_COUNT = UMLPackage.PACKAGE_FEATURE_COUNT + 1;
+	int TAG_LIB_FEATURE_COUNT = UMLPackage.PACKAGE_FEATURE_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Get EAnnotation</em>' operation.
@@ -76857,6 +79773,34 @@ public interface FramewebPackage extends EPackage {
 	int TAG_LIB_OPERATION_COUNT = UMLPackage.PACKAGE_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link frameweb.impl.RuleImpl <em>Rule</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see frameweb.impl.RuleImpl
+	 * @see frameweb.impl.FramewebPackageImpl#getRule()
+	 * @generated
+	 */
+	int RULE = 72;
+
+	/**
+	 * The number of structural features of the '<em>Rule</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RULE_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Rule</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RULE_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link frameweb.impl.TagImpl <em>Tag</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -76864,7 +79808,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getTag()
 	 * @generated
 	 */
-	int TAG = 74;
+	int TAG = 73;
 
 	/**
 	 * The feature id for the '<em><b>EAnnotations</b></em>' containment reference list.
@@ -78406,1583 +81350,6 @@ public interface FramewebPackage extends EPackage {
 	int TAG_OPERATION_COUNT = UMLPackage.CLASS_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link frameweb.impl.FrameworkTagImpl <em>Framework Tag</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see frameweb.impl.FrameworkTagImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getFrameworkTag()
-	 * @generated
-	 */
-	int FRAMEWORK_TAG = 72;
-
-	/**
-	 * The feature id for the '<em><b>EAnnotations</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__EANNOTATIONS = TAG__EANNOTATIONS;
-
-	/**
-	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__OWNED_COMMENT = TAG__OWNED_COMMENT;
-
-	/**
-	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__OWNED_ELEMENT = TAG__OWNED_ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>Owner</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__OWNER = TAG__OWNER;
-
-	/**
-	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__CLIENT_DEPENDENCY = TAG__CLIENT_DEPENDENCY;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__NAME = TAG__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__NAME_EXPRESSION = TAG__NAME_EXPRESSION;
-
-	/**
-	 * The feature id for the '<em><b>Namespace</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__NAMESPACE = TAG__NAMESPACE;
-
-	/**
-	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__QUALIFIED_NAME = TAG__QUALIFIED_NAME;
-
-	/**
-	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__VISIBILITY = TAG__VISIBILITY;
-
-	/**
-	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__OWNED_RULE = TAG__OWNED_RULE;
-
-	/**
-	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__ELEMENT_IMPORT = TAG__ELEMENT_IMPORT;
-
-	/**
-	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__PACKAGE_IMPORT = TAG__PACKAGE_IMPORT;
-
-	/**
-	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__OWNED_MEMBER = TAG__OWNED_MEMBER;
-
-	/**
-	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__IMPORTED_MEMBER = TAG__IMPORTED_MEMBER;
-
-	/**
-	 * The feature id for the '<em><b>Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__MEMBER = TAG__MEMBER;
-
-	/**
-	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__IS_LEAF = TAG__IS_LEAF;
-
-	/**
-	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__REDEFINED_ELEMENT = TAG__REDEFINED_ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__REDEFINITION_CONTEXT = TAG__REDEFINITION_CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__OWNING_TEMPLATE_PARAMETER = TAG__OWNING_TEMPLATE_PARAMETER;
-
-	/**
-	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__TEMPLATE_PARAMETER = TAG__TEMPLATE_PARAMETER;
-
-	/**
-	 * The feature id for the '<em><b>Package</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__PACKAGE = TAG__PACKAGE;
-
-	/**
-	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__TEMPLATE_BINDING = TAG__TEMPLATE_BINDING;
-
-	/**
-	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__OWNED_TEMPLATE_SIGNATURE = TAG__OWNED_TEMPLATE_SIGNATURE;
-
-	/**
-	 * The feature id for the '<em><b>Feature</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__FEATURE = TAG__FEATURE;
-
-	/**
-	 * The feature id for the '<em><b>Attribute</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__ATTRIBUTE = TAG__ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Collaboration Use</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__COLLABORATION_USE = TAG__COLLABORATION_USE;
-
-	/**
-	 * The feature id for the '<em><b>General</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__GENERAL = TAG__GENERAL;
-
-	/**
-	 * The feature id for the '<em><b>Generalization</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__GENERALIZATION = TAG__GENERALIZATION;
-
-	/**
-	 * The feature id for the '<em><b>Powertype Extent</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__POWERTYPE_EXTENT = TAG__POWERTYPE_EXTENT;
-
-	/**
-	 * The feature id for the '<em><b>Inherited Member</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__INHERITED_MEMBER = TAG__INHERITED_MEMBER;
-
-	/**
-	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__IS_ABSTRACT = TAG__IS_ABSTRACT;
-
-	/**
-	 * The feature id for the '<em><b>Is Final Specialization</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__IS_FINAL_SPECIALIZATION = TAG__IS_FINAL_SPECIALIZATION;
-
-	/**
-	 * The feature id for the '<em><b>Owned Use Case</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__OWNED_USE_CASE = TAG__OWNED_USE_CASE;
-
-	/**
-	 * The feature id for the '<em><b>Use Case</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__USE_CASE = TAG__USE_CASE;
-
-	/**
-	 * The feature id for the '<em><b>Redefined Classifier</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__REDEFINED_CLASSIFIER = TAG__REDEFINED_CLASSIFIER;
-
-	/**
-	 * The feature id for the '<em><b>Representation</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__REPRESENTATION = TAG__REPRESENTATION;
-
-	/**
-	 * The feature id for the '<em><b>Substitution</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__SUBSTITUTION = TAG__SUBSTITUTION;
-
-	/**
-	 * The feature id for the '<em><b>Owned Attribute</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__OWNED_ATTRIBUTE = TAG__OWNED_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Owned Connector</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__OWNED_CONNECTOR = TAG__OWNED_CONNECTOR;
-
-	/**
-	 * The feature id for the '<em><b>Part</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__PART = TAG__PART;
-
-	/**
-	 * The feature id for the '<em><b>Role</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__ROLE = TAG__ROLE;
-
-	/**
-	 * The feature id for the '<em><b>Owned Port</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__OWNED_PORT = TAG__OWNED_PORT;
-
-	/**
-	 * The feature id for the '<em><b>Classifier Behavior</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__CLASSIFIER_BEHAVIOR = TAG__CLASSIFIER_BEHAVIOR;
-
-	/**
-	 * The feature id for the '<em><b>Interface Realization</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__INTERFACE_REALIZATION = TAG__INTERFACE_REALIZATION;
-
-	/**
-	 * The feature id for the '<em><b>Owned Behavior</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__OWNED_BEHAVIOR = TAG__OWNED_BEHAVIOR;
-
-	/**
-	 * The feature id for the '<em><b>Owned Operation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__OWNED_OPERATION = TAG__OWNED_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Extension</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__EXTENSION = TAG__EXTENSION;
-
-	/**
-	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__IS_ACTIVE = TAG__IS_ACTIVE;
-
-	/**
-	 * The feature id for the '<em><b>Nested Classifier</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__NESTED_CLASSIFIER = TAG__NESTED_CLASSIFIER;
-
-	/**
-	 * The feature id for the '<em><b>Owned Reception</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__OWNED_RECEPTION = TAG__OWNED_RECEPTION;
-
-	/**
-	 * The feature id for the '<em><b>Super Class</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__SUPER_CLASS = TAG__SUPER_CLASS;
-
-	/**
-	 * The feature id for the '<em><b>Sub Tag</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG__SUB_TAG = TAG__SUB_TAG;
-
-	/**
-	 * The number of structural features of the '<em>Framework Tag</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG_FEATURE_COUNT = TAG_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Get EAnnotation</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_EANNOTATION__STRING = TAG___GET_EANNOTATION__STRING;
-
-	/**
-	 * The operation id for the '<em>Validate Has Owner</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Not Own Self</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Add Keyword</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___ADD_KEYWORD__STRING = TAG___ADD_KEYWORD__STRING;
-
-	/**
-	 * The operation id for the '<em>Apply Stereotype</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___APPLY_STEREOTYPE__STEREOTYPE = TAG___APPLY_STEREOTYPE__STEREOTYPE;
-
-	/**
-	 * The operation id for the '<em>Create EAnnotation</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___CREATE_EANNOTATION__STRING = TAG___CREATE_EANNOTATION__STRING;
-
-	/**
-	 * The operation id for the '<em>Destroy</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___DESTROY = TAG___DESTROY;
-
-	/**
-	 * The operation id for the '<em>Get Keywords</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_KEYWORDS = TAG___GET_KEYWORDS;
-
-	/**
-	 * The operation id for the '<em>Get Applicable Stereotype</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_APPLICABLE_STEREOTYPE__STRING = TAG___GET_APPLICABLE_STEREOTYPE__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Applicable Stereotypes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_APPLICABLE_STEREOTYPES = TAG___GET_APPLICABLE_STEREOTYPES;
-
-	/**
-	 * The operation id for the '<em>Get Applied Stereotype</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_APPLIED_STEREOTYPE__STRING = TAG___GET_APPLIED_STEREOTYPE__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Applied Stereotypes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_APPLIED_STEREOTYPES = TAG___GET_APPLIED_STEREOTYPES;
-
-	/**
-	 * The operation id for the '<em>Get Applied Substereotype</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING = TAG___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING;
-
-	/**
-	 * The operation id for the '<em>Get Applied Substereotypes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE = TAG___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE;
-
-	/**
-	 * The operation id for the '<em>Get Model</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_MODEL = TAG___GET_MODEL;
-
-	/**
-	 * The operation id for the '<em>Get Nearest Package</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_NEAREST_PACKAGE = TAG___GET_NEAREST_PACKAGE;
-
-	/**
-	 * The operation id for the '<em>Get Relationships</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_RELATIONSHIPS = TAG___GET_RELATIONSHIPS;
-
-	/**
-	 * The operation id for the '<em>Get Relationships</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_RELATIONSHIPS__ECLASS = TAG___GET_RELATIONSHIPS__ECLASS;
-
-	/**
-	 * The operation id for the '<em>Get Required Stereotype</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_REQUIRED_STEREOTYPE__STRING = TAG___GET_REQUIRED_STEREOTYPE__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Required Stereotypes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_REQUIRED_STEREOTYPES = TAG___GET_REQUIRED_STEREOTYPES;
-
-	/**
-	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_SOURCE_DIRECTED_RELATIONSHIPS = TAG___GET_SOURCE_DIRECTED_RELATIONSHIPS;
-
-	/**
-	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS = TAG___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS;
-
-	/**
-	 * The operation id for the '<em>Get Stereotype Application</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_STEREOTYPE_APPLICATION__STEREOTYPE = TAG___GET_STEREOTYPE_APPLICATION__STEREOTYPE;
-
-	/**
-	 * The operation id for the '<em>Get Stereotype Applications</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_STEREOTYPE_APPLICATIONS = TAG___GET_STEREOTYPE_APPLICATIONS;
-
-	/**
-	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_TARGET_DIRECTED_RELATIONSHIPS = TAG___GET_TARGET_DIRECTED_RELATIONSHIPS;
-
-	/**
-	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS = TAG___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS;
-
-	/**
-	 * The operation id for the '<em>Get Value</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_VALUE__STEREOTYPE_STRING = TAG___GET_VALUE__STEREOTYPE_STRING;
-
-	/**
-	 * The operation id for the '<em>Has Keyword</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___HAS_KEYWORD__STRING = TAG___HAS_KEYWORD__STRING;
-
-	/**
-	 * The operation id for the '<em>Has Value</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___HAS_VALUE__STEREOTYPE_STRING = TAG___HAS_VALUE__STEREOTYPE_STRING;
-
-	/**
-	 * The operation id for the '<em>Is Stereotype Applicable</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___IS_STEREOTYPE_APPLICABLE__STEREOTYPE = TAG___IS_STEREOTYPE_APPLICABLE__STEREOTYPE;
-
-	/**
-	 * The operation id for the '<em>Is Stereotype Applied</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___IS_STEREOTYPE_APPLIED__STEREOTYPE = TAG___IS_STEREOTYPE_APPLIED__STEREOTYPE;
-
-	/**
-	 * The operation id for the '<em>Is Stereotype Required</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___IS_STEREOTYPE_REQUIRED__STEREOTYPE = TAG___IS_STEREOTYPE_REQUIRED__STEREOTYPE;
-
-	/**
-	 * The operation id for the '<em>Remove Keyword</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___REMOVE_KEYWORD__STRING = TAG___REMOVE_KEYWORD__STRING;
-
-	/**
-	 * The operation id for the '<em>Set Value</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___SET_VALUE__STEREOTYPE_STRING_OBJECT = TAG___SET_VALUE__STEREOTYPE_STRING_OBJECT;
-
-	/**
-	 * The operation id for the '<em>Unapply Stereotype</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___UNAPPLY_STEREOTYPE__STEREOTYPE = TAG___UNAPPLY_STEREOTYPE__STEREOTYPE;
-
-	/**
-	 * The operation id for the '<em>All Owned Elements</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___ALL_OWNED_ELEMENTS = TAG___ALL_OWNED_ELEMENTS;
-
-	/**
-	 * The operation id for the '<em>Must Be Owned</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___MUST_BE_OWNED = TAG___MUST_BE_OWNED;
-
-	/**
-	 * The operation id for the '<em>Validate Visibility Needs Ownership</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Has Qualified Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Has No Qualified Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Create Dependency</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___CREATE_DEPENDENCY__NAMEDELEMENT = TAG___CREATE_DEPENDENCY__NAMEDELEMENT;
-
-	/**
-	 * The operation id for the '<em>Create Usage</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___CREATE_USAGE__NAMEDELEMENT = TAG___CREATE_USAGE__NAMEDELEMENT;
-
-	/**
-	 * The operation id for the '<em>Get Label</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_LABEL = TAG___GET_LABEL;
-
-	/**
-	 * The operation id for the '<em>Get Label</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_LABEL__BOOLEAN = TAG___GET_LABEL__BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>Get Namespace</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_NAMESPACE = TAG___GET_NAMESPACE;
-
-	/**
-	 * The operation id for the '<em>All Namespaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___ALL_NAMESPACES = TAG___ALL_NAMESPACES;
-
-	/**
-	 * The operation id for the '<em>All Owning Packages</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___ALL_OWNING_PACKAGES = TAG___ALL_OWNING_PACKAGES;
-
-	/**
-	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = TAG___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
-
-	/**
-	 * The operation id for the '<em>Get Qualified Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_QUALIFIED_NAME = TAG___GET_QUALIFIED_NAME;
-
-	/**
-	 * The operation id for the '<em>Separator</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___SEPARATOR = TAG___SEPARATOR;
-
-	/**
-	 * The operation id for the '<em>Get Client Dependencies</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_CLIENT_DEPENDENCIES = TAG___GET_CLIENT_DEPENDENCIES;
-
-	/**
-	 * The operation id for the '<em>Validate Members Distinguishable</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Cannot Import Self</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Cannot Import Owned Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Create Element Import</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND = TAG___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND;
-
-	/**
-	 * The operation id for the '<em>Create Package Import</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND = TAG___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND;
-
-	/**
-	 * The operation id for the '<em>Get Imported Elements</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_IMPORTED_ELEMENTS = TAG___GET_IMPORTED_ELEMENTS;
-
-	/**
-	 * The operation id for the '<em>Get Imported Packages</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_IMPORTED_PACKAGES = TAG___GET_IMPORTED_PACKAGES;
-
-	/**
-	 * The operation id for the '<em>Get Owned Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_OWNED_MEMBERS = TAG___GET_OWNED_MEMBERS;
-
-	/**
-	 * The operation id for the '<em>Exclude Collisions</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___EXCLUDE_COLLISIONS__ELIST = TAG___EXCLUDE_COLLISIONS__ELIST;
-
-	/**
-	 * The operation id for the '<em>Get Names Of Member</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_NAMES_OF_MEMBER__NAMEDELEMENT = TAG___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
-
-	/**
-	 * The operation id for the '<em>Import Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___IMPORT_MEMBERS__ELIST = TAG___IMPORT_MEMBERS__ELIST;
-
-	/**
-	 * The operation id for the '<em>Get Imported Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_IMPORTED_MEMBERS = TAG___GET_IMPORTED_MEMBERS;
-
-	/**
-	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___MEMBERS_ARE_DISTINGUISHABLE = TAG___MEMBERS_ARE_DISTINGUISHABLE;
-
-	/**
-	 * The operation id for the '<em>Validate Redefinition Consistent</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Non Leaf Redefinition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Redefinition Context Valid</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Is Consistent With</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = TAG___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
-
-	/**
-	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = TAG___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
-
-	/**
-	 * The operation id for the '<em>Is Compatible With</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = TAG___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
-
-	/**
-	 * The operation id for the '<em>Is Template Parameter</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___IS_TEMPLATE_PARAMETER = TAG___IS_TEMPLATE_PARAMETER;
-
-	/**
-	 * The operation id for the '<em>Validate Namespace Needs Visibility</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Create Association</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT = TAG___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT;
-
-	/**
-	 * The operation id for the '<em>Get Associations</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_ASSOCIATIONS = TAG___GET_ASSOCIATIONS;
-
-	/**
-	 * The operation id for the '<em>Conforms To</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___CONFORMS_TO__TYPE = TAG___CONFORMS_TO__TYPE;
-
-	/**
-	 * The operation id for the '<em>Is Template</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___IS_TEMPLATE = TAG___IS_TEMPLATE;
-
-	/**
-	 * The operation id for the '<em>Parameterable Elements</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___PARAMETERABLE_ELEMENTS = TAG___PARAMETERABLE_ELEMENTS;
-
-	/**
-	 * The operation id for the '<em>Validate Specialize Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Maps To Generalization Set</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate Non Final Parents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Validate No Cycles In Generalization</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Get All Attributes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_ALL_ATTRIBUTES = TAG___GET_ALL_ATTRIBUTES;
-
-	/**
-	 * The operation id for the '<em>Get All Operations</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_ALL_OPERATIONS = TAG___GET_ALL_OPERATIONS;
-
-	/**
-	 * The operation id for the '<em>Get All Used Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_ALL_USED_INTERFACES = TAG___GET_ALL_USED_INTERFACES;
-
-	/**
-	 * The operation id for the '<em>Get Operation</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_OPERATION__STRING_ELIST_ELIST = TAG___GET_OPERATION__STRING_ELIST_ELIST;
-
-	/**
-	 * The operation id for the '<em>Get Operation</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN = TAG___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>Get Operations</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_OPERATIONS = TAG___GET_OPERATIONS;
-
-	/**
-	 * The operation id for the '<em>Get Used Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_USED_INTERFACES = TAG___GET_USED_INTERFACES;
-
-	/**
-	 * The operation id for the '<em>All Features</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___ALL_FEATURES = TAG___ALL_FEATURES;
-
-	/**
-	 * The operation id for the '<em>All Parents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___ALL_PARENTS = TAG___ALL_PARENTS;
-
-	/**
-	 * The operation id for the '<em>Get Generals</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_GENERALS = TAG___GET_GENERALS;
-
-	/**
-	 * The operation id for the '<em>Has Visibility Of</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___HAS_VISIBILITY_OF__NAMEDELEMENT = TAG___HAS_VISIBILITY_OF__NAMEDELEMENT;
-
-	/**
-	 * The operation id for the '<em>Inherit</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___INHERIT__ELIST = TAG___INHERIT__ELIST;
-
-	/**
-	 * The operation id for the '<em>Inheritable Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___INHERITABLE_MEMBERS__CLASSIFIER = TAG___INHERITABLE_MEMBERS__CLASSIFIER;
-
-	/**
-	 * The operation id for the '<em>Get Inherited Members</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_INHERITED_MEMBERS = TAG___GET_INHERITED_MEMBERS;
-
-	/**
-	 * The operation id for the '<em>May Specialize Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___MAY_SPECIALIZE_TYPE__CLASSIFIER = TAG___MAY_SPECIALIZE_TYPE__CLASSIFIER;
-
-	/**
-	 * The operation id for the '<em>Parents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___PARENTS = TAG___PARENTS;
-
-	/**
-	 * The operation id for the '<em>Directly Realized Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___DIRECTLY_REALIZED_INTERFACES = TAG___DIRECTLY_REALIZED_INTERFACES;
-
-	/**
-	 * The operation id for the '<em>Directly Used Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___DIRECTLY_USED_INTERFACES = TAG___DIRECTLY_USED_INTERFACES;
-
-	/**
-	 * The operation id for the '<em>All Realized Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___ALL_REALIZED_INTERFACES = TAG___ALL_REALIZED_INTERFACES;
-
-	/**
-	 * The operation id for the '<em>All Used Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___ALL_USED_INTERFACES = TAG___ALL_USED_INTERFACES;
-
-	/**
-	 * The operation id for the '<em>Is Substitutable For</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___IS_SUBSTITUTABLE_FOR__CLASSIFIER = TAG___IS_SUBSTITUTABLE_FOR__CLASSIFIER;
-
-	/**
-	 * The operation id for the '<em>All Attributes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___ALL_ATTRIBUTES = TAG___ALL_ATTRIBUTES;
-
-	/**
-	 * The operation id for the '<em>All Slottable Features</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___ALL_SLOTTABLE_FEATURES = TAG___ALL_SLOTTABLE_FEATURES;
-
-	/**
-	 * The operation id for the '<em>Create Owned Attribute</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___CREATE_OWNED_ATTRIBUTE__STRING_TYPE_INT_INT = TAG___CREATE_OWNED_ATTRIBUTE__STRING_TYPE_INT_INT;
-
-	/**
-	 * The operation id for the '<em>Get Parts</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_PARTS = TAG___GET_PARTS;
-
-	/**
-	 * The operation id for the '<em>All Roles</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___ALL_ROLES = TAG___ALL_ROLES;
-
-	/**
-	 * The operation id for the '<em>Get Owned Ports</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_OWNED_PORTS = TAG___GET_OWNED_PORTS;
-
-	/**
-	 * The operation id for the '<em>Validate Class Behavior</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_CLASS_BEHAVIOR__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Get All Implemented Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_ALL_IMPLEMENTED_INTERFACES = TAG___GET_ALL_IMPLEMENTED_INTERFACES;
-
-	/**
-	 * The operation id for the '<em>Get Implemented Interfaces</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_IMPLEMENTED_INTERFACES = TAG___GET_IMPLEMENTED_INTERFACES;
-
-	/**
-	 * The operation id for the '<em>Validate Passive Class</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___VALIDATE_PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP = TAG___VALIDATE_PASSIVE_CLASS__DIAGNOSTICCHAIN_MAP;
-
-	/**
-	 * The operation id for the '<em>Create Owned Operation</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___CREATE_OWNED_OPERATION__STRING_ELIST_ELIST_TYPE = TAG___CREATE_OWNED_OPERATION__STRING_ELIST_ELIST_TYPE;
-
-	/**
-	 * The operation id for the '<em>Is Metaclass</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___IS_METACLASS = TAG___IS_METACLASS;
-
-	/**
-	 * The operation id for the '<em>Get Extensions</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_EXTENSIONS = TAG___GET_EXTENSIONS;
-
-	/**
-	 * The operation id for the '<em>Get Super Classes</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG___GET_SUPER_CLASSES = TAG___GET_SUPER_CLASSES;
-
-	/**
-	 * The number of operations of the '<em>Framework Tag</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAMEWORK_TAG_OPERATION_COUNT = TAG_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link frameweb.impl.RuleImpl <em>Rule</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see frameweb.impl.RuleImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getRule()
-	 * @generated
-	 */
-	int RULE = 73;
-
-	/**
-	 * The number of structural features of the '<em>Rule</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RULE_FEATURE_COUNT = 0;
-
-	/**
-	 * The number of operations of the '<em>Rule</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RULE_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link frameweb.impl.AnotationImpl <em>Anotation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -79990,7 +81357,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getAnotation()
 	 * @generated
 	 */
-	int ANOTATION = 75;
+	int ANOTATION = 74;
 
 	/**
 	 * The number of structural features of the '<em>Anotation</em>' class.
@@ -80011,6 +81378,4167 @@ public interface FramewebPackage extends EPackage {
 	int ANOTATION_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link frameweb.impl.NavigationPropertyImpl <em>Navigation Property</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see frameweb.impl.NavigationPropertyImpl
+	 * @see frameweb.impl.FramewebPackageImpl#getNavigationProperty()
+	 * @generated
+	 */
+	int NAVIGATION_PROPERTY = 77;
+
+	/**
+	 * The feature id for the '<em><b>EAnnotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__EANNOTATIONS = UMLPackage.PROPERTY__EANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__OWNED_COMMENT = UMLPackage.PROPERTY__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__OWNED_ELEMENT = UMLPackage.PROPERTY__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__OWNER = UMLPackage.PROPERTY__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__CLIENT_DEPENDENCY = UMLPackage.PROPERTY__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__NAME = UMLPackage.PROPERTY__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__NAME_EXPRESSION = UMLPackage.PROPERTY__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__NAMESPACE = UMLPackage.PROPERTY__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__QUALIFIED_NAME = UMLPackage.PROPERTY__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__VISIBILITY = UMLPackage.PROPERTY__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__IS_LEAF = UMLPackage.PROPERTY__IS_LEAF;
+
+	/**
+	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__REDEFINED_ELEMENT = UMLPackage.PROPERTY__REDEFINED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__REDEFINITION_CONTEXT = UMLPackage.PROPERTY__REDEFINITION_CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Featuring Classifier</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__FEATURING_CLASSIFIER = UMLPackage.PROPERTY__FEATURING_CLASSIFIER;
+
+	/**
+	 * The feature id for the '<em><b>Is Static</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__IS_STATIC = UMLPackage.PROPERTY__IS_STATIC;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__TYPE = UMLPackage.PROPERTY__TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Is Ordered</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__IS_ORDERED = UMLPackage.PROPERTY__IS_ORDERED;
+
+	/**
+	 * The feature id for the '<em><b>Is Unique</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__IS_UNIQUE = UMLPackage.PROPERTY__IS_UNIQUE;
+
+	/**
+	 * The feature id for the '<em><b>Lower</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__LOWER = UMLPackage.PROPERTY__LOWER;
+
+	/**
+	 * The feature id for the '<em><b>Lower Value</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__LOWER_VALUE = UMLPackage.PROPERTY__LOWER_VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Upper</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__UPPER = UMLPackage.PROPERTY__UPPER;
+
+	/**
+	 * The feature id for the '<em><b>Upper Value</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__UPPER_VALUE = UMLPackage.PROPERTY__UPPER_VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Is Read Only</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__IS_READ_ONLY = UMLPackage.PROPERTY__IS_READ_ONLY;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__OWNING_TEMPLATE_PARAMETER = UMLPackage.PROPERTY__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__TEMPLATE_PARAMETER = UMLPackage.PROPERTY__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>End</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__END = UMLPackage.PROPERTY__END;
+
+	/**
+	 * The feature id for the '<em><b>Deployed Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__DEPLOYED_ELEMENT = UMLPackage.PROPERTY__DEPLOYED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Deployment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__DEPLOYMENT = UMLPackage.PROPERTY__DEPLOYMENT;
+
+	/**
+	 * The feature id for the '<em><b>Datatype</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__DATATYPE = UMLPackage.PROPERTY__DATATYPE;
+
+	/**
+	 * The feature id for the '<em><b>Interface</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__INTERFACE = UMLPackage.PROPERTY__INTERFACE;
+
+	/**
+	 * The feature id for the '<em><b>Default</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__DEFAULT = UMLPackage.PROPERTY__DEFAULT;
+
+	/**
+	 * The feature id for the '<em><b>Aggregation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__AGGREGATION = UMLPackage.PROPERTY__AGGREGATION;
+
+	/**
+	 * The feature id for the '<em><b>Association End</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__ASSOCIATION_END = UMLPackage.PROPERTY__ASSOCIATION_END;
+
+	/**
+	 * The feature id for the '<em><b>Qualifier</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__QUALIFIER = UMLPackage.PROPERTY__QUALIFIER;
+
+	/**
+	 * The feature id for the '<em><b>Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__CLASS = UMLPackage.PROPERTY__CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Default Value</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__DEFAULT_VALUE = UMLPackage.PROPERTY__DEFAULT_VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Is Composite</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__IS_COMPOSITE = UMLPackage.PROPERTY__IS_COMPOSITE;
+
+	/**
+	 * The feature id for the '<em><b>Is Derived</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__IS_DERIVED = UMLPackage.PROPERTY__IS_DERIVED;
+
+	/**
+	 * The feature id for the '<em><b>Is Derived Union</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__IS_DERIVED_UNION = UMLPackage.PROPERTY__IS_DERIVED_UNION;
+
+	/**
+	 * The feature id for the '<em><b>Is ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__IS_ID = UMLPackage.PROPERTY__IS_ID;
+
+	/**
+	 * The feature id for the '<em><b>Opposite</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__OPPOSITE = UMLPackage.PROPERTY__OPPOSITE;
+
+	/**
+	 * The feature id for the '<em><b>Owning Association</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__OWNING_ASSOCIATION = UMLPackage.PROPERTY__OWNING_ASSOCIATION;
+
+	/**
+	 * The feature id for the '<em><b>Redefined Property</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__REDEFINED_PROPERTY = UMLPackage.PROPERTY__REDEFINED_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Subsetted Property</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__SUBSETTED_PROPERTY = UMLPackage.PROPERTY__SUBSETTED_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Association</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY__ASSOCIATION = UMLPackage.PROPERTY__ASSOCIATION;
+
+	/**
+	 * The number of structural features of the '<em>Navigation Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY_FEATURE_COUNT = UMLPackage.PROPERTY_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Get EAnnotation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_EANNOTATION__STRING = UMLPackage.PROPERTY___GET_EANNOTATION__STRING;
+
+	/**
+	 * The operation id for the '<em>Validate Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Add Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___ADD_KEYWORD__STRING = UMLPackage.PROPERTY___ADD_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Apply Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___APPLY_STEREOTYPE__STEREOTYPE = UMLPackage.PROPERTY___APPLY_STEREOTYPE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Create EAnnotation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___CREATE_EANNOTATION__STRING = UMLPackage.PROPERTY___CREATE_EANNOTATION__STRING;
+
+	/**
+	 * The operation id for the '<em>Destroy</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___DESTROY = UMLPackage.PROPERTY___DESTROY;
+
+	/**
+	 * The operation id for the '<em>Get Keywords</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_KEYWORDS = UMLPackage.PROPERTY___GET_KEYWORDS;
+
+	/**
+	 * The operation id for the '<em>Get Applicable Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_APPLICABLE_STEREOTYPE__STRING = UMLPackage.PROPERTY___GET_APPLICABLE_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_APPLICABLE_STEREOTYPES = UMLPackage.PROPERTY___GET_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Applied Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_APPLIED_STEREOTYPE__STRING = UMLPackage.PROPERTY___GET_APPLIED_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applied Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_APPLIED_STEREOTYPES = UMLPackage.PROPERTY___GET_APPLIED_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Applied Substereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING = UMLPackage.PROPERTY___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applied Substereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE = UMLPackage.PROPERTY___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Get Model</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_MODEL = UMLPackage.PROPERTY___GET_MODEL;
+
+	/**
+	 * The operation id for the '<em>Get Nearest Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_NEAREST_PACKAGE = UMLPackage.PROPERTY___GET_NEAREST_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Get Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_RELATIONSHIPS = UMLPackage.PROPERTY___GET_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_RELATIONSHIPS__ECLASS = UMLPackage.PROPERTY___GET_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Required Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_REQUIRED_STEREOTYPE__STRING = UMLPackage.PROPERTY___GET_REQUIRED_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Required Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_REQUIRED_STEREOTYPES = UMLPackage.PROPERTY___GET_REQUIRED_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_SOURCE_DIRECTED_RELATIONSHIPS = UMLPackage.PROPERTY___GET_SOURCE_DIRECTED_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS = UMLPackage.PROPERTY___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Stereotype Application</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_STEREOTYPE_APPLICATION__STEREOTYPE = UMLPackage.PROPERTY___GET_STEREOTYPE_APPLICATION__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Get Stereotype Applications</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_STEREOTYPE_APPLICATIONS = UMLPackage.PROPERTY___GET_STEREOTYPE_APPLICATIONS;
+
+	/**
+	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_TARGET_DIRECTED_RELATIONSHIPS = UMLPackage.PROPERTY___GET_TARGET_DIRECTED_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS = UMLPackage.PROPERTY___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_VALUE__STEREOTYPE_STRING = UMLPackage.PROPERTY___GET_VALUE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Has Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___HAS_KEYWORD__STRING = UMLPackage.PROPERTY___HAS_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Has Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___HAS_VALUE__STEREOTYPE_STRING = UMLPackage.PROPERTY___HAS_VALUE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Applicable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___IS_STEREOTYPE_APPLICABLE__STEREOTYPE = UMLPackage.PROPERTY___IS_STEREOTYPE_APPLICABLE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Applied</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___IS_STEREOTYPE_APPLIED__STEREOTYPE = UMLPackage.PROPERTY___IS_STEREOTYPE_APPLIED__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Required</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___IS_STEREOTYPE_REQUIRED__STEREOTYPE = UMLPackage.PROPERTY___IS_STEREOTYPE_REQUIRED__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Remove Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___REMOVE_KEYWORD__STRING = UMLPackage.PROPERTY___REMOVE_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Set Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___SET_VALUE__STEREOTYPE_STRING_OBJECT = UMLPackage.PROPERTY___SET_VALUE__STEREOTYPE_STRING_OBJECT;
+
+	/**
+	 * The operation id for the '<em>Unapply Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___UNAPPLY_STEREOTYPE__STEREOTYPE = UMLPackage.PROPERTY___UNAPPLY_STEREOTYPE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___ALL_OWNED_ELEMENTS = UMLPackage.PROPERTY___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___MUST_BE_OWNED = UMLPackage.PROPERTY___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Validate Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Create Dependency</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___CREATE_DEPENDENCY__NAMEDELEMENT = UMLPackage.PROPERTY___CREATE_DEPENDENCY__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Create Usage</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___CREATE_USAGE__NAMEDELEMENT = UMLPackage.PROPERTY___CREATE_USAGE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_LABEL = UMLPackage.PROPERTY___GET_LABEL;
+
+	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_LABEL__BOOLEAN = UMLPackage.PROPERTY___GET_LABEL__BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Get Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_NAMESPACE = UMLPackage.PROPERTY___GET_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___ALL_NAMESPACES = UMLPackage.PROPERTY___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___ALL_OWNING_PACKAGES = UMLPackage.PROPERTY___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = UMLPackage.PROPERTY___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Get Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_QUALIFIED_NAME = UMLPackage.PROPERTY___GET_QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___SEPARATOR = UMLPackage.PROPERTY___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Get Client Dependencies</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_CLIENT_DEPENDENCIES = UMLPackage.PROPERTY___GET_CLIENT_DEPENDENCIES;
+
+	/**
+	 * The operation id for the '<em>Validate Redefinition Consistent</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Non Leaf Redefinition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Redefinition Context Valid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Is Consistent With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = UMLPackage.PROPERTY___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = UMLPackage.PROPERTY___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Validate Upper Ge Lower</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_UPPER_GE_LOWER__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_UPPER_GE_LOWER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Lower Ge0</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_LOWER_GE0__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_LOWER_GE0__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Value Specification No Side Effects</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_VALUE_SPECIFICATION_NO_SIDE_EFFECTS__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_VALUE_SPECIFICATION_NO_SIDE_EFFECTS__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Value Specification Constant</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_VALUE_SPECIFICATION_CONSTANT__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_VALUE_SPECIFICATION_CONSTANT__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Lower Is Integer</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_LOWER_IS_INTEGER__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_LOWER_IS_INTEGER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Upper Is Unlimited Natural</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_UPPER_IS_UNLIMITED_NATURAL__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_UPPER_IS_UNLIMITED_NATURAL__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Set Lower</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___SET_LOWER__INT = UMLPackage.PROPERTY___SET_LOWER__INT;
+
+	/**
+	 * The operation id for the '<em>Set Upper</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___SET_UPPER__INT = UMLPackage.PROPERTY___SET_UPPER__INT;
+
+	/**
+	 * The operation id for the '<em>Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___COMPATIBLE_WITH__MULTIPLICITYELEMENT = UMLPackage.PROPERTY___COMPATIBLE_WITH__MULTIPLICITYELEMENT;
+
+	/**
+	 * The operation id for the '<em>Includes Multiplicity</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___INCLUDES_MULTIPLICITY__MULTIPLICITYELEMENT = UMLPackage.PROPERTY___INCLUDES_MULTIPLICITY__MULTIPLICITYELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___IS__INT_INT = UMLPackage.PROPERTY___IS__INT_INT;
+
+	/**
+	 * The operation id for the '<em>Is Multivalued</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___IS_MULTIVALUED = UMLPackage.PROPERTY___IS_MULTIVALUED;
+
+	/**
+	 * The operation id for the '<em>Get Lower</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_LOWER = UMLPackage.PROPERTY___GET_LOWER;
+
+	/**
+	 * The operation id for the '<em>Lower Bound</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___LOWER_BOUND = UMLPackage.PROPERTY___LOWER_BOUND;
+
+	/**
+	 * The operation id for the '<em>Get Upper</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_UPPER = UMLPackage.PROPERTY___GET_UPPER;
+
+	/**
+	 * The operation id for the '<em>Upper Bound</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___UPPER_BOUND = UMLPackage.PROPERTY___UPPER_BOUND;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = UMLPackage.PROPERTY___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___IS_TEMPLATE_PARAMETER = UMLPackage.PROPERTY___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Get Ends</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_ENDS = UMLPackage.PROPERTY___GET_ENDS;
+
+	/**
+	 * The operation id for the '<em>Get Deployed Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_DEPLOYED_ELEMENTS = UMLPackage.PROPERTY___GET_DEPLOYED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Validate Subsetting Context Conforms</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_SUBSETTING_CONTEXT_CONFORMS__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_SUBSETTING_CONTEXT_CONFORMS__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Derived Union Is Read Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_DERIVED_UNION_IS_READ_ONLY__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_DERIVED_UNION_IS_READ_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Multiplicity Of Composite</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_MULTIPLICITY_OF_COMPOSITE__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_MULTIPLICITY_OF_COMPOSITE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Redefined Property Inherited</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_REDEFINED_PROPERTY_INHERITED__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_REDEFINED_PROPERTY_INHERITED__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Subsetting Rules</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_SUBSETTING_RULES__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_SUBSETTING_RULES__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Binding To Attribute</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_BINDING_TO_ATTRIBUTE__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_BINDING_TO_ATTRIBUTE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Derived Union Is Derived</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_DERIVED_UNION_IS_DERIVED__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_DERIVED_UNION_IS_DERIVED__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Deployment Target</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_DEPLOYMENT_TARGET__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_DEPLOYMENT_TARGET__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Subsetted Property Names</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_SUBSETTED_PROPERTY_NAMES__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_SUBSETTED_PROPERTY_NAMES__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Type Of Opposite End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_TYPE_OF_OPPOSITE_END__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_TYPE_OF_OPPOSITE_END__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Qualified Is Association End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___VALIDATE_QUALIFIED_IS_ASSOCIATION_END__DIAGNOSTICCHAIN_MAP = UMLPackage.PROPERTY___VALIDATE_QUALIFIED_IS_ASSOCIATION_END__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Get Default</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_DEFAULT = UMLPackage.PROPERTY___GET_DEFAULT;
+
+	/**
+	 * The operation id for the '<em>Get Other End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_OTHER_END = UMLPackage.PROPERTY___GET_OTHER_END;
+
+	/**
+	 * The operation id for the '<em>Is Set Default</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___IS_SET_DEFAULT = UMLPackage.PROPERTY___IS_SET_DEFAULT;
+
+	/**
+	 * The operation id for the '<em>Set Boolean Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___SET_BOOLEAN_DEFAULT_VALUE__BOOLEAN = UMLPackage.PROPERTY___SET_BOOLEAN_DEFAULT_VALUE__BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Set Default</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___SET_DEFAULT__STRING = UMLPackage.PROPERTY___SET_DEFAULT__STRING;
+
+	/**
+	 * The operation id for the '<em>Set Integer Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___SET_INTEGER_DEFAULT_VALUE__INT = UMLPackage.PROPERTY___SET_INTEGER_DEFAULT_VALUE__INT;
+
+	/**
+	 * The operation id for the '<em>Set Is Composite</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___SET_IS_COMPOSITE__BOOLEAN = UMLPackage.PROPERTY___SET_IS_COMPOSITE__BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Set Is Navigable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___SET_IS_NAVIGABLE__BOOLEAN = UMLPackage.PROPERTY___SET_IS_NAVIGABLE__BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Set Null Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___SET_NULL_DEFAULT_VALUE = UMLPackage.PROPERTY___SET_NULL_DEFAULT_VALUE;
+
+	/**
+	 * The operation id for the '<em>Set Opposite</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___SET_OPPOSITE__PROPERTY = UMLPackage.PROPERTY___SET_OPPOSITE__PROPERTY;
+
+	/**
+	 * The operation id for the '<em>Set Real Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___SET_REAL_DEFAULT_VALUE__DOUBLE = UMLPackage.PROPERTY___SET_REAL_DEFAULT_VALUE__DOUBLE;
+
+	/**
+	 * The operation id for the '<em>Set String Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___SET_STRING_DEFAULT_VALUE__STRING = UMLPackage.PROPERTY___SET_STRING_DEFAULT_VALUE__STRING;
+
+	/**
+	 * The operation id for the '<em>Set Unlimited Natural Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___SET_UNLIMITED_NATURAL_DEFAULT_VALUE__INT = UMLPackage.PROPERTY___SET_UNLIMITED_NATURAL_DEFAULT_VALUE__INT;
+
+	/**
+	 * The operation id for the '<em>Unset Default</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___UNSET_DEFAULT = UMLPackage.PROPERTY___UNSET_DEFAULT;
+
+	/**
+	 * The operation id for the '<em>Is Attribute</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___IS_ATTRIBUTE = UMLPackage.PROPERTY___IS_ATTRIBUTE;
+
+	/**
+	 * The operation id for the '<em>Is Composite</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___IS_COMPOSITE = UMLPackage.PROPERTY___IS_COMPOSITE;
+
+	/**
+	 * The operation id for the '<em>Is Navigable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___IS_NAVIGABLE = UMLPackage.PROPERTY___IS_NAVIGABLE;
+
+	/**
+	 * The operation id for the '<em>Get Opposite</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___GET_OPPOSITE = UMLPackage.PROPERTY___GET_OPPOSITE;
+
+	/**
+	 * The operation id for the '<em>Subsetting Context</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY___SUBSETTING_CONTEXT = UMLPackage.PROPERTY___SUBSETTING_CONTEXT;
+
+	/**
+	 * The number of operations of the '<em>Navigation Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_PROPERTY_OPERATION_COUNT = UMLPackage.PROPERTY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link frameweb.impl.NavigationCompositionEndImpl <em>Navigation Composition End</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see frameweb.impl.NavigationCompositionEndImpl
+	 * @see frameweb.impl.FramewebPackageImpl#getNavigationCompositionEnd()
+	 * @generated
+	 */
+	int NAVIGATION_COMPOSITION_END = 75;
+
+	/**
+	 * The feature id for the '<em><b>EAnnotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__EANNOTATIONS = NAVIGATION_PROPERTY__EANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__OWNED_COMMENT = NAVIGATION_PROPERTY__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__OWNED_ELEMENT = NAVIGATION_PROPERTY__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__OWNER = NAVIGATION_PROPERTY__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__CLIENT_DEPENDENCY = NAVIGATION_PROPERTY__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__NAME = NAVIGATION_PROPERTY__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__NAME_EXPRESSION = NAVIGATION_PROPERTY__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__NAMESPACE = NAVIGATION_PROPERTY__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__QUALIFIED_NAME = NAVIGATION_PROPERTY__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__VISIBILITY = NAVIGATION_PROPERTY__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__IS_LEAF = NAVIGATION_PROPERTY__IS_LEAF;
+
+	/**
+	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__REDEFINED_ELEMENT = NAVIGATION_PROPERTY__REDEFINED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__REDEFINITION_CONTEXT = NAVIGATION_PROPERTY__REDEFINITION_CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Featuring Classifier</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__FEATURING_CLASSIFIER = NAVIGATION_PROPERTY__FEATURING_CLASSIFIER;
+
+	/**
+	 * The feature id for the '<em><b>Is Static</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__IS_STATIC = NAVIGATION_PROPERTY__IS_STATIC;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__TYPE = NAVIGATION_PROPERTY__TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Is Ordered</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__IS_ORDERED = NAVIGATION_PROPERTY__IS_ORDERED;
+
+	/**
+	 * The feature id for the '<em><b>Is Unique</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__IS_UNIQUE = NAVIGATION_PROPERTY__IS_UNIQUE;
+
+	/**
+	 * The feature id for the '<em><b>Lower</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__LOWER = NAVIGATION_PROPERTY__LOWER;
+
+	/**
+	 * The feature id for the '<em><b>Lower Value</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__LOWER_VALUE = NAVIGATION_PROPERTY__LOWER_VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Upper</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__UPPER = NAVIGATION_PROPERTY__UPPER;
+
+	/**
+	 * The feature id for the '<em><b>Upper Value</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__UPPER_VALUE = NAVIGATION_PROPERTY__UPPER_VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Is Read Only</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__IS_READ_ONLY = NAVIGATION_PROPERTY__IS_READ_ONLY;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__OWNING_TEMPLATE_PARAMETER = NAVIGATION_PROPERTY__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__TEMPLATE_PARAMETER = NAVIGATION_PROPERTY__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>End</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__END = NAVIGATION_PROPERTY__END;
+
+	/**
+	 * The feature id for the '<em><b>Deployed Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__DEPLOYED_ELEMENT = NAVIGATION_PROPERTY__DEPLOYED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Deployment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__DEPLOYMENT = NAVIGATION_PROPERTY__DEPLOYMENT;
+
+	/**
+	 * The feature id for the '<em><b>Datatype</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__DATATYPE = NAVIGATION_PROPERTY__DATATYPE;
+
+	/**
+	 * The feature id for the '<em><b>Interface</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__INTERFACE = NAVIGATION_PROPERTY__INTERFACE;
+
+	/**
+	 * The feature id for the '<em><b>Default</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__DEFAULT = NAVIGATION_PROPERTY__DEFAULT;
+
+	/**
+	 * The feature id for the '<em><b>Aggregation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__AGGREGATION = NAVIGATION_PROPERTY__AGGREGATION;
+
+	/**
+	 * The feature id for the '<em><b>Association End</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__ASSOCIATION_END = NAVIGATION_PROPERTY__ASSOCIATION_END;
+
+	/**
+	 * The feature id for the '<em><b>Qualifier</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__QUALIFIER = NAVIGATION_PROPERTY__QUALIFIER;
+
+	/**
+	 * The feature id for the '<em><b>Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__CLASS = NAVIGATION_PROPERTY__CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Default Value</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__DEFAULT_VALUE = NAVIGATION_PROPERTY__DEFAULT_VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Is Composite</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__IS_COMPOSITE = NAVIGATION_PROPERTY__IS_COMPOSITE;
+
+	/**
+	 * The feature id for the '<em><b>Is Derived</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__IS_DERIVED = NAVIGATION_PROPERTY__IS_DERIVED;
+
+	/**
+	 * The feature id for the '<em><b>Is Derived Union</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__IS_DERIVED_UNION = NAVIGATION_PROPERTY__IS_DERIVED_UNION;
+
+	/**
+	 * The feature id for the '<em><b>Is ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__IS_ID = NAVIGATION_PROPERTY__IS_ID;
+
+	/**
+	 * The feature id for the '<em><b>Opposite</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__OPPOSITE = NAVIGATION_PROPERTY__OPPOSITE;
+
+	/**
+	 * The feature id for the '<em><b>Owning Association</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__OWNING_ASSOCIATION = NAVIGATION_PROPERTY__OWNING_ASSOCIATION;
+
+	/**
+	 * The feature id for the '<em><b>Redefined Property</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__REDEFINED_PROPERTY = NAVIGATION_PROPERTY__REDEFINED_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Subsetted Property</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__SUBSETTED_PROPERTY = NAVIGATION_PROPERTY__SUBSETTED_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Association</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END__ASSOCIATION = NAVIGATION_PROPERTY__ASSOCIATION;
+
+	/**
+	 * The number of structural features of the '<em>Navigation Composition End</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END_FEATURE_COUNT = NAVIGATION_PROPERTY_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Get EAnnotation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_EANNOTATION__STRING = NAVIGATION_PROPERTY___GET_EANNOTATION__STRING;
+
+	/**
+	 * The operation id for the '<em>Validate Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Add Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___ADD_KEYWORD__STRING = NAVIGATION_PROPERTY___ADD_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Apply Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___APPLY_STEREOTYPE__STEREOTYPE = NAVIGATION_PROPERTY___APPLY_STEREOTYPE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Create EAnnotation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___CREATE_EANNOTATION__STRING = NAVIGATION_PROPERTY___CREATE_EANNOTATION__STRING;
+
+	/**
+	 * The operation id for the '<em>Destroy</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___DESTROY = NAVIGATION_PROPERTY___DESTROY;
+
+	/**
+	 * The operation id for the '<em>Get Keywords</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_KEYWORDS = NAVIGATION_PROPERTY___GET_KEYWORDS;
+
+	/**
+	 * The operation id for the '<em>Get Applicable Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_APPLICABLE_STEREOTYPE__STRING = NAVIGATION_PROPERTY___GET_APPLICABLE_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_APPLICABLE_STEREOTYPES = NAVIGATION_PROPERTY___GET_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Applied Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_APPLIED_STEREOTYPE__STRING = NAVIGATION_PROPERTY___GET_APPLIED_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applied Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_APPLIED_STEREOTYPES = NAVIGATION_PROPERTY___GET_APPLIED_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Applied Substereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING = NAVIGATION_PROPERTY___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applied Substereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE = NAVIGATION_PROPERTY___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Get Model</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_MODEL = NAVIGATION_PROPERTY___GET_MODEL;
+
+	/**
+	 * The operation id for the '<em>Get Nearest Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_NEAREST_PACKAGE = NAVIGATION_PROPERTY___GET_NEAREST_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Get Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_RELATIONSHIPS = NAVIGATION_PROPERTY___GET_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_RELATIONSHIPS__ECLASS = NAVIGATION_PROPERTY___GET_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Required Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_REQUIRED_STEREOTYPE__STRING = NAVIGATION_PROPERTY___GET_REQUIRED_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Required Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_REQUIRED_STEREOTYPES = NAVIGATION_PROPERTY___GET_REQUIRED_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_SOURCE_DIRECTED_RELATIONSHIPS = NAVIGATION_PROPERTY___GET_SOURCE_DIRECTED_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS = NAVIGATION_PROPERTY___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Stereotype Application</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_STEREOTYPE_APPLICATION__STEREOTYPE = NAVIGATION_PROPERTY___GET_STEREOTYPE_APPLICATION__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Get Stereotype Applications</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_STEREOTYPE_APPLICATIONS = NAVIGATION_PROPERTY___GET_STEREOTYPE_APPLICATIONS;
+
+	/**
+	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_TARGET_DIRECTED_RELATIONSHIPS = NAVIGATION_PROPERTY___GET_TARGET_DIRECTED_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS = NAVIGATION_PROPERTY___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_VALUE__STEREOTYPE_STRING = NAVIGATION_PROPERTY___GET_VALUE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Has Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___HAS_KEYWORD__STRING = NAVIGATION_PROPERTY___HAS_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Has Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___HAS_VALUE__STEREOTYPE_STRING = NAVIGATION_PROPERTY___HAS_VALUE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Applicable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___IS_STEREOTYPE_APPLICABLE__STEREOTYPE = NAVIGATION_PROPERTY___IS_STEREOTYPE_APPLICABLE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Applied</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___IS_STEREOTYPE_APPLIED__STEREOTYPE = NAVIGATION_PROPERTY___IS_STEREOTYPE_APPLIED__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Required</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___IS_STEREOTYPE_REQUIRED__STEREOTYPE = NAVIGATION_PROPERTY___IS_STEREOTYPE_REQUIRED__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Remove Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___REMOVE_KEYWORD__STRING = NAVIGATION_PROPERTY___REMOVE_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Set Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___SET_VALUE__STEREOTYPE_STRING_OBJECT = NAVIGATION_PROPERTY___SET_VALUE__STEREOTYPE_STRING_OBJECT;
+
+	/**
+	 * The operation id for the '<em>Unapply Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___UNAPPLY_STEREOTYPE__STEREOTYPE = NAVIGATION_PROPERTY___UNAPPLY_STEREOTYPE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___ALL_OWNED_ELEMENTS = NAVIGATION_PROPERTY___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___MUST_BE_OWNED = NAVIGATION_PROPERTY___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Validate Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Create Dependency</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___CREATE_DEPENDENCY__NAMEDELEMENT = NAVIGATION_PROPERTY___CREATE_DEPENDENCY__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Create Usage</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___CREATE_USAGE__NAMEDELEMENT = NAVIGATION_PROPERTY___CREATE_USAGE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_LABEL = NAVIGATION_PROPERTY___GET_LABEL;
+
+	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_LABEL__BOOLEAN = NAVIGATION_PROPERTY___GET_LABEL__BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Get Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_NAMESPACE = NAVIGATION_PROPERTY___GET_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___ALL_NAMESPACES = NAVIGATION_PROPERTY___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___ALL_OWNING_PACKAGES = NAVIGATION_PROPERTY___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = NAVIGATION_PROPERTY___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Get Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_QUALIFIED_NAME = NAVIGATION_PROPERTY___GET_QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___SEPARATOR = NAVIGATION_PROPERTY___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Get Client Dependencies</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_CLIENT_DEPENDENCIES = NAVIGATION_PROPERTY___GET_CLIENT_DEPENDENCIES;
+
+	/**
+	 * The operation id for the '<em>Validate Redefinition Consistent</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Non Leaf Redefinition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Redefinition Context Valid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Is Consistent With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = NAVIGATION_PROPERTY___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = NAVIGATION_PROPERTY___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Validate Upper Ge Lower</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_UPPER_GE_LOWER__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_UPPER_GE_LOWER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Lower Ge0</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_LOWER_GE0__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_LOWER_GE0__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Value Specification No Side Effects</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_VALUE_SPECIFICATION_NO_SIDE_EFFECTS__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_VALUE_SPECIFICATION_NO_SIDE_EFFECTS__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Value Specification Constant</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_VALUE_SPECIFICATION_CONSTANT__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_VALUE_SPECIFICATION_CONSTANT__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Lower Is Integer</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_LOWER_IS_INTEGER__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_LOWER_IS_INTEGER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Upper Is Unlimited Natural</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_UPPER_IS_UNLIMITED_NATURAL__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_UPPER_IS_UNLIMITED_NATURAL__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Set Lower</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___SET_LOWER__INT = NAVIGATION_PROPERTY___SET_LOWER__INT;
+
+	/**
+	 * The operation id for the '<em>Set Upper</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___SET_UPPER__INT = NAVIGATION_PROPERTY___SET_UPPER__INT;
+
+	/**
+	 * The operation id for the '<em>Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___COMPATIBLE_WITH__MULTIPLICITYELEMENT = NAVIGATION_PROPERTY___COMPATIBLE_WITH__MULTIPLICITYELEMENT;
+
+	/**
+	 * The operation id for the '<em>Includes Multiplicity</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___INCLUDES_MULTIPLICITY__MULTIPLICITYELEMENT = NAVIGATION_PROPERTY___INCLUDES_MULTIPLICITY__MULTIPLICITYELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___IS__INT_INT = NAVIGATION_PROPERTY___IS__INT_INT;
+
+	/**
+	 * The operation id for the '<em>Is Multivalued</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___IS_MULTIVALUED = NAVIGATION_PROPERTY___IS_MULTIVALUED;
+
+	/**
+	 * The operation id for the '<em>Get Lower</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_LOWER = NAVIGATION_PROPERTY___GET_LOWER;
+
+	/**
+	 * The operation id for the '<em>Lower Bound</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___LOWER_BOUND = NAVIGATION_PROPERTY___LOWER_BOUND;
+
+	/**
+	 * The operation id for the '<em>Get Upper</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_UPPER = NAVIGATION_PROPERTY___GET_UPPER;
+
+	/**
+	 * The operation id for the '<em>Upper Bound</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___UPPER_BOUND = NAVIGATION_PROPERTY___UPPER_BOUND;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = NAVIGATION_PROPERTY___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___IS_TEMPLATE_PARAMETER = NAVIGATION_PROPERTY___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Get Ends</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_ENDS = NAVIGATION_PROPERTY___GET_ENDS;
+
+	/**
+	 * The operation id for the '<em>Get Deployed Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_DEPLOYED_ELEMENTS = NAVIGATION_PROPERTY___GET_DEPLOYED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Validate Subsetting Context Conforms</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_SUBSETTING_CONTEXT_CONFORMS__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_SUBSETTING_CONTEXT_CONFORMS__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Derived Union Is Read Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_DERIVED_UNION_IS_READ_ONLY__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_DERIVED_UNION_IS_READ_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Multiplicity Of Composite</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_MULTIPLICITY_OF_COMPOSITE__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_MULTIPLICITY_OF_COMPOSITE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Redefined Property Inherited</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_REDEFINED_PROPERTY_INHERITED__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_REDEFINED_PROPERTY_INHERITED__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Subsetting Rules</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_SUBSETTING_RULES__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_SUBSETTING_RULES__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Binding To Attribute</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_BINDING_TO_ATTRIBUTE__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_BINDING_TO_ATTRIBUTE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Derived Union Is Derived</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_DERIVED_UNION_IS_DERIVED__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_DERIVED_UNION_IS_DERIVED__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Deployment Target</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_DEPLOYMENT_TARGET__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_DEPLOYMENT_TARGET__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Subsetted Property Names</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_SUBSETTED_PROPERTY_NAMES__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_SUBSETTED_PROPERTY_NAMES__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Type Of Opposite End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_TYPE_OF_OPPOSITE_END__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_TYPE_OF_OPPOSITE_END__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Qualified Is Association End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___VALIDATE_QUALIFIED_IS_ASSOCIATION_END__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_QUALIFIED_IS_ASSOCIATION_END__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Get Default</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_DEFAULT = NAVIGATION_PROPERTY___GET_DEFAULT;
+
+	/**
+	 * The operation id for the '<em>Get Other End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_OTHER_END = NAVIGATION_PROPERTY___GET_OTHER_END;
+
+	/**
+	 * The operation id for the '<em>Is Set Default</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___IS_SET_DEFAULT = NAVIGATION_PROPERTY___IS_SET_DEFAULT;
+
+	/**
+	 * The operation id for the '<em>Set Boolean Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___SET_BOOLEAN_DEFAULT_VALUE__BOOLEAN = NAVIGATION_PROPERTY___SET_BOOLEAN_DEFAULT_VALUE__BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Set Default</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___SET_DEFAULT__STRING = NAVIGATION_PROPERTY___SET_DEFAULT__STRING;
+
+	/**
+	 * The operation id for the '<em>Set Integer Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___SET_INTEGER_DEFAULT_VALUE__INT = NAVIGATION_PROPERTY___SET_INTEGER_DEFAULT_VALUE__INT;
+
+	/**
+	 * The operation id for the '<em>Set Is Composite</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___SET_IS_COMPOSITE__BOOLEAN = NAVIGATION_PROPERTY___SET_IS_COMPOSITE__BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Set Is Navigable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___SET_IS_NAVIGABLE__BOOLEAN = NAVIGATION_PROPERTY___SET_IS_NAVIGABLE__BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Set Null Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___SET_NULL_DEFAULT_VALUE = NAVIGATION_PROPERTY___SET_NULL_DEFAULT_VALUE;
+
+	/**
+	 * The operation id for the '<em>Set Opposite</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___SET_OPPOSITE__PROPERTY = NAVIGATION_PROPERTY___SET_OPPOSITE__PROPERTY;
+
+	/**
+	 * The operation id for the '<em>Set Real Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___SET_REAL_DEFAULT_VALUE__DOUBLE = NAVIGATION_PROPERTY___SET_REAL_DEFAULT_VALUE__DOUBLE;
+
+	/**
+	 * The operation id for the '<em>Set String Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___SET_STRING_DEFAULT_VALUE__STRING = NAVIGATION_PROPERTY___SET_STRING_DEFAULT_VALUE__STRING;
+
+	/**
+	 * The operation id for the '<em>Set Unlimited Natural Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___SET_UNLIMITED_NATURAL_DEFAULT_VALUE__INT = NAVIGATION_PROPERTY___SET_UNLIMITED_NATURAL_DEFAULT_VALUE__INT;
+
+	/**
+	 * The operation id for the '<em>Unset Default</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___UNSET_DEFAULT = NAVIGATION_PROPERTY___UNSET_DEFAULT;
+
+	/**
+	 * The operation id for the '<em>Is Attribute</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___IS_ATTRIBUTE = NAVIGATION_PROPERTY___IS_ATTRIBUTE;
+
+	/**
+	 * The operation id for the '<em>Is Composite</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___IS_COMPOSITE = NAVIGATION_PROPERTY___IS_COMPOSITE;
+
+	/**
+	 * The operation id for the '<em>Is Navigable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___IS_NAVIGABLE = NAVIGATION_PROPERTY___IS_NAVIGABLE;
+
+	/**
+	 * The operation id for the '<em>Get Opposite</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___GET_OPPOSITE = NAVIGATION_PROPERTY___GET_OPPOSITE;
+
+	/**
+	 * The operation id for the '<em>Subsetting Context</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END___SUBSETTING_CONTEXT = NAVIGATION_PROPERTY___SUBSETTING_CONTEXT;
+
+	/**
+	 * The number of operations of the '<em>Navigation Composition End</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_END_OPERATION_COUNT = NAVIGATION_PROPERTY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link frameweb.impl.NavigationCompositionImpl <em>Navigation Composition</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see frameweb.impl.NavigationCompositionImpl
+	 * @see frameweb.impl.FramewebPackageImpl#getNavigationComposition()
+	 * @generated
+	 */
+	int NAVIGATION_COMPOSITION = 76;
+
+	/**
+	 * The feature id for the '<em><b>EAnnotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__EANNOTATIONS = NAVIGATION_PROPERTY__EANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__OWNED_COMMENT = NAVIGATION_PROPERTY__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__OWNED_ELEMENT = NAVIGATION_PROPERTY__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__OWNER = NAVIGATION_PROPERTY__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__CLIENT_DEPENDENCY = NAVIGATION_PROPERTY__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__NAME = NAVIGATION_PROPERTY__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__NAME_EXPRESSION = NAVIGATION_PROPERTY__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__NAMESPACE = NAVIGATION_PROPERTY__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__QUALIFIED_NAME = NAVIGATION_PROPERTY__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__VISIBILITY = NAVIGATION_PROPERTY__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__IS_LEAF = NAVIGATION_PROPERTY__IS_LEAF;
+
+	/**
+	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__REDEFINED_ELEMENT = NAVIGATION_PROPERTY__REDEFINED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__REDEFINITION_CONTEXT = NAVIGATION_PROPERTY__REDEFINITION_CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Featuring Classifier</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__FEATURING_CLASSIFIER = NAVIGATION_PROPERTY__FEATURING_CLASSIFIER;
+
+	/**
+	 * The feature id for the '<em><b>Is Static</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__IS_STATIC = NAVIGATION_PROPERTY__IS_STATIC;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__TYPE = NAVIGATION_PROPERTY__TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Is Ordered</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__IS_ORDERED = NAVIGATION_PROPERTY__IS_ORDERED;
+
+	/**
+	 * The feature id for the '<em><b>Is Unique</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__IS_UNIQUE = NAVIGATION_PROPERTY__IS_UNIQUE;
+
+	/**
+	 * The feature id for the '<em><b>Lower</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__LOWER = NAVIGATION_PROPERTY__LOWER;
+
+	/**
+	 * The feature id for the '<em><b>Lower Value</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__LOWER_VALUE = NAVIGATION_PROPERTY__LOWER_VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Upper</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__UPPER = NAVIGATION_PROPERTY__UPPER;
+
+	/**
+	 * The feature id for the '<em><b>Upper Value</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__UPPER_VALUE = NAVIGATION_PROPERTY__UPPER_VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Is Read Only</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__IS_READ_ONLY = NAVIGATION_PROPERTY__IS_READ_ONLY;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__OWNING_TEMPLATE_PARAMETER = NAVIGATION_PROPERTY__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__TEMPLATE_PARAMETER = NAVIGATION_PROPERTY__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>End</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__END = NAVIGATION_PROPERTY__END;
+
+	/**
+	 * The feature id for the '<em><b>Deployed Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__DEPLOYED_ELEMENT = NAVIGATION_PROPERTY__DEPLOYED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Deployment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__DEPLOYMENT = NAVIGATION_PROPERTY__DEPLOYMENT;
+
+	/**
+	 * The feature id for the '<em><b>Datatype</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__DATATYPE = NAVIGATION_PROPERTY__DATATYPE;
+
+	/**
+	 * The feature id for the '<em><b>Interface</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__INTERFACE = NAVIGATION_PROPERTY__INTERFACE;
+
+	/**
+	 * The feature id for the '<em><b>Default</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__DEFAULT = NAVIGATION_PROPERTY__DEFAULT;
+
+	/**
+	 * The feature id for the '<em><b>Aggregation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__AGGREGATION = NAVIGATION_PROPERTY__AGGREGATION;
+
+	/**
+	 * The feature id for the '<em><b>Association End</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__ASSOCIATION_END = NAVIGATION_PROPERTY__ASSOCIATION_END;
+
+	/**
+	 * The feature id for the '<em><b>Qualifier</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__QUALIFIER = NAVIGATION_PROPERTY__QUALIFIER;
+
+	/**
+	 * The feature id for the '<em><b>Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__CLASS = NAVIGATION_PROPERTY__CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Default Value</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__DEFAULT_VALUE = NAVIGATION_PROPERTY__DEFAULT_VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Is Composite</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__IS_COMPOSITE = NAVIGATION_PROPERTY__IS_COMPOSITE;
+
+	/**
+	 * The feature id for the '<em><b>Is Derived</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__IS_DERIVED = NAVIGATION_PROPERTY__IS_DERIVED;
+
+	/**
+	 * The feature id for the '<em><b>Is Derived Union</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__IS_DERIVED_UNION = NAVIGATION_PROPERTY__IS_DERIVED_UNION;
+
+	/**
+	 * The feature id for the '<em><b>Is ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__IS_ID = NAVIGATION_PROPERTY__IS_ID;
+
+	/**
+	 * The feature id for the '<em><b>Opposite</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__OPPOSITE = NAVIGATION_PROPERTY__OPPOSITE;
+
+	/**
+	 * The feature id for the '<em><b>Owning Association</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__OWNING_ASSOCIATION = NAVIGATION_PROPERTY__OWNING_ASSOCIATION;
+
+	/**
+	 * The feature id for the '<em><b>Redefined Property</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__REDEFINED_PROPERTY = NAVIGATION_PROPERTY__REDEFINED_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Subsetted Property</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__SUBSETTED_PROPERTY = NAVIGATION_PROPERTY__SUBSETTED_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Association</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION__ASSOCIATION = NAVIGATION_PROPERTY__ASSOCIATION;
+
+	/**
+	 * The number of structural features of the '<em>Navigation Composition</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_FEATURE_COUNT = NAVIGATION_PROPERTY_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Get EAnnotation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_EANNOTATION__STRING = NAVIGATION_PROPERTY___GET_EANNOTATION__STRING;
+
+	/**
+	 * The operation id for the '<em>Validate Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Add Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___ADD_KEYWORD__STRING = NAVIGATION_PROPERTY___ADD_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Apply Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___APPLY_STEREOTYPE__STEREOTYPE = NAVIGATION_PROPERTY___APPLY_STEREOTYPE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Create EAnnotation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___CREATE_EANNOTATION__STRING = NAVIGATION_PROPERTY___CREATE_EANNOTATION__STRING;
+
+	/**
+	 * The operation id for the '<em>Destroy</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___DESTROY = NAVIGATION_PROPERTY___DESTROY;
+
+	/**
+	 * The operation id for the '<em>Get Keywords</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_KEYWORDS = NAVIGATION_PROPERTY___GET_KEYWORDS;
+
+	/**
+	 * The operation id for the '<em>Get Applicable Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_APPLICABLE_STEREOTYPE__STRING = NAVIGATION_PROPERTY___GET_APPLICABLE_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_APPLICABLE_STEREOTYPES = NAVIGATION_PROPERTY___GET_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Applied Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_APPLIED_STEREOTYPE__STRING = NAVIGATION_PROPERTY___GET_APPLIED_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applied Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_APPLIED_STEREOTYPES = NAVIGATION_PROPERTY___GET_APPLIED_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Applied Substereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING = NAVIGATION_PROPERTY___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applied Substereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE = NAVIGATION_PROPERTY___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Get Model</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_MODEL = NAVIGATION_PROPERTY___GET_MODEL;
+
+	/**
+	 * The operation id for the '<em>Get Nearest Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_NEAREST_PACKAGE = NAVIGATION_PROPERTY___GET_NEAREST_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Get Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_RELATIONSHIPS = NAVIGATION_PROPERTY___GET_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_RELATIONSHIPS__ECLASS = NAVIGATION_PROPERTY___GET_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Required Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_REQUIRED_STEREOTYPE__STRING = NAVIGATION_PROPERTY___GET_REQUIRED_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Required Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_REQUIRED_STEREOTYPES = NAVIGATION_PROPERTY___GET_REQUIRED_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_SOURCE_DIRECTED_RELATIONSHIPS = NAVIGATION_PROPERTY___GET_SOURCE_DIRECTED_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS = NAVIGATION_PROPERTY___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Stereotype Application</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_STEREOTYPE_APPLICATION__STEREOTYPE = NAVIGATION_PROPERTY___GET_STEREOTYPE_APPLICATION__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Get Stereotype Applications</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_STEREOTYPE_APPLICATIONS = NAVIGATION_PROPERTY___GET_STEREOTYPE_APPLICATIONS;
+
+	/**
+	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_TARGET_DIRECTED_RELATIONSHIPS = NAVIGATION_PROPERTY___GET_TARGET_DIRECTED_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS = NAVIGATION_PROPERTY___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_VALUE__STEREOTYPE_STRING = NAVIGATION_PROPERTY___GET_VALUE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Has Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___HAS_KEYWORD__STRING = NAVIGATION_PROPERTY___HAS_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Has Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___HAS_VALUE__STEREOTYPE_STRING = NAVIGATION_PROPERTY___HAS_VALUE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Applicable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___IS_STEREOTYPE_APPLICABLE__STEREOTYPE = NAVIGATION_PROPERTY___IS_STEREOTYPE_APPLICABLE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Applied</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___IS_STEREOTYPE_APPLIED__STEREOTYPE = NAVIGATION_PROPERTY___IS_STEREOTYPE_APPLIED__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Required</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___IS_STEREOTYPE_REQUIRED__STEREOTYPE = NAVIGATION_PROPERTY___IS_STEREOTYPE_REQUIRED__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Remove Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___REMOVE_KEYWORD__STRING = NAVIGATION_PROPERTY___REMOVE_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Set Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___SET_VALUE__STEREOTYPE_STRING_OBJECT = NAVIGATION_PROPERTY___SET_VALUE__STEREOTYPE_STRING_OBJECT;
+
+	/**
+	 * The operation id for the '<em>Unapply Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___UNAPPLY_STEREOTYPE__STEREOTYPE = NAVIGATION_PROPERTY___UNAPPLY_STEREOTYPE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___ALL_OWNED_ELEMENTS = NAVIGATION_PROPERTY___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___MUST_BE_OWNED = NAVIGATION_PROPERTY___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Validate Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Create Dependency</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___CREATE_DEPENDENCY__NAMEDELEMENT = NAVIGATION_PROPERTY___CREATE_DEPENDENCY__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Create Usage</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___CREATE_USAGE__NAMEDELEMENT = NAVIGATION_PROPERTY___CREATE_USAGE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_LABEL = NAVIGATION_PROPERTY___GET_LABEL;
+
+	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_LABEL__BOOLEAN = NAVIGATION_PROPERTY___GET_LABEL__BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Get Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_NAMESPACE = NAVIGATION_PROPERTY___GET_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___ALL_NAMESPACES = NAVIGATION_PROPERTY___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___ALL_OWNING_PACKAGES = NAVIGATION_PROPERTY___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = NAVIGATION_PROPERTY___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Get Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_QUALIFIED_NAME = NAVIGATION_PROPERTY___GET_QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___SEPARATOR = NAVIGATION_PROPERTY___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Get Client Dependencies</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_CLIENT_DEPENDENCIES = NAVIGATION_PROPERTY___GET_CLIENT_DEPENDENCIES;
+
+	/**
+	 * The operation id for the '<em>Validate Redefinition Consistent</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Non Leaf Redefinition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Redefinition Context Valid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Is Consistent With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = NAVIGATION_PROPERTY___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = NAVIGATION_PROPERTY___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Validate Upper Ge Lower</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_UPPER_GE_LOWER__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_UPPER_GE_LOWER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Lower Ge0</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_LOWER_GE0__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_LOWER_GE0__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Value Specification No Side Effects</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_VALUE_SPECIFICATION_NO_SIDE_EFFECTS__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_VALUE_SPECIFICATION_NO_SIDE_EFFECTS__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Value Specification Constant</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_VALUE_SPECIFICATION_CONSTANT__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_VALUE_SPECIFICATION_CONSTANT__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Lower Is Integer</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_LOWER_IS_INTEGER__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_LOWER_IS_INTEGER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Upper Is Unlimited Natural</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_UPPER_IS_UNLIMITED_NATURAL__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_UPPER_IS_UNLIMITED_NATURAL__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Set Lower</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___SET_LOWER__INT = NAVIGATION_PROPERTY___SET_LOWER__INT;
+
+	/**
+	 * The operation id for the '<em>Set Upper</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___SET_UPPER__INT = NAVIGATION_PROPERTY___SET_UPPER__INT;
+
+	/**
+	 * The operation id for the '<em>Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___COMPATIBLE_WITH__MULTIPLICITYELEMENT = NAVIGATION_PROPERTY___COMPATIBLE_WITH__MULTIPLICITYELEMENT;
+
+	/**
+	 * The operation id for the '<em>Includes Multiplicity</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___INCLUDES_MULTIPLICITY__MULTIPLICITYELEMENT = NAVIGATION_PROPERTY___INCLUDES_MULTIPLICITY__MULTIPLICITYELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___IS__INT_INT = NAVIGATION_PROPERTY___IS__INT_INT;
+
+	/**
+	 * The operation id for the '<em>Is Multivalued</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___IS_MULTIVALUED = NAVIGATION_PROPERTY___IS_MULTIVALUED;
+
+	/**
+	 * The operation id for the '<em>Get Lower</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_LOWER = NAVIGATION_PROPERTY___GET_LOWER;
+
+	/**
+	 * The operation id for the '<em>Lower Bound</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___LOWER_BOUND = NAVIGATION_PROPERTY___LOWER_BOUND;
+
+	/**
+	 * The operation id for the '<em>Get Upper</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_UPPER = NAVIGATION_PROPERTY___GET_UPPER;
+
+	/**
+	 * The operation id for the '<em>Upper Bound</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___UPPER_BOUND = NAVIGATION_PROPERTY___UPPER_BOUND;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = NAVIGATION_PROPERTY___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___IS_TEMPLATE_PARAMETER = NAVIGATION_PROPERTY___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Get Ends</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_ENDS = NAVIGATION_PROPERTY___GET_ENDS;
+
+	/**
+	 * The operation id for the '<em>Get Deployed Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_DEPLOYED_ELEMENTS = NAVIGATION_PROPERTY___GET_DEPLOYED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Validate Subsetting Context Conforms</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_SUBSETTING_CONTEXT_CONFORMS__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_SUBSETTING_CONTEXT_CONFORMS__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Derived Union Is Read Only</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_DERIVED_UNION_IS_READ_ONLY__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_DERIVED_UNION_IS_READ_ONLY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Multiplicity Of Composite</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_MULTIPLICITY_OF_COMPOSITE__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_MULTIPLICITY_OF_COMPOSITE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Redefined Property Inherited</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_REDEFINED_PROPERTY_INHERITED__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_REDEFINED_PROPERTY_INHERITED__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Subsetting Rules</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_SUBSETTING_RULES__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_SUBSETTING_RULES__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Binding To Attribute</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_BINDING_TO_ATTRIBUTE__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_BINDING_TO_ATTRIBUTE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Derived Union Is Derived</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_DERIVED_UNION_IS_DERIVED__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_DERIVED_UNION_IS_DERIVED__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Deployment Target</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_DEPLOYMENT_TARGET__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_DEPLOYMENT_TARGET__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Subsetted Property Names</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_SUBSETTED_PROPERTY_NAMES__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_SUBSETTED_PROPERTY_NAMES__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Type Of Opposite End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_TYPE_OF_OPPOSITE_END__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_TYPE_OF_OPPOSITE_END__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Qualified Is Association End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___VALIDATE_QUALIFIED_IS_ASSOCIATION_END__DIAGNOSTICCHAIN_MAP = NAVIGATION_PROPERTY___VALIDATE_QUALIFIED_IS_ASSOCIATION_END__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Get Default</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_DEFAULT = NAVIGATION_PROPERTY___GET_DEFAULT;
+
+	/**
+	 * The operation id for the '<em>Get Other End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_OTHER_END = NAVIGATION_PROPERTY___GET_OTHER_END;
+
+	/**
+	 * The operation id for the '<em>Is Set Default</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___IS_SET_DEFAULT = NAVIGATION_PROPERTY___IS_SET_DEFAULT;
+
+	/**
+	 * The operation id for the '<em>Set Boolean Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___SET_BOOLEAN_DEFAULT_VALUE__BOOLEAN = NAVIGATION_PROPERTY___SET_BOOLEAN_DEFAULT_VALUE__BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Set Default</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___SET_DEFAULT__STRING = NAVIGATION_PROPERTY___SET_DEFAULT__STRING;
+
+	/**
+	 * The operation id for the '<em>Set Integer Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___SET_INTEGER_DEFAULT_VALUE__INT = NAVIGATION_PROPERTY___SET_INTEGER_DEFAULT_VALUE__INT;
+
+	/**
+	 * The operation id for the '<em>Set Is Composite</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___SET_IS_COMPOSITE__BOOLEAN = NAVIGATION_PROPERTY___SET_IS_COMPOSITE__BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Set Is Navigable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___SET_IS_NAVIGABLE__BOOLEAN = NAVIGATION_PROPERTY___SET_IS_NAVIGABLE__BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Set Null Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___SET_NULL_DEFAULT_VALUE = NAVIGATION_PROPERTY___SET_NULL_DEFAULT_VALUE;
+
+	/**
+	 * The operation id for the '<em>Set Opposite</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___SET_OPPOSITE__PROPERTY = NAVIGATION_PROPERTY___SET_OPPOSITE__PROPERTY;
+
+	/**
+	 * The operation id for the '<em>Set Real Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___SET_REAL_DEFAULT_VALUE__DOUBLE = NAVIGATION_PROPERTY___SET_REAL_DEFAULT_VALUE__DOUBLE;
+
+	/**
+	 * The operation id for the '<em>Set String Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___SET_STRING_DEFAULT_VALUE__STRING = NAVIGATION_PROPERTY___SET_STRING_DEFAULT_VALUE__STRING;
+
+	/**
+	 * The operation id for the '<em>Set Unlimited Natural Default Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___SET_UNLIMITED_NATURAL_DEFAULT_VALUE__INT = NAVIGATION_PROPERTY___SET_UNLIMITED_NATURAL_DEFAULT_VALUE__INT;
+
+	/**
+	 * The operation id for the '<em>Unset Default</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___UNSET_DEFAULT = NAVIGATION_PROPERTY___UNSET_DEFAULT;
+
+	/**
+	 * The operation id for the '<em>Is Attribute</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___IS_ATTRIBUTE = NAVIGATION_PROPERTY___IS_ATTRIBUTE;
+
+	/**
+	 * The operation id for the '<em>Is Composite</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___IS_COMPOSITE = NAVIGATION_PROPERTY___IS_COMPOSITE;
+
+	/**
+	 * The operation id for the '<em>Is Navigable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___IS_NAVIGABLE = NAVIGATION_PROPERTY___IS_NAVIGABLE;
+
+	/**
+	 * The operation id for the '<em>Get Opposite</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___GET_OPPOSITE = NAVIGATION_PROPERTY___GET_OPPOSITE;
+
+	/**
+	 * The operation id for the '<em>Subsetting Context</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION___SUBSETTING_CONTEXT = NAVIGATION_PROPERTY___SUBSETTING_CONTEXT;
+
+	/**
+	 * The number of operations of the '<em>Navigation Composition</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAVIGATION_COMPOSITION_OPERATION_COUNT = NAVIGATION_PROPERTY_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link frameweb.DateTimePrecision <em>Date Time Precision</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -80018,7 +85546,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getDateTimePrecision()
 	 * @generated
 	 */
-	int DATE_TIME_PRECISION = 76;
+	int DATE_TIME_PRECISION = 78;
 
 	/**
 	 * The meta object id for the '{@link frameweb.Generation <em>Generation</em>}' enum.
@@ -80028,7 +85556,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getGeneration()
 	 * @generated
 	 */
-	int GENERATION = 77;
+	int GENERATION = 79;
 
 	/**
 	 * The meta object id for the '{@link frameweb.Collection <em>Collection</em>}' enum.
@@ -80038,7 +85566,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getCollection()
 	 * @generated
 	 */
-	int COLLECTION = 78;
+	int COLLECTION = 80;
 
 	/**
 	 * The meta object id for the '{@link frameweb.Order <em>Order</em>}' enum.
@@ -80048,7 +85576,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getOrder()
 	 * @generated
 	 */
-	int ORDER = 79;
+	int ORDER = 81;
 
 	/**
 	 * The meta object id for the '{@link frameweb.Cascade <em>Cascade</em>}' enum.
@@ -80058,7 +85586,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getCascade()
 	 * @generated
 	 */
-	int CASCADE = 80;
+	int CASCADE = 82;
 
 	/**
 	 * The meta object id for the '{@link frameweb.Fetch <em>Fetch</em>}' enum.
@@ -80068,7 +85596,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getFetch()
 	 * @generated
 	 */
-	int FETCH = 81;
+	int FETCH = 83;
 
 	/**
 	 * The meta object id for the '{@link frameweb.DAOBaseOperationList <em>DAO Base Operation List</em>}' enum.
@@ -80078,7 +85606,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getDAOBaseOperationList()
 	 * @generated
 	 */
-	int DAO_BASE_OPERATION_LIST = 82;
+	int DAO_BASE_OPERATION_LIST = 84;
 
 	/**
 	 * The meta object id for the '{@link frameweb.FrameworkCategoryList <em>Framework Category List</em>}' enum.
@@ -80088,7 +85616,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getFrameworkCategoryList()
 	 * @generated
 	 */
-	int FRAMEWORK_CATEGORY_LIST = 83;
+	int FRAMEWORK_CATEGORY_LIST = 85;
 
 	/**
 	 * The meta object id for the '{@link frameweb.ConstantNameList <em>Constant Name List</em>}' enum.
@@ -80098,7 +85626,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getConstantNameList()
 	 * @generated
 	 */
-	int CONSTANT_NAME_LIST = 84;
+	int CONSTANT_NAME_LIST = 86;
 
 	/**
 	 * The meta object id for the '{@link frameweb.InheritanceMapping <em>Inheritance Mapping</em>}' enum.
@@ -80108,7 +85636,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getInheritanceMapping()
 	 * @generated
 	 */
-	int INHERITANCE_MAPPING = 85;
+	int INHERITANCE_MAPPING = 87;
 
 
 	/**
@@ -80195,17 +85723,6 @@ public interface FramewebPackage extends EPackage {
 	EClass getFrameWebModel();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link frameweb.FrameWebModel#getIndite <em>Indite</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Indite</em>'.
-	 * @see frameweb.FrameWebModel#getIndite()
-	 * @see #getFrameWebModel()
-	 * @generated
-	 */
-	EReference getFrameWebModel_Indite();
-
-	/**
 	 * Returns the meta object for class '{@link frameweb.Framework <em>Framework</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -80216,10 +85733,10 @@ public interface FramewebPackage extends EPackage {
 	EClass getFramework();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link frameweb.Framework#getFrameworkTagLib <em>Framework Tag Lib</em>}'.
+	 * Returns the meta object for the containment reference list '{@link frameweb.Framework#getFrameworkTagLib <em>Framework Tag Lib</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Framework Tag Lib</em>'.
+	 * @return the meta object for the containment reference list '<em>Framework Tag Lib</em>'.
 	 * @see frameweb.Framework#getFrameworkTagLib()
 	 * @see #getFramework()
 	 * @generated
@@ -80654,10 +86171,10 @@ public interface FramewebPackage extends EPackage {
 	EReference getPage_PageClassAttribute();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link frameweb.Page#getPageTagLib <em>Page Tag Lib</em>}'.
+	 * Returns the meta object for the reference list '{@link frameweb.Page#getPageTagLib <em>Page Tag Lib</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Page Tag Lib</em>'.
+	 * @return the meta object for the reference list '<em>Page Tag Lib</em>'.
 	 * @see frameweb.Page#getPageTagLib()
 	 * @see #getPage()
 	 * @generated
@@ -80665,15 +86182,15 @@ public interface FramewebPackage extends EPackage {
 	EReference getPage_PageTagLib();
 
 	/**
-	 * Returns the meta object for the reference list '{@link frameweb.Page#getMention <em>Mention</em>}'.
+	 * Returns the meta object for the containment reference list '{@link frameweb.Page#getPageComposition <em>Page Composition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Mention</em>'.
-	 * @see frameweb.Page#getMention()
+	 * @return the meta object for the containment reference list '<em>Page Composition</em>'.
+	 * @see frameweb.Page#getPageComposition()
 	 * @see #getPage()
 	 * @generated
 	 */
-	EReference getPage_Mention();
+	EReference getPage_PageComposition();
 
 	/**
 	 * Returns the meta object for class '{@link frameweb.Template <em>Template</em>}'.
@@ -80695,6 +86212,28 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getTemplate_TemplateClassAttribute();
+
+	/**
+	 * Returns the meta object for the reference list '{@link frameweb.Template#getTemplateTagLib <em>Template Tag Lib</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Template Tag Lib</em>'.
+	 * @see frameweb.Template#getTemplateTagLib()
+	 * @see #getTemplate()
+	 * @generated
+	 */
+	EReference getTemplate_TemplateTagLib();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link frameweb.Template#getTemplateComposition <em>Template Composition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Template Composition</em>'.
+	 * @see frameweb.Template#getTemplateComposition()
+	 * @see #getTemplate()
+	 * @generated
+	 */
+	EReference getTemplate_TemplateComposition();
 
 	/**
 	 * Returns the meta object for class '{@link Tag <em>Form</em>}'.
@@ -80912,11 +86451,12 @@ public interface FramewebPackage extends EPackage {
 	EReference getFrontControllerClass_FrontControllerClassMethod();
 
 	/**
-	 * Returns the meta object for class '{@link frameweb.UserViewAttribute <em>User View Attribute</em>}'.
+	 * Returns the meta object for class '{@link Tag <em>User View Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>User View Attribute</em>'.
-	 * @see frameweb.UserViewAttribute
+	 * @see Tag
+	 * @model instanceClass="Tag"
 	 * @generated
 	 */
 	EClass getUserViewAttribute();
@@ -80996,50 +86536,6 @@ public interface FramewebPackage extends EPackage {
 	EReference getResultDependency_ReturnMethod();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.ResultDependency#getSourceFrontController <em>Source Front Controller</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source Front Controller</em>'.
-	 * @see frameweb.ResultDependency#getSourceFrontController()
-	 * @see #getResultDependency()
-	 * @generated
-	 */
-	EReference getResultDependency_SourceFrontController();
-
-	/**
-	 * Returns the meta object for the reference '{@link frameweb.ResultDependency#getTargetTemplate <em>Target Template</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target Template</em>'.
-	 * @see frameweb.ResultDependency#getTargetTemplate()
-	 * @see #getResultDependency()
-	 * @generated
-	 */
-	EReference getResultDependency_TargetTemplate();
-
-	/**
-	 * Returns the meta object for the reference '{@link frameweb.ResultDependency#getTargetPage <em>Target Page</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target Page</em>'.
-	 * @see frameweb.ResultDependency#getTargetPage()
-	 * @see #getResultDependency()
-	 * @generated
-	 */
-	EReference getResultDependency_TargetPage();
-
-	/**
-	 * Returns the meta object for the reference '{@link frameweb.ResultDependency#getTargetBinary <em>Target Binary</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target Binary</em>'.
-	 * @see frameweb.ResultDependency#getTargetBinary()
-	 * @see #getResultDependency()
-	 * @generated
-	 */
-	EReference getResultDependency_TargetBinary();
-
-	/**
 	 * Returns the meta object for the reference list '{@link frameweb.ResultDependency#getReturnResultType <em>Return Result Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -81051,113 +86547,47 @@ public interface FramewebPackage extends EPackage {
 	EReference getResultDependency_ReturnResultType();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.ResultDependency#getTargetForm <em>Target Form</em>}'.
+	 * Returns the meta object for class '{@link frameweb.NavigationAssociation <em>Navigation Association</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target Form</em>'.
-	 * @see frameweb.ResultDependency#getTargetForm()
-	 * @see #getResultDependency()
+	 * @return the meta object for class '<em>Navigation Association</em>'.
+	 * @see frameweb.NavigationAssociation
 	 * @generated
 	 */
-	EReference getResultDependency_TargetForm();
+	EClass getNavigationAssociation();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.ResultDependency#getTargetComponent <em>Target Component</em>}'.
+	 * Returns the meta object for the reference '{@link frameweb.NavigationAssociation#getTargetComponent <em>Target Component</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Target Component</em>'.
-	 * @see frameweb.ResultDependency#getTargetComponent()
-	 * @see #getResultDependency()
+	 * @see frameweb.NavigationAssociation#getTargetComponent()
+	 * @see #getNavigationAssociation()
 	 * @generated
 	 */
-	EReference getResultDependency_TargetComponent();
+	EReference getNavigationAssociation_TargetComponent();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.ResultDependency#getTargetJQuery <em>Target JQuery</em>}'.
+	 * Returns the meta object for the reference '{@link frameweb.NavigationAssociation#getTargetJQuery <em>Target JQuery</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Target JQuery</em>'.
-	 * @see frameweb.ResultDependency#getTargetJQuery()
-	 * @see #getResultDependency()
+	 * @see frameweb.NavigationAssociation#getTargetJQuery()
+	 * @see #getNavigationAssociation()
 	 * @generated
 	 */
-	EReference getResultDependency_TargetJQuery();
+	EReference getNavigationAssociation_TargetJQuery();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.ResultDependency#getTargetFormComponent <em>Target Form Component</em>}'.
+	 * Returns the meta object for the containment reference '{@link frameweb.NavigationAssociation#getNavigationProperty <em>Navigation Property</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target Form Component</em>'.
-	 * @see frameweb.ResultDependency#getTargetFormComponent()
-	 * @see #getResultDependency()
+	 * @return the meta object for the containment reference '<em>Navigation Property</em>'.
+	 * @see frameweb.NavigationAssociation#getNavigationProperty()
+	 * @see #getNavigationAssociation()
 	 * @generated
 	 */
-	EReference getResultDependency_TargetFormComponent();
-
-	/**
-	 * Returns the meta object for class '{@link frameweb.NavigationComposition <em>Navigation Composition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Navigation Composition</em>'.
-	 * @see frameweb.NavigationComposition
-	 * @generated
-	 */
-	EClass getNavigationComposition();
-
-	/**
-	 * Returns the meta object for the reference '{@link frameweb.NavigationComposition#getSourceTemplate <em>Source Template</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source Template</em>'.
-	 * @see frameweb.NavigationComposition#getSourceTemplate()
-	 * @see #getNavigationComposition()
-	 * @generated
-	 */
-	EReference getNavigationComposition_SourceTemplate();
-
-	/**
-	 * Returns the meta object for the reference '{@link frameweb.NavigationComposition#getSourcePage <em>Source Page</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source Page</em>'.
-	 * @see frameweb.NavigationComposition#getSourcePage()
-	 * @see #getNavigationComposition()
-	 * @generated
-	 */
-	EReference getNavigationComposition_SourcePage();
-
-	/**
-	 * Returns the meta object for the reference '{@link frameweb.NavigationComposition#getTargetForm <em>Target Form</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target Form</em>'.
-	 * @see frameweb.NavigationComposition#getTargetForm()
-	 * @see #getNavigationComposition()
-	 * @generated
-	 */
-	EReference getNavigationComposition_TargetForm();
-
-	/**
-	 * Returns the meta object for the reference '{@link frameweb.NavigationComposition#getTargetComponent <em>Target Component</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target Component</em>'.
-	 * @see frameweb.NavigationComposition#getTargetComponent()
-	 * @see #getNavigationComposition()
-	 * @generated
-	 */
-	EReference getNavigationComposition_TargetComponent();
-
-	/**
-	 * Returns the meta object for the reference '{@link frameweb.NavigationComposition#getTargetJQuery <em>Target JQuery</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target JQuery</em>'.
-	 * @see frameweb.NavigationComposition#getTargetJQuery()
-	 * @see #getNavigationComposition()
-	 * @generated
-	 */
-	EReference getNavigationComposition_TargetJQuery();
+	EReference getNavigationAssociation_NavigationProperty();
 
 	/**
 	 * Returns the meta object for class '{@link frameweb.FrontControllerMethod <em>Front Controller Method</em>}'.
@@ -81530,11 +86960,12 @@ public interface FramewebPackage extends EPackage {
 	EReference getDAOClassName_FrameWorkNameSufix();
 
 	/**
-	 * Returns the meta object for class '{@link frameweb.Result <em>Result</em>}'.
+	 * Returns the meta object for class '{@link ResultType <em>Result</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Result</em>'.
-	 * @see frameweb.Result
+	 * @see ResultType
+	 * @model instanceClass="ResultType"
 	 * @generated
 	 */
 	EClass getResult();
@@ -81561,70 +86992,70 @@ public interface FramewebPackage extends EPackage {
 	EReference getFrontControllerDependency_Method();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.FrontControllerDependency#getSourceForm <em>Source Form</em>}'.
+	 * Returns the meta object for the reference '{@link frameweb.FrontControllerDependency#getClientForm <em>Client Form</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source Form</em>'.
-	 * @see frameweb.FrontControllerDependency#getSourceForm()
+	 * @return the meta object for the reference '<em>Client Form</em>'.
+	 * @see frameweb.FrontControllerDependency#getClientForm()
 	 * @see #getFrontControllerDependency()
 	 * @generated
 	 */
-	EReference getFrontControllerDependency_SourceForm();
+	EReference getFrontControllerDependency_ClientForm();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.FrontControllerDependency#getTargetFrontController <em>Target Front Controller</em>}'.
+	 * Returns the meta object for the reference '{@link frameweb.FrontControllerDependency#getSupplierFrontController <em>Supplier Front Controller</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target Front Controller</em>'.
-	 * @see frameweb.FrontControllerDependency#getTargetFrontController()
+	 * @return the meta object for the reference '<em>Supplier Front Controller</em>'.
+	 * @see frameweb.FrontControllerDependency#getSupplierFrontController()
 	 * @see #getFrontControllerDependency()
 	 * @generated
 	 */
-	EReference getFrontControllerDependency_TargetFrontController();
+	EReference getFrontControllerDependency_SupplierFrontController();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.FrontControllerDependency#getSourcePage <em>Source Page</em>}'.
+	 * Returns the meta object for the reference '{@link frameweb.FrontControllerDependency#getClientPage <em>Client Page</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source Page</em>'.
-	 * @see frameweb.FrontControllerDependency#getSourcePage()
+	 * @return the meta object for the reference '<em>Client Page</em>'.
+	 * @see frameweb.FrontControllerDependency#getClientPage()
 	 * @see #getFrontControllerDependency()
 	 * @generated
 	 */
-	EReference getFrontControllerDependency_SourcePage();
+	EReference getFrontControllerDependency_ClientPage();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.FrontControllerDependency#getSourceTemplate <em>Source Template</em>}'.
+	 * Returns the meta object for the reference '{@link frameweb.FrontControllerDependency#getClientTemplate <em>Client Template</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source Template</em>'.
-	 * @see frameweb.FrontControllerDependency#getSourceTemplate()
+	 * @return the meta object for the reference '<em>Client Template</em>'.
+	 * @see frameweb.FrontControllerDependency#getClientTemplate()
 	 * @see #getFrontControllerDependency()
 	 * @generated
 	 */
-	EReference getFrontControllerDependency_SourceTemplate();
+	EReference getFrontControllerDependency_ClientTemplate();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.FrontControllerDependency#getSourceComponent <em>Source Component</em>}'.
+	 * Returns the meta object for the reference '{@link frameweb.FrontControllerDependency#getClientComponent <em>Client Component</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source Component</em>'.
-	 * @see frameweb.FrontControllerDependency#getSourceComponent()
+	 * @return the meta object for the reference '<em>Client Component</em>'.
+	 * @see frameweb.FrontControllerDependency#getClientComponent()
 	 * @see #getFrontControllerDependency()
 	 * @generated
 	 */
-	EReference getFrontControllerDependency_SourceComponent();
+	EReference getFrontControllerDependency_ClientComponent();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.FrontControllerDependency#getSourceJQuery <em>Source JQuery</em>}'.
+	 * Returns the meta object for the reference '{@link frameweb.FrontControllerDependency#getClientJQuery <em>Client JQuery</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source JQuery</em>'.
-	 * @see frameweb.FrontControllerDependency#getSourceJQuery()
+	 * @return the meta object for the reference '<em>Client JQuery</em>'.
+	 * @see frameweb.FrontControllerDependency#getClientJQuery()
 	 * @see #getFrontControllerDependency()
 	 * @generated
 	 */
-	EReference getFrontControllerDependency_SourceJQuery();
+	EReference getFrontControllerDependency_ClientJQuery();
 
 	/**
 	 * Returns the meta object for class '{@link frameweb.PageDependency <em>Page Dependency</em>}'.
@@ -81637,26 +87068,26 @@ public interface FramewebPackage extends EPackage {
 	EClass getPageDependency();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.PageDependency#getTargetPage <em>Target Page</em>}'.
+	 * Returns the meta object for the reference '{@link frameweb.PageDependency#getSupplierPage <em>Supplier Page</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target Page</em>'.
-	 * @see frameweb.PageDependency#getTargetPage()
+	 * @return the meta object for the reference '<em>Supplier Page</em>'.
+	 * @see frameweb.PageDependency#getSupplierPage()
 	 * @see #getPageDependency()
 	 * @generated
 	 */
-	EReference getPageDependency_TargetPage();
+	EReference getPageDependency_SupplierPage();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.PageDependency#getSourceTemplate <em>Source Template</em>}'.
+	 * Returns the meta object for the reference '{@link frameweb.PageDependency#getClientTemplate <em>Client Template</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source Template</em>'.
-	 * @see frameweb.PageDependency#getSourceTemplate()
+	 * @return the meta object for the reference '<em>Client Template</em>'.
+	 * @see frameweb.PageDependency#getClientTemplate()
 	 * @see #getPageDependency()
 	 * @generated
 	 */
-	EReference getPageDependency_SourceTemplate();
+	EReference getPageDependency_ClientTemplate();
 
 	/**
 	 * Returns the meta object for the attribute '{@link frameweb.PageDependency#getLinkHTML <em>Link HTML</em>}'.
@@ -81670,15 +87101,15 @@ public interface FramewebPackage extends EPackage {
 	EAttribute getPageDependency_LinkHTML();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.PageDependency#getSourcePage <em>Source Page</em>}'.
+	 * Returns the meta object for the reference '{@link frameweb.PageDependency#getClientPage <em>Client Page</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source Page</em>'.
-	 * @see frameweb.PageDependency#getSourcePage()
+	 * @return the meta object for the reference '<em>Client Page</em>'.
+	 * @see frameweb.PageDependency#getClientPage()
 	 * @see #getPageDependency()
 	 * @generated
 	 */
-	EReference getPageDependency_SourcePage();
+	EReference getPageDependency_ClientPage();
 
 	/**
 	 * Returns the meta object for class '{@link frameweb.ChainingDependency <em>Chaining Dependency</em>}'.
@@ -81713,26 +87144,26 @@ public interface FramewebPackage extends EPackage {
 	EReference getChainingDependency_InMethod();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.ChainingDependency#getTargetFrontController <em>Target Front Controller</em>}'.
+	 * Returns the meta object for the reference '{@link frameweb.ChainingDependency#getSupplierFrontController <em>Supplier Front Controller</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target Front Controller</em>'.
-	 * @see frameweb.ChainingDependency#getTargetFrontController()
+	 * @return the meta object for the reference '<em>Supplier Front Controller</em>'.
+	 * @see frameweb.ChainingDependency#getSupplierFrontController()
 	 * @see #getChainingDependency()
 	 * @generated
 	 */
-	EReference getChainingDependency_TargetFrontController();
+	EReference getChainingDependency_SupplierFrontController();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.ChainingDependency#getSourceFrontController <em>Source Front Controller</em>}'.
+	 * Returns the meta object for the reference '{@link frameweb.ChainingDependency#getClientFrontController <em>Client Front Controller</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Source Front Controller</em>'.
-	 * @see frameweb.ChainingDependency#getSourceFrontController()
+	 * @return the meta object for the reference '<em>Client Front Controller</em>'.
+	 * @see frameweb.ChainingDependency#getClientFrontController()
 	 * @see #getChainingDependency()
 	 * @generated
 	 */
-	EReference getChainingDependency_SourceFrontController();
+	EReference getChainingDependency_ClientFrontController();
 
 	/**
 	 * Returns the meta object for class '{@link frameweb.DAOServiceAssociation <em>DAO Service Association</em>}'.
@@ -82067,22 +87498,22 @@ public interface FramewebPackage extends EPackage {
 	EClass getJQuery();
 
 	/**
-	 * Returns the meta object for class '{@link FrameworkTag <em>Form Component</em>}'.
+	 * Returns the meta object for class '{@link Tag <em>Form Component</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Form Component</em>'.
-	 * @see FrameworkTag
-	 * @model instanceClass="FrameworkTag"
+	 * @see Tag
+	 * @model instanceClass="Tag"
 	 * @generated
 	 */
 	EClass getFormComponent();
 
 	/**
-	 * Returns the meta object for the reference '{@link FrameworkTag#getInject <em>Inject</em>}'.
+	 * Returns the meta object for the reference '{@link Tag#getInject <em>Inject</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Inject</em>'.
-	 * @see FrameworkTag#getInject()
+	 * @see Tag#getInject()
 	 * @see #getFormComponent()
 	 * @generated
 	 */
@@ -82110,14 +87541,15 @@ public interface FramewebPackage extends EPackage {
 	EReference getTagLib_TagLibTag();
 
 	/**
-	 * Returns the meta object for class '{@link frameweb.FrameworkTag <em>Framework Tag</em>}'.
+	 * Returns the meta object for the attribute '{@link frameweb.TagLib#getPrefix <em>Prefix</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Framework Tag</em>'.
-	 * @see frameweb.FrameworkTag
+	 * @return the meta object for the attribute '<em>Prefix</em>'.
+	 * @see frameweb.TagLib#getPrefix()
+	 * @see #getTagLib()
 	 * @generated
 	 */
-	EClass getFrameworkTag();
+	EAttribute getTagLib_Prefix();
 
 	/**
 	 * Returns the meta object for class '{@link frameweb.Rule <em>Rule</em>}'.
@@ -82159,6 +87591,36 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAnotation();
+
+	/**
+	 * Returns the meta object for class '{@link frameweb.NavigationCompositionEnd <em>Navigation Composition End</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Navigation Composition End</em>'.
+	 * @see frameweb.NavigationCompositionEnd
+	 * @generated
+	 */
+	EClass getNavigationCompositionEnd();
+
+	/**
+	 * Returns the meta object for class '{@link frameweb.NavigationComposition <em>Navigation Composition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Navigation Composition</em>'.
+	 * @see frameweb.NavigationComposition
+	 * @generated
+	 */
+	EClass getNavigationComposition();
+
+	/**
+	 * Returns the meta object for class '{@link frameweb.NavigationProperty <em>Navigation Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Navigation Property</em>'.
+	 * @see frameweb.NavigationProperty
+	 * @generated
+	 */
+	EClass getNavigationProperty();
 
 	/**
 	 * Returns the meta object for enum '{@link frameweb.DateTimePrecision <em>Date Time Precision</em>}'.
@@ -82358,14 +87820,6 @@ public interface FramewebPackage extends EPackage {
 		EClass FRAME_WEB_MODEL = eINSTANCE.getFrameWebModel();
 
 		/**
-		 * The meta object literal for the '<em><b>Indite</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference FRAME_WEB_MODEL__INDITE = eINSTANCE.getFrameWebModel_Indite();
-
-		/**
 		 * The meta object literal for the '{@link frameweb.impl.FrameworkImpl <em>Framework</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -82376,7 +87830,7 @@ public interface FramewebPackage extends EPackage {
 		EClass FRAMEWORK = eINSTANCE.getFramework();
 
 		/**
-		 * The meta object literal for the '<em><b>Framework Tag Lib</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Framework Tag Lib</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -82730,7 +88184,7 @@ public interface FramewebPackage extends EPackage {
 		EReference PAGE__PAGE_CLASS_ATTRIBUTE = eINSTANCE.getPage_PageClassAttribute();
 
 		/**
-		 * The meta object literal for the '<em><b>Page Tag Lib</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Page Tag Lib</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -82738,12 +88192,12 @@ public interface FramewebPackage extends EPackage {
 		EReference PAGE__PAGE_TAG_LIB = eINSTANCE.getPage_PageTagLib();
 
 		/**
-		 * The meta object literal for the '<em><b>Mention</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Page Composition</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PAGE__MENTION = eINSTANCE.getPage_Mention();
+		EReference PAGE__PAGE_COMPOSITION = eINSTANCE.getPage_PageComposition();
 
 		/**
 		 * The meta object literal for the '{@link frameweb.impl.TemplateImpl <em>Template</em>}' class.
@@ -82762,6 +88216,22 @@ public interface FramewebPackage extends EPackage {
 		 * @generated
 		 */
 		EReference TEMPLATE__TEMPLATE_CLASS_ATTRIBUTE = eINSTANCE.getTemplate_TemplateClassAttribute();
+
+		/**
+		 * The meta object literal for the '<em><b>Template Tag Lib</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TEMPLATE__TEMPLATE_TAG_LIB = eINSTANCE.getTemplate_TemplateTagLib();
+
+		/**
+		 * The meta object literal for the '<em><b>Template Composition</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TEMPLATE__TEMPLATE_COMPOSITION = eINSTANCE.getTemplate_TemplateComposition();
 
 		/**
 		 * The meta object literal for the '{@link frameweb.impl.FormImpl <em>Form</em>}' class.
@@ -83008,38 +88478,6 @@ public interface FramewebPackage extends EPackage {
 		EReference RESULT_DEPENDENCY__RETURN_METHOD = eINSTANCE.getResultDependency_ReturnMethod();
 
 		/**
-		 * The meta object literal for the '<em><b>Source Front Controller</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference RESULT_DEPENDENCY__SOURCE_FRONT_CONTROLLER = eINSTANCE.getResultDependency_SourceFrontController();
-
-		/**
-		 * The meta object literal for the '<em><b>Target Template</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference RESULT_DEPENDENCY__TARGET_TEMPLATE = eINSTANCE.getResultDependency_TargetTemplate();
-
-		/**
-		 * The meta object literal for the '<em><b>Target Page</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference RESULT_DEPENDENCY__TARGET_PAGE = eINSTANCE.getResultDependency_TargetPage();
-
-		/**
-		 * The meta object literal for the '<em><b>Target Binary</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference RESULT_DEPENDENCY__TARGET_BINARY = eINSTANCE.getResultDependency_TargetBinary();
-
-		/**
 		 * The meta object literal for the '<em><b>Return Result Type</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -83048,12 +88486,14 @@ public interface FramewebPackage extends EPackage {
 		EReference RESULT_DEPENDENCY__RETURN_RESULT_TYPE = eINSTANCE.getResultDependency_ReturnResultType();
 
 		/**
-		 * The meta object literal for the '<em><b>Target Form</b></em>' reference feature.
+		 * The meta object literal for the '{@link frameweb.impl.NavigationAssociationImpl <em>Navigation Association</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
+		 * @see frameweb.impl.NavigationAssociationImpl
+		 * @see frameweb.impl.FramewebPackageImpl#getNavigationAssociation()
 		 * @generated
 		 */
-		EReference RESULT_DEPENDENCY__TARGET_FORM = eINSTANCE.getResultDependency_TargetForm();
+		EClass NAVIGATION_ASSOCIATION = eINSTANCE.getNavigationAssociation();
 
 		/**
 		 * The meta object literal for the '<em><b>Target Component</b></em>' reference feature.
@@ -83061,7 +88501,7 @@ public interface FramewebPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RESULT_DEPENDENCY__TARGET_COMPONENT = eINSTANCE.getResultDependency_TargetComponent();
+		EReference NAVIGATION_ASSOCIATION__TARGET_COMPONENT = eINSTANCE.getNavigationAssociation_TargetComponent();
 
 		/**
 		 * The meta object literal for the '<em><b>Target JQuery</b></em>' reference feature.
@@ -83069,65 +88509,15 @@ public interface FramewebPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RESULT_DEPENDENCY__TARGET_JQUERY = eINSTANCE.getResultDependency_TargetJQuery();
+		EReference NAVIGATION_ASSOCIATION__TARGET_JQUERY = eINSTANCE.getNavigationAssociation_TargetJQuery();
 
 		/**
-		 * The meta object literal for the '<em><b>Target Form Component</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Navigation Property</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RESULT_DEPENDENCY__TARGET_FORM_COMPONENT = eINSTANCE.getResultDependency_TargetFormComponent();
-
-		/**
-		 * The meta object literal for the '{@link frameweb.impl.NavigationCompositionImpl <em>Navigation Composition</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see frameweb.impl.NavigationCompositionImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getNavigationComposition()
-		 * @generated
-		 */
-		EClass NAVIGATION_COMPOSITION = eINSTANCE.getNavigationComposition();
-
-		/**
-		 * The meta object literal for the '<em><b>Source Template</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference NAVIGATION_COMPOSITION__SOURCE_TEMPLATE = eINSTANCE.getNavigationComposition_SourceTemplate();
-
-		/**
-		 * The meta object literal for the '<em><b>Source Page</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference NAVIGATION_COMPOSITION__SOURCE_PAGE = eINSTANCE.getNavigationComposition_SourcePage();
-
-		/**
-		 * The meta object literal for the '<em><b>Target Form</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference NAVIGATION_COMPOSITION__TARGET_FORM = eINSTANCE.getNavigationComposition_TargetForm();
-
-		/**
-		 * The meta object literal for the '<em><b>Target Component</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference NAVIGATION_COMPOSITION__TARGET_COMPONENT = eINSTANCE.getNavigationComposition_TargetComponent();
-
-		/**
-		 * The meta object literal for the '<em><b>Target JQuery</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference NAVIGATION_COMPOSITION__TARGET_JQUERY = eINSTANCE.getNavigationComposition_TargetJQuery();
+		EReference NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY = eINSTANCE.getNavigationAssociation_NavigationProperty();
 
 		/**
 		 * The meta object literal for the '{@link frameweb.impl.FrontControllerMethodImpl <em>Front Controller Method</em>}' class.
@@ -83468,52 +88858,52 @@ public interface FramewebPackage extends EPackage {
 		EReference FRONT_CONTROLLER_DEPENDENCY__METHOD = eINSTANCE.getFrontControllerDependency_Method();
 
 		/**
-		 * The meta object literal for the '<em><b>Source Form</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Client Form</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FRONT_CONTROLLER_DEPENDENCY__SOURCE_FORM = eINSTANCE.getFrontControllerDependency_SourceForm();
+		EReference FRONT_CONTROLLER_DEPENDENCY__CLIENT_FORM = eINSTANCE.getFrontControllerDependency_ClientForm();
 
 		/**
-		 * The meta object literal for the '<em><b>Target Front Controller</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Supplier Front Controller</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FRONT_CONTROLLER_DEPENDENCY__TARGET_FRONT_CONTROLLER = eINSTANCE.getFrontControllerDependency_TargetFrontController();
+		EReference FRONT_CONTROLLER_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER = eINSTANCE.getFrontControllerDependency_SupplierFrontController();
 
 		/**
-		 * The meta object literal for the '<em><b>Source Page</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Client Page</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FRONT_CONTROLLER_DEPENDENCY__SOURCE_PAGE = eINSTANCE.getFrontControllerDependency_SourcePage();
+		EReference FRONT_CONTROLLER_DEPENDENCY__CLIENT_PAGE = eINSTANCE.getFrontControllerDependency_ClientPage();
 
 		/**
-		 * The meta object literal for the '<em><b>Source Template</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Client Template</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FRONT_CONTROLLER_DEPENDENCY__SOURCE_TEMPLATE = eINSTANCE.getFrontControllerDependency_SourceTemplate();
+		EReference FRONT_CONTROLLER_DEPENDENCY__CLIENT_TEMPLATE = eINSTANCE.getFrontControllerDependency_ClientTemplate();
 
 		/**
-		 * The meta object literal for the '<em><b>Source Component</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Client Component</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FRONT_CONTROLLER_DEPENDENCY__SOURCE_COMPONENT = eINSTANCE.getFrontControllerDependency_SourceComponent();
+		EReference FRONT_CONTROLLER_DEPENDENCY__CLIENT_COMPONENT = eINSTANCE.getFrontControllerDependency_ClientComponent();
 
 		/**
-		 * The meta object literal for the '<em><b>Source JQuery</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Client JQuery</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FRONT_CONTROLLER_DEPENDENCY__SOURCE_JQUERY = eINSTANCE.getFrontControllerDependency_SourceJQuery();
+		EReference FRONT_CONTROLLER_DEPENDENCY__CLIENT_JQUERY = eINSTANCE.getFrontControllerDependency_ClientJQuery();
 
 		/**
 		 * The meta object literal for the '{@link frameweb.impl.PageDependencyImpl <em>Page Dependency</em>}' class.
@@ -83526,20 +88916,20 @@ public interface FramewebPackage extends EPackage {
 		EClass PAGE_DEPENDENCY = eINSTANCE.getPageDependency();
 
 		/**
-		 * The meta object literal for the '<em><b>Target Page</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Supplier Page</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PAGE_DEPENDENCY__TARGET_PAGE = eINSTANCE.getPageDependency_TargetPage();
+		EReference PAGE_DEPENDENCY__SUPPLIER_PAGE = eINSTANCE.getPageDependency_SupplierPage();
 
 		/**
-		 * The meta object literal for the '<em><b>Source Template</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Client Template</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PAGE_DEPENDENCY__SOURCE_TEMPLATE = eINSTANCE.getPageDependency_SourceTemplate();
+		EReference PAGE_DEPENDENCY__CLIENT_TEMPLATE = eINSTANCE.getPageDependency_ClientTemplate();
 
 		/**
 		 * The meta object literal for the '<em><b>Link HTML</b></em>' attribute feature.
@@ -83550,12 +88940,12 @@ public interface FramewebPackage extends EPackage {
 		EAttribute PAGE_DEPENDENCY__LINK_HTML = eINSTANCE.getPageDependency_LinkHTML();
 
 		/**
-		 * The meta object literal for the '<em><b>Source Page</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Client Page</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PAGE_DEPENDENCY__SOURCE_PAGE = eINSTANCE.getPageDependency_SourcePage();
+		EReference PAGE_DEPENDENCY__CLIENT_PAGE = eINSTANCE.getPageDependency_ClientPage();
 
 		/**
 		 * The meta object literal for the '{@link frameweb.impl.ChainingDependencyImpl <em>Chaining Dependency</em>}' class.
@@ -83584,20 +88974,20 @@ public interface FramewebPackage extends EPackage {
 		EReference CHAINING_DEPENDENCY__IN_METHOD = eINSTANCE.getChainingDependency_InMethod();
 
 		/**
-		 * The meta object literal for the '<em><b>Target Front Controller</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Supplier Front Controller</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CHAINING_DEPENDENCY__TARGET_FRONT_CONTROLLER = eINSTANCE.getChainingDependency_TargetFrontController();
+		EReference CHAINING_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER = eINSTANCE.getChainingDependency_SupplierFrontController();
 
 		/**
-		 * The meta object literal for the '<em><b>Source Front Controller</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Client Front Controller</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CHAINING_DEPENDENCY__SOURCE_FRONT_CONTROLLER = eINSTANCE.getChainingDependency_SourceFrontController();
+		EReference CHAINING_DEPENDENCY__CLIENT_FRONT_CONTROLLER = eINSTANCE.getChainingDependency_ClientFrontController();
 
 		/**
 		 * The meta object literal for the '{@link frameweb.impl.DAOServiceAssociationImpl <em>DAO Service Association</em>}' class.
@@ -83932,14 +89322,12 @@ public interface FramewebPackage extends EPackage {
 		EReference TAG_LIB__TAG_LIB_TAG = eINSTANCE.getTagLib_TagLibTag();
 
 		/**
-		 * The meta object literal for the '{@link frameweb.impl.FrameworkTagImpl <em>Framework Tag</em>}' class.
+		 * The meta object literal for the '<em><b>Prefix</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see frameweb.impl.FrameworkTagImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getFrameworkTag()
 		 * @generated
 		 */
-		EClass FRAMEWORK_TAG = eINSTANCE.getFrameworkTag();
+		EAttribute TAG_LIB__PREFIX = eINSTANCE.getTagLib_Prefix();
 
 		/**
 		 * The meta object literal for the '{@link frameweb.impl.RuleImpl <em>Rule</em>}' class.
@@ -83978,6 +89366,36 @@ public interface FramewebPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ANOTATION = eINSTANCE.getAnotation();
+
+		/**
+		 * The meta object literal for the '{@link frameweb.impl.NavigationCompositionEndImpl <em>Navigation Composition End</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see frameweb.impl.NavigationCompositionEndImpl
+		 * @see frameweb.impl.FramewebPackageImpl#getNavigationCompositionEnd()
+		 * @generated
+		 */
+		EClass NAVIGATION_COMPOSITION_END = eINSTANCE.getNavigationCompositionEnd();
+
+		/**
+		 * The meta object literal for the '{@link frameweb.impl.NavigationCompositionImpl <em>Navigation Composition</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see frameweb.impl.NavigationCompositionImpl
+		 * @see frameweb.impl.FramewebPackageImpl#getNavigationComposition()
+		 * @generated
+		 */
+		EClass NAVIGATION_COMPOSITION = eINSTANCE.getNavigationComposition();
+
+		/**
+		 * The meta object literal for the '{@link frameweb.impl.NavigationPropertyImpl <em>Navigation Property</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see frameweb.impl.NavigationPropertyImpl
+		 * @see frameweb.impl.FramewebPackageImpl#getNavigationProperty()
+		 * @generated
+		 */
+		EClass NAVIGATION_PROPERTY = eINSTANCE.getNavigationProperty();
 
 		/**
 		 * The meta object literal for the '{@link frameweb.DateTimePrecision <em>Date Time Precision</em>}' enum.

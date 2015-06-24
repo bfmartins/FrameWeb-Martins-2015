@@ -32,7 +32,7 @@ import org.eclipse.uml2.uml.internal.impl.ClassImpl;
  *
  * @generated
  */
-public abstract class TagImpl extends ClassImpl implements Tag {
+public class TagImpl extends ClassImpl implements Tag {
 	/**
 	 * The cached value of the '{@link #getSubTag() <em>Sub Tag</em>}' containment reference list.
 	 * <!-- begin-user-doc -->

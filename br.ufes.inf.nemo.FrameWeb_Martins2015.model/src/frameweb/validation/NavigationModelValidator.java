@@ -5,7 +5,7 @@
 package frameweb.validation;
 
 import frameweb.ControllerPackage;
-import frameweb.NavigationComposition;
+import frameweb.NavigationAssociation;
 import frameweb.NavigationDependency;
 import frameweb.ViewPackage;
 
@@ -23,5 +23,5 @@ public interface NavigationModelValidator {
 	boolean validateNavigationUMLDependency(EList<NavigationDependency> value);
 	boolean validateViewUMLPackage(EList<ViewPackage> value);
 	boolean validateControllerUMLPackage(EList<ControllerPackage> value);
-	boolean validateNavigationUMLComposition(EList<NavigationComposition> value);
+	boolean validateNavigationUMLComposition(EList<NavigationAssociation> value);
 }

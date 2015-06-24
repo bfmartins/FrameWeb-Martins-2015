@@ -13,8 +13,8 @@ package frameweb;
  * <ul>
  *   <li>{@link frameweb.ChainingDependency#getOutMethod <em>Out Method</em>}</li>
  *   <li>{@link frameweb.ChainingDependency#getInMethod <em>In Method</em>}</li>
- *   <li>{@link frameweb.ChainingDependency#getTargetFrontController <em>Target Front Controller</em>}</li>
- *   <li>{@link frameweb.ChainingDependency#getSourceFrontController <em>Source Front Controller</em>}</li>
+ *   <li>{@link frameweb.ChainingDependency#getSupplierFrontController <em>Supplier Front Controller</em>}</li>
+ *   <li>{@link frameweb.ChainingDependency#getClientFrontController <em>Client Front Controller</em>}</li>
  * </ul>
  * </p>
  *
@@ -76,55 +76,55 @@ public interface ChainingDependency extends NavigationDependency {
 	void setInMethod(FrontControllerMethod value);
 
 	/**
-	 * Returns the value of the '<em><b>Target Front Controller</b></em>' reference.
+	 * Returns the value of the '<em><b>Supplier Front Controller</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Target Front Controller</em>' reference isn't clear,
+	 * If the meaning of the '<em>Supplier Front Controller</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Target Front Controller</em>' reference.
-	 * @see #setTargetFrontController(FrontControllerClass)
-	 * @see frameweb.FramewebPackage#getChainingDependency_TargetFrontController()
+	 * @return the value of the '<em>Supplier Front Controller</em>' reference.
+	 * @see #setSupplierFrontController(FrontControllerClass)
+	 * @see frameweb.FramewebPackage#getChainingDependency_SupplierFrontController()
 	 * @model required="true"
 	 * @generated
 	 */
-	FrontControllerClass getTargetFrontController();
+	FrontControllerClass getSupplierFrontController();
 
 	/**
-	 * Sets the value of the '{@link frameweb.ChainingDependency#getTargetFrontController <em>Target Front Controller</em>}' reference.
+	 * Sets the value of the '{@link frameweb.ChainingDependency#getSupplierFrontController <em>Supplier Front Controller</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target Front Controller</em>' reference.
-	 * @see #getTargetFrontController()
+	 * @param value the new value of the '<em>Supplier Front Controller</em>' reference.
+	 * @see #getSupplierFrontController()
 	 * @generated
 	 */
-	void setTargetFrontController(FrontControllerClass value);
+	void setSupplierFrontController(FrontControllerClass value);
 
 	/**
-	 * Returns the value of the '<em><b>Source Front Controller</b></em>' reference.
+	 * Returns the value of the '<em><b>Client Front Controller</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Source Front Controller</em>' reference isn't clear,
+	 * If the meaning of the '<em>Client Front Controller</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Source Front Controller</em>' reference.
-	 * @see #setSourceFrontController(FrontControllerClass)
-	 * @see frameweb.FramewebPackage#getChainingDependency_SourceFrontController()
+	 * @return the value of the '<em>Client Front Controller</em>' reference.
+	 * @see #setClientFrontController(FrontControllerClass)
+	 * @see frameweb.FramewebPackage#getChainingDependency_ClientFrontController()
 	 * @model required="true"
 	 * @generated
 	 */
-	FrontControllerClass getSourceFrontController();
+	FrontControllerClass getClientFrontController();
 
 	/**
-	 * Sets the value of the '{@link frameweb.ChainingDependency#getSourceFrontController <em>Source Front Controller</em>}' reference.
+	 * Sets the value of the '{@link frameweb.ChainingDependency#getClientFrontController <em>Client Front Controller</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Source Front Controller</em>' reference.
-	 * @see #getSourceFrontController()
+	 * @param value the new value of the '<em>Client Front Controller</em>' reference.
+	 * @see #getClientFrontController()
 	 * @generated
 	 */
-	void setSourceFrontController(FrontControllerClass value);
+	void setClientFrontController(FrontControllerClass value);
 
 } // ChainingDependency

@@ -8,9 +8,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
 /**
@@ -81,11 +79,11 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.DAO_CLASS: return createDAOClass();
 			case FramewebPackage.DAO_GENERALIZATION: return createDAOGeneralization();
 			case FramewebPackage.FRONT_CONTROLLER_CLASS: return createFrontControllerClass();
-			case FramewebPackage.USER_VIEW_ATTRIBUTE: return createUserViewAttribute();
+			case FramewebPackage.USER_VIEW_ATTRIBUTE: return (EObject)createUserViewAttribute();
 			case FramewebPackage.IO_PARAMETER: return createIOParameter();
 			case FramewebPackage.DAO_BASE_OPERATION: return createDAOBaseOperation();
 			case FramewebPackage.RESULT_DEPENDENCY: return createResultDependency();
-			case FramewebPackage.NAVIGATION_COMPOSITION: return createNavigationComposition();
+			case FramewebPackage.NAVIGATION_ASSOCIATION: return createNavigationAssociation();
 			case FramewebPackage.FRONT_CONTROLLER_METHOD: return createFrontControllerMethod();
 			case FramewebPackage.SERVICE_CLASS: return createServiceClass();
 			case FramewebPackage.SERVICE_INTERFACE: return createServiceInterface();
@@ -98,7 +96,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.DOMAIN_COLUMN_NAME: return createDomainColumnName();
 			case FramewebPackage.DAO_INTERFACE_NAME: return createDAOInterfaceName();
 			case FramewebPackage.DAO_CLASS_NAME: return createDAOClassName();
-			case FramewebPackage.RESULT: return createResult();
+			case FramewebPackage.RESULT: return (EObject)createResult();
 			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY: return createFrontControllerDependency();
 			case FramewebPackage.PAGE_DEPENDENCY: return createPageDependency();
 			case FramewebPackage.CHAINING_DEPENDENCY: return createChainingDependency();
@@ -119,9 +117,11 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.JQUERY: return createJQuery();
 			case FramewebPackage.FORM_COMPONENT: return (EObject)createFormComponent();
 			case FramewebPackage.TAG_LIB: return createTagLib();
-			case FramewebPackage.FRAMEWORK_TAG: return createFrameworkTag();
 			case FramewebPackage.RULE: return createRule();
+			case FramewebPackage.TAG: return createTag();
 			case FramewebPackage.ANOTATION: return createAnotation();
+			case FramewebPackage.NAVIGATION_COMPOSITION_END: return createNavigationCompositionEnd();
+			case FramewebPackage.NAVIGATION_COMPOSITION: return createNavigationComposition();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -438,7 +438,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UserViewAttribute createUserViewAttribute() {
+	public Tag createUserViewAttribute() {
 		UserViewAttributeImpl userViewAttribute = new UserViewAttributeImpl();
 		return userViewAttribute;
 	}
@@ -478,9 +478,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NavigationComposition createNavigationComposition() {
-		NavigationCompositionImpl navigationComposition = new NavigationCompositionImpl();
-		return navigationComposition;
+	public NavigationAssociation createNavigationAssociation() {
+		NavigationAssociationImpl navigationAssociation = new NavigationAssociationImpl();
+		return navigationAssociation;
 	}
 
 	/**
@@ -608,7 +608,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Result createResult() {
+	public ResultType createResult() {
 		ResultImpl result = new ResultImpl();
 		return result;
 	}
@@ -798,7 +798,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrameworkTag createFormComponent() {
+	public Tag createFormComponent() {
 		FormComponentImpl formComponent = new FormComponentImpl();
 		return formComponent;
 	}
@@ -818,16 +818,6 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrameworkTag createFrameworkTag() {
-		FrameworkTagImpl frameworkTag = new FrameworkTagImpl();
-		return frameworkTag;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Rule createRule() {
 		RuleImpl rule = new RuleImpl();
 		return rule;
@@ -838,9 +828,39 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Tag createTag() {
+		TagImpl tag = new TagImpl();
+		return tag;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Anotation createAnotation() {
 		AnotationImpl anotation = new AnotationImpl();
 		return anotation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NavigationCompositionEnd createNavigationCompositionEnd() {
+		NavigationCompositionEndImpl navigationCompositionEnd = new NavigationCompositionEndImpl();
+		return navigationCompositionEnd;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NavigationComposition createNavigationComposition() {
+		NavigationCompositionImpl navigationComposition = new NavigationCompositionImpl();
+		return navigationComposition;
 	}
 
 	/**

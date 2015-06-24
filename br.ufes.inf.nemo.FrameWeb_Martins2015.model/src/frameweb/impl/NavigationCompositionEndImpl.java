@@ -3,26 +3,26 @@
 package frameweb.impl;
 
 import frameweb.FramewebPackage;
-import frameweb.FrameworkTag;
+import frameweb.NavigationCompositionEnd;
 
 import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Framework Tag</b></em>'.
+ * An implementation of the model object '<em><b>Navigation Composition End</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class FrameworkTagImpl extends TagImpl implements FrameworkTag {
+public class NavigationCompositionEndImpl extends NavigationPropertyImpl implements NavigationCompositionEnd {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FrameworkTagImpl() {
+	protected NavigationCompositionEndImpl() {
 		super();
 	}
 
@@ -33,7 +33,7 @@ public class FrameworkTagImpl extends TagImpl implements FrameworkTag {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FramewebPackage.Literals.FRAMEWORK_TAG;
+		return FramewebPackage.Literals.NAVIGATION_COMPOSITION_END;
 	}
 
-} //FrameworkTagImpl
+} //NavigationCompositionEndImpl

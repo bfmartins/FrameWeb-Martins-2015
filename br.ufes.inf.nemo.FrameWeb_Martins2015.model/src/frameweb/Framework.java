@@ -25,30 +25,20 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface Framework extends org.eclipse.uml2.uml.Package {
 	/**
-	 * Returns the value of the '<em><b>Framework Tag Lib</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Framework Tag Lib</b></em>' containment reference list.
+	 * The list contents are of type {@link frameweb.TagLib}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Framework Tag Lib</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Framework Tag Lib</em>' containment reference.
-	 * @see #setFrameworkTagLib(TagLib)
+	 * @return the value of the '<em>Framework Tag Lib</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getFramework_FrameworkTagLib()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	TagLib getFrameworkTagLib();
-
-	/**
-	 * Sets the value of the '{@link frameweb.Framework#getFrameworkTagLib <em>Framework Tag Lib</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Framework Tag Lib</em>' containment reference.
-	 * @see #getFrameworkTagLib()
-	 * @generated
-	 */
-	void setFrameworkTagLib(TagLib value);
+	EList<TagLib> getFrameworkTagLib();
 
 	/**
 	 * Returns the value of the '<em><b>Framework Rule</b></em>' containment reference list.
@@ -84,6 +74,7 @@ public interface Framework extends org.eclipse.uml2.uml.Package {
 
 	/**
 	 * Returns the value of the '<em><b>Framework Category</b></em>' attribute.
+	 * The default value is <code>"standard"</code>.
 	 * The literals are from the enumeration {@link frameweb.FrameworkCategoryList}.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -95,7 +86,7 @@ public interface Framework extends org.eclipse.uml2.uml.Package {
 	 * @see frameweb.FrameworkCategoryList
 	 * @see #setFrameworkCategory(FrameworkCategoryList)
 	 * @see frameweb.FramewebPackage#getFramework_FrameworkCategory()
-	 * @model
+	 * @model default="standard"
 	 * @generated
 	 */
 	FrameworkCategoryList getFrameworkCategory();
