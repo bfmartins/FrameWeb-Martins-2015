@@ -23,7 +23,7 @@ import org.eclipse.uml2.uml.internal.impl.AssociationImpl;
  * <ul>
  *   <li>{@link frameweb.impl.NavigationAssociationImpl#getTargetComponent <em>Target Component</em>}</li>
  *   <li>{@link frameweb.impl.NavigationAssociationImpl#getTargetJQuery <em>Target JQuery</em>}</li>
- *   <li>{@link frameweb.impl.NavigationAssociationImpl#getNavigationProperty <em>Navigation Property</em>}</li>
+ *   <li>{@link frameweb.impl.NavigationAssociationImpl#getNavigationAssociationProperty <em>Navigation Association Property</em>}</li>
  * </ul>
  * </p>
  *
@@ -51,14 +51,14 @@ public class NavigationAssociationImpl extends AssociationImpl implements Naviga
 	protected JQuery targetJQuery;
 
 	/**
-	 * The cached value of the '{@link #getNavigationProperty() <em>Navigation Property</em>}' containment reference.
+	 * The cached value of the '{@link #getNavigationAssociationProperty() <em>Navigation Association Property</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNavigationProperty()
+	 * @see #getNavigationAssociationProperty()
 	 * @generated
 	 * @ordered
 	 */
-	protected NavigationCompositionEnd navigationProperty;
+	protected NavigationCompositionEnd navigationAssociationProperty;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -160,8 +160,8 @@ public class NavigationAssociationImpl extends AssociationImpl implements Naviga
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NavigationCompositionEnd getNavigationProperty() {
-		return navigationProperty;
+	public NavigationCompositionEnd getNavigationAssociationProperty() {
+		return navigationAssociationProperty;
 	}
 
 	/**
@@ -169,11 +169,11 @@ public class NavigationAssociationImpl extends AssociationImpl implements Naviga
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetNavigationProperty(NavigationCompositionEnd newNavigationProperty, NotificationChain msgs) {
-		NavigationCompositionEnd oldNavigationProperty = navigationProperty;
-		navigationProperty = newNavigationProperty;
+	public NotificationChain basicSetNavigationAssociationProperty(NavigationCompositionEnd newNavigationAssociationProperty, NotificationChain msgs) {
+		NavigationCompositionEnd oldNavigationAssociationProperty = navigationAssociationProperty;
+		navigationAssociationProperty = newNavigationAssociationProperty;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY, oldNavigationProperty, newNavigationProperty);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY, oldNavigationAssociationProperty, newNavigationAssociationProperty);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -184,18 +184,18 @@ public class NavigationAssociationImpl extends AssociationImpl implements Naviga
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNavigationProperty(NavigationCompositionEnd newNavigationProperty) {
-		if (newNavigationProperty != navigationProperty) {
+	public void setNavigationAssociationProperty(NavigationCompositionEnd newNavigationAssociationProperty) {
+		if (newNavigationAssociationProperty != navigationAssociationProperty) {
 			NotificationChain msgs = null;
-			if (navigationProperty != null)
-				msgs = ((InternalEObject)navigationProperty).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY, null, msgs);
-			if (newNavigationProperty != null)
-				msgs = ((InternalEObject)newNavigationProperty).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY, null, msgs);
-			msgs = basicSetNavigationProperty(newNavigationProperty, msgs);
+			if (navigationAssociationProperty != null)
+				msgs = ((InternalEObject)navigationAssociationProperty).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY, null, msgs);
+			if (newNavigationAssociationProperty != null)
+				msgs = ((InternalEObject)newNavigationAssociationProperty).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY, null, msgs);
+			msgs = basicSetNavigationAssociationProperty(newNavigationAssociationProperty, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY, newNavigationProperty, newNavigationProperty));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY, newNavigationAssociationProperty, newNavigationAssociationProperty));
 	}
 
 	/**
@@ -206,8 +206,8 @@ public class NavigationAssociationImpl extends AssociationImpl implements Naviga
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY:
-				return basicSetNavigationProperty(null, msgs);
+			case FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY:
+				return basicSetNavigationAssociationProperty(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -226,8 +226,8 @@ public class NavigationAssociationImpl extends AssociationImpl implements Naviga
 			case FramewebPackage.NAVIGATION_ASSOCIATION__TARGET_JQUERY:
 				if (resolve) return getTargetJQuery();
 				return basicGetTargetJQuery();
-			case FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY:
-				return getNavigationProperty();
+			case FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY:
+				return getNavigationAssociationProperty();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -247,8 +247,8 @@ public class NavigationAssociationImpl extends AssociationImpl implements Naviga
 			case FramewebPackage.NAVIGATION_ASSOCIATION__TARGET_JQUERY:
 				setTargetJQuery((JQuery)newValue);
 				return;
-			case FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY:
-				setNavigationProperty((NavigationCompositionEnd)newValue);
+			case FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY:
+				setNavigationAssociationProperty((NavigationCompositionEnd)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -268,8 +268,8 @@ public class NavigationAssociationImpl extends AssociationImpl implements Naviga
 			case FramewebPackage.NAVIGATION_ASSOCIATION__TARGET_JQUERY:
 				setTargetJQuery((JQuery)null);
 				return;
-			case FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY:
-				setNavigationProperty((NavigationCompositionEnd)null);
+			case FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY:
+				setNavigationAssociationProperty((NavigationCompositionEnd)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -287,8 +287,8 @@ public class NavigationAssociationImpl extends AssociationImpl implements Naviga
 				return targetComponent != null;
 			case FramewebPackage.NAVIGATION_ASSOCIATION__TARGET_JQUERY:
 				return targetJQuery != null;
-			case FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY:
-				return navigationProperty != null;
+			case FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY:
+				return navigationAssociationProperty != null;
 		}
 		return super.eIsSet(featureID);
 	}

@@ -43439,13 +43439,13 @@ public interface FramewebPackage extends EPackage {
 	int NAVIGATION_ASSOCIATION__TARGET_JQUERY = UMLPackage.ASSOCIATION_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Navigation Property</b></em>' containment reference.
+	 * The feature id for the '<em><b>Navigation Association Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY = UMLPackage.ASSOCIATION_FEATURE_COUNT + 2;
+	int NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY = UMLPackage.ASSOCIATION_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Navigation Association</em>' class.
@@ -86579,15 +86579,15 @@ public interface FramewebPackage extends EPackage {
 	EReference getNavigationAssociation_TargetJQuery();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link frameweb.NavigationAssociation#getNavigationProperty <em>Navigation Property</em>}'.
+	 * Returns the meta object for the containment reference '{@link frameweb.NavigationAssociation#getNavigationAssociationProperty <em>Navigation Association Property</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Navigation Property</em>'.
-	 * @see frameweb.NavigationAssociation#getNavigationProperty()
+	 * @return the meta object for the containment reference '<em>Navigation Association Property</em>'.
+	 * @see frameweb.NavigationAssociation#getNavigationAssociationProperty()
 	 * @see #getNavigationAssociation()
 	 * @generated
 	 */
-	EReference getNavigationAssociation_NavigationProperty();
+	EReference getNavigationAssociation_NavigationAssociationProperty();
 
 	/**
 	 * Returns the meta object for class '{@link frameweb.FrontControllerMethod <em>Front Controller Method</em>}'.
@@ -88512,12 +88512,12 @@ public interface FramewebPackage extends EPackage {
 		EReference NAVIGATION_ASSOCIATION__TARGET_JQUERY = eINSTANCE.getNavigationAssociation_TargetJQuery();
 
 		/**
-		 * The meta object literal for the '<em><b>Navigation Property</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Navigation Association Property</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY = eINSTANCE.getNavigationAssociation_NavigationProperty();
+		EReference NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY = eINSTANCE.getNavigationAssociation_NavigationAssociationProperty();
 
 		/**
 		 * The meta object literal for the '{@link frameweb.impl.FrontControllerMethodImpl <em>Front Controller Method</em>}' class.

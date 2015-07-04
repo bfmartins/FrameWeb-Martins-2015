@@ -221,12 +221,10 @@
     <eAnnotations source="OCL" references="#//NavigationAssociation/%Ecore%/@details.0">
       <details key="NavigationAssociationConstraint" value="context NavigationAssociation&#xD;&#xA;  inv: &#xD;&#xA;    (self.oclAsType(Association).ownedEnd.oclIsTypeOf(NavigationComposition)) and &#xD;&#xA;    ((self.oclAsType(Association).memberEnd.oclIsTypeOf(NavigationComposition)) or &#xD;&#xA;    (self.oclAsType(Association).memberEnd.oclIsTypeOf(NavigationCompositionEnd)))"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetComponent" lowerBound="1"
-        eType="#//Component"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetJQuery" lowerBound="1"
-        eType="#//JQuery"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="NavigationProperty" lowerBound="1"
-        eType="#//NavigationCompositionEnd" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetComponent" eType="#//Component"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="TargetJQuery" eType="#//JQuery"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="NavigationAssociationProperty"
+        lowerBound="1" eType="#//NavigationCompositionEnd" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FrontControllerMethod" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Operation">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isDefault" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>

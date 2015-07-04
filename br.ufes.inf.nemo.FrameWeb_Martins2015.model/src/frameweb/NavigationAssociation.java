@@ -14,7 +14,7 @@ import org.eclipse.uml2.uml.Association;
  * <ul>
  *   <li>{@link frameweb.NavigationAssociation#getTargetComponent <em>Target Component</em>}</li>
  *   <li>{@link frameweb.NavigationAssociation#getTargetJQuery <em>Target JQuery</em>}</li>
- *   <li>{@link frameweb.NavigationAssociation#getNavigationProperty <em>Navigation Property</em>}</li>
+ *   <li>{@link frameweb.NavigationAssociation#getNavigationAssociationProperty <em>Navigation Association Property</em>}</li>
  * </ul>
  * </p>
  *
@@ -36,7 +36,7 @@ public interface NavigationAssociation extends Association {
 	 * @return the value of the '<em>Target Component</em>' reference.
 	 * @see #setTargetComponent(Component)
 	 * @see frameweb.FramewebPackage#getNavigationAssociation_TargetComponent()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	Component getTargetComponent();
@@ -62,7 +62,7 @@ public interface NavigationAssociation extends Association {
 	 * @return the value of the '<em>Target JQuery</em>' reference.
 	 * @see #setTargetJQuery(JQuery)
 	 * @see frameweb.FramewebPackage#getNavigationAssociation_TargetJQuery()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	JQuery getTargetJQuery();
@@ -78,29 +78,29 @@ public interface NavigationAssociation extends Association {
 	void setTargetJQuery(JQuery value);
 
 	/**
-	 * Returns the value of the '<em><b>Navigation Property</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Navigation Association Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Navigation Property</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Navigation Association Property</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Navigation Property</em>' containment reference.
-	 * @see #setNavigationProperty(NavigationCompositionEnd)
-	 * @see frameweb.FramewebPackage#getNavigationAssociation_NavigationProperty()
+	 * @return the value of the '<em>Navigation Association Property</em>' containment reference.
+	 * @see #setNavigationAssociationProperty(NavigationCompositionEnd)
+	 * @see frameweb.FramewebPackage#getNavigationAssociation_NavigationAssociationProperty()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	NavigationCompositionEnd getNavigationProperty();
+	NavigationCompositionEnd getNavigationAssociationProperty();
 
 	/**
-	 * Sets the value of the '{@link frameweb.NavigationAssociation#getNavigationProperty <em>Navigation Property</em>}' containment reference.
+	 * Sets the value of the '{@link frameweb.NavigationAssociation#getNavigationAssociationProperty <em>Navigation Association Property</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Navigation Property</em>' containment reference.
-	 * @see #getNavigationProperty()
+	 * @param value the new value of the '<em>Navigation Association Property</em>' containment reference.
+	 * @see #getNavigationAssociationProperty()
 	 * @generated
 	 */
-	void setNavigationProperty(NavigationCompositionEnd value);
+	void setNavigationAssociationProperty(NavigationCompositionEnd value);
 
 } // NavigationAssociation

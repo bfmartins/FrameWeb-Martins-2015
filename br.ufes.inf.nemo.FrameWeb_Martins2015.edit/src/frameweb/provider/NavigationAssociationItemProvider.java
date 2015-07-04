@@ -114,7 +114,7 @@ public class NavigationAssociationItemProvider extends AssociationItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FramewebPackage.Literals.NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY);
+			childrenFeatures.add(FramewebPackage.Literals.NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY);
 		}
 		return childrenFeatures;
 	}
@@ -170,7 +170,7 @@ public class NavigationAssociationItemProvider extends AssociationItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(NavigationAssociation.class)) {
-			case FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY:
+			case FramewebPackage.NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -345,7 +345,7 @@ public class NavigationAssociationItemProvider extends AssociationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FramewebPackage.Literals.NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY,
+				(FramewebPackage.Literals.NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY,
 				 FramewebFactory.eINSTANCE.createNavigationCompositionEnd()));
 	}
 
@@ -365,7 +365,7 @@ public class NavigationAssociationItemProvider extends AssociationItemProvider {
 			childFeature == UMLPackage.Literals.CLASSIFIER__REPRESENTATION ||
 			childFeature == UMLPackage.Literals.ASSOCIATION__OWNED_END ||
 			childFeature == UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END ||
-			childFeature == FramewebPackage.Literals.NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY;
+			childFeature == FramewebPackage.Literals.NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY;
 
 		if (qualify) {
 			return getString

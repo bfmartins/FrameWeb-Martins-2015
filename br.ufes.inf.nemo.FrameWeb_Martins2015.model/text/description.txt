@@ -123,9 +123,9 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference ReturnResultType : ResultType<<0..*>>
 
   Class NavigationAssociation -> Association
-    Reference TargetComponent : Component<<1..1>>
-    Reference TargetJQuery : JQuery<<1..1>>
-    Reference NavigationProperty : NavigationCompositionEnd<<1..1>>
+    Reference TargetComponent : Component
+    Reference TargetJQuery : JQuery
+    Reference NavigationAssociationProperty : NavigationCompositionEnd<<1..1>>
 
   Class FrontControllerMethod -> Operation
     Attribute isDefault : EBoolean

@@ -1587,7 +1587,7 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getNavigationAssociation_NavigationProperty() {
+	public EReference getNavigationAssociation_NavigationAssociationProperty() {
 		return (EReference)navigationAssociationEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -2709,7 +2709,7 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		navigationAssociationEClass = createEClass(NAVIGATION_ASSOCIATION);
 		createEReference(navigationAssociationEClass, NAVIGATION_ASSOCIATION__TARGET_COMPONENT);
 		createEReference(navigationAssociationEClass, NAVIGATION_ASSOCIATION__TARGET_JQUERY);
-		createEReference(navigationAssociationEClass, NAVIGATION_ASSOCIATION__NAVIGATION_PROPERTY);
+		createEReference(navigationAssociationEClass, NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY);
 
 		frontControllerMethodEClass = createEClass(FRONT_CONTROLLER_METHOD);
 		createEAttribute(frontControllerMethodEClass, FRONT_CONTROLLER_METHOD__IS_DEFAULT);
@@ -3091,9 +3091,9 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		initEReference(getResultDependency_ReturnResultType(), this.getResultType(), null, "ReturnResultType", null, 0, -1, ResultDependency.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(navigationAssociationEClass, NavigationAssociation.class, "NavigationAssociation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getNavigationAssociation_TargetComponent(), this.getComponent(), null, "TargetComponent", null, 1, 1, NavigationAssociation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getNavigationAssociation_TargetJQuery(), this.getJQuery(), null, "TargetJQuery", null, 1, 1, NavigationAssociation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getNavigationAssociation_NavigationProperty(), this.getNavigationCompositionEnd(), null, "NavigationProperty", null, 1, 1, NavigationAssociation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getNavigationAssociation_TargetComponent(), this.getComponent(), null, "TargetComponent", null, 0, 1, NavigationAssociation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getNavigationAssociation_TargetJQuery(), this.getJQuery(), null, "TargetJQuery", null, 0, 1, NavigationAssociation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getNavigationAssociation_NavigationAssociationProperty(), this.getNavigationCompositionEnd(), null, "NavigationAssociationProperty", null, 1, 1, NavigationAssociation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(frontControllerMethodEClass, FrontControllerMethod.class, "FrontControllerMethod", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getFrontControllerMethod_IsDefault(), ecorePackage.getEBoolean(), "isDefault", null, 0, 1, FrontControllerMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

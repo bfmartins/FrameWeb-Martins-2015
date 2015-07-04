@@ -27,6 +27,8 @@ public interface NavigationAssociationValidator {
 	boolean validateTargetComponent(Component value);
 	boolean validateTargetJQuery(JQuery value);
 
+	boolean validateNavigationAssociationProperty(NavigationCompositionEnd value);
+
 	boolean validateNavigationProperty(NavigationCompositionEnd value);
 
 	boolean validateNavigationProperty(NavigationComposition value);

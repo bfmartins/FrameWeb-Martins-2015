@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015">
-  <Compose xsi:type="frameweb:NavigationModel" name="SCAPNavigationModel">
-    <packagedElement xsi:type="frameweb:ResultDependency" name="Failure" client="//@Compose.0/SCAPController/RequestLeaveController" supplier="//@Compose.0/SCAPView/form.xhtml" ReturnMethod="//@Compose.0/SCAPController/RequestLeaveController/submit"/>
-    <packagedElement xsi:type="frameweb:ResultDependency" name="Success" client="//@Compose.0/SCAPController/RequestLeaveController" ReturnMethod="//@Compose.0/SCAPController/RequestLeaveController/submit"/>
-    <packagedElement xsi:type="frameweb:ViewPackage" name="SCAPView">
+  <Compose xsi:type="frameweb:NavigationModel" name="SCAP_LeaveAbsence_NM">
+    <packagedElement xsi:type="frameweb:ResultDependency" name="Failure" client="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController" supplier="//@Compose.0/SCAP_LeaveAbsence_View/form.xhtml" ReturnMethod="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController/submit"/>
+    <packagedElement xsi:type="frameweb:ResultDependency" name="Success" client="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController" supplier="//@Compose.0/SCAP_LeaveAbsence_View/success.xhtml" ReturnMethod="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController/submit"/>
+    <packagedElement xsi:type="frameweb:FrontControllerDependency" name="Submission" client="//@Compose.0/SCAP_LeaveAbsence_View/requestLeaveForm" supplier="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController" Method="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController/submit" ClientForm="//@Compose.0/SCAP_LeaveAbsence_View/requestLeaveForm" SupplierFrontController="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController"/>
+    <packagedElement xsi:type="frameweb:ViewPackage" name="SCAP_LeaveAbsence_View">
       <packagedElement xsi:type="frameweb:Page" name="success.xhtml">
-        <PageTagLib href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Uses.0/JSF%20Tag%20Lib"/>
+        <PageTagLib href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Uses.0/JSFcore"/>
       </packagedElement>
       <packagedElement xsi:type="frameweb:Page" name="form.xhtml">
-        <ownedAttribute xsi:type="frameweb:NavigationComposition" name="form" aggregation="composite" association="//@Compose.0/SCAPView/has"/>
-        <PageTagLib href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Uses.0/JSF%20Tag%20Lib"/>
+        <ownedAttribute xsi:type="frameweb:NavigationComposition" name="form" type="//@Compose.0/SCAP_LeaveAbsence_View/requestLeaveForm" aggregation="composite" association="//@Compose.0/SCAP_LeaveAbsence_View/hasForm"/>
+        <PageTagLib href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Uses.0/JSFcore"/>
       </packagedElement>
-      <packagedElement xsi:type="frameweb:Form" name="frmRequestLeave">
+      <packagedElement xsi:type="frameweb:Form" name="requestLeaveForm">
         <ownedAttribute xsi:type="frameweb:FormComponent" name="request.leaveType">
           <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Uses.0/JSFhtml/selectOneMenu"/>
         </ownedAttribute>
@@ -31,16 +32,16 @@
           <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Uses.0/JSFhtml/inputText"/>
         </FormClassAttribute>
       </packagedElement>
-      <packagedElement xsi:type="frameweb:NavigationAssociation" name="has" memberEnd="//@Compose.0/SCAPView/has/@ownedEnd.0 //@Compose.0/SCAPView/form.xhtml/form">
-        <ownedEnd xsi:type="frameweb:NavigationCompositionEnd" type="//@Compose.0/SCAPView/form.xhtml" association="//@Compose.0/SCAPView/has"/>
+      <packagedElement xsi:type="frameweb:NavigationAssociation" name="hasForm" memberEnd="//@Compose.0/SCAP_LeaveAbsence_View/hasForm/@ownedEnd.0 //@Compose.0/SCAP_LeaveAbsence_View/form.xhtml/form">
+        <ownedEnd xsi:type="frameweb:NavigationCompositionEnd" type="//@Compose.0/SCAP_LeaveAbsence_View/form.xhtml" association="//@Compose.0/SCAP_LeaveAbsence_View/hasForm"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xsi:type="frameweb:ControllerPackage" name="SCAPController">
+    <packagedElement xsi:type="frameweb:ControllerPackage" name="SCAP_LeaveAbsence_Controller">
       <packagedElement xsi:type="frameweb:FrontControllerClass" name="RequestLeaveController">
         <ownedAttribute xsi:type="frameweb:IOParameter" name="request"/>
         <ownedOperation xsi:type="frameweb:FrontControllerMethod" name="submit"/>
       </packagedElement>
     </packagedElement>
-    <NavigationUMLDependency xsi:type="frameweb:FrontControllerDependency" name="Submission" client="//@Compose.0/SCAPView/frmRequestLeave" supplier="//@Compose.0/SCAPController/RequestLeaveController" Method="//@Compose.0/SCAPController/RequestLeaveController/submit" ClientForm="//@Compose.0/SCAPView/frmRequestLeave" SupplierFrontController="//@Compose.0/SCAPController/RequestLeaveController"/>
+    <NavigationUMLDependency xsi:type="frameweb:FrontControllerDependency" name="Submission" client="//@Compose.0/SCAP_LeaveAbsence_View/requestLeaveForm" supplier="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController" Method="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController/submit" ClientForm="//@Compose.0/SCAP_LeaveAbsence_View/requestLeaveForm" SupplierFrontController="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController"/>
   </Compose>
 </frameweb:Frameweb>
