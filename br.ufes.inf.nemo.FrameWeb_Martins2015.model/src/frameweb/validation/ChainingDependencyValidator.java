@@ -4,7 +4,7 @@
  */
 package frameweb.validation;
 
-import frameweb.FrontControllerClass;
+import frameweb.ChainingConstraint;
 import frameweb.FrontControllerMethod;
 
 /**
@@ -18,6 +18,5 @@ public interface ChainingDependencyValidator {
 
 	boolean validateOutMethod(FrontControllerMethod value);
 	boolean validateInMethod(FrontControllerMethod value);
-	boolean validateSupplierFrontController(FrontControllerClass value);
-	boolean validateClientFrontController(FrontControllerClass value);
+	boolean validateChainingDependendencyConstraint(ChainingConstraint value);
 }

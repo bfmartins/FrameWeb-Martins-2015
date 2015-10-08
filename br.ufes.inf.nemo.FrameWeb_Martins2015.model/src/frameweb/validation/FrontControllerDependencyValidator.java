@@ -4,13 +4,8 @@
  */
 package frameweb.validation;
 
-import frameweb.Component;
-import frameweb.FrontControllerClass;
 import frameweb.FrontControllerMethod;
-import frameweb.JQuery;
-import frameweb.Page;
-import frameweb.Tag;
-import frameweb.Template;
+import frameweb.MethodCosntraint;
 
 /**
  * A sample validator interface for {@link frameweb.FrontControllerDependency}.
@@ -22,10 +17,5 @@ public interface FrontControllerDependencyValidator {
 	boolean validate();
 
 	boolean validateMethod(FrontControllerMethod value);
-	boolean validateClientForm(Tag value);
-	boolean validateSupplierFrontController(FrontControllerClass value);
-	boolean validateClientPage(Page value);
-	boolean validateClientTemplate(Template value);
-	boolean validateClientComponent(Component value);
-	boolean validateClientJQuery(JQuery value);
+	boolean validateMethodDependendencyConstraint(MethodCosntraint value);
 }

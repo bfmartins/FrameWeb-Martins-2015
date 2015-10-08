@@ -4,6 +4,8 @@
  */
 package frameweb.validation;
 
+import org.eclipse.emf.common.util.EList;
+
 
 /**
  * A sample validator interface for {@link frameweb.FrontControllerMethod}.
@@ -15,4 +17,6 @@ public interface FrontControllerMethodValidator {
 	boolean validate();
 
 	boolean validateIsDefault(boolean value);
+
+	boolean validateResult(EList<Object> value);
 }

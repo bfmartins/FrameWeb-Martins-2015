@@ -3,6 +3,7 @@
 package frameweb.provider;
 
 
+import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
 import frameweb.ResultDependency;
 
@@ -12,8 +13,13 @@ import java.util.List;
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.ecore.EStructuralFeature;
+
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import org.eclipse.uml2.uml.UMLPackage;
 
 /**
  * This is the item provider adapter for a {@link frameweb.ResultDependency} object.
@@ -43,27 +49,26 @@ public class ResultDependencyItemProvider extends NavigationDependencyItemProvid
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addReturnResultPropertyDescriptor(object);
-			addReturnMethodPropertyDescriptor(object);
-			addReturnResultTypePropertyDescriptor(object);
+			addResultResultPropertyDescriptor(object);
+			addResultMethodPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Return Result feature.
+	 * This adds a property descriptor for the Result Result feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addReturnResultPropertyDescriptor(Object object) {
+	protected void addResultResultPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_ResultDependency_ReturnResult_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_ResultDependency_ReturnResult_feature", "_UI_ResultDependency_type"),
-				 FramewebPackage.Literals.RESULT_DEPENDENCY__RETURN_RESULT,
+				 getString("_UI_ResultDependency_ResultResult_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ResultDependency_ResultResult_feature", "_UI_ResultDependency_type"),
+				 FramewebPackage.Literals.RESULT_DEPENDENCY__RESULT_RESULT,
 				 true,
 				 false,
 				 true,
@@ -73,19 +78,19 @@ public class ResultDependencyItemProvider extends NavigationDependencyItemProvid
 	}
 
 	/**
-	 * This adds a property descriptor for the Return Method feature.
+	 * This adds a property descriptor for the Result Method feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addReturnMethodPropertyDescriptor(Object object) {
+	protected void addResultMethodPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_ResultDependency_ReturnMethod_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_ResultDependency_ReturnMethod_feature", "_UI_ResultDependency_type"),
-				 FramewebPackage.Literals.RESULT_DEPENDENCY__RETURN_METHOD,
+				 getString("_UI_ResultDependency_ResultMethod_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ResultDependency_ResultMethod_feature", "_UI_ResultDependency_type"),
+				 FramewebPackage.Literals.RESULT_DEPENDENCY__RESULT_METHOD,
 				 true,
 				 false,
 				 true,
@@ -95,25 +100,33 @@ public class ResultDependencyItemProvider extends NavigationDependencyItemProvid
 	}
 
 	/**
-	 * This adds a property descriptor for the Return Result Type feature.
+	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
+	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
+	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addReturnResultTypePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_ResultDependency_ReturnResultType_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_ResultDependency_ReturnResultType_feature", "_UI_ResultDependency_type"),
-				 FramewebPackage.Literals.RESULT_DEPENDENCY__RETURN_RESULT_TYPE,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
+	@Override
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+		if (childrenFeatures == null) {
+			super.getChildrenFeatures(object);
+			childrenFeatures.add(FramewebPackage.Literals.RESULT_DEPENDENCY__RESULT_DEPENDENDENCY_COSNTRAINT);
+		}
+		return childrenFeatures;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EStructuralFeature getChildFeature(Object object, Object child) {
+		// Check the type of the specified child object and return the proper feature to use for
+		// adding (see {@link AddCommand}) it as a child.
+
+		return super.getChildFeature(object, child);
 	}
 
 	/**
@@ -152,6 +165,12 @@ public class ResultDependencyItemProvider extends NavigationDependencyItemProvid
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
+
+		switch (notification.getFeatureID(ResultDependency.class)) {
+			case FramewebPackage.RESULT_DEPENDENCY__RESULT_DEPENDENDENCY_COSNTRAINT:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+				return;
+		}
 		super.notifyChanged(notification);
 	}
 
@@ -165,6 +184,34 @@ public class ResultDependencyItemProvider extends NavigationDependencyItemProvid
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FramewebPackage.Literals.RESULT_DEPENDENCY__RESULT_DEPENDENDENCY_COSNTRAINT,
+				 FramewebFactory.eINSTANCE.createResultConstraint()));
+	}
+
+	/**
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify =
+			childFeature == UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
+			childFeature == FramewebPackage.Literals.RESULT_DEPENDENCY__RESULT_DEPENDENDENCY_COSNTRAINT;
+
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 }

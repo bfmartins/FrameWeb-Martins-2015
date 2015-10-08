@@ -3,6 +3,7 @@
 package frameweb.provider;
 
 
+import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
 import frameweb.PageDependency;
 
@@ -12,10 +13,12 @@ import java.util.List;
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
-import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
+import org.eclipse.emf.ecore.EStructuralFeature;
+
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import org.eclipse.uml2.uml.UMLPackage;
 
 /**
  * This is the item provider adapter for a {@link frameweb.PageDependency} object.
@@ -45,100 +48,38 @@ public class PageDependencyItemProvider extends NavigationDependencyItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addSupplierPagePropertyDescriptor(object);
-			addClientTemplatePropertyDescriptor(object);
-			addLinkHTMLPropertyDescriptor(object);
-			addClientPagePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Supplier Page feature.
+	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
+	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
+	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addSupplierPagePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_PageDependency_SupplierPage_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_PageDependency_SupplierPage_feature", "_UI_PageDependency_type"),
-				 FramewebPackage.Literals.PAGE_DEPENDENCY__SUPPLIER_PAGE,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
+	@Override
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+		if (childrenFeatures == null) {
+			super.getChildrenFeatures(object);
+			childrenFeatures.add(FramewebPackage.Literals.PAGE_DEPENDENCY__PAGE_DEPENDENCY_COSNTRAINT);
+		}
+		return childrenFeatures;
 	}
 
 	/**
-	 * This adds a property descriptor for the Client Template feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addClientTemplatePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_PageDependency_ClientTemplate_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_PageDependency_ClientTemplate_feature", "_UI_PageDependency_type"),
-				 FramewebPackage.Literals.PAGE_DEPENDENCY__CLIENT_TEMPLATE,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
+	@Override
+	protected EStructuralFeature getChildFeature(Object object, Object child) {
+		// Check the type of the specified child object and return the proper feature to use for
+		// adding (see {@link AddCommand}) it as a child.
 
-	/**
-	 * This adds a property descriptor for the Link HTML feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addLinkHTMLPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_PageDependency_linkHTML_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_PageDependency_linkHTML_feature", "_UI_PageDependency_type"),
-				 FramewebPackage.Literals.PAGE_DEPENDENCY__LINK_HTML,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Client Page feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addClientPagePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_PageDependency_ClientPage_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_PageDependency_ClientPage_feature", "_UI_PageDependency_type"),
-				 FramewebPackage.Literals.PAGE_DEPENDENCY__CLIENT_PAGE,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
+		return super.getChildFeature(object, child);
 	}
 
 	/**
@@ -179,8 +120,8 @@ public class PageDependencyItemProvider extends NavigationDependencyItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(PageDependency.class)) {
-			case FramewebPackage.PAGE_DEPENDENCY__LINK_HTML:
-				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			case FramewebPackage.PAGE_DEPENDENCY__PAGE_DEPENDENCY_COSNTRAINT:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
 		super.notifyChanged(notification);
@@ -196,6 +137,34 @@ public class PageDependencyItemProvider extends NavigationDependencyItemProvider
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FramewebPackage.Literals.PAGE_DEPENDENCY__PAGE_DEPENDENCY_COSNTRAINT,
+				 FramewebFactory.eINSTANCE.createPageConstraint()));
+	}
+
+	/**
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify =
+			childFeature == UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
+			childFeature == FramewebPackage.Literals.PAGE_DEPENDENCY__PAGE_DEPENDENCY_COSNTRAINT;
+
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 }

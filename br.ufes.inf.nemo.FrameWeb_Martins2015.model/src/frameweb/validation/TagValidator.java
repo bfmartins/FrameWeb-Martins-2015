@@ -4,9 +4,6 @@
  */
 package frameweb.validation;
 
-import frameweb.Tag;
-
-import org.eclipse.emf.common.util.EList;
 
 /**
  * A sample validator interface for {@link frameweb.Tag}.
@@ -17,5 +14,4 @@ import org.eclipse.emf.common.util.EList;
 public interface TagValidator {
 	boolean validate();
 
-	boolean validateSubTag(EList<Tag> value);
 }

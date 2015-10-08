@@ -13,13 +13,14 @@ package frameweb;
  * <ul>
  *   <li>{@link frameweb.ChainingDependency#getOutMethod <em>Out Method</em>}</li>
  *   <li>{@link frameweb.ChainingDependency#getInMethod <em>In Method</em>}</li>
- *   <li>{@link frameweb.ChainingDependency#getSupplierFrontController <em>Supplier Front Controller</em>}</li>
- *   <li>{@link frameweb.ChainingDependency#getClientFrontController <em>Client Front Controller</em>}</li>
+ *   <li>{@link frameweb.ChainingDependency#getChainingDependendencyConstraint <em>Chaining Dependendency Constraint</em>}</li>
  * </ul>
  * </p>
  *
  * @see frameweb.FramewebPackage#getChainingDependency()
- * @model
+ * @model annotation="Ecore constraints='ChainingDependencyConstraint'"
+ *        annotation="Comments ChainingDependencyConstraint='A ChainingDependencyConstraint must have a FrontControllerClass as client and a FrontControllerClass as supplier and these client and supplier can not be the same.'"
+ *        annotation="OCL ChainingDependencyConstraint='context ChainingDependency \r\n inv: \r\n  (self.oclAsType(Dependency).supplier.oclIsTypeOf(FrontControllerClass)) and\r\n  (self.oclAsType(Dependency).client.oclIsTypeOf(FrontControllerClass)) and \r\n  (self.oclAsType(Dependency).supplier <> self.oclAsType(Dependency).client) '"
  * @generated
  */
 public interface ChainingDependency extends NavigationDependency {
@@ -76,55 +77,29 @@ public interface ChainingDependency extends NavigationDependency {
 	void setInMethod(FrontControllerMethod value);
 
 	/**
-	 * Returns the value of the '<em><b>Supplier Front Controller</b></em>' reference.
+	 * Returns the value of the '<em><b>Chaining Dependendency Constraint</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Supplier Front Controller</em>' reference isn't clear,
+	 * If the meaning of the '<em>Chaining Dependendency Constraint</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Supplier Front Controller</em>' reference.
-	 * @see #setSupplierFrontController(FrontControllerClass)
-	 * @see frameweb.FramewebPackage#getChainingDependency_SupplierFrontController()
-	 * @model required="true"
+	 * @return the value of the '<em>Chaining Dependendency Constraint</em>' containment reference.
+	 * @see #setChainingDependendencyConstraint(ChainingConstraint)
+	 * @see frameweb.FramewebPackage#getChainingDependency_ChainingDependendencyConstraint()
+	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	FrontControllerClass getSupplierFrontController();
+	ChainingConstraint getChainingDependendencyConstraint();
 
 	/**
-	 * Sets the value of the '{@link frameweb.ChainingDependency#getSupplierFrontController <em>Supplier Front Controller</em>}' reference.
+	 * Sets the value of the '{@link frameweb.ChainingDependency#getChainingDependendencyConstraint <em>Chaining Dependendency Constraint</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Supplier Front Controller</em>' reference.
-	 * @see #getSupplierFrontController()
+	 * @param value the new value of the '<em>Chaining Dependendency Constraint</em>' containment reference.
+	 * @see #getChainingDependendencyConstraint()
 	 * @generated
 	 */
-	void setSupplierFrontController(FrontControllerClass value);
-
-	/**
-	 * Returns the value of the '<em><b>Client Front Controller</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Client Front Controller</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Client Front Controller</em>' reference.
-	 * @see #setClientFrontController(FrontControllerClass)
-	 * @see frameweb.FramewebPackage#getChainingDependency_ClientFrontController()
-	 * @model required="true"
-	 * @generated
-	 */
-	FrontControllerClass getClientFrontController();
-
-	/**
-	 * Sets the value of the '{@link frameweb.ChainingDependency#getClientFrontController <em>Client Front Controller</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Client Front Controller</em>' reference.
-	 * @see #getClientFrontController()
-	 * @generated
-	 */
-	void setClientFrontController(FrontControllerClass value);
+	void setChainingDependendencyConstraint(ChainingConstraint value);
 
 } // ChainingDependency

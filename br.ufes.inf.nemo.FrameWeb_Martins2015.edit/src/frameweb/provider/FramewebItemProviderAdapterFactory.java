@@ -486,52 +486,6 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link Tag} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected FormItemProvider formItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link Tag}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createFormAdapter() {
-		if (formItemProvider == null) {
-			formItemProvider = new FormItemProvider(this);
-		}
-
-		return formItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.Binary} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected BinaryItemProvider binaryItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link frameweb.Binary}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createBinaryAdapter() {
-		if (binaryItemProvider == null) {
-			binaryItemProvider = new BinaryItemProvider(this);
-		}
-
-		return binaryItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link frameweb.DAOInterface} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -621,29 +575,6 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		}
 
 		return frontControllerClassItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link Tag} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected UserViewAttributeItemProvider userViewAttributeItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link Tag}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createUserViewAttributeAdapter() {
-		if (userViewAttributeItemProvider == null) {
-			userViewAttributeItemProvider = new UserViewAttributeItemProvider(this);
-		}
-
-		return userViewAttributeItemProvider;
 	}
 
 	/**
@@ -851,29 +782,6 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		}
 
 		return serviceNavigationAssociationItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.BinaryAttribute} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected BinaryAttributeItemProvider binaryAttributeItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link frameweb.BinaryAttribute}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createBinaryAttributeAdapter() {
-		if (binaryAttributeItemProvider == null) {
-			binaryAttributeItemProvider = new BinaryAttributeItemProvider(this);
-		}
-
-		return binaryAttributeItemProvider;
 	}
 
 	/**
@@ -1360,26 +1268,26 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.Component} instances.
+	 * This keeps track of the one adapter used for all {@link Tag} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ComponentItemProvider componentItemProvider;
+	protected UIComponentItemProvider uiComponentItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.Component}.
+	 * This creates an adapter for a {@link Tag}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createComponentAdapter() {
-		if (componentItemProvider == null) {
-			componentItemProvider = new ComponentItemProvider(this);
+	public Adapter createUIComponentAdapter() {
+		if (uiComponentItemProvider == null) {
+			uiComponentItemProvider = new UIComponentItemProvider(this);
 		}
 
-		return componentItemProvider;
+		return uiComponentItemProvider;
 	}
 
 	/**
@@ -1457,7 +1365,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FormComponentItemProvider formComponentItemProvider;
+	protected UIComponentFieldItemProvider uiComponentFieldItemProvider;
 
 	/**
 	 * This creates an adapter for a {@link Tag}.
@@ -1466,12 +1374,12 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	 * @generated
 	 */
 	@Override
-	public Adapter createFormComponentAdapter() {
-		if (formComponentItemProvider == null) {
-			formComponentItemProvider = new FormComponentItemProvider(this);
+	public Adapter createUIComponentFieldAdapter() {
+		if (uiComponentFieldItemProvider == null) {
+			uiComponentFieldItemProvider = new UIComponentFieldItemProvider(this);
 		}
 
-		return formComponentItemProvider;
+		return uiComponentFieldItemProvider;
 	}
 
 	/**
@@ -1567,49 +1475,164 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.NavigationCompositionEnd} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.NavigationCompositionPart} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected NavigationCompositionEndItemProvider navigationCompositionEndItemProvider;
+	protected NavigationCompositionPartItemProvider navigationCompositionPartItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.NavigationCompositionEnd}.
+	 * This creates an adapter for a {@link frameweb.NavigationCompositionPart}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createNavigationCompositionEndAdapter() {
-		if (navigationCompositionEndItemProvider == null) {
-			navigationCompositionEndItemProvider = new NavigationCompositionEndItemProvider(this);
+	public Adapter createNavigationCompositionPartAdapter() {
+		if (navigationCompositionPartItemProvider == null) {
+			navigationCompositionPartItemProvider = new NavigationCompositionPartItemProvider(this);
 		}
 
-		return navigationCompositionEndItemProvider;
+		return navigationCompositionPartItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.NavigationComposition} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.NavigationCompositionWhole} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected NavigationCompositionItemProvider navigationCompositionItemProvider;
+	protected NavigationCompositionWholeItemProvider navigationCompositionWholeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.NavigationComposition}.
+	 * This creates an adapter for a {@link frameweb.NavigationCompositionWhole}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createNavigationCompositionAdapter() {
-		if (navigationCompositionItemProvider == null) {
-			navigationCompositionItemProvider = new NavigationCompositionItemProvider(this);
+	public Adapter createNavigationCompositionWholeAdapter() {
+		if (navigationCompositionWholeItemProvider == null) {
+			navigationCompositionWholeItemProvider = new NavigationCompositionWholeItemProvider(this);
 		}
 
-		return navigationCompositionItemProvider;
+		return navigationCompositionWholeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.ResultSet} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ResultSetItemProvider resultSetItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.ResultSet}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createResultSetAdapter() {
+		if (resultSetItemProvider == null) {
+			resultSetItemProvider = new ResultSetItemProvider(this);
+		}
+
+		return resultSetItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.PageConstraint} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PageConstraintItemProvider pageConstraintItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.PageConstraint}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createPageConstraintAdapter() {
+		if (pageConstraintItemProvider == null) {
+			pageConstraintItemProvider = new PageConstraintItemProvider(this);
+		}
+
+		return pageConstraintItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.ResultConstraint} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ResultConstraintItemProvider resultConstraintItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.ResultConstraint}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createResultConstraintAdapter() {
+		if (resultConstraintItemProvider == null) {
+			resultConstraintItemProvider = new ResultConstraintItemProvider(this);
+		}
+
+		return resultConstraintItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.MethodCosntraint} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MethodCosntraintItemProvider methodCosntraintItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.MethodCosntraint}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMethodCosntraintAdapter() {
+		if (methodCosntraintItemProvider == null) {
+			methodCosntraintItemProvider = new MethodCosntraintItemProvider(this);
+		}
+
+		return methodCosntraintItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.ChainingConstraint} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ChainingConstraintItemProvider chainingConstraintItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.ChainingConstraint}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createChainingConstraintAdapter() {
+		if (chainingConstraintItemProvider == null) {
+			chainingConstraintItemProvider = new ChainingConstraintItemProvider(this);
+		}
+
+		return chainingConstraintItemProvider;
 	}
 
 	/**
@@ -1729,13 +1752,10 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (dateTimeAttributeItemProvider != null) dateTimeAttributeItemProvider.dispose();
 		if (pageItemProvider != null) pageItemProvider.dispose();
 		if (templateItemProvider != null) templateItemProvider.dispose();
-		if (formItemProvider != null) formItemProvider.dispose();
-		if (binaryItemProvider != null) binaryItemProvider.dispose();
 		if (daoInterfaceItemProvider != null) daoInterfaceItemProvider.dispose();
 		if (daoClassItemProvider != null) daoClassItemProvider.dispose();
 		if (daoGeneralizationItemProvider != null) daoGeneralizationItemProvider.dispose();
 		if (frontControllerClassItemProvider != null) frontControllerClassItemProvider.dispose();
-		if (userViewAttributeItemProvider != null) userViewAttributeItemProvider.dispose();
 		if (ioParameterItemProvider != null) ioParameterItemProvider.dispose();
 		if (daoBaseOperationItemProvider != null) daoBaseOperationItemProvider.dispose();
 		if (resultDependencyItemProvider != null) resultDependencyItemProvider.dispose();
@@ -1745,7 +1765,6 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (serviceInterfaceItemProvider != null) serviceInterfaceItemProvider.dispose();
 		if (serviceGeneralizationItemProvider != null) serviceGeneralizationItemProvider.dispose();
 		if (serviceNavigationAssociationItemProvider != null) serviceNavigationAssociationItemProvider.dispose();
-		if (binaryAttributeItemProvider != null) binaryAttributeItemProvider.dispose();
 		if (constantNameItemProvider != null) constantNameItemProvider.dispose();
 		if (domainTableNameItemProvider != null) domainTableNameItemProvider.dispose();
 		if (frameWorkNameItemProvider != null) frameWorkNameItemProvider.dispose();
@@ -1767,17 +1786,22 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (controllerPackageItemProvider != null) controllerPackageItemProvider.dispose();
 		if (persistencePackageItemProvider != null) persistencePackageItemProvider.dispose();
 		if (applicationPackageItemProvider != null) applicationPackageItemProvider.dispose();
-		if (componentItemProvider != null) componentItemProvider.dispose();
+		if (uiComponentItemProvider != null) uiComponentItemProvider.dispose();
 		if (resultTypeItemProvider != null) resultTypeItemProvider.dispose();
 		if (domainGeneralizationItemProvider != null) domainGeneralizationItemProvider.dispose();
 		if (jQueryItemProvider != null) jQueryItemProvider.dispose();
-		if (formComponentItemProvider != null) formComponentItemProvider.dispose();
+		if (uiComponentFieldItemProvider != null) uiComponentFieldItemProvider.dispose();
 		if (tagLibItemProvider != null) tagLibItemProvider.dispose();
 		if (ruleItemProvider != null) ruleItemProvider.dispose();
 		if (tagItemProvider != null) tagItemProvider.dispose();
 		if (anotationItemProvider != null) anotationItemProvider.dispose();
-		if (navigationCompositionEndItemProvider != null) navigationCompositionEndItemProvider.dispose();
-		if (navigationCompositionItemProvider != null) navigationCompositionItemProvider.dispose();
+		if (navigationCompositionPartItemProvider != null) navigationCompositionPartItemProvider.dispose();
+		if (navigationCompositionWholeItemProvider != null) navigationCompositionWholeItemProvider.dispose();
+		if (resultSetItemProvider != null) resultSetItemProvider.dispose();
+		if (pageConstraintItemProvider != null) pageConstraintItemProvider.dispose();
+		if (resultConstraintItemProvider != null) resultConstraintItemProvider.dispose();
+		if (methodCosntraintItemProvider != null) methodCosntraintItemProvider.dispose();
+		if (chainingConstraintItemProvider != null) chainingConstraintItemProvider.dispose();
 	}
 
 }

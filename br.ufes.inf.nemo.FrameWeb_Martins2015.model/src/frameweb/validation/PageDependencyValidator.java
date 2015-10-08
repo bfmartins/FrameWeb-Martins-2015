@@ -4,8 +4,7 @@
  */
 package frameweb.validation;
 
-import frameweb.Page;
-import frameweb.Template;
+import frameweb.PageConstraint;
 
 /**
  * A sample validator interface for {@link frameweb.PageDependency}.
@@ -16,8 +15,5 @@ import frameweb.Template;
 public interface PageDependencyValidator {
 	boolean validate();
 
-	boolean validateSupplierPage(Page value);
-	boolean validateClientTemplate(Template value);
-	boolean validateLinkHTML(String value);
-	boolean validateClientPage(Page value);
+	boolean validatePageDependencyCosntraint(PageConstraint value);
 }

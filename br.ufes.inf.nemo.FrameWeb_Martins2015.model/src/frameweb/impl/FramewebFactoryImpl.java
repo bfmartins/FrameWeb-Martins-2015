@@ -73,13 +73,10 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.DATE_TIME_ATTRIBUTE: return createDateTimeAttribute();
 			case FramewebPackage.PAGE: return createPage();
 			case FramewebPackage.TEMPLATE: return createTemplate();
-			case FramewebPackage.FORM: return (EObject)createForm();
-			case FramewebPackage.BINARY: return createBinary();
 			case FramewebPackage.DAO_INTERFACE: return createDAOInterface();
 			case FramewebPackage.DAO_CLASS: return createDAOClass();
 			case FramewebPackage.DAO_GENERALIZATION: return createDAOGeneralization();
 			case FramewebPackage.FRONT_CONTROLLER_CLASS: return createFrontControllerClass();
-			case FramewebPackage.USER_VIEW_ATTRIBUTE: return (EObject)createUserViewAttribute();
 			case FramewebPackage.IO_PARAMETER: return createIOParameter();
 			case FramewebPackage.DAO_BASE_OPERATION: return createDAOBaseOperation();
 			case FramewebPackage.RESULT_DEPENDENCY: return createResultDependency();
@@ -89,7 +86,6 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.SERVICE_INTERFACE: return createServiceInterface();
 			case FramewebPackage.SERVICE_GENERALIZATION: return createServiceGeneralization();
 			case FramewebPackage.SERVICE_NAVIGATION_ASSOCIATION: return createServiceNavigationAssociation();
-			case FramewebPackage.BINARY_ATTRIBUTE: return createBinaryAttribute();
 			case FramewebPackage.CONSTANT_NAME: return createConstantName();
 			case FramewebPackage.DOMAIN_TABLE_NAME: return createDomainTableName();
 			case FramewebPackage.FRAME_WORK_NAME: return createFrameWorkName();
@@ -111,17 +107,22 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.CONTROLLER_PACKAGE: return createControllerPackage();
 			case FramewebPackage.PERSISTENCE_PACKAGE: return createPersistencePackage();
 			case FramewebPackage.APPLICATION_PACKAGE: return createApplicationPackage();
-			case FramewebPackage.COMPONENT: return createComponent();
+			case FramewebPackage.UI_COMPONENT: return (EObject)createUIComponent();
 			case FramewebPackage.RESULT_TYPE: return createResultType();
 			case FramewebPackage.DOMAIN_GENERALIZATION: return createDomainGeneralization();
 			case FramewebPackage.JQUERY: return createJQuery();
-			case FramewebPackage.FORM_COMPONENT: return (EObject)createFormComponent();
+			case FramewebPackage.UI_COMPONENT_FIELD: return (EObject)createUIComponentField();
 			case FramewebPackage.TAG_LIB: return createTagLib();
 			case FramewebPackage.RULE: return createRule();
 			case FramewebPackage.TAG: return createTag();
 			case FramewebPackage.ANOTATION: return createAnotation();
-			case FramewebPackage.NAVIGATION_COMPOSITION_END: return createNavigationCompositionEnd();
-			case FramewebPackage.NAVIGATION_COMPOSITION: return createNavigationComposition();
+			case FramewebPackage.NAVIGATION_COMPOSITION_PART: return createNavigationCompositionPart();
+			case FramewebPackage.NAVIGATION_COMPOSITION_WHOLE: return createNavigationCompositionWhole();
+			case FramewebPackage.RESULT_SET: return createResultSet();
+			case FramewebPackage.PAGE_CONSTRAINT: return createPageConstraint();
+			case FramewebPackage.RESULT_CONSTRAINT: return createResultConstraint();
+			case FramewebPackage.METHOD_COSNTRAINT: return createMethodCosntraint();
+			case FramewebPackage.CHAINING_CONSTRAINT: return createChainingConstraint();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -155,6 +156,10 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 				return createConstantNameListFromString(eDataType, initialValue);
 			case FramewebPackage.INHERITANCE_MAPPING:
 				return createInheritanceMappingFromString(eDataType, initialValue);
+			case FramewebPackage.NAVIGATION_CONSTRAINT_KIND:
+				return createNavigationConstraintKindFromString(eDataType, initialValue);
+			case FramewebPackage.RESULT_DATA_TYPE:
+				return createResultDataTypeFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -188,6 +193,10 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 				return convertConstantNameListToString(eDataType, instanceValue);
 			case FramewebPackage.INHERITANCE_MAPPING:
 				return convertInheritanceMappingToString(eDataType, instanceValue);
+			case FramewebPackage.NAVIGATION_CONSTRAINT_KIND:
+				return convertNavigationConstraintKindToString(eDataType, instanceValue);
+			case FramewebPackage.RESULT_DATA_TYPE:
+				return convertResultDataTypeToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -378,26 +387,6 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Tag createForm() {
-		FormImpl form = new FormImpl();
-		return form;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Binary createBinary() {
-		BinaryImpl binary = new BinaryImpl();
-		return binary;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public DAOInterface createDAOInterface() {
 		DAOInterfaceImpl daoInterface = new DAOInterfaceImpl();
 		return daoInterface;
@@ -431,16 +420,6 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	public FrontControllerClass createFrontControllerClass() {
 		FrontControllerClassImpl frontControllerClass = new FrontControllerClassImpl();
 		return frontControllerClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Tag createUserViewAttribute() {
-		UserViewAttributeImpl userViewAttribute = new UserViewAttributeImpl();
-		return userViewAttribute;
 	}
 
 	/**
@@ -531,16 +510,6 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	public ServiceNavigationAssociation createServiceNavigationAssociation() {
 		ServiceNavigationAssociationImpl serviceNavigationAssociation = new ServiceNavigationAssociationImpl();
 		return serviceNavigationAssociation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public BinaryAttribute createBinaryAttribute() {
-		BinaryAttributeImpl binaryAttribute = new BinaryAttributeImpl();
-		return binaryAttribute;
 	}
 
 	/**
@@ -758,9 +727,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Component createComponent() {
-		ComponentImpl component = new ComponentImpl();
-		return component;
+	public Tag createUIComponent() {
+		UIComponentImpl uiComponent = new UIComponentImpl();
+		return uiComponent;
 	}
 
 	/**
@@ -798,9 +767,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Tag createFormComponent() {
-		FormComponentImpl formComponent = new FormComponentImpl();
-		return formComponent;
+	public Tag createUIComponentField() {
+		UIComponentFieldImpl uiComponentField = new UIComponentFieldImpl();
+		return uiComponentField;
 	}
 
 	/**
@@ -848,9 +817,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NavigationCompositionEnd createNavigationCompositionEnd() {
-		NavigationCompositionEndImpl navigationCompositionEnd = new NavigationCompositionEndImpl();
-		return navigationCompositionEnd;
+	public NavigationCompositionPart createNavigationCompositionPart() {
+		NavigationCompositionPartImpl navigationCompositionPart = new NavigationCompositionPartImpl();
+		return navigationCompositionPart;
 	}
 
 	/**
@@ -858,9 +827,59 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NavigationComposition createNavigationComposition() {
-		NavigationCompositionImpl navigationComposition = new NavigationCompositionImpl();
-		return navigationComposition;
+	public NavigationCompositionWhole createNavigationCompositionWhole() {
+		NavigationCompositionWholeImpl navigationCompositionWhole = new NavigationCompositionWholeImpl();
+		return navigationCompositionWhole;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultSet createResultSet() {
+		ResultSetImpl resultSet = new ResultSetImpl();
+		return resultSet;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PageConstraint createPageConstraint() {
+		PageConstraintImpl pageConstraint = new PageConstraintImpl();
+		return pageConstraint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultConstraint createResultConstraint() {
+		ResultConstraintImpl resultConstraint = new ResultConstraintImpl();
+		return resultConstraint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MethodCosntraint createMethodCosntraint() {
+		MethodCosntraintImpl methodCosntraint = new MethodCosntraintImpl();
+		return methodCosntraint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ChainingConstraint createChainingConstraint() {
+		ChainingConstraintImpl chainingConstraint = new ChainingConstraintImpl();
+		return chainingConstraint;
 	}
 
 	/**
@@ -1061,6 +1080,44 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 */
 	public String convertInheritanceMappingToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NavigationConstraintKind createNavigationConstraintKindFromString(EDataType eDataType, String initialValue) {
+		NavigationConstraintKind result = NavigationConstraintKind.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertNavigationConstraintKindToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Object createResultDataTypeFromString(EDataType eDataType, String initialValue) {
+		return super.createFromString(eDataType, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertResultDataTypeToString(EDataType eDataType, Object instanceValue) {
+		return super.convertToString(eDataType, instanceValue);
 	}
 
 	/**

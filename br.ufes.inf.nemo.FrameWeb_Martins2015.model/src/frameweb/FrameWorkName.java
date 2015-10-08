@@ -2,6 +2,7 @@
  */
 package frameweb;
 
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -13,5 +14,5 @@ package frameweb;
  * @model
  * @generated
  */
-public interface FrameWorkName extends FrameWebName {
+public interface FrameWorkName extends EObject {
 } // FrameWorkName

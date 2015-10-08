@@ -2,6 +2,7 @@
  */
 package frameweb;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.uml2.uml.Operation;
 
 /**
@@ -13,6 +14,7 @@ import org.eclipse.uml2.uml.Operation;
  * The following features are supported:
  * <ul>
  *   <li>{@link frameweb.FrontControllerMethod#isIsDefault <em>Is Default</em>}</li>
+ *   <li>{@link frameweb.FrontControllerMethod#getResult <em>Result</em>}</li>
  * </ul>
  * </p>
  *
@@ -46,5 +48,21 @@ public interface FrontControllerMethod extends Operation {
 	 * @generated
 	 */
 	void setIsDefault(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Result</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.Object}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Result</em>' attribute list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Result</em>' attribute list.
+	 * @see frameweb.FramewebPackage#getFrontControllerMethod_Result()
+	 * @model dataType="frameweb.ResultDataType"
+	 * @generated
+	 */
+	EList<Object> getResult();
 
 } // FrontControllerMethod

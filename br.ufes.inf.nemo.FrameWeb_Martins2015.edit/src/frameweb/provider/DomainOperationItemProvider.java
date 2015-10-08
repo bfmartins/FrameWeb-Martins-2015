@@ -4,6 +4,7 @@ package frameweb.provider;
 
 
 import frameweb.DomainOperation;
+import frameweb.FramewebFactory;
 
 import java.util.Collection;
 import java.util.List;
@@ -100,6 +101,26 @@ public class DomainOperationItemProvider extends OperationItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createPageConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createResultConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createChainingConstraint()));
 	}
 
 	/**

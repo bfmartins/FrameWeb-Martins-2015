@@ -4,6 +4,10 @@
  */
 package frameweb.validation;
 
+import frameweb.NavigationCompositionWhole;
+import frameweb.Tag;
+
+import org.eclipse.emf.common.util.EList;
 
 /**
  * A sample validator interface for {@link frameweb.NavigationClass}.
@@ -14,4 +18,6 @@ package frameweb.validation;
 public interface NavigationClassValidator {
 	boolean validate();
 
+	boolean validateNavigationClassComposition(EList<NavigationCompositionWhole> value);
+	boolean validateNavigationClassAttribute(EList<Tag> value);
 }

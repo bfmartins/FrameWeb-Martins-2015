@@ -5,6 +5,7 @@
 package frameweb.validation;
 
 import frameweb.NavigationClass;
+import frameweb.ResultType;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -18,4 +19,5 @@ public interface ViewPackageValidator {
 	boolean validate();
 
 	boolean validateViewPackageClass(EList<NavigationClass> value);
+	boolean validateViewPackageResult(EList<ResultType> value);
 }

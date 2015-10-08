@@ -3,6 +3,7 @@
 package frameweb.provider;
 
 
+import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
 import frameweb.FrontControllerDependency;
 
@@ -12,8 +13,13 @@ import java.util.List;
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.ecore.EStructuralFeature;
+
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import org.eclipse.uml2.uml.UMLPackage;
 
 /**
  * This is the item provider adapter for a {@link frameweb.FrontControllerDependency} object.
@@ -44,12 +50,6 @@ public class FrontControllerDependencyItemProvider extends NavigationDependencyI
 			super.getPropertyDescriptors(object);
 
 			addMethodPropertyDescriptor(object);
-			addClientFormPropertyDescriptor(object);
-			addSupplierFrontControllerPropertyDescriptor(object);
-			addClientPagePropertyDescriptor(object);
-			addClientTemplatePropertyDescriptor(object);
-			addClientComponentPropertyDescriptor(object);
-			addClientJQueryPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -77,135 +77,33 @@ public class FrontControllerDependencyItemProvider extends NavigationDependencyI
 	}
 
 	/**
-	 * This adds a property descriptor for the Client Form feature.
+	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
+	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
+	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addClientFormPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_FrontControllerDependency_ClientForm_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_ClientForm_feature", "_UI_FrontControllerDependency_type"),
-				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__CLIENT_FORM,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
+	@Override
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+		if (childrenFeatures == null) {
+			super.getChildrenFeatures(object);
+			childrenFeatures.add(FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__METHOD_DEPENDENDENCY_CONSTRAINT);
+		}
+		return childrenFeatures;
 	}
 
 	/**
-	 * This adds a property descriptor for the Supplier Front Controller feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addSupplierFrontControllerPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_FrontControllerDependency_SupplierFrontController_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_SupplierFrontController_feature", "_UI_FrontControllerDependency_type"),
-				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
+	@Override
+	protected EStructuralFeature getChildFeature(Object object, Object child) {
+		// Check the type of the specified child object and return the proper feature to use for
+		// adding (see {@link AddCommand}) it as a child.
 
-	/**
-	 * This adds a property descriptor for the Client Page feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addClientPagePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_FrontControllerDependency_ClientPage_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_ClientPage_feature", "_UI_FrontControllerDependency_type"),
-				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__CLIENT_PAGE,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Client Template feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addClientTemplatePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_FrontControllerDependency_ClientTemplate_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_ClientTemplate_feature", "_UI_FrontControllerDependency_type"),
-				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__CLIENT_TEMPLATE,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Client Component feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addClientComponentPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_FrontControllerDependency_ClientComponent_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_ClientComponent_feature", "_UI_FrontControllerDependency_type"),
-				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__CLIENT_COMPONENT,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Client JQuery feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addClientJQueryPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_FrontControllerDependency_ClientJQuery_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_ClientJQuery_feature", "_UI_FrontControllerDependency_type"),
-				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__CLIENT_JQUERY,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
+		return super.getChildFeature(object, child);
 	}
 
 	/**
@@ -244,6 +142,12 @@ public class FrontControllerDependencyItemProvider extends NavigationDependencyI
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
+
+		switch (notification.getFeatureID(FrontControllerDependency.class)) {
+			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY__METHOD_DEPENDENDENCY_CONSTRAINT:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+				return;
+		}
 		super.notifyChanged(notification);
 	}
 
@@ -257,6 +161,34 @@ public class FrontControllerDependencyItemProvider extends NavigationDependencyI
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__METHOD_DEPENDENDENCY_CONSTRAINT,
+				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
+	}
+
+	/**
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify =
+			childFeature == UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
+			childFeature == FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__METHOD_DEPENDENDENCY_CONSTRAINT;
+
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 }

@@ -2,6 +2,7 @@
  */
 package frameweb;
 
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -13,5 +14,5 @@ package frameweb;
  * @model
  * @generated
  */
-public interface JQuery extends NavigationClass {
+public interface JQuery extends EObject {
 } // JQuery

@@ -16,10 +16,10 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.ResourceLocator;
 
 import org.eclipse.emf.ecore.EStructuralFeature;
-import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
-import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 
+import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
 import org.eclipse.uml2.uml.UMLPackage;
 
 import org.eclipse.uml2.uml.edit.providers.AssociationItemProvider;
@@ -52,54 +52,8 @@ public class NavigationAssociationItemProvider extends AssociationItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addTargetComponentPropertyDescriptor(object);
-			addTargetJQueryPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Target Component feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addTargetComponentPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_NavigationAssociation_TargetComponent_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_NavigationAssociation_TargetComponent_feature", "_UI_NavigationAssociation_type"),
-				 FramewebPackage.Literals.NAVIGATION_ASSOCIATION__TARGET_COMPONENT,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Target JQuery feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addTargetJQueryPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_NavigationAssociation_TargetJQuery_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_NavigationAssociation_TargetJQuery_feature", "_UI_NavigationAssociation_type"),
-				 FramewebPackage.Literals.NAVIGATION_ASSOCIATION__TARGET_JQUERY,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
 	}
 
 	/**
@@ -190,6 +144,26 @@ public class NavigationAssociationItemProvider extends AssociationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createPageConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createResultConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createChainingConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
 				 FramewebFactory.eINSTANCE.createDAOGeneralization()));
 
@@ -236,17 +210,7 @@ public class NavigationAssociationItemProvider extends AssociationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
-				 FramewebFactory.eINSTANCE.createUserViewAttribute()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
 				 FramewebFactory.eINSTANCE.createIOParameter()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
-				 FramewebFactory.eINSTANCE.createBinaryAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -261,17 +225,17 @@ public class NavigationAssociationItemProvider extends AssociationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
-				 FramewebFactory.eINSTANCE.createFormComponent()));
+				 FramewebFactory.eINSTANCE.createUIComponentField()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
-				 FramewebFactory.eINSTANCE.createNavigationCompositionEnd()));
+				 FramewebFactory.eINSTANCE.createNavigationCompositionPart()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
-				 FramewebFactory.eINSTANCE.createNavigationComposition()));
+				 FramewebFactory.eINSTANCE.createNavigationCompositionWhole()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -306,17 +270,7 @@ public class NavigationAssociationItemProvider extends AssociationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
-				 FramewebFactory.eINSTANCE.createUserViewAttribute()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
 				 FramewebFactory.eINSTANCE.createIOParameter()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
-				 FramewebFactory.eINSTANCE.createBinaryAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -331,22 +285,22 @@ public class NavigationAssociationItemProvider extends AssociationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
-				 FramewebFactory.eINSTANCE.createFormComponent()));
+				 FramewebFactory.eINSTANCE.createUIComponentField()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
-				 FramewebFactory.eINSTANCE.createNavigationCompositionEnd()));
+				 FramewebFactory.eINSTANCE.createNavigationCompositionPart()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
-				 FramewebFactory.eINSTANCE.createNavigationComposition()));
+				 FramewebFactory.eINSTANCE.createNavigationCompositionWhole()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(FramewebPackage.Literals.NAVIGATION_ASSOCIATION__NAVIGATION_ASSOCIATION_PROPERTY,
-				 FramewebFactory.eINSTANCE.createNavigationCompositionEnd()));
+				 FramewebFactory.eINSTANCE.createNavigationCompositionPart()));
 	}
 
 	/**

@@ -4,17 +4,15 @@ package frameweb.impl;
 
 import frameweb.FramewebPackage;
 import frameweb.NavigationClass;
+import frameweb.ResultType;
 import frameweb.ViewPackage;
 
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -26,6 +24,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * <ul>
  *   <li>{@link frameweb.impl.ViewPackageImpl#getViewPackageClass <em>View Package Class</em>}</li>
+ *   <li>{@link frameweb.impl.ViewPackageImpl#getViewPackageResult <em>View Package Result</em>}</li>
  * </ul>
  * </p>
  *
@@ -41,6 +40,16 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 	 * @ordered
 	 */
 	protected EList<NavigationClass> viewPackageClass;
+
+	/**
+	 * The cached value of the '{@link #getViewPackageResult() <em>View Package Result</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getViewPackageResult()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<ResultType> viewPackageResult;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,11 +87,25 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<ResultType> getViewPackageResult() {
+		if (viewPackageResult == null) {
+			viewPackageResult = new EObjectContainmentEList<ResultType>(ResultType.class, this, FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_RESULT);
+		}
+		return viewPackageResult;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
 				return ((InternalEList<?>)getViewPackageClass()).basicRemove(otherEnd, msgs);
+			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_RESULT:
+				return ((InternalEList<?>)getViewPackageResult()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -97,6 +120,8 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 		switch (featureID) {
 			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
 				return getViewPackageClass();
+			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_RESULT:
+				return getViewPackageResult();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -114,6 +139,10 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 				getViewPackageClass().clear();
 				getViewPackageClass().addAll((Collection<? extends NavigationClass>)newValue);
 				return;
+			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_RESULT:
+				getViewPackageResult().clear();
+				getViewPackageResult().addAll((Collection<? extends ResultType>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -129,6 +158,9 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
 				getViewPackageClass().clear();
 				return;
+			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_RESULT:
+				getViewPackageResult().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -143,6 +175,8 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 		switch (featureID) {
 			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
 				return viewPackageClass != null && !viewPackageClass.isEmpty();
+			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_RESULT:
+				return viewPackageResult != null && !viewPackageResult.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

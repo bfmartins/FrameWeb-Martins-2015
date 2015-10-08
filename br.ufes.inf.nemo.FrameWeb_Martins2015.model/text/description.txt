@@ -21,10 +21,11 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
   Class FrameWebModel -> Package
 
   Class Framework -> Package
-    Reference FrameworkTagLib : TagLib<<1..*>>
+    Reference FrameworkTagLib : TagLib<<0..*>>
     Reference FrameworkRule : Rule<<0..*>>
-    Reference FrameworkAnotation : Anotation<<1..*>>
+    Reference FrameworkAnotation : Anotation<<0..*>>
     Attribute frameworkCategory : FrameworkCategoryList
+    Reference FrameWebResultSet : ResultSet<<0..*>>
 
   Class DomainModel -> FrameWebModel
     Reference DomainUMLPackage : DomainPackage<<1..*>>
@@ -74,20 +75,10 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Attribute dateTimePrecision : DateTimePrecision
 
   Class Page -> NavigationClass
-    Reference PageClassAttribute : UserViewAttribute<<0..*>>
-    Reference PageTagLib : TagLib<<1..*>>
-    Reference PageComposition : NavigationComposition<<0..*>>
+    Reference PageTagLib : TagLib<<0..*>>
 
   Class Template -> NavigationClass
-    Reference TemplateClassAttribute : UserViewAttribute<<0..*>>
-    Reference TemplateTagLib : TagLib<<1..*>>
-    Reference TemplateComposition : NavigationComposition<<0..*>>
-
-  Class Form -> NavigationClass
-    Reference FormClassAttribute : FormComponent<<0..*>>
-
-  Class Binary -> NavigationClass
-    Reference BinaryClassAttribute : BinaryAttribute<<1..*>>
+    Reference TemplateTagLib : TagLib<<0..*>>
 
   Class DAOInterface -> Interface
     Reference OwnBaseOperation : DAOBaseOperation<<4..4>>
@@ -109,29 +100,23 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference FrontControllerAttribute : IOParameter<<1..*>>
     Reference FrontControllerClassMethod : FrontControllerMethod<<1..*>>
 
-  Class UserViewAttribute -> NavigationAttribute
-
   Class IOParameter -> NavigationAttribute
-    Reference /display : FormComponent<<0..*>>
+    Reference /display : UIComponentField<<0..*>>
 
   Class DAOBaseOperation
     Attribute DAObaseOperationName : DAOBaseOperationList
 
   Class ResultDependency -> NavigationDependency
-    Reference ReturnResult : Result<<0..*>>
-    Reference ReturnMethod : FrontControllerMethod<<1..1>>
-    Reference ReturnResultType : ResultType<<0..*>>
+    Reference ResultResult : Result<<0..*>>
+    Reference ResultMethod : FrontControllerMethod<<1..1>>
+    Reference ResultDependendencyCosntraint : ResultConstraint<<1..1>>
 
   Class NavigationAssociation -> Association
-    Reference TargetComponent : Component
-    Reference TargetJQuery : JQuery
-    Reference NavigationAssociationProperty : NavigationCompositionEnd<<1..1>>
+    Reference NavigationAssociationProperty : NavigationCompositionPart<<1..1>>
 
   Class FrontControllerMethod -> Operation
     Attribute isDefault : EBoolean
-
-  Class NamingMethod
-    Reference Contains : FrameWebName<<1..*>>
+    Attribute result : ResultDataType<<0..*>>
 
   Class ServiceClass -> Class
     Reference ServiceClassAttribute : ServiceAttribute
@@ -153,20 +138,16 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference DomainClassAttribute : DomainAttribute<<1..*>>
     Reference DomainClassOperation : DomainOperation<<0..*>>
 
-  Class FrameWebName
-
-  Class BinaryAttribute -> NavigationAttribute
-
-  Class ConstantName -> FrameWebName
+  Class ConstantName
     Attribute fwName : ConstantNameList
 
-  Class DomainTableName -> FrameWebName
+  Class DomainTableName
     Attribute fwName : EString
     Reference PersistentClassName : PersistentClass<<1..1>>
 
-  Class FrameWorkName -> FrameWebName
+  Class FrameWorkName
 
-  Class DomainColumnName -> FrameWebName
+  Class DomainColumnName
     Attribute fwName : EString
     Reference DomainAttributeName : DomainAttribute<<1..1>>
 
@@ -181,24 +162,15 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
 
   Class FrontControllerDependency -> NavigationDependency
     Reference Method : FrontControllerMethod<<1..1>>
-    Reference ClientForm : Form
-    Reference SupplierFrontController : FrontControllerClass<<1..1>>
-    Reference ClientPage : Page
-    Reference ClientTemplate : Template
-    Reference ClientComponent : Component
-    Reference ClientJQuery : JQuery
+    Reference MethodDependendencyConstraint : MethodCosntraint<<1..1>>
 
   Class PageDependency -> NavigationDependency
-    Reference SupplierPage : Page<<1..1>>
-    Reference ClientTemplate : Template
-    Attribute linkHTML : EString
-    Reference ClientPage : Page
+    Reference PageDependencyCosntraint : PageConstraint<<1..1>>
 
   Class ChainingDependency -> NavigationDependency
     Reference OutMethod : FrontControllerMethod<<1..1>>
     Reference InMethod : FrontControllerMethod<<1..1>>
-    Reference SupplierFrontController : FrontControllerClass<<1..1>>
-    Reference ClientFrontController : FrontControllerClass<<1..1>>
+    Reference ChainingDependendencyConstraint : ChainingConstraint<<1..1>>
 
   Class DAOServiceAssociation -> ServiceAssociation
     Reference SourceDAOClass : DAOInterface<<1..1>>
@@ -207,6 +179,8 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
   Class NavigationAttribute -> Property
 
   Class NavigationClass -> Class
+    Reference NavigationClassComposition : NavigationCompositionWhole<<0..*>>
+    Reference NavigationClassAttribute : UIComponentField<<0..*>>
 
   Class DomainOperation -> Operation
 
@@ -227,6 +201,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
 
   Class ViewPackage -> NavigationPackage
     Reference ViewPackageClass : NavigationClass<<1..*>>
+    Reference ViewPackageResult : Result<<0..*>>
 
   Class ControllerPackage -> NavigationPackage
     Reference ControllerPackageClass : FrontControllerClass<<1..*>>
@@ -239,7 +214,10 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference ServicePackageClass : ServiceClass<<1..*>>
     Reference ServicePackageInterface : ServiceInterface<<1..*>>
 
-  Class Component -> NavigationClass
+  Class UIComponent -> NavigationClass
+    Attribute ajax : Boolean
+    Attribute render : String
+    Attribute execute : String
 
   Class ResultType -> Class
 
@@ -250,10 +228,13 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference TargetDomain : DomainClass<<1..1>>
     Reference SourceDomain : DomainClass<<1..1>>
 
-  Class JQuery -> NavigationClass
+  Class JQuery
 
-  Class FormComponent -> NavigationAttribute
+  Class UIComponentField -> NavigationAttribute
     Reference inject : IOParameter
+    Attribute ajax : Boolean
+    Attribute render : String
+    Attribute execute : String
 
   Class TagLib -> Package
     Reference TagLibTag : Tag<<1..*>>
@@ -262,15 +243,27 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
   Class Rule
 
   Class Tag -> Class
-    Reference SubTag : Tag<<0..*>>
 
   Class Anotation
 
-  Class NavigationCompositionEnd -> NavigationProperty
+  Class NavigationCompositionPart -> NavigationProperty
 
-  Class NavigationComposition -> NavigationProperty
+  Class NavigationCompositionWhole -> NavigationProperty
 
   Class NavigationProperty -> Property
+
+  Class ResultSet -> Package
+    Reference SetOfResultType : ResultType<<1..*>>
+
+  Class NavigationConstraint -> StringExpression
+
+  Class PageConstraint -> NavigationConstraint
+
+  Class ResultConstraint -> NavigationConstraint
+
+  Class MethodCosntraint -> NavigationConstraint
+
+  Class ChainingConstraint -> NavigationConstraint
 
   Enum DateTimePrecision
     Literal timestamp = 0
@@ -336,3 +329,11 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Literal singletable = 0
     Literal union = 1
     Literal join = 2
+
+  Enum NavigationConstraintKind
+    Literal Result = 0
+    Literal Page = 0
+    Literal Method = 0
+    Literal Chaining = 0
+
+  DataType ResultDataType <java.lang.Object>

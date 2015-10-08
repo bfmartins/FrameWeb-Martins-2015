@@ -4,8 +4,6 @@
  */
 package frameweb.validation;
 
-import frameweb.NavigationComposition;
-import frameweb.Tag;
 import frameweb.TagLib;
 
 import org.eclipse.emf.common.util.EList;
@@ -19,8 +17,5 @@ import org.eclipse.emf.common.util.EList;
 public interface PageValidator {
 	boolean validate();
 
-	boolean validatePageClassAttribute(EList<Tag> value);
 	boolean validatePageTagLib(EList<TagLib> value);
-
-	boolean validatePageComposition(EList<NavigationComposition> value);
 }

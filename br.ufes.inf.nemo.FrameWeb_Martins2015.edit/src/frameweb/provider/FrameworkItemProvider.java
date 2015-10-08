@@ -96,6 +96,7 @@ public class FrameworkItemProvider extends PackageItemProvider {
 			childrenFeatures.add(FramewebPackage.Literals.FRAMEWORK__FRAMEWORK_TAG_LIB);
 			childrenFeatures.add(FramewebPackage.Literals.FRAMEWORK__FRAMEWORK_RULE);
 			childrenFeatures.add(FramewebPackage.Literals.FRAMEWORK__FRAMEWORK_ANOTATION);
+			childrenFeatures.add(FramewebPackage.Literals.FRAMEWORK__FRAME_WEB_RESULT_SET);
 		}
 		return childrenFeatures;
 	}
@@ -157,6 +158,7 @@ public class FrameworkItemProvider extends PackageItemProvider {
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_TAG_LIB:
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_RULE:
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
+			case FramewebPackage.FRAMEWORK__FRAME_WEB_RESULT_SET:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -173,6 +175,26 @@ public class FrameworkItemProvider extends PackageItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createPageConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createResultConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createChainingConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -231,6 +253,11 @@ public class FrameworkItemProvider extends PackageItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__NESTED_PACKAGE,
+				 FramewebFactory.eINSTANCE.createResultSet()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
 				 FramewebFactory.eINSTANCE.createMappedClass()));
 
@@ -258,16 +285,6 @@ public class FrameworkItemProvider extends PackageItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
 				 FramewebFactory.eINSTANCE.createTemplate()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
-				 FramewebFactory.eINSTANCE.createForm()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
-				 FramewebFactory.eINSTANCE.createBinary()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -317,17 +334,12 @@ public class FrameworkItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
-				 FramewebFactory.eINSTANCE.createComponent()));
+				 FramewebFactory.eINSTANCE.createUIComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
 				 FramewebFactory.eINSTANCE.createResultType()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
-				 FramewebFactory.eINSTANCE.createJQuery()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -388,16 +400,6 @@ public class FrameworkItemProvider extends PackageItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 FramewebFactory.eINSTANCE.createTemplate()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createForm()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createBinary()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -492,17 +494,12 @@ public class FrameworkItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createComponent()));
+				 FramewebFactory.eINSTANCE.createUIComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 FramewebFactory.eINSTANCE.createResultType()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createJQuery()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -513,6 +510,31 @@ public class FrameworkItemProvider extends PackageItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 FramewebFactory.eINSTANCE.createTag()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createResultSet()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createPageConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createResultConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createChainingConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -528,6 +550,11 @@ public class FrameworkItemProvider extends PackageItemProvider {
 			(createChildParameter
 				(FramewebPackage.Literals.FRAMEWORK__FRAMEWORK_ANOTATION,
 				 FramewebFactory.eINSTANCE.createAnotation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FramewebPackage.Literals.FRAMEWORK__FRAME_WEB_RESULT_SET,
+				 FramewebFactory.eINSTANCE.createResultSet()));
 	}
 
 	/**
@@ -547,6 +574,7 @@ public class FrameworkItemProvider extends PackageItemProvider {
 			childFeature == UMLPackage.Literals.NAMESPACE__OWNED_RULE ||
 			childFeature == UMLPackage.Literals.PACKAGE__NESTED_PACKAGE ||
 			childFeature == FramewebPackage.Literals.FRAMEWORK__FRAMEWORK_TAG_LIB ||
+			childFeature == FramewebPackage.Literals.FRAMEWORK__FRAME_WEB_RESULT_SET ||
 			childFeature == UMLPackage.Literals.PACKAGE__OWNED_STEREOTYPE ||
 			childFeature == UMLPackage.Literals.PACKAGE__OWNED_TYPE;
 

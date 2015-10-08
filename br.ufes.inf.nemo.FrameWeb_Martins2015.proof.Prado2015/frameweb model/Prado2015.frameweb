@@ -3,43 +3,46 @@
   <Compose xsi:type="frameweb:NavigationModel" name="SCAP_LeaveAbsence_NM" URI="">
     <packagedElement xsi:type="frameweb:ViewPackage" name="SCAP_LeaveAbsence_View">
       <packagedElement xsi:type="frameweb:Page" name="header.xhtml"/>
-      <packagedElement xsi:type="frameweb:Page" name="index.xhtml"/>
-      <packagedElement xsi:type="frameweb:Page" name="RequestLeave.xhtml"/>
-      <packagedElement xsi:type="frameweb:Form" name="requestLeaveForm">
-        <ownedAttribute xsi:type="frameweb:FormComponent" name="eventName">
+      <packagedElement xsi:type="frameweb:Page" name="index.xhtml">
+        <ownedAttribute xsi:type="frameweb:NavigationCompositionWhole" name="index" aggregation="composite" association="//@Compose.0/SCAP_LeaveAbsence_View/hasHeader"/>
+      </packagedElement>
+      <packagedElement xsi:type="frameweb:Page" name="RequestLeave.xhtml">
+        <ownedAttribute xsi:type="frameweb:NavigationCompositionWhole" name="requestLeave" aggregation="composite" association="//@Compose.0/SCAP_LeaveAbsence_View/hasForm"/>
+        <PageTagLib href="../../FrameWeb_Martins2015_standard_HTML4/standard_model/Standard_HTML4.frameweb#//@Uses.0/HTML4forms_input"/>
+        <PageTagLib href="../../FrameWeb_Martins2015_standard_JSTL/standard_model/Standard_JSTL.frameweb#//@Uses.0/JSTLformatting"/>
+      </packagedElement>
+      <packagedElement xsi:type="frameweb:UIComponent" name="requestLeaveForm">
+        <redefinedClassifier xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_standard_HTML4/standard_model/Standard_HTML4.frameweb#//@Uses.0/HTML4forms_input/form"/>
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="eventName">
           <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_standard_HTML4/standard_model/Standard_HTML4.frameweb#//@Uses.0/HTML4forms_input/input/inputText"/>
         </ownedAttribute>
-        <ownedAttribute xsi:type="frameweb:FormComponent" name="cityName">
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="cityName">
           <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_standard_HTML4/standard_model/Standard_HTML4.frameweb#//@Uses.0/HTML4forms_input/input/inputText"/>
         </ownedAttribute>
-        <ownedAttribute xsi:type="frameweb:FormComponent" name="leaveStartDate">
-          <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_standard_HTML4/standard_model/Standard_HTML4.frameweb#//@Uses.0/HTML4frames/frame"/>
-        </ownedAttribute>
-        <ownedAttribute xsi:type="frameweb:FormComponent" name="leaveEndDate">
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="leaveStartDate">
           <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_standard_JSTL/standard_model/Standard_JSTL.frameweb#//@Uses.0/JSTLformatting/formatDate"/>
         </ownedAttribute>
-        <ownedAttribute xsi:type="frameweb:FormComponent" name="eventStartDate">
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="leaveEndDate">
           <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_standard_JSTL/standard_model/Standard_JSTL.frameweb#//@Uses.0/JSTLformatting/formatDate"/>
         </ownedAttribute>
-        <ownedAttribute xsi:type="frameweb:FormComponent" name="eventEndDate">
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="eventStartDate">
           <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_standard_JSTL/standard_model/Standard_JSTL.frameweb#//@Uses.0/JSTLformatting/formatDate"/>
         </ownedAttribute>
-        <ownedAttribute xsi:type="frameweb:FormComponent" name="requestKind">
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="eventEndDate">
+          <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_standard_JSTL/standard_model/Standard_JSTL.frameweb#//@Uses.0/JSTLformatting/formatDate"/>
+        </ownedAttribute>
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="requestKind">
           <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_standard_HTML4/standard_model/Standard_HTML4.frameweb#//@Uses.0/HTML4forms_input/select"/>
         </ownedAttribute>
-        <ownedAttribute xsi:type="frameweb:FormComponent" name="onus">
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="onus">
           <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_standard_HTML4/standard_model/Standard_HTML4.frameweb#//@Uses.0/HTML4forms_input/select"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xsi:type="frameweb:ResultDependency" name="RequestLeave" client="//@Compose.0/SCAP_LeaveAbsence_View/RequestLeave.xhtml" supplier="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController" ReturnMethod="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController/formulary"/>
-      <packagedElement xsi:type="frameweb:ResultDependency" name="Index" client="//@Compose.0/SCAP_LeaveAbsence_View/index.xhtml" supplier="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController" ReturnMethod="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController/save"/>
-      <packagedElement xsi:type="frameweb:FrontControllerDependency" name="Formulary" client="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController" supplier="//@Compose.0/SCAP_LeaveAbsence_View/header.xhtml" Method="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController/formulary"/>
-      <packagedElement xsi:type="frameweb:FrontControllerDependency" name="Save" client="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController" supplier="//@Compose.0/SCAP_LeaveAbsence_View/requestLeaveForm" Method="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController/save"/>
-      <packagedElement xsi:type="frameweb:NavigationAssociation" name="hasForm" memberEnd="//@Compose.0/SCAP_LeaveAbsence_View/hasForm/@ownedEnd.0">
-        <ownedEnd xsi:type="frameweb:NavigationCompositionEnd" association="//@Compose.0/SCAP_LeaveAbsence_View/hasForm"/>
+      <packagedElement xsi:type="frameweb:NavigationAssociation" name="hasForm" memberEnd="//@Compose.0/SCAP_LeaveAbsence_View/hasForm/requestLeaveForm //@Compose.0/SCAP_LeaveAbsence_View/RequestLeave.xhtml/requestLeave">
+        <ownedEnd xsi:type="frameweb:NavigationCompositionPart" name="requestLeaveForm" type="//@Compose.0/SCAP_LeaveAbsence_View/RequestLeave.xhtml" association="//@Compose.0/SCAP_LeaveAbsence_View/hasForm"/>
       </packagedElement>
-      <packagedElement xsi:type="frameweb:NavigationAssociation" name="hasHeader" memberEnd="//@Compose.0/SCAP_LeaveAbsence_View/hasHeader/@ownedEnd.0">
-        <ownedEnd xsi:type="frameweb:NavigationCompositionEnd" association="//@Compose.0/SCAP_LeaveAbsence_View/hasHeader"/>
+      <packagedElement xsi:type="frameweb:NavigationAssociation" name="hasHeader" memberEnd="//@Compose.0/SCAP_LeaveAbsence_View/hasHeader/header //@Compose.0/SCAP_LeaveAbsence_View/index.xhtml/index">
+        <ownedEnd xsi:type="frameweb:NavigationCompositionPart" name="header" type="//@Compose.0/SCAP_LeaveAbsence_View/index.xhtml" association="//@Compose.0/SCAP_LeaveAbsence_View/hasHeader"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xsi:type="frameweb:ControllerPackage" name="SCAP_LeaveAbsence_Controller">
@@ -48,6 +51,18 @@
         <ownedOperation xsi:type="frameweb:FrontControllerMethod" name="formulary"/>
         <ownedOperation xsi:type="frameweb:FrontControllerMethod" name="save"/>
       </packagedElement>
+    </packagedElement>
+    <packagedElement xsi:type="frameweb:ResultDependency" name="RequestLeave" client="//@Compose.0/SCAP_LeaveAbsence_View/RequestLeave.xhtml" supplier="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController" ResultMethod="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController/formulary">
+      <nameExpression xsi:type="frameweb:ResultConstraint" name="result="/>
+    </packagedElement>
+    <packagedElement xsi:type="frameweb:ResultDependency" name="Index" client="//@Compose.0/SCAP_LeaveAbsence_View/index.xhtml" supplier="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController" ResultMethod="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController/save">
+      <nameExpression xsi:type="frameweb:ResultConstraint" name="result="/>
+    </packagedElement>
+    <packagedElement xsi:type="frameweb:FrontControllerDependency" name="Formulary" client="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController" supplier="//@Compose.0/SCAP_LeaveAbsence_View/header.xhtml" Method="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController/formulary">
+      <nameExpression xsi:type="frameweb:MethodCosntraint" name="method=formulary" symbol=""/>
+    </packagedElement>
+    <packagedElement xsi:type="frameweb:FrontControllerDependency" name="Save" client="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController" supplier="//@Compose.0/SCAP_LeaveAbsence_View/requestLeaveForm" Method="//@Compose.0/SCAP_LeaveAbsence_Controller/RequestLeaveController/save">
+      <nameExpression xsi:type="frameweb:MethodCosntraint" name="method=save"/>
     </packagedElement>
   </Compose>
 </frameweb:Frameweb>

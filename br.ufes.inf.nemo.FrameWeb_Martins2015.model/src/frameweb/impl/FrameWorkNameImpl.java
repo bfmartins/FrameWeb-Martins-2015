@@ -7,6 +7,8 @@ import frameweb.FramewebPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Frame Work Name</b></em>'.
@@ -16,7 +18,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class FrameWorkNameImpl extends FrameWebNameImpl implements FrameWorkName {
+public class FrameWorkNameImpl extends MinimalEObjectImpl.Container implements FrameWorkName {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

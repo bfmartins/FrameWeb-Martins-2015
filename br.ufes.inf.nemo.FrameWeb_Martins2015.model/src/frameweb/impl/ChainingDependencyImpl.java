@@ -2,12 +2,13 @@
  */
 package frameweb.impl;
 
+import frameweb.ChainingConstraint;
 import frameweb.ChainingDependency;
 import frameweb.FramewebPackage;
-import frameweb.FrontControllerClass;
 import frameweb.FrontControllerMethod;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -23,8 +24,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link frameweb.impl.ChainingDependencyImpl#getOutMethod <em>Out Method</em>}</li>
  *   <li>{@link frameweb.impl.ChainingDependencyImpl#getInMethod <em>In Method</em>}</li>
- *   <li>{@link frameweb.impl.ChainingDependencyImpl#getSupplierFrontController <em>Supplier Front Controller</em>}</li>
- *   <li>{@link frameweb.impl.ChainingDependencyImpl#getClientFrontController <em>Client Front Controller</em>}</li>
+ *   <li>{@link frameweb.impl.ChainingDependencyImpl#getChainingDependendencyConstraint <em>Chaining Dependendency Constraint</em>}</li>
  * </ul>
  * </p>
  *
@@ -52,24 +52,14 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 	protected FrontControllerMethod inMethod;
 
 	/**
-	 * The cached value of the '{@link #getSupplierFrontController() <em>Supplier Front Controller</em>}' reference.
+	 * The cached value of the '{@link #getChainingDependendencyConstraint() <em>Chaining Dependendency Constraint</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSupplierFrontController()
+	 * @see #getChainingDependendencyConstraint()
 	 * @generated
 	 * @ordered
 	 */
-	protected FrontControllerClass supplierFrontController;
-
-	/**
-	 * The cached value of the '{@link #getClientFrontController() <em>Client Front Controller</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getClientFrontController()
-	 * @generated
-	 * @ordered
-	 */
-	protected FrontControllerClass clientFrontController;
+	protected ChainingConstraint chainingDependendencyConstraint;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,16 +161,23 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrontControllerClass getSupplierFrontController() {
-		if (supplierFrontController != null && supplierFrontController.eIsProxy()) {
-			InternalEObject oldSupplierFrontController = (InternalEObject)supplierFrontController;
-			supplierFrontController = (FrontControllerClass)eResolveProxy(oldSupplierFrontController);
-			if (supplierFrontController != oldSupplierFrontController) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.CHAINING_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER, oldSupplierFrontController, supplierFrontController));
-			}
+	public ChainingConstraint getChainingDependendencyConstraint() {
+		return chainingDependendencyConstraint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetChainingDependendencyConstraint(ChainingConstraint newChainingDependendencyConstraint, NotificationChain msgs) {
+		ChainingConstraint oldChainingDependendencyConstraint = chainingDependendencyConstraint;
+		chainingDependendencyConstraint = newChainingDependendencyConstraint;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FramewebPackage.CHAINING_DEPENDENCY__CHAINING_DEPENDENDENCY_CONSTRAINT, oldChainingDependendencyConstraint, newChainingDependendencyConstraint);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
-		return supplierFrontController;
+		return msgs;
 	}
 
 	/**
@@ -188,37 +185,18 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrontControllerClass basicGetSupplierFrontController() {
-		return supplierFrontController;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setSupplierFrontController(FrontControllerClass newSupplierFrontController) {
-		FrontControllerClass oldSupplierFrontController = supplierFrontController;
-		supplierFrontController = newSupplierFrontController;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.CHAINING_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER, oldSupplierFrontController, supplierFrontController));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FrontControllerClass getClientFrontController() {
-		if (clientFrontController != null && clientFrontController.eIsProxy()) {
-			InternalEObject oldClientFrontController = (InternalEObject)clientFrontController;
-			clientFrontController = (FrontControllerClass)eResolveProxy(oldClientFrontController);
-			if (clientFrontController != oldClientFrontController) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.CHAINING_DEPENDENCY__CLIENT_FRONT_CONTROLLER, oldClientFrontController, clientFrontController));
-			}
+	public void setChainingDependendencyConstraint(ChainingConstraint newChainingDependendencyConstraint) {
+		if (newChainingDependendencyConstraint != chainingDependendencyConstraint) {
+			NotificationChain msgs = null;
+			if (chainingDependendencyConstraint != null)
+				msgs = ((InternalEObject)chainingDependendencyConstraint).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - FramewebPackage.CHAINING_DEPENDENCY__CHAINING_DEPENDENDENCY_CONSTRAINT, null, msgs);
+			if (newChainingDependendencyConstraint != null)
+				msgs = ((InternalEObject)newChainingDependendencyConstraint).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - FramewebPackage.CHAINING_DEPENDENCY__CHAINING_DEPENDENDENCY_CONSTRAINT, null, msgs);
+			msgs = basicSetChainingDependendencyConstraint(newChainingDependendencyConstraint, msgs);
+			if (msgs != null) msgs.dispatch();
 		}
-		return clientFrontController;
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.CHAINING_DEPENDENCY__CHAINING_DEPENDENDENCY_CONSTRAINT, newChainingDependendencyConstraint, newChainingDependendencyConstraint));
 	}
 
 	/**
@@ -226,20 +204,13 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrontControllerClass basicGetClientFrontController() {
-		return clientFrontController;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setClientFrontController(FrontControllerClass newClientFrontController) {
-		FrontControllerClass oldClientFrontController = clientFrontController;
-		clientFrontController = newClientFrontController;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.CHAINING_DEPENDENCY__CLIENT_FRONT_CONTROLLER, oldClientFrontController, clientFrontController));
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case FramewebPackage.CHAINING_DEPENDENCY__CHAINING_DEPENDENDENCY_CONSTRAINT:
+				return basicSetChainingDependendencyConstraint(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,12 +227,8 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 			case FramewebPackage.CHAINING_DEPENDENCY__IN_METHOD:
 				if (resolve) return getInMethod();
 				return basicGetInMethod();
-			case FramewebPackage.CHAINING_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER:
-				if (resolve) return getSupplierFrontController();
-				return basicGetSupplierFrontController();
-			case FramewebPackage.CHAINING_DEPENDENCY__CLIENT_FRONT_CONTROLLER:
-				if (resolve) return getClientFrontController();
-				return basicGetClientFrontController();
+			case FramewebPackage.CHAINING_DEPENDENCY__CHAINING_DEPENDENDENCY_CONSTRAINT:
+				return getChainingDependendencyConstraint();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -280,11 +247,8 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 			case FramewebPackage.CHAINING_DEPENDENCY__IN_METHOD:
 				setInMethod((FrontControllerMethod)newValue);
 				return;
-			case FramewebPackage.CHAINING_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER:
-				setSupplierFrontController((FrontControllerClass)newValue);
-				return;
-			case FramewebPackage.CHAINING_DEPENDENCY__CLIENT_FRONT_CONTROLLER:
-				setClientFrontController((FrontControllerClass)newValue);
+			case FramewebPackage.CHAINING_DEPENDENCY__CHAINING_DEPENDENDENCY_CONSTRAINT:
+				setChainingDependendencyConstraint((ChainingConstraint)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -304,11 +268,8 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 			case FramewebPackage.CHAINING_DEPENDENCY__IN_METHOD:
 				setInMethod((FrontControllerMethod)null);
 				return;
-			case FramewebPackage.CHAINING_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER:
-				setSupplierFrontController((FrontControllerClass)null);
-				return;
-			case FramewebPackage.CHAINING_DEPENDENCY__CLIENT_FRONT_CONTROLLER:
-				setClientFrontController((FrontControllerClass)null);
+			case FramewebPackage.CHAINING_DEPENDENCY__CHAINING_DEPENDENDENCY_CONSTRAINT:
+				setChainingDependendencyConstraint((ChainingConstraint)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -326,10 +287,8 @@ public class ChainingDependencyImpl extends NavigationDependencyImpl implements 
 				return outMethod != null;
 			case FramewebPackage.CHAINING_DEPENDENCY__IN_METHOD:
 				return inMethod != null;
-			case FramewebPackage.CHAINING_DEPENDENCY__SUPPLIER_FRONT_CONTROLLER:
-				return supplierFrontController != null;
-			case FramewebPackage.CHAINING_DEPENDENCY__CLIENT_FRONT_CONTROLLER:
-				return clientFrontController != null;
+			case FramewebPackage.CHAINING_DEPENDENCY__CHAINING_DEPENDENDENCY_CONSTRAINT:
+				return chainingDependendencyConstraint != null;
 		}
 		return super.eIsSet(featureID);
 	}

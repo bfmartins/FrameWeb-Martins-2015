@@ -12,8 +12,6 @@ import org.eclipse.uml2.uml.Association;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link frameweb.NavigationAssociation#getTargetComponent <em>Target Component</em>}</li>
- *   <li>{@link frameweb.NavigationAssociation#getTargetJQuery <em>Target JQuery</em>}</li>
  *   <li>{@link frameweb.NavigationAssociation#getNavigationAssociationProperty <em>Navigation Association Property</em>}</li>
  * </ul>
  * </p>
@@ -26,58 +24,6 @@ import org.eclipse.uml2.uml.Association;
  */
 public interface NavigationAssociation extends Association {
 	/**
-	 * Returns the value of the '<em><b>Target Component</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target Component</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Target Component</em>' reference.
-	 * @see #setTargetComponent(Component)
-	 * @see frameweb.FramewebPackage#getNavigationAssociation_TargetComponent()
-	 * @model
-	 * @generated
-	 */
-	Component getTargetComponent();
-
-	/**
-	 * Sets the value of the '{@link frameweb.NavigationAssociation#getTargetComponent <em>Target Component</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target Component</em>' reference.
-	 * @see #getTargetComponent()
-	 * @generated
-	 */
-	void setTargetComponent(Component value);
-
-	/**
-	 * Returns the value of the '<em><b>Target JQuery</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target JQuery</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Target JQuery</em>' reference.
-	 * @see #setTargetJQuery(JQuery)
-	 * @see frameweb.FramewebPackage#getNavigationAssociation_TargetJQuery()
-	 * @model
-	 * @generated
-	 */
-	JQuery getTargetJQuery();
-
-	/**
-	 * Sets the value of the '{@link frameweb.NavigationAssociation#getTargetJQuery <em>Target JQuery</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target JQuery</em>' reference.
-	 * @see #getTargetJQuery()
-	 * @generated
-	 */
-	void setTargetJQuery(JQuery value);
-
-	/**
 	 * Returns the value of the '<em><b>Navigation Association Property</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -86,12 +32,12 @@ public interface NavigationAssociation extends Association {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Navigation Association Property</em>' containment reference.
-	 * @see #setNavigationAssociationProperty(NavigationCompositionEnd)
+	 * @see #setNavigationAssociationProperty(NavigationCompositionPart)
 	 * @see frameweb.FramewebPackage#getNavigationAssociation_NavigationAssociationProperty()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	NavigationCompositionEnd getNavigationAssociationProperty();
+	NavigationCompositionPart getNavigationAssociationProperty();
 
 	/**
 	 * Sets the value of the '{@link frameweb.NavigationAssociation#getNavigationAssociationProperty <em>Navigation Association Property</em>}' containment reference.
@@ -101,6 +47,6 @@ public interface NavigationAssociation extends Association {
 	 * @see #getNavigationAssociationProperty()
 	 * @generated
 	 */
-	void setNavigationAssociationProperty(NavigationCompositionEnd value);
+	void setNavigationAssociationProperty(NavigationCompositionPart value);
 
 } // NavigationAssociation

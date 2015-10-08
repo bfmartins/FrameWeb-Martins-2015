@@ -57,7 +57,7 @@
       <packagedElement xsi:type="frameweb:Tag" name="input">
         <nestedClassifier xsi:type="frameweb:Tag" name="inputDate"/>
         <nestedClassifier xsi:type="frameweb:Tag" name="inputNumber"/>
-        <SubTag name="inputText"/>
+        <nestedClassifier xsi:type="frameweb:Tag" name="inputText"/>
       </packagedElement>
       <packagedElement xsi:type="frameweb:Tag" name="label"/>
       <packagedElement xsi:type="frameweb:Tag" name="legend"/>

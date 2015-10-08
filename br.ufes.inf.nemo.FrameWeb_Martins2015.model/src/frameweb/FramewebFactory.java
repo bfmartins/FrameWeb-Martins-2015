@@ -184,24 +184,6 @@ public interface FramewebFactory extends EFactory {
 	Template createTemplate();
 
 	/**
-	 * Returns a new object of class '<em>Form</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Form</em>'.
-	 * @generated
-	 */
-	Tag createForm();
-
-	/**
-	 * Returns a new object of class '<em>Binary</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Binary</em>'.
-	 * @generated
-	 */
-	Binary createBinary();
-
-	/**
 	 * Returns a new object of class '<em>DAO Interface</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -236,15 +218,6 @@ public interface FramewebFactory extends EFactory {
 	 * @generated
 	 */
 	FrontControllerClass createFrontControllerClass();
-
-	/**
-	 * Returns a new object of class '<em>User View Attribute</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>User View Attribute</em>'.
-	 * @generated
-	 */
-	Tag createUserViewAttribute();
 
 	/**
 	 * Returns a new object of class '<em>IO Parameter</em>'.
@@ -326,15 +299,6 @@ public interface FramewebFactory extends EFactory {
 	 * @generated
 	 */
 	ServiceNavigationAssociation createServiceNavigationAssociation();
-
-	/**
-	 * Returns a new object of class '<em>Binary Attribute</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Binary Attribute</em>'.
-	 * @generated
-	 */
-	BinaryAttribute createBinaryAttribute();
 
 	/**
 	 * Returns a new object of class '<em>Constant Name</em>'.
@@ -526,13 +490,13 @@ public interface FramewebFactory extends EFactory {
 	ApplicationPackage createApplicationPackage();
 
 	/**
-	 * Returns a new object of class '<em>Component</em>'.
+	 * Returns a new object of class '<em>UI Component</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Component</em>'.
+	 * @return a new object of class '<em>UI Component</em>'.
 	 * @generated
 	 */
-	Component createComponent();
+	Tag createUIComponent();
 
 	/**
 	 * Returns a new object of class '<em>Result Type</em>'.
@@ -562,13 +526,13 @@ public interface FramewebFactory extends EFactory {
 	JQuery createJQuery();
 
 	/**
-	 * Returns a new object of class '<em>Form Component</em>'.
+	 * Returns a new object of class '<em>UI Component Field</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Form Component</em>'.
+	 * @return a new object of class '<em>UI Component Field</em>'.
 	 * @generated
 	 */
-	Tag createFormComponent();
+	Tag createUIComponentField();
 
 	/**
 	 * Returns a new object of class '<em>Tag Lib</em>'.
@@ -607,22 +571,67 @@ public interface FramewebFactory extends EFactory {
 	Anotation createAnotation();
 
 	/**
-	 * Returns a new object of class '<em>Navigation Composition End</em>'.
+	 * Returns a new object of class '<em>Navigation Composition Part</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Navigation Composition End</em>'.
+	 * @return a new object of class '<em>Navigation Composition Part</em>'.
 	 * @generated
 	 */
-	NavigationCompositionEnd createNavigationCompositionEnd();
+	NavigationCompositionPart createNavigationCompositionPart();
 
 	/**
-	 * Returns a new object of class '<em>Navigation Composition</em>'.
+	 * Returns a new object of class '<em>Navigation Composition Whole</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Navigation Composition</em>'.
+	 * @return a new object of class '<em>Navigation Composition Whole</em>'.
 	 * @generated
 	 */
-	NavigationComposition createNavigationComposition();
+	NavigationCompositionWhole createNavigationCompositionWhole();
+
+	/**
+	 * Returns a new object of class '<em>Result Set</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Set</em>'.
+	 * @generated
+	 */
+	ResultSet createResultSet();
+
+	/**
+	 * Returns a new object of class '<em>Page Constraint</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Page Constraint</em>'.
+	 * @generated
+	 */
+	PageConstraint createPageConstraint();
+
+	/**
+	 * Returns a new object of class '<em>Result Constraint</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Constraint</em>'.
+	 * @generated
+	 */
+	ResultConstraint createResultConstraint();
+
+	/**
+	 * Returns a new object of class '<em>Method Cosntraint</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Method Cosntraint</em>'.
+	 * @generated
+	 */
+	MethodCosntraint createMethodCosntraint();
+
+	/**
+	 * Returns a new object of class '<em>Chaining Constraint</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Chaining Constraint</em>'.
+	 * @generated
+	 */
+	ChainingConstraint createChainingConstraint();
 
 	/**
 	 * Returns the package supported by this factory.

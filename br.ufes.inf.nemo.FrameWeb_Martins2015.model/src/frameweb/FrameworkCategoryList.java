@@ -56,7 +56,9 @@ public enum FrameworkCategoryList implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	DECORATOR(4, "Decorator", "decorator"), /**
+	DECORATOR(4, "Decorator", "decorator"),
+
+	/**
 	 * The '<em><b>Standard</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

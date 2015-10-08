@@ -2,6 +2,7 @@
  */
 package frameweb;
 
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,7 +20,7 @@ package frameweb;
  * @model
  * @generated
  */
-public interface ConstantName extends FrameWebName {
+public interface ConstantName extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Fw Name</b></em>' attribute.
 	 * The literals are from the enumeration {@link frameweb.ConstantNameList}.

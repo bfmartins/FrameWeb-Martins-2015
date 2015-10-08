@@ -34,7 +34,7 @@ public interface IOParameter extends NavigationAttribute {
 	 * @return the value of the '<em>Display</em>' reference list.
 	 * @see frameweb.FramewebPackage#getIOParameter_Display()
 	 * @see Tag#getInject
-	 * @model type="frameweb.FormComponent" opposite="inject" derived="true"
+	 * @model type="frameweb.UIComponentField" opposite="inject" derived="true"
 	 * @generated
 	 */
 	EList<Tag> getDisplay();

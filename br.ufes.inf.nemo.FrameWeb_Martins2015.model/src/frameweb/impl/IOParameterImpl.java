@@ -65,7 +65,7 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 	 */
 	public EList<Tag> getDisplay() {
 		if (display == null) {
-			display = new EObjectWithInverseResolvingEList<Tag>(Tag.class, this, FramewebPackage.IO_PARAMETER__DISPLAY, FramewebPackage.FORM_COMPONENT__INJECT);
+			display = new EObjectWithInverseResolvingEList<Tag>(Tag.class, this, FramewebPackage.IO_PARAMETER__DISPLAY, FramewebPackage.UI_COMPONENT_FIELD__INJECT);
 		}
 		return display;
 	}

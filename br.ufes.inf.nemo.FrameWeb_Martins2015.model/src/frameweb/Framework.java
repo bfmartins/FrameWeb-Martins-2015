@@ -16,11 +16,12 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link frameweb.Framework#getFrameworkRule <em>Framework Rule</em>}</li>
  *   <li>{@link frameweb.Framework#getFrameworkAnotation <em>Framework Anotation</em>}</li>
  *   <li>{@link frameweb.Framework#getFrameworkCategory <em>Framework Category</em>}</li>
+ *   <li>{@link frameweb.Framework#getFrameWebResultSet <em>Frame Web Result Set</em>}</li>
  * </ul>
  * </p>
  *
  * @see frameweb.FramewebPackage#getFramework()
- * @model
+ * @model annotation="Ecore constraints='FrameworkResultSetConstraint FrameworkTagLibConstraint'"
  * @generated
  */
 public interface Framework extends org.eclipse.uml2.uml.Package {
@@ -29,13 +30,13 @@ public interface Framework extends org.eclipse.uml2.uml.Package {
 	 * The list contents are of type {@link frameweb.TagLib}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Framework Tag Lib</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Framework Tag Lib</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Framework Tag Lib</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getFramework_FrameworkTagLib()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<TagLib> getFrameworkTagLib();
@@ -67,7 +68,7 @@ public interface Framework extends org.eclipse.uml2.uml.Package {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Framework Anotation</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getFramework_FrameworkAnotation()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Anotation> getFrameworkAnotation();
@@ -101,5 +102,21 @@ public interface Framework extends org.eclipse.uml2.uml.Package {
 	 * @generated
 	 */
 	void setFrameworkCategory(FrameworkCategoryList value);
+
+	/**
+	 * Returns the value of the '<em><b>Frame Web Result Set</b></em>' containment reference list.
+	 * The list contents are of type {@link frameweb.ResultSet}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Frame Web Result Set</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Frame Web Result Set</em>' containment reference list.
+	 * @see frameweb.FramewebPackage#getFramework_FrameWebResultSet()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<ResultSet> getFrameWebResultSet();
 
 } // Framework

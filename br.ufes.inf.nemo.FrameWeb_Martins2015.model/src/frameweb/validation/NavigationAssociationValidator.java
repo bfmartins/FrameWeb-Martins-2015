@@ -4,13 +4,7 @@
  */
 package frameweb.validation;
 
-import frameweb.Component;
-import frameweb.JQuery;
-import frameweb.NavigationComposition;
-import frameweb.NavigationCompositionEnd;
-import frameweb.Page;
-import frameweb.Tag;
-import frameweb.Template;
+import frameweb.NavigationCompositionPart;
 
 /**
  * A sample validator interface for {@link frameweb.NavigationAssociation}.
@@ -21,15 +15,5 @@ import frameweb.Template;
 public interface NavigationAssociationValidator {
 	boolean validate();
 
-	boolean validateSourceTemplate(Template value);
-	boolean validateSourcePage(Page value);
-	boolean validateTargetForm(Tag value);
-	boolean validateTargetComponent(Component value);
-	boolean validateTargetJQuery(JQuery value);
-
-	boolean validateNavigationAssociationProperty(NavigationCompositionEnd value);
-
-	boolean validateNavigationProperty(NavigationCompositionEnd value);
-
-	boolean validateNavigationProperty(NavigationComposition value);
+	boolean validateNavigationAssociationProperty(NavigationCompositionPart value);
 }

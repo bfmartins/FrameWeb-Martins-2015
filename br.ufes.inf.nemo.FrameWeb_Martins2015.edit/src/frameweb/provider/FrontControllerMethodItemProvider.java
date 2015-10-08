@@ -3,6 +3,7 @@
 package frameweb.provider;
 
 
+import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
 import frameweb.FrontControllerMethod;
 
@@ -52,6 +53,7 @@ public class FrontControllerMethodItemProvider extends OperationItemProvider {
 			super.getPropertyDescriptors(object);
 
 			addIsDefaultPropertyDescriptor(object);
+			addResultPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -74,6 +76,28 @@ public class FrontControllerMethodItemProvider extends OperationItemProvider {
 				 false,
 				 false,
 				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Result feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addResultPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_FrontControllerMethod_result_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerMethod_result_feature", "_UI_FrontControllerMethod_type"),
+				 FramewebPackage.Literals.FRONT_CONTROLLER_METHOD__RESULT,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -117,6 +141,7 @@ public class FrontControllerMethodItemProvider extends OperationItemProvider {
 
 		switch (notification.getFeatureID(FrontControllerMethod.class)) {
 			case FramewebPackage.FRONT_CONTROLLER_METHOD__IS_DEFAULT:
+			case FramewebPackage.FRONT_CONTROLLER_METHOD__RESULT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}
@@ -133,6 +158,26 @@ public class FrontControllerMethodItemProvider extends OperationItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createPageConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createResultConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				 FramewebFactory.eINSTANCE.createChainingConstraint()));
 	}
 
 	/**

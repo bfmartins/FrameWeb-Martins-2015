@@ -12,75 +12,85 @@ import org.eclipse.emf.common.util.EList;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link frameweb.ResultDependency#getReturnResult <em>Return Result</em>}</li>
- *   <li>{@link frameweb.ResultDependency#getReturnMethod <em>Return Method</em>}</li>
- *   <li>{@link frameweb.ResultDependency#getReturnResultType <em>Return Result Type</em>}</li>
+ *   <li>{@link frameweb.ResultDependency#getResultResult <em>Result Result</em>}</li>
+ *   <li>{@link frameweb.ResultDependency#getResultMethod <em>Result Method</em>}</li>
+ *   <li>{@link frameweb.ResultDependency#getResultDependendencyCosntraint <em>Result Dependendency Cosntraint</em>}</li>
  * </ul>
  * </p>
  *
  * @see frameweb.FramewebPackage#getResultDependency()
  * @model annotation="Ecore constraints='ResultDependencyConstraint\r\n'"
- *        annotation="Comments ResultDependencyConstraint='The supplier of a ResultDependency must be only navigation classes (NavigationClass) and the client has to be always and obligatorily a FrontControllerClass.'"
- *        annotation="OCL ResultDependencyConstraint='context ResultDependency \r\n inv: \r\n  (self.oclAsType(Dependency).client.oclIsTypeOf(FrontControllerClass)) and\r\n  ((self.oclAsType(Dependency).supplier.oclIsTypeOf(NavigationClass)) or \r\n  (self.oclAsType(Dependency).supplier.oclIsTypeOf(FormComponent)))'"
+ *        annotation="Comments ResultDependencyConstraint='A ResultDependency must have a FrontControllerClass as client and a NavigationClass as supplier.'"
+ *        annotation="OCL ResultDependencyConstraint='context ResultDependency \r\n inv: \r\n  (self.oclAsType(Dependency).client.oclIsTypeOf(FrontControllerClass)) and\r\n  (self.oclAsType(Dependency).supplier.oclIsTypeOf(NavigationClass))'"
  * @generated
  */
 public interface ResultDependency extends NavigationDependency {
 	/**
-	 * Returns the value of the '<em><b>Return Result</b></em>' reference list.
+	 * Returns the value of the '<em><b>Result Result</b></em>' reference list.
 	 * The list contents are of type {@link ResultType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Return Result</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Result Result</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Return Result</em>' reference list.
-	 * @see frameweb.FramewebPackage#getResultDependency_ReturnResult()
+	 * @return the value of the '<em>Result Result</em>' reference list.
+	 * @see frameweb.FramewebPackage#getResultDependency_ResultResult()
 	 * @model type="frameweb.Result"
 	 * @generated
 	 */
-	EList<ResultType> getReturnResult();
+	EList<ResultType> getResultResult();
 
 	/**
-	 * Returns the value of the '<em><b>Return Method</b></em>' reference.
+	 * Returns the value of the '<em><b>Result Method</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Return Method</em>' reference isn't clear,
+	 * If the meaning of the '<em>Result Method</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Return Method</em>' reference.
-	 * @see #setReturnMethod(FrontControllerMethod)
-	 * @see frameweb.FramewebPackage#getResultDependency_ReturnMethod()
+	 * @return the value of the '<em>Result Method</em>' reference.
+	 * @see #setResultMethod(FrontControllerMethod)
+	 * @see frameweb.FramewebPackage#getResultDependency_ResultMethod()
 	 * @model required="true"
 	 * @generated
 	 */
-	FrontControllerMethod getReturnMethod();
+	FrontControllerMethod getResultMethod();
 
 	/**
-	 * Sets the value of the '{@link frameweb.ResultDependency#getReturnMethod <em>Return Method</em>}' reference.
+	 * Sets the value of the '{@link frameweb.ResultDependency#getResultMethod <em>Result Method</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Return Method</em>' reference.
-	 * @see #getReturnMethod()
+	 * @param value the new value of the '<em>Result Method</em>' reference.
+	 * @see #getResultMethod()
 	 * @generated
 	 */
-	void setReturnMethod(FrontControllerMethod value);
+	void setResultMethod(FrontControllerMethod value);
 
 	/**
-	 * Returns the value of the '<em><b>Return Result Type</b></em>' reference list.
-	 * The list contents are of type {@link frameweb.ResultType}.
+	 * Returns the value of the '<em><b>Result Dependendency Cosntraint</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Return Result Type</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Result Dependendency Cosntraint</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Return Result Type</em>' reference list.
-	 * @see frameweb.FramewebPackage#getResultDependency_ReturnResultType()
-	 * @model
+	 * @return the value of the '<em>Result Dependendency Cosntraint</em>' containment reference.
+	 * @see #setResultDependendencyCosntraint(ResultConstraint)
+	 * @see frameweb.FramewebPackage#getResultDependency_ResultDependendencyCosntraint()
+	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	EList<ResultType> getReturnResultType();
+	ResultConstraint getResultDependendencyCosntraint();
+
+	/**
+	 * Sets the value of the '{@link frameweb.ResultDependency#getResultDependendencyCosntraint <em>Result Dependendency Cosntraint</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Result Dependendency Cosntraint</em>' containment reference.
+	 * @see #getResultDependendencyCosntraint()
+	 * @generated
+	 */
+	void setResultDependendencyCosntraint(ResultConstraint value);
 
 } // ResultDependency

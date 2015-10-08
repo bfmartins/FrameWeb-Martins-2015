@@ -18,6 +18,7 @@ import org.eclipse.uml2.uml.DeploymentTarget;
 import org.eclipse.uml2.uml.DirectedRelationship;
 import org.eclipse.uml2.uml.Element;
 import org.eclipse.uml2.uml.EncapsulatedClassifier;
+import org.eclipse.uml2.uml.Expression;
 import org.eclipse.uml2.uml.Feature;
 import org.eclipse.uml2.uml.Generalization;
 import org.eclipse.uml2.uml.Interface;
@@ -30,11 +31,13 @@ import org.eclipse.uml2.uml.ParameterableElement;
 import org.eclipse.uml2.uml.Property;
 import org.eclipse.uml2.uml.RedefinableElement;
 import org.eclipse.uml2.uml.Relationship;
+import org.eclipse.uml2.uml.StringExpression;
 import org.eclipse.uml2.uml.StructuralFeature;
 import org.eclipse.uml2.uml.StructuredClassifier;
 import org.eclipse.uml2.uml.TemplateableElement;
 import org.eclipse.uml2.uml.Type;
 import org.eclipse.uml2.uml.TypedElement;
+import org.eclipse.uml2.uml.ValueSpecification;
 
 /**
  * <!-- begin-user-doc -->
@@ -442,48 +445,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case FramewebPackage.FORM: {
-				Tag form = (Tag)theEObject;
-				T result = caseForm(form);
-				if (result == null) result = caseNavigationClass((NavigationClass) form);
-				if (result == null) result = caseClass(form);
-				if (result == null) result = caseEncapsulatedClassifier(form);
-				if (result == null) result = caseBehavioredClassifier(form);
-				if (result == null) result = caseStructuredClassifier(form);
-				if (result == null) result = caseClassifier(form);
-				if (result == null) result = caseNamespace(form);
-				if (result == null) result = caseRedefinableElement(form);
-				if (result == null) result = caseType(form);
-				if (result == null) result = caseTemplateableElement(form);
-				if (result == null) result = casePackageableElement(form);
-				if (result == null) result = caseNamedElement(form);
-				if (result == null) result = caseParameterableElement(form);
-				if (result == null) result = caseElement(form);
-				if (result == null) result = caseEModelElement(form);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case FramewebPackage.BINARY: {
-				Binary binary = (Binary)theEObject;
-				T result = caseBinary(binary);
-				if (result == null) result = caseNavigationClass(binary);
-				if (result == null) result = caseClass(binary);
-				if (result == null) result = caseEncapsulatedClassifier(binary);
-				if (result == null) result = caseBehavioredClassifier(binary);
-				if (result == null) result = caseStructuredClassifier(binary);
-				if (result == null) result = caseClassifier(binary);
-				if (result == null) result = caseNamespace(binary);
-				if (result == null) result = caseRedefinableElement(binary);
-				if (result == null) result = caseType(binary);
-				if (result == null) result = caseTemplateableElement(binary);
-				if (result == null) result = casePackageableElement(binary);
-				if (result == null) result = caseNamedElement(binary);
-				if (result == null) result = caseParameterableElement(binary);
-				if (result == null) result = caseElement(binary);
-				if (result == null) result = caseEModelElement(binary);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case FramewebPackage.DAO_INTERFACE: {
 				DAOInterface daoInterface = (DAOInterface)theEObject;
 				T result = caseDAOInterface(daoInterface);
@@ -549,25 +510,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = caseParameterableElement(frontControllerClass);
 				if (result == null) result = caseElement(frontControllerClass);
 				if (result == null) result = caseEModelElement(frontControllerClass);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case FramewebPackage.USER_VIEW_ATTRIBUTE: {
-				Tag userViewAttribute = (Tag)theEObject;
-				T result = caseUserViewAttribute(userViewAttribute);
-				if (result == null) result = caseNavigationAttribute((NavigationAttribute) userViewAttribute);
-				if (result == null) result = caseProperty((Property) userViewAttribute);
-				if (result == null) result = caseStructuralFeature((StructuralFeature) userViewAttribute);
-				if (result == null) result = caseConnectableElement((ConnectableElement) userViewAttribute);
-				if (result == null) result = caseDeploymentTarget((DeploymentTarget) userViewAttribute);
-				if (result == null) result = caseFeature((Feature) userViewAttribute);
-				if (result == null) result = caseTypedElement((TypedElement) userViewAttribute);
-				if (result == null) result = caseMultiplicityElement((MultiplicityElement) userViewAttribute);
-				if (result == null) result = caseParameterableElement(userViewAttribute);
-				if (result == null) result = caseRedefinableElement(userViewAttribute);
-				if (result == null) result = caseNamedElement(userViewAttribute);
-				if (result == null) result = caseElement(userViewAttribute);
-				if (result == null) result = caseEModelElement(userViewAttribute);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -642,12 +584,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = caseNamedElement(frontControllerMethod);
 				if (result == null) result = caseElement(frontControllerMethod);
 				if (result == null) result = caseEModelElement(frontControllerMethod);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case FramewebPackage.NAMING_METHOD: {
-				NamingMethod namingMethod = (NamingMethod)theEObject;
-				T result = caseNamingMethod(namingMethod);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -738,56 +674,27 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case FramewebPackage.FRAME_WEB_NAME: {
-				FrameWebName frameWebName = (FrameWebName)theEObject;
-				T result = caseFrameWebName(frameWebName);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case FramewebPackage.BINARY_ATTRIBUTE: {
-				BinaryAttribute binaryAttribute = (BinaryAttribute)theEObject;
-				T result = caseBinaryAttribute(binaryAttribute);
-				if (result == null) result = caseNavigationAttribute(binaryAttribute);
-				if (result == null) result = caseProperty(binaryAttribute);
-				if (result == null) result = caseStructuralFeature(binaryAttribute);
-				if (result == null) result = caseConnectableElement(binaryAttribute);
-				if (result == null) result = caseDeploymentTarget(binaryAttribute);
-				if (result == null) result = caseFeature(binaryAttribute);
-				if (result == null) result = caseTypedElement(binaryAttribute);
-				if (result == null) result = caseMultiplicityElement(binaryAttribute);
-				if (result == null) result = caseParameterableElement(binaryAttribute);
-				if (result == null) result = caseRedefinableElement(binaryAttribute);
-				if (result == null) result = caseNamedElement(binaryAttribute);
-				if (result == null) result = caseElement(binaryAttribute);
-				if (result == null) result = caseEModelElement(binaryAttribute);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case FramewebPackage.CONSTANT_NAME: {
 				ConstantName constantName = (ConstantName)theEObject;
 				T result = caseConstantName(constantName);
-				if (result == null) result = caseFrameWebName(constantName);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case FramewebPackage.DOMAIN_TABLE_NAME: {
 				DomainTableName domainTableName = (DomainTableName)theEObject;
 				T result = caseDomainTableName(domainTableName);
-				if (result == null) result = caseFrameWebName(domainTableName);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case FramewebPackage.FRAME_WORK_NAME: {
 				FrameWorkName frameWorkName = (FrameWorkName)theEObject;
 				T result = caseFrameWorkName(frameWorkName);
-				if (result == null) result = caseFrameWebName(frameWorkName);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case FramewebPackage.DOMAIN_COLUMN_NAME: {
 				DomainColumnName domainColumnName = (DomainColumnName)theEObject;
 				T result = caseDomainColumnName(domainColumnName);
-				if (result == null) result = caseFrameWebName(domainColumnName);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -795,7 +702,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 				DAOInterfaceName daoInterfaceName = (DAOInterfaceName)theEObject;
 				T result = caseDAOInterfaceName(daoInterfaceName);
 				if (result == null) result = caseConstantName(daoInterfaceName);
-				if (result == null) result = caseFrameWebName(daoInterfaceName);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -804,7 +710,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 				T result = caseDAOClassName(daoClassName);
 				if (result == null) result = caseDAOInterfaceName(daoClassName);
 				if (result == null) result = caseConstantName(daoClassName);
-				if (result == null) result = caseFrameWebName(daoClassName);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1118,24 +1023,24 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case FramewebPackage.COMPONENT: {
-				Component component = (Component)theEObject;
-				T result = caseComponent(component);
-				if (result == null) result = caseNavigationClass(component);
-				if (result == null) result = caseClass(component);
-				if (result == null) result = caseEncapsulatedClassifier(component);
-				if (result == null) result = caseBehavioredClassifier(component);
-				if (result == null) result = caseStructuredClassifier(component);
-				if (result == null) result = caseClassifier(component);
-				if (result == null) result = caseNamespace(component);
-				if (result == null) result = caseRedefinableElement(component);
-				if (result == null) result = caseType(component);
-				if (result == null) result = caseTemplateableElement(component);
-				if (result == null) result = casePackageableElement(component);
-				if (result == null) result = caseNamedElement(component);
-				if (result == null) result = caseParameterableElement(component);
-				if (result == null) result = caseElement(component);
-				if (result == null) result = caseEModelElement(component);
+			case FramewebPackage.UI_COMPONENT: {
+				Tag uiComponent = (Tag)theEObject;
+				T result = caseUIComponent(uiComponent);
+				if (result == null) result = caseNavigationClass((NavigationClass) uiComponent);
+				if (result == null) result = caseClass(uiComponent);
+				if (result == null) result = caseEncapsulatedClassifier(uiComponent);
+				if (result == null) result = caseBehavioredClassifier(uiComponent);
+				if (result == null) result = caseStructuredClassifier(uiComponent);
+				if (result == null) result = caseClassifier(uiComponent);
+				if (result == null) result = caseNamespace(uiComponent);
+				if (result == null) result = caseRedefinableElement(uiComponent);
+				if (result == null) result = caseType(uiComponent);
+				if (result == null) result = caseTemplateableElement(uiComponent);
+				if (result == null) result = casePackageableElement(uiComponent);
+				if (result == null) result = caseNamedElement(uiComponent);
+				if (result == null) result = caseParameterableElement(uiComponent);
+				if (result == null) result = caseElement(uiComponent);
+				if (result == null) result = caseEModelElement(uiComponent);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1187,40 +1092,25 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case FramewebPackage.JQUERY: {
 				JQuery jQuery = (JQuery)theEObject;
 				T result = caseJQuery(jQuery);
-				if (result == null) result = caseNavigationClass(jQuery);
-				if (result == null) result = caseClass(jQuery);
-				if (result == null) result = caseEncapsulatedClassifier(jQuery);
-				if (result == null) result = caseBehavioredClassifier(jQuery);
-				if (result == null) result = caseStructuredClassifier(jQuery);
-				if (result == null) result = caseClassifier(jQuery);
-				if (result == null) result = caseNamespace(jQuery);
-				if (result == null) result = caseRedefinableElement(jQuery);
-				if (result == null) result = caseType(jQuery);
-				if (result == null) result = caseTemplateableElement(jQuery);
-				if (result == null) result = casePackageableElement(jQuery);
-				if (result == null) result = caseNamedElement(jQuery);
-				if (result == null) result = caseParameterableElement(jQuery);
-				if (result == null) result = caseElement(jQuery);
-				if (result == null) result = caseEModelElement(jQuery);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case FramewebPackage.FORM_COMPONENT: {
-				Tag formComponent = (Tag)theEObject;
-				T result = caseFormComponent(formComponent);
-				if (result == null) result = caseNavigationAttribute((NavigationAttribute) formComponent);
-				if (result == null) result = caseProperty((Property) formComponent);
-				if (result == null) result = caseStructuralFeature((StructuralFeature) formComponent);
-				if (result == null) result = caseConnectableElement((ConnectableElement) formComponent);
-				if (result == null) result = caseDeploymentTarget((DeploymentTarget) formComponent);
-				if (result == null) result = caseFeature((Feature) formComponent);
-				if (result == null) result = caseTypedElement((TypedElement) formComponent);
-				if (result == null) result = caseMultiplicityElement((MultiplicityElement) formComponent);
-				if (result == null) result = caseParameterableElement(formComponent);
-				if (result == null) result = caseRedefinableElement(formComponent);
-				if (result == null) result = caseNamedElement(formComponent);
-				if (result == null) result = caseElement(formComponent);
-				if (result == null) result = caseEModelElement(formComponent);
+			case FramewebPackage.UI_COMPONENT_FIELD: {
+				Tag uiComponentField = (Tag)theEObject;
+				T result = caseUIComponentField(uiComponentField);
+				if (result == null) result = caseNavigationAttribute((NavigationAttribute) uiComponentField);
+				if (result == null) result = caseProperty((Property) uiComponentField);
+				if (result == null) result = caseStructuralFeature((StructuralFeature) uiComponentField);
+				if (result == null) result = caseConnectableElement((ConnectableElement) uiComponentField);
+				if (result == null) result = caseDeploymentTarget((DeploymentTarget) uiComponentField);
+				if (result == null) result = caseFeature((Feature) uiComponentField);
+				if (result == null) result = caseTypedElement((TypedElement) uiComponentField);
+				if (result == null) result = caseMultiplicityElement((MultiplicityElement) uiComponentField);
+				if (result == null) result = caseParameterableElement(uiComponentField);
+				if (result == null) result = caseRedefinableElement(uiComponentField);
+				if (result == null) result = caseNamedElement(uiComponentField);
+				if (result == null) result = caseElement(uiComponentField);
+				if (result == null) result = caseEModelElement(uiComponentField);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1270,41 +1160,41 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case FramewebPackage.NAVIGATION_COMPOSITION_END: {
-				NavigationCompositionEnd navigationCompositionEnd = (NavigationCompositionEnd)theEObject;
-				T result = caseNavigationCompositionEnd(navigationCompositionEnd);
-				if (result == null) result = caseNavigationProperty(navigationCompositionEnd);
-				if (result == null) result = caseProperty(navigationCompositionEnd);
-				if (result == null) result = caseStructuralFeature(navigationCompositionEnd);
-				if (result == null) result = caseConnectableElement(navigationCompositionEnd);
-				if (result == null) result = caseDeploymentTarget(navigationCompositionEnd);
-				if (result == null) result = caseFeature(navigationCompositionEnd);
-				if (result == null) result = caseTypedElement(navigationCompositionEnd);
-				if (result == null) result = caseMultiplicityElement(navigationCompositionEnd);
-				if (result == null) result = caseParameterableElement(navigationCompositionEnd);
-				if (result == null) result = caseRedefinableElement(navigationCompositionEnd);
-				if (result == null) result = caseNamedElement(navigationCompositionEnd);
-				if (result == null) result = caseElement(navigationCompositionEnd);
-				if (result == null) result = caseEModelElement(navigationCompositionEnd);
+			case FramewebPackage.NAVIGATION_COMPOSITION_PART: {
+				NavigationCompositionPart navigationCompositionPart = (NavigationCompositionPart)theEObject;
+				T result = caseNavigationCompositionPart(navigationCompositionPart);
+				if (result == null) result = caseNavigationProperty(navigationCompositionPart);
+				if (result == null) result = caseProperty(navigationCompositionPart);
+				if (result == null) result = caseStructuralFeature(navigationCompositionPart);
+				if (result == null) result = caseConnectableElement(navigationCompositionPart);
+				if (result == null) result = caseDeploymentTarget(navigationCompositionPart);
+				if (result == null) result = caseFeature(navigationCompositionPart);
+				if (result == null) result = caseTypedElement(navigationCompositionPart);
+				if (result == null) result = caseMultiplicityElement(navigationCompositionPart);
+				if (result == null) result = caseParameterableElement(navigationCompositionPart);
+				if (result == null) result = caseRedefinableElement(navigationCompositionPart);
+				if (result == null) result = caseNamedElement(navigationCompositionPart);
+				if (result == null) result = caseElement(navigationCompositionPart);
+				if (result == null) result = caseEModelElement(navigationCompositionPart);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case FramewebPackage.NAVIGATION_COMPOSITION: {
-				NavigationComposition navigationComposition = (NavigationComposition)theEObject;
-				T result = caseNavigationComposition(navigationComposition);
-				if (result == null) result = caseNavigationProperty(navigationComposition);
-				if (result == null) result = caseProperty(navigationComposition);
-				if (result == null) result = caseStructuralFeature(navigationComposition);
-				if (result == null) result = caseConnectableElement(navigationComposition);
-				if (result == null) result = caseDeploymentTarget(navigationComposition);
-				if (result == null) result = caseFeature(navigationComposition);
-				if (result == null) result = caseTypedElement(navigationComposition);
-				if (result == null) result = caseMultiplicityElement(navigationComposition);
-				if (result == null) result = caseParameterableElement(navigationComposition);
-				if (result == null) result = caseRedefinableElement(navigationComposition);
-				if (result == null) result = caseNamedElement(navigationComposition);
-				if (result == null) result = caseElement(navigationComposition);
-				if (result == null) result = caseEModelElement(navigationComposition);
+			case FramewebPackage.NAVIGATION_COMPOSITION_WHOLE: {
+				NavigationCompositionWhole navigationCompositionWhole = (NavigationCompositionWhole)theEObject;
+				T result = caseNavigationCompositionWhole(navigationCompositionWhole);
+				if (result == null) result = caseNavigationProperty(navigationCompositionWhole);
+				if (result == null) result = caseProperty(navigationCompositionWhole);
+				if (result == null) result = caseStructuralFeature(navigationCompositionWhole);
+				if (result == null) result = caseConnectableElement(navigationCompositionWhole);
+				if (result == null) result = caseDeploymentTarget(navigationCompositionWhole);
+				if (result == null) result = caseFeature(navigationCompositionWhole);
+				if (result == null) result = caseTypedElement(navigationCompositionWhole);
+				if (result == null) result = caseMultiplicityElement(navigationCompositionWhole);
+				if (result == null) result = caseParameterableElement(navigationCompositionWhole);
+				if (result == null) result = caseRedefinableElement(navigationCompositionWhole);
+				if (result == null) result = caseNamedElement(navigationCompositionWhole);
+				if (result == null) result = caseElement(navigationCompositionWhole);
+				if (result == null) result = caseEModelElement(navigationCompositionWhole);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1323,6 +1213,104 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = caseNamedElement(navigationProperty);
 				if (result == null) result = caseElement(navigationProperty);
 				if (result == null) result = caseEModelElement(navigationProperty);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FramewebPackage.RESULT_SET: {
+				ResultSet resultSet = (ResultSet)theEObject;
+				T result = caseResultSet(resultSet);
+				if (result == null) result = casePackage(resultSet);
+				if (result == null) result = caseNamespace(resultSet);
+				if (result == null) result = casePackageableElement(resultSet);
+				if (result == null) result = caseTemplateableElement(resultSet);
+				if (result == null) result = caseNamedElement(resultSet);
+				if (result == null) result = caseParameterableElement(resultSet);
+				if (result == null) result = caseElement(resultSet);
+				if (result == null) result = caseEModelElement(resultSet);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FramewebPackage.NAVIGATION_CONSTRAINT: {
+				NavigationConstraint navigationConstraint = (NavigationConstraint)theEObject;
+				T result = caseNavigationConstraint(navigationConstraint);
+				if (result == null) result = caseStringExpression(navigationConstraint);
+				if (result == null) result = caseExpression(navigationConstraint);
+				if (result == null) result = caseTemplateableElement(navigationConstraint);
+				if (result == null) result = caseValueSpecification(navigationConstraint);
+				if (result == null) result = casePackageableElement(navigationConstraint);
+				if (result == null) result = caseTypedElement(navigationConstraint);
+				if (result == null) result = caseNamedElement(navigationConstraint);
+				if (result == null) result = caseParameterableElement(navigationConstraint);
+				if (result == null) result = caseElement(navigationConstraint);
+				if (result == null) result = caseEModelElement(navigationConstraint);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FramewebPackage.PAGE_CONSTRAINT: {
+				PageConstraint pageConstraint = (PageConstraint)theEObject;
+				T result = casePageConstraint(pageConstraint);
+				if (result == null) result = caseNavigationConstraint(pageConstraint);
+				if (result == null) result = caseStringExpression(pageConstraint);
+				if (result == null) result = caseExpression(pageConstraint);
+				if (result == null) result = caseTemplateableElement(pageConstraint);
+				if (result == null) result = caseValueSpecification(pageConstraint);
+				if (result == null) result = casePackageableElement(pageConstraint);
+				if (result == null) result = caseTypedElement(pageConstraint);
+				if (result == null) result = caseNamedElement(pageConstraint);
+				if (result == null) result = caseParameterableElement(pageConstraint);
+				if (result == null) result = caseElement(pageConstraint);
+				if (result == null) result = caseEModelElement(pageConstraint);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FramewebPackage.RESULT_CONSTRAINT: {
+				ResultConstraint resultConstraint = (ResultConstraint)theEObject;
+				T result = caseResultConstraint(resultConstraint);
+				if (result == null) result = caseNavigationConstraint(resultConstraint);
+				if (result == null) result = caseStringExpression(resultConstraint);
+				if (result == null) result = caseExpression(resultConstraint);
+				if (result == null) result = caseTemplateableElement(resultConstraint);
+				if (result == null) result = caseValueSpecification(resultConstraint);
+				if (result == null) result = casePackageableElement(resultConstraint);
+				if (result == null) result = caseTypedElement(resultConstraint);
+				if (result == null) result = caseNamedElement(resultConstraint);
+				if (result == null) result = caseParameterableElement(resultConstraint);
+				if (result == null) result = caseElement(resultConstraint);
+				if (result == null) result = caseEModelElement(resultConstraint);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FramewebPackage.METHOD_COSNTRAINT: {
+				MethodCosntraint methodCosntraint = (MethodCosntraint)theEObject;
+				T result = caseMethodCosntraint(methodCosntraint);
+				if (result == null) result = caseNavigationConstraint(methodCosntraint);
+				if (result == null) result = caseStringExpression(methodCosntraint);
+				if (result == null) result = caseExpression(methodCosntraint);
+				if (result == null) result = caseTemplateableElement(methodCosntraint);
+				if (result == null) result = caseValueSpecification(methodCosntraint);
+				if (result == null) result = casePackageableElement(methodCosntraint);
+				if (result == null) result = caseTypedElement(methodCosntraint);
+				if (result == null) result = caseNamedElement(methodCosntraint);
+				if (result == null) result = caseParameterableElement(methodCosntraint);
+				if (result == null) result = caseElement(methodCosntraint);
+				if (result == null) result = caseEModelElement(methodCosntraint);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FramewebPackage.CHAINING_CONSTRAINT: {
+				ChainingConstraint chainingConstraint = (ChainingConstraint)theEObject;
+				T result = caseChainingConstraint(chainingConstraint);
+				if (result == null) result = caseNavigationConstraint(chainingConstraint);
+				if (result == null) result = caseStringExpression(chainingConstraint);
+				if (result == null) result = caseExpression(chainingConstraint);
+				if (result == null) result = caseTemplateableElement(chainingConstraint);
+				if (result == null) result = caseValueSpecification(chainingConstraint);
+				if (result == null) result = casePackageableElement(chainingConstraint);
+				if (result == null) result = caseTypedElement(chainingConstraint);
+				if (result == null) result = caseNamedElement(chainingConstraint);
+				if (result == null) result = caseParameterableElement(chainingConstraint);
+				if (result == null) result = caseElement(chainingConstraint);
+				if (result == null) result = caseEModelElement(chainingConstraint);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1631,36 +1619,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Form</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Form</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseForm(Tag object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Binary</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Binary</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseBinary(Binary object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>DAO Interface</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1717,21 +1675,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseFrontControllerClass(FrontControllerClass object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>User View Attribute</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>User View Attribute</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseUserViewAttribute(Tag object) {
 		return null;
 	}
 
@@ -1811,21 +1754,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Naming Method</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Naming Method</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseNamingMethod(NamingMethod object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Service Class</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1897,36 +1825,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDomainClass(DomainClass object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Frame Web Name</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Frame Web Name</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseFrameWebName(FrameWebName object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Binary Attribute</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Binary Attribute</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseBinaryAttribute(BinaryAttribute object) {
 		return null;
 	}
 
@@ -2306,17 +2204,17 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Component</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>UI Component</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Component</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>UI Component</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseComponent(Component object) {
+	public T caseUIComponent(Tag object) {
 		return null;
 	}
 
@@ -2381,17 +2279,17 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Form Component</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>UI Component Field</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Form Component</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>UI Component Field</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFormComponent(Tag object) {
+	public T caseUIComponentField(Tag object) {
 		return null;
 	}
 
@@ -2456,32 +2354,32 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Navigation Composition End</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Navigation Composition Part</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Navigation Composition End</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Navigation Composition Part</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseNavigationCompositionEnd(NavigationCompositionEnd object) {
+	public T caseNavigationCompositionPart(NavigationCompositionPart object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Navigation Composition</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Navigation Composition Whole</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Navigation Composition</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Navigation Composition Whole</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseNavigationComposition(NavigationComposition object) {
+	public T caseNavigationCompositionWhole(NavigationCompositionWhole object) {
 		return null;
 	}
 
@@ -2497,6 +2395,96 @@ public class FramewebSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseNavigationProperty(NavigationProperty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Result Set</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Result Set</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResultSet(ResultSet object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Navigation Constraint</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Navigation Constraint</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNavigationConstraint(NavigationConstraint object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Page Constraint</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Page Constraint</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePageConstraint(PageConstraint object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Result Constraint</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Result Constraint</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResultConstraint(ResultConstraint object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Method Cosntraint</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Method Cosntraint</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMethodCosntraint(MethodCosntraint object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Chaining Constraint</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Chaining Constraint</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseChainingConstraint(ChainingConstraint object) {
 		return null;
 	}
 
@@ -2947,6 +2935,51 @@ public class FramewebSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseOperation(Operation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Value Specification</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Value Specification</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseValueSpecification(ValueSpecification object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Expression</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Expression</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseExpression(Expression object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>String Expression</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>String Expression</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStringExpression(StringExpression object) {
 		return null;
 	}
 

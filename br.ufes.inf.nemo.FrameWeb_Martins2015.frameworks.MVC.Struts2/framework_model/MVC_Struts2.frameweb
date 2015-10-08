@@ -1,2 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015"/>
+<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015">
+  <Uses name="Struts2" frameworkCategory="mvc">
+    <packagedElement xsi:type="frameweb:ResultType" name="chain"/>
+    <packagedElement xsi:type="frameweb:ResultType" name="dispatcher"/>
+    <packagedElement xsi:type="frameweb:ResultType" name="freeMarker"/>
+    <packagedElement xsi:type="frameweb:ResultType" name="httpHeader"/>
+    <packagedElement xsi:type="frameweb:ResultType" name="redirect"/>
+    <packagedElement xsi:type="frameweb:ResultType" name="redirectAction"/>
+    <packagedElement xsi:type="frameweb:ResultType" name="stream"/>
+    <packagedElement xsi:type="frameweb:ResultType" name="velocity"/>
+    <packagedElement xsi:type="frameweb:ResultType" name="xsl"/>
+    <packagedElement xsi:type="frameweb:ResultType" name="plainText"/>
+    <packagedElement xsi:type="frameweb:ResultType" name="tiles2"/>
+    <packagedElement xsi:type="frameweb:ResultType" name="tiles3"/>
+    <packagedElement xsi:type="frameweb:ResultType" name="postback"/>
+  </Uses>
+</frameweb:Frameweb>

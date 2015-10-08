@@ -65,6 +65,7 @@ public class ViewPackageItemProvider extends NavigationPackageItemProvider {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS);
+			childrenFeatures.add(FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_RESULT);
 		}
 		return childrenFeatures;
 	}
@@ -121,6 +122,7 @@ public class ViewPackageItemProvider extends NavigationPackageItemProvider {
 
 		switch (notification.getFeatureID(ViewPackage.class)) {
 			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_CLASS:
+			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_RESULT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -151,22 +153,12 @@ public class ViewPackageItemProvider extends NavigationPackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
-				 FramewebFactory.eINSTANCE.createForm()));
+				 FramewebFactory.eINSTANCE.createUIComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
-				 FramewebFactory.eINSTANCE.createBinary()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
-				 FramewebFactory.eINSTANCE.createComponent()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS,
-				 FramewebFactory.eINSTANCE.createJQuery()));
+				(FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_RESULT,
+				 FramewebFactory.eINSTANCE.createResult()));
 	}
 
 	/**
@@ -187,7 +179,8 @@ public class ViewPackageItemProvider extends NavigationPackageItemProvider {
 			childFeature == UMLPackage.Literals.PACKAGE__NESTED_PACKAGE ||
 			childFeature == UMLPackage.Literals.PACKAGE__OWNED_STEREOTYPE ||
 			childFeature == UMLPackage.Literals.PACKAGE__OWNED_TYPE ||
-			childFeature == FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS;
+			childFeature == FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_CLASS ||
+			childFeature == FramewebPackage.Literals.VIEW_PACKAGE__VIEW_PACKAGE_RESULT;
 
 		if (qualify) {
 			return getString

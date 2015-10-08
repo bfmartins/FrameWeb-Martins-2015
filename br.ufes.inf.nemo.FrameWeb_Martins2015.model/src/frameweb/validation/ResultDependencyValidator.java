@@ -5,6 +5,7 @@
 package frameweb.validation;
 
 import frameweb.FrontControllerMethod;
+import frameweb.ResultConstraint;
 import frameweb.ResultType;
 
 import org.eclipse.emf.common.util.EList;
@@ -18,7 +19,13 @@ import org.eclipse.emf.common.util.EList;
 public interface ResultDependencyValidator {
 	boolean validate();
 
+	boolean validateResultResult(EList<ResultType> value);
+
+	boolean validateResultMethod(FrontControllerMethod value);
+
+	boolean validateResultDependendencyCosntraint(ResultConstraint value);
+
 	boolean validateReturnResult(EList<ResultType> value);
 	boolean validateReturnMethod(FrontControllerMethod value);
-	boolean validateReturnResultType(EList<ResultType> value);
+	boolean validateReturnDependendencyCosntraint(ResultConstraint value);
 }

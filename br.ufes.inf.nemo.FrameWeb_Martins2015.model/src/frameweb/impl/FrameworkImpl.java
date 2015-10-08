@@ -6,6 +6,7 @@ import frameweb.Anotation;
 import frameweb.FramewebPackage;
 import frameweb.Framework;
 import frameweb.FrameworkCategoryList;
+import frameweb.ResultSet;
 import frameweb.Rule;
 import frameweb.TagLib;
 
@@ -37,6 +38,7 @@ import org.eclipse.uml2.uml.internal.impl.PackageImpl;
  *   <li>{@link frameweb.impl.FrameworkImpl#getFrameworkRule <em>Framework Rule</em>}</li>
  *   <li>{@link frameweb.impl.FrameworkImpl#getFrameworkAnotation <em>Framework Anotation</em>}</li>
  *   <li>{@link frameweb.impl.FrameworkImpl#getFrameworkCategory <em>Framework Category</em>}</li>
+ *   <li>{@link frameweb.impl.FrameworkImpl#getFrameWebResultSet <em>Frame Web Result Set</em>}</li>
  * </ul>
  * </p>
  *
@@ -92,6 +94,16 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 	 * @ordered
 	 */
 	protected FrameworkCategoryList frameworkCategory = FRAMEWORK_CATEGORY_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getFrameWebResultSet() <em>Frame Web Result Set</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFrameWebResultSet()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<ResultSet> frameWebResultSet;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -174,6 +186,18 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<ResultSet> getFrameWebResultSet() {
+		if (frameWebResultSet == null) {
+			frameWebResultSet = new EObjectContainmentEList<ResultSet>(ResultSet.class, this, FramewebPackage.FRAMEWORK__FRAME_WEB_RESULT_SET);
+		}
+		return frameWebResultSet;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -183,6 +207,8 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 				return ((InternalEList<?>)getFrameworkRule()).basicRemove(otherEnd, msgs);
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
 				return ((InternalEList<?>)getFrameworkAnotation()).basicRemove(otherEnd, msgs);
+			case FramewebPackage.FRAMEWORK__FRAME_WEB_RESULT_SET:
+				return ((InternalEList<?>)getFrameWebResultSet()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -203,6 +229,8 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 				return getFrameworkAnotation();
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_CATEGORY:
 				return getFrameworkCategory();
+			case FramewebPackage.FRAMEWORK__FRAME_WEB_RESULT_SET:
+				return getFrameWebResultSet();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -231,6 +259,10 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_CATEGORY:
 				setFrameworkCategory((FrameworkCategoryList)newValue);
 				return;
+			case FramewebPackage.FRAMEWORK__FRAME_WEB_RESULT_SET:
+				getFrameWebResultSet().clear();
+				getFrameWebResultSet().addAll((Collection<? extends ResultSet>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -255,6 +287,9 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_CATEGORY:
 				setFrameworkCategory(FRAMEWORK_CATEGORY_EDEFAULT);
 				return;
+			case FramewebPackage.FRAMEWORK__FRAME_WEB_RESULT_SET:
+				getFrameWebResultSet().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -275,6 +310,8 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 				return frameworkAnotation != null && !frameworkAnotation.isEmpty();
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_CATEGORY:
 				return frameworkCategory != FRAMEWORK_CATEGORY_EDEFAULT;
+			case FramewebPackage.FRAMEWORK__FRAME_WEB_RESULT_SET:
+				return frameWebResultSet != null && !frameWebResultSet.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
