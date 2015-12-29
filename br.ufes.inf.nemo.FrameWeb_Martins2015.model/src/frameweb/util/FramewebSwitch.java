@@ -7,18 +7,21 @@ import frameweb.*;
 import org.eclipse.emf.ecore.EModelElement;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
+
 import org.eclipse.emf.ecore.util.Switch;
+
+import org.eclipse.uml2.uml.Abstraction;
 import org.eclipse.uml2.uml.Association;
 import org.eclipse.uml2.uml.BehavioralFeature;
 import org.eclipse.uml2.uml.BehavioredClassifier;
 import org.eclipse.uml2.uml.Classifier;
 import org.eclipse.uml2.uml.ConnectableElement;
+import org.eclipse.uml2.uml.Constraint;
 import org.eclipse.uml2.uml.Dependency;
 import org.eclipse.uml2.uml.DeploymentTarget;
 import org.eclipse.uml2.uml.DirectedRelationship;
 import org.eclipse.uml2.uml.Element;
 import org.eclipse.uml2.uml.EncapsulatedClassifier;
-import org.eclipse.uml2.uml.Expression;
 import org.eclipse.uml2.uml.Feature;
 import org.eclipse.uml2.uml.Generalization;
 import org.eclipse.uml2.uml.Interface;
@@ -29,15 +32,14 @@ import org.eclipse.uml2.uml.Operation;
 import org.eclipse.uml2.uml.PackageableElement;
 import org.eclipse.uml2.uml.ParameterableElement;
 import org.eclipse.uml2.uml.Property;
+import org.eclipse.uml2.uml.Realization;
 import org.eclipse.uml2.uml.RedefinableElement;
 import org.eclipse.uml2.uml.Relationship;
-import org.eclipse.uml2.uml.StringExpression;
 import org.eclipse.uml2.uml.StructuralFeature;
 import org.eclipse.uml2.uml.StructuredClassifier;
 import org.eclipse.uml2.uml.TemplateableElement;
 import org.eclipse.uml2.uml.Type;
 import org.eclipse.uml2.uml.TypedElement;
-import org.eclipse.uml2.uml.ValueSpecification;
 
 /**
  * <!-- begin-user-doc -->
@@ -96,69 +98,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case FramewebPackage.MAPPED_CLASS: {
-				MappedClass mappedClass = (MappedClass)theEObject;
-				T result = caseMappedClass(mappedClass);
-				if (result == null) result = caseDomainClass(mappedClass);
-				if (result == null) result = caseClass(mappedClass);
-				if (result == null) result = caseEncapsulatedClassifier(mappedClass);
-				if (result == null) result = caseBehavioredClassifier(mappedClass);
-				if (result == null) result = caseStructuredClassifier(mappedClass);
-				if (result == null) result = caseClassifier(mappedClass);
-				if (result == null) result = caseNamespace(mappedClass);
-				if (result == null) result = caseRedefinableElement(mappedClass);
-				if (result == null) result = caseType(mappedClass);
-				if (result == null) result = caseTemplateableElement(mappedClass);
-				if (result == null) result = casePackageableElement(mappedClass);
-				if (result == null) result = caseNamedElement(mappedClass);
-				if (result == null) result = caseParameterableElement(mappedClass);
-				if (result == null) result = caseElement(mappedClass);
-				if (result == null) result = caseEModelElement(mappedClass);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case FramewebPackage.PERSISTENT_CLASS: {
-				PersistentClass persistentClass = (PersistentClass)theEObject;
-				T result = casePersistentClass(persistentClass);
-				if (result == null) result = caseDomainClass(persistentClass);
-				if (result == null) result = caseClass(persistentClass);
-				if (result == null) result = caseEncapsulatedClassifier(persistentClass);
-				if (result == null) result = caseBehavioredClassifier(persistentClass);
-				if (result == null) result = caseStructuredClassifier(persistentClass);
-				if (result == null) result = caseClassifier(persistentClass);
-				if (result == null) result = caseNamespace(persistentClass);
-				if (result == null) result = caseRedefinableElement(persistentClass);
-				if (result == null) result = caseType(persistentClass);
-				if (result == null) result = caseTemplateableElement(persistentClass);
-				if (result == null) result = casePackageableElement(persistentClass);
-				if (result == null) result = caseNamedElement(persistentClass);
-				if (result == null) result = caseParameterableElement(persistentClass);
-				if (result == null) result = caseElement(persistentClass);
-				if (result == null) result = caseEModelElement(persistentClass);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case FramewebPackage.TRANSIENT_CLASS: {
-				TransientClass transientClass = (TransientClass)theEObject;
-				T result = caseTransientClass(transientClass);
-				if (result == null) result = caseDomainClass(transientClass);
-				if (result == null) result = caseClass(transientClass);
-				if (result == null) result = caseEncapsulatedClassifier(transientClass);
-				if (result == null) result = caseBehavioredClassifier(transientClass);
-				if (result == null) result = caseStructuredClassifier(transientClass);
-				if (result == null) result = caseClassifier(transientClass);
-				if (result == null) result = caseNamespace(transientClass);
-				if (result == null) result = caseRedefinableElement(transientClass);
-				if (result == null) result = caseType(transientClass);
-				if (result == null) result = caseTemplateableElement(transientClass);
-				if (result == null) result = casePackageableElement(transientClass);
-				if (result == null) result = caseNamedElement(transientClass);
-				if (result == null) result = caseParameterableElement(transientClass);
-				if (result == null) result = caseElement(transientClass);
-				if (result == null) result = caseEModelElement(transientClass);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case FramewebPackage.FRAMEWEB: {
 				Frameweb frameweb = (Frameweb)theEObject;
 				T result = caseFrameweb(frameweb);
@@ -482,14 +421,19 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case FramewebPackage.DAO_GENERALIZATION: {
-				DAOGeneralization daoGeneralization = (DAOGeneralization)theEObject;
-				T result = caseDAOGeneralization(daoGeneralization);
-				if (result == null) result = caseGeneralization(daoGeneralization);
-				if (result == null) result = caseDirectedRelationship(daoGeneralization);
-				if (result == null) result = caseRelationship(daoGeneralization);
-				if (result == null) result = caseElement(daoGeneralization);
-				if (result == null) result = caseEModelElement(daoGeneralization);
+			case FramewebPackage.DAO_REALIZATION: {
+				DAORealization daoRealization = (DAORealization)theEObject;
+				T result = caseDAORealization(daoRealization);
+				if (result == null) result = caseRealization(daoRealization);
+				if (result == null) result = caseAbstraction(daoRealization);
+				if (result == null) result = caseDependency(daoRealization);
+				if (result == null) result = casePackageableElement(daoRealization);
+				if (result == null) result = caseDirectedRelationship(daoRealization);
+				if (result == null) result = caseNamedElement(daoRealization);
+				if (result == null) result = caseParameterableElement(daoRealization);
+				if (result == null) result = caseRelationship(daoRealization);
+				if (result == null) result = caseElement(daoRealization);
+				if (result == null) result = caseEModelElement(daoRealization);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -532,12 +476,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case FramewebPackage.DAO_BASE_OPERATION: {
-				DAOBaseOperation daoBaseOperation = (DAOBaseOperation)theEObject;
-				T result = caseDAOBaseOperation(daoBaseOperation);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case FramewebPackage.RESULT_DEPENDENCY: {
 				ResultDependency resultDependency = (ResultDependency)theEObject;
 				T result = caseResultDependency(resultDependency);
@@ -574,14 +512,10 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case FramewebPackage.FRONT_CONTROLLER_METHOD: {
 				FrontControllerMethod frontControllerMethod = (FrontControllerMethod)theEObject;
 				T result = caseFrontControllerMethod(frontControllerMethod);
-				if (result == null) result = caseOperation(frontControllerMethod);
-				if (result == null) result = caseBehavioralFeature(frontControllerMethod);
-				if (result == null) result = caseParameterableElement(frontControllerMethod);
-				if (result == null) result = caseTemplateableElement(frontControllerMethod);
-				if (result == null) result = caseNamespace(frontControllerMethod);
-				if (result == null) result = caseFeature(frontControllerMethod);
-				if (result == null) result = caseRedefinableElement(frontControllerMethod);
+				if (result == null) result = caseConstraint(frontControllerMethod);
+				if (result == null) result = casePackageableElement(frontControllerMethod);
 				if (result == null) result = caseNamedElement(frontControllerMethod);
+				if (result == null) result = caseParameterableElement(frontControllerMethod);
 				if (result == null) result = caseElement(frontControllerMethod);
 				if (result == null) result = caseEModelElement(frontControllerMethod);
 				if (result == null) result = defaultCase(theEObject);
@@ -655,7 +589,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 				return result;
 			}
 			case FramewebPackage.DOMAIN_CLASS: {
-				DomainClass domainClass = (DomainClass)theEObject;
+				ClassMappingKind domainClass = (ClassMappingKind)theEObject;
 				T result = caseDomainClass(domainClass);
 				if (result == null) result = caseClass(domainClass);
 				if (result == null) result = caseEncapsulatedClassifier(domainClass);
@@ -781,7 +715,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case FramewebPackage.DAO_SERVICE_ASSOCIATION: {
 				DAOServiceAssociation daoServiceAssociation = (DAOServiceAssociation)theEObject;
 				T result = caseDAOServiceAssociation(daoServiceAssociation);
-				if (result == null) result = caseServiceAssociation(daoServiceAssociation);
 				if (result == null) result = caseAssociation(daoServiceAssociation);
 				if (result == null) result = caseClassifier(daoServiceAssociation);
 				if (result == null) result = caseRelationship(daoServiceAssociation);
@@ -835,19 +768,19 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case FramewebPackage.DOMAIN_OPERATION: {
-				DomainOperation domainOperation = (DomainOperation)theEObject;
-				T result = caseDomainOperation(domainOperation);
-				if (result == null) result = caseOperation(domainOperation);
-				if (result == null) result = caseBehavioralFeature(domainOperation);
-				if (result == null) result = caseParameterableElement(domainOperation);
-				if (result == null) result = caseTemplateableElement(domainOperation);
-				if (result == null) result = caseNamespace(domainOperation);
-				if (result == null) result = caseFeature(domainOperation);
-				if (result == null) result = caseRedefinableElement(domainOperation);
-				if (result == null) result = caseNamedElement(domainOperation);
-				if (result == null) result = caseElement(domainOperation);
-				if (result == null) result = caseEModelElement(domainOperation);
+			case FramewebPackage.DOMAIN_METHOD: {
+				DomainMethod domainMethod = (DomainMethod)theEObject;
+				T result = caseDomainMethod(domainMethod);
+				if (result == null) result = caseOperation(domainMethod);
+				if (result == null) result = caseBehavioralFeature(domainMethod);
+				if (result == null) result = caseParameterableElement(domainMethod);
+				if (result == null) result = caseTemplateableElement(domainMethod);
+				if (result == null) result = caseNamespace(domainMethod);
+				if (result == null) result = caseFeature(domainMethod);
+				if (result == null) result = caseRedefinableElement(domainMethod);
+				if (result == null) result = caseNamedElement(domainMethod);
+				if (result == null) result = caseElement(domainMethod);
+				if (result == null) result = caseEModelElement(domainMethod);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -935,19 +868,19 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case FramewebPackage.DAO_OPERATION: {
-				DAOOperation daoOperation = (DAOOperation)theEObject;
-				T result = caseDAOOperation(daoOperation);
-				if (result == null) result = caseOperation(daoOperation);
-				if (result == null) result = caseBehavioralFeature(daoOperation);
-				if (result == null) result = caseParameterableElement(daoOperation);
-				if (result == null) result = caseTemplateableElement(daoOperation);
-				if (result == null) result = caseNamespace(daoOperation);
-				if (result == null) result = caseFeature(daoOperation);
-				if (result == null) result = caseRedefinableElement(daoOperation);
-				if (result == null) result = caseNamedElement(daoOperation);
-				if (result == null) result = caseElement(daoOperation);
-				if (result == null) result = caseEModelElement(daoOperation);
+			case FramewebPackage.DAO_METHOD: {
+				DAOMethod daoMethod = (DAOMethod)theEObject;
+				T result = caseDAOMethod(daoMethod);
+				if (result == null) result = caseOperation(daoMethod);
+				if (result == null) result = caseBehavioralFeature(daoMethod);
+				if (result == null) result = caseParameterableElement(daoMethod);
+				if (result == null) result = caseTemplateableElement(daoMethod);
+				if (result == null) result = caseNamespace(daoMethod);
+				if (result == null) result = caseFeature(daoMethod);
+				if (result == null) result = caseRedefinableElement(daoMethod);
+				if (result == null) result = caseNamedElement(daoMethod);
+				if (result == null) result = caseElement(daoMethod);
+				if (result == null) result = caseEModelElement(daoMethod);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1026,7 +959,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case FramewebPackage.UI_COMPONENT: {
 				Tag uiComponent = (Tag)theEObject;
 				T result = caseUIComponent(uiComponent);
-				if (result == null) result = caseNavigationClass((NavigationClass) uiComponent);
+				if (result == null) result = caseNavigationClass(uiComponent);
 				if (result == null) result = caseClass(uiComponent);
 				if (result == null) result = caseEncapsulatedClassifier(uiComponent);
 				if (result == null) result = caseBehavioredClassifier(uiComponent);
@@ -1081,9 +1014,16 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case FramewebPackage.DOMAIN_GENERALIZATION: {
 				DomainGeneralization domainGeneralization = (DomainGeneralization)theEObject;
 				T result = caseDomainGeneralization(domainGeneralization);
-				if (result == null) result = caseGeneralization(domainGeneralization);
-				if (result == null) result = caseDirectedRelationship(domainGeneralization);
+				if (result == null) result = caseAssociation(domainGeneralization);
+				if (result == null) result = caseClassifier(domainGeneralization);
 				if (result == null) result = caseRelationship(domainGeneralization);
+				if (result == null) result = caseNamespace(domainGeneralization);
+				if (result == null) result = caseRedefinableElement(domainGeneralization);
+				if (result == null) result = caseType(domainGeneralization);
+				if (result == null) result = caseTemplateableElement(domainGeneralization);
+				if (result == null) result = casePackageableElement(domainGeneralization);
+				if (result == null) result = caseNamedElement(domainGeneralization);
+				if (result == null) result = caseParameterableElement(domainGeneralization);
 				if (result == null) result = caseElement(domainGeneralization);
 				if (result == null) result = caseEModelElement(domainGeneralization);
 				if (result == null) result = defaultCase(theEObject);
@@ -1098,14 +1038,14 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case FramewebPackage.UI_COMPONENT_FIELD: {
 				Tag uiComponentField = (Tag)theEObject;
 				T result = caseUIComponentField(uiComponentField);
-				if (result == null) result = caseNavigationAttribute((NavigationAttribute) uiComponentField);
-				if (result == null) result = caseProperty((Property) uiComponentField);
-				if (result == null) result = caseStructuralFeature((StructuralFeature) uiComponentField);
-				if (result == null) result = caseConnectableElement((ConnectableElement) uiComponentField);
-				if (result == null) result = caseDeploymentTarget((DeploymentTarget) uiComponentField);
-				if (result == null) result = caseFeature((Feature) uiComponentField);
-				if (result == null) result = caseTypedElement((TypedElement) uiComponentField);
-				if (result == null) result = caseMultiplicityElement((MultiplicityElement) uiComponentField);
+				if (result == null) result = caseNavigationAttribute(uiComponentField);
+				if (result == null) result = caseProperty(uiComponentField);
+				if (result == null) result = caseStructuralFeature(uiComponentField);
+				if (result == null) result = caseConnectableElement(uiComponentField);
+				if (result == null) result = caseDeploymentTarget(uiComponentField);
+				if (result == null) result = caseFeature(uiComponentField);
+				if (result == null) result = caseTypedElement(uiComponentField);
+				if (result == null) result = caseMultiplicityElement(uiComponentField);
 				if (result == null) result = caseParameterableElement(uiComponentField);
 				if (result == null) result = caseRedefinableElement(uiComponentField);
 				if (result == null) result = caseNamedElement(uiComponentField);
@@ -1233,12 +1173,8 @@ public class FramewebSwitch<T> extends Switch<T> {
 			case FramewebPackage.NAVIGATION_CONSTRAINT: {
 				NavigationConstraint navigationConstraint = (NavigationConstraint)theEObject;
 				T result = caseNavigationConstraint(navigationConstraint);
-				if (result == null) result = caseStringExpression(navigationConstraint);
-				if (result == null) result = caseExpression(navigationConstraint);
-				if (result == null) result = caseTemplateableElement(navigationConstraint);
-				if (result == null) result = caseValueSpecification(navigationConstraint);
+				if (result == null) result = caseConstraint(navigationConstraint);
 				if (result == null) result = casePackageableElement(navigationConstraint);
-				if (result == null) result = caseTypedElement(navigationConstraint);
 				if (result == null) result = caseNamedElement(navigationConstraint);
 				if (result == null) result = caseParameterableElement(navigationConstraint);
 				if (result == null) result = caseElement(navigationConstraint);
@@ -1250,12 +1186,8 @@ public class FramewebSwitch<T> extends Switch<T> {
 				PageConstraint pageConstraint = (PageConstraint)theEObject;
 				T result = casePageConstraint(pageConstraint);
 				if (result == null) result = caseNavigationConstraint(pageConstraint);
-				if (result == null) result = caseStringExpression(pageConstraint);
-				if (result == null) result = caseExpression(pageConstraint);
-				if (result == null) result = caseTemplateableElement(pageConstraint);
-				if (result == null) result = caseValueSpecification(pageConstraint);
+				if (result == null) result = caseConstraint(pageConstraint);
 				if (result == null) result = casePackageableElement(pageConstraint);
-				if (result == null) result = caseTypedElement(pageConstraint);
 				if (result == null) result = caseNamedElement(pageConstraint);
 				if (result == null) result = caseParameterableElement(pageConstraint);
 				if (result == null) result = caseElement(pageConstraint);
@@ -1267,12 +1199,8 @@ public class FramewebSwitch<T> extends Switch<T> {
 				ResultConstraint resultConstraint = (ResultConstraint)theEObject;
 				T result = caseResultConstraint(resultConstraint);
 				if (result == null) result = caseNavigationConstraint(resultConstraint);
-				if (result == null) result = caseStringExpression(resultConstraint);
-				if (result == null) result = caseExpression(resultConstraint);
-				if (result == null) result = caseTemplateableElement(resultConstraint);
-				if (result == null) result = caseValueSpecification(resultConstraint);
+				if (result == null) result = caseConstraint(resultConstraint);
 				if (result == null) result = casePackageableElement(resultConstraint);
-				if (result == null) result = caseTypedElement(resultConstraint);
 				if (result == null) result = caseNamedElement(resultConstraint);
 				if (result == null) result = caseParameterableElement(resultConstraint);
 				if (result == null) result = caseElement(resultConstraint);
@@ -1284,12 +1212,8 @@ public class FramewebSwitch<T> extends Switch<T> {
 				MethodCosntraint methodCosntraint = (MethodCosntraint)theEObject;
 				T result = caseMethodCosntraint(methodCosntraint);
 				if (result == null) result = caseNavigationConstraint(methodCosntraint);
-				if (result == null) result = caseStringExpression(methodCosntraint);
-				if (result == null) result = caseExpression(methodCosntraint);
-				if (result == null) result = caseTemplateableElement(methodCosntraint);
-				if (result == null) result = caseValueSpecification(methodCosntraint);
+				if (result == null) result = caseConstraint(methodCosntraint);
 				if (result == null) result = casePackageableElement(methodCosntraint);
-				if (result == null) result = caseTypedElement(methodCosntraint);
 				if (result == null) result = caseNamedElement(methodCosntraint);
 				if (result == null) result = caseParameterableElement(methodCosntraint);
 				if (result == null) result = caseElement(methodCosntraint);
@@ -1301,12 +1225,8 @@ public class FramewebSwitch<T> extends Switch<T> {
 				ChainingConstraint chainingConstraint = (ChainingConstraint)theEObject;
 				T result = caseChainingConstraint(chainingConstraint);
 				if (result == null) result = caseNavigationConstraint(chainingConstraint);
-				if (result == null) result = caseStringExpression(chainingConstraint);
-				if (result == null) result = caseExpression(chainingConstraint);
-				if (result == null) result = caseTemplateableElement(chainingConstraint);
-				if (result == null) result = caseValueSpecification(chainingConstraint);
+				if (result == null) result = caseConstraint(chainingConstraint);
 				if (result == null) result = casePackageableElement(chainingConstraint);
-				if (result == null) result = caseTypedElement(chainingConstraint);
 				if (result == null) result = caseNamedElement(chainingConstraint);
 				if (result == null) result = caseParameterableElement(chainingConstraint);
 				if (result == null) result = caseElement(chainingConstraint);
@@ -1314,53 +1234,114 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case FramewebPackage.NAVIGATION_GENERALIZATION: {
+				NavigationGeneralization navigationGeneralization = (NavigationGeneralization)theEObject;
+				T result = caseNavigationGeneralization(navigationGeneralization);
+				if (result == null) result = caseGeneralization(navigationGeneralization);
+				if (result == null) result = caseDirectedRelationship(navigationGeneralization);
+				if (result == null) result = caseRelationship(navigationGeneralization);
+				if (result == null) result = caseElement(navigationGeneralization);
+				if (result == null) result = caseEModelElement(navigationGeneralization);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FramewebPackage.DOMAIN_CONSTRAINTS: {
+				DomainConstraints domainConstraints = (DomainConstraints)theEObject;
+				T result = caseDomainConstraints(domainConstraints);
+				if (result == null) result = caseConstraint(domainConstraints);
+				if (result == null) result = casePackageableElement(domainConstraints);
+				if (result == null) result = caseNamedElement(domainConstraints);
+				if (result == null) result = caseParameterableElement(domainConstraints);
+				if (result == null) result = caseElement(domainConstraints);
+				if (result == null) result = caseEModelElement(domainConstraints);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FramewebPackage.DOMAIN_PROPERTY: {
+				DomainProperty domainProperty = (DomainProperty)theEObject;
+				T result = caseDomainProperty(domainProperty);
+				if (result == null) result = caseProperty(domainProperty);
+				if (result == null) result = caseStructuralFeature(domainProperty);
+				if (result == null) result = caseConnectableElement(domainProperty);
+				if (result == null) result = caseDeploymentTarget(domainProperty);
+				if (result == null) result = caseFeature(domainProperty);
+				if (result == null) result = caseTypedElement(domainProperty);
+				if (result == null) result = caseMultiplicityElement(domainProperty);
+				if (result == null) result = caseParameterableElement(domainProperty);
+				if (result == null) result = caseRedefinableElement(domainProperty);
+				if (result == null) result = caseNamedElement(domainProperty);
+				if (result == null) result = caseElement(domainProperty);
+				if (result == null) result = caseEModelElement(domainProperty);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FramewebPackage.DAO_GENERALIZATION: {
+				DAOGeneralization daoGeneralization = (DAOGeneralization)theEObject;
+				T result = caseDAOGeneralization(daoGeneralization);
+				if (result == null) result = caseGeneralization(daoGeneralization);
+				if (result == null) result = caseDirectedRelationship(daoGeneralization);
+				if (result == null) result = caseRelationship(daoGeneralization);
+				if (result == null) result = caseElement(daoGeneralization);
+				if (result == null) result = caseEModelElement(daoGeneralization);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FramewebPackage.MAPPING_SET: {
+				MappingSet mappingSet = (MappingSet)theEObject;
+				T result = caseMappingSet(mappingSet);
+				if (result == null) result = casePackage(mappingSet);
+				if (result == null) result = caseNamespace(mappingSet);
+				if (result == null) result = casePackageableElement(mappingSet);
+				if (result == null) result = caseTemplateableElement(mappingSet);
+				if (result == null) result = caseNamedElement(mappingSet);
+				if (result == null) result = caseParameterableElement(mappingSet);
+				if (result == null) result = caseElement(mappingSet);
+				if (result == null) result = caseEModelElement(mappingSet);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FramewebPackage.CLASS_MAPPING_KIND: {
+				ClassMappingKind classMappingKind = (ClassMappingKind)theEObject;
+				T result = caseClassMappingKind(classMappingKind);
+				if (result == null) result = caseClass(classMappingKind);
+				if (result == null) result = caseEncapsulatedClassifier(classMappingKind);
+				if (result == null) result = caseBehavioredClassifier(classMappingKind);
+				if (result == null) result = caseStructuredClassifier(classMappingKind);
+				if (result == null) result = caseClassifier(classMappingKind);
+				if (result == null) result = caseNamespace(classMappingKind);
+				if (result == null) result = caseRedefinableElement(classMappingKind);
+				if (result == null) result = caseType(classMappingKind);
+				if (result == null) result = caseTemplateableElement(classMappingKind);
+				if (result == null) result = casePackageableElement(classMappingKind);
+				if (result == null) result = caseNamedElement(classMappingKind);
+				if (result == null) result = caseParameterableElement(classMappingKind);
+				if (result == null) result = caseElement(classMappingKind);
+				if (result == null) result = caseEModelElement(classMappingKind);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FramewebPackage.ATTRIBUTE_MAPPING_KIND: {
+				AttributeMappingKind attributeMappingKind = (AttributeMappingKind)theEObject;
+				T result = caseAttributeMappingKind(attributeMappingKind);
+				if (result == null) result = caseClass(attributeMappingKind);
+				if (result == null) result = caseEncapsulatedClassifier(attributeMappingKind);
+				if (result == null) result = caseBehavioredClassifier(attributeMappingKind);
+				if (result == null) result = caseStructuredClassifier(attributeMappingKind);
+				if (result == null) result = caseClassifier(attributeMappingKind);
+				if (result == null) result = caseNamespace(attributeMappingKind);
+				if (result == null) result = caseRedefinableElement(attributeMappingKind);
+				if (result == null) result = caseType(attributeMappingKind);
+				if (result == null) result = caseTemplateableElement(attributeMappingKind);
+				if (result == null) result = casePackageableElement(attributeMappingKind);
+				if (result == null) result = caseNamedElement(attributeMappingKind);
+				if (result == null) result = caseParameterableElement(attributeMappingKind);
+				if (result == null) result = caseElement(attributeMappingKind);
+				if (result == null) result = caseEModelElement(attributeMappingKind);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Mapped Class</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Mapped Class</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseMappedClass(MappedClass object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Persistent Class</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Persistent Class</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T casePersistentClass(PersistentClass object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Transient Class</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Transient Class</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseTransientClass(TransientClass object) {
-		return null;
 	}
 
 	/**
@@ -1649,17 +1630,17 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>DAO Generalization</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>DAO Realization</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>DAO Generalization</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>DAO Realization</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDAOGeneralization(DAOGeneralization object) {
+	public T caseDAORealization(DAORealization object) {
 		return null;
 	}
 
@@ -1690,21 +1671,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseIOParameter(IOParameter object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>DAO Base Operation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>DAO Base Operation</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseDAOBaseOperation(DAOBaseOperation object) {
 		return null;
 	}
 
@@ -1824,7 +1790,7 @@ public class FramewebSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDomainClass(DomainClass object) {
+	public T caseDomainClass(ClassMappingKind object) {
 		return null;
 	}
 
@@ -2024,17 +1990,17 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Domain Operation</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Domain Method</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Domain Operation</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Domain Method</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDomainOperation(DomainOperation object) {
+	public T caseDomainMethod(DomainMethod object) {
 		return null;
 	}
 
@@ -2114,17 +2080,17 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>DAO Operation</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>DAO Method</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>DAO Operation</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>DAO Method</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDAOOperation(DAOOperation object) {
+	public T caseDAOMethod(DAOMethod object) {
 		return null;
 	}
 
@@ -2489,6 +2455,111 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Navigation Generalization</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Navigation Generalization</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNavigationGeneralization(NavigationGeneralization object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Domain Constraints</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Domain Constraints</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDomainConstraints(DomainConstraints object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Domain Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Domain Property</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDomainProperty(DomainProperty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>DAO Generalization</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>DAO Generalization</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDAOGeneralization(DAOGeneralization object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Mapping Set</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Mapping Set</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMappingSet(MappingSet object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Class Mapping Kind</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Class Mapping Kind</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseClassMappingKind(ClassMappingKind object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Attribute Mapping Kind</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Attribute Mapping Kind</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAttributeMappingKind(AttributeMappingKind object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>EModel Element</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2549,21 +2620,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Redefinable Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Redefinable Element</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseRedefinableElement(RedefinableElement object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Parameterable Element</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2594,21 +2650,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseType(Type object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Templateable Element</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2624,81 +2665,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Classifier</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Classifier</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseClassifier(Classifier object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Structured Classifier</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Structured Classifier</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseStructuredClassifier(StructuredClassifier object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Encapsulated Classifier</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Encapsulated Classifier</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseEncapsulatedClassifier(EncapsulatedClassifier object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Behaviored Classifier</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Behaviored Classifier</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseBehavioredClassifier(BehavioredClassifier object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Class</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Class</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseClass(org.eclipse.uml2.uml.Class object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Package</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2710,6 +2676,51 @@ public class FramewebSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T casePackage(org.eclipse.uml2.uml.Package object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Redefinable Element</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Redefinable Element</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRedefinableElement(RedefinableElement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseType(Type object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Classifier</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Classifier</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseClassifier(Classifier object) {
 		return null;
 	}
 
@@ -2849,6 +2860,66 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Structured Classifier</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Structured Classifier</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStructuredClassifier(StructuredClassifier object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Encapsulated Classifier</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Encapsulated Classifier</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEncapsulatedClassifier(EncapsulatedClassifier object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Behaviored Classifier</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Behaviored Classifier</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBehavioredClassifier(BehavioredClassifier object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Class</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseClass(org.eclipse.uml2.uml.Class object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Interface</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2879,21 +2950,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Generalization</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Generalization</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseGeneralization(Generalization object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Dependency</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2905,6 +2961,66 @@ public class FramewebSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDependency(Dependency object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Abstraction</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Abstraction</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAbstraction(Abstraction object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Realization</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Realization</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRealization(Realization object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Constraint</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Constraint</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConstraint(Constraint object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Generalization</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Generalization</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralization(Generalization object) {
 		return null;
 	}
 
@@ -2935,51 +3051,6 @@ public class FramewebSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseOperation(Operation object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Value Specification</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Value Specification</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseValueSpecification(ValueSpecification object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Expression</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Expression</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseExpression(Expression object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>String Expression</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>String Expression</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseStringExpression(StringExpression object) {
 		return null;
 	}
 

@@ -2,7 +2,7 @@
  */
 package frameweb;
 
-import org.eclipse.uml2.uml.Generalization;
+import org.eclipse.uml2.uml.Association;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,7 +22,7 @@ import org.eclipse.uml2.uml.Generalization;
  * @model
  * @generated
  */
-public interface DomainGeneralization extends Generalization {
+public interface DomainGeneralization extends Association {
 	/**
 	 * Returns the value of the '<em><b>Mapping</b></em>' attribute.
 	 * The literals are from the enumeration {@link frameweb.InheritanceMapping}.
@@ -61,12 +61,12 @@ public interface DomainGeneralization extends Generalization {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Domain</em>' reference.
-	 * @see #setTargetDomain(DomainClass)
+	 * @see #setTargetDomain(ClassMappingKind)
 	 * @see frameweb.FramewebPackage#getDomainGeneralization_TargetDomain()
-	 * @model required="true"
+	 * @model type="frameweb.DomainClass" required="true"
 	 * @generated
 	 */
-	DomainClass getTargetDomain();
+	ClassMappingKind getTargetDomain();
 
 	/**
 	 * Sets the value of the '{@link frameweb.DomainGeneralization#getTargetDomain <em>Target Domain</em>}' reference.
@@ -76,7 +76,7 @@ public interface DomainGeneralization extends Generalization {
 	 * @see #getTargetDomain()
 	 * @generated
 	 */
-	void setTargetDomain(DomainClass value);
+	void setTargetDomain(ClassMappingKind value);
 
 	/**
 	 * Returns the value of the '<em><b>Source Domain</b></em>' reference.
@@ -87,12 +87,12 @@ public interface DomainGeneralization extends Generalization {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Domain</em>' reference.
-	 * @see #setSourceDomain(DomainClass)
+	 * @see #setSourceDomain(ClassMappingKind)
 	 * @see frameweb.FramewebPackage#getDomainGeneralization_SourceDomain()
-	 * @model required="true"
+	 * @model type="frameweb.DomainClass" required="true"
 	 * @generated
 	 */
-	DomainClass getSourceDomain();
+	ClassMappingKind getSourceDomain();
 
 	/**
 	 * Sets the value of the '{@link frameweb.DomainGeneralization#getSourceDomain <em>Source Domain</em>}' reference.
@@ -102,6 +102,6 @@ public interface DomainGeneralization extends Generalization {
 	 * @see #getSourceDomain()
 	 * @generated
 	 */
-	void setSourceDomain(DomainClass value);
+	void setSourceDomain(ClassMappingKind value);
 
 } // DomainGeneralization

@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 import org.eclipse.uml2.uml.UMLPackage;
@@ -54,6 +55,8 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 			super.getPropertyDescriptors(object);
 
 			addDAOInterfaceNamePropertyDescriptor(object);
+			addInfixPropertyDescriptor(object);
+			addSufixPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -81,6 +84,50 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 	}
 
 	/**
+	 * This adds a property descriptor for the Infix feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addInfixPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_DAOInterface_infix_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_DAOInterface_infix_feature", "_UI_DAOInterface_type"),
+				 FramewebPackage.Literals.DAO_INTERFACE__INFIX,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Sufix feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addSufixPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_DAOInterface_sufix_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_DAOInterface_sufix_feature", "_UI_DAOInterface_type"),
+				 FramewebPackage.Literals.DAO_INTERFACE__SUFIX,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
@@ -92,7 +139,6 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(FramewebPackage.Literals.DAO_INTERFACE__OWN_BASE_OPERATION);
 			childrenFeatures.add(FramewebPackage.Literals.DAO_INTERFACE__OWN_OPERATION);
 			childrenFeatures.add(FramewebPackage.Literals.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE);
 		}
@@ -150,7 +196,10 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(DAOInterface.class)) {
-			case FramewebPackage.DAO_INTERFACE__OWN_BASE_OPERATION:
+			case FramewebPackage.DAO_INTERFACE__INFIX:
+			case FramewebPackage.DAO_INTERFACE__SUFIX:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
 			case FramewebPackage.DAO_INTERFACE__OWN_OPERATION:
 			case FramewebPackage.DAO_INTERFACE__DAO_INTERFACE_ATTRIBUTE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
@@ -172,28 +221,28 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createPageConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createResultConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createChainingConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
-				 FramewebFactory.eINSTANCE.createDAOGeneralization()));
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -207,18 +256,13 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createMappedClass()));
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createNavigationGeneralization()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createPersistentClass()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createTransientClass()));
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createDAOGeneralization()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -273,6 +317,11 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createDomainClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
 				 FramewebFactory.eINSTANCE.createResult()));
 
 		newChildDescriptors.add
@@ -294,6 +343,16 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
 				 FramewebFactory.eINSTANCE.createTag()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createClassMappingKind()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createAttributeMappingKind()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -343,11 +402,6 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
-				 FramewebFactory.eINSTANCE.createUIComponentField()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
 				 FramewebFactory.eINSTANCE.createNavigationCompositionPart()));
 
 		newChildDescriptors.add
@@ -357,13 +411,18 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createDomainProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(UMLPackage.Literals.INTERFACE__OWNED_OPERATION,
 				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.INTERFACE__OWNED_OPERATION,
-				 FramewebFactory.eINSTANCE.createDomainOperation()));
+				 FramewebFactory.eINSTANCE.createDomainMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -373,17 +432,12 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.INTERFACE__OWNED_OPERATION,
-				 FramewebFactory.eINSTANCE.createDAOOperation()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FramewebPackage.Literals.DAO_INTERFACE__OWN_BASE_OPERATION,
-				 FramewebFactory.eINSTANCE.createDAOBaseOperation()));
+				 FramewebFactory.eINSTANCE.createDAOMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(FramewebPackage.Literals.DAO_INTERFACE__OWN_OPERATION,
-				 FramewebFactory.eINSTANCE.createDAOOperation()));
+				 FramewebFactory.eINSTANCE.createDAOMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter

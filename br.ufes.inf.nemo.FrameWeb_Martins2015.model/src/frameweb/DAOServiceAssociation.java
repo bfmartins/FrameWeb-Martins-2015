@@ -2,6 +2,7 @@
  */
 package frameweb;
 
+import org.eclipse.uml2.uml.Association;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,7 +21,7 @@ package frameweb;
  * @model
  * @generated
  */
-public interface DAOServiceAssociation extends ServiceAssociation {
+public interface DAOServiceAssociation extends Association {
 	/**
 	 * Returns the value of the '<em><b>Source DAO Class</b></em>' reference.
 	 * <!-- begin-user-doc -->

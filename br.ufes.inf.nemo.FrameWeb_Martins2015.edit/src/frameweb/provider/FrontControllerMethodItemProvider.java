@@ -161,23 +161,103 @@ public class FrontControllerMethodItemProvider extends OperationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createPageConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createResultConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createChainingConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__BODY_CONDITION,
+				 FramewebFactory.eINSTANCE.createPageConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__BODY_CONDITION,
+				 FramewebFactory.eINSTANCE.createResultConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__BODY_CONDITION,
+				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__BODY_CONDITION,
+				 FramewebFactory.eINSTANCE.createChainingConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__BODY_CONDITION,
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__POSTCONDITION,
+				 FramewebFactory.eINSTANCE.createPageConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__POSTCONDITION,
+				 FramewebFactory.eINSTANCE.createResultConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__POSTCONDITION,
+				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__POSTCONDITION,
+				 FramewebFactory.eINSTANCE.createChainingConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__POSTCONDITION,
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__PRECONDITION,
+				 FramewebFactory.eINSTANCE.createPageConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__PRECONDITION,
+				 FramewebFactory.eINSTANCE.createResultConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__PRECONDITION,
+				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__PRECONDITION,
+				 FramewebFactory.eINSTANCE.createChainingConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__PRECONDITION,
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 	}
 
 	/**

@@ -33,7 +33,7 @@ public interface PageDependency extends NavigationDependency {
 	 * @return the value of the '<em>Page Dependency Cosntraint</em>' containment reference.
 	 * @see #setPageDependencyCosntraint(PageConstraint)
 	 * @see frameweb.FramewebPackage#getPageDependency_PageDependencyCosntraint()
-	 * @model containment="true" required="true"
+	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
 	PageConstraint getPageDependencyCosntraint();

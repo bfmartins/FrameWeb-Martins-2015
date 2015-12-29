@@ -19,9 +19,9 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see frameweb.FramewebPackage#getResultDependency()
- * @model annotation="Ecore constraints='ResultDependencyConstraint\r\n'"
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='ResultDependencyConstraint\r\n'"
  *        annotation="Comments ResultDependencyConstraint='A ResultDependency must have a FrontControllerClass as client and a NavigationClass as supplier.'"
- *        annotation="OCL ResultDependencyConstraint='context ResultDependency \r\n inv: \r\n  (self.oclAsType(Dependency).client.oclIsTypeOf(FrontControllerClass)) and\r\n  (self.oclAsType(Dependency).supplier.oclIsTypeOf(NavigationClass))'"
+ *        annotation="OCL ResultDependencyConstraint='(self.oclAsType(Dependency).client.oclIsTypeOf(FrontControllerClass)) and\r\n(self.oclAsType(Dependency).supplier.oclIsTypeOf(NavigationClass))'"
  * @generated
  */
 public interface ResultDependency extends NavigationDependency {
@@ -78,7 +78,7 @@ public interface ResultDependency extends NavigationDependency {
 	 * @return the value of the '<em>Result Dependendency Cosntraint</em>' containment reference.
 	 * @see #setResultDependendencyCosntraint(ResultConstraint)
 	 * @see frameweb.FramewebPackage#getResultDependency_ResultDependendencyCosntraint()
-	 * @model containment="true" required="true"
+	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
 	ResultConstraint getResultDependendencyCosntraint();

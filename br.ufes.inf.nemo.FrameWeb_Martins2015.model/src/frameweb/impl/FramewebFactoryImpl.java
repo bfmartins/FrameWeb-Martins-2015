@@ -8,7 +8,9 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
+
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
 /**
@@ -55,9 +57,6 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case FramewebPackage.MAPPED_CLASS: return createMappedClass();
-			case FramewebPackage.PERSISTENT_CLASS: return createPersistentClass();
-			case FramewebPackage.TRANSIENT_CLASS: return createTransientClass();
 			case FramewebPackage.FRAMEWEB: return createFrameweb();
 			case FramewebPackage.FRAMEWORK: return createFramework();
 			case FramewebPackage.DOMAIN_MODEL: return createDomainModel();
@@ -75,10 +74,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.TEMPLATE: return createTemplate();
 			case FramewebPackage.DAO_INTERFACE: return createDAOInterface();
 			case FramewebPackage.DAO_CLASS: return createDAOClass();
-			case FramewebPackage.DAO_GENERALIZATION: return createDAOGeneralization();
+			case FramewebPackage.DAO_REALIZATION: return createDAORealization();
 			case FramewebPackage.FRONT_CONTROLLER_CLASS: return createFrontControllerClass();
 			case FramewebPackage.IO_PARAMETER: return createIOParameter();
-			case FramewebPackage.DAO_BASE_OPERATION: return createDAOBaseOperation();
 			case FramewebPackage.RESULT_DEPENDENCY: return createResultDependency();
 			case FramewebPackage.NAVIGATION_ASSOCIATION: return createNavigationAssociation();
 			case FramewebPackage.FRONT_CONTROLLER_METHOD: return createFrontControllerMethod();
@@ -86,6 +84,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.SERVICE_INTERFACE: return createServiceInterface();
 			case FramewebPackage.SERVICE_GENERALIZATION: return createServiceGeneralization();
 			case FramewebPackage.SERVICE_NAVIGATION_ASSOCIATION: return createServiceNavigationAssociation();
+			case FramewebPackage.DOMAIN_CLASS: return (EObject)createDomainClass();
 			case FramewebPackage.CONSTANT_NAME: return createConstantName();
 			case FramewebPackage.DOMAIN_TABLE_NAME: return createDomainTableName();
 			case FramewebPackage.FRAME_WORK_NAME: return createFrameWorkName();
@@ -97,11 +96,11 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.PAGE_DEPENDENCY: return createPageDependency();
 			case FramewebPackage.CHAINING_DEPENDENCY: return createChainingDependency();
 			case FramewebPackage.DAO_SERVICE_ASSOCIATION: return createDAOServiceAssociation();
-			case FramewebPackage.DOMAIN_OPERATION: return createDomainOperation();
+			case FramewebPackage.DOMAIN_METHOD: return createDomainMethod();
 			case FramewebPackage.DAO_ATTRIBUTE: return createDAOAttribute();
 			case FramewebPackage.SERVICE_OPERATION: return createServiceOperation();
 			case FramewebPackage.SERVICE_ATTRIBUTE: return createServiceAttribute();
-			case FramewebPackage.DAO_OPERATION: return createDAOOperation();
+			case FramewebPackage.DAO_METHOD: return createDAOMethod();
 			case FramewebPackage.DOMAIN_PACKAGE: return createDomainPackage();
 			case FramewebPackage.VIEW_PACKAGE: return createViewPackage();
 			case FramewebPackage.CONTROLLER_PACKAGE: return createControllerPackage();
@@ -111,7 +110,6 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.RESULT_TYPE: return createResultType();
 			case FramewebPackage.DOMAIN_GENERALIZATION: return createDomainGeneralization();
 			case FramewebPackage.JQUERY: return createJQuery();
-			case FramewebPackage.UI_COMPONENT_FIELD: return (EObject)createUIComponentField();
 			case FramewebPackage.TAG_LIB: return createTagLib();
 			case FramewebPackage.RULE: return createRule();
 			case FramewebPackage.TAG: return createTag();
@@ -123,6 +121,13 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.RESULT_CONSTRAINT: return createResultConstraint();
 			case FramewebPackage.METHOD_COSNTRAINT: return createMethodCosntraint();
 			case FramewebPackage.CHAINING_CONSTRAINT: return createChainingConstraint();
+			case FramewebPackage.NAVIGATION_GENERALIZATION: return createNavigationGeneralization();
+			case FramewebPackage.DOMAIN_CONSTRAINTS: return createDomainConstraints();
+			case FramewebPackage.DOMAIN_PROPERTY: return createDomainProperty();
+			case FramewebPackage.DAO_GENERALIZATION: return createDAOGeneralization();
+			case FramewebPackage.MAPPING_SET: return createMappingSet();
+			case FramewebPackage.CLASS_MAPPING_KIND: return createClassMappingKind();
+			case FramewebPackage.ATTRIBUTE_MAPPING_KIND: return createAttributeMappingKind();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -148,8 +153,6 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 				return createCascadeFromString(eDataType, initialValue);
 			case FramewebPackage.FETCH:
 				return createFetchFromString(eDataType, initialValue);
-			case FramewebPackage.DAO_BASE_OPERATION_LIST:
-				return createDAOBaseOperationListFromString(eDataType, initialValue);
 			case FramewebPackage.FRAMEWORK_CATEGORY_LIST:
 				return createFrameworkCategoryListFromString(eDataType, initialValue);
 			case FramewebPackage.CONSTANT_NAME_LIST:
@@ -185,8 +188,6 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 				return convertCascadeToString(eDataType, instanceValue);
 			case FramewebPackage.FETCH:
 				return convertFetchToString(eDataType, instanceValue);
-			case FramewebPackage.DAO_BASE_OPERATION_LIST:
-				return convertDAOBaseOperationListToString(eDataType, instanceValue);
 			case FramewebPackage.FRAMEWORK_CATEGORY_LIST:
 				return convertFrameworkCategoryListToString(eDataType, instanceValue);
 			case FramewebPackage.CONSTANT_NAME_LIST:
@@ -200,36 +201,6 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MappedClass createMappedClass() {
-		MappedClassImpl mappedClass = new MappedClassImpl();
-		return mappedClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PersistentClass createPersistentClass() {
-		PersistentClassImpl persistentClass = new PersistentClassImpl();
-		return persistentClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public TransientClass createTransientClass() {
-		TransientClassImpl transientClass = new TransientClassImpl();
-		return transientClass;
 	}
 
 	/**
@@ -407,9 +378,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DAOGeneralization createDAOGeneralization() {
-		DAOGeneralizationImpl daoGeneralization = new DAOGeneralizationImpl();
-		return daoGeneralization;
+	public DAORealization createDAORealization() {
+		DAORealizationImpl daoRealization = new DAORealizationImpl();
+		return daoRealization;
 	}
 
 	/**
@@ -430,16 +401,6 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	public IOParameter createIOParameter() {
 		IOParameterImpl ioParameter = new IOParameterImpl();
 		return ioParameter;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DAOBaseOperation createDAOBaseOperation() {
-		DAOBaseOperationImpl daoBaseOperation = new DAOBaseOperationImpl();
-		return daoBaseOperation;
 	}
 
 	/**
@@ -510,6 +471,16 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	public ServiceNavigationAssociation createServiceNavigationAssociation() {
 		ServiceNavigationAssociationImpl serviceNavigationAssociation = new ServiceNavigationAssociationImpl();
 		return serviceNavigationAssociation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ClassMappingKind createDomainClass() {
+		DomainClassImpl domainClass = new DomainClassImpl();
+		return domainClass;
 	}
 
 	/**
@@ -627,9 +598,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainOperation createDomainOperation() {
-		DomainOperationImpl domainOperation = new DomainOperationImpl();
-		return domainOperation;
+	public DomainMethod createDomainMethod() {
+		DomainMethodImpl domainMethod = new DomainMethodImpl();
+		return domainMethod;
 	}
 
 	/**
@@ -667,9 +638,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DAOOperation createDAOOperation() {
-		DAOOperationImpl daoOperation = new DAOOperationImpl();
-		return daoOperation;
+	public DAOMethod createDAOMethod() {
+		DAOMethodImpl daoMethod = new DAOMethodImpl();
+		return daoMethod;
 	}
 
 	/**
@@ -760,16 +731,6 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	public JQuery createJQuery() {
 		JQueryImpl jQuery = new JQueryImpl();
 		return jQuery;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Tag createUIComponentField() {
-		UIComponentFieldImpl uiComponentField = new UIComponentFieldImpl();
-		return uiComponentField;
 	}
 
 	/**
@@ -880,6 +841,76 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	public ChainingConstraint createChainingConstraint() {
 		ChainingConstraintImpl chainingConstraint = new ChainingConstraintImpl();
 		return chainingConstraint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NavigationGeneralization createNavigationGeneralization() {
+		NavigationGeneralizationImpl navigationGeneralization = new NavigationGeneralizationImpl();
+		return navigationGeneralization;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DomainConstraints createDomainConstraints() {
+		DomainConstraintsImpl domainConstraints = new DomainConstraintsImpl();
+		return domainConstraints;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DomainProperty createDomainProperty() {
+		DomainPropertyImpl domainProperty = new DomainPropertyImpl();
+		return domainProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DAOGeneralization createDAOGeneralization() {
+		DAOGeneralizationImpl daoGeneralization = new DAOGeneralizationImpl();
+		return daoGeneralization;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MappingSet createMappingSet() {
+		MappingSetImpl mappingSet = new MappingSetImpl();
+		return mappingSet;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ClassMappingKind createClassMappingKind() {
+		ClassMappingKindImpl classMappingKind = new ClassMappingKindImpl();
+		return classMappingKind;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AttributeMappingKind createAttributeMappingKind() {
+		AttributeMappingKindImpl attributeMappingKind = new AttributeMappingKindImpl();
+		return attributeMappingKind;
 	}
 
 	/**
@@ -999,26 +1030,6 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * @generated
 	 */
 	public String convertFetchToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DAOBaseOperationList createDAOBaseOperationListFromString(EDataType eDataType, String initialValue) {
-		DAOBaseOperationList result = DAOBaseOperationList.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertDAOBaseOperationListToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

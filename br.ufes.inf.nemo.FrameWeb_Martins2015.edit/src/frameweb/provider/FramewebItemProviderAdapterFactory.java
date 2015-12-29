@@ -72,75 +72,6 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.MappedClass} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected MappedClassItemProvider mappedClassItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link frameweb.MappedClass}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createMappedClassAdapter() {
-		if (mappedClassItemProvider == null) {
-			mappedClassItemProvider = new MappedClassItemProvider(this);
-		}
-
-		return mappedClassItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.PersistentClass} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected PersistentClassItemProvider persistentClassItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link frameweb.PersistentClass}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createPersistentClassAdapter() {
-		if (persistentClassItemProvider == null) {
-			persistentClassItemProvider = new PersistentClassItemProvider(this);
-		}
-
-		return persistentClassItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.TransientClass} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected TransientClassItemProvider transientClassItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link frameweb.TransientClass}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createTransientClassAdapter() {
-		if (transientClassItemProvider == null) {
-			transientClassItemProvider = new TransientClassItemProvider(this);
-		}
-
-		return transientClassItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link frameweb.Frameweb} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -532,26 +463,26 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.DAOGeneralization} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.DAORealization} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DAOGeneralizationItemProvider daoGeneralizationItemProvider;
+	protected DAORealizationItemProvider daoRealizationItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.DAOGeneralization}.
+	 * This creates an adapter for a {@link frameweb.DAORealization}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createDAOGeneralizationAdapter() {
-		if (daoGeneralizationItemProvider == null) {
-			daoGeneralizationItemProvider = new DAOGeneralizationItemProvider(this);
+	public Adapter createDAORealizationAdapter() {
+		if (daoRealizationItemProvider == null) {
+			daoRealizationItemProvider = new DAORealizationItemProvider(this);
 		}
 
-		return daoGeneralizationItemProvider;
+		return daoRealizationItemProvider;
 	}
 
 	/**
@@ -598,29 +529,6 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		}
 
 		return ioParameterItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.DAOBaseOperation} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected DAOBaseOperationItemProvider daoBaseOperationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link frameweb.DAOBaseOperation}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createDAOBaseOperationAdapter() {
-		if (daoBaseOperationItemProvider == null) {
-			daoBaseOperationItemProvider = new DAOBaseOperationItemProvider(this);
-		}
-
-		return daoBaseOperationItemProvider;
 	}
 
 	/**
@@ -782,6 +690,29 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		}
 
 		return serviceNavigationAssociationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link ClassMappingKind} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DomainClassItemProvider domainClassItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link ClassMappingKind}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDomainClassAdapter() {
+		if (domainClassItemProvider == null) {
+			domainClassItemProvider = new DomainClassItemProvider(this);
+		}
+
+		return domainClassItemProvider;
 	}
 
 	/**
@@ -1038,26 +969,26 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.DomainOperation} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.DomainMethod} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DomainOperationItemProvider domainOperationItemProvider;
+	protected DomainMethodItemProvider domainMethodItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.DomainOperation}.
+	 * This creates an adapter for a {@link frameweb.DomainMethod}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createDomainOperationAdapter() {
-		if (domainOperationItemProvider == null) {
-			domainOperationItemProvider = new DomainOperationItemProvider(this);
+	public Adapter createDomainMethodAdapter() {
+		if (domainMethodItemProvider == null) {
+			domainMethodItemProvider = new DomainMethodItemProvider(this);
 		}
 
-		return domainOperationItemProvider;
+		return domainMethodItemProvider;
 	}
 
 	/**
@@ -1130,26 +1061,26 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.DAOOperation} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.DAOMethod} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DAOOperationItemProvider daoOperationItemProvider;
+	protected DAOMethodItemProvider daoMethodItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.DAOOperation}.
+	 * This creates an adapter for a {@link frameweb.DAOMethod}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createDAOOperationAdapter() {
-		if (daoOperationItemProvider == null) {
-			daoOperationItemProvider = new DAOOperationItemProvider(this);
+	public Adapter createDAOMethodAdapter() {
+		if (daoMethodItemProvider == null) {
+			daoMethodItemProvider = new DAOMethodItemProvider(this);
 		}
 
-		return daoOperationItemProvider;
+		return daoMethodItemProvider;
 	}
 
 	/**
@@ -1357,29 +1288,6 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		}
 
 		return jQueryItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link Tag} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected UIComponentFieldItemProvider uiComponentFieldItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link Tag}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createUIComponentFieldAdapter() {
-		if (uiComponentFieldItemProvider == null) {
-			uiComponentFieldItemProvider = new UIComponentFieldItemProvider(this);
-		}
-
-		return uiComponentFieldItemProvider;
 	}
 
 	/**
@@ -1636,6 +1544,167 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.NavigationGeneralization} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected NavigationGeneralizationItemProvider navigationGeneralizationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.NavigationGeneralization}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createNavigationGeneralizationAdapter() {
+		if (navigationGeneralizationItemProvider == null) {
+			navigationGeneralizationItemProvider = new NavigationGeneralizationItemProvider(this);
+		}
+
+		return navigationGeneralizationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.DomainConstraints} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DomainConstraintsItemProvider domainConstraintsItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.DomainConstraints}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDomainConstraintsAdapter() {
+		if (domainConstraintsItemProvider == null) {
+			domainConstraintsItemProvider = new DomainConstraintsItemProvider(this);
+		}
+
+		return domainConstraintsItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.DomainProperty} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DomainPropertyItemProvider domainPropertyItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.DomainProperty}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDomainPropertyAdapter() {
+		if (domainPropertyItemProvider == null) {
+			domainPropertyItemProvider = new DomainPropertyItemProvider(this);
+		}
+
+		return domainPropertyItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.DAOGeneralization} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DAOGeneralizationItemProvider daoGeneralizationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.DAOGeneralization}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDAOGeneralizationAdapter() {
+		if (daoGeneralizationItemProvider == null) {
+			daoGeneralizationItemProvider = new DAOGeneralizationItemProvider(this);
+		}
+
+		return daoGeneralizationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.MappingSet} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MappingSetItemProvider mappingSetItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.MappingSet}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMappingSetAdapter() {
+		if (mappingSetItemProvider == null) {
+			mappingSetItemProvider = new MappingSetItemProvider(this);
+		}
+
+		return mappingSetItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.ClassMappingKind} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ClassMappingKindItemProvider classMappingKindItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.ClassMappingKind}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createClassMappingKindAdapter() {
+		if (classMappingKindItemProvider == null) {
+			classMappingKindItemProvider = new ClassMappingKindItemProvider(this);
+		}
+
+		return classMappingKindItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.AttributeMappingKind} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AttributeMappingKindItemProvider attributeMappingKindItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.AttributeMappingKind}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAttributeMappingKindAdapter() {
+		if (attributeMappingKindItemProvider == null) {
+			attributeMappingKindItemProvider = new AttributeMappingKindItemProvider(this);
+		}
+
+		return attributeMappingKindItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1734,9 +1803,6 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	 * @generated
 	 */
 	public void dispose() {
-		if (mappedClassItemProvider != null) mappedClassItemProvider.dispose();
-		if (persistentClassItemProvider != null) persistentClassItemProvider.dispose();
-		if (transientClassItemProvider != null) transientClassItemProvider.dispose();
 		if (framewebItemProvider != null) framewebItemProvider.dispose();
 		if (frameworkItemProvider != null) frameworkItemProvider.dispose();
 		if (domainModelItemProvider != null) domainModelItemProvider.dispose();
@@ -1754,10 +1820,9 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (templateItemProvider != null) templateItemProvider.dispose();
 		if (daoInterfaceItemProvider != null) daoInterfaceItemProvider.dispose();
 		if (daoClassItemProvider != null) daoClassItemProvider.dispose();
-		if (daoGeneralizationItemProvider != null) daoGeneralizationItemProvider.dispose();
+		if (daoRealizationItemProvider != null) daoRealizationItemProvider.dispose();
 		if (frontControllerClassItemProvider != null) frontControllerClassItemProvider.dispose();
 		if (ioParameterItemProvider != null) ioParameterItemProvider.dispose();
-		if (daoBaseOperationItemProvider != null) daoBaseOperationItemProvider.dispose();
 		if (resultDependencyItemProvider != null) resultDependencyItemProvider.dispose();
 		if (navigationAssociationItemProvider != null) navigationAssociationItemProvider.dispose();
 		if (frontControllerMethodItemProvider != null) frontControllerMethodItemProvider.dispose();
@@ -1765,6 +1830,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (serviceInterfaceItemProvider != null) serviceInterfaceItemProvider.dispose();
 		if (serviceGeneralizationItemProvider != null) serviceGeneralizationItemProvider.dispose();
 		if (serviceNavigationAssociationItemProvider != null) serviceNavigationAssociationItemProvider.dispose();
+		if (domainClassItemProvider != null) domainClassItemProvider.dispose();
 		if (constantNameItemProvider != null) constantNameItemProvider.dispose();
 		if (domainTableNameItemProvider != null) domainTableNameItemProvider.dispose();
 		if (frameWorkNameItemProvider != null) frameWorkNameItemProvider.dispose();
@@ -1776,11 +1842,11 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (pageDependencyItemProvider != null) pageDependencyItemProvider.dispose();
 		if (chainingDependencyItemProvider != null) chainingDependencyItemProvider.dispose();
 		if (daoServiceAssociationItemProvider != null) daoServiceAssociationItemProvider.dispose();
-		if (domainOperationItemProvider != null) domainOperationItemProvider.dispose();
+		if (domainMethodItemProvider != null) domainMethodItemProvider.dispose();
 		if (daoAttributeItemProvider != null) daoAttributeItemProvider.dispose();
 		if (serviceOperationItemProvider != null) serviceOperationItemProvider.dispose();
 		if (serviceAttributeItemProvider != null) serviceAttributeItemProvider.dispose();
-		if (daoOperationItemProvider != null) daoOperationItemProvider.dispose();
+		if (daoMethodItemProvider != null) daoMethodItemProvider.dispose();
 		if (domainPackageItemProvider != null) domainPackageItemProvider.dispose();
 		if (viewPackageItemProvider != null) viewPackageItemProvider.dispose();
 		if (controllerPackageItemProvider != null) controllerPackageItemProvider.dispose();
@@ -1790,7 +1856,6 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (resultTypeItemProvider != null) resultTypeItemProvider.dispose();
 		if (domainGeneralizationItemProvider != null) domainGeneralizationItemProvider.dispose();
 		if (jQueryItemProvider != null) jQueryItemProvider.dispose();
-		if (uiComponentFieldItemProvider != null) uiComponentFieldItemProvider.dispose();
 		if (tagLibItemProvider != null) tagLibItemProvider.dispose();
 		if (ruleItemProvider != null) ruleItemProvider.dispose();
 		if (tagItemProvider != null) tagItemProvider.dispose();
@@ -1802,6 +1867,13 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (resultConstraintItemProvider != null) resultConstraintItemProvider.dispose();
 		if (methodCosntraintItemProvider != null) methodCosntraintItemProvider.dispose();
 		if (chainingConstraintItemProvider != null) chainingConstraintItemProvider.dispose();
+		if (navigationGeneralizationItemProvider != null) navigationGeneralizationItemProvider.dispose();
+		if (domainConstraintsItemProvider != null) domainConstraintsItemProvider.dispose();
+		if (domainPropertyItemProvider != null) domainPropertyItemProvider.dispose();
+		if (daoGeneralizationItemProvider != null) daoGeneralizationItemProvider.dispose();
+		if (mappingSetItemProvider != null) mappingSetItemProvider.dispose();
+		if (classMappingKindItemProvider != null) classMappingKindItemProvider.dispose();
+		if (attributeMappingKindItemProvider != null) attributeMappingKindItemProvider.dispose();
 	}
 
 }

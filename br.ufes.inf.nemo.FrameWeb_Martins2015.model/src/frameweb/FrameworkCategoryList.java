@@ -49,16 +49,6 @@ public enum FrameworkCategoryList implements Enumerator {
 	ORM(3, "ORM", "orm"),
 
 	/**
-	 * The '<em><b>Decorator</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #DECORATOR_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	DECORATOR(4, "Decorator", "decorator"),
-
-	/**
 	 * The '<em><b>Standard</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -114,21 +104,6 @@ public enum FrameworkCategoryList implements Enumerator {
 	public static final int ORM_VALUE = 3;
 
 	/**
-	 * The '<em><b>Decorator</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Decorator</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #DECORATOR
-	 * @model name="Decorator" literal="decorator"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int DECORATOR_VALUE = 4;
-
-	/**
 	 * The '<em><b>Standard</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -154,7 +129,6 @@ public enum FrameworkCategoryList implements Enumerator {
 			MVC,
 			DEPENDENCY_INJECTION,
 			ORM,
-			DECORATOR,
 			STANDARD,
 		};
 
@@ -209,7 +183,6 @@ public enum FrameworkCategoryList implements Enumerator {
 			case MVC_VALUE: return MVC;
 			case DEPENDENCY_INJECTION_VALUE: return DEPENDENCY_INJECTION;
 			case ORM_VALUE: return ORM;
-			case DECORATOR_VALUE: return DECORATOR;
 			case STANDARD_VALUE: return STANDARD;
 		}
 		return null;

@@ -146,28 +146,28 @@ public class ServiceInterfaceItemProvider extends InterfaceItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createPageConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createResultConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createChainingConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
-				 FramewebFactory.eINSTANCE.createDAOGeneralization()));
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -181,18 +181,13 @@ public class ServiceInterfaceItemProvider extends InterfaceItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createMappedClass()));
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createNavigationGeneralization()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createPersistentClass()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createTransientClass()));
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createDAOGeneralization()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -247,6 +242,11 @@ public class ServiceInterfaceItemProvider extends InterfaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createDomainClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
 				 FramewebFactory.eINSTANCE.createResult()));
 
 		newChildDescriptors.add
@@ -268,6 +268,16 @@ public class ServiceInterfaceItemProvider extends InterfaceItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
 				 FramewebFactory.eINSTANCE.createTag()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createClassMappingKind()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createAttributeMappingKind()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -317,11 +327,6 @@ public class ServiceInterfaceItemProvider extends InterfaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
-				 FramewebFactory.eINSTANCE.createUIComponentField()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
 				 FramewebFactory.eINSTANCE.createNavigationCompositionPart()));
 
 		newChildDescriptors.add
@@ -331,13 +336,18 @@ public class ServiceInterfaceItemProvider extends InterfaceItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(UMLPackage.Literals.INTERFACE__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createDomainProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(UMLPackage.Literals.INTERFACE__OWNED_OPERATION,
 				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.INTERFACE__OWNED_OPERATION,
-				 FramewebFactory.eINSTANCE.createDomainOperation()));
+				 FramewebFactory.eINSTANCE.createDomainMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -347,7 +357,7 @@ public class ServiceInterfaceItemProvider extends InterfaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.INTERFACE__OWNED_OPERATION,
-				 FramewebFactory.eINSTANCE.createDAOOperation()));
+				 FramewebFactory.eINSTANCE.createDAOMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter

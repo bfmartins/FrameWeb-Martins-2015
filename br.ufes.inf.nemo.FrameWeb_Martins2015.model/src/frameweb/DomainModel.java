@@ -18,7 +18,9 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see frameweb.FramewebPackage#getDomainModel()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='DomainModelContent DomainModelMinimum'"
+ *        annotation="comments DomainModelContent='A DomainModel must have only DomainPackage.' DomainModelMinimum='A DomainModel must have at least one DomainPackage'"
+ *        annotation="OCL DomainModelContent='self.packagedElement.oclIsType(DomainPackage' DomaniModelMinimum='self.packagedElement->size()>=1'"
  * @generated
  */
 public interface DomainModel extends FrameWebModel {
@@ -33,7 +35,7 @@ public interface DomainModel extends FrameWebModel {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Domain UML Package</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getDomainModel_DomainUMLPackage()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<DomainPackage> getDomainUMLPackage();

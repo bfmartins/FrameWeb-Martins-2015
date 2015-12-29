@@ -33,7 +33,7 @@ public interface NavigationClass extends org.eclipse.uml2.uml.Class {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Navigation Class Composition</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getNavigationClass_NavigationClassComposition()
-	 * @model containment="true"
+	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
 	EList<NavigationCompositionWhole> getNavigationClassComposition();
@@ -49,7 +49,7 @@ public interface NavigationClass extends org.eclipse.uml2.uml.Class {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Navigation Class Attribute</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getNavigationClass_NavigationClassAttribute()
-	 * @model type="frameweb.UIComponentField" containment="true"
+	 * @model type="frameweb.UIComponentField" containment="true" ordered="false"
 	 * @generated
 	 */
 	EList<Tag> getNavigationClassAttribute();

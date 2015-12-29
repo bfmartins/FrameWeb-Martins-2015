@@ -47,11 +47,34 @@ public class UIComponentItemProvider extends NavigationClassItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addTypePropertyDescriptor(object);
 			addAjaxPropertyDescriptor(object);
 			addRenderPropertyDescriptor(object);
 			addExecutePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Type feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addTypePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_TypedElement_type_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_TypedElement_type_feature", "_UI_TypedElement_type"),
+				 UMLPackage.Literals.TYPED_ELEMENT__TYPE,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**
@@ -158,6 +181,7 @@ public class UIComponentItemProvider extends NavigationClassItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Object.class)) {
+			case FramewebPackage.UI_COMPONENT__TYPE:
 			case FramewebPackage.UI_COMPONENT__AJAX:
 			case FramewebPackage.UI_COMPONENT__RENDER:
 			case FramewebPackage.UI_COMPONENT__EXECUTE:
@@ -196,7 +220,6 @@ public class UIComponentItemProvider extends NavigationClassItemProvider {
 			childFeature == UMLPackage.Literals.CLASSIFIER__OWNED_USE_CASE ||
 			childFeature == UMLPackage.Literals.CLASS__NESTED_CLASSIFIER ||
 			childFeature == UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
-			childFeature == FramewebPackage.Literals.NAVIGATION_CLASS__NAVIGATION_CLASS_ATTRIBUTE ||
 			childFeature == FramewebPackage.Literals.NAVIGATION_CLASS__NAVIGATION_CLASS_COMPOSITION ||
 			childFeature == UMLPackage.Literals.ENCAPSULATED_CLASSIFIER__OWNED_PORT ||
 			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__CLASSIFIER_BEHAVIOR ||

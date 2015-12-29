@@ -33,7 +33,8 @@ public interface ViewPackage extends NavigationPackage {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>View Package Class</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getViewPackage_ViewPackageClass()
-	 * @model containment="true" required="true"
+	 * @model containment="true" required="true" ordered="false"
+	 *        extendedMetaData="namespace=''"
 	 * @generated
 	 */
 	EList<NavigationClass> getViewPackageClass();
@@ -49,7 +50,7 @@ public interface ViewPackage extends NavigationPackage {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>View Package Result</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getViewPackage_ViewPackageResult()
-	 * @model type="frameweb.Result" containment="true"
+	 * @model type="frameweb.Result" containment="true" ordered="false"
 	 * @generated
 	 */
 	EList<ResultType> getViewPackageResult();

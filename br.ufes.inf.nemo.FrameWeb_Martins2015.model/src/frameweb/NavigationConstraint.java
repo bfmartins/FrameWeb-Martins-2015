@@ -2,7 +2,7 @@
  */
 package frameweb;
 
-import org.eclipse.uml2.uml.StringExpression;
+import org.eclipse.uml2.uml.Constraint;
 
 /**
  * <!-- begin-user-doc -->
@@ -14,5 +14,5 @@ import org.eclipse.uml2.uml.StringExpression;
  * @model abstract="true"
  * @generated
  */
-public interface NavigationConstraint extends StringExpression {
+public interface NavigationConstraint extends Constraint {
 } // NavigationConstraint

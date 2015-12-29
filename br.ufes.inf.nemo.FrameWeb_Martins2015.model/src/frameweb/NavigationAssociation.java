@@ -17,7 +17,7 @@ import org.eclipse.uml2.uml.Association;
  * </p>
  *
  * @see frameweb.FramewebPackage#getNavigationAssociation()
- * @model annotation="Ecore constraints='NavigationAssociationConstraint\r\n'"
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='NavigationAssociationConstraint\r\n'"
  *        annotation="Comments NavigationAssociationConstraint='The NavigationAssociation must have, as property ownedEnd, obligatorily a navigation composition (NavigationComposition) and only navigation classes (NavigationClass) are alowed as memberEnd.\r\n'"
  *        annotation="OCL NavigationAssociationConstraint='context NavigationAssociation\r\n  inv: \r\n    (self.oclAsType(Association).ownedEnd.oclIsTypeOf(NavigationComposition)) and \r\n    ((self.oclAsType(Association).memberEnd.oclIsTypeOf(NavigationComposition)) or \r\n    (self.oclAsType(Association).memberEnd.oclIsTypeOf(NavigationCompositionEnd)))'"
  * @generated

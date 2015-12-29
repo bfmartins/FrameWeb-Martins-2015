@@ -35,7 +35,7 @@ public interface NavigationModel extends FrameWebModel {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Navigation UML Dependency</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getNavigationModel_NavigationUMLDependency()
-	 * @model containment="true"
+	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
 	EList<NavigationDependency> getNavigationUMLDependency();
@@ -51,7 +51,7 @@ public interface NavigationModel extends FrameWebModel {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>View UML Package</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getNavigationModel_ViewUMLPackage()
-	 * @model containment="true" required="true"
+	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
 	EList<ViewPackage> getViewUMLPackage();
@@ -67,7 +67,7 @@ public interface NavigationModel extends FrameWebModel {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Controller UML Package</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getNavigationModel_ControllerUMLPackage()
-	 * @model containment="true" required="true"
+	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
 	EList<ControllerPackage> getControllerUMLPackage();
@@ -83,7 +83,7 @@ public interface NavigationModel extends FrameWebModel {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Navigation UML Composition</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getNavigationModel_NavigationUMLComposition()
-	 * @model containment="true"
+	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
 	EList<NavigationAssociation> getNavigationUMLComposition();

@@ -14,6 +14,8 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.uml2.uml.internal.impl.AssociationImpl;
+
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>DAO Service Association</b></em>'.
@@ -28,7 +30,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class DAOServiceAssociationImpl extends ServiceAssociationImpl implements DAOServiceAssociation {
+public class DAOServiceAssociationImpl extends AssociationImpl implements DAOServiceAssociation {
 	/**
 	 * The cached value of the '{@link #getSourceDAOClass() <em>Source DAO Class</em>}' reference.
 	 * <!-- begin-user-doc -->

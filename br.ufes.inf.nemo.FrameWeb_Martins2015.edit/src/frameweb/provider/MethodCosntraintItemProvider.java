@@ -111,8 +111,7 @@ public class MethodCosntraintItemProvider extends NavigationConstraintItemProvid
 
 		boolean qualify =
 			childFeature == UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
-			childFeature == UMLPackage.Literals.EXPRESSION__OPERAND ||
-			childFeature == UMLPackage.Literals.STRING_EXPRESSION__SUB_EXPRESSION;
+			childFeature == UMLPackage.Literals.CONSTRAINT__SPECIFICATION;
 
 		if (qualify) {
 			return getString

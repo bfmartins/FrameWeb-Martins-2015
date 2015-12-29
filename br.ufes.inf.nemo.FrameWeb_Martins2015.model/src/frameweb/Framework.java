@@ -15,7 +15,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link frameweb.Framework#getFrameworkTagLib <em>Framework Tag Lib</em>}</li>
  *   <li>{@link frameweb.Framework#getFrameworkRule <em>Framework Rule</em>}</li>
  *   <li>{@link frameweb.Framework#getFrameworkAnotation <em>Framework Anotation</em>}</li>
- *   <li>{@link frameweb.Framework#getFrameworkCategory <em>Framework Category</em>}</li>
+ *   <li>{@link frameweb.Framework#getCategory <em>Category</em>}</li>
  *   <li>{@link frameweb.Framework#getFrameWebResultSet <em>Frame Web Result Set</em>}</li>
  * </ul>
  * </p>
@@ -74,34 +74,34 @@ public interface Framework extends org.eclipse.uml2.uml.Package {
 	EList<Anotation> getFrameworkAnotation();
 
 	/**
-	 * Returns the value of the '<em><b>Framework Category</b></em>' attribute.
+	 * Returns the value of the '<em><b>Category</b></em>' attribute.
 	 * The default value is <code>"standard"</code>.
 	 * The literals are from the enumeration {@link frameweb.FrameworkCategoryList}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Framework Category</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Category</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Framework Category</em>' attribute.
+	 * @return the value of the '<em>Category</em>' attribute.
 	 * @see frameweb.FrameworkCategoryList
-	 * @see #setFrameworkCategory(FrameworkCategoryList)
-	 * @see frameweb.FramewebPackage#getFramework_FrameworkCategory()
+	 * @see #setCategory(FrameworkCategoryList)
+	 * @see frameweb.FramewebPackage#getFramework_Category()
 	 * @model default="standard"
 	 * @generated
 	 */
-	FrameworkCategoryList getFrameworkCategory();
+	FrameworkCategoryList getCategory();
 
 	/**
-	 * Sets the value of the '{@link frameweb.Framework#getFrameworkCategory <em>Framework Category</em>}' attribute.
+	 * Sets the value of the '{@link frameweb.Framework#getCategory <em>Category</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Framework Category</em>' attribute.
+	 * @param value the new value of the '<em>Category</em>' attribute.
 	 * @see frameweb.FrameworkCategoryList
-	 * @see #getFrameworkCategory()
+	 * @see #getCategory()
 	 * @generated
 	 */
-	void setFrameworkCategory(FrameworkCategoryList value);
+	void setCategory(FrameworkCategoryList value);
 
 	/**
 	 * Returns the value of the '<em><b>Frame Web Result Set</b></em>' containment reference list.

@@ -3,10 +3,11 @@
 package frameweb.impl;
 
 import frameweb.FramewebPackage;
-import frameweb.Tag;
 
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**

@@ -3,10 +3,9 @@
 package frameweb.impl;
 
 import frameweb.DAOAttribute;
-import frameweb.DAOBaseOperation;
 import frameweb.DAOClass;
 import frameweb.DAOClassName;
-import frameweb.DAOOperation;
+import frameweb.DAOMethod;
 import frameweb.FramewebPackage;
 
 import java.util.Collection;
@@ -33,26 +32,18 @@ import org.eclipse.uml2.uml.internal.impl.ClassImpl;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link frameweb.impl.DAOClassImpl#getBaseImplements <em>Base Implements</em>}</li>
  *   <li>{@link frameweb.impl.DAOClassImpl#getDAOImplements <em>DAO Implements</em>}</li>
  *   <li>{@link frameweb.impl.DAOClassImpl#getDAOClassName <em>DAO Class Name</em>}</li>
  *   <li>{@link frameweb.impl.DAOClassImpl#getDAOClassAttribute <em>DAO Class Attribute</em>}</li>
+ *   <li>{@link frameweb.impl.DAOClassImpl#getSufix <em>Sufix</em>}</li>
+ *   <li>{@link frameweb.impl.DAOClassImpl#getInfix <em>Infix</em>}</li>
+ *   <li>{@link frameweb.impl.DAOClassImpl#getPrefix <em>Prefix</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
 public class DAOClassImpl extends ClassImpl implements DAOClass {
-	/**
-	 * The cached value of the '{@link #getBaseImplements() <em>Base Implements</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getBaseImplements()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<DAOBaseOperation> baseImplements;
-
 	/**
 	 * The cached value of the '{@link #getDAOImplements() <em>DAO Implements</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -61,7 +52,7 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<DAOOperation> daoImplements;
+	protected EList<DAOMethod> daoImplements;
 
 	/**
 	 * The cached value of the '{@link #getDAOClassName() <em>DAO Class Name</em>}' reference.
@@ -82,6 +73,66 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	 * @ordered
 	 */
 	protected EList<DAOAttribute> daoClassAttribute;
+
+	/**
+	 * The default value of the '{@link #getSufix() <em>Sufix</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSufix()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SUFIX_EDEFAULT = "";
+
+	/**
+	 * The cached value of the '{@link #getSufix() <em>Sufix</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSufix()
+	 * @generated
+	 * @ordered
+	 */
+	protected String sufix = SUFIX_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getInfix() <em>Infix</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInfix()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String INFIX_EDEFAULT = "DAO";
+
+	/**
+	 * The cached value of the '{@link #getInfix() <em>Infix</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInfix()
+	 * @generated
+	 * @ordered
+	 */
+	protected String infix = INFIX_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getPrefix() <em>Prefix</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPrefix()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PREFIX_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getPrefix() <em>Prefix</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPrefix()
+	 * @generated
+	 * @ordered
+	 */
+	protected String prefix = PREFIX_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -107,21 +158,9 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DAOBaseOperation> getBaseImplements() {
-		if (baseImplements == null) {
-			baseImplements = new EObjectContainmentEList<DAOBaseOperation>(DAOBaseOperation.class, this, FramewebPackage.DAO_CLASS__BASE_IMPLEMENTS);
-		}
-		return baseImplements;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<DAOOperation> getDAOImplements() {
+	public EList<DAOMethod> getDAOImplements() {
 		if (daoImplements == null) {
-			daoImplements = new EObjectContainmentEList<DAOOperation>(DAOOperation.class, this, FramewebPackage.DAO_CLASS__DAO_IMPLEMENTS);
+			daoImplements = new EObjectContainmentEList<DAOMethod>(DAOMethod.class, this, FramewebPackage.DAO_CLASS__DAO_IMPLEMENTS);
 		}
 		return daoImplements;
 	}
@@ -181,11 +220,36 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getSufix() {
+		return sufix;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getInfix() {
+		return infix;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getPrefix() {
+		return prefix;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FramewebPackage.DAO_CLASS__BASE_IMPLEMENTS:
-				return ((InternalEList<?>)getBaseImplements()).basicRemove(otherEnd, msgs);
 			case FramewebPackage.DAO_CLASS__DAO_IMPLEMENTS:
 				return ((InternalEList<?>)getDAOImplements()).basicRemove(otherEnd, msgs);
 			case FramewebPackage.DAO_CLASS__DAO_CLASS_ATTRIBUTE:
@@ -202,8 +266,6 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FramewebPackage.DAO_CLASS__BASE_IMPLEMENTS:
-				return getBaseImplements();
 			case FramewebPackage.DAO_CLASS__DAO_IMPLEMENTS:
 				return getDAOImplements();
 			case FramewebPackage.DAO_CLASS__DAO_CLASS_NAME:
@@ -211,6 +273,12 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 				return basicGetDAOClassName();
 			case FramewebPackage.DAO_CLASS__DAO_CLASS_ATTRIBUTE:
 				return getDAOClassAttribute();
+			case FramewebPackage.DAO_CLASS__SUFIX:
+				return getSufix();
+			case FramewebPackage.DAO_CLASS__INFIX:
+				return getInfix();
+			case FramewebPackage.DAO_CLASS__PREFIX:
+				return getPrefix();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -224,13 +292,9 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FramewebPackage.DAO_CLASS__BASE_IMPLEMENTS:
-				getBaseImplements().clear();
-				getBaseImplements().addAll((Collection<? extends DAOBaseOperation>)newValue);
-				return;
 			case FramewebPackage.DAO_CLASS__DAO_IMPLEMENTS:
 				getDAOImplements().clear();
-				getDAOImplements().addAll((Collection<? extends DAOOperation>)newValue);
+				getDAOImplements().addAll((Collection<? extends DAOMethod>)newValue);
 				return;
 			case FramewebPackage.DAO_CLASS__DAO_CLASS_NAME:
 				setDAOClassName((DAOClassName)newValue);
@@ -251,9 +315,6 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FramewebPackage.DAO_CLASS__BASE_IMPLEMENTS:
-				getBaseImplements().clear();
-				return;
 			case FramewebPackage.DAO_CLASS__DAO_IMPLEMENTS:
 				getDAOImplements().clear();
 				return;
@@ -275,16 +336,40 @@ public class DAOClassImpl extends ClassImpl implements DAOClass {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FramewebPackage.DAO_CLASS__BASE_IMPLEMENTS:
-				return baseImplements != null && !baseImplements.isEmpty();
 			case FramewebPackage.DAO_CLASS__DAO_IMPLEMENTS:
 				return daoImplements != null && !daoImplements.isEmpty();
 			case FramewebPackage.DAO_CLASS__DAO_CLASS_NAME:
 				return daoClassName != null;
 			case FramewebPackage.DAO_CLASS__DAO_CLASS_ATTRIBUTE:
 				return daoClassAttribute != null && !daoClassAttribute.isEmpty();
+			case FramewebPackage.DAO_CLASS__SUFIX:
+				return SUFIX_EDEFAULT == null ? sufix != null : !SUFIX_EDEFAULT.equals(sufix);
+			case FramewebPackage.DAO_CLASS__INFIX:
+				return INFIX_EDEFAULT == null ? infix != null : !INFIX_EDEFAULT.equals(infix);
+			case FramewebPackage.DAO_CLASS__PREFIX:
+				return PREFIX_EDEFAULT == null ? prefix != null : !PREFIX_EDEFAULT.equals(prefix);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (sufix: ");
+		result.append(sufix);
+		result.append(", infix: ");
+		result.append(infix);
+		result.append(", prefix: ");
+		result.append(prefix);
+		result.append(')');
+		return result.toString();
 	}
 
 } //DAOClassImpl

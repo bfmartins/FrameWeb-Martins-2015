@@ -151,12 +151,12 @@ public interface DomainAssociation extends Association {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Class</em>' reference.
-	 * @see #setSourceClass(DomainClass)
+	 * @see #setSourceClass(ClassMappingKind)
 	 * @see frameweb.FramewebPackage#getDomainAssociation_SourceClass()
-	 * @model required="true"
+	 * @model type="frameweb.DomainClass" required="true"
 	 * @generated
 	 */
-	DomainClass getSourceClass();
+	ClassMappingKind getSourceClass();
 
 	/**
 	 * Sets the value of the '{@link frameweb.DomainAssociation#getSourceClass <em>Source Class</em>}' reference.
@@ -166,7 +166,7 @@ public interface DomainAssociation extends Association {
 	 * @see #getSourceClass()
 	 * @generated
 	 */
-	void setSourceClass(DomainClass value);
+	void setSourceClass(ClassMappingKind value);
 
 	/**
 	 * Returns the value of the '<em><b>Target Class</b></em>' reference.
@@ -177,12 +177,12 @@ public interface DomainAssociation extends Association {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Class</em>' reference.
-	 * @see #setTargetClass(DomainClass)
+	 * @see #setTargetClass(ClassMappingKind)
 	 * @see frameweb.FramewebPackage#getDomainAssociation_TargetClass()
-	 * @model required="true"
+	 * @model type="frameweb.DomainClass" required="true"
 	 * @generated
 	 */
-	DomainClass getTargetClass();
+	ClassMappingKind getTargetClass();
 
 	/**
 	 * Sets the value of the '{@link frameweb.DomainAssociation#getTargetClass <em>Target Class</em>}' reference.
@@ -192,6 +192,6 @@ public interface DomainAssociation extends Association {
 	 * @see #getTargetClass()
 	 * @generated
 	 */
-	void setTargetClass(DomainClass value);
+	void setTargetClass(ClassMappingKind value);
 
 } // DomainAssociation

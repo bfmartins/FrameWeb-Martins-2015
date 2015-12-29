@@ -30,7 +30,7 @@ package <%=genPackage.getUtilitiesPackageName()%>;
 
 /**
  * <!-- begin-user-doc -->
- * The <b>Validator</b> for the model.
+ * The <b>Validator</b> for the model. FRAMEWEB TESTE
  * <!-- end-user-doc -->
  * @see <%=genPackage.getQualifiedPackageInterfaceName()%>
  * @generated

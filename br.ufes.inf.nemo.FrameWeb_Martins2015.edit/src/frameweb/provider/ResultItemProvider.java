@@ -4,6 +4,7 @@ package frameweb.provider;
 
 
 import frameweb.FramewebFactory;
+import frameweb.FramewebPackage;
 import frameweb.ResultType;
 
 import java.util.Collection;
@@ -14,7 +15,9 @@ import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.ResourceLocator;
 
+import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+import org.eclipse.emf.edit.provider.ViewerNotification;
 
 import org.eclipse.uml2.uml.UMLPackage;
 
@@ -48,8 +51,31 @@ public class ResultItemProvider extends ClassItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addTypePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Type feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addTypePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_TypedElement_type_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_TypedElement_type_feature", "_UI_TypedElement_type"),
+				 UMLPackage.Literals.TYPED_ELEMENT__TYPE,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**
@@ -88,6 +114,12 @@ public class ResultItemProvider extends ClassItemProvider {
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
+
+		switch (notification.getFeatureID(Object.class)) {
+			case FramewebPackage.RESULT__TYPE:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
+		}
 		super.notifyChanged(notification);
 	}
 
@@ -104,28 +136,28 @@ public class ResultItemProvider extends ClassItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createPageConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createResultConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createChainingConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
-				 FramewebFactory.eINSTANCE.createDAOGeneralization()));
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -136,6 +168,16 @@ public class ResultItemProvider extends ClassItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
 				 FramewebFactory.eINSTANCE.createDomainGeneralization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createNavigationGeneralization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createDAOGeneralization()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -185,11 +227,6 @@ public class ResultItemProvider extends ClassItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
-				 FramewebFactory.eINSTANCE.createUIComponentField()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
 				 FramewebFactory.eINSTANCE.createNavigationCompositionPart()));
 
 		newChildDescriptors.add
@@ -199,13 +236,18 @@ public class ResultItemProvider extends ClassItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createDomainProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(UMLPackage.Literals.CLASS__OWNED_OPERATION,
 				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.CLASS__OWNED_OPERATION,
-				 FramewebFactory.eINSTANCE.createDomainOperation()));
+				 FramewebFactory.eINSTANCE.createDomainMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -215,22 +257,7 @@ public class ResultItemProvider extends ClassItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.CLASS__OWNED_OPERATION,
-				 FramewebFactory.eINSTANCE.createDAOOperation()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createMappedClass()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createPersistentClass()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createTransientClass()));
+				 FramewebFactory.eINSTANCE.createDAOMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -285,6 +312,11 @@ public class ResultItemProvider extends ClassItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createDomainClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
 				 FramewebFactory.eINSTANCE.createResult()));
 
 		newChildDescriptors.add
@@ -306,6 +338,16 @@ public class ResultItemProvider extends ClassItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
 				 FramewebFactory.eINSTANCE.createTag()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createClassMappingKind()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createAttributeMappingKind()));
 	}
 
 	/**

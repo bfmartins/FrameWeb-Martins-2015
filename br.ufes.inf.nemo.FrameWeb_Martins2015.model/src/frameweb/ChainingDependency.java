@@ -87,7 +87,7 @@ public interface ChainingDependency extends NavigationDependency {
 	 * @return the value of the '<em>Chaining Dependendency Constraint</em>' containment reference.
 	 * @see #setChainingDependendencyConstraint(ChainingConstraint)
 	 * @see frameweb.FramewebPackage#getChainingDependency_ChainingDependendencyConstraint()
-	 * @model containment="true" required="true"
+	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
 	ChainingConstraint getChainingDependendencyConstraint();

@@ -172,23 +172,28 @@ public class TagLibItemProvider extends PackageItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createPageConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createResultConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createChainingConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -252,18 +257,8 @@ public class TagLibItemProvider extends PackageItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
-				 FramewebFactory.eINSTANCE.createMappedClass()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
-				 FramewebFactory.eINSTANCE.createPersistentClass()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
-				 FramewebFactory.eINSTANCE.createTransientClass()));
+				(UMLPackage.Literals.PACKAGE__NESTED_PACKAGE,
+				 FramewebFactory.eINSTANCE.createMappingSet()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -318,6 +313,11 @@ public class TagLibItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
+				 FramewebFactory.eINSTANCE.createDomainClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
 				 FramewebFactory.eINSTANCE.createResult()));
 
 		newChildDescriptors.add
@@ -342,18 +342,13 @@ public class TagLibItemProvider extends PackageItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createMappedClass()));
+				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
+				 FramewebFactory.eINSTANCE.createClassMappingKind()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createPersistentClass()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createTransientClass()));
+				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
+				 FramewebFactory.eINSTANCE.createAttributeMappingKind()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -408,6 +403,11 @@ public class TagLibItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createDAORealization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 FramewebFactory.eINSTANCE.createFrontControllerClass()));
 
 		newChildDescriptors.add
@@ -434,6 +434,11 @@ public class TagLibItemProvider extends PackageItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 FramewebFactory.eINSTANCE.createServiceNavigationAssociation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createDomainClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -529,6 +534,26 @@ public class TagLibItemProvider extends PackageItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 FramewebFactory.eINSTANCE.createChainingConstraint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createMappingSet()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createClassMappingKind()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createAttributeMappingKind()));
 
 		newChildDescriptors.add
 			(createChildParameter

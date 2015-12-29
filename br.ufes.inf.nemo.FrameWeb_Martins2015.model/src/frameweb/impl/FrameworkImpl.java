@@ -37,7 +37,7 @@ import org.eclipse.uml2.uml.internal.impl.PackageImpl;
  *   <li>{@link frameweb.impl.FrameworkImpl#getFrameworkTagLib <em>Framework Tag Lib</em>}</li>
  *   <li>{@link frameweb.impl.FrameworkImpl#getFrameworkRule <em>Framework Rule</em>}</li>
  *   <li>{@link frameweb.impl.FrameworkImpl#getFrameworkAnotation <em>Framework Anotation</em>}</li>
- *   <li>{@link frameweb.impl.FrameworkImpl#getFrameworkCategory <em>Framework Category</em>}</li>
+ *   <li>{@link frameweb.impl.FrameworkImpl#getCategory <em>Category</em>}</li>
  *   <li>{@link frameweb.impl.FrameworkImpl#getFrameWebResultSet <em>Frame Web Result Set</em>}</li>
  * </ul>
  * </p>
@@ -76,24 +76,24 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 	protected EList<Anotation> frameworkAnotation;
 
 	/**
-	 * The default value of the '{@link #getFrameworkCategory() <em>Framework Category</em>}' attribute.
+	 * The default value of the '{@link #getCategory() <em>Category</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFrameworkCategory()
+	 * @see #getCategory()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final FrameworkCategoryList FRAMEWORK_CATEGORY_EDEFAULT = FrameworkCategoryList.STANDARD;
+	protected static final FrameworkCategoryList CATEGORY_EDEFAULT = FrameworkCategoryList.STANDARD;
 
 	/**
-	 * The cached value of the '{@link #getFrameworkCategory() <em>Framework Category</em>}' attribute.
+	 * The cached value of the '{@link #getCategory() <em>Category</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFrameworkCategory()
+	 * @see #getCategory()
 	 * @generated
 	 * @ordered
 	 */
-	protected FrameworkCategoryList frameworkCategory = FRAMEWORK_CATEGORY_EDEFAULT;
+	protected FrameworkCategoryList category = CATEGORY_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getFrameWebResultSet() <em>Frame Web Result Set</em>}' containment reference list.
@@ -165,8 +165,8 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FrameworkCategoryList getFrameworkCategory() {
-		return frameworkCategory;
+	public FrameworkCategoryList getCategory() {
+		return category;
 	}
 
 	/**
@@ -174,11 +174,11 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFrameworkCategory(FrameworkCategoryList newFrameworkCategory) {
-		FrameworkCategoryList oldFrameworkCategory = frameworkCategory;
-		frameworkCategory = newFrameworkCategory == null ? FRAMEWORK_CATEGORY_EDEFAULT : newFrameworkCategory;
+	public void setCategory(FrameworkCategoryList newCategory) {
+		FrameworkCategoryList oldCategory = category;
+		category = newCategory == null ? CATEGORY_EDEFAULT : newCategory;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRAMEWORK__FRAMEWORK_CATEGORY, oldFrameworkCategory, frameworkCategory));
+			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.FRAMEWORK__CATEGORY, oldCategory, category));
 	}
 
 	/**
@@ -227,8 +227,8 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 				return getFrameworkRule();
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
 				return getFrameworkAnotation();
-			case FramewebPackage.FRAMEWORK__FRAMEWORK_CATEGORY:
-				return getFrameworkCategory();
+			case FramewebPackage.FRAMEWORK__CATEGORY:
+				return getCategory();
 			case FramewebPackage.FRAMEWORK__FRAME_WEB_RESULT_SET:
 				return getFrameWebResultSet();
 		}
@@ -256,8 +256,8 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 				getFrameworkAnotation().clear();
 				getFrameworkAnotation().addAll((Collection<? extends Anotation>)newValue);
 				return;
-			case FramewebPackage.FRAMEWORK__FRAMEWORK_CATEGORY:
-				setFrameworkCategory((FrameworkCategoryList)newValue);
+			case FramewebPackage.FRAMEWORK__CATEGORY:
+				setCategory((FrameworkCategoryList)newValue);
 				return;
 			case FramewebPackage.FRAMEWORK__FRAME_WEB_RESULT_SET:
 				getFrameWebResultSet().clear();
@@ -284,8 +284,8 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
 				getFrameworkAnotation().clear();
 				return;
-			case FramewebPackage.FRAMEWORK__FRAMEWORK_CATEGORY:
-				setFrameworkCategory(FRAMEWORK_CATEGORY_EDEFAULT);
+			case FramewebPackage.FRAMEWORK__CATEGORY:
+				setCategory(CATEGORY_EDEFAULT);
 				return;
 			case FramewebPackage.FRAMEWORK__FRAME_WEB_RESULT_SET:
 				getFrameWebResultSet().clear();
@@ -308,8 +308,8 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 				return frameworkRule != null && !frameworkRule.isEmpty();
 			case FramewebPackage.FRAMEWORK__FRAMEWORK_ANOTATION:
 				return frameworkAnotation != null && !frameworkAnotation.isEmpty();
-			case FramewebPackage.FRAMEWORK__FRAMEWORK_CATEGORY:
-				return frameworkCategory != FRAMEWORK_CATEGORY_EDEFAULT;
+			case FramewebPackage.FRAMEWORK__CATEGORY:
+				return category != CATEGORY_EDEFAULT;
 			case FramewebPackage.FRAMEWORK__FRAME_WEB_RESULT_SET:
 				return frameWebResultSet != null && !frameWebResultSet.isEmpty();
 		}
@@ -326,8 +326,8 @@ public class FrameworkImpl extends PackageImpl implements Framework {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (frameworkCategory: ");
-		result.append(frameworkCategory);
+		result.append(" (category: ");
+		result.append(category);
 		result.append(')');
 		return result.toString();
 	}

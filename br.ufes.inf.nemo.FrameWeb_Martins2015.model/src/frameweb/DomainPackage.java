@@ -23,7 +23,7 @@ import org.eclipse.emf.common.util.EList;
 public interface DomainPackage extends org.eclipse.uml2.uml.Package {
 	/**
 	 * Returns the value of the '<em><b>Domain Package Class</b></em>' containment reference list.
-	 * The list contents are of type {@link frameweb.DomainClass}.
+	 * The list contents are of type {@link ClassMappingKind}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Domain Package Class</em>' containment reference list isn't clear,
@@ -32,9 +32,9 @@ public interface DomainPackage extends org.eclipse.uml2.uml.Package {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Domain Package Class</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getDomainPackage_DomainPackageClass()
-	 * @model containment="true" required="true"
+	 * @model type="frameweb.DomainClass" containment="true" required="true"
 	 * @generated
 	 */
-	EList<DomainClass> getDomainPackageClass();
+	EList<ClassMappingKind> getDomainPackageClass();
 
 } // DomainPackage

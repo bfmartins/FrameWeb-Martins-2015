@@ -3,7 +3,8 @@
 package frameweb;
 
 import org.eclipse.emf.common.util.EList;
-import org.eclipse.uml2.uml.Operation;
+
+import org.eclipse.uml2.uml.Constraint;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,7 +23,7 @@ import org.eclipse.uml2.uml.Operation;
  * @model
  * @generated
  */
-public interface FrontControllerMethod extends Operation {
+public interface FrontControllerMethod extends Constraint {
 	/**
 	 * Returns the value of the '<em><b>Is Default</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -158,7 +158,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
   Class DAOClassName -> DAOInterfaceName
     Reference FrameWorkNameSufix : FrameWorkName<<1..1>>
 
-  Class Result -> Class
+  Class Result -> Class, TypedElement
 
   Class FrontControllerDependency -> NavigationDependency
     Reference Method : FrontControllerMethod<<1..1>>
@@ -214,7 +214,7 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference ServicePackageClass : ServiceClass<<1..*>>
     Reference ServicePackageInterface : ServiceInterface<<1..*>>
 
-  Class UIComponent -> NavigationClass
+  Class UIComponent -> NavigationClass, TypedElement
     Attribute ajax : Boolean
     Attribute render : String
     Attribute execute : String

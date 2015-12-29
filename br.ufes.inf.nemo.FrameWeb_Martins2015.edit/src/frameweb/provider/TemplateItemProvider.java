@@ -140,7 +140,6 @@ public class TemplateItemProvider extends NavigationClassItemProvider {
 			childFeature == UMLPackage.Literals.CLASSIFIER__OWNED_USE_CASE ||
 			childFeature == UMLPackage.Literals.CLASS__NESTED_CLASSIFIER ||
 			childFeature == UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
-			childFeature == FramewebPackage.Literals.NAVIGATION_CLASS__NAVIGATION_CLASS_ATTRIBUTE ||
 			childFeature == FramewebPackage.Literals.NAVIGATION_CLASS__NAVIGATION_CLASS_COMPOSITION ||
 			childFeature == UMLPackage.Literals.ENCAPSULATED_CLASSIFIER__OWNED_PORT ||
 			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__CLASSIFIER_BEHAVIOR ||

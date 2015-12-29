@@ -197,66 +197,6 @@ public class DomainAttributeItemProvider extends PropertyItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
-				 FramewebFactory.eINSTANCE.createPageConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
-				 FramewebFactory.eINSTANCE.createResultConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
-				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
-				 FramewebFactory.eINSTANCE.createChainingConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.MULTIPLICITY_ELEMENT__LOWER_VALUE,
-				 FramewebFactory.eINSTANCE.createPageConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.MULTIPLICITY_ELEMENT__LOWER_VALUE,
-				 FramewebFactory.eINSTANCE.createResultConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.MULTIPLICITY_ELEMENT__LOWER_VALUE,
-				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.MULTIPLICITY_ELEMENT__LOWER_VALUE,
-				 FramewebFactory.eINSTANCE.createChainingConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.MULTIPLICITY_ELEMENT__UPPER_VALUE,
-				 FramewebFactory.eINSTANCE.createPageConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.MULTIPLICITY_ELEMENT__UPPER_VALUE,
-				 FramewebFactory.eINSTANCE.createResultConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.MULTIPLICITY_ELEMENT__UPPER_VALUE,
-				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.MULTIPLICITY_ELEMENT__UPPER_VALUE,
-				 FramewebFactory.eINSTANCE.createChainingConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
 				(UMLPackage.Literals.PROPERTY__QUALIFIER,
 				 FramewebFactory.eINSTANCE.createVersionAttribute()));
 
@@ -303,11 +243,6 @@ public class DomainAttributeItemProvider extends PropertyItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PROPERTY__QUALIFIER,
-				 FramewebFactory.eINSTANCE.createUIComponentField()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.PROPERTY__QUALIFIER,
 				 FramewebFactory.eINSTANCE.createNavigationCompositionPart()));
 
 		newChildDescriptors.add
@@ -317,23 +252,8 @@ public class DomainAttributeItemProvider extends PropertyItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.PROPERTY__DEFAULT_VALUE,
-				 FramewebFactory.eINSTANCE.createPageConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.PROPERTY__DEFAULT_VALUE,
-				 FramewebFactory.eINSTANCE.createResultConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.PROPERTY__DEFAULT_VALUE,
-				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.PROPERTY__DEFAULT_VALUE,
-				 FramewebFactory.eINSTANCE.createChainingConstraint()));
+				(UMLPackage.Literals.PROPERTY__QUALIFIER,
+				 FramewebFactory.eINSTANCE.createDomainProperty()));
 	}
 
 	/**

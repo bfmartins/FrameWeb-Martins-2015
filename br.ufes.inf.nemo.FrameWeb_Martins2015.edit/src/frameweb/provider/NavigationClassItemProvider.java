@@ -135,28 +135,28 @@ public class NavigationClassItemProvider extends ClassItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createPageConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createResultConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createChainingConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
-				 FramewebFactory.eINSTANCE.createDAOGeneralization()));
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -167,6 +167,16 @@ public class NavigationClassItemProvider extends ClassItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
 				 FramewebFactory.eINSTANCE.createDomainGeneralization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createNavigationGeneralization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createDAOGeneralization()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -216,11 +226,6 @@ public class NavigationClassItemProvider extends ClassItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
-				 FramewebFactory.eINSTANCE.createUIComponentField()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
 				 FramewebFactory.eINSTANCE.createNavigationCompositionPart()));
 
 		newChildDescriptors.add
@@ -230,13 +235,18 @@ public class NavigationClassItemProvider extends ClassItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createDomainProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(UMLPackage.Literals.CLASS__OWNED_OPERATION,
 				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.CLASS__OWNED_OPERATION,
-				 FramewebFactory.eINSTANCE.createDomainOperation()));
+				 FramewebFactory.eINSTANCE.createDomainMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -246,22 +256,7 @@ public class NavigationClassItemProvider extends ClassItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.CLASS__OWNED_OPERATION,
-				 FramewebFactory.eINSTANCE.createDAOOperation()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createMappedClass()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createPersistentClass()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createTransientClass()));
+				 FramewebFactory.eINSTANCE.createDAOMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -316,6 +311,11 @@ public class NavigationClassItemProvider extends ClassItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createDomainClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
 				 FramewebFactory.eINSTANCE.createResult()));
 
 		newChildDescriptors.add
@@ -340,13 +340,18 @@ public class NavigationClassItemProvider extends ClassItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FramewebPackage.Literals.NAVIGATION_CLASS__NAVIGATION_CLASS_COMPOSITION,
-				 FramewebFactory.eINSTANCE.createNavigationCompositionWhole()));
+				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createClassMappingKind()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FramewebPackage.Literals.NAVIGATION_CLASS__NAVIGATION_CLASS_ATTRIBUTE,
-				 FramewebFactory.eINSTANCE.createUIComponentField()));
+				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createAttributeMappingKind()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FramewebPackage.Literals.NAVIGATION_CLASS__NAVIGATION_CLASS_COMPOSITION,
+				 FramewebFactory.eINSTANCE.createNavigationCompositionWhole()));
 	}
 
 	/**
@@ -366,7 +371,6 @@ public class NavigationClassItemProvider extends ClassItemProvider {
 			childFeature == UMLPackage.Literals.CLASSIFIER__OWNED_USE_CASE ||
 			childFeature == UMLPackage.Literals.CLASS__NESTED_CLASSIFIER ||
 			childFeature == UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE ||
-			childFeature == FramewebPackage.Literals.NAVIGATION_CLASS__NAVIGATION_CLASS_ATTRIBUTE ||
 			childFeature == FramewebPackage.Literals.NAVIGATION_CLASS__NAVIGATION_CLASS_COMPOSITION ||
 			childFeature == UMLPackage.Literals.ENCAPSULATED_CLASSIFIER__OWNED_PORT ||
 			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__CLASSIFIER_BEHAVIOR ||

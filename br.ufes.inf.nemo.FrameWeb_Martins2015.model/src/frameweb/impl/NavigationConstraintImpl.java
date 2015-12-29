@@ -7,7 +7,7 @@ import frameweb.NavigationConstraint;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.uml2.uml.internal.impl.StringExpressionImpl;
+import org.eclipse.uml2.uml.internal.impl.ConstraintImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,7 +18,7 @@ import org.eclipse.uml2.uml.internal.impl.StringExpressionImpl;
  *
  * @generated
  */
-public abstract class NavigationConstraintImpl extends StringExpressionImpl implements NavigationConstraint {
+public abstract class NavigationConstraintImpl extends ConstraintImpl implements NavigationConstraint {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

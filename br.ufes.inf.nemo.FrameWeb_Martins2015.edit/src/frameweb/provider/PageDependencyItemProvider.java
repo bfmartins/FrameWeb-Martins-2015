@@ -18,8 +18,6 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.uml2.uml.UMLPackage;
-
 /**
  * This is the item provider adapter for a {@link frameweb.PageDependency} object.
  * <!-- begin-user-doc -->
@@ -142,29 +140,6 @@ public class PageDependencyItemProvider extends NavigationDependencyItemProvider
 			(createChildParameter
 				(FramewebPackage.Literals.PAGE_DEPENDENCY__PAGE_DEPENDENCY_COSNTRAINT,
 				 FramewebFactory.eINSTANCE.createPageConstraint()));
-	}
-
-	/**
-	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
-		Object childFeature = feature;
-		Object childObject = child;
-
-		boolean qualify =
-			childFeature == UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
-			childFeature == FramewebPackage.Literals.PAGE_DEPENDENCY__PAGE_DEPENDENCY_COSNTRAINT;
-
-		if (qualify) {
-			return getString
-				("_UI_CreateChild_text2",
-				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
-		}
-		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 }

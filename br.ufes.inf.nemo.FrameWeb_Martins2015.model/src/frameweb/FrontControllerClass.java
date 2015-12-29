@@ -33,7 +33,7 @@ public interface FrontControllerClass extends org.eclipse.uml2.uml.Class {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Front Controller Attribute</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getFrontControllerClass_FrontControllerAttribute()
-	 * @model containment="true" required="true"
+	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
 	EList<IOParameter> getFrontControllerAttribute();
@@ -49,7 +49,7 @@ public interface FrontControllerClass extends org.eclipse.uml2.uml.Class {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Front Controller Class Method</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getFrontControllerClass_FrontControllerClassMethod()
-	 * @model containment="true" required="true"
+	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
 	EList<FrontControllerMethod> getFrontControllerClassMethod();

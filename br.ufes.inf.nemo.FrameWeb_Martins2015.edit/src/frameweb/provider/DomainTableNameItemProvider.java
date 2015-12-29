@@ -61,7 +61,6 @@ public class DomainTableNameItemProvider
 			super.getPropertyDescriptors(object);
 
 			addFwNamePropertyDescriptor(object);
-			addPersistentClassNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -84,28 +83,6 @@ public class DomainTableNameItemProvider
 				 false,
 				 false,
 				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Persistent Class Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addPersistentClassNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_DomainTableName_PersistentClassName_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_DomainTableName_PersistentClassName_feature", "_UI_DomainTableName_type"),
-				 FramewebPackage.Literals.DOMAIN_TABLE_NAME__PERSISTENT_CLASS_NAME,
-				 true,
-				 false,
-				 true,
-				 null,
 				 null,
 				 null));
 	}

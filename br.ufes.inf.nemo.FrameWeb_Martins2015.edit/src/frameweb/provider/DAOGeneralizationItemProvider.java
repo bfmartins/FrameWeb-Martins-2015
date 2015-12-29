@@ -4,7 +4,6 @@ package frameweb.provider;
 
 
 import frameweb.DAOGeneralization;
-import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -14,7 +13,6 @@ import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.ResourceLocator;
 
-import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 
 import org.eclipse.uml2.uml.edit.providers.GeneralizationItemProvider;
@@ -47,54 +45,8 @@ public class DAOGeneralizationItemProvider extends GeneralizationItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addTargetDAOClassPropertyDescriptor(object);
-			addSourceDAOInterfacePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Target DAO Class feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addTargetDAOClassPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_DAOGeneralization_TargetDAOClass_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_DAOGeneralization_TargetDAOClass_feature", "_UI_DAOGeneralization_type"),
-				 FramewebPackage.Literals.DAO_GENERALIZATION__TARGET_DAO_CLASS,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Source DAO Interface feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addSourceDAOInterfacePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_DAOGeneralization_SourceDAOInterface_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_DAOGeneralization_SourceDAOInterface_feature", "_UI_DAOGeneralization_type"),
-				 FramewebPackage.Literals.DAO_GENERALIZATION__SOURCE_DAO_INTERFACE,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
 	}
 
 	/**

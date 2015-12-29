@@ -22,33 +22,6 @@ public interface FramewebFactory extends EFactory {
 	FramewebFactory eINSTANCE = frameweb.impl.FramewebFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Mapped Class</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Mapped Class</em>'.
-	 * @generated
-	 */
-	MappedClass createMappedClass();
-
-	/**
-	 * Returns a new object of class '<em>Persistent Class</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Persistent Class</em>'.
-	 * @generated
-	 */
-	PersistentClass createPersistentClass();
-
-	/**
-	 * Returns a new object of class '<em>Transient Class</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Transient Class</em>'.
-	 * @generated
-	 */
-	TransientClass createTransientClass();
-
-	/**
 	 * Returns a new object of class '<em>Frameweb</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -202,13 +175,13 @@ public interface FramewebFactory extends EFactory {
 	DAOClass createDAOClass();
 
 	/**
-	 * Returns a new object of class '<em>DAO Generalization</em>'.
+	 * Returns a new object of class '<em>DAO Realization</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>DAO Generalization</em>'.
+	 * @return a new object of class '<em>DAO Realization</em>'.
 	 * @generated
 	 */
-	DAOGeneralization createDAOGeneralization();
+	DAORealization createDAORealization();
 
 	/**
 	 * Returns a new object of class '<em>Front Controller Class</em>'.
@@ -227,15 +200,6 @@ public interface FramewebFactory extends EFactory {
 	 * @generated
 	 */
 	IOParameter createIOParameter();
-
-	/**
-	 * Returns a new object of class '<em>DAO Base Operation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>DAO Base Operation</em>'.
-	 * @generated
-	 */
-	DAOBaseOperation createDAOBaseOperation();
 
 	/**
 	 * Returns a new object of class '<em>Result Dependency</em>'.
@@ -299,6 +263,15 @@ public interface FramewebFactory extends EFactory {
 	 * @generated
 	 */
 	ServiceNavigationAssociation createServiceNavigationAssociation();
+
+	/**
+	 * Returns a new object of class '<em>Domain Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Domain Class</em>'.
+	 * @generated
+	 */
+	ClassMappingKind createDomainClass();
 
 	/**
 	 * Returns a new object of class '<em>Constant Name</em>'.
@@ -400,13 +373,13 @@ public interface FramewebFactory extends EFactory {
 	DAOServiceAssociation createDAOServiceAssociation();
 
 	/**
-	 * Returns a new object of class '<em>Domain Operation</em>'.
+	 * Returns a new object of class '<em>Domain Method</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Domain Operation</em>'.
+	 * @return a new object of class '<em>Domain Method</em>'.
 	 * @generated
 	 */
-	DomainOperation createDomainOperation();
+	DomainMethod createDomainMethod();
 
 	/**
 	 * Returns a new object of class '<em>DAO Attribute</em>'.
@@ -436,13 +409,13 @@ public interface FramewebFactory extends EFactory {
 	ServiceAttribute createServiceAttribute();
 
 	/**
-	 * Returns a new object of class '<em>DAO Operation</em>'.
+	 * Returns a new object of class '<em>DAO Method</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>DAO Operation</em>'.
+	 * @return a new object of class '<em>DAO Method</em>'.
 	 * @generated
 	 */
-	DAOOperation createDAOOperation();
+	DAOMethod createDAOMethod();
 
 	/**
 	 * Returns a new object of class '<em>Domain Package</em>'.
@@ -524,15 +497,6 @@ public interface FramewebFactory extends EFactory {
 	 * @generated
 	 */
 	JQuery createJQuery();
-
-	/**
-	 * Returns a new object of class '<em>UI Component Field</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>UI Component Field</em>'.
-	 * @generated
-	 */
-	Tag createUIComponentField();
 
 	/**
 	 * Returns a new object of class '<em>Tag Lib</em>'.
@@ -632,6 +596,69 @@ public interface FramewebFactory extends EFactory {
 	 * @generated
 	 */
 	ChainingConstraint createChainingConstraint();
+
+	/**
+	 * Returns a new object of class '<em>Navigation Generalization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Navigation Generalization</em>'.
+	 * @generated
+	 */
+	NavigationGeneralization createNavigationGeneralization();
+
+	/**
+	 * Returns a new object of class '<em>Domain Constraints</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Domain Constraints</em>'.
+	 * @generated
+	 */
+	DomainConstraints createDomainConstraints();
+
+	/**
+	 * Returns a new object of class '<em>Domain Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Domain Property</em>'.
+	 * @generated
+	 */
+	DomainProperty createDomainProperty();
+
+	/**
+	 * Returns a new object of class '<em>DAO Generalization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>DAO Generalization</em>'.
+	 * @generated
+	 */
+	DAOGeneralization createDAOGeneralization();
+
+	/**
+	 * Returns a new object of class '<em>Mapping Set</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mapping Set</em>'.
+	 * @generated
+	 */
+	MappingSet createMappingSet();
+
+	/**
+	 * Returns a new object of class '<em>Class Mapping Kind</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Class Mapping Kind</em>'.
+	 * @generated
+	 */
+	ClassMappingKind createClassMappingKind();
+
+	/**
+	 * Returns a new object of class '<em>Attribute Mapping Kind</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Attribute Mapping Kind</em>'.
+	 * @generated
+	 */
+	AttributeMappingKind createAttributeMappingKind();
 
 	/**
 	 * Returns the package supported by this factory.

@@ -12,7 +12,6 @@
         <PageTagLib href="../../FrameWeb_Martins2015_standard_JSTL/standard_model/Standard_JSTL.frameweb#//@Uses.0/JSTLformatting"/>
       </packagedElement>
       <packagedElement xsi:type="frameweb:UIComponent" name="requestLeaveForm">
-        <redefinedClassifier xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_standard_HTML4/standard_model/Standard_HTML4.frameweb#//@Uses.0/HTML4forms_input/form"/>
         <ownedAttribute xsi:type="frameweb:UIComponentField" name="eventName">
           <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_standard_HTML4/standard_model/Standard_HTML4.frameweb#//@Uses.0/HTML4forms_input/input/inputText"/>
         </ownedAttribute>
@@ -37,6 +36,7 @@
         <ownedAttribute xsi:type="frameweb:UIComponentField" name="onus">
           <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_standard_HTML4/standard_model/Standard_HTML4.frameweb#//@Uses.0/HTML4forms_input/select"/>
         </ownedAttribute>
+        <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_standard_HTML4/standard_model/Standard_HTML4.frameweb#//@Uses.0/HTML4forms_input/form"/>
       </packagedElement>
       <packagedElement xsi:type="frameweb:NavigationAssociation" name="hasForm" memberEnd="//@Compose.0/SCAP_LeaveAbsence_View/hasForm/requestLeaveForm //@Compose.0/SCAP_LeaveAbsence_View/RequestLeave.xhtml/requestLeave">
         <ownedEnd xsi:type="frameweb:NavigationCompositionPart" name="requestLeaveForm" type="//@Compose.0/SCAP_LeaveAbsence_View/RequestLeave.xhtml" association="//@Compose.0/SCAP_LeaveAbsence_View/hasForm"/>

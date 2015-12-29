@@ -5,7 +5,6 @@ package frameweb.impl;
 import frameweb.Cascade;
 import frameweb.Collection;
 import frameweb.DomainAssociation;
-import frameweb.DomainClass;
 import frameweb.Fetch;
 import frameweb.FramewebPackage;
 import frameweb.Order;
@@ -13,6 +12,7 @@ import frameweb.Order;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
@@ -126,7 +126,7 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 	 * @generated
 	 * @ordered
 	 */
-	protected DomainClass sourceClass;
+	protected ClassMappingKind sourceClass;
 
 	/**
 	 * The cached value of the '{@link #getTargetClass() <em>Target Class</em>}' reference.
@@ -136,7 +136,7 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 	 * @generated
 	 * @ordered
 	 */
-	protected DomainClass targetClass;
+	protected ClassMappingKind targetClass;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -246,10 +246,11 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainClass getSourceClass() {
-		if (sourceClass != null && sourceClass.eIsProxy()) {
+	@SuppressWarnings("unchecked")
+	public ClassMappingKind getSourceClass() {
+		if (sourceClass != null && ((EObject)sourceClass).eIsProxy()) {
 			InternalEObject oldSourceClass = (InternalEObject)sourceClass;
-			sourceClass = (DomainClass)eResolveProxy(oldSourceClass);
+			sourceClass = (ClassMappingKind)eResolveProxy(oldSourceClass);
 			if (sourceClass != oldSourceClass) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS, oldSourceClass, sourceClass));
@@ -263,7 +264,7 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainClass basicGetSourceClass() {
+	public ClassMappingKind basicGetSourceClass() {
 		return sourceClass;
 	}
 
@@ -272,8 +273,8 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSourceClass(DomainClass newSourceClass) {
-		DomainClass oldSourceClass = sourceClass;
+	public void setSourceClass(ClassMappingKind newSourceClass) {
+		ClassMappingKind oldSourceClass = sourceClass;
 		sourceClass = newSourceClass;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS, oldSourceClass, sourceClass));
@@ -284,10 +285,11 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainClass getTargetClass() {
-		if (targetClass != null && targetClass.eIsProxy()) {
+	@SuppressWarnings("unchecked")
+	public ClassMappingKind getTargetClass() {
+		if (targetClass != null && ((EObject)targetClass).eIsProxy()) {
 			InternalEObject oldTargetClass = (InternalEObject)targetClass;
-			targetClass = (DomainClass)eResolveProxy(oldTargetClass);
+			targetClass = (ClassMappingKind)eResolveProxy(oldTargetClass);
 			if (targetClass != oldTargetClass) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS, oldTargetClass, targetClass));
@@ -301,7 +303,7 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainClass basicGetTargetClass() {
+	public ClassMappingKind basicGetTargetClass() {
 		return targetClass;
 	}
 
@@ -310,8 +312,8 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTargetClass(DomainClass newTargetClass) {
-		DomainClass oldTargetClass = targetClass;
+	public void setTargetClass(ClassMappingKind newTargetClass) {
+		ClassMappingKind oldTargetClass = targetClass;
 		targetClass = newTargetClass;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS, oldTargetClass, targetClass));
@@ -348,6 +350,7 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -364,10 +367,10 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 				setFetch((Fetch)newValue);
 				return;
 			case FramewebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS:
-				setSourceClass((DomainClass)newValue);
+				setSourceClass((ClassMappingKind)newValue);
 				return;
 			case FramewebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS:
-				setTargetClass((DomainClass)newValue);
+				setTargetClass((ClassMappingKind)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -394,10 +397,10 @@ public class DomainAssociationImpl extends AssociationImpl implements DomainAsso
 				setFetch(FETCH_EDEFAULT);
 				return;
 			case FramewebPackage.DOMAIN_ASSOCIATION__SOURCE_CLASS:
-				setSourceClass((DomainClass)null);
+				setSourceClass((ClassMappingKind)null);
 				return;
 			case FramewebPackage.DOMAIN_ASSOCIATION__TARGET_CLASS:
-				setTargetClass((DomainClass)null);
+				setTargetClass((ClassMappingKind)null);
 				return;
 		}
 		super.eUnset(featureID);

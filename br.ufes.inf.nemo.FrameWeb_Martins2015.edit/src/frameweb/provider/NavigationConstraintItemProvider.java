@@ -3,7 +3,6 @@
 package frameweb.provider;
 
 
-import frameweb.FramewebFactory;
 import frameweb.NavigationConstraint;
 
 import java.util.Collection;
@@ -18,7 +17,7 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 
 import org.eclipse.uml2.uml.UMLPackage;
 
-import org.eclipse.uml2.uml.edit.providers.StringExpressionItemProvider;
+import org.eclipse.uml2.uml.edit.providers.ConstraintItemProvider;
 
 /**
  * This is the item provider adapter for a {@link frameweb.NavigationConstraint} object.
@@ -26,7 +25,7 @@ import org.eclipse.uml2.uml.edit.providers.StringExpressionItemProvider;
  * <!-- end-user-doc -->
  * @generated
  */
-public class NavigationConstraintItemProvider extends StringExpressionItemProvider {
+public class NavigationConstraintItemProvider extends ConstraintItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -101,66 +100,6 @@ public class NavigationConstraintItemProvider extends StringExpressionItemProvid
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
-				 FramewebFactory.eINSTANCE.createPageConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
-				 FramewebFactory.eINSTANCE.createResultConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
-				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
-				 FramewebFactory.eINSTANCE.createChainingConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.EXPRESSION__OPERAND,
-				 FramewebFactory.eINSTANCE.createPageConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.EXPRESSION__OPERAND,
-				 FramewebFactory.eINSTANCE.createResultConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.EXPRESSION__OPERAND,
-				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.EXPRESSION__OPERAND,
-				 FramewebFactory.eINSTANCE.createChainingConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.STRING_EXPRESSION__SUB_EXPRESSION,
-				 FramewebFactory.eINSTANCE.createPageConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.STRING_EXPRESSION__SUB_EXPRESSION,
-				 FramewebFactory.eINSTANCE.createResultConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.STRING_EXPRESSION__SUB_EXPRESSION,
-				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.STRING_EXPRESSION__SUB_EXPRESSION,
-				 FramewebFactory.eINSTANCE.createChainingConstraint()));
 	}
 
 	/**
@@ -176,8 +115,7 @@ public class NavigationConstraintItemProvider extends StringExpressionItemProvid
 
 		boolean qualify =
 			childFeature == UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
-			childFeature == UMLPackage.Literals.EXPRESSION__OPERAND ||
-			childFeature == UMLPackage.Literals.STRING_EXPRESSION__SUB_EXPRESSION;
+			childFeature == UMLPackage.Literals.CONSTRAINT__SPECIFICATION;
 
 		if (qualify) {
 			return getString

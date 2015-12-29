@@ -6,15 +6,18 @@ import frameweb.FramewebPackage;
 import frameweb.FrontControllerMethod;
 
 import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
-import org.eclipse.uml2.uml.internal.impl.OperationImpl;
+
+import org.eclipse.uml2.uml.internal.impl.ConstraintImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +33,7 @@ import org.eclipse.uml2.uml.internal.impl.OperationImpl;
  *
  * @generated
  */
-public class FrontControllerMethodImpl extends OperationImpl implements FrontControllerMethod {
+public class FrontControllerMethodImpl extends ConstraintImpl implements FrontControllerMethod {
 	/**
 	 * The default value of the '{@link #isIsDefault() <em>Is Default</em>}' attribute.
 	 * <!-- begin-user-doc -->

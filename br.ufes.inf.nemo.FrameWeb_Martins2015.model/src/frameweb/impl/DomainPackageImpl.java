@@ -2,7 +2,6 @@
  */
 package frameweb.impl;
 
-import frameweb.DomainClass;
 import frameweb.DomainPackage;
 import frameweb.FramewebPackage;
 
@@ -42,7 +41,7 @@ public class DomainPackageImpl extends PackageImpl implements DomainPackage {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<DomainClass> domainPackageClass;
+	protected EList<ClassMappingKind> domainPackageClass;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -68,9 +67,9 @@ public class DomainPackageImpl extends PackageImpl implements DomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DomainClass> getDomainPackageClass() {
+	public EList<ClassMappingKind> getDomainPackageClass() {
 		if (domainPackageClass == null) {
-			domainPackageClass = new EObjectContainmentEList<DomainClass>(DomainClass.class, this, FramewebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS);
+			domainPackageClass = new EObjectContainmentEList<ClassMappingKind>(ClassMappingKind.class, this, FramewebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS);
 		}
 		return domainPackageClass;
 	}
@@ -114,7 +113,7 @@ public class DomainPackageImpl extends PackageImpl implements DomainPackage {
 		switch (featureID) {
 			case FramewebPackage.DOMAIN_PACKAGE__DOMAIN_PACKAGE_CLASS:
 				getDomainPackageClass().clear();
-				getDomainPackageClass().addAll((Collection<? extends DomainClass>)newValue);
+				getDomainPackageClass().addAll((Collection<? extends ClassMappingKind>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

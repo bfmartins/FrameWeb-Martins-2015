@@ -93,28 +93,28 @@ public class ServiceAssociationItemProvider extends AssociationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createPageConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createResultConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION,
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createChainingConstraint()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
-				 FramewebFactory.eINSTANCE.createDAOGeneralization()));
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -128,6 +128,16 @@ public class ServiceAssociationItemProvider extends AssociationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createNavigationGeneralization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
+				 FramewebFactory.eINSTANCE.createDAOGeneralization()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
 				 FramewebFactory.eINSTANCE.createVersionAttribute()));
 
@@ -174,17 +184,17 @@ public class ServiceAssociationItemProvider extends AssociationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
-				 FramewebFactory.eINSTANCE.createUIComponentField()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
 				 FramewebFactory.eINSTANCE.createNavigationCompositionPart()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
 				 FramewebFactory.eINSTANCE.createNavigationCompositionWhole()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createDomainProperty()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -234,17 +244,17 @@ public class ServiceAssociationItemProvider extends AssociationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
-				 FramewebFactory.eINSTANCE.createUIComponentField()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
 				 FramewebFactory.eINSTANCE.createNavigationCompositionPart()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
 				 FramewebFactory.eINSTANCE.createNavigationCompositionWhole()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createDomainProperty()));
 	}
 
 	/**

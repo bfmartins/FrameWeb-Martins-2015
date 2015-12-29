@@ -19,8 +19,6 @@ import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.uml2.uml.UMLPackage;
-
 /**
  * This is the item provider adapter for a {@link frameweb.FrontControllerDependency} object.
  * <!-- begin-user-doc -->
@@ -166,29 +164,6 @@ public class FrontControllerDependencyItemProvider extends NavigationDependencyI
 			(createChildParameter
 				(FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__METHOD_DEPENDENDENCY_CONSTRAINT,
 				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
-	}
-
-	/**
-	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
-		Object childFeature = feature;
-		Object childObject = child;
-
-		boolean qualify =
-			childFeature == UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
-			childFeature == FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__METHOD_DEPENDENDENCY_CONSTRAINT;
-
-		if (qualify) {
-			return getString
-				("_UI_CreateChild_text2",
-				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
-		}
-		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 }

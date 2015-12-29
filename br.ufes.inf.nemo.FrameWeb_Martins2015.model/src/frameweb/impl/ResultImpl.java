@@ -3,9 +3,9 @@
 package frameweb.impl;
 
 import frameweb.FramewebPackage;
-import frameweb.ResultType;
 
 import org.eclipse.emf.ecore.EClass;
+
 import org.eclipse.uml2.uml.internal.impl.ClassImpl;
 
 /**

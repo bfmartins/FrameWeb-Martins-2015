@@ -60,7 +60,7 @@ public interface FrontControllerDependency extends NavigationDependency {
 	 * @return the value of the '<em>Method Dependendency Constraint</em>' containment reference.
 	 * @see #setMethodDependendencyConstraint(MethodCosntraint)
 	 * @see frameweb.FramewebPackage#getFrontControllerDependency_MethodDependendencyConstraint()
-	 * @model containment="true" required="true"
+	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
 	MethodCosntraint getMethodDependendencyConstraint();

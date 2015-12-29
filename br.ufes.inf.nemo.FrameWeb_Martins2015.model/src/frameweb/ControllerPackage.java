@@ -32,7 +32,7 @@ public interface ControllerPackage extends NavigationPackage {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Controller Package Class</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getControllerPackage_ControllerPackageClass()
-	 * @model containment="true" required="true"
+	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
 	EList<FrontControllerClass> getControllerPackageClass();
