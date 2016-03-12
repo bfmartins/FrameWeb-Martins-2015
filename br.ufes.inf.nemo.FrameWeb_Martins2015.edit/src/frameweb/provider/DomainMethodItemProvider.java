@@ -105,6 +105,11 @@ public class DomainMethodItemProvider extends OperationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
+				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createPageConstraint()));
 
 		newChildDescriptors.add
@@ -130,6 +135,11 @@ public class DomainMethodItemProvider extends OperationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.OPERATION__BODY_CONDITION,
+				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__BODY_CONDITION,
 				 FramewebFactory.eINSTANCE.createPageConstraint()));
 
 		newChildDescriptors.add
@@ -155,6 +165,11 @@ public class DomainMethodItemProvider extends OperationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.OPERATION__POSTCONDITION,
+				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__POSTCONDITION,
 				 FramewebFactory.eINSTANCE.createPageConstraint()));
 
 		newChildDescriptors.add
@@ -176,6 +191,11 @@ public class DomainMethodItemProvider extends OperationItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.OPERATION__POSTCONDITION,
 				 FramewebFactory.eINSTANCE.createDomainConstraints()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__PRECONDITION,
+				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter

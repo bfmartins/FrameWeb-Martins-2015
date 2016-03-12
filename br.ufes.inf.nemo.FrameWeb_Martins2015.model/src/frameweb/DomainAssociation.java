@@ -12,12 +12,12 @@ import org.eclipse.uml2.uml.Association;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link frameweb.DomainAssociation#getCollection <em>Collection</em>}</li>
- *   <li>{@link frameweb.DomainAssociation#getOrder <em>Order</em>}</li>
- *   <li>{@link frameweb.DomainAssociation#getCascade <em>Cascade</em>}</li>
- *   <li>{@link frameweb.DomainAssociation#getFetch <em>Fetch</em>}</li>
  *   <li>{@link frameweb.DomainAssociation#getSourceClass <em>Source Class</em>}</li>
  *   <li>{@link frameweb.DomainAssociation#getTargetClass <em>Target Class</em>}</li>
+ *   <li>{@link frameweb.DomainAssociation#getCollection <em>Collection</em>}</li>
+ *   <li>{@link frameweb.DomainAssociation#getCascade <em>Cascade</em>}</li>
+ *   <li>{@link frameweb.DomainAssociation#getFetch <em>Fetch</em>}</li>
+ *   <li>{@link frameweb.DomainAssociation#getOrder <em>Order</em>}</li>
  * </ul>
  * </p>
  *
@@ -26,6 +26,58 @@ import org.eclipse.uml2.uml.Association;
  * @generated
  */
 public interface DomainAssociation extends Association {
+	/**
+	 * Returns the value of the '<em><b>Source Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Source Class</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Source Class</em>' reference.
+	 * @see #setSourceClass(DomainClass)
+	 * @see frameweb.FramewebPackage#getDomainAssociation_SourceClass()
+	 * @model required="true"
+	 * @generated
+	 */
+	DomainClass getSourceClass();
+
+	/**
+	 * Sets the value of the '{@link frameweb.DomainAssociation#getSourceClass <em>Source Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Source Class</em>' reference.
+	 * @see #getSourceClass()
+	 * @generated
+	 */
+	void setSourceClass(DomainClass value);
+
+	/**
+	 * Returns the value of the '<em><b>Target Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Target Class</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Target Class</em>' reference.
+	 * @see #setTargetClass(DomainClass)
+	 * @see frameweb.FramewebPackage#getDomainAssociation_TargetClass()
+	 * @model required="true"
+	 * @generated
+	 */
+	DomainClass getTargetClass();
+
+	/**
+	 * Sets the value of the '{@link frameweb.DomainAssociation#getTargetClass <em>Target Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Target Class</em>' reference.
+	 * @see #getTargetClass()
+	 * @generated
+	 */
+	void setTargetClass(DomainClass value);
+
 	/**
 	 * Returns the value of the '<em><b>Collection</b></em>' attribute.
 	 * The literals are from the enumeration {@link frameweb.Collection}.
@@ -54,35 +106,6 @@ public interface DomainAssociation extends Association {
 	 * @generated
 	 */
 	void setCollection(Collection value);
-
-	/**
-	 * Returns the value of the '<em><b>Order</b></em>' attribute.
-	 * The literals are from the enumeration {@link frameweb.Order}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order</em>' attribute.
-	 * @see frameweb.Order
-	 * @see #setOrder(Order)
-	 * @see frameweb.FramewebPackage#getDomainAssociation_Order()
-	 * @model
-	 * @generated
-	 */
-	Order getOrder();
-
-	/**
-	 * Sets the value of the '{@link frameweb.DomainAssociation#getOrder <em>Order</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order</em>' attribute.
-	 * @see frameweb.Order
-	 * @see #getOrder()
-	 * @generated
-	 */
-	void setOrder(Order value);
 
 	/**
 	 * Returns the value of the '<em><b>Cascade</b></em>' attribute.
@@ -143,55 +166,32 @@ public interface DomainAssociation extends Association {
 	void setFetch(Fetch value);
 
 	/**
-	 * Returns the value of the '<em><b>Source Class</b></em>' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' attribute.
+	 * The literals are from the enumeration {@link frameweb.Order}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Source Class</em>' reference isn't clear,
+	 * If the meaning of the '<em>Order</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Source Class</em>' reference.
-	 * @see #setSourceClass(ClassMappingKind)
-	 * @see frameweb.FramewebPackage#getDomainAssociation_SourceClass()
-	 * @model type="frameweb.DomainClass" required="true"
+	 * @return the value of the '<em>Order</em>' attribute.
+	 * @see frameweb.Order
+	 * @see #setOrder(Order)
+	 * @see frameweb.FramewebPackage#getDomainAssociation_Order()
+	 * @model
 	 * @generated
 	 */
-	ClassMappingKind getSourceClass();
+	Order getOrder();
 
 	/**
-	 * Sets the value of the '{@link frameweb.DomainAssociation#getSourceClass <em>Source Class</em>}' reference.
+	 * Sets the value of the '{@link frameweb.DomainAssociation#getOrder <em>Order</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Source Class</em>' reference.
-	 * @see #getSourceClass()
+	 * @param value the new value of the '<em>Order</em>' attribute.
+	 * @see frameweb.Order
+	 * @see #getOrder()
 	 * @generated
 	 */
-	void setSourceClass(ClassMappingKind value);
-
-	/**
-	 * Returns the value of the '<em><b>Target Class</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target Class</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Target Class</em>' reference.
-	 * @see #setTargetClass(ClassMappingKind)
-	 * @see frameweb.FramewebPackage#getDomainAssociation_TargetClass()
-	 * @model type="frameweb.DomainClass" required="true"
-	 * @generated
-	 */
-	ClassMappingKind getTargetClass();
-
-	/**
-	 * Sets the value of the '{@link frameweb.DomainAssociation#getTargetClass <em>Target Class</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target Class</em>' reference.
-	 * @see #getTargetClass()
-	 * @generated
-	 */
-	void setTargetClass(ClassMappingKind value);
+	void setOrder(Order value);
 
 } // DomainAssociation

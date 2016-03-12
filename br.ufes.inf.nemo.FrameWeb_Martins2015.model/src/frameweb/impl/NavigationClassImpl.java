@@ -5,6 +5,7 @@ package frameweb.impl;
 import frameweb.FramewebPackage;
 import frameweb.NavigationClass;
 import frameweb.NavigationCompositionWhole;
+import frameweb.UIComponent;
 
 import java.util.Collection;
 
@@ -53,7 +54,7 @@ public abstract class NavigationClassImpl extends ClassImpl implements Navigatio
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Tag> navigationClassAttribute;
+	protected EList<UIComponent> navigationClassAttribute;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,9 +92,9 @@ public abstract class NavigationClassImpl extends ClassImpl implements Navigatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Tag> getNavigationClassAttribute() {
+	public EList<UIComponent> getNavigationClassAttribute() {
 		if (navigationClassAttribute == null) {
-			navigationClassAttribute = new EObjectContainmentEList<Tag>(Tag.class, this, FramewebPackage.NAVIGATION_CLASS__NAVIGATION_CLASS_ATTRIBUTE);
+			navigationClassAttribute = new EObjectContainmentEList<UIComponent>(UIComponent.class, this, FramewebPackage.NAVIGATION_CLASS__NAVIGATION_CLASS_ATTRIBUTE);
 		}
 		return navigationClassAttribute;
 	}
@@ -145,7 +146,7 @@ public abstract class NavigationClassImpl extends ClassImpl implements Navigatio
 				return;
 			case FramewebPackage.NAVIGATION_CLASS__NAVIGATION_CLASS_ATTRIBUTE:
 				getNavigationClassAttribute().clear();
-				getNavigationClassAttribute().addAll((Collection<? extends Tag>)newValue);
+				getNavigationClassAttribute().addAll((Collection<? extends UIComponent>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

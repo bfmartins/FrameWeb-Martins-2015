@@ -58,7 +58,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case FramewebPackage.FRAMEWEB: return createFrameweb();
-			case FramewebPackage.FRAMEWORK: return createFramework();
+			case FramewebPackage.FRAMEWORK_PROFILE: return createFrameworkProfile();
 			case FramewebPackage.DOMAIN_MODEL: return createDomainModel();
 			case FramewebPackage.NAVIGATION_MODEL: return createNavigationModel();
 			case FramewebPackage.APPLICATION_MODEL: return createApplicationModel();
@@ -84,14 +84,13 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.SERVICE_INTERFACE: return createServiceInterface();
 			case FramewebPackage.SERVICE_GENERALIZATION: return createServiceGeneralization();
 			case FramewebPackage.SERVICE_NAVIGATION_ASSOCIATION: return createServiceNavigationAssociation();
-			case FramewebPackage.DOMAIN_CLASS: return (EObject)createDomainClass();
+			case FramewebPackage.DOMAIN_CLASS: return createDomainClass();
 			case FramewebPackage.CONSTANT_NAME: return createConstantName();
 			case FramewebPackage.DOMAIN_TABLE_NAME: return createDomainTableName();
-			case FramewebPackage.FRAME_WORK_NAME: return createFrameWorkName();
 			case FramewebPackage.DOMAIN_COLUMN_NAME: return createDomainColumnName();
 			case FramewebPackage.DAO_INTERFACE_NAME: return createDAOInterfaceName();
 			case FramewebPackage.DAO_CLASS_NAME: return createDAOClassName();
-			case FramewebPackage.RESULT: return (EObject)createResult();
+			case FramewebPackage.RESULT: return createResult();
 			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY: return createFrontControllerDependency();
 			case FramewebPackage.PAGE_DEPENDENCY: return createPageDependency();
 			case FramewebPackage.CHAINING_DEPENDENCY: return createChainingDependency();
@@ -106,14 +105,13 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.CONTROLLER_PACKAGE: return createControllerPackage();
 			case FramewebPackage.PERSISTENCE_PACKAGE: return createPersistencePackage();
 			case FramewebPackage.APPLICATION_PACKAGE: return createApplicationPackage();
-			case FramewebPackage.UI_COMPONENT: return (EObject)createUIComponent();
+			case FramewebPackage.UI_COMPONENT: return createUIComponent();
 			case FramewebPackage.RESULT_TYPE: return createResultType();
 			case FramewebPackage.DOMAIN_GENERALIZATION: return createDomainGeneralization();
 			case FramewebPackage.JQUERY: return createJQuery();
+			case FramewebPackage.UI_COMPONENT_FIELD: return (EObject)createUIComponentField();
 			case FramewebPackage.TAG_LIB: return createTagLib();
-			case FramewebPackage.RULE: return createRule();
 			case FramewebPackage.TAG: return createTag();
-			case FramewebPackage.ANOTATION: return createAnotation();
 			case FramewebPackage.NAVIGATION_COMPOSITION_PART: return createNavigationCompositionPart();
 			case FramewebPackage.NAVIGATION_COMPOSITION_WHOLE: return createNavigationCompositionWhole();
 			case FramewebPackage.RESULT_SET: return createResultSet();
@@ -125,9 +123,28 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.DOMAIN_CONSTRAINTS: return createDomainConstraints();
 			case FramewebPackage.DOMAIN_PROPERTY: return createDomainProperty();
 			case FramewebPackage.DAO_GENERALIZATION: return createDAOGeneralization();
-			case FramewebPackage.MAPPING_SET: return createMappingSet();
-			case FramewebPackage.CLASS_MAPPING_KIND: return createClassMappingKind();
-			case FramewebPackage.ATTRIBUTE_MAPPING_KIND: return createAttributeMappingKind();
+			case FramewebPackage.MAPPING_LIB: return createMappingLib();
+			case FramewebPackage.CLASS_MAPPING: return createClassMapping();
+			case FramewebPackage.ATTRIBUTE_MAPPING: return createAttributeMapping();
+			case FramewebPackage.DOMAIN_GENERALIZATION_SET: return createDomainGeneralizationSet();
+			case FramewebPackage.TAG_EXTENSION: return createTagExtension();
+			case FramewebPackage.FRAMEWORK: return createFramework();
+			case FramewebPackage.CONTROLLER_EXTENSION: return createControllerExtension();
+			case FramewebPackage.CONTROLLER: return createController();
+			case FramewebPackage.CONTROLLER_SET: return createControllerSet();
+			case FramewebPackage.RESULT_EXTENSION: return createResultExtension();
+			case FramewebPackage.CLASS_MAPPING_EXTENSION: return createClassMappingExtension();
+			case FramewebPackage.ATTRIBUTE_MAPPING_EXTENSION: return createAttributeMappingExtension();
+			case FramewebPackage.CONTROLLER_EXTENSION_END: return createControllerExtensionEnd();
+			case FramewebPackage.TAG_EXTENSION_END: return createTagExtensionEnd();
+			case FramewebPackage.REULT_EXTENSION_END: return createReultExtensionEnd();
+			case FramewebPackage.CLASS_MAPPING_EXTENSION_END: return createClassMappingExtensionEnd();
+			case FramewebPackage.ATTRIBUTE_MAPPING_EXTENSION_END: return createAttributeMappingExtensionEnd();
+			case FramewebPackage.CONTROLLER_PROPERTY: return createControllerProperty();
+			case FramewebPackage.TAG_PROPERTY: return createTagProperty();
+			case FramewebPackage.RESULT_PROPERTY: return createResultProperty();
+			case FramewebPackage.CLASS_MAPPING_PROPERY: return createClassMappingPropery();
+			case FramewebPackage.ATTRIBUTE_MAPPING_PROPERTY: return createAttributeMappingProperty();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -159,10 +176,8 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 				return createConstantNameListFromString(eDataType, initialValue);
 			case FramewebPackage.INHERITANCE_MAPPING:
 				return createInheritanceMappingFromString(eDataType, initialValue);
-			case FramewebPackage.NAVIGATION_CONSTRAINT_KIND:
-				return createNavigationConstraintKindFromString(eDataType, initialValue);
-			case FramewebPackage.RESULT_DATA_TYPE:
-				return createResultDataTypeFromString(eDataType, initialValue);
+			case FramewebPackage.FRAMEWORK_KIND_LIST:
+				return createFrameworkKindListFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -194,10 +209,8 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 				return convertConstantNameListToString(eDataType, instanceValue);
 			case FramewebPackage.INHERITANCE_MAPPING:
 				return convertInheritanceMappingToString(eDataType, instanceValue);
-			case FramewebPackage.NAVIGATION_CONSTRAINT_KIND:
-				return convertNavigationConstraintKindToString(eDataType, instanceValue);
-			case FramewebPackage.RESULT_DATA_TYPE:
-				return convertResultDataTypeToString(eDataType, instanceValue);
+			case FramewebPackage.FRAMEWORK_KIND_LIST:
+				return convertFrameworkKindListToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -218,9 +231,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Framework createFramework() {
-		FrameworkImpl framework = new FrameworkImpl();
-		return framework;
+	public FrameworkProfile createFrameworkProfile() {
+		FrameworkProfileImpl frameworkProfile = new FrameworkProfileImpl();
+		return frameworkProfile;
 	}
 
 	/**
@@ -478,7 +491,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ClassMappingKind createDomainClass() {
+	public DomainClass createDomainClass() {
 		DomainClassImpl domainClass = new DomainClassImpl();
 		return domainClass;
 	}
@@ -501,16 +514,6 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	public DomainTableName createDomainTableName() {
 		DomainTableNameImpl domainTableName = new DomainTableNameImpl();
 		return domainTableName;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FrameWorkName createFrameWorkName() {
-		FrameWorkNameImpl frameWorkName = new FrameWorkNameImpl();
-		return frameWorkName;
 	}
 
 	/**
@@ -548,7 +551,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ResultType createResult() {
+	public Result createResult() {
 		ResultImpl result = new ResultImpl();
 		return result;
 	}
@@ -698,7 +701,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Tag createUIComponent() {
+	public UIComponent createUIComponent() {
 		UIComponentImpl uiComponent = new UIComponentImpl();
 		return uiComponent;
 	}
@@ -738,6 +741,16 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public UIComponent createUIComponentField() {
+		UIComponentFieldImpl uiComponentField = new UIComponentFieldImpl();
+		return uiComponentField;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public TagLib createTagLib() {
 		TagLibImpl tagLib = new TagLibImpl();
 		return tagLib;
@@ -748,29 +761,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Rule createRule() {
-		RuleImpl rule = new RuleImpl();
-		return rule;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Tag createTag() {
 		TagImpl tag = new TagImpl();
 		return tag;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Anotation createAnotation() {
-		AnotationImpl anotation = new AnotationImpl();
-		return anotation;
 	}
 
 	/**
@@ -888,9 +881,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MappingSet createMappingSet() {
-		MappingSetImpl mappingSet = new MappingSetImpl();
-		return mappingSet;
+	public MappingLib createMappingLib() {
+		MappingLibImpl mappingLib = new MappingLibImpl();
+		return mappingLib;
 	}
 
 	/**
@@ -898,9 +891,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ClassMappingKind createClassMappingKind() {
-		ClassMappingKindImpl classMappingKind = new ClassMappingKindImpl();
-		return classMappingKind;
+	public ClassMapping createClassMapping() {
+		ClassMappingImpl classMapping = new ClassMappingImpl();
+		return classMapping;
 	}
 
 	/**
@@ -908,9 +901,199 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AttributeMappingKind createAttributeMappingKind() {
-		AttributeMappingKindImpl attributeMappingKind = new AttributeMappingKindImpl();
-		return attributeMappingKind;
+	public AttributeMapping createAttributeMapping() {
+		AttributeMappingImpl attributeMapping = new AttributeMappingImpl();
+		return attributeMapping;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DomainGeneralizationSet createDomainGeneralizationSet() {
+		DomainGeneralizationSetImpl domainGeneralizationSet = new DomainGeneralizationSetImpl();
+		return domainGeneralizationSet;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TagExtension createTagExtension() {
+		TagExtensionImpl tagExtension = new TagExtensionImpl();
+		return tagExtension;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Framework createFramework() {
+		FrameworkImpl framework = new FrameworkImpl();
+		return framework;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ControllerExtension createControllerExtension() {
+		ControllerExtensionImpl controllerExtension = new ControllerExtensionImpl();
+		return controllerExtension;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Controller createController() {
+		ControllerImpl controller = new ControllerImpl();
+		return controller;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ControllerSet createControllerSet() {
+		ControllerSetImpl controllerSet = new ControllerSetImpl();
+		return controllerSet;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultExtension createResultExtension() {
+		ResultExtensionImpl resultExtension = new ResultExtensionImpl();
+		return resultExtension;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ClassMappingExtension createClassMappingExtension() {
+		ClassMappingExtensionImpl classMappingExtension = new ClassMappingExtensionImpl();
+		return classMappingExtension;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AttributeMappingExtension createAttributeMappingExtension() {
+		AttributeMappingExtensionImpl attributeMappingExtension = new AttributeMappingExtensionImpl();
+		return attributeMappingExtension;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ControllerExtensionEnd createControllerExtensionEnd() {
+		ControllerExtensionEndImpl controllerExtensionEnd = new ControllerExtensionEndImpl();
+		return controllerExtensionEnd;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TagExtensionEnd createTagExtensionEnd() {
+		TagExtensionEndImpl tagExtensionEnd = new TagExtensionEndImpl();
+		return tagExtensionEnd;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReultExtensionEnd createReultExtensionEnd() {
+		ReultExtensionEndImpl reultExtensionEnd = new ReultExtensionEndImpl();
+		return reultExtensionEnd;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ClassMappingExtensionEnd createClassMappingExtensionEnd() {
+		ClassMappingExtensionEndImpl classMappingExtensionEnd = new ClassMappingExtensionEndImpl();
+		return classMappingExtensionEnd;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AttributeMappingExtensionEnd createAttributeMappingExtensionEnd() {
+		AttributeMappingExtensionEndImpl attributeMappingExtensionEnd = new AttributeMappingExtensionEndImpl();
+		return attributeMappingExtensionEnd;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ControllerProperty createControllerProperty() {
+		ControllerPropertyImpl controllerProperty = new ControllerPropertyImpl();
+		return controllerProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TagProperty createTagProperty() {
+		TagPropertyImpl tagProperty = new TagPropertyImpl();
+		return tagProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultProperty createResultProperty() {
+		ResultPropertyImpl resultProperty = new ResultPropertyImpl();
+		return resultProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ClassMappingPropery createClassMappingPropery() {
+		ClassMappingProperyImpl classMappingPropery = new ClassMappingProperyImpl();
+		return classMappingPropery;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AttributeMappingProperty createAttributeMappingProperty() {
+		AttributeMappingPropertyImpl attributeMappingProperty = new AttributeMappingPropertyImpl();
+		return attributeMappingProperty;
 	}
 
 	/**
@@ -1098,8 +1281,8 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NavigationConstraintKind createNavigationConstraintKindFromString(EDataType eDataType, String initialValue) {
-		NavigationConstraintKind result = NavigationConstraintKind.get(initialValue);
+	public FrameworkKindList createFrameworkKindListFromString(EDataType eDataType, String initialValue) {
+		FrameworkKindList result = FrameworkKindList.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -1109,26 +1292,8 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertNavigationConstraintKindToString(EDataType eDataType, Object instanceValue) {
+	public String convertFrameworkKindListToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Object createResultDataTypeFromString(EDataType eDataType, String initialValue) {
-		return super.createFromString(eDataType, initialValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertResultDataTypeToString(EDataType eDataType, Object instanceValue) {
-		return super.convertToString(eDataType, instanceValue);
 	}
 
 	/**

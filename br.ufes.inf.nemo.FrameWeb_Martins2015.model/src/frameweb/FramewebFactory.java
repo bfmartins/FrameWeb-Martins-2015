@@ -31,13 +31,13 @@ public interface FramewebFactory extends EFactory {
 	Frameweb createFrameweb();
 
 	/**
-	 * Returns a new object of class '<em>Framework</em>'.
+	 * Returns a new object of class '<em>Framework Profile</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Framework</em>'.
+	 * @return a new object of class '<em>Framework Profile</em>'.
 	 * @generated
 	 */
-	Framework createFramework();
+	FrameworkProfile createFrameworkProfile();
 
 	/**
 	 * Returns a new object of class '<em>Domain Model</em>'.
@@ -271,7 +271,7 @@ public interface FramewebFactory extends EFactory {
 	 * @return a new object of class '<em>Domain Class</em>'.
 	 * @generated
 	 */
-	ClassMappingKind createDomainClass();
+	DomainClass createDomainClass();
 
 	/**
 	 * Returns a new object of class '<em>Constant Name</em>'.
@@ -290,15 +290,6 @@ public interface FramewebFactory extends EFactory {
 	 * @generated
 	 */
 	DomainTableName createDomainTableName();
-
-	/**
-	 * Returns a new object of class '<em>Frame Work Name</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Frame Work Name</em>'.
-	 * @generated
-	 */
-	FrameWorkName createFrameWorkName();
 
 	/**
 	 * Returns a new object of class '<em>Domain Column Name</em>'.
@@ -334,7 +325,7 @@ public interface FramewebFactory extends EFactory {
 	 * @return a new object of class '<em>Result</em>'.
 	 * @generated
 	 */
-	ResultType createResult();
+	Result createResult();
 
 	/**
 	 * Returns a new object of class '<em>Front Controller Dependency</em>'.
@@ -469,7 +460,7 @@ public interface FramewebFactory extends EFactory {
 	 * @return a new object of class '<em>UI Component</em>'.
 	 * @generated
 	 */
-	Tag createUIComponent();
+	UIComponent createUIComponent();
 
 	/**
 	 * Returns a new object of class '<em>Result Type</em>'.
@@ -499,6 +490,15 @@ public interface FramewebFactory extends EFactory {
 	JQuery createJQuery();
 
 	/**
+	 * Returns a new object of class '<em>UI Component Field</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>UI Component Field</em>'.
+	 * @generated
+	 */
+	UIComponent createUIComponentField();
+
+	/**
 	 * Returns a new object of class '<em>Tag Lib</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -508,15 +508,6 @@ public interface FramewebFactory extends EFactory {
 	TagLib createTagLib();
 
 	/**
-	 * Returns a new object of class '<em>Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Rule</em>'.
-	 * @generated
-	 */
-	Rule createRule();
-
-	/**
 	 * Returns a new object of class '<em>Tag</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -524,15 +515,6 @@ public interface FramewebFactory extends EFactory {
 	 * @generated
 	 */
 	Tag createTag();
-
-	/**
-	 * Returns a new object of class '<em>Anotation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Anotation</em>'.
-	 * @generated
-	 */
-	Anotation createAnotation();
 
 	/**
 	 * Returns a new object of class '<em>Navigation Composition Part</em>'.
@@ -634,31 +616,202 @@ public interface FramewebFactory extends EFactory {
 	DAOGeneralization createDAOGeneralization();
 
 	/**
-	 * Returns a new object of class '<em>Mapping Set</em>'.
+	 * Returns a new object of class '<em>Mapping Lib</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Mapping Set</em>'.
+	 * @return a new object of class '<em>Mapping Lib</em>'.
 	 * @generated
 	 */
-	MappingSet createMappingSet();
+	MappingLib createMappingLib();
 
 	/**
-	 * Returns a new object of class '<em>Class Mapping Kind</em>'.
+	 * Returns a new object of class '<em>Class Mapping</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Class Mapping Kind</em>'.
+	 * @return a new object of class '<em>Class Mapping</em>'.
 	 * @generated
 	 */
-	ClassMappingKind createClassMappingKind();
+	ClassMapping createClassMapping();
 
 	/**
-	 * Returns a new object of class '<em>Attribute Mapping Kind</em>'.
+	 * Returns a new object of class '<em>Attribute Mapping</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Attribute Mapping Kind</em>'.
+	 * @return a new object of class '<em>Attribute Mapping</em>'.
 	 * @generated
 	 */
-	AttributeMappingKind createAttributeMappingKind();
+	AttributeMapping createAttributeMapping();
+
+	/**
+	 * Returns a new object of class '<em>Domain Generalization Set</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Domain Generalization Set</em>'.
+	 * @generated
+	 */
+	DomainGeneralizationSet createDomainGeneralizationSet();
+
+	/**
+	 * Returns a new object of class '<em>Tag Extension</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Tag Extension</em>'.
+	 * @generated
+	 */
+	TagExtension createTagExtension();
+
+	/**
+	 * Returns a new object of class '<em>Framework</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Framework</em>'.
+	 * @generated
+	 */
+	Framework createFramework();
+
+	/**
+	 * Returns a new object of class '<em>Controller Extension</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Controller Extension</em>'.
+	 * @generated
+	 */
+	ControllerExtension createControllerExtension();
+
+	/**
+	 * Returns a new object of class '<em>Controller</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Controller</em>'.
+	 * @generated
+	 */
+	Controller createController();
+
+	/**
+	 * Returns a new object of class '<em>Controller Set</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Controller Set</em>'.
+	 * @generated
+	 */
+	ControllerSet createControllerSet();
+
+	/**
+	 * Returns a new object of class '<em>Result Extension</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Extension</em>'.
+	 * @generated
+	 */
+	ResultExtension createResultExtension();
+
+	/**
+	 * Returns a new object of class '<em>Class Mapping Extension</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Class Mapping Extension</em>'.
+	 * @generated
+	 */
+	ClassMappingExtension createClassMappingExtension();
+
+	/**
+	 * Returns a new object of class '<em>Attribute Mapping Extension</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Attribute Mapping Extension</em>'.
+	 * @generated
+	 */
+	AttributeMappingExtension createAttributeMappingExtension();
+
+	/**
+	 * Returns a new object of class '<em>Controller Extension End</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Controller Extension End</em>'.
+	 * @generated
+	 */
+	ControllerExtensionEnd createControllerExtensionEnd();
+
+	/**
+	 * Returns a new object of class '<em>Tag Extension End</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Tag Extension End</em>'.
+	 * @generated
+	 */
+	TagExtensionEnd createTagExtensionEnd();
+
+	/**
+	 * Returns a new object of class '<em>Reult Extension End</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Reult Extension End</em>'.
+	 * @generated
+	 */
+	ReultExtensionEnd createReultExtensionEnd();
+
+	/**
+	 * Returns a new object of class '<em>Class Mapping Extension End</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Class Mapping Extension End</em>'.
+	 * @generated
+	 */
+	ClassMappingExtensionEnd createClassMappingExtensionEnd();
+
+	/**
+	 * Returns a new object of class '<em>Attribute Mapping Extension End</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Attribute Mapping Extension End</em>'.
+	 * @generated
+	 */
+	AttributeMappingExtensionEnd createAttributeMappingExtensionEnd();
+
+	/**
+	 * Returns a new object of class '<em>Controller Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Controller Property</em>'.
+	 * @generated
+	 */
+	ControllerProperty createControllerProperty();
+
+	/**
+	 * Returns a new object of class '<em>Tag Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Tag Property</em>'.
+	 * @generated
+	 */
+	TagProperty createTagProperty();
+
+	/**
+	 * Returns a new object of class '<em>Result Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Property</em>'.
+	 * @generated
+	 */
+	ResultProperty createResultProperty();
+
+	/**
+	 * Returns a new object of class '<em>Class Mapping Propery</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Class Mapping Propery</em>'.
+	 * @generated
+	 */
+	ClassMappingPropery createClassMappingPropery();
+
+	/**
+	 * Returns a new object of class '<em>Attribute Mapping Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Attribute Mapping Property</em>'.
+	 * @generated
+	 */
+	AttributeMappingProperty createAttributeMappingProperty();
 
 	/**
 	 * Returns the package supported by this factory.

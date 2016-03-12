@@ -4,16 +4,14 @@ package frameweb.impl;
 
 import frameweb.FramewebPackage;
 import frameweb.IOParameter;
+import frameweb.UIComponent;
 
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -39,7 +37,7 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Tag> display;
+	protected EList<UIComponent> display;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -65,9 +63,9 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Tag> getDisplay() {
+	public EList<UIComponent> getDisplay() {
 		if (display == null) {
-			display = new EObjectWithInverseResolvingEList<Tag>(Tag.class, this, FramewebPackage.IO_PARAMETER__DISPLAY, FramewebPackage.UI_COMPONENT_FIELD__INJECT);
+			display = new EObjectWithInverseResolvingEList<UIComponent>(UIComponent.class, this, FramewebPackage.IO_PARAMETER__DISPLAY, FramewebPackage.UI_COMPONENT_FIELD__INJECT);
 		}
 		return display;
 	}
@@ -126,7 +124,7 @@ public class IOParameterImpl extends NavigationAttributeImpl implements IOParame
 		switch (featureID) {
 			case FramewebPackage.IO_PARAMETER__DISPLAY:
 				getDisplay().clear();
-				getDisplay().addAll((Collection<? extends Tag>)newValue);
+				getDisplay().addAll((Collection<? extends UIComponent>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

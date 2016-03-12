@@ -78,7 +78,7 @@ public class FramewebItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(FramewebPackage.Literals.FRAMEWEB__COMPOSE);
-			childrenFeatures.add(FramewebPackage.Literals.FRAMEWEB__USES);
+			childrenFeatures.add(FramewebPackage.Literals.FRAMEWEB__CONFIGURES);
 		}
 		return childrenFeatures;
 	}
@@ -132,7 +132,7 @@ public class FramewebItemProvider
 
 		switch (notification.getFeatureID(Frameweb.class)) {
 			case FramewebPackage.FRAMEWEB__COMPOSE:
-			case FramewebPackage.FRAMEWEB__USES:
+			case FramewebPackage.FRAMEWEB__CONFIGURES:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -172,8 +172,8 @@ public class FramewebItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FramewebPackage.Literals.FRAMEWEB__USES,
-				 FramewebFactory.eINSTANCE.createFramework()));
+				(FramewebPackage.Literals.FRAMEWEB__CONFIGURES,
+				 FramewebFactory.eINSTANCE.createFrameworkProfile()));
 	}
 
 	/**

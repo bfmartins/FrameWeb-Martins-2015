@@ -147,6 +147,11 @@ public class ApplicationPackageItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
+				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createPageConstraint()));
 
 		newChildDescriptors.add
@@ -172,7 +177,7 @@ public class ApplicationPackageItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__NESTED_PACKAGE,
-				 FramewebFactory.eINSTANCE.createFramework()));
+				 FramewebFactory.eINSTANCE.createFrameworkProfile()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -232,7 +237,37 @@ public class ApplicationPackageItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__NESTED_PACKAGE,
-				 FramewebFactory.eINSTANCE.createMappingSet()));
+				 FramewebFactory.eINSTANCE.createMappingLib()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__NESTED_PACKAGE,
+				 FramewebFactory.eINSTANCE.createControllerSet()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__OWNED_STEREOTYPE,
+				 FramewebFactory.eINSTANCE.createResultType()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__OWNED_STEREOTYPE,
+				 FramewebFactory.eINSTANCE.createTag()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__OWNED_STEREOTYPE,
+				 FramewebFactory.eINSTANCE.createClassMapping()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__OWNED_STEREOTYPE,
+				 FramewebFactory.eINSTANCE.createAttributeMapping()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__OWNED_STEREOTYPE,
+				 FramewebFactory.eINSTANCE.createController()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -317,17 +352,47 @@ public class ApplicationPackageItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
-				 FramewebFactory.eINSTANCE.createClassMappingKind()));
+				 FramewebFactory.eINSTANCE.createClassMapping()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
-				 FramewebFactory.eINSTANCE.createAttributeMappingKind()));
+				 FramewebFactory.eINSTANCE.createAttributeMapping()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
+				 FramewebFactory.eINSTANCE.createTagExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
+				 FramewebFactory.eINSTANCE.createControllerExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
+				 FramewebFactory.eINSTANCE.createController()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
+				 FramewebFactory.eINSTANCE.createResultExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
+				 FramewebFactory.eINSTANCE.createClassMappingExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
+				 FramewebFactory.eINSTANCE.createAttributeMappingExtension()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createFramework()));
+				 FramewebFactory.eINSTANCE.createFrameworkProfile()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -393,6 +458,11 @@ public class ApplicationPackageItemProvider extends PackageItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 FramewebFactory.eINSTANCE.createNavigationAssociation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -517,17 +587,62 @@ public class ApplicationPackageItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createMappingSet()));
+				 FramewebFactory.eINSTANCE.createMappingLib()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createClassMappingKind()));
+				 FramewebFactory.eINSTANCE.createClassMapping()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createAttributeMappingKind()));
+				 FramewebFactory.eINSTANCE.createAttributeMapping()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createDomainGeneralizationSet()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createTagExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createControllerExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createController()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createControllerSet()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createResultExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createClassMappingExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createAttributeMappingExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PROFILE_APPLICATION,
+				 FramewebFactory.eINSTANCE.createFramework()));
 
 		newChildDescriptors.add
 			(createChildParameter

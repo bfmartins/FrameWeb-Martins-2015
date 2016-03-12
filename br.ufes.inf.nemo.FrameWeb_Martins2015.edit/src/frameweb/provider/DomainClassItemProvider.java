@@ -3,9 +3,9 @@
 package frameweb.provider;
 
 
+import frameweb.DomainClass;
 import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
-import frameweb.ClassMappingKind;
 
 import java.util.Collection;
 import java.util.List;
@@ -27,7 +27,7 @@ import org.eclipse.uml2.uml.UMLPackage;
 import org.eclipse.uml2.uml.edit.providers.ClassItemProvider;
 
 /**
- * This is the item provider adapter for a {@link ClassMappingKind} object.
+ * This is the item provider adapter for a {@link frameweb.DomainClass} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
@@ -120,7 +120,7 @@ public class DomainClassItemProvider extends ClassItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((ClassMappingKind)object).getName();
+		String label = ((DomainClass)object).getName();
 		return label == null || label.length() == 0 ?
 			getString("_UI_DomainClass_type") :
 			getString("_UI_DomainClass_type") + " " + label;
@@ -138,7 +138,7 @@ public class DomainClassItemProvider extends ClassItemProvider {
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(Object.class)) {
+		switch (notification.getFeatureID(DomainClass.class)) {
 			case FramewebPackage.DOMAIN_CLASS__TABLE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
@@ -160,6 +160,11 @@ public class DomainClassItemProvider extends ClassItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
+				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -254,6 +259,11 @@ public class DomainClassItemProvider extends ClassItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createUIComponentField()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
 				 FramewebFactory.eINSTANCE.createNavigationCompositionPart()));
 
 		newChildDescriptors.add
@@ -268,8 +278,53 @@ public class DomainClassItemProvider extends ClassItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(UMLPackage.Literals.CLASS__OWNED_OPERATION,
-				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
+				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createControllerExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createTagExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createReultExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createClassMappingExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createAttributeMappingExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createControllerProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createTagProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createResultProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createClassMappingPropery()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
+				 FramewebFactory.eINSTANCE.createAttributeMappingProperty()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -369,12 +424,42 @@ public class DomainClassItemProvider extends ClassItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createClassMappingKind()));
+				 FramewebFactory.eINSTANCE.createClassMapping()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createAttributeMappingKind()));
+				 FramewebFactory.eINSTANCE.createAttributeMapping()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createTagExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createControllerExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createController()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createResultExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createClassMappingExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
+				 FramewebFactory.eINSTANCE.createAttributeMappingExtension()));
 
 		newChildDescriptors.add
 			(createChildParameter

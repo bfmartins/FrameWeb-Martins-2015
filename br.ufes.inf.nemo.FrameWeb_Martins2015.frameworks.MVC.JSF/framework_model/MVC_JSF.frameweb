@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015">
-  <Uses name="JSF" frameworkCategory="mvc">
+  <Uses name="JSF" category="mvc">
     <packagedElement xsi:type="frameweb:TagLib" name="JSFhtml" URI="http://java.sun.com/jsf/html" prefix="h">
       <packagedElement xsi:type="frameweb:Tag" name="body"/>
       <packagedElement xsi:type="frameweb:Tag" name="button"/>

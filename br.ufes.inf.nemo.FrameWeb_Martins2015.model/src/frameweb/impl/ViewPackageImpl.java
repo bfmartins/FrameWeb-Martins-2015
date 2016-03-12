@@ -4,6 +4,7 @@ package frameweb.impl;
 
 import frameweb.FramewebPackage;
 import frameweb.NavigationClass;
+import frameweb.Result;
 import frameweb.ViewPackage;
 
 import java.util.Collection;
@@ -51,7 +52,7 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<ResultType> viewPackageResult;
+	protected EList<Result> viewPackageResult;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,9 +90,9 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ResultType> getViewPackageResult() {
+	public EList<Result> getViewPackageResult() {
 		if (viewPackageResult == null) {
-			viewPackageResult = new EObjectContainmentEList<ResultType>(ResultType.class, this, FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_RESULT);
+			viewPackageResult = new EObjectContainmentEList<Result>(Result.class, this, FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_RESULT);
 		}
 		return viewPackageResult;
 	}
@@ -143,7 +144,7 @@ public class ViewPackageImpl extends NavigationPackageImpl implements ViewPackag
 				return;
 			case FramewebPackage.VIEW_PACKAGE__VIEW_PACKAGE_RESULT:
 				getViewPackageResult().clear();
-				getViewPackageResult().addAll((Collection<? extends ResultType>)newValue);
+				getViewPackageResult().addAll((Collection<? extends Result>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

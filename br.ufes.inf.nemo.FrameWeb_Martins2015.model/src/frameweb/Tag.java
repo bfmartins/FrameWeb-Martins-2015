@@ -2,6 +2,7 @@
  */
 package frameweb;
 
+import org.eclipse.uml2.uml.Stereotype;
 
 /**
  * <!-- begin-user-doc -->
@@ -13,5 +14,5 @@ package frameweb;
  * @model
  * @generated
  */
-public interface Tag extends org.eclipse.uml2.uml.Class {
+public interface Tag extends Stereotype {
 } // Tag

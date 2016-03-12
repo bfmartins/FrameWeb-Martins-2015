@@ -19,14 +19,14 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum FrameworkCategoryList implements Enumerator {
 	/**
-	 * The '<em><b>MVC</b></em>' literal object.
+	 * The '<em><b>Front Controller</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #MVC_VALUE
+	 * @see #FRONT_CONTROLLER_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	MVC(1, "MVC", "mvc"),
+	FRONT_CONTROLLER(0, "FrontController", "FrontController"),
 
 	/**
 	 * The '<em><b>Dependency Injection</b></em>' literal object.
@@ -36,42 +36,32 @@ public enum FrameworkCategoryList implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	DEPENDENCY_INJECTION(2, "DependencyInjection", "dependencyInjection"),
+	DEPENDENCY_INJECTION(1, "DependencyInjection", "DependencyInjection"),
 
 	/**
-	 * The '<em><b>ORM</b></em>' literal object.
+	 * The '<em><b>Objeto Relacional</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ORM_VALUE
+	 * @see #OBJETO_RELACIONAL_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ORM(3, "ORM", "orm"),
+	OBJETO_RELACIONAL(2, "ObjetoRelacional", "ObjetoRelacional");
 
 	/**
-	 * The '<em><b>Standard</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #STANDARD_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	STANDARD(0, "Standard", "standard");
-
-	/**
-	 * The '<em><b>MVC</b></em>' literal value.
+	 * The '<em><b>Front Controller</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>MVC</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Front Controller</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #MVC
-	 * @model literal="mvc"
+	 * @see #FRONT_CONTROLLER
+	 * @model name="FrontController"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int MVC_VALUE = 1;
+	public static final int FRONT_CONTROLLER_VALUE = 0;
 
 	/**
 	 * The '<em><b>Dependency Injection</b></em>' literal value.
@@ -82,41 +72,26 @@ public enum FrameworkCategoryList implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #DEPENDENCY_INJECTION
-	 * @model name="DependencyInjection" literal="dependencyInjection"
+	 * @model name="DependencyInjection"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int DEPENDENCY_INJECTION_VALUE = 2;
+	public static final int DEPENDENCY_INJECTION_VALUE = 1;
 
 	/**
-	 * The '<em><b>ORM</b></em>' literal value.
+	 * The '<em><b>Objeto Relacional</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>ORM</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Objeto Relacional</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #ORM
-	 * @model literal="orm"
+	 * @see #OBJETO_RELACIONAL
+	 * @model name="ObjetoRelacional"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ORM_VALUE = 3;
-
-	/**
-	 * The '<em><b>Standard</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Standard</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #STANDARD
-	 * @model name="Standard" literal="standard"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int STANDARD_VALUE = 0;
+	public static final int OBJETO_RELACIONAL_VALUE = 2;
 
 	/**
 	 * An array of all the '<em><b>Framework Category List</b></em>' enumerators.
@@ -126,10 +101,9 @@ public enum FrameworkCategoryList implements Enumerator {
 	 */
 	private static final FrameworkCategoryList[] VALUES_ARRAY =
 		new FrameworkCategoryList[] {
-			MVC,
+			FRONT_CONTROLLER,
 			DEPENDENCY_INJECTION,
-			ORM,
-			STANDARD,
+			OBJETO_RELACIONAL,
 		};
 
 	/**
@@ -180,10 +154,9 @@ public enum FrameworkCategoryList implements Enumerator {
 	 */
 	public static FrameworkCategoryList get(int value) {
 		switch (value) {
-			case MVC_VALUE: return MVC;
+			case FRONT_CONTROLLER_VALUE: return FRONT_CONTROLLER;
 			case DEPENDENCY_INJECTION_VALUE: return DEPENDENCY_INJECTION;
-			case ORM_VALUE: return ORM;
-			case STANDARD_VALUE: return STANDARD;
+			case OBJETO_RELACIONAL_VALUE: return OBJETO_RELACIONAL;
 		}
 		return null;
 	}

@@ -7,7 +7,7 @@ import frameweb.ResultType;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.uml2.uml.internal.impl.ClassImpl;
+import org.eclipse.uml2.uml.internal.impl.StereotypeImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,7 +18,7 @@ import org.eclipse.uml2.uml.internal.impl.ClassImpl;
  *
  * @generated
  */
-public class ResultTypeImpl extends ClassImpl implements ResultType {
+public class ResultTypeImpl extends StereotypeImpl implements ResultType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

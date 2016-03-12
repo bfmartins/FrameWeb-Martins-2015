@@ -143,7 +143,8 @@ public class TemplateItemProvider extends NavigationClassItemProvider {
 			childFeature == FramewebPackage.Literals.NAVIGATION_CLASS__NAVIGATION_CLASS_COMPOSITION ||
 			childFeature == UMLPackage.Literals.ENCAPSULATED_CLASSIFIER__OWNED_PORT ||
 			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__CLASSIFIER_BEHAVIOR ||
-			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR;
+			childFeature == UMLPackage.Literals.BEHAVIORED_CLASSIFIER__OWNED_BEHAVIOR ||
+			childFeature == FramewebPackage.Literals.NAVIGATION_CLASS__NAVIGATION_CLASS_ATTRIBUTE;
 
 		if (qualify) {
 			return getString

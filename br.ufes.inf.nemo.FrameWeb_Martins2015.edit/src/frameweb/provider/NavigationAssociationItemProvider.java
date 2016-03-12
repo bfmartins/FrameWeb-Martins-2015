@@ -145,6 +145,11 @@ public class NavigationAssociationItemProvider extends AssociationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
+				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
 				 FramewebFactory.eINSTANCE.createPageConstraint()));
 
 		newChildDescriptors.add
@@ -235,6 +240,11 @@ public class NavigationAssociationItemProvider extends AssociationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createUIComponentField()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
 				 FramewebFactory.eINSTANCE.createNavigationCompositionPart()));
 
 		newChildDescriptors.add
@@ -246,6 +256,56 @@ public class NavigationAssociationItemProvider extends AssociationItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
 				 FramewebFactory.eINSTANCE.createDomainProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createControllerExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createTagExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createReultExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createClassMappingExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createAttributeMappingExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createControllerProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createTagProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createResultProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createClassMappingPropery()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createAttributeMappingProperty()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -295,6 +355,11 @@ public class NavigationAssociationItemProvider extends AssociationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createUIComponentField()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
 				 FramewebFactory.eINSTANCE.createNavigationCompositionPart()));
 
 		newChildDescriptors.add
@@ -306,6 +371,56 @@ public class NavigationAssociationItemProvider extends AssociationItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
 				 FramewebFactory.eINSTANCE.createDomainProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createControllerExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createTagExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createReultExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createClassMappingExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createAttributeMappingExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createControllerProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createTagProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createResultProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createClassMappingPropery()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createAttributeMappingProperty()));
 
 		newChildDescriptors.add
 			(createChildParameter

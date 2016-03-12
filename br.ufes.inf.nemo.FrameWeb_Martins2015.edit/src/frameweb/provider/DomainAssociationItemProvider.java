@@ -52,14 +52,58 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addCollectionPropertyDescriptor(object);
-			addOrderPropertyDescriptor(object);
-			addCascadePropertyDescriptor(object);
-			addFetchPropertyDescriptor(object);
 			addSourceClassPropertyDescriptor(object);
 			addTargetClassPropertyDescriptor(object);
+			addCollectionPropertyDescriptor(object);
+			addCascadePropertyDescriptor(object);
+			addFetchPropertyDescriptor(object);
+			addOrderPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Source Class feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addSourceClassPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_DomainAssociation_SourceClass_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAssociation_SourceClass_feature", "_UI_DomainAssociation_type"),
+				 FramewebPackage.Literals.DOMAIN_ASSOCIATION__SOURCE_CLASS,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Target Class feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addTargetClassPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_DomainAssociation_TargetClass_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAssociation_TargetClass_feature", "_UI_DomainAssociation_type"),
+				 FramewebPackage.Literals.DOMAIN_ASSOCIATION__TARGET_CLASS,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**
@@ -76,28 +120,6 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 				 getString("_UI_DomainAssociation_collection_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAssociation_collection_feature", "_UI_DomainAssociation_type"),
 				 FramewebPackage.Literals.DOMAIN_ASSOCIATION__COLLECTION,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Order feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addOrderPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_DomainAssociation_order_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAssociation_order_feature", "_UI_DomainAssociation_type"),
-				 FramewebPackage.Literals.DOMAIN_ASSOCIATION__ORDER,
 				 true,
 				 false,
 				 false,
@@ -151,45 +173,23 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 	}
 
 	/**
-	 * This adds a property descriptor for the Source Class feature.
+	 * This adds a property descriptor for the Order feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addSourceClassPropertyDescriptor(Object object) {
+	protected void addOrderPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_DomainAssociation_SourceClass_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAssociation_SourceClass_feature", "_UI_DomainAssociation_type"),
-				 FramewebPackage.Literals.DOMAIN_ASSOCIATION__SOURCE_CLASS,
+				 getString("_UI_DomainAssociation_order_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAssociation_order_feature", "_UI_DomainAssociation_type"),
+				 FramewebPackage.Literals.DOMAIN_ASSOCIATION__ORDER,
 				 true,
 				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Target Class feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addTargetClassPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_DomainAssociation_TargetClass_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_DomainAssociation_TargetClass_feature", "_UI_DomainAssociation_type"),
-				 FramewebPackage.Literals.DOMAIN_ASSOCIATION__TARGET_CLASS,
-				 true,
 				 false,
-				 true,
-				 null,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -233,9 +233,9 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 
 		switch (notification.getFeatureID(DomainAssociation.class)) {
 			case FramewebPackage.DOMAIN_ASSOCIATION__COLLECTION:
-			case FramewebPackage.DOMAIN_ASSOCIATION__ORDER:
 			case FramewebPackage.DOMAIN_ASSOCIATION__CASCADE:
 			case FramewebPackage.DOMAIN_ASSOCIATION__FETCH:
+			case FramewebPackage.DOMAIN_ASSOCIATION__ORDER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}
@@ -252,6 +252,11 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
+				 FramewebFactory.eINSTANCE.createFrontControllerMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -346,6 +351,11 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createUIComponentField()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
 				 FramewebFactory.eINSTANCE.createNavigationCompositionPart()));
 
 		newChildDescriptors.add
@@ -357,6 +367,56 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
 				 FramewebFactory.eINSTANCE.createDomainProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createControllerExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createTagExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createReultExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createClassMappingExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createAttributeMappingExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createControllerProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createTagProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createResultProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createClassMappingPropery()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
+				 FramewebFactory.eINSTANCE.createAttributeMappingProperty()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -406,6 +466,11 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createUIComponentField()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
 				 FramewebFactory.eINSTANCE.createNavigationCompositionPart()));
 
 		newChildDescriptors.add
@@ -417,6 +482,56 @@ public class DomainAssociationItemProvider extends AssociationItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
 				 FramewebFactory.eINSTANCE.createDomainProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createControllerExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createTagExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createReultExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createClassMappingExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createAttributeMappingExtensionEnd()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createControllerProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createTagProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createResultProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createClassMappingPropery()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
+				 FramewebFactory.eINSTANCE.createAttributeMappingProperty()));
 	}
 
 	/**

@@ -7,7 +7,7 @@ import frameweb.Tag;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.uml2.uml.internal.impl.ClassImpl;
+import org.eclipse.uml2.uml.internal.impl.StereotypeImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,7 +18,7 @@ import org.eclipse.uml2.uml.internal.impl.ClassImpl;
  *
  * @generated
  */
-public class TagImpl extends ClassImpl implements Tag {
+public class TagImpl extends StereotypeImpl implements Tag {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

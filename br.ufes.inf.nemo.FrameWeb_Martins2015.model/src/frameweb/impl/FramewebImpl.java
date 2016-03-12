@@ -5,7 +5,7 @@ package frameweb.impl;
 import frameweb.FrameWebModel;
 import frameweb.Frameweb;
 import frameweb.FramewebPackage;
-import frameweb.Framework;
+import frameweb.FrameworkProfile;
 
 import java.util.Collection;
 
@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * <ul>
  *   <li>{@link frameweb.impl.FramewebImpl#getCompose <em>Compose</em>}</li>
- *   <li>{@link frameweb.impl.FramewebImpl#getUses <em>Uses</em>}</li>
+ *   <li>{@link frameweb.impl.FramewebImpl#getConfigures <em>Configures</em>}</li>
  * </ul>
  * </p>
  *
@@ -47,14 +47,14 @@ public class FramewebImpl extends MinimalEObjectImpl.Container implements Framew
 	protected EList<FrameWebModel> compose;
 
 	/**
-	 * The cached value of the '{@link #getUses() <em>Uses</em>}' containment reference list.
+	 * The cached value of the '{@link #getConfigures() <em>Configures</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getUses()
+	 * @see #getConfigures()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Framework> uses;
+	protected EList<FrameworkProfile> configures;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,11 +92,11 @@ public class FramewebImpl extends MinimalEObjectImpl.Container implements Framew
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Framework> getUses() {
-		if (uses == null) {
-			uses = new EObjectContainmentEList<Framework>(Framework.class, this, FramewebPackage.FRAMEWEB__USES);
+	public EList<FrameworkProfile> getConfigures() {
+		if (configures == null) {
+			configures = new EObjectContainmentEList<FrameworkProfile>(FrameworkProfile.class, this, FramewebPackage.FRAMEWEB__CONFIGURES);
 		}
-		return uses;
+		return configures;
 	}
 
 	/**
@@ -109,8 +109,8 @@ public class FramewebImpl extends MinimalEObjectImpl.Container implements Framew
 		switch (featureID) {
 			case FramewebPackage.FRAMEWEB__COMPOSE:
 				return ((InternalEList<?>)getCompose()).basicRemove(otherEnd, msgs);
-			case FramewebPackage.FRAMEWEB__USES:
-				return ((InternalEList<?>)getUses()).basicRemove(otherEnd, msgs);
+			case FramewebPackage.FRAMEWEB__CONFIGURES:
+				return ((InternalEList<?>)getConfigures()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -125,8 +125,8 @@ public class FramewebImpl extends MinimalEObjectImpl.Container implements Framew
 		switch (featureID) {
 			case FramewebPackage.FRAMEWEB__COMPOSE:
 				return getCompose();
-			case FramewebPackage.FRAMEWEB__USES:
-				return getUses();
+			case FramewebPackage.FRAMEWEB__CONFIGURES:
+				return getConfigures();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -144,9 +144,9 @@ public class FramewebImpl extends MinimalEObjectImpl.Container implements Framew
 				getCompose().clear();
 				getCompose().addAll((Collection<? extends FrameWebModel>)newValue);
 				return;
-			case FramewebPackage.FRAMEWEB__USES:
-				getUses().clear();
-				getUses().addAll((Collection<? extends Framework>)newValue);
+			case FramewebPackage.FRAMEWEB__CONFIGURES:
+				getConfigures().clear();
+				getConfigures().addAll((Collection<? extends FrameworkProfile>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -163,8 +163,8 @@ public class FramewebImpl extends MinimalEObjectImpl.Container implements Framew
 			case FramewebPackage.FRAMEWEB__COMPOSE:
 				getCompose().clear();
 				return;
-			case FramewebPackage.FRAMEWEB__USES:
-				getUses().clear();
+			case FramewebPackage.FRAMEWEB__CONFIGURES:
+				getConfigures().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -180,8 +180,8 @@ public class FramewebImpl extends MinimalEObjectImpl.Container implements Framew
 		switch (featureID) {
 			case FramewebPackage.FRAMEWEB__COMPOSE:
 				return compose != null && !compose.isEmpty();
-			case FramewebPackage.FRAMEWEB__USES:
-				return uses != null && !uses.isEmpty();
+			case FramewebPackage.FRAMEWEB__CONFIGURES:
+				return configures != null && !configures.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

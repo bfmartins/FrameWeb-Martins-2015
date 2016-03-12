@@ -2,19 +2,18 @@
  */
 package frameweb.impl;
 
+import frameweb.DomainClass;
 import frameweb.DomainGeneralization;
 import frameweb.FramewebPackage;
-import frameweb.InheritanceMapping;
 
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
-import org.eclipse.uml2.uml.internal.impl.AssociationImpl;
+import org.eclipse.uml2.uml.internal.impl.GeneralizationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +22,6 @@ import org.eclipse.uml2.uml.internal.impl.AssociationImpl;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link frameweb.impl.DomainGeneralizationImpl#getMapping <em>Mapping</em>}</li>
  *   <li>{@link frameweb.impl.DomainGeneralizationImpl#getTargetDomain <em>Target Domain</em>}</li>
  *   <li>{@link frameweb.impl.DomainGeneralizationImpl#getSourceDomain <em>Source Domain</em>}</li>
  * </ul>
@@ -31,27 +29,7 @@ import org.eclipse.uml2.uml.internal.impl.AssociationImpl;
  *
  * @generated
  */
-public class DomainGeneralizationImpl extends AssociationImpl implements DomainGeneralization {
-	/**
-	 * The default value of the '{@link #getMapping() <em>Mapping</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMapping()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final InheritanceMapping MAPPING_EDEFAULT = InheritanceMapping.SINGLETABLE;
-
-	/**
-	 * The cached value of the '{@link #getMapping() <em>Mapping</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMapping()
-	 * @generated
-	 * @ordered
-	 */
-	protected InheritanceMapping mapping = MAPPING_EDEFAULT;
-
+public class DomainGeneralizationImpl extends GeneralizationImpl implements DomainGeneralization {
 	/**
 	 * The cached value of the '{@link #getTargetDomain() <em>Target Domain</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -60,7 +38,7 @@ public class DomainGeneralizationImpl extends AssociationImpl implements DomainG
 	 * @generated
 	 * @ordered
 	 */
-	protected ClassMappingKind targetDomain;
+	protected DomainClass targetDomain;
 
 	/**
 	 * The cached value of the '{@link #getSourceDomain() <em>Source Domain</em>}' reference.
@@ -70,7 +48,7 @@ public class DomainGeneralizationImpl extends AssociationImpl implements DomainG
 	 * @generated
 	 * @ordered
 	 */
-	protected ClassMappingKind sourceDomain;
+	protected DomainClass sourceDomain;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,32 +74,10 @@ public class DomainGeneralizationImpl extends AssociationImpl implements DomainG
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public InheritanceMapping getMapping() {
-		return mapping;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setMapping(InheritanceMapping newMapping) {
-		InheritanceMapping oldMapping = mapping;
-		mapping = newMapping == null ? MAPPING_EDEFAULT : newMapping;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_GENERALIZATION__MAPPING, oldMapping, mapping));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public ClassMappingKind getTargetDomain() {
-		if (targetDomain != null && ((EObject)targetDomain).eIsProxy()) {
+	public DomainClass getTargetDomain() {
+		if (targetDomain != null && targetDomain.eIsProxy()) {
 			InternalEObject oldTargetDomain = (InternalEObject)targetDomain;
-			targetDomain = (ClassMappingKind)eResolveProxy(oldTargetDomain);
+			targetDomain = (DomainClass)eResolveProxy(oldTargetDomain);
 			if (targetDomain != oldTargetDomain) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN, oldTargetDomain, targetDomain));
@@ -135,7 +91,7 @@ public class DomainGeneralizationImpl extends AssociationImpl implements DomainG
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ClassMappingKind basicGetTargetDomain() {
+	public DomainClass basicGetTargetDomain() {
 		return targetDomain;
 	}
 
@@ -144,8 +100,8 @@ public class DomainGeneralizationImpl extends AssociationImpl implements DomainG
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTargetDomain(ClassMappingKind newTargetDomain) {
-		ClassMappingKind oldTargetDomain = targetDomain;
+	public void setTargetDomain(DomainClass newTargetDomain) {
+		DomainClass oldTargetDomain = targetDomain;
 		targetDomain = newTargetDomain;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN, oldTargetDomain, targetDomain));
@@ -156,11 +112,10 @@ public class DomainGeneralizationImpl extends AssociationImpl implements DomainG
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
-	public ClassMappingKind getSourceDomain() {
-		if (sourceDomain != null && ((EObject)sourceDomain).eIsProxy()) {
+	public DomainClass getSourceDomain() {
+		if (sourceDomain != null && sourceDomain.eIsProxy()) {
 			InternalEObject oldSourceDomain = (InternalEObject)sourceDomain;
-			sourceDomain = (ClassMappingKind)eResolveProxy(oldSourceDomain);
+			sourceDomain = (DomainClass)eResolveProxy(oldSourceDomain);
 			if (sourceDomain != oldSourceDomain) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FramewebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN, oldSourceDomain, sourceDomain));
@@ -174,7 +129,7 @@ public class DomainGeneralizationImpl extends AssociationImpl implements DomainG
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ClassMappingKind basicGetSourceDomain() {
+	public DomainClass basicGetSourceDomain() {
 		return sourceDomain;
 	}
 
@@ -183,8 +138,8 @@ public class DomainGeneralizationImpl extends AssociationImpl implements DomainG
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSourceDomain(ClassMappingKind newSourceDomain) {
-		ClassMappingKind oldSourceDomain = sourceDomain;
+	public void setSourceDomain(DomainClass newSourceDomain) {
+		DomainClass oldSourceDomain = sourceDomain;
 		sourceDomain = newSourceDomain;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, FramewebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN, oldSourceDomain, sourceDomain));
@@ -198,8 +153,6 @@ public class DomainGeneralizationImpl extends AssociationImpl implements DomainG
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FramewebPackage.DOMAIN_GENERALIZATION__MAPPING:
-				return getMapping();
 			case FramewebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN:
 				if (resolve) return getTargetDomain();
 				return basicGetTargetDomain();
@@ -215,18 +168,14 @@ public class DomainGeneralizationImpl extends AssociationImpl implements DomainG
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FramewebPackage.DOMAIN_GENERALIZATION__MAPPING:
-				setMapping((InheritanceMapping)newValue);
-				return;
 			case FramewebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN:
-				setTargetDomain((ClassMappingKind)newValue);
+				setTargetDomain((DomainClass)newValue);
 				return;
 			case FramewebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN:
-				setSourceDomain((ClassMappingKind)newValue);
+				setSourceDomain((DomainClass)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -240,14 +189,11 @@ public class DomainGeneralizationImpl extends AssociationImpl implements DomainG
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FramewebPackage.DOMAIN_GENERALIZATION__MAPPING:
-				setMapping(MAPPING_EDEFAULT);
-				return;
 			case FramewebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN:
-				setTargetDomain((ClassMappingKind)null);
+				setTargetDomain((DomainClass)null);
 				return;
 			case FramewebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN:
-				setSourceDomain((ClassMappingKind)null);
+				setSourceDomain((DomainClass)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -261,30 +207,12 @@ public class DomainGeneralizationImpl extends AssociationImpl implements DomainG
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FramewebPackage.DOMAIN_GENERALIZATION__MAPPING:
-				return mapping != MAPPING_EDEFAULT;
 			case FramewebPackage.DOMAIN_GENERALIZATION__TARGET_DOMAIN:
 				return targetDomain != null;
 			case FramewebPackage.DOMAIN_GENERALIZATION__SOURCE_DOMAIN:
 				return sourceDomain != null;
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (mapping: ");
-		result.append(mapping);
-		result.append(')');
-		return result.toString();
 	}
 
 } //DomainGeneralizationImpl

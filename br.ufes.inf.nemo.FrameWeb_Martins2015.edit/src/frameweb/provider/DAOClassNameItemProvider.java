@@ -5,7 +5,6 @@ package frameweb.provider;
 
 import frameweb.ConstantNameList;
 import frameweb.DAOClassName;
-import frameweb.FramewebPackage;
 
 import java.util.Collection;
 import java.util.List;
@@ -13,7 +12,6 @@ import java.util.List;
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
-import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 
 /**
@@ -44,31 +42,8 @@ public class DAOClassNameItemProvider extends DAOInterfaceNameItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addFrameWorkNameSufixPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Frame Work Name Sufix feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addFrameWorkNameSufixPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_DAOClassName_FrameWorkNameSufix_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_DAOClassName_FrameWorkNameSufix_feature", "_UI_DAOClassName_type"),
-				 FramewebPackage.Literals.DAO_CLASS_NAME__FRAME_WORK_NAME_SUFIX,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
 	}
 
 	/**

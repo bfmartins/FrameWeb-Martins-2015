@@ -147,11 +147,6 @@ public class ApplicationModelItemProvider extends FrameWebModelItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
-				(FramewebPackage.Literals.APPLICATION_MODEL__SERVICE_UML_ASSOCIATION,
-				 FramewebFactory.eINSTANCE.createDAOServiceAssociation()));
-
-		newChildDescriptors.add
-			(createChildParameter
 				(FramewebPackage.Literals.APPLICATION_MODEL__APPLICATION_UML_PACKAGE,
 				 FramewebFactory.eINSTANCE.createApplicationPackage()));
 	}

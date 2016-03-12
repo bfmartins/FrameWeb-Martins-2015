@@ -41,7 +41,7 @@ public interface ViewPackage extends NavigationPackage {
 
 	/**
 	 * Returns the value of the '<em><b>View Package Result</b></em>' containment reference list.
-	 * The list contents are of type {@link ResultType}.
+	 * The list contents are of type {@link frameweb.Result}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>View Package Result</em>' containment reference list isn't clear,
@@ -50,9 +50,9 @@ public interface ViewPackage extends NavigationPackage {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>View Package Result</em>' containment reference list.
 	 * @see frameweb.FramewebPackage#getViewPackage_ViewPackageResult()
-	 * @model type="frameweb.Result" containment="true" ordered="false"
+	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
-	EList<ResultType> getViewPackageResult();
+	EList<Result> getViewPackageResult();
 
 } // ViewPackage

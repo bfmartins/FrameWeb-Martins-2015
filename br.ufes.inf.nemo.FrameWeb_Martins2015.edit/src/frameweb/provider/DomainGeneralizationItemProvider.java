@@ -16,8 +16,6 @@ import org.eclipse.emf.common.util.ResourceLocator;
 
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ViewerNotification;
 
 import org.eclipse.uml2.uml.edit.providers.GeneralizationItemProvider;
 
@@ -49,33 +47,10 @@ public class DomainGeneralizationItemProvider extends GeneralizationItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addMappingPropertyDescriptor(object);
 			addTargetDomainPropertyDescriptor(object);
 			addSourceDomainPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Mapping feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addMappingPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_DomainGeneralization_mapping_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_DomainGeneralization_mapping_feature", "_UI_DomainGeneralization_type"),
-				 FramewebPackage.Literals.DOMAIN_GENERALIZATION__MAPPING,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -156,12 +131,6 @@ public class DomainGeneralizationItemProvider extends GeneralizationItemProvider
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
-
-		switch (notification.getFeatureID(DomainGeneralization.class)) {
-			case FramewebPackage.DOMAIN_GENERALIZATION__MAPPING:
-				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-				return;
-		}
 		super.notifyChanged(notification);
 	}
 

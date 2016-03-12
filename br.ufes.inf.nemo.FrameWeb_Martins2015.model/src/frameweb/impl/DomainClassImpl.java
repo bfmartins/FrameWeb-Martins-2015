@@ -3,6 +3,7 @@
 package frameweb.impl;
 
 import frameweb.DomainAttribute;
+import frameweb.DomainClass;
 import frameweb.DomainMethod;
 import frameweb.FramewebPackage;
 
@@ -38,7 +39,7 @@ import org.eclipse.uml2.uml.internal.impl.ClassImpl;
  *
  * @generated
  */
-public class DomainClassImpl extends ClassImpl implements ClassMappingKind {
+public class DomainClassImpl extends ClassImpl implements DomainClass {
 	/**
 	 * The cached value of the '{@link #getDomainClassAttribute() <em>Domain Class Attribute</em>}' containment reference list.
 	 * <!-- begin-user-doc -->

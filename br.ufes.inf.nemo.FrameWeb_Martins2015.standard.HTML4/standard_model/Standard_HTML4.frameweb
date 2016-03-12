@@ -113,12 +113,12 @@
       <packagedElement xsi:type="frameweb:Tag" name="head"/>
       <packagedElement xsi:type="frameweb:Tag" name="meta"/>
     </packagedElement>
-    <FrameworkTagLib name="HTML4programing">
+    <packagedElement xsi:type="frameweb:TagLib" name="HTML4programing">
       <packagedElement xsi:type="frameweb:Tag" name="applet"/>
       <packagedElement xsi:type="frameweb:Tag" name="noscript"/>
       <packagedElement xsi:type="frameweb:Tag" name="object"/>
       <packagedElement xsi:type="frameweb:Tag" name="param"/>
       <packagedElement xsi:type="frameweb:Tag" name="script"/>
-    </FrameworkTagLib>
+    </packagedElement>
   </Uses>
 </frameweb:Frameweb>

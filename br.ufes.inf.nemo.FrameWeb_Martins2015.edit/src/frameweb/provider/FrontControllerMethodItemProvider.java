@@ -3,7 +3,6 @@
 package frameweb.provider;
 
 
-import frameweb.FramewebFactory;
 import frameweb.FramewebPackage;
 import frameweb.FrontControllerMethod;
 
@@ -22,7 +21,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
 
 import org.eclipse.uml2.uml.UMLPackage;
 
-import org.eclipse.uml2.uml.edit.providers.OperationItemProvider;
+import org.eclipse.uml2.uml.edit.providers.ConstraintItemProvider;
 
 /**
  * This is the item provider adapter for a {@link frameweb.FrontControllerMethod} object.
@@ -30,7 +29,7 @@ import org.eclipse.uml2.uml.edit.providers.OperationItemProvider;
  * <!-- end-user-doc -->
  * @generated
  */
-public class FrontControllerMethodItemProvider extends OperationItemProvider {
+public class FrontControllerMethodItemProvider extends ConstraintItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -53,7 +52,6 @@ public class FrontControllerMethodItemProvider extends OperationItemProvider {
 			super.getPropertyDescriptors(object);
 
 			addIsDefaultPropertyDescriptor(object);
-			addResultPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -76,28 +74,6 @@ public class FrontControllerMethodItemProvider extends OperationItemProvider {
 				 false,
 				 false,
 				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Result feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addResultPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_FrontControllerMethod_result_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerMethod_result_feature", "_UI_FrontControllerMethod_type"),
-				 FramewebPackage.Literals.FRONT_CONTROLLER_METHOD__RESULT,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -141,7 +117,6 @@ public class FrontControllerMethodItemProvider extends OperationItemProvider {
 
 		switch (notification.getFeatureID(FrontControllerMethod.class)) {
 			case FramewebPackage.FRONT_CONTROLLER_METHOD__IS_DEFAULT:
-			case FramewebPackage.FRONT_CONTROLLER_METHOD__RESULT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}
@@ -158,106 +133,6 @@ public class FrontControllerMethodItemProvider extends OperationItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
-				 FramewebFactory.eINSTANCE.createPageConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
-				 FramewebFactory.eINSTANCE.createResultConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
-				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
-				 FramewebFactory.eINSTANCE.createChainingConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
-				 FramewebFactory.eINSTANCE.createDomainConstraints()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.OPERATION__BODY_CONDITION,
-				 FramewebFactory.eINSTANCE.createPageConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.OPERATION__BODY_CONDITION,
-				 FramewebFactory.eINSTANCE.createResultConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.OPERATION__BODY_CONDITION,
-				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.OPERATION__BODY_CONDITION,
-				 FramewebFactory.eINSTANCE.createChainingConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.OPERATION__BODY_CONDITION,
-				 FramewebFactory.eINSTANCE.createDomainConstraints()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.OPERATION__POSTCONDITION,
-				 FramewebFactory.eINSTANCE.createPageConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.OPERATION__POSTCONDITION,
-				 FramewebFactory.eINSTANCE.createResultConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.OPERATION__POSTCONDITION,
-				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.OPERATION__POSTCONDITION,
-				 FramewebFactory.eINSTANCE.createChainingConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.OPERATION__POSTCONDITION,
-				 FramewebFactory.eINSTANCE.createDomainConstraints()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.OPERATION__PRECONDITION,
-				 FramewebFactory.eINSTANCE.createPageConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.OPERATION__PRECONDITION,
-				 FramewebFactory.eINSTANCE.createResultConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.OPERATION__PRECONDITION,
-				 FramewebFactory.eINSTANCE.createMethodCosntraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.OPERATION__PRECONDITION,
-				 FramewebFactory.eINSTANCE.createChainingConstraint()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UMLPackage.Literals.OPERATION__PRECONDITION,
-				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 	}
 
 	/**
@@ -272,10 +147,8 @@ public class FrontControllerMethodItemProvider extends OperationItemProvider {
 		Object childObject = child;
 
 		boolean qualify =
-			childFeature == UMLPackage.Literals.NAMESPACE__OWNED_RULE ||
-			childFeature == UMLPackage.Literals.OPERATION__BODY_CONDITION ||
-			childFeature == UMLPackage.Literals.OPERATION__POSTCONDITION ||
-			childFeature == UMLPackage.Literals.OPERATION__PRECONDITION;
+			childFeature == UMLPackage.Literals.NAMED_ELEMENT__NAME_EXPRESSION ||
+			childFeature == UMLPackage.Literals.CONSTRAINT__SPECIFICATION;
 
 		if (qualify) {
 			return getString

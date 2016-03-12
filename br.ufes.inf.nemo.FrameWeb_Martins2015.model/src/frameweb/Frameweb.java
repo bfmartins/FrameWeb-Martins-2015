@@ -15,7 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * <ul>
  *   <li>{@link frameweb.Frameweb#getCompose <em>Compose</em>}</li>
- *   <li>{@link frameweb.Frameweb#getUses <em>Uses</em>}</li>
+ *   <li>{@link frameweb.Frameweb#getConfigures <em>Configures</em>}</li>
  * </ul>
  * </p>
  *
@@ -41,19 +41,19 @@ public interface Frameweb extends EObject {
 	EList<FrameWebModel> getCompose();
 
 	/**
-	 * Returns the value of the '<em><b>Uses</b></em>' containment reference list.
-	 * The list contents are of type {@link frameweb.Framework}.
+	 * Returns the value of the '<em><b>Configures</b></em>' containment reference list.
+	 * The list contents are of type {@link frameweb.FrameworkProfile}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Uses</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Configures</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Uses</em>' containment reference list.
-	 * @see frameweb.FramewebPackage#getFrameweb_Uses()
+	 * @return the value of the '<em>Configures</em>' containment reference list.
+	 * @see frameweb.FramewebPackage#getFrameweb_Configures()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Framework> getUses();
+	EList<FrameworkProfile> getConfigures();
 
 } // Frameweb

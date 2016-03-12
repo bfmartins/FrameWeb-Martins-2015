@@ -95,26 +95,26 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.Framework} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.FrameworkProfile} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FrameworkItemProvider frameworkItemProvider;
+	protected FrameworkProfileItemProvider frameworkProfileItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.Framework}.
+	 * This creates an adapter for a {@link frameweb.FrameworkProfile}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createFrameworkAdapter() {
-		if (frameworkItemProvider == null) {
-			frameworkItemProvider = new FrameworkItemProvider(this);
+	public Adapter createFrameworkProfileAdapter() {
+		if (frameworkProfileItemProvider == null) {
+			frameworkProfileItemProvider = new FrameworkProfileItemProvider(this);
 		}
 
-		return frameworkItemProvider;
+		return frameworkProfileItemProvider;
 	}
 
 	/**
@@ -693,7 +693,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link ClassMappingKind} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.DomainClass} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -701,7 +701,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	protected DomainClassItemProvider domainClassItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link ClassMappingKind}.
+	 * This creates an adapter for a {@link frameweb.DomainClass}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -759,29 +759,6 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		}
 
 		return domainTableNameItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.FrameWorkName} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected FrameWorkNameItemProvider frameWorkNameItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link frameweb.FrameWorkName}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createFrameWorkNameAdapter() {
-		if (frameWorkNameItemProvider == null) {
-			frameWorkNameItemProvider = new FrameWorkNameItemProvider(this);
-		}
-
-		return frameWorkNameItemProvider;
 	}
 
 	/**
@@ -854,7 +831,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link ResultType} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.Result} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -862,7 +839,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	protected ResultItemProvider resultItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link ResultType}.
+	 * This creates an adapter for a {@link frameweb.Result}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1199,7 +1176,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link Tag} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.UIComponent} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1207,7 +1184,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	protected UIComponentItemProvider uiComponentItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link Tag}.
+	 * This creates an adapter for a {@link frameweb.UIComponent}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1291,6 +1268,29 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link UIComponent} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected UIComponentFieldItemProvider uiComponentFieldItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link UIComponent}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createUIComponentFieldAdapter() {
+		if (uiComponentFieldItemProvider == null) {
+			uiComponentFieldItemProvider = new UIComponentFieldItemProvider(this);
+		}
+
+		return uiComponentFieldItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link frameweb.TagLib} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1314,29 +1314,6 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.Rule} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected RuleItemProvider ruleItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link frameweb.Rule}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createRuleAdapter() {
-		if (ruleItemProvider == null) {
-			ruleItemProvider = new RuleItemProvider(this);
-		}
-
-		return ruleItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link frameweb.Tag} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1357,29 +1334,6 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		}
 
 		return tagItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.Anotation} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected AnotationItemProvider anotationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link frameweb.Anotation}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createAnotationAdapter() {
-		if (anotationItemProvider == null) {
-			anotationItemProvider = new AnotationItemProvider(this);
-		}
-
-		return anotationItemProvider;
 	}
 
 	/**
@@ -1636,72 +1590,509 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.MappingSet} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.MappingLib} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MappingSetItemProvider mappingSetItemProvider;
+	protected MappingLibItemProvider mappingLibItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.MappingSet}.
+	 * This creates an adapter for a {@link frameweb.MappingLib}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createMappingSetAdapter() {
-		if (mappingSetItemProvider == null) {
-			mappingSetItemProvider = new MappingSetItemProvider(this);
+	public Adapter createMappingLibAdapter() {
+		if (mappingLibItemProvider == null) {
+			mappingLibItemProvider = new MappingLibItemProvider(this);
 		}
 
-		return mappingSetItemProvider;
+		return mappingLibItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.ClassMappingKind} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.ClassMapping} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ClassMappingKindItemProvider classMappingKindItemProvider;
+	protected ClassMappingItemProvider classMappingItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.ClassMappingKind}.
+	 * This creates an adapter for a {@link frameweb.ClassMapping}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createClassMappingKindAdapter() {
-		if (classMappingKindItemProvider == null) {
-			classMappingKindItemProvider = new ClassMappingKindItemProvider(this);
+	public Adapter createClassMappingAdapter() {
+		if (classMappingItemProvider == null) {
+			classMappingItemProvider = new ClassMappingItemProvider(this);
 		}
 
-		return classMappingKindItemProvider;
+		return classMappingItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.AttributeMappingKind} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.AttributeMapping} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AttributeMappingKindItemProvider attributeMappingKindItemProvider;
+	protected AttributeMappingItemProvider attributeMappingItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.AttributeMappingKind}.
+	 * This creates an adapter for a {@link frameweb.AttributeMapping}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createAttributeMappingKindAdapter() {
-		if (attributeMappingKindItemProvider == null) {
-			attributeMappingKindItemProvider = new AttributeMappingKindItemProvider(this);
+	public Adapter createAttributeMappingAdapter() {
+		if (attributeMappingItemProvider == null) {
+			attributeMappingItemProvider = new AttributeMappingItemProvider(this);
 		}
 
-		return attributeMappingKindItemProvider;
+		return attributeMappingItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.DomainGeneralizationSet} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DomainGeneralizationSetItemProvider domainGeneralizationSetItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.DomainGeneralizationSet}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDomainGeneralizationSetAdapter() {
+		if (domainGeneralizationSetItemProvider == null) {
+			domainGeneralizationSetItemProvider = new DomainGeneralizationSetItemProvider(this);
+		}
+
+		return domainGeneralizationSetItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.TagExtension} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TagExtensionItemProvider tagExtensionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.TagExtension}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTagExtensionAdapter() {
+		if (tagExtensionItemProvider == null) {
+			tagExtensionItemProvider = new TagExtensionItemProvider(this);
+		}
+
+		return tagExtensionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.Framework} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected FrameworkItemProvider frameworkItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.Framework}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createFrameworkAdapter() {
+		if (frameworkItemProvider == null) {
+			frameworkItemProvider = new FrameworkItemProvider(this);
+		}
+
+		return frameworkItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.ControllerExtension} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ControllerExtensionItemProvider controllerExtensionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.ControllerExtension}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createControllerExtensionAdapter() {
+		if (controllerExtensionItemProvider == null) {
+			controllerExtensionItemProvider = new ControllerExtensionItemProvider(this);
+		}
+
+		return controllerExtensionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.Controller} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ControllerItemProvider controllerItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.Controller}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createControllerAdapter() {
+		if (controllerItemProvider == null) {
+			controllerItemProvider = new ControllerItemProvider(this);
+		}
+
+		return controllerItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.ControllerSet} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ControllerSetItemProvider controllerSetItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.ControllerSet}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createControllerSetAdapter() {
+		if (controllerSetItemProvider == null) {
+			controllerSetItemProvider = new ControllerSetItemProvider(this);
+		}
+
+		return controllerSetItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.ResultExtension} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ResultExtensionItemProvider resultExtensionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.ResultExtension}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createResultExtensionAdapter() {
+		if (resultExtensionItemProvider == null) {
+			resultExtensionItemProvider = new ResultExtensionItemProvider(this);
+		}
+
+		return resultExtensionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.ClassMappingExtension} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ClassMappingExtensionItemProvider classMappingExtensionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.ClassMappingExtension}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createClassMappingExtensionAdapter() {
+		if (classMappingExtensionItemProvider == null) {
+			classMappingExtensionItemProvider = new ClassMappingExtensionItemProvider(this);
+		}
+
+		return classMappingExtensionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.AttributeMappingExtension} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AttributeMappingExtensionItemProvider attributeMappingExtensionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.AttributeMappingExtension}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAttributeMappingExtensionAdapter() {
+		if (attributeMappingExtensionItemProvider == null) {
+			attributeMappingExtensionItemProvider = new AttributeMappingExtensionItemProvider(this);
+		}
+
+		return attributeMappingExtensionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.ControllerExtensionEnd} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ControllerExtensionEndItemProvider controllerExtensionEndItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.ControllerExtensionEnd}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createControllerExtensionEndAdapter() {
+		if (controllerExtensionEndItemProvider == null) {
+			controllerExtensionEndItemProvider = new ControllerExtensionEndItemProvider(this);
+		}
+
+		return controllerExtensionEndItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.TagExtensionEnd} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TagExtensionEndItemProvider tagExtensionEndItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.TagExtensionEnd}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTagExtensionEndAdapter() {
+		if (tagExtensionEndItemProvider == null) {
+			tagExtensionEndItemProvider = new TagExtensionEndItemProvider(this);
+		}
+
+		return tagExtensionEndItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.ReultExtensionEnd} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ReultExtensionEndItemProvider reultExtensionEndItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.ReultExtensionEnd}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createReultExtensionEndAdapter() {
+		if (reultExtensionEndItemProvider == null) {
+			reultExtensionEndItemProvider = new ReultExtensionEndItemProvider(this);
+		}
+
+		return reultExtensionEndItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.ClassMappingExtensionEnd} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ClassMappingExtensionEndItemProvider classMappingExtensionEndItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.ClassMappingExtensionEnd}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createClassMappingExtensionEndAdapter() {
+		if (classMappingExtensionEndItemProvider == null) {
+			classMappingExtensionEndItemProvider = new ClassMappingExtensionEndItemProvider(this);
+		}
+
+		return classMappingExtensionEndItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.AttributeMappingExtensionEnd} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AttributeMappingExtensionEndItemProvider attributeMappingExtensionEndItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.AttributeMappingExtensionEnd}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAttributeMappingExtensionEndAdapter() {
+		if (attributeMappingExtensionEndItemProvider == null) {
+			attributeMappingExtensionEndItemProvider = new AttributeMappingExtensionEndItemProvider(this);
+		}
+
+		return attributeMappingExtensionEndItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.ControllerProperty} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ControllerPropertyItemProvider controllerPropertyItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.ControllerProperty}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createControllerPropertyAdapter() {
+		if (controllerPropertyItemProvider == null) {
+			controllerPropertyItemProvider = new ControllerPropertyItemProvider(this);
+		}
+
+		return controllerPropertyItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.TagProperty} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TagPropertyItemProvider tagPropertyItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.TagProperty}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTagPropertyAdapter() {
+		if (tagPropertyItemProvider == null) {
+			tagPropertyItemProvider = new TagPropertyItemProvider(this);
+		}
+
+		return tagPropertyItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.ResultProperty} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ResultPropertyItemProvider resultPropertyItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.ResultProperty}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createResultPropertyAdapter() {
+		if (resultPropertyItemProvider == null) {
+			resultPropertyItemProvider = new ResultPropertyItemProvider(this);
+		}
+
+		return resultPropertyItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.ClassMappingPropery} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ClassMappingProperyItemProvider classMappingProperyItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.ClassMappingPropery}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createClassMappingProperyAdapter() {
+		if (classMappingProperyItemProvider == null) {
+			classMappingProperyItemProvider = new ClassMappingProperyItemProvider(this);
+		}
+
+		return classMappingProperyItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.AttributeMappingProperty} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AttributeMappingPropertyItemProvider attributeMappingPropertyItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.AttributeMappingProperty}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAttributeMappingPropertyAdapter() {
+		if (attributeMappingPropertyItemProvider == null) {
+			attributeMappingPropertyItemProvider = new AttributeMappingPropertyItemProvider(this);
+		}
+
+		return attributeMappingPropertyItemProvider;
 	}
 
 	/**
@@ -1804,7 +2195,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	 */
 	public void dispose() {
 		if (framewebItemProvider != null) framewebItemProvider.dispose();
-		if (frameworkItemProvider != null) frameworkItemProvider.dispose();
+		if (frameworkProfileItemProvider != null) frameworkProfileItemProvider.dispose();
 		if (domainModelItemProvider != null) domainModelItemProvider.dispose();
 		if (navigationModelItemProvider != null) navigationModelItemProvider.dispose();
 		if (applicationModelItemProvider != null) applicationModelItemProvider.dispose();
@@ -1833,7 +2224,6 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (domainClassItemProvider != null) domainClassItemProvider.dispose();
 		if (constantNameItemProvider != null) constantNameItemProvider.dispose();
 		if (domainTableNameItemProvider != null) domainTableNameItemProvider.dispose();
-		if (frameWorkNameItemProvider != null) frameWorkNameItemProvider.dispose();
 		if (domainColumnNameItemProvider != null) domainColumnNameItemProvider.dispose();
 		if (daoInterfaceNameItemProvider != null) daoInterfaceNameItemProvider.dispose();
 		if (daoClassNameItemProvider != null) daoClassNameItemProvider.dispose();
@@ -1856,10 +2246,9 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (resultTypeItemProvider != null) resultTypeItemProvider.dispose();
 		if (domainGeneralizationItemProvider != null) domainGeneralizationItemProvider.dispose();
 		if (jQueryItemProvider != null) jQueryItemProvider.dispose();
+		if (uiComponentFieldItemProvider != null) uiComponentFieldItemProvider.dispose();
 		if (tagLibItemProvider != null) tagLibItemProvider.dispose();
-		if (ruleItemProvider != null) ruleItemProvider.dispose();
 		if (tagItemProvider != null) tagItemProvider.dispose();
-		if (anotationItemProvider != null) anotationItemProvider.dispose();
 		if (navigationCompositionPartItemProvider != null) navigationCompositionPartItemProvider.dispose();
 		if (navigationCompositionWholeItemProvider != null) navigationCompositionWholeItemProvider.dispose();
 		if (resultSetItemProvider != null) resultSetItemProvider.dispose();
@@ -1871,9 +2260,28 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (domainConstraintsItemProvider != null) domainConstraintsItemProvider.dispose();
 		if (domainPropertyItemProvider != null) domainPropertyItemProvider.dispose();
 		if (daoGeneralizationItemProvider != null) daoGeneralizationItemProvider.dispose();
-		if (mappingSetItemProvider != null) mappingSetItemProvider.dispose();
-		if (classMappingKindItemProvider != null) classMappingKindItemProvider.dispose();
-		if (attributeMappingKindItemProvider != null) attributeMappingKindItemProvider.dispose();
+		if (mappingLibItemProvider != null) mappingLibItemProvider.dispose();
+		if (classMappingItemProvider != null) classMappingItemProvider.dispose();
+		if (attributeMappingItemProvider != null) attributeMappingItemProvider.dispose();
+		if (domainGeneralizationSetItemProvider != null) domainGeneralizationSetItemProvider.dispose();
+		if (tagExtensionItemProvider != null) tagExtensionItemProvider.dispose();
+		if (frameworkItemProvider != null) frameworkItemProvider.dispose();
+		if (controllerExtensionItemProvider != null) controllerExtensionItemProvider.dispose();
+		if (controllerItemProvider != null) controllerItemProvider.dispose();
+		if (controllerSetItemProvider != null) controllerSetItemProvider.dispose();
+		if (resultExtensionItemProvider != null) resultExtensionItemProvider.dispose();
+		if (classMappingExtensionItemProvider != null) classMappingExtensionItemProvider.dispose();
+		if (attributeMappingExtensionItemProvider != null) attributeMappingExtensionItemProvider.dispose();
+		if (controllerExtensionEndItemProvider != null) controllerExtensionEndItemProvider.dispose();
+		if (tagExtensionEndItemProvider != null) tagExtensionEndItemProvider.dispose();
+		if (reultExtensionEndItemProvider != null) reultExtensionEndItemProvider.dispose();
+		if (classMappingExtensionEndItemProvider != null) classMappingExtensionEndItemProvider.dispose();
+		if (attributeMappingExtensionEndItemProvider != null) attributeMappingExtensionEndItemProvider.dispose();
+		if (controllerPropertyItemProvider != null) controllerPropertyItemProvider.dispose();
+		if (tagPropertyItemProvider != null) tagPropertyItemProvider.dispose();
+		if (resultPropertyItemProvider != null) resultPropertyItemProvider.dispose();
+		if (classMappingProperyItemProvider != null) classMappingProperyItemProvider.dispose();
+		if (attributeMappingPropertyItemProvider != null) attributeMappingPropertyItemProvider.dispose();
 	}
 
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015">
+  <Compose xsi:type="frameweb:NavigationModel" URI="">
+    <packagedElement xsi:type="frameweb:ControllerPackage">
+      <packagedElement xsi:type="frameweb:FrontControllerClass" name="AcaoConsultarPublicacao"/>
+    </packagedElement>
+    <packagedElement xsi:type="frameweb:ViewPackage">
+      <packagedElement xsi:type="frameweb:Page" name="index"/>
+      <packagedElement xsi:type="frameweb:Template" name="listaPublicacoes"/>
+      <packagedElement xsi:type="frameweb:Template" name="detalhesPublicacao"/>
+    </packagedElement>
+    <profileApplication xsi:type="frameweb:Framework" isStrict="true">
+      <appliedProfile href="../../FrameWeb_Martins2015_frameworks_MVC_Struts2/framework_model/MVC_Struts2.frameweb#//@Uses.0"/>
+    </profileApplication>
+  </Compose>
+</frameweb:Frameweb>

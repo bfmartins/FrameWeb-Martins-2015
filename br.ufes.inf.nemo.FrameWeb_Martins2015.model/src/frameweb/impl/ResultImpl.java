@@ -3,6 +3,7 @@
 package frameweb.impl;
 
 import frameweb.FramewebPackage;
+import frameweb.Result;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -17,7 +18,7 @@ import org.eclipse.uml2.uml.internal.impl.ClassImpl;
  *
  * @generated
  */
-public class ResultImpl extends ClassImpl implements ResultType {
+public class ResultImpl extends ClassImpl implements Result {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
