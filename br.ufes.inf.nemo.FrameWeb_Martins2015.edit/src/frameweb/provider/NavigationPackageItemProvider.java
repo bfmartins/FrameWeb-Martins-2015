@@ -264,7 +264,7 @@ public class NavigationPackageItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
-				 FramewebFactory.eINSTANCE.createServiceNavigationAssociation()));
+				 FramewebFactory.eINSTANCE.createServiceControllerAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -424,7 +424,7 @@ public class NavigationPackageItemProvider extends PackageItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createServiceNavigationAssociation()));
+				 FramewebFactory.eINSTANCE.createServiceControllerAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -585,6 +585,11 @@ public class NavigationPackageItemProvider extends PackageItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 FramewebFactory.eINSTANCE.createAttributeMappingExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createSeviceRealization()));
 
 		newChildDescriptors.add
 			(createChildParameter

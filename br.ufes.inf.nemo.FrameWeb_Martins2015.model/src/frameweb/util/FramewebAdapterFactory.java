@@ -218,8 +218,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createServiceGeneralizationAdapter();
 			}
 			@Override
-			public Adapter caseServiceNavigationAssociation(ServiceNavigationAssociation object) {
-				return createServiceNavigationAssociationAdapter();
+			public Adapter caseServiceControllerAssociation(ServiceControllerAssociation object) {
+				return createServiceControllerAssociationAdapter();
 			}
 			@Override
 			public Adapter caseDomainClass(DomainClass object) {
@@ -496,6 +496,10 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseAttributeMappingProperty(AttributeMappingProperty object) {
 				return createAttributeMappingPropertyAdapter();
+			}
+			@Override
+			public Adapter caseSeviceRealization(SeviceRealization object) {
+				return createSeviceRealizationAdapter();
 			}
 			@Override
 			public Adapter caseEModelElement(EModelElement object) {
@@ -1066,16 +1070,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.ServiceNavigationAssociation <em>Service Navigation Association</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.ServiceControllerAssociation <em>Service Controller Association</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.ServiceNavigationAssociation
+	 * @see frameweb.ServiceControllerAssociation
 	 * @generated
 	 */
-	public Adapter createServiceNavigationAssociationAdapter() {
+	public Adapter createServiceControllerAssociationAdapter() {
 		return null;
 	}
 
@@ -2042,6 +2046,20 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAttributeMappingPropertyAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.SeviceRealization <em>Sevice Realization</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.SeviceRealization
+	 * @generated
+	 */
+	public Adapter createSeviceRealizationAdapter() {
 		return null;
 	}
 

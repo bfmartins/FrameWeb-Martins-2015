@@ -574,22 +574,22 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case FramewebPackage.SERVICE_NAVIGATION_ASSOCIATION: {
-				ServiceNavigationAssociation serviceNavigationAssociation = (ServiceNavigationAssociation)theEObject;
-				T result = caseServiceNavigationAssociation(serviceNavigationAssociation);
-				if (result == null) result = caseServiceAssociation(serviceNavigationAssociation);
-				if (result == null) result = caseAssociation(serviceNavigationAssociation);
-				if (result == null) result = caseClassifier(serviceNavigationAssociation);
-				if (result == null) result = caseRelationship(serviceNavigationAssociation);
-				if (result == null) result = caseNamespace(serviceNavigationAssociation);
-				if (result == null) result = caseRedefinableElement(serviceNavigationAssociation);
-				if (result == null) result = caseType(serviceNavigationAssociation);
-				if (result == null) result = caseTemplateableElement(serviceNavigationAssociation);
-				if (result == null) result = casePackageableElement(serviceNavigationAssociation);
-				if (result == null) result = caseNamedElement(serviceNavigationAssociation);
-				if (result == null) result = caseParameterableElement(serviceNavigationAssociation);
-				if (result == null) result = caseElement(serviceNavigationAssociation);
-				if (result == null) result = caseEModelElement(serviceNavigationAssociation);
+			case FramewebPackage.SERVICE_CONTROLLER_ASSOCIATION: {
+				ServiceControllerAssociation serviceControllerAssociation = (ServiceControllerAssociation)theEObject;
+				T result = caseServiceControllerAssociation(serviceControllerAssociation);
+				if (result == null) result = caseServiceAssociation(serviceControllerAssociation);
+				if (result == null) result = caseAssociation(serviceControllerAssociation);
+				if (result == null) result = caseClassifier(serviceControllerAssociation);
+				if (result == null) result = caseRelationship(serviceControllerAssociation);
+				if (result == null) result = caseNamespace(serviceControllerAssociation);
+				if (result == null) result = caseRedefinableElement(serviceControllerAssociation);
+				if (result == null) result = caseType(serviceControllerAssociation);
+				if (result == null) result = caseTemplateableElement(serviceControllerAssociation);
+				if (result == null) result = casePackageableElement(serviceControllerAssociation);
+				if (result == null) result = caseNamedElement(serviceControllerAssociation);
+				if (result == null) result = caseParameterableElement(serviceControllerAssociation);
+				if (result == null) result = caseElement(serviceControllerAssociation);
+				if (result == null) result = caseEModelElement(serviceControllerAssociation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1686,6 +1686,22 @@ public class FramewebSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case FramewebPackage.SEVICE_REALIZATION: {
+				SeviceRealization seviceRealization = (SeviceRealization)theEObject;
+				T result = caseSeviceRealization(seviceRealization);
+				if (result == null) result = caseRealization(seviceRealization);
+				if (result == null) result = caseAbstraction(seviceRealization);
+				if (result == null) result = caseDependency(seviceRealization);
+				if (result == null) result = casePackageableElement(seviceRealization);
+				if (result == null) result = caseDirectedRelationship(seviceRealization);
+				if (result == null) result = caseNamedElement(seviceRealization);
+				if (result == null) result = caseParameterableElement(seviceRealization);
+				if (result == null) result = caseRelationship(seviceRealization);
+				if (result == null) result = caseElement(seviceRealization);
+				if (result == null) result = caseEModelElement(seviceRealization);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -2111,17 +2127,17 @@ public class FramewebSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Service Navigation Association</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Service Controller Association</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Service Navigation Association</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Service Controller Association</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseServiceNavigationAssociation(ServiceNavigationAssociation object) {
+	public T caseServiceControllerAssociation(ServiceControllerAssociation object) {
 		return null;
 	}
 
@@ -3157,6 +3173,21 @@ public class FramewebSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseAttributeMappingProperty(AttributeMappingProperty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sevice Realization</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sevice Realization</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSeviceRealization(SeviceRealization object) {
 		return null;
 	}
 

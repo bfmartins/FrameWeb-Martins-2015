@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015">
-  <Uses name="JSF" category="mvc">
+<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <Configures name="JSF" kind="FrameworkImplementation">
     <packagedElement xsi:type="frameweb:TagLib" name="JSFhtml" URI="http://java.sun.com/jsf/html" prefix="h">
       <packagedElement xsi:type="frameweb:Tag" name="body"/>
       <packagedElement xsi:type="frameweb:Tag" name="button"/>
@@ -32,7 +32,7 @@
       <packagedElement xsi:type="frameweb:Tag" name="selectManyMenu"/>
       <packagedElement xsi:type="frameweb:Tag" name="selectOneListbox"/>
       <packagedElement xsi:type="frameweb:Tag" name="selectOneMenu"/>
-      <TagLibTag name="selectOneRadio"/>
+      <packagedElement xsi:type="frameweb:Tag" name="selectOneRadio"/>
     </packagedElement>
     <packagedElement xsi:type="frameweb:TagLib" name="JSFcomposite" URI="http://jsflive.at/taglib" prefix="jf">
       <packagedElement xsi:type="frameweb:Tag" name="actionSource"/>
@@ -47,7 +47,7 @@
       <packagedElement xsi:type="frameweb:Tag" name="renderFacet"/>
       <packagedElement xsi:type="frameweb:Tag" name="valueHolder"/>
     </packagedElement>
-    <FrameworkTagLib name="JSFcore" URI="http://java.sun.com/jsf/core" prefix="j">
+    <packagedElement xsi:type="frameweb:TagLib" name="JSFcore" URI="http://java.sun.com/jsf/core" prefix="j">
       <packagedElement xsi:type="frameweb:Tag" name="actionListner"/>
       <packagedElement xsi:type="frameweb:Tag" name="ajax"/>
       <packagedElement xsi:type="frameweb:Tag" name="attribute"/>
@@ -73,7 +73,17 @@
       <packagedElement xsi:type="frameweb:Tag" name="valueChangeListner"/>
       <packagedElement xsi:type="frameweb:Tag" name="verbatim"/>
       <packagedElement xsi:type="frameweb:Tag" name="view"/>
-      <TagLibTag name="viewParam"/>
-    </FrameworkTagLib>
-  </Uses>
+      <packagedElement xsi:type="frameweb:Tag" name="viewParam"/>
+    </packagedElement>
+    <packagedElement xsi:type="frameweb:ControllerSet" name="ControllerSet">
+      <packagedElement xsi:type="frameweb:Controller" name="Bean">
+        <ownedAttribute xsi:type="frameweb:ControllerProperty" name="base_FrontControllerClass"/>
+      </packagedElement>
+      <packagedElement xsi:type="frameweb:ControllerExtension" name="beanExtension" memberEnd="//@Configures.0/ControllerSet/beanExtension/beanExtensionEnd">
+        <ownedEnd xsi:type="frameweb:ControllerExtensionEnd" name="beanExtensionEnd" type="//@Configures.0/ControllerSet/Bean" aggregation="composite" association="//@Configures.0/ControllerSet/beanExtension">
+          <defaultValue xsi:type="uml:LiteralString" name="Bean" value=""/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+  </Configures>
 </frameweb:Frameweb>

@@ -372,7 +372,7 @@ public class FrontControllerClassItemProvider extends ClassItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createServiceNavigationAssociation()));
+				 FramewebFactory.eINSTANCE.createServiceControllerAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter

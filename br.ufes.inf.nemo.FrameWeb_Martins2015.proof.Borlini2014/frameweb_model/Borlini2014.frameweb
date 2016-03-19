@@ -1,2 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015"/>
+<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015">
+  <Compose xsi:type="frameweb:NavigationModel" name="SCAPNavigation">
+    <packagedElement xsi:type="frameweb:ControllerPackage" name="LeaveAbsenceControl">
+      <packagedElement xsi:type="frameweb:FrontControllerClass" name="RequestLeaveFormBean"/>
+    </packagedElement>
+    <packagedElement xsi:type="frameweb:ViewPackage" name="LeaveAbsenceView">
+      <packagedElement xsi:type="frameweb:UIComponent" name="message"/>
+      <packagedElement xsi:type="frameweb:UIComponent" name="frmRequestLeave"/>
+      <packagedElement xsi:type="frameweb:Page" name="RequestLeave.xhtml"/>
+      <packagedElement xsi:type="frameweb:NavigationAssociation"/>
+      <packagedElement xsi:type="frameweb:NavigationAssociation"/>
+      <packagedElement xsi:type="frameweb:FrontControllerDependency"/>
+      <packagedElement xsi:type="frameweb:ResultDependency"/>
+    </packagedElement>
+  </Compose>
+  <Compose xsi:type="frameweb:DomainModel" name="SCAPDomain">
+    <packagedElement xsi:type="frameweb:DomainPackage" name="Domain">
+      <packagedElement xsi:type="frameweb:DomainClass" name="Request" table="Request"/>
+    </packagedElement>
+  </Compose>
+  <Compose xsi:type="frameweb:ApplicationModel" name="SCAPApplication">
+    <packagedElement xsi:type="frameweb:ApplicationPackage" name="LeaveAbsenceApplication">
+      <packagedElement xsi:type="frameweb:ServiceInterface" name="ApplicationLeaveRequest"/>
+      <packagedElement xsi:type="frameweb:ServiceClass" name="ApplicationLeaveRequestImp"/>
+      <packagedElement xsi:type="frameweb:SeviceRealization" name="" client="//@Compose.2/LeaveAbsenceApplication/ApplicationLeaveRequestImp" supplier="//@Compose.2/LeaveAbsenceApplication/ApplicationLeaveRequest"/>
+      <packagedElement xsi:type="frameweb:DAOServiceAssociation"/>
+      <packagedElement xsi:type="frameweb:ServiceControllerAssociation"/>
+    </packagedElement>
+  </Compose>
+  <Compose xsi:type="frameweb:PersistenceModel" name="SCAPPersistence">
+    <packagedElement xsi:type="frameweb:PersistencePackage" name="LeaveAbsensePersistence">
+      <packagedElement xsi:type="frameweb:DAOClass" name="RequestDAOHibernate"/>
+      <packagedElement xsi:type="frameweb:DAOInterface" name="RequestDAO"/>
+      <packagedElement xsi:type="frameweb:DAORealization" client="//@Compose.3/LeaveAbsensePersistence/RequestDAOHibernate" supplier="//@Compose.3/LeaveAbsensePersistence/RequestDAO"/>
+    </packagedElement>
+  </Compose>
+</frameweb:Frameweb>

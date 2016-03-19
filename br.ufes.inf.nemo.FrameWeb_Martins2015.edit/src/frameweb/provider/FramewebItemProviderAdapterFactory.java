@@ -670,26 +670,26 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.ServiceNavigationAssociation} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.ServiceControllerAssociation} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ServiceNavigationAssociationItemProvider serviceNavigationAssociationItemProvider;
+	protected ServiceControllerAssociationItemProvider serviceControllerAssociationItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.ServiceNavigationAssociation}.
+	 * This creates an adapter for a {@link frameweb.ServiceControllerAssociation}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createServiceNavigationAssociationAdapter() {
-		if (serviceNavigationAssociationItemProvider == null) {
-			serviceNavigationAssociationItemProvider = new ServiceNavigationAssociationItemProvider(this);
+	public Adapter createServiceControllerAssociationAdapter() {
+		if (serviceControllerAssociationItemProvider == null) {
+			serviceControllerAssociationItemProvider = new ServiceControllerAssociationItemProvider(this);
 		}
 
-		return serviceNavigationAssociationItemProvider;
+		return serviceControllerAssociationItemProvider;
 	}
 
 	/**
@@ -2096,6 +2096,29 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link frameweb.SeviceRealization} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected SeviceRealizationItemProvider seviceRealizationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link frameweb.SeviceRealization}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createSeviceRealizationAdapter() {
+		if (seviceRealizationItemProvider == null) {
+			seviceRealizationItemProvider = new SeviceRealizationItemProvider(this);
+		}
+
+		return seviceRealizationItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2220,7 +2243,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (serviceClassItemProvider != null) serviceClassItemProvider.dispose();
 		if (serviceInterfaceItemProvider != null) serviceInterfaceItemProvider.dispose();
 		if (serviceGeneralizationItemProvider != null) serviceGeneralizationItemProvider.dispose();
-		if (serviceNavigationAssociationItemProvider != null) serviceNavigationAssociationItemProvider.dispose();
+		if (serviceControllerAssociationItemProvider != null) serviceControllerAssociationItemProvider.dispose();
 		if (domainClassItemProvider != null) domainClassItemProvider.dispose();
 		if (constantNameItemProvider != null) constantNameItemProvider.dispose();
 		if (domainTableNameItemProvider != null) domainTableNameItemProvider.dispose();
@@ -2282,6 +2305,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (resultPropertyItemProvider != null) resultPropertyItemProvider.dispose();
 		if (classMappingProperyItemProvider != null) classMappingProperyItemProvider.dispose();
 		if (attributeMappingPropertyItemProvider != null) attributeMappingPropertyItemProvider.dispose();
+		if (seviceRealizationItemProvider != null) seviceRealizationItemProvider.dispose();
 	}
 
 }

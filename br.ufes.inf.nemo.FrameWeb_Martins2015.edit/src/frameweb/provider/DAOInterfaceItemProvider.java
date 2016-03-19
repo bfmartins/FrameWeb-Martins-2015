@@ -317,7 +317,7 @@ public class DAOInterfaceItemProvider extends InterfaceItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.INTERFACE__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createServiceNavigationAssociation()));
+				 FramewebFactory.eINSTANCE.createServiceControllerAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter

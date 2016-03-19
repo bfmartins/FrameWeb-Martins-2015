@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015">
-  <Uses name="HTML4" URI="">
+  <Configures name="HTML4" URI="">
     <packagedElement xsi:type="frameweb:TagLib" name="HTML4basic" URI="" prefix="">
       <packagedElement xsi:type="frameweb:Tag" name="!"/>
       <packagedElement xsi:type="frameweb:Tag" name="!DOCTYPE"/>
@@ -120,5 +120,5 @@
       <packagedElement xsi:type="frameweb:Tag" name="param"/>
       <packagedElement xsi:type="frameweb:Tag" name="script"/>
     </packagedElement>
-  </Uses>
+  </Configures>
 </frameweb:Frameweb>

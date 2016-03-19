@@ -256,13 +256,13 @@ public interface FramewebFactory extends EFactory {
 	ServiceGeneralization createServiceGeneralization();
 
 	/**
-	 * Returns a new object of class '<em>Service Navigation Association</em>'.
+	 * Returns a new object of class '<em>Service Controller Association</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Service Navigation Association</em>'.
+	 * @return a new object of class '<em>Service Controller Association</em>'.
 	 * @generated
 	 */
-	ServiceNavigationAssociation createServiceNavigationAssociation();
+	ServiceControllerAssociation createServiceControllerAssociation();
 
 	/**
 	 * Returns a new object of class '<em>Domain Class</em>'.
@@ -812,6 +812,15 @@ public interface FramewebFactory extends EFactory {
 	 * @generated
 	 */
 	AttributeMappingProperty createAttributeMappingProperty();
+
+	/**
+	 * Returns a new object of class '<em>Sevice Realization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sevice Realization</em>'.
+	 * @generated
+	 */
+	SeviceRealization createSeviceRealization();
 
 	/**
 	 * Returns the package supported by this factory.

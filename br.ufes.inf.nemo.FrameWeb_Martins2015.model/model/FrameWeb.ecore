@@ -8,7 +8,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="Configures" upperBound="-1"
         eType="#//FrameworkProfile" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FrameWebModel" abstract="true" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Package"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FrameWebModel" abstract="true" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Model"/>
   <eClassifiers xsi:type="ecore:EClass" name="FrameworkProfile" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Profile">
     <eAnnotations source="Ecore">
       <details key="constraints" value="FrameworkResultSetConstraint FrameworkTagLibConstraint"/>
@@ -233,7 +233,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetServiceClass" lowerBound="1"
         eType="#//ServiceClass"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceNavigationAssociation" eSuperTypes="#//ServiceAssociation">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceControllerAssociation" eSuperTypes="#//ServiceAssociation">
     <eStructuralFeatures xsi:type="ecore:EReference" name="SourceServiceClass" lowerBound="1"
         eType="#//ServiceInterface"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="TargetFrontController"
@@ -467,4 +467,5 @@
   <eClassifiers xsi:type="ecore:EClass" name="ResultProperty" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Property"/>
   <eClassifiers xsi:type="ecore:EClass" name="ClassMappingPropery" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Property"/>
   <eClassifiers xsi:type="ecore:EClass" name="AttributeMappingProperty" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Property"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SeviceRealization" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Realization"/>
 </ecore:EPackage>

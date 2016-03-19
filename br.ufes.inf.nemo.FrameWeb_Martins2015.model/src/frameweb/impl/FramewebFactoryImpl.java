@@ -8,9 +8,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
 /**
@@ -83,7 +81,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.SERVICE_CLASS: return createServiceClass();
 			case FramewebPackage.SERVICE_INTERFACE: return createServiceInterface();
 			case FramewebPackage.SERVICE_GENERALIZATION: return createServiceGeneralization();
-			case FramewebPackage.SERVICE_NAVIGATION_ASSOCIATION: return createServiceNavigationAssociation();
+			case FramewebPackage.SERVICE_CONTROLLER_ASSOCIATION: return createServiceControllerAssociation();
 			case FramewebPackage.DOMAIN_CLASS: return createDomainClass();
 			case FramewebPackage.CONSTANT_NAME: return createConstantName();
 			case FramewebPackage.DOMAIN_TABLE_NAME: return createDomainTableName();
@@ -145,6 +143,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.RESULT_PROPERTY: return createResultProperty();
 			case FramewebPackage.CLASS_MAPPING_PROPERY: return createClassMappingPropery();
 			case FramewebPackage.ATTRIBUTE_MAPPING_PROPERTY: return createAttributeMappingProperty();
+			case FramewebPackage.SEVICE_REALIZATION: return createSeviceRealization();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -481,9 +480,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ServiceNavigationAssociation createServiceNavigationAssociation() {
-		ServiceNavigationAssociationImpl serviceNavigationAssociation = new ServiceNavigationAssociationImpl();
-		return serviceNavigationAssociation;
+	public ServiceControllerAssociation createServiceControllerAssociation() {
+		ServiceControllerAssociationImpl serviceControllerAssociation = new ServiceControllerAssociationImpl();
+		return serviceControllerAssociation;
 	}
 
 	/**
@@ -743,7 +742,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 */
 	public UIComponent createUIComponentField() {
 		UIComponentFieldImpl uiComponentField = new UIComponentFieldImpl();
-		return uiComponentField;
+		return (UIComponent) uiComponentField;
 	}
 
 	/**
@@ -1094,6 +1093,16 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	public AttributeMappingProperty createAttributeMappingProperty() {
 		AttributeMappingPropertyImpl attributeMappingProperty = new AttributeMappingPropertyImpl();
 		return attributeMappingProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SeviceRealization createSeviceRealization() {
+		SeviceRealizationImpl seviceRealization = new SeviceRealizationImpl();
+		return seviceRealization;
 	}
 
 	/**

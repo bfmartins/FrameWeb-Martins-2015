@@ -153,8 +153,8 @@ public class FramewebValidator extends EObjectValidator {
 				return validateServiceInterface((ServiceInterface)value, diagnostics, context);
 			case FramewebPackage.SERVICE_GENERALIZATION:
 				return validateServiceGeneralization((ServiceGeneralization)value, diagnostics, context);
-			case FramewebPackage.SERVICE_NAVIGATION_ASSOCIATION:
-				return validateServiceNavigationAssociation((ServiceNavigationAssociation)value, diagnostics, context);
+			case FramewebPackage.SERVICE_CONTROLLER_ASSOCIATION:
+				return validateServiceControllerAssociation((ServiceControllerAssociation)value, diagnostics, context);
 			case FramewebPackage.DOMAIN_CLASS:
 				return validateDomainClass((DomainClass)value, diagnostics, context);
 			case FramewebPackage.CONSTANT_NAME:
@@ -293,6 +293,8 @@ public class FramewebValidator extends EObjectValidator {
 				return validateClassMappingPropery((ClassMappingPropery)value, diagnostics, context);
 			case FramewebPackage.ATTRIBUTE_MAPPING_PROPERTY:
 				return validateAttributeMappingProperty((AttributeMappingProperty)value, diagnostics, context);
+			case FramewebPackage.SEVICE_REALIZATION:
+				return validateSeviceRealization((SeviceRealization)value, diagnostics, context);
 			case FramewebPackage.DATE_TIME_PRECISION:
 				return validateDateTimePrecision((DateTimePrecision)value, diagnostics, context);
 			case FramewebPackage.GENERATION:
@@ -1385,37 +1387,37 @@ public class FramewebValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateServiceNavigationAssociation(ServiceNavigationAssociation serviceNavigationAssociation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(serviceNavigationAssociation, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateMembersDistinguishable(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportSelf(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportOwnedMembers(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionConsistent(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateNonLeafRedefinition(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionContextValid(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validatePackageableElement_validateNamespaceNeedsVisibility(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateSpecializeType(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateMapsToGeneralizationSet(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNonFinalParents(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNoCyclesInGeneralization(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateSpecializedEndNumber(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateSpecializedEndTypes(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateBinaryAssociations(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateAssociationEnds(serviceNavigationAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateEndsMustBeTyped(serviceNavigationAssociation, diagnostics, context);
+	public boolean validateServiceControllerAssociation(ServiceControllerAssociation serviceControllerAssociation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(serviceControllerAssociation, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateMembersDistinguishable(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportSelf(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportOwnedMembers(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionConsistent(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateNonLeafRedefinition(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionContextValid(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validatePackageableElement_validateNamespaceNeedsVisibility(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateSpecializeType(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateMapsToGeneralizationSet(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNonFinalParents(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNoCyclesInGeneralization(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateSpecializedEndNumber(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateSpecializedEndTypes(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateBinaryAssociations(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateAssociationEnds(serviceControllerAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateEndsMustBeTyped(serviceControllerAssociation, diagnostics, context);
 		return result;
 	}
 
@@ -3735,6 +3737,30 @@ public class FramewebValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateSubsettedPropertyNames(attributeMappingProperty, diagnostics, context);
 		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateTypeOfOppositeEnd(attributeMappingProperty, diagnostics, context);
 		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateQualifiedIsAssociationEnd(attributeMappingProperty, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSeviceRealization(SeviceRealization seviceRealization, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(seviceRealization, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(seviceRealization, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(seviceRealization, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(seviceRealization, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(seviceRealization, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(seviceRealization, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(seviceRealization, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(seviceRealization, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(seviceRealization, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(seviceRealization, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(seviceRealization, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(seviceRealization, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(seviceRealization, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(seviceRealization, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validatePackageableElement_validateNamespaceNeedsVisibility(seviceRealization, diagnostics, context);
 		return result;
 	}
 

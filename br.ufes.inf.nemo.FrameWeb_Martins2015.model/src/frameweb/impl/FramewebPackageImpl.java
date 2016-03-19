@@ -98,10 +98,11 @@ import frameweb.ReultExtensionEnd;
 import frameweb.ServiceAssociation;
 import frameweb.ServiceAttribute;
 import frameweb.ServiceClass;
+import frameweb.ServiceControllerAssociation;
 import frameweb.ServiceGeneralization;
 import frameweb.ServiceInterface;
-import frameweb.ServiceNavigationAssociation;
 import frameweb.ServiceOperation;
+import frameweb.SeviceRealization;
 import frameweb.Tag;
 import frameweb.TagExtension;
 import frameweb.TagExtensionEnd;
@@ -338,7 +339,7 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass serviceNavigationAssociationEClass = null;
+	private EClass serviceControllerAssociationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -822,6 +823,13 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 	 * @generated
 	 */
 	private EClass attributeMappingPropertyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass seviceRealizationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1754,8 +1762,8 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getServiceNavigationAssociation() {
-		return serviceNavigationAssociationEClass;
+	public EClass getServiceControllerAssociation() {
+		return serviceControllerAssociationEClass;
 	}
 
 	/**
@@ -1763,8 +1771,8 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getServiceNavigationAssociation_SourceServiceClass() {
-		return (EReference)serviceNavigationAssociationEClass.getEStructuralFeatures().get(0);
+	public EReference getServiceControllerAssociation_SourceServiceClass() {
+		return (EReference)serviceControllerAssociationEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1772,8 +1780,8 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getServiceNavigationAssociation_TargetFrontController() {
-		return (EReference)serviceNavigationAssociationEClass.getEStructuralFeatures().get(1);
+	public EReference getServiceControllerAssociation_TargetFrontController() {
+		return (EReference)serviceControllerAssociationEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -2690,6 +2698,15 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getSeviceRealization() {
+		return seviceRealizationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getDateTimePrecision() {
 		return dateTimePrecisionEEnum;
 	}
@@ -2918,9 +2935,9 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		createEReference(serviceGeneralizationEClass, SERVICE_GENERALIZATION__SOURCE_SERVICE_INTERFACE);
 		createEReference(serviceGeneralizationEClass, SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS);
 
-		serviceNavigationAssociationEClass = createEClass(SERVICE_NAVIGATION_ASSOCIATION);
-		createEReference(serviceNavigationAssociationEClass, SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS);
-		createEReference(serviceNavigationAssociationEClass, SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER);
+		serviceControllerAssociationEClass = createEClass(SERVICE_CONTROLLER_ASSOCIATION);
+		createEReference(serviceControllerAssociationEClass, SERVICE_CONTROLLER_ASSOCIATION__SOURCE_SERVICE_CLASS);
+		createEReference(serviceControllerAssociationEClass, SERVICE_CONTROLLER_ASSOCIATION__TARGET_FRONT_CONTROLLER);
 
 		domainClassEClass = createEClass(DOMAIN_CLASS);
 		createEReference(domainClassEClass, DOMAIN_CLASS__DOMAIN_CLASS_ATTRIBUTE);
@@ -3092,6 +3109,8 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 
 		attributeMappingPropertyEClass = createEClass(ATTRIBUTE_MAPPING_PROPERTY);
 
+		seviceRealizationEClass = createEClass(SEVICE_REALIZATION);
+
 		// Create enums
 		dateTimePrecisionEEnum = createEEnum(DATE_TIME_PRECISION);
 		generationEEnum = createEEnum(GENERATION);
@@ -3165,7 +3184,7 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		serviceClassEClass.getESuperTypes().add(theUMLPackage.getClass_());
 		serviceInterfaceEClass.getESuperTypes().add(theUMLPackage.getInterface());
 		serviceGeneralizationEClass.getESuperTypes().add(theUMLPackage.getGeneralization());
-		serviceNavigationAssociationEClass.getESuperTypes().add(this.getServiceAssociation());
+		serviceControllerAssociationEClass.getESuperTypes().add(this.getServiceAssociation());
 		domainClassEClass.getESuperTypes().add(theUMLPackage.getClass_());
 		daoInterfaceNameEClass.getESuperTypes().add(this.getConstantName());
 		daoClassNameEClass.getESuperTypes().add(this.getDAOInterfaceName());
@@ -3231,6 +3250,7 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		resultPropertyEClass.getESuperTypes().add(theUMLPackage.getProperty());
 		classMappingProperyEClass.getESuperTypes().add(theUMLPackage.getProperty());
 		attributeMappingPropertyEClass.getESuperTypes().add(theUMLPackage.getProperty());
+		seviceRealizationEClass.getESuperTypes().add(theUMLPackage.getRealization());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(framewebEClass, Frameweb.class, "Frameweb", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -3348,9 +3368,9 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		initEReference(getServiceGeneralization_SourceServiceInterface(), this.getServiceInterface(), null, "SourceServiceInterface", null, 1, 1, ServiceGeneralization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getServiceGeneralization_TargetServiceClass(), this.getServiceClass(), null, "TargetServiceClass", null, 1, 1, ServiceGeneralization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(serviceNavigationAssociationEClass, ServiceNavigationAssociation.class, "ServiceNavigationAssociation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getServiceNavigationAssociation_SourceServiceClass(), this.getServiceInterface(), null, "SourceServiceClass", null, 1, 1, ServiceNavigationAssociation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getServiceNavigationAssociation_TargetFrontController(), this.getFrontControllerClass(), null, "TargetFrontController", null, 1, 1, ServiceNavigationAssociation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(serviceControllerAssociationEClass, ServiceControllerAssociation.class, "ServiceControllerAssociation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getServiceControllerAssociation_SourceServiceClass(), this.getServiceInterface(), null, "SourceServiceClass", null, 1, 1, ServiceControllerAssociation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getServiceControllerAssociation_TargetFrontController(), this.getFrontControllerClass(), null, "TargetFrontController", null, 1, 1, ServiceControllerAssociation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(domainClassEClass, DomainClass.class, "DomainClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDomainClass_DomainClassAttribute(), this.getDomainAttribute(), null, "DomainClassAttribute", null, 1, -1, DomainClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3521,6 +3541,8 @@ public class FramewebPackageImpl extends EPackageImpl implements FramewebPackage
 		initEClass(classMappingProperyEClass, ClassMappingPropery.class, "ClassMappingPropery", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(attributeMappingPropertyEClass, AttributeMappingProperty.class, "AttributeMappingProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(seviceRealizationEClass, SeviceRealization.class, "SeviceRealization", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Initialize enums and add enum literals
 		initEEnum(dateTimePrecisionEEnum, DateTimePrecision.class, "DateTimePrecision");

@@ -332,7 +332,7 @@ public class FrameworkProfileItemProvider extends ProfileItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
-				 FramewebFactory.eINSTANCE.createServiceNavigationAssociation()));
+				 FramewebFactory.eINSTANCE.createServiceControllerAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -492,7 +492,7 @@ public class FrameworkProfileItemProvider extends ProfileItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createServiceNavigationAssociation()));
+				 FramewebFactory.eINSTANCE.createServiceControllerAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -653,6 +653,11 @@ public class FrameworkProfileItemProvider extends ProfileItemProvider {
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
 				 FramewebFactory.eINSTANCE.createAttributeMappingExtension()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
+				 FramewebFactory.eINSTANCE.createSeviceRealization()));
 
 		newChildDescriptors.add
 			(createChildParameter

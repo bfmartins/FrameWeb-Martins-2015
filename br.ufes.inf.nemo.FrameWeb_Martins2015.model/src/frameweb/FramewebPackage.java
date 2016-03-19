@@ -39620,14 +39620,14 @@ public interface FramewebPackage extends EPackage {
 	int SERVICE_ASSOCIATION_OPERATION_COUNT = UMLPackage.ASSOCIATION_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link frameweb.impl.ServiceNavigationAssociationImpl <em>Service Navigation Association</em>}' class.
+	 * The meta object id for the '{@link frameweb.impl.ServiceControllerAssociationImpl <em>Service Controller Association</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see frameweb.impl.ServiceNavigationAssociationImpl
-	 * @see frameweb.impl.FramewebPackageImpl#getServiceNavigationAssociation()
+	 * @see frameweb.impl.ServiceControllerAssociationImpl
+	 * @see frameweb.impl.FramewebPackageImpl#getServiceControllerAssociation()
 	 * @generated
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION = 28;
+	int SERVICE_CONTROLLER_ASSOCIATION = 28;
 
 	/**
 	 * The feature id for the '<em><b>EAnnotations</b></em>' containment reference list.
@@ -39636,7 +39636,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__EANNOTATIONS = SERVICE_ASSOCIATION__EANNOTATIONS;
+	int SERVICE_CONTROLLER_ASSOCIATION__EANNOTATIONS = SERVICE_ASSOCIATION__EANNOTATIONS;
 
 	/**
 	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
@@ -39645,7 +39645,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__OWNED_COMMENT = SERVICE_ASSOCIATION__OWNED_COMMENT;
+	int SERVICE_CONTROLLER_ASSOCIATION__OWNED_COMMENT = SERVICE_ASSOCIATION__OWNED_COMMENT;
 
 	/**
 	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
@@ -39654,7 +39654,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__OWNED_ELEMENT = SERVICE_ASSOCIATION__OWNED_ELEMENT;
+	int SERVICE_CONTROLLER_ASSOCIATION__OWNED_ELEMENT = SERVICE_ASSOCIATION__OWNED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Owner</b></em>' reference.
@@ -39663,7 +39663,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__OWNER = SERVICE_ASSOCIATION__OWNER;
+	int SERVICE_CONTROLLER_ASSOCIATION__OWNER = SERVICE_ASSOCIATION__OWNER;
 
 	/**
 	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
@@ -39672,7 +39672,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__CLIENT_DEPENDENCY = SERVICE_ASSOCIATION__CLIENT_DEPENDENCY;
+	int SERVICE_CONTROLLER_ASSOCIATION__CLIENT_DEPENDENCY = SERVICE_ASSOCIATION__CLIENT_DEPENDENCY;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -39681,7 +39681,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__NAME = SERVICE_ASSOCIATION__NAME;
+	int SERVICE_CONTROLLER_ASSOCIATION__NAME = SERVICE_ASSOCIATION__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
@@ -39690,7 +39690,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__NAME_EXPRESSION = SERVICE_ASSOCIATION__NAME_EXPRESSION;
+	int SERVICE_CONTROLLER_ASSOCIATION__NAME_EXPRESSION = SERVICE_ASSOCIATION__NAME_EXPRESSION;
 
 	/**
 	 * The feature id for the '<em><b>Namespace</b></em>' reference.
@@ -39699,7 +39699,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__NAMESPACE = SERVICE_ASSOCIATION__NAMESPACE;
+	int SERVICE_CONTROLLER_ASSOCIATION__NAMESPACE = SERVICE_ASSOCIATION__NAMESPACE;
 
 	/**
 	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
@@ -39708,7 +39708,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__QUALIFIED_NAME = SERVICE_ASSOCIATION__QUALIFIED_NAME;
+	int SERVICE_CONTROLLER_ASSOCIATION__QUALIFIED_NAME = SERVICE_ASSOCIATION__QUALIFIED_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -39717,7 +39717,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__VISIBILITY = SERVICE_ASSOCIATION__VISIBILITY;
+	int SERVICE_CONTROLLER_ASSOCIATION__VISIBILITY = SERVICE_ASSOCIATION__VISIBILITY;
 
 	/**
 	 * The feature id for the '<em><b>Owned Rule</b></em>' containment reference list.
@@ -39726,7 +39726,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__OWNED_RULE = SERVICE_ASSOCIATION__OWNED_RULE;
+	int SERVICE_CONTROLLER_ASSOCIATION__OWNED_RULE = SERVICE_ASSOCIATION__OWNED_RULE;
 
 	/**
 	 * The feature id for the '<em><b>Element Import</b></em>' containment reference list.
@@ -39735,7 +39735,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__ELEMENT_IMPORT = SERVICE_ASSOCIATION__ELEMENT_IMPORT;
+	int SERVICE_CONTROLLER_ASSOCIATION__ELEMENT_IMPORT = SERVICE_ASSOCIATION__ELEMENT_IMPORT;
 
 	/**
 	 * The feature id for the '<em><b>Package Import</b></em>' containment reference list.
@@ -39744,7 +39744,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__PACKAGE_IMPORT = SERVICE_ASSOCIATION__PACKAGE_IMPORT;
+	int SERVICE_CONTROLLER_ASSOCIATION__PACKAGE_IMPORT = SERVICE_ASSOCIATION__PACKAGE_IMPORT;
 
 	/**
 	 * The feature id for the '<em><b>Owned Member</b></em>' reference list.
@@ -39753,7 +39753,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__OWNED_MEMBER = SERVICE_ASSOCIATION__OWNED_MEMBER;
+	int SERVICE_CONTROLLER_ASSOCIATION__OWNED_MEMBER = SERVICE_ASSOCIATION__OWNED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Imported Member</b></em>' reference list.
@@ -39762,7 +39762,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__IMPORTED_MEMBER = SERVICE_ASSOCIATION__IMPORTED_MEMBER;
+	int SERVICE_CONTROLLER_ASSOCIATION__IMPORTED_MEMBER = SERVICE_ASSOCIATION__IMPORTED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Member</b></em>' reference list.
@@ -39771,7 +39771,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__MEMBER = SERVICE_ASSOCIATION__MEMBER;
+	int SERVICE_CONTROLLER_ASSOCIATION__MEMBER = SERVICE_ASSOCIATION__MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Is Leaf</b></em>' attribute.
@@ -39780,7 +39780,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__IS_LEAF = SERVICE_ASSOCIATION__IS_LEAF;
+	int SERVICE_CONTROLLER_ASSOCIATION__IS_LEAF = SERVICE_ASSOCIATION__IS_LEAF;
 
 	/**
 	 * The feature id for the '<em><b>Redefined Element</b></em>' reference list.
@@ -39789,7 +39789,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__REDEFINED_ELEMENT = SERVICE_ASSOCIATION__REDEFINED_ELEMENT;
+	int SERVICE_CONTROLLER_ASSOCIATION__REDEFINED_ELEMENT = SERVICE_ASSOCIATION__REDEFINED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Redefinition Context</b></em>' reference list.
@@ -39798,7 +39798,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__REDEFINITION_CONTEXT = SERVICE_ASSOCIATION__REDEFINITION_CONTEXT;
+	int SERVICE_CONTROLLER_ASSOCIATION__REDEFINITION_CONTEXT = SERVICE_ASSOCIATION__REDEFINITION_CONTEXT;
 
 	/**
 	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
@@ -39807,7 +39807,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__OWNING_TEMPLATE_PARAMETER = SERVICE_ASSOCIATION__OWNING_TEMPLATE_PARAMETER;
+	int SERVICE_CONTROLLER_ASSOCIATION__OWNING_TEMPLATE_PARAMETER = SERVICE_ASSOCIATION__OWNING_TEMPLATE_PARAMETER;
 
 	/**
 	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
@@ -39816,7 +39816,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__TEMPLATE_PARAMETER = SERVICE_ASSOCIATION__TEMPLATE_PARAMETER;
+	int SERVICE_CONTROLLER_ASSOCIATION__TEMPLATE_PARAMETER = SERVICE_ASSOCIATION__TEMPLATE_PARAMETER;
 
 	/**
 	 * The feature id for the '<em><b>Package</b></em>' reference.
@@ -39825,7 +39825,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__PACKAGE = SERVICE_ASSOCIATION__PACKAGE;
+	int SERVICE_CONTROLLER_ASSOCIATION__PACKAGE = SERVICE_ASSOCIATION__PACKAGE;
 
 	/**
 	 * The feature id for the '<em><b>Template Binding</b></em>' containment reference list.
@@ -39834,7 +39834,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__TEMPLATE_BINDING = SERVICE_ASSOCIATION__TEMPLATE_BINDING;
+	int SERVICE_CONTROLLER_ASSOCIATION__TEMPLATE_BINDING = SERVICE_ASSOCIATION__TEMPLATE_BINDING;
 
 	/**
 	 * The feature id for the '<em><b>Owned Template Signature</b></em>' containment reference.
@@ -39843,7 +39843,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__OWNED_TEMPLATE_SIGNATURE = SERVICE_ASSOCIATION__OWNED_TEMPLATE_SIGNATURE;
+	int SERVICE_CONTROLLER_ASSOCIATION__OWNED_TEMPLATE_SIGNATURE = SERVICE_ASSOCIATION__OWNED_TEMPLATE_SIGNATURE;
 
 	/**
 	 * The feature id for the '<em><b>Feature</b></em>' reference list.
@@ -39852,7 +39852,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__FEATURE = SERVICE_ASSOCIATION__FEATURE;
+	int SERVICE_CONTROLLER_ASSOCIATION__FEATURE = SERVICE_ASSOCIATION__FEATURE;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' reference list.
@@ -39861,7 +39861,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__ATTRIBUTE = SERVICE_ASSOCIATION__ATTRIBUTE;
+	int SERVICE_CONTROLLER_ASSOCIATION__ATTRIBUTE = SERVICE_ASSOCIATION__ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Collaboration Use</b></em>' containment reference list.
@@ -39870,7 +39870,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__COLLABORATION_USE = SERVICE_ASSOCIATION__COLLABORATION_USE;
+	int SERVICE_CONTROLLER_ASSOCIATION__COLLABORATION_USE = SERVICE_ASSOCIATION__COLLABORATION_USE;
 
 	/**
 	 * The feature id for the '<em><b>General</b></em>' reference list.
@@ -39879,7 +39879,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__GENERAL = SERVICE_ASSOCIATION__GENERAL;
+	int SERVICE_CONTROLLER_ASSOCIATION__GENERAL = SERVICE_ASSOCIATION__GENERAL;
 
 	/**
 	 * The feature id for the '<em><b>Generalization</b></em>' containment reference list.
@@ -39888,7 +39888,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__GENERALIZATION = SERVICE_ASSOCIATION__GENERALIZATION;
+	int SERVICE_CONTROLLER_ASSOCIATION__GENERALIZATION = SERVICE_ASSOCIATION__GENERALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Powertype Extent</b></em>' reference list.
@@ -39897,7 +39897,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__POWERTYPE_EXTENT = SERVICE_ASSOCIATION__POWERTYPE_EXTENT;
+	int SERVICE_CONTROLLER_ASSOCIATION__POWERTYPE_EXTENT = SERVICE_ASSOCIATION__POWERTYPE_EXTENT;
 
 	/**
 	 * The feature id for the '<em><b>Inherited Member</b></em>' reference list.
@@ -39906,7 +39906,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__INHERITED_MEMBER = SERVICE_ASSOCIATION__INHERITED_MEMBER;
+	int SERVICE_CONTROLLER_ASSOCIATION__INHERITED_MEMBER = SERVICE_ASSOCIATION__INHERITED_MEMBER;
 
 	/**
 	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
@@ -39915,7 +39915,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__IS_ABSTRACT = SERVICE_ASSOCIATION__IS_ABSTRACT;
+	int SERVICE_CONTROLLER_ASSOCIATION__IS_ABSTRACT = SERVICE_ASSOCIATION__IS_ABSTRACT;
 
 	/**
 	 * The feature id for the '<em><b>Is Final Specialization</b></em>' attribute.
@@ -39924,7 +39924,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__IS_FINAL_SPECIALIZATION = SERVICE_ASSOCIATION__IS_FINAL_SPECIALIZATION;
+	int SERVICE_CONTROLLER_ASSOCIATION__IS_FINAL_SPECIALIZATION = SERVICE_ASSOCIATION__IS_FINAL_SPECIALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Owned Use Case</b></em>' containment reference list.
@@ -39933,7 +39933,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__OWNED_USE_CASE = SERVICE_ASSOCIATION__OWNED_USE_CASE;
+	int SERVICE_CONTROLLER_ASSOCIATION__OWNED_USE_CASE = SERVICE_ASSOCIATION__OWNED_USE_CASE;
 
 	/**
 	 * The feature id for the '<em><b>Use Case</b></em>' reference list.
@@ -39942,7 +39942,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__USE_CASE = SERVICE_ASSOCIATION__USE_CASE;
+	int SERVICE_CONTROLLER_ASSOCIATION__USE_CASE = SERVICE_ASSOCIATION__USE_CASE;
 
 	/**
 	 * The feature id for the '<em><b>Redefined Classifier</b></em>' reference list.
@@ -39951,7 +39951,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__REDEFINED_CLASSIFIER = SERVICE_ASSOCIATION__REDEFINED_CLASSIFIER;
+	int SERVICE_CONTROLLER_ASSOCIATION__REDEFINED_CLASSIFIER = SERVICE_ASSOCIATION__REDEFINED_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Representation</b></em>' reference.
@@ -39960,7 +39960,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__REPRESENTATION = SERVICE_ASSOCIATION__REPRESENTATION;
+	int SERVICE_CONTROLLER_ASSOCIATION__REPRESENTATION = SERVICE_ASSOCIATION__REPRESENTATION;
 
 	/**
 	 * The feature id for the '<em><b>Substitution</b></em>' containment reference list.
@@ -39969,7 +39969,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__SUBSTITUTION = SERVICE_ASSOCIATION__SUBSTITUTION;
+	int SERVICE_CONTROLLER_ASSOCIATION__SUBSTITUTION = SERVICE_ASSOCIATION__SUBSTITUTION;
 
 	/**
 	 * The feature id for the '<em><b>Related Element</b></em>' reference list.
@@ -39978,7 +39978,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__RELATED_ELEMENT = SERVICE_ASSOCIATION__RELATED_ELEMENT;
+	int SERVICE_CONTROLLER_ASSOCIATION__RELATED_ELEMENT = SERVICE_ASSOCIATION__RELATED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>End Type</b></em>' reference list.
@@ -39987,7 +39987,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__END_TYPE = SERVICE_ASSOCIATION__END_TYPE;
+	int SERVICE_CONTROLLER_ASSOCIATION__END_TYPE = SERVICE_ASSOCIATION__END_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Is Derived</b></em>' attribute.
@@ -39996,7 +39996,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__IS_DERIVED = SERVICE_ASSOCIATION__IS_DERIVED;
+	int SERVICE_CONTROLLER_ASSOCIATION__IS_DERIVED = SERVICE_ASSOCIATION__IS_DERIVED;
 
 	/**
 	 * The feature id for the '<em><b>Member End</b></em>' reference list.
@@ -40005,7 +40005,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__MEMBER_END = SERVICE_ASSOCIATION__MEMBER_END;
+	int SERVICE_CONTROLLER_ASSOCIATION__MEMBER_END = SERVICE_ASSOCIATION__MEMBER_END;
 
 	/**
 	 * The feature id for the '<em><b>Owned End</b></em>' containment reference list.
@@ -40014,7 +40014,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__OWNED_END = SERVICE_ASSOCIATION__OWNED_END;
+	int SERVICE_CONTROLLER_ASSOCIATION__OWNED_END = SERVICE_ASSOCIATION__OWNED_END;
 
 	/**
 	 * The feature id for the '<em><b>Navigable Owned End</b></em>' reference list.
@@ -40023,7 +40023,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__NAVIGABLE_OWNED_END = SERVICE_ASSOCIATION__NAVIGABLE_OWNED_END;
+	int SERVICE_CONTROLLER_ASSOCIATION__NAVIGABLE_OWNED_END = SERVICE_ASSOCIATION__NAVIGABLE_OWNED_END;
 
 	/**
 	 * The feature id for the '<em><b>Source Service Class</b></em>' reference.
@@ -40032,7 +40032,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS = SERVICE_ASSOCIATION_FEATURE_COUNT + 0;
+	int SERVICE_CONTROLLER_ASSOCIATION__SOURCE_SERVICE_CLASS = SERVICE_ASSOCIATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Target Front Controller</b></em>' reference.
@@ -40041,16 +40041,16 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER = SERVICE_ASSOCIATION_FEATURE_COUNT + 1;
+	int SERVICE_CONTROLLER_ASSOCIATION__TARGET_FRONT_CONTROLLER = SERVICE_ASSOCIATION_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of structural features of the '<em>Service Navigation Association</em>' class.
+	 * The number of structural features of the '<em>Service Controller Association</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION_FEATURE_COUNT = SERVICE_ASSOCIATION_FEATURE_COUNT + 2;
+	int SERVICE_CONTROLLER_ASSOCIATION_FEATURE_COUNT = SERVICE_ASSOCIATION_FEATURE_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Get EAnnotation</em>' operation.
@@ -40059,7 +40059,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_EANNOTATION__STRING = SERVICE_ASSOCIATION___GET_EANNOTATION__STRING;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_EANNOTATION__STRING = SERVICE_ASSOCIATION___GET_EANNOTATION__STRING;
 
 	/**
 	 * The operation id for the '<em>Validate Has Owner</em>' operation.
@@ -40068,7 +40068,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Not Own Self</em>' operation.
@@ -40077,7 +40077,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Add Keyword</em>' operation.
@@ -40086,7 +40086,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___ADD_KEYWORD__STRING = SERVICE_ASSOCIATION___ADD_KEYWORD__STRING;
+	int SERVICE_CONTROLLER_ASSOCIATION___ADD_KEYWORD__STRING = SERVICE_ASSOCIATION___ADD_KEYWORD__STRING;
 
 	/**
 	 * The operation id for the '<em>Apply Stereotype</em>' operation.
@@ -40095,7 +40095,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___APPLY_STEREOTYPE__STEREOTYPE = SERVICE_ASSOCIATION___APPLY_STEREOTYPE__STEREOTYPE;
+	int SERVICE_CONTROLLER_ASSOCIATION___APPLY_STEREOTYPE__STEREOTYPE = SERVICE_ASSOCIATION___APPLY_STEREOTYPE__STEREOTYPE;
 
 	/**
 	 * The operation id for the '<em>Create EAnnotation</em>' operation.
@@ -40104,7 +40104,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___CREATE_EANNOTATION__STRING = SERVICE_ASSOCIATION___CREATE_EANNOTATION__STRING;
+	int SERVICE_CONTROLLER_ASSOCIATION___CREATE_EANNOTATION__STRING = SERVICE_ASSOCIATION___CREATE_EANNOTATION__STRING;
 
 	/**
 	 * The operation id for the '<em>Destroy</em>' operation.
@@ -40113,7 +40113,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___DESTROY = SERVICE_ASSOCIATION___DESTROY;
+	int SERVICE_CONTROLLER_ASSOCIATION___DESTROY = SERVICE_ASSOCIATION___DESTROY;
 
 	/**
 	 * The operation id for the '<em>Get Keywords</em>' operation.
@@ -40122,7 +40122,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_KEYWORDS = SERVICE_ASSOCIATION___GET_KEYWORDS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_KEYWORDS = SERVICE_ASSOCIATION___GET_KEYWORDS;
 
 	/**
 	 * The operation id for the '<em>Get Applicable Stereotype</em>' operation.
@@ -40131,7 +40131,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_APPLICABLE_STEREOTYPE__STRING = SERVICE_ASSOCIATION___GET_APPLICABLE_STEREOTYPE__STRING;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_APPLICABLE_STEREOTYPE__STRING = SERVICE_ASSOCIATION___GET_APPLICABLE_STEREOTYPE__STRING;
 
 	/**
 	 * The operation id for the '<em>Get Applicable Stereotypes</em>' operation.
@@ -40140,7 +40140,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_APPLICABLE_STEREOTYPES = SERVICE_ASSOCIATION___GET_APPLICABLE_STEREOTYPES;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_APPLICABLE_STEREOTYPES = SERVICE_ASSOCIATION___GET_APPLICABLE_STEREOTYPES;
 
 	/**
 	 * The operation id for the '<em>Get Applied Stereotype</em>' operation.
@@ -40149,7 +40149,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_APPLIED_STEREOTYPE__STRING = SERVICE_ASSOCIATION___GET_APPLIED_STEREOTYPE__STRING;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_APPLIED_STEREOTYPE__STRING = SERVICE_ASSOCIATION___GET_APPLIED_STEREOTYPE__STRING;
 
 	/**
 	 * The operation id for the '<em>Get Applied Stereotypes</em>' operation.
@@ -40158,7 +40158,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_APPLIED_STEREOTYPES = SERVICE_ASSOCIATION___GET_APPLIED_STEREOTYPES;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_APPLIED_STEREOTYPES = SERVICE_ASSOCIATION___GET_APPLIED_STEREOTYPES;
 
 	/**
 	 * The operation id for the '<em>Get Applied Substereotype</em>' operation.
@@ -40167,7 +40167,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING = SERVICE_ASSOCIATION___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING = SERVICE_ASSOCIATION___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING;
 
 	/**
 	 * The operation id for the '<em>Get Applied Substereotypes</em>' operation.
@@ -40176,7 +40176,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE = SERVICE_ASSOCIATION___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE = SERVICE_ASSOCIATION___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE;
 
 	/**
 	 * The operation id for the '<em>Get Model</em>' operation.
@@ -40185,7 +40185,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_MODEL = SERVICE_ASSOCIATION___GET_MODEL;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_MODEL = SERVICE_ASSOCIATION___GET_MODEL;
 
 	/**
 	 * The operation id for the '<em>Get Nearest Package</em>' operation.
@@ -40194,7 +40194,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_NEAREST_PACKAGE = SERVICE_ASSOCIATION___GET_NEAREST_PACKAGE;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_NEAREST_PACKAGE = SERVICE_ASSOCIATION___GET_NEAREST_PACKAGE;
 
 	/**
 	 * The operation id for the '<em>Get Relationships</em>' operation.
@@ -40203,7 +40203,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_RELATIONSHIPS = SERVICE_ASSOCIATION___GET_RELATIONSHIPS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_RELATIONSHIPS = SERVICE_ASSOCIATION___GET_RELATIONSHIPS;
 
 	/**
 	 * The operation id for the '<em>Get Relationships</em>' operation.
@@ -40212,7 +40212,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_RELATIONSHIPS__ECLASS = SERVICE_ASSOCIATION___GET_RELATIONSHIPS__ECLASS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_RELATIONSHIPS__ECLASS = SERVICE_ASSOCIATION___GET_RELATIONSHIPS__ECLASS;
 
 	/**
 	 * The operation id for the '<em>Get Required Stereotype</em>' operation.
@@ -40221,7 +40221,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_REQUIRED_STEREOTYPE__STRING = SERVICE_ASSOCIATION___GET_REQUIRED_STEREOTYPE__STRING;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_REQUIRED_STEREOTYPE__STRING = SERVICE_ASSOCIATION___GET_REQUIRED_STEREOTYPE__STRING;
 
 	/**
 	 * The operation id for the '<em>Get Required Stereotypes</em>' operation.
@@ -40230,7 +40230,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_REQUIRED_STEREOTYPES = SERVICE_ASSOCIATION___GET_REQUIRED_STEREOTYPES;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_REQUIRED_STEREOTYPES = SERVICE_ASSOCIATION___GET_REQUIRED_STEREOTYPES;
 
 	/**
 	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
@@ -40239,7 +40239,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_SOURCE_DIRECTED_RELATIONSHIPS = SERVICE_ASSOCIATION___GET_SOURCE_DIRECTED_RELATIONSHIPS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_SOURCE_DIRECTED_RELATIONSHIPS = SERVICE_ASSOCIATION___GET_SOURCE_DIRECTED_RELATIONSHIPS;
 
 	/**
 	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
@@ -40248,7 +40248,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS = SERVICE_ASSOCIATION___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS = SERVICE_ASSOCIATION___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS;
 
 	/**
 	 * The operation id for the '<em>Get Stereotype Application</em>' operation.
@@ -40257,7 +40257,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_STEREOTYPE_APPLICATION__STEREOTYPE = SERVICE_ASSOCIATION___GET_STEREOTYPE_APPLICATION__STEREOTYPE;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_STEREOTYPE_APPLICATION__STEREOTYPE = SERVICE_ASSOCIATION___GET_STEREOTYPE_APPLICATION__STEREOTYPE;
 
 	/**
 	 * The operation id for the '<em>Get Stereotype Applications</em>' operation.
@@ -40266,7 +40266,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_STEREOTYPE_APPLICATIONS = SERVICE_ASSOCIATION___GET_STEREOTYPE_APPLICATIONS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_STEREOTYPE_APPLICATIONS = SERVICE_ASSOCIATION___GET_STEREOTYPE_APPLICATIONS;
 
 	/**
 	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
@@ -40275,7 +40275,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_TARGET_DIRECTED_RELATIONSHIPS = SERVICE_ASSOCIATION___GET_TARGET_DIRECTED_RELATIONSHIPS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_TARGET_DIRECTED_RELATIONSHIPS = SERVICE_ASSOCIATION___GET_TARGET_DIRECTED_RELATIONSHIPS;
 
 	/**
 	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
@@ -40284,7 +40284,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS = SERVICE_ASSOCIATION___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS = SERVICE_ASSOCIATION___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS;
 
 	/**
 	 * The operation id for the '<em>Get Value</em>' operation.
@@ -40293,7 +40293,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_VALUE__STEREOTYPE_STRING = SERVICE_ASSOCIATION___GET_VALUE__STEREOTYPE_STRING;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_VALUE__STEREOTYPE_STRING = SERVICE_ASSOCIATION___GET_VALUE__STEREOTYPE_STRING;
 
 	/**
 	 * The operation id for the '<em>Has Keyword</em>' operation.
@@ -40302,7 +40302,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___HAS_KEYWORD__STRING = SERVICE_ASSOCIATION___HAS_KEYWORD__STRING;
+	int SERVICE_CONTROLLER_ASSOCIATION___HAS_KEYWORD__STRING = SERVICE_ASSOCIATION___HAS_KEYWORD__STRING;
 
 	/**
 	 * The operation id for the '<em>Has Value</em>' operation.
@@ -40311,7 +40311,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___HAS_VALUE__STEREOTYPE_STRING = SERVICE_ASSOCIATION___HAS_VALUE__STEREOTYPE_STRING;
+	int SERVICE_CONTROLLER_ASSOCIATION___HAS_VALUE__STEREOTYPE_STRING = SERVICE_ASSOCIATION___HAS_VALUE__STEREOTYPE_STRING;
 
 	/**
 	 * The operation id for the '<em>Is Stereotype Applicable</em>' operation.
@@ -40320,7 +40320,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___IS_STEREOTYPE_APPLICABLE__STEREOTYPE = SERVICE_ASSOCIATION___IS_STEREOTYPE_APPLICABLE__STEREOTYPE;
+	int SERVICE_CONTROLLER_ASSOCIATION___IS_STEREOTYPE_APPLICABLE__STEREOTYPE = SERVICE_ASSOCIATION___IS_STEREOTYPE_APPLICABLE__STEREOTYPE;
 
 	/**
 	 * The operation id for the '<em>Is Stereotype Applied</em>' operation.
@@ -40329,7 +40329,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___IS_STEREOTYPE_APPLIED__STEREOTYPE = SERVICE_ASSOCIATION___IS_STEREOTYPE_APPLIED__STEREOTYPE;
+	int SERVICE_CONTROLLER_ASSOCIATION___IS_STEREOTYPE_APPLIED__STEREOTYPE = SERVICE_ASSOCIATION___IS_STEREOTYPE_APPLIED__STEREOTYPE;
 
 	/**
 	 * The operation id for the '<em>Is Stereotype Required</em>' operation.
@@ -40338,7 +40338,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___IS_STEREOTYPE_REQUIRED__STEREOTYPE = SERVICE_ASSOCIATION___IS_STEREOTYPE_REQUIRED__STEREOTYPE;
+	int SERVICE_CONTROLLER_ASSOCIATION___IS_STEREOTYPE_REQUIRED__STEREOTYPE = SERVICE_ASSOCIATION___IS_STEREOTYPE_REQUIRED__STEREOTYPE;
 
 	/**
 	 * The operation id for the '<em>Remove Keyword</em>' operation.
@@ -40347,7 +40347,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___REMOVE_KEYWORD__STRING = SERVICE_ASSOCIATION___REMOVE_KEYWORD__STRING;
+	int SERVICE_CONTROLLER_ASSOCIATION___REMOVE_KEYWORD__STRING = SERVICE_ASSOCIATION___REMOVE_KEYWORD__STRING;
 
 	/**
 	 * The operation id for the '<em>Set Value</em>' operation.
@@ -40356,7 +40356,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___SET_VALUE__STEREOTYPE_STRING_OBJECT = SERVICE_ASSOCIATION___SET_VALUE__STEREOTYPE_STRING_OBJECT;
+	int SERVICE_CONTROLLER_ASSOCIATION___SET_VALUE__STEREOTYPE_STRING_OBJECT = SERVICE_ASSOCIATION___SET_VALUE__STEREOTYPE_STRING_OBJECT;
 
 	/**
 	 * The operation id for the '<em>Unapply Stereotype</em>' operation.
@@ -40365,7 +40365,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___UNAPPLY_STEREOTYPE__STEREOTYPE = SERVICE_ASSOCIATION___UNAPPLY_STEREOTYPE__STEREOTYPE;
+	int SERVICE_CONTROLLER_ASSOCIATION___UNAPPLY_STEREOTYPE__STEREOTYPE = SERVICE_ASSOCIATION___UNAPPLY_STEREOTYPE__STEREOTYPE;
 
 	/**
 	 * The operation id for the '<em>All Owned Elements</em>' operation.
@@ -40374,7 +40374,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___ALL_OWNED_ELEMENTS = SERVICE_ASSOCIATION___ALL_OWNED_ELEMENTS;
+	int SERVICE_CONTROLLER_ASSOCIATION___ALL_OWNED_ELEMENTS = SERVICE_ASSOCIATION___ALL_OWNED_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>Must Be Owned</em>' operation.
@@ -40383,7 +40383,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___MUST_BE_OWNED = SERVICE_ASSOCIATION___MUST_BE_OWNED;
+	int SERVICE_CONTROLLER_ASSOCIATION___MUST_BE_OWNED = SERVICE_ASSOCIATION___MUST_BE_OWNED;
 
 	/**
 	 * The operation id for the '<em>Validate Visibility Needs Ownership</em>' operation.
@@ -40392,7 +40392,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Has Qualified Name</em>' operation.
@@ -40401,7 +40401,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Has No Qualified Name</em>' operation.
@@ -40410,7 +40410,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Create Dependency</em>' operation.
@@ -40419,7 +40419,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___CREATE_DEPENDENCY__NAMEDELEMENT = SERVICE_ASSOCIATION___CREATE_DEPENDENCY__NAMEDELEMENT;
+	int SERVICE_CONTROLLER_ASSOCIATION___CREATE_DEPENDENCY__NAMEDELEMENT = SERVICE_ASSOCIATION___CREATE_DEPENDENCY__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Create Usage</em>' operation.
@@ -40428,7 +40428,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___CREATE_USAGE__NAMEDELEMENT = SERVICE_ASSOCIATION___CREATE_USAGE__NAMEDELEMENT;
+	int SERVICE_CONTROLLER_ASSOCIATION___CREATE_USAGE__NAMEDELEMENT = SERVICE_ASSOCIATION___CREATE_USAGE__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Label</em>' operation.
@@ -40437,7 +40437,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_LABEL = SERVICE_ASSOCIATION___GET_LABEL;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_LABEL = SERVICE_ASSOCIATION___GET_LABEL;
 
 	/**
 	 * The operation id for the '<em>Get Label</em>' operation.
@@ -40446,7 +40446,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_LABEL__BOOLEAN = SERVICE_ASSOCIATION___GET_LABEL__BOOLEAN;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_LABEL__BOOLEAN = SERVICE_ASSOCIATION___GET_LABEL__BOOLEAN;
 
 	/**
 	 * The operation id for the '<em>Get Namespace</em>' operation.
@@ -40455,7 +40455,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_NAMESPACE = SERVICE_ASSOCIATION___GET_NAMESPACE;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_NAMESPACE = SERVICE_ASSOCIATION___GET_NAMESPACE;
 
 	/**
 	 * The operation id for the '<em>All Namespaces</em>' operation.
@@ -40464,7 +40464,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___ALL_NAMESPACES = SERVICE_ASSOCIATION___ALL_NAMESPACES;
+	int SERVICE_CONTROLLER_ASSOCIATION___ALL_NAMESPACES = SERVICE_ASSOCIATION___ALL_NAMESPACES;
 
 	/**
 	 * The operation id for the '<em>All Owning Packages</em>' operation.
@@ -40473,7 +40473,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___ALL_OWNING_PACKAGES = SERVICE_ASSOCIATION___ALL_OWNING_PACKAGES;
+	int SERVICE_CONTROLLER_ASSOCIATION___ALL_OWNING_PACKAGES = SERVICE_ASSOCIATION___ALL_OWNING_PACKAGES;
 
 	/**
 	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
@@ -40482,7 +40482,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = SERVICE_ASSOCIATION___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+	int SERVICE_CONTROLLER_ASSOCIATION___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = SERVICE_ASSOCIATION___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
 
 	/**
 	 * The operation id for the '<em>Get Qualified Name</em>' operation.
@@ -40491,7 +40491,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_QUALIFIED_NAME = SERVICE_ASSOCIATION___GET_QUALIFIED_NAME;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_QUALIFIED_NAME = SERVICE_ASSOCIATION___GET_QUALIFIED_NAME;
 
 	/**
 	 * The operation id for the '<em>Separator</em>' operation.
@@ -40500,7 +40500,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___SEPARATOR = SERVICE_ASSOCIATION___SEPARATOR;
+	int SERVICE_CONTROLLER_ASSOCIATION___SEPARATOR = SERVICE_ASSOCIATION___SEPARATOR;
 
 	/**
 	 * The operation id for the '<em>Get Client Dependencies</em>' operation.
@@ -40509,7 +40509,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_CLIENT_DEPENDENCIES = SERVICE_ASSOCIATION___GET_CLIENT_DEPENDENCIES;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_CLIENT_DEPENDENCIES = SERVICE_ASSOCIATION___GET_CLIENT_DEPENDENCIES;
 
 	/**
 	 * The operation id for the '<em>Validate Members Distinguishable</em>' operation.
@@ -40518,7 +40518,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_MEMBERS_DISTINGUISHABLE__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Cannot Import Self</em>' operation.
@@ -40527,7 +40527,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_CANNOT_IMPORT_SELF__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Cannot Import Owned Members</em>' operation.
@@ -40536,7 +40536,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_CANNOT_IMPORT_OWNED_MEMBERS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Create Element Import</em>' operation.
@@ -40545,7 +40545,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND = SERVICE_ASSOCIATION___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND;
+	int SERVICE_CONTROLLER_ASSOCIATION___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND = SERVICE_ASSOCIATION___CREATE_ELEMENT_IMPORT__PACKAGEABLEELEMENT_VISIBILITYKIND;
 
 	/**
 	 * The operation id for the '<em>Create Package Import</em>' operation.
@@ -40554,7 +40554,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND = SERVICE_ASSOCIATION___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND;
+	int SERVICE_CONTROLLER_ASSOCIATION___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND = SERVICE_ASSOCIATION___CREATE_PACKAGE_IMPORT__PACKAGE_VISIBILITYKIND;
 
 	/**
 	 * The operation id for the '<em>Get Imported Elements</em>' operation.
@@ -40563,7 +40563,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_IMPORTED_ELEMENTS = SERVICE_ASSOCIATION___GET_IMPORTED_ELEMENTS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_IMPORTED_ELEMENTS = SERVICE_ASSOCIATION___GET_IMPORTED_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>Get Imported Packages</em>' operation.
@@ -40572,7 +40572,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_IMPORTED_PACKAGES = SERVICE_ASSOCIATION___GET_IMPORTED_PACKAGES;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_IMPORTED_PACKAGES = SERVICE_ASSOCIATION___GET_IMPORTED_PACKAGES;
 
 	/**
 	 * The operation id for the '<em>Get Owned Members</em>' operation.
@@ -40581,7 +40581,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_OWNED_MEMBERS = SERVICE_ASSOCIATION___GET_OWNED_MEMBERS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_OWNED_MEMBERS = SERVICE_ASSOCIATION___GET_OWNED_MEMBERS;
 
 	/**
 	 * The operation id for the '<em>Exclude Collisions</em>' operation.
@@ -40590,7 +40590,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___EXCLUDE_COLLISIONS__ELIST = SERVICE_ASSOCIATION___EXCLUDE_COLLISIONS__ELIST;
+	int SERVICE_CONTROLLER_ASSOCIATION___EXCLUDE_COLLISIONS__ELIST = SERVICE_ASSOCIATION___EXCLUDE_COLLISIONS__ELIST;
 
 	/**
 	 * The operation id for the '<em>Get Names Of Member</em>' operation.
@@ -40599,7 +40599,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_NAMES_OF_MEMBER__NAMEDELEMENT = SERVICE_ASSOCIATION___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_NAMES_OF_MEMBER__NAMEDELEMENT = SERVICE_ASSOCIATION___GET_NAMES_OF_MEMBER__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Import Members</em>' operation.
@@ -40608,7 +40608,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___IMPORT_MEMBERS__ELIST = SERVICE_ASSOCIATION___IMPORT_MEMBERS__ELIST;
+	int SERVICE_CONTROLLER_ASSOCIATION___IMPORT_MEMBERS__ELIST = SERVICE_ASSOCIATION___IMPORT_MEMBERS__ELIST;
 
 	/**
 	 * The operation id for the '<em>Get Imported Members</em>' operation.
@@ -40617,7 +40617,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_IMPORTED_MEMBERS = SERVICE_ASSOCIATION___GET_IMPORTED_MEMBERS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_IMPORTED_MEMBERS = SERVICE_ASSOCIATION___GET_IMPORTED_MEMBERS;
 
 	/**
 	 * The operation id for the '<em>Members Are Distinguishable</em>' operation.
@@ -40626,7 +40626,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___MEMBERS_ARE_DISTINGUISHABLE = SERVICE_ASSOCIATION___MEMBERS_ARE_DISTINGUISHABLE;
+	int SERVICE_CONTROLLER_ASSOCIATION___MEMBERS_ARE_DISTINGUISHABLE = SERVICE_ASSOCIATION___MEMBERS_ARE_DISTINGUISHABLE;
 
 	/**
 	 * The operation id for the '<em>Validate Redefinition Consistent</em>' operation.
@@ -40635,7 +40635,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_REDEFINITION_CONSISTENT__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Non Leaf Redefinition</em>' operation.
@@ -40644,7 +40644,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_NON_LEAF_REDEFINITION__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Redefinition Context Valid</em>' operation.
@@ -40653,7 +40653,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_REDEFINITION_CONTEXT_VALID__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Is Consistent With</em>' operation.
@@ -40662,7 +40662,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = SERVICE_ASSOCIATION___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
+	int SERVICE_CONTROLLER_ASSOCIATION___IS_CONSISTENT_WITH__REDEFINABLEELEMENT = SERVICE_ASSOCIATION___IS_CONSISTENT_WITH__REDEFINABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Redefinition Context Valid</em>' operation.
@@ -40671,7 +40671,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = SERVICE_ASSOCIATION___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
+	int SERVICE_CONTROLLER_ASSOCIATION___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT = SERVICE_ASSOCIATION___IS_REDEFINITION_CONTEXT_VALID__REDEFINABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Compatible With</em>' operation.
@@ -40680,7 +40680,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = SERVICE_ASSOCIATION___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+	int SERVICE_CONTROLLER_ASSOCIATION___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = SERVICE_ASSOCIATION___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
 
 	/**
 	 * The operation id for the '<em>Is Template Parameter</em>' operation.
@@ -40689,7 +40689,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___IS_TEMPLATE_PARAMETER = SERVICE_ASSOCIATION___IS_TEMPLATE_PARAMETER;
+	int SERVICE_CONTROLLER_ASSOCIATION___IS_TEMPLATE_PARAMETER = SERVICE_ASSOCIATION___IS_TEMPLATE_PARAMETER;
 
 	/**
 	 * The operation id for the '<em>Validate Namespace Needs Visibility</em>' operation.
@@ -40698,7 +40698,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Create Association</em>' operation.
@@ -40707,7 +40707,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT = SERVICE_ASSOCIATION___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT;
+	int SERVICE_CONTROLLER_ASSOCIATION___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT = SERVICE_ASSOCIATION___CREATE_ASSOCIATION__BOOLEAN_AGGREGATIONKIND_STRING_INT_INT_TYPE_BOOLEAN_AGGREGATIONKIND_STRING_INT_INT;
 
 	/**
 	 * The operation id for the '<em>Get Associations</em>' operation.
@@ -40716,7 +40716,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_ASSOCIATIONS = SERVICE_ASSOCIATION___GET_ASSOCIATIONS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_ASSOCIATIONS = SERVICE_ASSOCIATION___GET_ASSOCIATIONS;
 
 	/**
 	 * The operation id for the '<em>Conforms To</em>' operation.
@@ -40725,7 +40725,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___CONFORMS_TO__TYPE = SERVICE_ASSOCIATION___CONFORMS_TO__TYPE;
+	int SERVICE_CONTROLLER_ASSOCIATION___CONFORMS_TO__TYPE = SERVICE_ASSOCIATION___CONFORMS_TO__TYPE;
 
 	/**
 	 * The operation id for the '<em>Is Template</em>' operation.
@@ -40734,7 +40734,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___IS_TEMPLATE = SERVICE_ASSOCIATION___IS_TEMPLATE;
+	int SERVICE_CONTROLLER_ASSOCIATION___IS_TEMPLATE = SERVICE_ASSOCIATION___IS_TEMPLATE;
 
 	/**
 	 * The operation id for the '<em>Parameterable Elements</em>' operation.
@@ -40743,7 +40743,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___PARAMETERABLE_ELEMENTS = SERVICE_ASSOCIATION___PARAMETERABLE_ELEMENTS;
+	int SERVICE_CONTROLLER_ASSOCIATION___PARAMETERABLE_ELEMENTS = SERVICE_ASSOCIATION___PARAMETERABLE_ELEMENTS;
 
 	/**
 	 * The operation id for the '<em>Validate Specialize Type</em>' operation.
@@ -40752,7 +40752,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_SPECIALIZE_TYPE__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Maps To Generalization Set</em>' operation.
@@ -40761,7 +40761,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_MAPS_TO_GENERALIZATION_SET__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Non Final Parents</em>' operation.
@@ -40770,7 +40770,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_NON_FINAL_PARENTS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate No Cycles In Generalization</em>' operation.
@@ -40779,7 +40779,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_NO_CYCLES_IN_GENERALIZATION__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Get All Attributes</em>' operation.
@@ -40788,7 +40788,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_ALL_ATTRIBUTES = SERVICE_ASSOCIATION___GET_ALL_ATTRIBUTES;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_ALL_ATTRIBUTES = SERVICE_ASSOCIATION___GET_ALL_ATTRIBUTES;
 
 	/**
 	 * The operation id for the '<em>Get All Operations</em>' operation.
@@ -40797,7 +40797,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_ALL_OPERATIONS = SERVICE_ASSOCIATION___GET_ALL_OPERATIONS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_ALL_OPERATIONS = SERVICE_ASSOCIATION___GET_ALL_OPERATIONS;
 
 	/**
 	 * The operation id for the '<em>Get All Used Interfaces</em>' operation.
@@ -40806,7 +40806,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_ALL_USED_INTERFACES = SERVICE_ASSOCIATION___GET_ALL_USED_INTERFACES;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_ALL_USED_INTERFACES = SERVICE_ASSOCIATION___GET_ALL_USED_INTERFACES;
 
 	/**
 	 * The operation id for the '<em>Get Operation</em>' operation.
@@ -40815,7 +40815,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_OPERATION__STRING_ELIST_ELIST = SERVICE_ASSOCIATION___GET_OPERATION__STRING_ELIST_ELIST;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_OPERATION__STRING_ELIST_ELIST = SERVICE_ASSOCIATION___GET_OPERATION__STRING_ELIST_ELIST;
 
 	/**
 	 * The operation id for the '<em>Get Operation</em>' operation.
@@ -40824,7 +40824,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN = SERVICE_ASSOCIATION___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN = SERVICE_ASSOCIATION___GET_OPERATION__STRING_ELIST_ELIST_BOOLEAN;
 
 	/**
 	 * The operation id for the '<em>Get Operations</em>' operation.
@@ -40833,7 +40833,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_OPERATIONS = SERVICE_ASSOCIATION___GET_OPERATIONS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_OPERATIONS = SERVICE_ASSOCIATION___GET_OPERATIONS;
 
 	/**
 	 * The operation id for the '<em>Get Used Interfaces</em>' operation.
@@ -40842,7 +40842,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_USED_INTERFACES = SERVICE_ASSOCIATION___GET_USED_INTERFACES;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_USED_INTERFACES = SERVICE_ASSOCIATION___GET_USED_INTERFACES;
 
 	/**
 	 * The operation id for the '<em>All Features</em>' operation.
@@ -40851,7 +40851,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___ALL_FEATURES = SERVICE_ASSOCIATION___ALL_FEATURES;
+	int SERVICE_CONTROLLER_ASSOCIATION___ALL_FEATURES = SERVICE_ASSOCIATION___ALL_FEATURES;
 
 	/**
 	 * The operation id for the '<em>All Parents</em>' operation.
@@ -40860,7 +40860,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___ALL_PARENTS = SERVICE_ASSOCIATION___ALL_PARENTS;
+	int SERVICE_CONTROLLER_ASSOCIATION___ALL_PARENTS = SERVICE_ASSOCIATION___ALL_PARENTS;
 
 	/**
 	 * The operation id for the '<em>Get Generals</em>' operation.
@@ -40869,7 +40869,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_GENERALS = SERVICE_ASSOCIATION___GET_GENERALS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_GENERALS = SERVICE_ASSOCIATION___GET_GENERALS;
 
 	/**
 	 * The operation id for the '<em>Has Visibility Of</em>' operation.
@@ -40878,7 +40878,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___HAS_VISIBILITY_OF__NAMEDELEMENT = SERVICE_ASSOCIATION___HAS_VISIBILITY_OF__NAMEDELEMENT;
+	int SERVICE_CONTROLLER_ASSOCIATION___HAS_VISIBILITY_OF__NAMEDELEMENT = SERVICE_ASSOCIATION___HAS_VISIBILITY_OF__NAMEDELEMENT;
 
 	/**
 	 * The operation id for the '<em>Inherit</em>' operation.
@@ -40887,7 +40887,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___INHERIT__ELIST = SERVICE_ASSOCIATION___INHERIT__ELIST;
+	int SERVICE_CONTROLLER_ASSOCIATION___INHERIT__ELIST = SERVICE_ASSOCIATION___INHERIT__ELIST;
 
 	/**
 	 * The operation id for the '<em>Inheritable Members</em>' operation.
@@ -40896,7 +40896,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___INHERITABLE_MEMBERS__CLASSIFIER = SERVICE_ASSOCIATION___INHERITABLE_MEMBERS__CLASSIFIER;
+	int SERVICE_CONTROLLER_ASSOCIATION___INHERITABLE_MEMBERS__CLASSIFIER = SERVICE_ASSOCIATION___INHERITABLE_MEMBERS__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>Get Inherited Members</em>' operation.
@@ -40905,7 +40905,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_INHERITED_MEMBERS = SERVICE_ASSOCIATION___GET_INHERITED_MEMBERS;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_INHERITED_MEMBERS = SERVICE_ASSOCIATION___GET_INHERITED_MEMBERS;
 
 	/**
 	 * The operation id for the '<em>May Specialize Type</em>' operation.
@@ -40914,7 +40914,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___MAY_SPECIALIZE_TYPE__CLASSIFIER = SERVICE_ASSOCIATION___MAY_SPECIALIZE_TYPE__CLASSIFIER;
+	int SERVICE_CONTROLLER_ASSOCIATION___MAY_SPECIALIZE_TYPE__CLASSIFIER = SERVICE_ASSOCIATION___MAY_SPECIALIZE_TYPE__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>Parents</em>' operation.
@@ -40923,7 +40923,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___PARENTS = SERVICE_ASSOCIATION___PARENTS;
+	int SERVICE_CONTROLLER_ASSOCIATION___PARENTS = SERVICE_ASSOCIATION___PARENTS;
 
 	/**
 	 * The operation id for the '<em>Directly Realized Interfaces</em>' operation.
@@ -40932,7 +40932,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___DIRECTLY_REALIZED_INTERFACES = SERVICE_ASSOCIATION___DIRECTLY_REALIZED_INTERFACES;
+	int SERVICE_CONTROLLER_ASSOCIATION___DIRECTLY_REALIZED_INTERFACES = SERVICE_ASSOCIATION___DIRECTLY_REALIZED_INTERFACES;
 
 	/**
 	 * The operation id for the '<em>Directly Used Interfaces</em>' operation.
@@ -40941,7 +40941,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___DIRECTLY_USED_INTERFACES = SERVICE_ASSOCIATION___DIRECTLY_USED_INTERFACES;
+	int SERVICE_CONTROLLER_ASSOCIATION___DIRECTLY_USED_INTERFACES = SERVICE_ASSOCIATION___DIRECTLY_USED_INTERFACES;
 
 	/**
 	 * The operation id for the '<em>All Realized Interfaces</em>' operation.
@@ -40950,7 +40950,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___ALL_REALIZED_INTERFACES = SERVICE_ASSOCIATION___ALL_REALIZED_INTERFACES;
+	int SERVICE_CONTROLLER_ASSOCIATION___ALL_REALIZED_INTERFACES = SERVICE_ASSOCIATION___ALL_REALIZED_INTERFACES;
 
 	/**
 	 * The operation id for the '<em>All Used Interfaces</em>' operation.
@@ -40959,7 +40959,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___ALL_USED_INTERFACES = SERVICE_ASSOCIATION___ALL_USED_INTERFACES;
+	int SERVICE_CONTROLLER_ASSOCIATION___ALL_USED_INTERFACES = SERVICE_ASSOCIATION___ALL_USED_INTERFACES;
 
 	/**
 	 * The operation id for the '<em>Is Substitutable For</em>' operation.
@@ -40968,7 +40968,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___IS_SUBSTITUTABLE_FOR__CLASSIFIER = SERVICE_ASSOCIATION___IS_SUBSTITUTABLE_FOR__CLASSIFIER;
+	int SERVICE_CONTROLLER_ASSOCIATION___IS_SUBSTITUTABLE_FOR__CLASSIFIER = SERVICE_ASSOCIATION___IS_SUBSTITUTABLE_FOR__CLASSIFIER;
 
 	/**
 	 * The operation id for the '<em>All Attributes</em>' operation.
@@ -40977,7 +40977,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___ALL_ATTRIBUTES = SERVICE_ASSOCIATION___ALL_ATTRIBUTES;
+	int SERVICE_CONTROLLER_ASSOCIATION___ALL_ATTRIBUTES = SERVICE_ASSOCIATION___ALL_ATTRIBUTES;
 
 	/**
 	 * The operation id for the '<em>All Slottable Features</em>' operation.
@@ -40986,7 +40986,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___ALL_SLOTTABLE_FEATURES = SERVICE_ASSOCIATION___ALL_SLOTTABLE_FEATURES;
+	int SERVICE_CONTROLLER_ASSOCIATION___ALL_SLOTTABLE_FEATURES = SERVICE_ASSOCIATION___ALL_SLOTTABLE_FEATURES;
 
 	/**
 	 * The operation id for the '<em>Validate Specialized End Number</em>' operation.
@@ -40995,7 +40995,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_SPECIALIZED_END_NUMBER__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_SPECIALIZED_END_NUMBER__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_SPECIALIZED_END_NUMBER__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_SPECIALIZED_END_NUMBER__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Specialized End Types</em>' operation.
@@ -41004,7 +41004,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_SPECIALIZED_END_TYPES__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_SPECIALIZED_END_TYPES__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_SPECIALIZED_END_TYPES__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_SPECIALIZED_END_TYPES__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Binary Associations</em>' operation.
@@ -41013,7 +41013,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_BINARY_ASSOCIATIONS__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_BINARY_ASSOCIATIONS__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_BINARY_ASSOCIATIONS__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_BINARY_ASSOCIATIONS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Association Ends</em>' operation.
@@ -41022,7 +41022,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_ASSOCIATION_ENDS__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_ASSOCIATION_ENDS__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_ASSOCIATION_ENDS__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_ASSOCIATION_ENDS__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Validate Ends Must Be Typed</em>' operation.
@@ -41031,7 +41031,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___VALIDATE_ENDS_MUST_BE_TYPED__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_ENDS_MUST_BE_TYPED__DIAGNOSTICCHAIN_MAP;
+	int SERVICE_CONTROLLER_ASSOCIATION___VALIDATE_ENDS_MUST_BE_TYPED__DIAGNOSTICCHAIN_MAP = SERVICE_ASSOCIATION___VALIDATE_ENDS_MUST_BE_TYPED__DIAGNOSTICCHAIN_MAP;
 
 	/**
 	 * The operation id for the '<em>Is Binary</em>' operation.
@@ -41040,7 +41040,7 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___IS_BINARY = SERVICE_ASSOCIATION___IS_BINARY;
+	int SERVICE_CONTROLLER_ASSOCIATION___IS_BINARY = SERVICE_ASSOCIATION___IS_BINARY;
 
 	/**
 	 * The operation id for the '<em>Get End Types</em>' operation.
@@ -41049,16 +41049,16 @@ public interface FramewebPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION___GET_END_TYPES = SERVICE_ASSOCIATION___GET_END_TYPES;
+	int SERVICE_CONTROLLER_ASSOCIATION___GET_END_TYPES = SERVICE_ASSOCIATION___GET_END_TYPES;
 
 	/**
-	 * The number of operations of the '<em>Service Navigation Association</em>' class.
+	 * The number of operations of the '<em>Service Controller Association</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_NAVIGATION_ASSOCIATION_OPERATION_COUNT = SERVICE_ASSOCIATION_OPERATION_COUNT + 0;
+	int SERVICE_CONTROLLER_ASSOCIATION_OPERATION_COUNT = SERVICE_ASSOCIATION_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link frameweb.impl.DomainClassImpl <em>Domain Class</em>}' class.
@@ -112325,6 +112325,682 @@ public interface FramewebPackage extends EPackage {
 	int ATTRIBUTE_MAPPING_PROPERTY_OPERATION_COUNT = UMLPackage.PROPERTY_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link frameweb.impl.SeviceRealizationImpl <em>Sevice Realization</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see frameweb.impl.SeviceRealizationImpl
+	 * @see frameweb.impl.FramewebPackageImpl#getSeviceRealization()
+	 * @generated
+	 */
+	int SEVICE_REALIZATION = 98;
+
+	/**
+	 * The feature id for the '<em><b>EAnnotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__EANNOTATIONS = UMLPackage.REALIZATION__EANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Owned Comment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__OWNED_COMMENT = UMLPackage.REALIZATION__OWNED_COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owned Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__OWNED_ELEMENT = UMLPackage.REALIZATION__OWNED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Owner</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__OWNER = UMLPackage.REALIZATION__OWNER;
+
+	/**
+	 * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__CLIENT_DEPENDENCY = UMLPackage.REALIZATION__CLIENT_DEPENDENCY;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__NAME = UMLPackage.REALIZATION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Name Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__NAME_EXPRESSION = UMLPackage.REALIZATION__NAME_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Namespace</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__NAMESPACE = UMLPackage.REALIZATION__NAMESPACE;
+
+	/**
+	 * The feature id for the '<em><b>Qualified Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__QUALIFIED_NAME = UMLPackage.REALIZATION__QUALIFIED_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__VISIBILITY = UMLPackage.REALIZATION__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Owning Template Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__OWNING_TEMPLATE_PARAMETER = UMLPackage.REALIZATION__OWNING_TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Template Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__TEMPLATE_PARAMETER = UMLPackage.REALIZATION__TEMPLATE_PARAMETER;
+
+	/**
+	 * The feature id for the '<em><b>Related Element</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__RELATED_ELEMENT = UMLPackage.REALIZATION__RELATED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__SOURCE = UMLPackage.REALIZATION__SOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Target</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__TARGET = UMLPackage.REALIZATION__TARGET;
+
+	/**
+	 * The feature id for the '<em><b>Client</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__CLIENT = UMLPackage.REALIZATION__CLIENT;
+
+	/**
+	 * The feature id for the '<em><b>Supplier</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__SUPPLIER = UMLPackage.REALIZATION__SUPPLIER;
+
+	/**
+	 * The feature id for the '<em><b>Mapping</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION__MAPPING = UMLPackage.REALIZATION__MAPPING;
+
+	/**
+	 * The number of structural features of the '<em>Sevice Realization</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION_FEATURE_COUNT = UMLPackage.REALIZATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Get EAnnotation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_EANNOTATION__STRING = UMLPackage.REALIZATION___GET_EANNOTATION__STRING;
+
+	/**
+	 * The operation id for the '<em>Validate Has Owner</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP = UMLPackage.REALIZATION___VALIDATE_HAS_OWNER__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Not Own Self</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP = UMLPackage.REALIZATION___VALIDATE_NOT_OWN_SELF__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Add Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___ADD_KEYWORD__STRING = UMLPackage.REALIZATION___ADD_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Apply Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___APPLY_STEREOTYPE__STEREOTYPE = UMLPackage.REALIZATION___APPLY_STEREOTYPE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Create EAnnotation</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___CREATE_EANNOTATION__STRING = UMLPackage.REALIZATION___CREATE_EANNOTATION__STRING;
+
+	/**
+	 * The operation id for the '<em>Destroy</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___DESTROY = UMLPackage.REALIZATION___DESTROY;
+
+	/**
+	 * The operation id for the '<em>Get Keywords</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_KEYWORDS = UMLPackage.REALIZATION___GET_KEYWORDS;
+
+	/**
+	 * The operation id for the '<em>Get Applicable Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_APPLICABLE_STEREOTYPE__STRING = UMLPackage.REALIZATION___GET_APPLICABLE_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applicable Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_APPLICABLE_STEREOTYPES = UMLPackage.REALIZATION___GET_APPLICABLE_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Applied Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_APPLIED_STEREOTYPE__STRING = UMLPackage.REALIZATION___GET_APPLIED_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applied Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_APPLIED_STEREOTYPES = UMLPackage.REALIZATION___GET_APPLIED_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Applied Substereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING = UMLPackage.REALIZATION___GET_APPLIED_SUBSTEREOTYPE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Get Applied Substereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE = UMLPackage.REALIZATION___GET_APPLIED_SUBSTEREOTYPES__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Get Model</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_MODEL = UMLPackage.REALIZATION___GET_MODEL;
+
+	/**
+	 * The operation id for the '<em>Get Nearest Package</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_NEAREST_PACKAGE = UMLPackage.REALIZATION___GET_NEAREST_PACKAGE;
+
+	/**
+	 * The operation id for the '<em>Get Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_RELATIONSHIPS = UMLPackage.REALIZATION___GET_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_RELATIONSHIPS__ECLASS = UMLPackage.REALIZATION___GET_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Required Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_REQUIRED_STEREOTYPE__STRING = UMLPackage.REALIZATION___GET_REQUIRED_STEREOTYPE__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Required Stereotypes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_REQUIRED_STEREOTYPES = UMLPackage.REALIZATION___GET_REQUIRED_STEREOTYPES;
+
+	/**
+	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_SOURCE_DIRECTED_RELATIONSHIPS = UMLPackage.REALIZATION___GET_SOURCE_DIRECTED_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Source Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS = UMLPackage.REALIZATION___GET_SOURCE_DIRECTED_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Stereotype Application</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_STEREOTYPE_APPLICATION__STEREOTYPE = UMLPackage.REALIZATION___GET_STEREOTYPE_APPLICATION__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Get Stereotype Applications</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_STEREOTYPE_APPLICATIONS = UMLPackage.REALIZATION___GET_STEREOTYPE_APPLICATIONS;
+
+	/**
+	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_TARGET_DIRECTED_RELATIONSHIPS = UMLPackage.REALIZATION___GET_TARGET_DIRECTED_RELATIONSHIPS;
+
+	/**
+	 * The operation id for the '<em>Get Target Directed Relationships</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS = UMLPackage.REALIZATION___GET_TARGET_DIRECTED_RELATIONSHIPS__ECLASS;
+
+	/**
+	 * The operation id for the '<em>Get Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_VALUE__STEREOTYPE_STRING = UMLPackage.REALIZATION___GET_VALUE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Has Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___HAS_KEYWORD__STRING = UMLPackage.REALIZATION___HAS_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Has Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___HAS_VALUE__STEREOTYPE_STRING = UMLPackage.REALIZATION___HAS_VALUE__STEREOTYPE_STRING;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Applicable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___IS_STEREOTYPE_APPLICABLE__STEREOTYPE = UMLPackage.REALIZATION___IS_STEREOTYPE_APPLICABLE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Applied</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___IS_STEREOTYPE_APPLIED__STEREOTYPE = UMLPackage.REALIZATION___IS_STEREOTYPE_APPLIED__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Is Stereotype Required</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___IS_STEREOTYPE_REQUIRED__STEREOTYPE = UMLPackage.REALIZATION___IS_STEREOTYPE_REQUIRED__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>Remove Keyword</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___REMOVE_KEYWORD__STRING = UMLPackage.REALIZATION___REMOVE_KEYWORD__STRING;
+
+	/**
+	 * The operation id for the '<em>Set Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___SET_VALUE__STEREOTYPE_STRING_OBJECT = UMLPackage.REALIZATION___SET_VALUE__STEREOTYPE_STRING_OBJECT;
+
+	/**
+	 * The operation id for the '<em>Unapply Stereotype</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___UNAPPLY_STEREOTYPE__STEREOTYPE = UMLPackage.REALIZATION___UNAPPLY_STEREOTYPE__STEREOTYPE;
+
+	/**
+	 * The operation id for the '<em>All Owned Elements</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___ALL_OWNED_ELEMENTS = UMLPackage.REALIZATION___ALL_OWNED_ELEMENTS;
+
+	/**
+	 * The operation id for the '<em>Must Be Owned</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___MUST_BE_OWNED = UMLPackage.REALIZATION___MUST_BE_OWNED;
+
+	/**
+	 * The operation id for the '<em>Validate Visibility Needs Ownership</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP = UMLPackage.REALIZATION___VALIDATE_VISIBILITY_NEEDS_OWNERSHIP__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Has Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = UMLPackage.REALIZATION___VALIDATE_HAS_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Validate Has No Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP = UMLPackage.REALIZATION___VALIDATE_HAS_NO_QUALIFIED_NAME__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Create Dependency</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___CREATE_DEPENDENCY__NAMEDELEMENT = UMLPackage.REALIZATION___CREATE_DEPENDENCY__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Create Usage</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___CREATE_USAGE__NAMEDELEMENT = UMLPackage.REALIZATION___CREATE_USAGE__NAMEDELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_LABEL = UMLPackage.REALIZATION___GET_LABEL;
+
+	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_LABEL__BOOLEAN = UMLPackage.REALIZATION___GET_LABEL__BOOLEAN;
+
+	/**
+	 * The operation id for the '<em>Get Namespace</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_NAMESPACE = UMLPackage.REALIZATION___GET_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>All Namespaces</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___ALL_NAMESPACES = UMLPackage.REALIZATION___ALL_NAMESPACES;
+
+	/**
+	 * The operation id for the '<em>All Owning Packages</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___ALL_OWNING_PACKAGES = UMLPackage.REALIZATION___ALL_OWNING_PACKAGES;
+
+	/**
+	 * The operation id for the '<em>Is Distinguishable From</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE = UMLPackage.REALIZATION___IS_DISTINGUISHABLE_FROM__NAMEDELEMENT_NAMESPACE;
+
+	/**
+	 * The operation id for the '<em>Get Qualified Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_QUALIFIED_NAME = UMLPackage.REALIZATION___GET_QUALIFIED_NAME;
+
+	/**
+	 * The operation id for the '<em>Separator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___SEPARATOR = UMLPackage.REALIZATION___SEPARATOR;
+
+	/**
+	 * The operation id for the '<em>Get Client Dependencies</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___GET_CLIENT_DEPENDENCIES = UMLPackage.REALIZATION___GET_CLIENT_DEPENDENCIES;
+
+	/**
+	 * The operation id for the '<em>Is Compatible With</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT = UMLPackage.REALIZATION___IS_COMPATIBLE_WITH__PARAMETERABLEELEMENT;
+
+	/**
+	 * The operation id for the '<em>Is Template Parameter</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___IS_TEMPLATE_PARAMETER = UMLPackage.REALIZATION___IS_TEMPLATE_PARAMETER;
+
+	/**
+	 * The operation id for the '<em>Validate Namespace Needs Visibility</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP = UMLPackage.REALIZATION___VALIDATE_NAMESPACE_NEEDS_VISIBILITY__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The number of operations of the '<em>Sevice Realization</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVICE_REALIZATION_OPERATION_COUNT = UMLPackage.REALIZATION_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link frameweb.DateTimePrecision <em>Date Time Precision</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -112332,7 +113008,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getDateTimePrecision()
 	 * @generated
 	 */
-	int DATE_TIME_PRECISION = 98;
+	int DATE_TIME_PRECISION = 99;
 
 	/**
 	 * The meta object id for the '{@link frameweb.Generation <em>Generation</em>}' enum.
@@ -112342,7 +113018,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getGeneration()
 	 * @generated
 	 */
-	int GENERATION = 99;
+	int GENERATION = 100;
 
 	/**
 	 * The meta object id for the '{@link frameweb.Collection <em>Collection</em>}' enum.
@@ -112352,7 +113028,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getCollection()
 	 * @generated
 	 */
-	int COLLECTION = 100;
+	int COLLECTION = 101;
 
 	/**
 	 * The meta object id for the '{@link frameweb.Order <em>Order</em>}' enum.
@@ -112362,7 +113038,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getOrder()
 	 * @generated
 	 */
-	int ORDER = 101;
+	int ORDER = 102;
 
 	/**
 	 * The meta object id for the '{@link frameweb.Cascade <em>Cascade</em>}' enum.
@@ -112372,7 +113048,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getCascade()
 	 * @generated
 	 */
-	int CASCADE = 102;
+	int CASCADE = 103;
 
 	/**
 	 * The meta object id for the '{@link frameweb.Fetch <em>Fetch</em>}' enum.
@@ -112382,7 +113058,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getFetch()
 	 * @generated
 	 */
-	int FETCH = 103;
+	int FETCH = 104;
 
 	/**
 	 * The meta object id for the '{@link frameweb.FrameworkCategoryList <em>Framework Category List</em>}' enum.
@@ -112392,7 +113068,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getFrameworkCategoryList()
 	 * @generated
 	 */
-	int FRAMEWORK_CATEGORY_LIST = 104;
+	int FRAMEWORK_CATEGORY_LIST = 105;
 
 	/**
 	 * The meta object id for the '{@link frameweb.ConstantNameList <em>Constant Name List</em>}' enum.
@@ -112402,7 +113078,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getConstantNameList()
 	 * @generated
 	 */
-	int CONSTANT_NAME_LIST = 105;
+	int CONSTANT_NAME_LIST = 106;
 
 	/**
 	 * The meta object id for the '{@link frameweb.InheritanceMapping <em>Inheritance Mapping</em>}' enum.
@@ -112412,7 +113088,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getInheritanceMapping()
 	 * @generated
 	 */
-	int INHERITANCE_MAPPING = 106;
+	int INHERITANCE_MAPPING = 107;
 
 	/**
 	 * The meta object id for the '{@link frameweb.FrameworkKindList <em>Framework Kind List</em>}' enum.
@@ -112422,7 +113098,7 @@ public interface FramewebPackage extends EPackage {
 	 * @see frameweb.impl.FramewebPackageImpl#getFrameworkKindList()
 	 * @generated
 	 */
-	int FRAMEWORK_KIND_LIST = 107;
+	int FRAMEWORK_KIND_LIST = 108;
 
 
 	/**
@@ -113355,36 +114031,36 @@ public interface FramewebPackage extends EPackage {
 	EReference getServiceGeneralization_TargetServiceClass();
 
 	/**
-	 * Returns the meta object for class '{@link frameweb.ServiceNavigationAssociation <em>Service Navigation Association</em>}'.
+	 * Returns the meta object for class '{@link frameweb.ServiceControllerAssociation <em>Service Controller Association</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Service Navigation Association</em>'.
-	 * @see frameweb.ServiceNavigationAssociation
+	 * @return the meta object for class '<em>Service Controller Association</em>'.
+	 * @see frameweb.ServiceControllerAssociation
 	 * @generated
 	 */
-	EClass getServiceNavigationAssociation();
+	EClass getServiceControllerAssociation();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.ServiceNavigationAssociation#getSourceServiceClass <em>Source Service Class</em>}'.
+	 * Returns the meta object for the reference '{@link frameweb.ServiceControllerAssociation#getSourceServiceClass <em>Source Service Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Source Service Class</em>'.
-	 * @see frameweb.ServiceNavigationAssociation#getSourceServiceClass()
-	 * @see #getServiceNavigationAssociation()
+	 * @see frameweb.ServiceControllerAssociation#getSourceServiceClass()
+	 * @see #getServiceControllerAssociation()
 	 * @generated
 	 */
-	EReference getServiceNavigationAssociation_SourceServiceClass();
+	EReference getServiceControllerAssociation_SourceServiceClass();
 
 	/**
-	 * Returns the meta object for the reference '{@link frameweb.ServiceNavigationAssociation#getTargetFrontController <em>Target Front Controller</em>}'.
+	 * Returns the meta object for the reference '{@link frameweb.ServiceControllerAssociation#getTargetFrontController <em>Target Front Controller</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Target Front Controller</em>'.
-	 * @see frameweb.ServiceNavigationAssociation#getTargetFrontController()
-	 * @see #getServiceNavigationAssociation()
+	 * @see frameweb.ServiceControllerAssociation#getTargetFrontController()
+	 * @see #getServiceControllerAssociation()
 	 * @generated
 	 */
-	EReference getServiceNavigationAssociation_TargetFrontController();
+	EReference getServiceControllerAssociation_TargetFrontController();
 
 	/**
 	 * Returns the meta object for class '{@link frameweb.DomainClass <em>Domain Class</em>}'.
@@ -114430,6 +115106,16 @@ public interface FramewebPackage extends EPackage {
 	EClass getAttributeMappingProperty();
 
 	/**
+	 * Returns the meta object for class '{@link frameweb.SeviceRealization <em>Sevice Realization</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sevice Realization</em>'.
+	 * @see frameweb.SeviceRealization
+	 * @generated
+	 */
+	EClass getSeviceRealization();
+
+	/**
 	 * Returns the meta object for enum '{@link frameweb.DateTimePrecision <em>Date Time Precision</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -115305,14 +115991,14 @@ public interface FramewebPackage extends EPackage {
 		EReference SERVICE_GENERALIZATION__TARGET_SERVICE_CLASS = eINSTANCE.getServiceGeneralization_TargetServiceClass();
 
 		/**
-		 * The meta object literal for the '{@link frameweb.impl.ServiceNavigationAssociationImpl <em>Service Navigation Association</em>}' class.
+		 * The meta object literal for the '{@link frameweb.impl.ServiceControllerAssociationImpl <em>Service Controller Association</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see frameweb.impl.ServiceNavigationAssociationImpl
-		 * @see frameweb.impl.FramewebPackageImpl#getServiceNavigationAssociation()
+		 * @see frameweb.impl.ServiceControllerAssociationImpl
+		 * @see frameweb.impl.FramewebPackageImpl#getServiceControllerAssociation()
 		 * @generated
 		 */
-		EClass SERVICE_NAVIGATION_ASSOCIATION = eINSTANCE.getServiceNavigationAssociation();
+		EClass SERVICE_CONTROLLER_ASSOCIATION = eINSTANCE.getServiceControllerAssociation();
 
 		/**
 		 * The meta object literal for the '<em><b>Source Service Class</b></em>' reference feature.
@@ -115320,7 +116006,7 @@ public interface FramewebPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SERVICE_NAVIGATION_ASSOCIATION__SOURCE_SERVICE_CLASS = eINSTANCE.getServiceNavigationAssociation_SourceServiceClass();
+		EReference SERVICE_CONTROLLER_ASSOCIATION__SOURCE_SERVICE_CLASS = eINSTANCE.getServiceControllerAssociation_SourceServiceClass();
 
 		/**
 		 * The meta object literal for the '<em><b>Target Front Controller</b></em>' reference feature.
@@ -115328,7 +116014,7 @@ public interface FramewebPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SERVICE_NAVIGATION_ASSOCIATION__TARGET_FRONT_CONTROLLER = eINSTANCE.getServiceNavigationAssociation_TargetFrontController();
+		EReference SERVICE_CONTROLLER_ASSOCIATION__TARGET_FRONT_CONTROLLER = eINSTANCE.getServiceControllerAssociation_TargetFrontController();
 
 		/**
 		 * The meta object literal for the '{@link frameweb.impl.DomainClassImpl <em>Domain Class</em>}' class.
@@ -116275,6 +116961,16 @@ public interface FramewebPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ATTRIBUTE_MAPPING_PROPERTY = eINSTANCE.getAttributeMappingProperty();
+
+		/**
+		 * The meta object literal for the '{@link frameweb.impl.SeviceRealizationImpl <em>Sevice Realization</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see frameweb.impl.SeviceRealizationImpl
+		 * @see frameweb.impl.FramewebPackageImpl#getSeviceRealization()
+		 * @generated
+		 */
+		EClass SEVICE_REALIZATION = eINSTANCE.getSeviceRealization();
 
 		/**
 		 * The meta object literal for the '{@link frameweb.DateTimePrecision <em>Date Time Precision</em>}' enum.
