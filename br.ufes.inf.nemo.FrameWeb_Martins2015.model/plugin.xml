@@ -17,4 +17,33 @@
             genModel="model/FrameWeb.genmodel"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated FrameWeb -->
+      <package
+            uri="http://nemo.inf.ufes.br/projects/frameweb/2015"
+            class="br.ufes.inf.nemo.frameweb.frameweb.FramewebPackage"
+            genModel="model/FrameWeb.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.content_parser">
+      <!-- @generated FrameWeb -->
+      <parser
+            contentTypeIdentifier="br.ufes.inf.nemo.frameweb"
+            class="org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.core.contenttype.contentTypes">
+      <!-- @generated FrameWeb -->
+      <content-type
+            base-type="org.eclipse.emf.ecore.xmi"
+            file-extensions="frameweb"
+            id="br.ufes.inf.nemo.frameweb"
+            name="%_UI_Frameweb_content_type"
+            priority="normal">
+         <describer class="org.eclipse.emf.ecore.xmi.impl.RootXMLContentHandlerImpl$Describer">
+            <parameter name="namespace" value="http://nemo.inf.ufes.br/projects/frameweb/2015"/>
+            <parameter name="kind" value="xmi"/>
+         </describer>
+      </content-type>
+   </extension>
 </plugin>

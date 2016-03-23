@@ -9,10 +9,14 @@ Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Export-Package: frameweb,
  frameweb.impl,
- frameweb.util
+ frameweb.util,
+ br.ufes.inf.nemo.frameweb.frameweb,
+ br.ufes.inf.nemo.frameweb.frameweb.impl,
+ br.ufes.inf.nemo.frameweb.frameweb.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.ocl.ecore;visibility:=reexport,
+ org.eclipse.emf.ecore.xmi;visibility:=reexport,
  org.eclipse.uml2.types;visibility:=reexport,
  org.eclipse.uml2.uml;visibility:=reexport
 Bundle-ActivationPolicy: lazy
