@@ -10,7 +10,7 @@
       <!-- @generated FrameWeb -->
       <factory
             uri="http://nemo.inf.ufes.br/projects/frameweb/2015"
-            class="br.ufes.inf.nemo.frameweb.frameweb.provider.FramewebItemProviderAdapterFactory"
+            class="frameweb.provider.FramewebItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider
@@ -19,10 +19,4 @@
                org.eclipse.emf.edit.provider.IItemPropertySource"/>
    </extension>
 
-   <extension point="org.eclipse.emf.edit.childCreationExtenders">
-      <!-- @generated FrameWeb -->
-      <extender
-            uri="http://www.eclipse.org/uml2/5.0.0/UML"
-            class="br.ufes.inf.nemo.frameweb.frameweb.provider.FramewebItemProviderAdapterFactory$UMLChildCreationExtender"/>
-   </extension>
 </plugin>
