@@ -28,9 +28,9 @@
             id="frameweb.presentation.FramewebEditorID"
             name="%_UI_FramewebEditor_label"
             icon="icons/full/obj16/FramewebModelFile.gif"
-            extensions="frameweb"
             class="frameweb.presentation.FramewebEditor"
             contributorClass="frameweb.presentation.FramewebActionBarContributor">
+         <contentTypeBinding contentTypeId="br.ufes.inf.nemo.frameweb"/>
       </editor>
    </extension>
 
