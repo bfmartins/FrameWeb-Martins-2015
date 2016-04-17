@@ -1,17 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015">
+<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="http://nemo.inf.ufes.br/projects/frameweb/FW-2015">
   <Compose xsi:type="frameweb:NavigationModel" name="SCAPNavigation">
     <packagedElement xsi:type="frameweb:ControllerPackage" name="LeaveAbsenceControl">
-      <packagedElement xsi:type="frameweb:FrontControllerClass" name="RequestLeaveFormBean"/>
+      <packagedElement xsi:type="frameweb:FrontControllerClass" name="RequestLeaveFormBean">
+        <ownedAttribute xsi:type="frameweb:IdAttribute" name="request" type="//@Compose.1/Domain/Request"/>
+        <ownedOperation xsi:type="frameweb:FrontControllerMethod" name="dateValidation"/>
+        <ownedOperation xsi:type="frameweb:FrontControllerMethod" name="btnRequest"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xsi:type="frameweb:ViewPackage" name="LeaveAbsenceView">
-      <packagedElement xsi:type="frameweb:UIComponent" name="message"/>
-      <packagedElement xsi:type="frameweb:UIComponent" name="frmRequestLeave"/>
-      <packagedElement xsi:type="frameweb:Page" name="RequestLeave.xhtml"/>
-      <packagedElement xsi:type="frameweb:NavigationAssociation"/>
-      <packagedElement xsi:type="frameweb:NavigationAssociation"/>
-      <packagedElement xsi:type="frameweb:FrontControllerDependency"/>
-      <packagedElement xsi:type="frameweb:ResultDependency"/>
+      <packagedElement xsi:type="frameweb:UIComponent" name="message">
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="msgError">
+          <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Configures.0/JSFhtml/outputText"/>
+        </ownedAttribute>
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="mstSuccess">
+          <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Configures.0/JSFhtml/outputText"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xsi:type="frameweb:UIComponent" name="frmRequestLeave">
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="requestKind">
+          <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Configures.0/JSFhtml/selectOneMenu"/>
+        </ownedAttribute>
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="onus">
+          <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Configures.0/JSFhtml/selectOneMenu"/>
+        </ownedAttribute>
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="eventName">
+          <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Configures.0/JSFhtml/inputText"/>
+        </ownedAttribute>
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="eventCity">
+          <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Configures.0/JSFhtml/inputText"/>
+        </ownedAttribute>
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="eventDate">
+          <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Configures.0/JSFhtml/inputText"/>
+        </ownedAttribute>
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="eventEndDate">
+          <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Configures.0/JSFhtml/inputText"/>
+        </ownedAttribute>
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="leaveStartDate">
+          <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Configures.0/JSFhtml/inputText"/>
+        </ownedAttribute>
+        <ownedAttribute xsi:type="frameweb:UIComponentField" name="leaveEndDate">
+          <type xsi:type="frameweb:Tag" href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Configures.0/JSFhtml/inputText"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xsi:type="frameweb:Page" name="RequestLeave.xhtml">
+        <ownedAttribute xsi:type="frameweb:NavigationCompositionWhole" aggregation="composite"/>
+        <ownedAttribute xsi:type="frameweb:NavigationCompositionWhole" aggregation="composite"/>
+        <PageTagLib href="../../FrameWeb_Martins2015_frameworks_MVC_JSF/framework_model/MVC_JSF.frameweb#//@Configures.0/JSFhtml"/>
+      </packagedElement>
+      <packagedElement xsi:type="frameweb:NavigationAssociation" name="hasForm" memberEnd="//@Compose.0/LeaveAbsenceView/hasForm/@ownedEnd.0">
+        <ownedEnd xsi:type="frameweb:NavigationCompositionPart" association="//@Compose.0/LeaveAbsenceView/hasForm"/>
+      </packagedElement>
+      <packagedElement xsi:type="frameweb:NavigationAssociation" name="hasMessage" memberEnd="//@Compose.0/LeaveAbsenceView/hasMessage/@ownedEnd.0">
+        <ownedEnd xsi:type="frameweb:NavigationCompositionPart" association="//@Compose.0/LeaveAbsenceView/hasMessage"/>
+      </packagedElement>
+      <packagedElement xsi:type="frameweb:FrontControllerDependency" client="//@Compose.0/LeaveAbsenceView/frmRequestLeave" supplier="//@Compose.0/LeaveAbsenceControl/RequestLeaveFormBean" Method="//@Compose.0/LeaveAbsenceControl/RequestLeaveFormBean/btnRequest">
+        <MethodDependendencyConstraint/>
+      </packagedElement>
+      <packagedElement xsi:type="frameweb:ResultDependency" name="" client="//@Compose.0/LeaveAbsenceControl/RequestLeaveFormBean" supplier="//@Compose.0/LeaveAbsenceView/message" ResultMethod="//@Compose.0/LeaveAbsenceControl/RequestLeaveFormBean/dateValidation" execute="@all" ajax="true">
+        <ResultDependendencyCosntraint/>
+      </packagedElement>
     </packagedElement>
   </Compose>
   <Compose xsi:type="frameweb:DomainModel" name="SCAPDomain">

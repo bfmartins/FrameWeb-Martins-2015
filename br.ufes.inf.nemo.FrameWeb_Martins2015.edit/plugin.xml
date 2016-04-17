@@ -9,7 +9,7 @@
    <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
       <!-- @generated FrameWeb -->
       <factory
-            uri="http://nemo.inf.ufes.br/projects/frameweb/2015"
+            uri="http://nemo.inf.ufes.br/projects/frameweb/FW-2015"
             class="frameweb.provider.FramewebItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider

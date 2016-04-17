@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015">
+<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="http://nemo.inf.ufes.br/projects/frameweb/FW-2015">
   <Compose xsi:type="frameweb:NavigationModel" name="SCAPNavigation">
     <packagedElement xsi:type="frameweb:ControllerPackage" name="LeaveAbsenceControl">
       <packagedElement xsi:type="frameweb:FrontControllerClass" name="RequestLeaveController">
-        <ownedRule xsi:type="frameweb:FrontControllerMethod" name="formulary"/>
-        <ownedRule xsi:type="frameweb:FrontControllerMethod" name="save"/>
         <ownedAttribute xsi:type="frameweb:IOParameter" name="request" type="//@Compose.1/Domain/Request"/>
+        <ownedOperation xsi:type="frameweb:FrontControllerMethod" name="formulary"/>
+        <ownedOperation xsi:type="frameweb:FrontControllerMethod" name="save"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xsi:type="frameweb:ViewPackage" name="LeaveAbsenseView">
       <packagedElement xsi:type="frameweb:Page" name="index.xhtml">
         <ownedAttribute xsi:type="frameweb:NavigationCompositionWhole" type="//@Compose.0/LeaveAbsenseView/header.xhtml" aggregation="composite" association="//@Compose.0/LeaveAbsenseView/hasHeader"/>
       </packagedElement>
-      <packagedElement xsi:type="frameweb:Page" name="RequestLeave.xhtml"/>
+      <packagedElement xsi:type="frameweb:Page" name="RequestLeave.xhtml">
+        <ownedAttribute xsi:type="frameweb:NavigationCompositionWhole" type="//@Compose.0/LeaveAbsenseView/RequestLeave.xhtml" aggregation="composite" association="//@Compose.0/LeaveAbsenseView/hasForm"/>
+      </packagedElement>
       <packagedElement xsi:type="frameweb:Page" name="header.xhtml"/>
       <packagedElement xsi:type="frameweb:UIComponent" name="frmRequestLeave">
-        <ownedAttribute xsi:type="frameweb:NavigationCompositionWhole" type="//@Compose.0/LeaveAbsenseView/RequestLeave.xhtml" aggregation="composite" association="//@Compose.0/LeaveAbsenseView/hasForm"/>
         <ownedAttribute xsi:type="frameweb:UIComponentField" name="eventName"/>
         <ownedAttribute xsi:type="frameweb:UIComponentField" name="cityName"/>
         <ownedAttribute xsi:type="frameweb:UIComponentField" name="leaveStartDate"/>
@@ -28,21 +29,20 @@
       <packagedElement xsi:type="frameweb:NavigationAssociation" name="hasHeader" memberEnd="//@Compose.0/LeaveAbsenseView/hasHeader/header //@Compose.0/LeaveAbsenseView/index.xhtml/@ownedAttribute.0">
         <ownedEnd xsi:type="frameweb:NavigationCompositionPart" name="header" type="//@Compose.0/LeaveAbsenseView/index.xhtml" association="//@Compose.0/LeaveAbsenseView/hasHeader"/>
       </packagedElement>
-      <packagedElement xsi:type="frameweb:NavigationAssociation" name="hasForm" memberEnd="//@Compose.0/LeaveAbsenseView/hasForm/form //@Compose.0/LeaveAbsenseView/frmRequestLeave/@ownedAttribute.0">
+      <packagedElement xsi:type="frameweb:NavigationAssociation" name="hasForm" memberEnd="//@Compose.0/LeaveAbsenseView/hasForm/form //@Compose.0/LeaveAbsenseView/RequestLeave.xhtml/@ownedAttribute.0">
         <ownedEnd xsi:type="frameweb:NavigationCompositionPart" name="form" type="//@Compose.0/LeaveAbsenseView/frmRequestLeave" association="//@Compose.0/LeaveAbsenseView/hasForm"/>
       </packagedElement>
-      <packagedElement xsi:type="frameweb:FrontControllerDependency" name="formulary" client="//@Compose.0/LeaveAbsenseView/header.xhtml" supplier="//@Compose.0/LeaveAbsenceControl/RequestLeaveController">
-        <MethodDependendencyConstraint name="method=formulary" constrainedElement="//@Compose.0/LeaveAbsenceControl/RequestLeaveController/formulary"/>
+      <packagedElement xsi:type="frameweb:FrontControllerDependency" name="formulary" client="//@Compose.0/LeaveAbsenseView/header.xhtml" supplier="//@Compose.0/LeaveAbsenceControl/RequestLeaveController" Method="//@Compose.0/LeaveAbsenceControl/RequestLeaveController/formulary">
+        <MethodDependendencyConstraint name="formularyConstraint" constrainedElement="//@Compose.0/LeaveAbsenceControl/RequestLeaveController/formulary"/>
       </packagedElement>
-      <packagedElement xsi:type="frameweb:FrontControllerDependency" name="save" client="//@Compose.0/LeaveAbsenseView/frmRequestLeave">
-        <supplier xsi:type="frameweb:ControllerProperty" href="../../FrameWeb_Martins2015_frameworks_MVC_VRaptor4/frameweb_model/MVC_VRaptor4.frameweb#//@Configures.0/ControllerSet/Controller/base_FrontControllerClass"/>
-        <MethodDependendencyConstraint name="method=save" constrainedElement="//@Compose.0/LeaveAbsenceControl/RequestLeaveController/save"/>
+      <packagedElement xsi:type="frameweb:FrontControllerDependency" name="save" client="//@Compose.0/LeaveAbsenseView/frmRequestLeave" Method="//@Compose.0/LeaveAbsenceControl/RequestLeaveController/save">
+        <MethodDependendencyConstraint name="saveConstraint" constrainedElement="//@Compose.0/LeaveAbsenceControl/RequestLeaveController/save"/>
       </packagedElement>
-      <packagedElement xsi:type="frameweb:ResultDependency" name="requestLeave" client="//@Compose.0/LeaveAbsenceControl/RequestLeaveController" supplier="//@Compose.0/LeaveAbsenseView/RequestLeave.xhtml">
-        <ResultDependendencyCosntraint name="method=formulary" constrainedElement="//@Compose.0/LeaveAbsenceControl/RequestLeaveController/formulary"/>
+      <packagedElement xsi:type="frameweb:ResultDependency" name="requestLeave" client="//@Compose.0/LeaveAbsenceControl/RequestLeaveController" supplier="//@Compose.0/LeaveAbsenseView/RequestLeave.xhtml" ResultMethod="//@Compose.0/LeaveAbsenceControl/RequestLeaveController/formulary">
+        <ResultDependendencyCosntraint name="requestLeaveConstraint" constrainedElement="//@Compose.0/LeaveAbsenceControl/RequestLeaveController/formulary"/>
       </packagedElement>
-      <packagedElement xsi:type="frameweb:ResultDependency" name="index" client="//@Compose.0/LeaveAbsenceControl/RequestLeaveController" supplier="//@Compose.0/LeaveAbsenseView/index.xhtml">
-        <ResultDependendencyCosntraint name="method=save" constrainedElement="//@Compose.0/LeaveAbsenceControl/RequestLeaveController/save"/>
+      <packagedElement xsi:type="frameweb:ResultDependency" name="index" client="//@Compose.0/LeaveAbsenceControl/RequestLeaveController" supplier="//@Compose.0/LeaveAbsenseView/index.xhtml" ResultMethod="//@Compose.0/LeaveAbsenceControl/RequestLeaveController/save">
+        <ResultDependendencyCosntraint name="indexConstraint" constrainedElement="//@Compose.0/LeaveAbsenceControl/RequestLeaveController/save"/>
       </packagedElement>
     </packagedElement>
   </Compose>

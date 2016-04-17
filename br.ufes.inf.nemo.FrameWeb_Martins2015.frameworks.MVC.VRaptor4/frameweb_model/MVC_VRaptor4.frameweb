@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
-  <Configures name="VRaptor" URI="https://github.com/bfmartins/FrameWeb-Martins-2015/tree/master/br.ufes.inf.nemo.FrameWeb_Martins2015.frameworks.MVC.VRaptor4/frameweb_model" metamodelReference="//@Configures.0/@packageImport.0" kind="FrameworkImplementation">
-    <eAnnotations source="https://github.com/bfmartins/FrameWeb-Martins-2015"/>
+<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="http://nemo.inf.ufes.br/projects/frameweb/2015" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <Configures name="VRaptor4" URI="" metamodelReference="//@Configures.0/@packageImport.0" kind="FrameworkSpecification">
+    <eAnnotations source="http://nemo.inf.ufes.br/projects/frameweb/FW-2015"/>
     <packageImport/>
     <packagedElement xsi:type="frameweb:ControllerSet" name="ControllerSet">
       <packagedElement xsi:type="frameweb:Controller" name="Controller">
         <ownedAttribute xsi:type="frameweb:ControllerProperty" name="base_FrontControllerClass" association="//@Configures.0/ControllerSet/controllerExtension"/>
       </packagedElement>
       <packagedElement xsi:type="frameweb:ControllerExtension" name="controllerExtension" memberEnd="//@Configures.0/ControllerSet/controllerExtension/controllerExtensionEnd //@Configures.0/ControllerSet/Controller/base_FrontControllerClass">
-        <ownedEnd xsi:type="frameweb:ControllerExtensionEnd" name="controllerExtensionEnd" type="//@Configures.0/ControllerSet/Controller" aggregation="composite" association="//@Configures.0/ControllerSet/controllerExtension">
-          <lowerValue xsi:type="uml:LiteralString" name="Controller"/>
+        <ownedEnd xsi:type="frameweb:ControllerExtensionEnd" name="controllerExtensionEnd" aggregation="composite" association="//@Configures.0/ControllerSet/controllerExtension">
+          <defaultValue xsi:type="uml:LiteralString" name="ControllerLiteral" value="Controller"/>
         </ownedEnd>
       </packagedElement>
     </packagedElement>
-    <packagedElement xsi:type="frameweb:TagLib" name="TagLibVazia"/>
   </Configures>
 </frameweb:Frameweb>

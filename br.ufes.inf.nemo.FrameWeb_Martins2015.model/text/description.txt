@@ -5,58 +5,36 @@ org.eclipse.emf.examples.generator.validator plug-in to illustrate how EMF's
 code generator can be extended.
 This can be disabled with -vmargs -Dorg.eclipse.emf.examples.generator.validator=false.
 
-Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
-
-  Class MappedClass -> DomainClass
-
-  Class PersistentClass -> DomainClass
-    Reference Table : DomainTableName
-
-  Class TransientClass -> DomainClass
+Package frameweb <http://nemo.inf.ufes.br/projects/frameweb/2015>
 
   Class Frameweb
     Reference Compose : FrameWebModel<<0..*>>
-    Reference Uses : Framework<<0..*>>
+    Reference Configures : FrameworkProfile<<0..*>>
 
-  Class FrameWebModel -> Package
+  Class FrameWebModel -> Model
 
-  Class Framework -> Package
-    Reference FrameworkTagLib : TagLib<<0..*>>
-    Reference FrameworkRule : Rule<<0..*>>
-    Reference FrameworkAnotation : Anotation<<0..*>>
-    Attribute frameworkCategory : FrameworkCategoryList
-    Reference FrameWebResultSet : ResultSet<<0..*>>
+  Class FrameworkProfile -> Profile
+    Attribute category : FrameworkCategoryList
+    Attribute kind : FrameworkKindList
 
   Class DomainModel -> FrameWebModel
-    Reference DomainUMLPackage : DomainPackage<<1..*>>
-    Reference DomainUMLAssociation : DomainAssociation<<0..*>>
 
   Class NavigationModel -> FrameWebModel
-    Reference NavigationUMLDependency : NavigationDependency<<0..*>>
-    Reference ViewUMLPackage : ViewPackage<<1..*>>
-    Reference ControllerUMLPackage : ControllerPackage<<1..*>>
-    Reference NavigationUMLComposition : NavigationAssociation<<0..*>>
 
   Class ApplicationModel -> FrameWebModel
-    Reference ServiceUMLAssociation : ServiceAssociation<<1..*>>
-    Reference ApplicationUMLPackage : ApplicationPackage<<1..*>>
 
   Class PersistenceModel -> FrameWebModel
-    Reference PersistenceUMLPackage : PersistencePackage<<1..*>>
 
   Class DomainAssociation -> Association
     Attribute collection : Collection
-    Attribute order : Order
     Attribute cascade : Cascade
     Attribute fetch : Fetch
-    Reference SourceClass : DomainClass<<1..1>>
-    Reference TargetClass : DomainClass<<1..1>>
+    Attribute order : Order
 
   Class DomainAttribute -> Property
     Attribute size : ELong
     Attribute isNull : EBoolean
     Attribute isPersistent : EBoolean
-    Reference Column : DomainColumnName
 
   Class VersionAttribute -> DomainAttribute
 
@@ -81,84 +59,46 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference TemplateTagLib : TagLib<<0..*>>
 
   Class DAOInterface -> Interface
-    Reference OwnBaseOperation : DAOBaseOperation<<4..4>>
-    Reference OwnOperation : DAOOperation<<0..*>>
-    Reference DAOInterfaceName : DAOInterfaceName<<1..1>>
-    Reference DAOInterfaceAttribute : DAOAttribute<<0..*>>
+    Attribute infix : String<<1..1>>
+    Attribute sufix : String<<1..1>>
 
   Class DAOClass -> Class
-    Reference BaseImplements : DAOBaseOperation<<4..4>>
-    Reference DAOImplements : DAOOperation<<0..*>>
-    Reference DAOClassName : DAOClassName<<1..1>>
-    Reference DAOClassAttribute : DAOAttribute<<0..*>>
+    Attribute /sufix : String<<1..1>>
+    Attribute infix : String<<1..1>>
+    Attribute /prefix : String<<1..1>>
 
-  Class DAOGeneralization -> Generalization
-    Reference TargetDAOClass : DAOClass<<1..1>>
-    Reference SourceDAOInterface : DAOInterface<<1..1>>
+  Class DAORealization -> InterfaceRealization
 
   Class FrontControllerClass -> Class
-    Reference FrontControllerAttribute : IOParameter<<1..*>>
-    Reference FrontControllerClassMethod : FrontControllerMethod<<1..*>>
 
   Class IOParameter -> NavigationAttribute
     Reference /display : UIComponentField<<0..*>>
-
-  Class DAOBaseOperation
-    Attribute DAObaseOperationName : DAOBaseOperationList
 
   Class ResultDependency -> NavigationDependency
     Reference ResultResult : Result<<0..*>>
     Reference ResultMethod : FrontControllerMethod<<1..1>>
     Reference ResultDependendencyCosntraint : ResultConstraint<<1..1>>
+    Attribute render : EString
+    Attribute execute : EString
+    Attribute ajax : EBoolean
 
   Class NavigationAssociation -> Association
-    Reference NavigationAssociationProperty : NavigationCompositionPart<<1..1>>
 
   Class FrontControllerMethod -> Operation
     Attribute isDefault : EBoolean
-    Attribute result : ResultDataType<<0..*>>
 
   Class ServiceClass -> Class
-    Reference ServiceClassAttribute : ServiceAttribute
-    Reference ServiceClassOperation : ServiceOperation<<0..*>>
 
   Class ServiceInterface -> Interface
-    Reference ServiceInterfaceOperation : ServiceOperation<<0..*>>
-    Reference ServiceInterfaceAttribute : ServiceAttribute<<0..*>>
 
   Class ServiceGeneralization -> Generalization
-    Reference SourceServiceInterface : ServiceInterface<<1..1>>
-    Reference TargetServiceClass : ServiceClass<<1..1>>
 
-  Class ServiceNavigationAssociation -> ServiceAssociation
-    Reference SourceServiceClass : ServiceInterface<<1..1>>
-    Reference TargetFrontController : FrontControllerClass<<1..1>>
+  Class ServiceControllerAssociation -> ServiceAssociation
 
   Class DomainClass -> Class
-    Reference DomainClassAttribute : DomainAttribute<<1..*>>
-    Reference DomainClassOperation : DomainOperation<<0..*>>
+    Attribute table : EString
 
-  Class ConstantName
-    Attribute fwName : ConstantNameList
-
-  Class DomainTableName
-    Attribute fwName : EString
-    Reference PersistentClassName : PersistentClass<<1..1>>
-
-  Class FrameWorkName
-
-  Class DomainColumnName
-    Attribute fwName : EString
-    Reference DomainAttributeName : DomainAttribute<<1..1>>
-
-  Class DAOInterfaceName -> ConstantName
-    Reference ConstantPrefix : ConstantName
-    Reference DomainTablePrefix : DomainTableName
-
-  Class DAOClassName -> DAOInterfaceName
-    Reference FrameWorkNameSufix : FrameWorkName<<1..1>>
-
-  Class Result -> Class, TypedElement
+  Class Result -> Class
 
   Class FrontControllerDependency -> NavigationDependency
     Reference Method : FrontControllerMethod<<1..1>>
@@ -173,20 +113,16 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Reference ChainingDependendencyConstraint : ChainingConstraint<<1..1>>
 
   Class DAOServiceAssociation -> ServiceAssociation
-    Reference SourceDAOClass : DAOInterface<<1..1>>
-    Reference TargetDAOService : ServiceClass<<1..1>>
 
   Class NavigationAttribute -> Property
 
   Class NavigationClass -> Class
-    Reference NavigationClassComposition : NavigationCompositionWhole<<0..*>>
-    Reference NavigationClassAttribute : UIComponentField<<0..*>>
 
-  Class DomainOperation -> Operation
+  Class DomainMethod -> Operation
 
   Class DAOAttribute -> Property
 
-  Class ServiceOperation -> Operation
+  Class ServiceMethod -> Operation
 
   Class ServiceAttribute -> Property
 
@@ -194,57 +130,33 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
 
   Class NavigationDependency -> Dependency
 
-  Class DAOOperation -> Operation
+  Class DAOMethod -> Operation
 
   Class DomainPackage -> Package
-    Reference DomainPackageClass : DomainClass<<1..*>>
 
   Class ViewPackage -> NavigationPackage
-    Reference ViewPackageClass : NavigationClass<<1..*>>
-    Reference ViewPackageResult : Result<<0..*>>
 
   Class ControllerPackage -> NavigationPackage
-    Reference ControllerPackageClass : FrontControllerClass<<1..*>>
 
   Class PersistencePackage -> Package
-    Reference PersistencePackageInterface : DAOInterface<<1..*>>
-    Reference PersistencePackageClass : DAOClass<<1..*>>
 
   Class ApplicationPackage -> Package
-    Reference ServicePackageClass : ServiceClass<<1..*>>
-    Reference ServicePackageInterface : ServiceInterface<<1..*>>
 
-  Class UIComponent -> NavigationClass, TypedElement
-    Attribute ajax : Boolean
-    Attribute render : String
-    Attribute execute : String
+  Class UIComponent -> NavigationClass
 
-  Class ResultType -> Class
+  Class ResultType -> Stereotype
 
   Class NavigationPackage -> Package
 
   Class DomainGeneralization -> Generalization
-    Attribute mapping : InheritanceMapping
-    Reference TargetDomain : DomainClass<<1..1>>
-    Reference SourceDomain : DomainClass<<1..1>>
-
-  Class JQuery
 
   Class UIComponentField -> NavigationAttribute
     Reference inject : IOParameter
-    Attribute ajax : Boolean
-    Attribute render : String
-    Attribute execute : String
 
   Class TagLib -> Package
-    Reference TagLibTag : Tag<<1..*>>
     Attribute prefix : String<<1..1>>
 
-  Class Rule
-
-  Class Tag -> Class
-
-  Class Anotation
+  Class Tag -> Stereotype
 
   Class NavigationCompositionPart -> NavigationProperty
 
@@ -253,9 +165,8 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
   Class NavigationProperty -> Property
 
   Class ResultSet -> Package
-    Reference SetOfResultType : ResultType<<1..*>>
 
-  Class NavigationConstraint -> StringExpression
+  Class NavigationConstraint -> Constraint
 
   Class PageConstraint -> NavigationConstraint
 
@@ -264,6 +175,73 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
   Class MethodCosntraint -> NavigationConstraint
 
   Class ChainingConstraint -> NavigationConstraint
+
+  Class NavigationGeneralization -> Generalization
+
+  Class DomainConstraints -> Constraint
+
+  Class DomainProperty -> Property
+
+  Class DAOGeneralization -> Generalization
+
+  Class MappingLib -> Package
+
+  Class ClassMapping -> Stereotype
+
+  Class AttributeMapping -> Stereotype
+
+  Class DomainGeneralizationSet -> GeneralizationSet
+    Attribute mapping : InheritanceMapping
+
+  Class FrameworkExtension -> Extension
+
+  Class TagExtension -> NavigationExtension
+
+  Class Framework -> ProfileApplication
+
+  Class ControllerExtension -> NavigationExtension
+
+  Class Controller -> Stereotype
+
+  Class ControllerSet -> Package
+
+  Class ResultExtension -> NavigationExtension
+
+  Class ClassMappingExtension -> DomainExtension
+
+  Class AttributeMappingExtension -> DomainExtension
+
+  Class ControllerExtensionEnd -> ExtensionEnd
+
+  Class TagExtensionEnd -> ExtensionEnd
+
+  Class ResultExtensionEnd -> ExtensionEnd
+
+  Class ClassMappingExtensionEnd -> ExtensionEnd
+
+  Class AttributeMappingExtensionEnd -> ExtensionEnd
+
+  Class ControllerProperty -> Property
+
+  Class TagProperty -> Property
+
+  Class ResultProperty -> Property
+
+  Class ClassMappingPropery -> Property
+
+  Class AttributeMappingProperty -> Property
+
+  Class SeviceRealization -> InterfaceRealization
+
+  Class NavigationExtension -> FrameworkExtension
+
+  Class DomainExtension -> FrameworkExtension
+
+  Class NavigationGeneralizationSet -> GeneralizationSet
+
+  Class DAOGeneralizationSet -> GeneralizationSet
+
+  Class ServiceGeneralizationSet -> GeneralizationSet
 
   Enum DateTimePrecision
     Literal timestamp = 0
@@ -300,18 +278,10 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Literal eager = 0
     Literal lazy = 1
 
-  Enum DAOBaseOperationList
-    Literal retrieve = 0
-    Literal retrieveAll = 1
-    Literal save = 2
-    Literal delete = 3
-
   Enum FrameworkCategoryList
-    Literal MVC = 1
-    Literal DependencyInjection = 2
-    Literal ORM = 3
-    Literal Decorator = 4
-    Literal Standard = 0
+    Literal FrontController = 0
+    Literal DependencyInjection = 1
+    Literal ObjetoRelacional = 2
 
   Enum ConstantNameList
     Literal DAO = 0
@@ -330,10 +300,8 @@ Package frameweb <https://github.com/bfmartins/FrameWeb-Martins-2015>
     Literal union = 1
     Literal join = 2
 
-  Enum NavigationConstraintKind
-    Literal Result = 0
-    Literal Page = 0
-    Literal Method = 0
-    Literal Chaining = 0
-
-  DataType ResultDataType <java.lang.Object>
+  Enum FrameworkKindList
+    Literal StandardSpecification = 0
+    Literal FrameworkSpecification = 1
+    Literal FrameworkImplementation = 2
+    Literal Custom = 3

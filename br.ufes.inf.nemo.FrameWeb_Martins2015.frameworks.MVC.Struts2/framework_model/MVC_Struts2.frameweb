@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015">
+<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="http://nemo.inf.ufes.br/projects/frameweb/2015">
   <Configures name="Struts2" URI="https://github.com/bfmartins/FrameWeb-Martins-2015/blob/master/br.ufes.inf.nemo.FrameWeb_Martins2015.model/model" kind="FrameworkImplementation">
     <packagedElement xsi:type="frameweb:TagLib" name="Generic Control Tags" URI="/struts-tags" prefix="s">
       <packagedElement xsi:type="frameweb:Tag" name="if"/>

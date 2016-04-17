@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="http://nemo.inf.ufes.br/projects/frameweb/FW-2015" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <Configures name="JSF" kind="FrameworkImplementation">
     <packagedElement xsi:type="frameweb:TagLib" name="JSFhtml" URI="http://java.sun.com/jsf/html" prefix="h">
       <packagedElement xsi:type="frameweb:Tag" name="body"/>
@@ -81,7 +81,7 @@
       </packagedElement>
       <packagedElement xsi:type="frameweb:ControllerExtension" name="beanExtension" memberEnd="//@Configures.0/ControllerSet/beanExtension/beanExtensionEnd">
         <ownedEnd xsi:type="frameweb:ControllerExtensionEnd" name="beanExtensionEnd" type="//@Configures.0/ControllerSet/Bean" aggregation="composite" association="//@Configures.0/ControllerSet/beanExtension">
-          <defaultValue xsi:type="uml:LiteralString" name="Bean" value=""/>
+          <defaultValue xsi:type="uml:LiteralString" name="BeanLiteral" value="Bean"/>
         </ownedEnd>
       </packagedElement>
     </packagedElement>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="frameweb" nsURI="http://nemo.inf.ufes.br/projects/frameweb/2015"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="frameweb" nsURI="http://nemo.inf.ufes.br/projects/frameweb/FW-2015"
     nsPrefix="frameweb">
   <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
     <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
@@ -9,13 +9,13 @@
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="Frameweb">
     <eAnnotations source="Ecore">
-      <details key="constraints" value="FramewebMinimum"/>
+      <details key="constraints" value="FramewebContent"/>
     </eAnnotations>
     <eAnnotations source="OCL" references="#//Frameweb/%Ecore%/@details.0">
-      <details key="FramewebMinimum" value="(self.Compose->size()>=1 and self.Configures->size()=0) or &#xD;&#xA;(self.Configures->size()>=1 and self.Compose->size()=0)"/>
+      <details key="FramewebContent" value="(self.Compose->size()>=1 and self.Configures->size()=0) or (self.Configures->size()>=1 and self.Compose->size()=0)"/>
     </eAnnotations>
     <eAnnotations source="Comments" references="#//Frameweb/%Ecore%/@details.0">
-      <details key="FramewebMininimum" value="The Frameweb need obligatorily have a Framework Profile or FramewebModel and can not have both simultaneously"/>
+      <details key="FramewebContent" value="The Frameweb need obligatorily have a FrameworkProfile or a FramewebModel and may not both simultaneously."/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Compose" upperBound="-1"
         eType="#//FrameWebModel" containment="true"/>
@@ -30,15 +30,10 @@
       <details key="FramewebModelContent" value="true"/>
     </eAnnotations>
     <eAnnotations source="Comments" references="#//FrameWebModel/%Ecore%/@details.0">
-      <details key="FramewebModelContent" value=""/>
+      <details key="FramewebModelContent" value="none"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FrameworkProfile" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Profile">
-    <eAnnotations source="Ecore">
-      <details key="constraints" value="FrameworkResultSetConstraint FrameworkTagLibConstraint"/>
-    </eAnnotations>
-    <eAnnotations source="Comments"/>
-    <eAnnotations source="OCL"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//FrameworkCategoryList"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" eType="#//FrameworkKindList"/>
   </eClassifiers>
@@ -158,12 +153,11 @@
       <details key="ResultDependencyConstraint" value="A ResultDependency must have a FrontControllerClass as client and a NavigationClass as supplier."/>
     </eAnnotations>
     <eAnnotations source="OCL" references="#//ResultDependency/%http:%2F%2Fwww.eclipse.org%2Femf%2F2002%2FEcore%/@details.0">
-      <details key="ResultDependencyConstraint" value="(self.oclAsType(Dependency).client.oclIsTypeOf(FrontControllerClass)) and&#xD;&#xA;(self.oclAsType(Dependency).supplier.oclIsTypeOf(NavigationClass))"/>
+      <details key="ResultDependencyConstraint" value="(self.oclAsType(Dependency).client.oclIsTypeOf(FrontControllerClass)) and (self.oclAsType(Dependency).supplier.oclIsTypeOf(NavigationClass))"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ResultResult" upperBound="-1"
         eType="#//Result"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ResultMethod" lowerBound="1"
-        eType="#//FrontControllerMethod"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ResultMethod" eType="#//FrontControllerMethod"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ResultDependendencyCosntraint"
         ordered="false" lowerBound="1" eType="#//ResultConstraint" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="render" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"
@@ -199,46 +193,43 @@
   <eClassifiers xsi:type="ecore:EClass" name="Result" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
   <eClassifiers xsi:type="ecore:EClass" name="FrontControllerDependency" eSuperTypes="#//NavigationDependency">
     <eAnnotations source="Ecore">
-      <details key="constraints" value="FrontControllerDependencyConstraint"/>
+      <details key="constraints" value="FrontControllerDependencyContent"/>
     </eAnnotations>
     <eAnnotations source="Comments" references="#//FrontControllerDependency/%Ecore%/@details.0">
-      <details key="FrontControllerDependencyConstraint" value="A FrontControllerDependencyConstraint must have a NavigationClass as client and a FrontControllerClass as supplier."/>
+      <details key="FrontControllerDependencyContent" value="A FrontControllerDependencyConstraint must have a NavigationClass as client and a FrontControllerClass as supplier."/>
     </eAnnotations>
     <eAnnotations source="OCL" references="#//FrontControllerDependency/%Ecore%/@details.0">
-      <details key="FrontControllerDependencyConstraint" value="context FrontControllerDependency &#xD;&#xA; inv: &#xD;&#xA;  (self.oclAsType(Dependency).supplier.oclIsTypeOf(FrontControllerClass)) and&#xD;&#xA;  (self.oclAsType(Dependency).client.oclIsTypeOf(NavigationClass)) "/>
+      <details key="FrontControllerDependencyContent" value="(self.oclAsType(Dependency).supplier.oclIsTypeOf(FrontControllerClass)) and (self.oclAsType(Dependency).client.oclIsTypeOf(NavigationClass)) "/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Method" lowerBound="1"
-        eType="#//FrontControllerMethod"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Method" eType="#//FrontControllerMethod"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="MethodDependendencyConstraint"
         ordered="false" lowerBound="1" eType="#//MethodCosntraint" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PageDependency" eSuperTypes="#//NavigationDependency">
     <eAnnotations source="Ecore">
-      <details key="constraints" value="PageDepencencyConstraint"/>
+      <details key="constraints" value="PageDepencencyContent"/>
     </eAnnotations>
     <eAnnotations source="Comments" references="#//PageDependency/%Ecore%/@details.0">
-      <details key="PageDepencencyConstraint" value="A PageDependencyConstraint must have a Page as client and a Page or a Template as supplier."/>
+      <details key="PageDepencencyContent" value="A PageDependencyConstraint must have a Page as client and a Page or a Template as supplier."/>
     </eAnnotations>
     <eAnnotations source="OCL" references="#//PageDependency/%Ecore%/@details.0">
-      <details key="PageDepencencyConstraint" value="context PageDependency &#xD;&#xA; inv: &#xD;&#xA;  (self.oclAsType(Dependency).client.oclIsTypeOf(Page)) and&#xD;&#xA;  ((self.oclAsType(Dependency).supplier.oclIsTypeOf(Page)) or&#xD;&#xA;  (self.oclAsType(Dependency).supplier.oclIsTypeOf(Template)))"/>
+      <details key="PageDepencencyContent" value="(self.oclAsType(Dependency).client.oclIsTypeOf(Page)) and ((self.oclAsType(Dependency).supplier.oclIsTypeOf(Page)) or (self.oclAsType(Dependency).supplier.oclIsTypeOf(Template)))"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="PageDependencyCosntraint"
         ordered="false" lowerBound="1" eType="#//PageConstraint" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ChainingDependency" eSuperTypes="#//NavigationDependency">
     <eAnnotations source="Ecore">
-      <details key="constraints" value="ChainingDependencyConstraint"/>
+      <details key="constraints" value="ChainingDependencyContent"/>
     </eAnnotations>
     <eAnnotations source="Comments" references="#//ChainingDependency/%Ecore%/@details.0">
-      <details key="ChainingDependencyConstraint" value="A ChainingDependencyConstraint must have a FrontControllerClass as client and a FrontControllerClass as supplier and these client and supplier can not be the same."/>
+      <details key="ChainingDependencyContent" value="A ChainingDependencyConstraint must have a FrontControllerClass as client and a FrontControllerClass as supplier and these client and supplier can not be the same."/>
     </eAnnotations>
     <eAnnotations source="OCL" references="#//ChainingDependency/%Ecore%/@details.0">
-      <details key="ChainingDependencyConstraint" value="context ChainingDependency &#xD;&#xA; inv: &#xD;&#xA;  (self.oclAsType(Dependency).supplier.oclIsTypeOf(FrontControllerClass)) and&#xD;&#xA;  (self.oclAsType(Dependency).client.oclIsTypeOf(FrontControllerClass)) and &#xD;&#xA;  (self.oclAsType(Dependency).supplier &lt;> self.oclAsType(Dependency).client) "/>
+      <details key=" ChainingDependencyContent" value="(self.oclAsType(Dependency).supplier.oclIsTypeOf(FrontControllerClass)) and (self.oclAsType(Dependency).client.oclIsTypeOf(FrontControllerClass)) and (self.oclAsType(Dependency).supplier &lt;> self.oclAsType(Dependency).client) "/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="OutMethod" lowerBound="1"
-        eType="#//FrontControllerMethod"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="InMethod" lowerBound="1"
-        eType="#//FrontControllerMethod"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="OutMethod" eType="#//FrontControllerMethod"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="InMethod" eType="#//FrontControllerMethod"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ChainingDependendencyConstraint"
         ordered="false" lowerBound="1" eType="#//ChainingConstraint" containment="true"/>
   </eClassifiers>
@@ -271,7 +262,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="ResultType" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Stereotype"/>
   <eClassifiers xsi:type="ecore:EClass" name="NavigationPackage" abstract="true" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Package"/>
   <eClassifiers xsi:type="ecore:EClass" name="DomainGeneralization" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Generalization"/>
-  <eClassifiers xsi:type="ecore:EClass" name="UIComponentField" instanceClassName="UIComponent"
+  <eClassifiers xsi:type="ecore:EClass" name="UIComponentField" instanceTypeName="UIComponent"
       eSuperTypes="#//NavigationAttribute">
     <eStructuralFeatures xsi:type="ecore:EReference" name="inject" eType="#//IOParameter"
         eOpposite="#//IOParameter/display"/>

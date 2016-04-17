@@ -11,7 +11,6 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Export-Package: frameweb.presentation
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources;visibility:=reexport,
- org.eclipse.ocl.ecore;visibility:=reexport,
  br.ufes.inf.nemo.FrameWeb_Martins2015.edit;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
  org.eclipse.emf.edit.ui;visibility:=reexport,

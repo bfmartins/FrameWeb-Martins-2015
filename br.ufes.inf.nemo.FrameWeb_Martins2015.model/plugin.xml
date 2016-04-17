@@ -33,7 +33,7 @@
             name="%_UI_Frameweb_content_type"
             priority="normal">
          <describer class="org.eclipse.emf.ecore.xmi.impl.RootXMLContentHandlerImpl$Describer">
-            <parameter name="namespace" value="http://nemo.inf.ufes.br/projects/frameweb/2015"/>
+            <parameter name="namespace" value="http://nemo.inf.ufes.br/projects/frameweb/FW-2015"/>
             <parameter name="kind" value="xmi"/>
          </describer>
       </content-type>
