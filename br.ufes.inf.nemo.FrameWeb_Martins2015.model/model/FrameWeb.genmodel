@@ -61,7 +61,7 @@
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/class"/>
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/impl"/>
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/Controller"/>
-      <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/Domain"/>
+      <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/Entity"/>
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/Persistence"/>
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/Application"/>
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/View"/>
@@ -77,6 +77,8 @@
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//FrameworkKindList/FrameworkImplementation"/>
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//FrameworkKindList/Custom"/>
     </genEnums>
+    <genDataTypes ecoreDataType="FrameWeb.ecore#//Rational"/>
+    <genDataTypes ecoreDataType="FrameWeb.ecore#//Decimal"/>
     <genClasses ecoreClass="FrameWeb.ecore#//Frameweb">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Frameweb/Compose"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Frameweb/Configures"/>
@@ -86,20 +88,20 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//FrameworkProfile/category"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//FrameworkProfile/kind"/>
     </genClasses>
-    <genClasses ecoreClass="FrameWeb.ecore#//DomainModel"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//EntityModel"/>
     <genClasses ecoreClass="FrameWeb.ecore#//NavigationModel"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ApplicationModel"/>
     <genClasses ecoreClass="FrameWeb.ecore#//PersistenceModel"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//DomainAssociation">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainAssociation/collection"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainAssociation/cascade"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainAssociation/fetch"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainAssociation/order"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//EntityAssociation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityAssociation/collection"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityAssociation/cascade"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityAssociation/fetch"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityAssociation/order"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="FrameWeb.ecore#//DomainAttribute">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainAttribute/size"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainAttribute/isNull"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainAttribute/isPersistent"/>
+    <genClasses image="false" ecoreClass="FrameWeb.ecore#//EntityAttribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityAttribute/size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityAttribute/isNull"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityAttribute/isPersistent"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//VersionAttribute"/>
     <genClasses ecoreClass="FrameWeb.ecore#//IdAttribute">
@@ -150,8 +152,8 @@
     <genClasses ecoreClass="FrameWeb.ecore#//ServiceInterface"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ServiceGeneralization"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ServiceControllerAssociation"/>
-    <genClasses image="false" ecoreClass="FrameWeb.ecore#//DomainClass">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainClass/table"/>
+    <genClasses image="false" ecoreClass="FrameWeb.ecore#//EntityClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityClass/table"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//Result"/>
     <genClasses ecoreClass="FrameWeb.ecore#//FrontControllerDependency">
@@ -169,14 +171,14 @@
     <genClasses ecoreClass="FrameWeb.ecore#//DAOServiceAssociation"/>
     <genClasses image="false" ecoreClass="FrameWeb.ecore#//NavigationAttribute"/>
     <genClasses image="false" ecoreClass="FrameWeb.ecore#//NavigationClass"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//DomainMethod"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//EntityMethod"/>
     <genClasses ecoreClass="FrameWeb.ecore#//DAOAttribute"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ServiceMethod"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ServiceAttribute"/>
     <genClasses image="false" ecoreClass="FrameWeb.ecore#//ServiceAssociation"/>
     <genClasses image="false" ecoreClass="FrameWeb.ecore#//NavigationDependency"/>
     <genClasses ecoreClass="FrameWeb.ecore#//DAOMethod"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//DomainPackage"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//EntityPackage"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ViewPackage"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ControllerPackage"/>
     <genClasses ecoreClass="FrameWeb.ecore#//PersistencePackage"/>
@@ -184,7 +186,7 @@
     <genClasses ecoreClass="FrameWeb.ecore#//UIComponent"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ResultType"/>
     <genClasses image="false" ecoreClass="FrameWeb.ecore#//NavigationPackage"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//DomainGeneralization"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//EntityGeneralization"/>
     <genClasses ecoreClass="FrameWeb.ecore#//UIComponentField">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//UIComponentField/inject"/>
     </genClasses>
@@ -202,14 +204,14 @@
     <genClasses ecoreClass="FrameWeb.ecore#//MethodCosntraint"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ChainingConstraint"/>
     <genClasses ecoreClass="FrameWeb.ecore#//NavigationGeneralization"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//DomainConstraints"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//DomainProperty"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//EntityConstraints"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//EntityProperty"/>
     <genClasses ecoreClass="FrameWeb.ecore#//DAOGeneralization"/>
     <genClasses ecoreClass="FrameWeb.ecore#//MappingLib"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ClassMapping"/>
     <genClasses ecoreClass="FrameWeb.ecore#//AttributeMapping"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//DomainGeneralizationSet">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainGeneralizationSet/mapping"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//EntityGeneralizationSet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityGeneralizationSet/mapping"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//FrameworkExtension"/>
     <genClasses ecoreClass="FrameWeb.ecore#//TagExtension"/>
@@ -232,10 +234,177 @@
     <genClasses ecoreClass="FrameWeb.ecore#//AttributeMappingProperty"/>
     <genClasses ecoreClass="FrameWeb.ecore#//SeviceRealization"/>
     <genClasses ecoreClass="FrameWeb.ecore#//NavigationExtension"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//DomainExtension"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//EntityExtension"/>
     <genClasses ecoreClass="FrameWeb.ecore#//NavigationGeneralizationSet"/>
     <genClasses ecoreClass="FrameWeb.ecore#//DAOGeneralizationSet"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ServiceGeneralizationSet"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//SemanticModel"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//SemanticPackage"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//IRI">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//IRI/iri"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//IRI/iriVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//Vocabulary/vocabularyDocument"/>
+    </genClasses>
+    <genClasses ecoreClass="FrameWeb.ecore#//VocabularyModel"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//Vocabulary">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Vocabulary/directlyImportsDocuments"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Vocabulary/vocabularyIRI"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Vocabulary/axioms"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Vocabulary/annotations"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//Vocabulary/vocabularyDocument"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//IRI/iriVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//IRI/iri"/>
+    </genClasses>
+    <genClasses ecoreClass="FrameWeb.ecore#//Axiom">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//Vocabulary/vocabularyDocument"/>
+    </genClasses>
+    <genClasses ecoreClass="FrameWeb.ecore#//Annotation"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//VocabularyConstraints"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//Property">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Property/datatype"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Property/interface"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//Property/default"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//Property/aggregation"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference FrameWeb.ecore#//Property/associationEnd"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Property/qualifier"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference FrameWeb.ecore#//Property/class"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Property/defaultValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//Property/isComposite.1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//Property/isDerived"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//Property/isDerivedUnion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//Property/isID"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Property/opposite"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference FrameWeb.ecore#//Property/owningAssociation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Property/redefinedProperty"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Property/subsettedProperty"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Property/association"/>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/subsetting_context_conforms">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/subsetting_context_conforms/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/subsetting_context_conforms/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/derived_union_is_read_only">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/derived_union_is_read_only/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/derived_union_is_read_only/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/multiplicity_of_composite">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/multiplicity_of_composite/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/multiplicity_of_composite/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/redefined_property_inherited">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/redefined_property_inherited/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/redefined_property_inherited/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/subsetting_rules">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/subsetting_rules/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/subsetting_rules/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/binding_to_attribute">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/binding_to_attribute/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/binding_to_attribute/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/derived_union_is_derived">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/derived_union_is_derived/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/derived_union_is_derived/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/deployment_target">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/deployment_target/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/deployment_target/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/subsetted_property_names">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/subsetted_property_names/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/subsetted_property_names/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/type_of_opposite_end">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/type_of_opposite_end/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/type_of_opposite_end/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/qualified_is_association_end">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/qualified_is_association_end/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/qualified_is_association_end/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/getDefault"/>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/getOtherEnd"/>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/isSetDefault"/>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/setBooleanDefaultValue">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/setBooleanDefaultValue/value"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/setDefault">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/setDefault/newDefault"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/setIntegerDefaultValue">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/setIntegerDefaultValue/value"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/setIsComposite">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/setIsComposite/newIsComposite"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/setIsNavigable">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/setIsNavigable/isNavigable"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/setNullDefaultValue"/>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/setOpposite">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/setOpposite/newOpposite"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/setRealDefaultValue">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/setRealDefaultValue/value"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/setStringDefaultValue">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/setStringDefaultValue/value"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/setUnlimitedNaturalDefaultValue">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Property/setUnlimitedNaturalDefaultValue/value"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/unsetDefault"/>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/isAttribute"/>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/isComposite"/>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/isNavigable"/>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/getOpposite"/>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Property/subsettingContext"/>
+    </genClasses>
+    <genClasses ecoreClass="FrameWeb.ecore#//Association">
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference FrameWeb.ecore#//Association/endType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//Association/isDerived"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Association/memberEnd"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Association/ownedEnd"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//Association/navigableOwnedEnd"/>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Association/specialized_end_number">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Association/specialized_end_number/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Association/specialized_end_number/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Association/specialized_end_types">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Association/specialized_end_types/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Association/specialized_end_types/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Association/binary_associations">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Association/binary_associations/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Association/binary_associations/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Association/association_ends">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Association/association_ends/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Association/association_ends/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Association/ends_must_be_typed">
+        <genParameters ecoreParameter="FrameWeb.ecore#//Association/ends_must_be_typed/diagnostics"/>
+        <genParameters ecoreParameter="FrameWeb.ecore#//Association/ends_must_be_typed/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Association/isBinary"/>
+      <genOperations ecoreOperation="FrameWeb.ecore#//Association/getEndTypes"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="FrameWeb.ecore#//NewInterface115"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//VocabularyAssociation"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//VocabularyProperty"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//VocabularyEntity">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//VocabularyEntity/entityIRI"/>
+    </genClasses>
+    <genClasses ecoreClass="FrameWeb.ecore#//ObjectProperty"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//DataProperty"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//AnnotationProperty"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//VocabularyDataType"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//NamedIndividual"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//VocabularyClassExpression"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//VocabularyClass"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//AnonymousIndividual"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//Individual"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//VocabularyLiteral"/>
   </genPackages>
   <genPackages prefix="Uml" ecorePackage="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//VisibilityKind">

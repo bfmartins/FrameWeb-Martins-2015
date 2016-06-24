@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="https://github.com/bfmartins/FrameWeb-Martins-2015">
-  <Uses name="HTML5" URI="">
+<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="http://nemo.inf.ufes.br/projects/frameweb/FW-2015">
+  <Configures name="HTML5" URI="">
     <packagedElement xsi:type="frameweb:TagLib" name="HTML5basic" URI="" prefix="">
       <packagedElement xsi:type="frameweb:Tag" name="!"/>
       <packagedElement xsi:type="frameweb:Tag" name="!DOCTYPE"/>
@@ -134,12 +134,12 @@
       <packagedElement xsi:type="frameweb:Tag" name="header"/>
       <packagedElement xsi:type="frameweb:Tag" name="meta"/>
     </packagedElement>
-    <FrameworkTagLib name="programing">
+    <packagedElement xsi:type="frameweb:TagLib" name="programing">
       <packagedElement xsi:type="frameweb:Tag" name="embed"/>
       <packagedElement xsi:type="frameweb:Tag" name="noscript"/>
       <packagedElement xsi:type="frameweb:Tag" name="object"/>
       <packagedElement xsi:type="frameweb:Tag" name="param"/>
       <packagedElement xsi:type="frameweb:Tag" name="script"/>
-    </FrameworkTagLib>
-  </Uses>
+    </packagedElement>
+  </Configures>
 </frameweb:Frameweb>

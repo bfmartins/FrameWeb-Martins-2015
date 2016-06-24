@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:frameweb="http://nemo.inf.ufes.br/projects/frameweb/2015">
+<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:frameweb="http://nemo.inf.ufes.br/projects/frameweb/FW-2015">
   <Configures name="VRaptor3" URI="" kind="FrameworkSpecification"/>
 </frameweb:Frameweb>

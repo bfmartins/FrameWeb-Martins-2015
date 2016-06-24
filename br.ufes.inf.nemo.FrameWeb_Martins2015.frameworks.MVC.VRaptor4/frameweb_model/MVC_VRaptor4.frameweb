@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="http://nemo.inf.ufes.br/projects/frameweb/2015" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+<frameweb:Frameweb xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:frameweb="http://nemo.inf.ufes.br/projects/frameweb/FW-2015" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <Configures name="VRaptor4" URI="" metamodelReference="//@Configures.0/@packageImport.0" kind="FrameworkSpecification">
     <eAnnotations source="http://nemo.inf.ufes.br/projects/frameweb/FW-2015"/>
     <packageImport/>
