@@ -61,8 +61,8 @@ public class TemplateItemProvider extends NavigationClassItemProvider {
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Template_TemplateTagLib_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Template_TemplateTagLib_feature", "_UI_Template_type"),
+				 getString("_UI_Template_templateTagLib_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Template_templateTagLib_feature", "_UI_Template_type"),
 				 FramewebPackage.Literals.TEMPLATE__TEMPLATE_TAG_LIB,
 				 true,
 				 false,

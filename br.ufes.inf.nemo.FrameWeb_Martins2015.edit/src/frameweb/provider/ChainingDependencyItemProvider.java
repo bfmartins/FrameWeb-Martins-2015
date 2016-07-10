@@ -64,8 +64,8 @@ public class ChainingDependencyItemProvider extends NavigationDependencyItemProv
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_ChainingDependency_OutMethod_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_ChainingDependency_OutMethod_feature", "_UI_ChainingDependency_type"),
+				 getString("_UI_ChainingDependency_outMethod_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ChainingDependency_outMethod_feature", "_UI_ChainingDependency_type"),
 				 FramewebPackage.Literals.CHAINING_DEPENDENCY__OUT_METHOD,
 				 true,
 				 false,
@@ -86,8 +86,8 @@ public class ChainingDependencyItemProvider extends NavigationDependencyItemProv
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_ChainingDependency_InMethod_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_ChainingDependency_InMethod_feature", "_UI_ChainingDependency_type"),
+				 getString("_UI_ChainingDependency_inMethod_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ChainingDependency_inMethod_feature", "_UI_ChainingDependency_type"),
 				 FramewebPackage.Literals.CHAINING_DEPENDENCY__IN_METHOD,
 				 true,
 				 false,

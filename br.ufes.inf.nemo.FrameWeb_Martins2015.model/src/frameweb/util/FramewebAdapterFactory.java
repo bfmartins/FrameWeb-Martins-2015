@@ -13,12 +13,12 @@ import org.eclipse.emf.ecore.EModelElement;
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.uml2.uml.Abstraction;
-import org.eclipse.uml2.uml.Association;
 import org.eclipse.uml2.uml.BehavioralFeature;
 import org.eclipse.uml2.uml.BehavioredClassifier;
 import org.eclipse.uml2.uml.Classifier;
 import org.eclipse.uml2.uml.ConnectableElement;
 import org.eclipse.uml2.uml.Constraint;
+import org.eclipse.uml2.uml.DataType;
 import org.eclipse.uml2.uml.Dependency;
 import org.eclipse.uml2.uml.DeploymentTarget;
 import org.eclipse.uml2.uml.DirectedRelationship;
@@ -31,6 +31,8 @@ import org.eclipse.uml2.uml.Generalization;
 import org.eclipse.uml2.uml.GeneralizationSet;
 import org.eclipse.uml2.uml.Interface;
 import org.eclipse.uml2.uml.InterfaceRealization;
+import org.eclipse.uml2.uml.LiteralSpecification;
+import org.eclipse.uml2.uml.LiteralString;
 import org.eclipse.uml2.uml.Model;
 import org.eclipse.uml2.uml.MultiplicityElement;
 import org.eclipse.uml2.uml.NamedElement;
@@ -40,7 +42,6 @@ import org.eclipse.uml2.uml.PackageableElement;
 import org.eclipse.uml2.uml.ParameterableElement;
 import org.eclipse.uml2.uml.Profile;
 import org.eclipse.uml2.uml.ProfileApplication;
-import org.eclipse.uml2.uml.Property;
 import org.eclipse.uml2.uml.Realization;
 import org.eclipse.uml2.uml.RedefinableElement;
 import org.eclipse.uml2.uml.Relationship;
@@ -50,6 +51,7 @@ import org.eclipse.uml2.uml.StructuredClassifier;
 import org.eclipse.uml2.uml.TemplateableElement;
 import org.eclipse.uml2.uml.Type;
 import org.eclipse.uml2.uml.TypedElement;
+import org.eclipse.uml2.uml.ValueSpecification;
 
 /**
  * <!-- begin-user-doc -->
@@ -108,20 +110,20 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	protected FramewebSwitch<Adapter> modelSwitch =
 		new FramewebSwitch<Adapter>() {
 			@Override
-			public Adapter caseFrameweb(Frameweb object) {
-				return createFramewebAdapter();
+			public Adapter caseFramewebProject(FramewebProject object) {
+				return createFramewebProjectAdapter();
 			}
 			@Override
-			public Adapter caseFrameWebModel(FrameWebModel object) {
-				return createFrameWebModelAdapter();
+			public Adapter caseFramewebModel(FramewebModel object) {
+				return createFramewebModelAdapter();
 			}
 			@Override
 			public Adapter caseFrameworkProfile(FrameworkProfile object) {
 				return createFrameworkProfileAdapter();
 			}
 			@Override
-			public Adapter caseDomainModel(DomainModel object) {
-				return createDomainModelAdapter();
+			public Adapter caseEntityModel(EntityModel object) {
+				return createEntityModelAdapter();
 			}
 			@Override
 			public Adapter caseNavigationModel(NavigationModel object) {
@@ -136,12 +138,12 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createPersistenceModelAdapter();
 			}
 			@Override
-			public Adapter caseDomainAssociation(DomainAssociation object) {
-				return createDomainAssociationAdapter();
+			public Adapter caseEntityAssociation(EntityAssociation object) {
+				return createEntityAssociationAdapter();
 			}
 			@Override
-			public Adapter caseDomainAttribute(DomainAttribute object) {
-				return createDomainAttributeAdapter();
+			public Adapter caseEntityAttribute(EntityAttribute object) {
+				return createEntityAttributeAdapter();
 			}
 			@Override
 			public Adapter caseVersionAttribute(VersionAttribute object) {
@@ -224,8 +226,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createServiceControllerAssociationAdapter();
 			}
 			@Override
-			public Adapter caseDomainClass(DomainClass object) {
-				return createDomainClassAdapter();
+			public Adapter caseEntityClass(EntityClass object) {
+				return createEntityClassAdapter();
 			}
 			@Override
 			public Adapter caseResult(Result object) {
@@ -256,8 +258,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createNavigationClassAdapter();
 			}
 			@Override
-			public Adapter caseDomainMethod(DomainMethod object) {
-				return createDomainMethodAdapter();
+			public Adapter caseEntityMethod(EntityMethod object) {
+				return createEntityMethodAdapter();
 			}
 			@Override
 			public Adapter caseDAOAttribute(DAOAttribute object) {
@@ -284,8 +286,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createDAOMethodAdapter();
 			}
 			@Override
-			public Adapter caseDomainPackage(DomainPackage object) {
-				return createDomainPackageAdapter();
+			public Adapter caseEntityPackage(EntityPackage object) {
+				return createEntityPackageAdapter();
 			}
 			@Override
 			public Adapter caseViewPackage(ViewPackage object) {
@@ -316,8 +318,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createNavigationPackageAdapter();
 			}
 			@Override
-			public Adapter caseDomainGeneralization(DomainGeneralization object) {
-				return createDomainGeneralizationAdapter();
+			public Adapter caseEntityGeneralization(EntityGeneralization object) {
+				return createEntityGeneralizationAdapter();
 			}
 			@Override
 			public Adapter caseUIComponentField(UIComponent object) {
@@ -372,12 +374,12 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createNavigationGeneralizationAdapter();
 			}
 			@Override
-			public Adapter caseDomainConstraints(DomainConstraints object) {
-				return createDomainConstraintsAdapter();
+			public Adapter caseEntityConstraints(EntityConstraints object) {
+				return createEntityConstraintsAdapter();
 			}
 			@Override
-			public Adapter caseDomainProperty(DomainProperty object) {
-				return createDomainPropertyAdapter();
+			public Adapter caseEntityProperty(EntityProperty object) {
+				return createEntityPropertyAdapter();
 			}
 			@Override
 			public Adapter caseDAOGeneralization(DAOGeneralization object) {
@@ -396,8 +398,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createAttributeMappingAdapter();
 			}
 			@Override
-			public Adapter caseDomainGeneralizationSet(DomainGeneralizationSet object) {
-				return createDomainGeneralizationSetAdapter();
+			public Adapter caseEntityGeneralizationSet(EntityGeneralizationSet object) {
+				return createEntityGeneralizationSetAdapter();
 			}
 			@Override
 			public Adapter caseFrameworkExtension(FrameworkExtension object) {
@@ -408,8 +410,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createTagExtensionAdapter();
 			}
 			@Override
-			public Adapter caseFramework(Framework object) {
-				return createFrameworkAdapter();
+			public Adapter caseFrameworkApplication(FrameworkApplication object) {
+				return createFrameworkApplicationAdapter();
 			}
 			@Override
 			public Adapter caseControllerExtension(ControllerExtension object) {
@@ -484,8 +486,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createNavigationExtensionAdapter();
 			}
 			@Override
-			public Adapter caseDomainExtension(DomainExtension object) {
-				return createDomainExtensionAdapter();
+			public Adapter caseEntityExtension(EntityExtension object) {
+				return createEntityExtensionAdapter();
 			}
 			@Override
 			public Adapter caseNavigationGeneralizationSet(NavigationGeneralizationSet object) {
@@ -498,6 +500,98 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseServiceGeneralizationSet(ServiceGeneralizationSet object) {
 				return createServiceGeneralizationSetAdapter();
+			}
+			@Override
+			public Adapter caseSemanticPackage(SemanticPackage object) {
+				return createSemanticPackageAdapter();
+			}
+			@Override
+			public Adapter caseIRI(IRI object) {
+				return createIRIAdapter();
+			}
+			@Override
+			public Adapter caseVocabularyModel(VocabularyModel object) {
+				return createVocabularyModelAdapter();
+			}
+			@Override
+			public Adapter caseVocabulary(Vocabulary object) {
+				return createVocabularyAdapter();
+			}
+			@Override
+			public Adapter caseAxiom(Axiom object) {
+				return createAxiomAdapter();
+			}
+			@Override
+			public Adapter caseAnnotation(Annotation object) {
+				return createAnnotationAdapter();
+			}
+			@Override
+			public Adapter caseVocabularyConstraints(VocabularyConstraints object) {
+				return createVocabularyConstraintsAdapter();
+			}
+			@Override
+			public Adapter caseProperty(Property object) {
+				return createPropertyAdapter();
+			}
+			@Override
+			public Adapter caseAssociation(Association object) {
+				return createAssociationAdapter();
+			}
+			@Override
+			public Adapter caseNewInterface115(NewInterface115 object) {
+				return createNewInterface115Adapter();
+			}
+			@Override
+			public Adapter caseVocabularyAssociation(VocabularyAssociation object) {
+				return createVocabularyAssociationAdapter();
+			}
+			@Override
+			public Adapter caseVocabularyProperty(VocabularyProperty object) {
+				return createVocabularyPropertyAdapter();
+			}
+			@Override
+			public Adapter caseVocabularyEntity(VocabularyEntity object) {
+				return createVocabularyEntityAdapter();
+			}
+			@Override
+			public Adapter caseObjectProperty(ObjectProperty object) {
+				return createObjectPropertyAdapter();
+			}
+			@Override
+			public Adapter caseDataProperty(DataProperty object) {
+				return createDataPropertyAdapter();
+			}
+			@Override
+			public Adapter caseAnnotationProperty(AnnotationProperty object) {
+				return createAnnotationPropertyAdapter();
+			}
+			@Override
+			public Adapter caseVocabularyDataType(VocabularyDataType object) {
+				return createVocabularyDataTypeAdapter();
+			}
+			@Override
+			public Adapter caseNamedIndividual(NamedIndividual object) {
+				return createNamedIndividualAdapter();
+			}
+			@Override
+			public Adapter caseVocabularyClassExpression(VocabularyClassExpression object) {
+				return createVocabularyClassExpressionAdapter();
+			}
+			@Override
+			public Adapter caseVocabularyClass(VocabularyClass object) {
+				return createVocabularyClassAdapter();
+			}
+			@Override
+			public Adapter caseAnonymousIndividual(AnonymousIndividual object) {
+				return createAnonymousIndividualAdapter();
+			}
+			@Override
+			public Adapter caseIndividual(Individual object) {
+				return createIndividualAdapter();
+			}
+			@Override
+			public Adapter caseVocabularyLiteral(VocabularyLiteral object) {
+				return createVocabularyLiteralAdapter();
 			}
 			@Override
 			public Adapter caseEModelElement(EModelElement object) {
@@ -556,8 +650,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createRelationshipAdapter();
 			}
 			@Override
-			public Adapter caseAssociation(Association object) {
-				return createAssociationAdapter();
+			public Adapter caseUML_Association(org.eclipse.uml2.uml.Association object) {
+				return createUML_AssociationAdapter();
 			}
 			@Override
 			public Adapter caseFeature(Feature object) {
@@ -584,8 +678,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createDeploymentTargetAdapter();
 			}
 			@Override
-			public Adapter caseProperty(Property object) {
-				return createPropertyAdapter();
+			public Adapter caseUML_Property(org.eclipse.uml2.uml.Property object) {
+				return createUML_PropertyAdapter();
 			}
 			@Override
 			public Adapter caseStructuredClassifier(StructuredClassifier object) {
@@ -664,6 +758,22 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createExtensionEndAdapter();
 			}
 			@Override
+			public Adapter caseDataType(DataType object) {
+				return createDataTypeAdapter();
+			}
+			@Override
+			public Adapter caseValueSpecification(ValueSpecification object) {
+				return createValueSpecificationAdapter();
+			}
+			@Override
+			public Adapter caseLiteralSpecification(LiteralSpecification object) {
+				return createLiteralSpecificationAdapter();
+			}
+			@Override
+			public Adapter caseLiteralString(LiteralString object) {
+				return createLiteralStringAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -684,30 +794,30 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.Frameweb <em>Frameweb</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.FramewebProject <em>Project</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.Frameweb
+	 * @see frameweb.FramewebProject
 	 * @generated
 	 */
-	public Adapter createFramewebAdapter() {
+	public Adapter createFramewebProjectAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.FrameWebModel <em>Frame Web Model</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.FramewebModel <em>Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.FrameWebModel
+	 * @see frameweb.FramewebModel
 	 * @generated
 	 */
-	public Adapter createFrameWebModelAdapter() {
+	public Adapter createFramewebModelAdapter() {
 		return null;
 	}
 
@@ -726,16 +836,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.DomainModel <em>Domain Model</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.EntityModel <em>Entity Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.DomainModel
+	 * @see frameweb.EntityModel
 	 * @generated
 	 */
-	public Adapter createDomainModelAdapter() {
+	public Adapter createEntityModelAdapter() {
 		return null;
 	}
 
@@ -782,30 +892,30 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.DomainAssociation <em>Domain Association</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.EntityAssociation <em>Entity Association</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.DomainAssociation
+	 * @see frameweb.EntityAssociation
 	 * @generated
 	 */
-	public Adapter createDomainAssociationAdapter() {
+	public Adapter createEntityAssociationAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.DomainAttribute <em>Domain Attribute</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.EntityAttribute <em>Entity Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.DomainAttribute
+	 * @see frameweb.EntityAttribute
 	 * @generated
 	 */
-	public Adapter createDomainAttributeAdapter() {
+	public Adapter createEntityAttributeAdapter() {
 		return null;
 	}
 
@@ -1090,16 +1200,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.DomainClass <em>Domain Class</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.EntityClass <em>Entity Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.DomainClass
+	 * @see frameweb.EntityClass
 	 * @generated
 	 */
-	public Adapter createDomainClassAdapter() {
+	public Adapter createEntityClassAdapter() {
 		return null;
 	}
 
@@ -1202,16 +1312,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.DomainMethod <em>Domain Method</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.EntityMethod <em>Entity Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.DomainMethod
+	 * @see frameweb.EntityMethod
 	 * @generated
 	 */
-	public Adapter createDomainMethodAdapter() {
+	public Adapter createEntityMethodAdapter() {
 		return null;
 	}
 
@@ -1300,16 +1410,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.DomainPackage <em>Domain Package</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.EntityPackage <em>Entity Package</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.DomainPackage
+	 * @see frameweb.EntityPackage
 	 * @generated
 	 */
-	public Adapter createDomainPackageAdapter() {
+	public Adapter createEntityPackageAdapter() {
 		return null;
 	}
 
@@ -1412,16 +1522,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.DomainGeneralization <em>Domain Generalization</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.EntityGeneralization <em>Entity Generalization</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.DomainGeneralization
+	 * @see frameweb.EntityGeneralization
 	 * @generated
 	 */
-	public Adapter createDomainGeneralizationAdapter() {
+	public Adapter createEntityGeneralizationAdapter() {
 		return null;
 	}
 
@@ -1608,30 +1718,30 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.DomainConstraints <em>Domain Constraints</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.EntityConstraints <em>Entity Constraints</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.DomainConstraints
+	 * @see frameweb.EntityConstraints
 	 * @generated
 	 */
-	public Adapter createDomainConstraintsAdapter() {
+	public Adapter createEntityConstraintsAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.DomainProperty <em>Domain Property</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.EntityProperty <em>Entity Property</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.DomainProperty
+	 * @see frameweb.EntityProperty
 	 * @generated
 	 */
-	public Adapter createDomainPropertyAdapter() {
+	public Adapter createEntityPropertyAdapter() {
 		return null;
 	}
 
@@ -1692,16 +1802,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.DomainGeneralizationSet <em>Domain Generalization Set</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.EntityGeneralizationSet <em>Entity Generalization Set</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.DomainGeneralizationSet
+	 * @see frameweb.EntityGeneralizationSet
 	 * @generated
 	 */
-	public Adapter createDomainGeneralizationSetAdapter() {
+	public Adapter createEntityGeneralizationSetAdapter() {
 		return null;
 	}
 
@@ -1734,16 +1844,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.Framework <em>Framework</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.FrameworkApplication <em>Framework Application</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.Framework
+	 * @see frameweb.FrameworkApplication
 	 * @generated
 	 */
-	public Adapter createFrameworkAdapter() {
+	public Adapter createFrameworkApplicationAdapter() {
 		return null;
 	}
 
@@ -2000,16 +2110,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.DomainExtension <em>Domain Extension</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.EntityExtension <em>Entity Extension</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.DomainExtension
+	 * @see frameweb.EntityExtension
 	 * @generated
 	 */
-	public Adapter createDomainExtensionAdapter() {
+	public Adapter createEntityExtensionAdapter() {
 		return null;
 	}
 
@@ -2052,6 +2162,328 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createServiceGeneralizationSetAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.SemanticPackage <em>Semantic Package</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.SemanticPackage
+	 * @generated
+	 */
+	public Adapter createSemanticPackageAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.IRI <em>IRI</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.IRI
+	 * @generated
+	 */
+	public Adapter createIRIAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.VocabularyModel <em>Vocabulary Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.VocabularyModel
+	 * @generated
+	 */
+	public Adapter createVocabularyModelAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.Vocabulary <em>Vocabulary</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.Vocabulary
+	 * @generated
+	 */
+	public Adapter createVocabularyAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.Axiom <em>Axiom</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.Axiom
+	 * @generated
+	 */
+	public Adapter createAxiomAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.Annotation <em>Annotation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.Annotation
+	 * @generated
+	 */
+	public Adapter createAnnotationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.VocabularyConstraints <em>Vocabulary Constraints</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.VocabularyConstraints
+	 * @generated
+	 */
+	public Adapter createVocabularyConstraintsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.Property <em>Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.Property
+	 * @generated
+	 */
+	public Adapter createPropertyAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.Association <em>Association</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.Association
+	 * @generated
+	 */
+	public Adapter createAssociationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.NewInterface115 <em>New Interface115</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.NewInterface115
+	 * @generated
+	 */
+	public Adapter createNewInterface115Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.VocabularyAssociation <em>Vocabulary Association</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.VocabularyAssociation
+	 * @generated
+	 */
+	public Adapter createVocabularyAssociationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.VocabularyProperty <em>Vocabulary Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.VocabularyProperty
+	 * @generated
+	 */
+	public Adapter createVocabularyPropertyAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.VocabularyEntity <em>Vocabulary Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.VocabularyEntity
+	 * @generated
+	 */
+	public Adapter createVocabularyEntityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.ObjectProperty <em>Object Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.ObjectProperty
+	 * @generated
+	 */
+	public Adapter createObjectPropertyAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.DataProperty <em>Data Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.DataProperty
+	 * @generated
+	 */
+	public Adapter createDataPropertyAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.AnnotationProperty <em>Annotation Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.AnnotationProperty
+	 * @generated
+	 */
+	public Adapter createAnnotationPropertyAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.VocabularyDataType <em>Vocabulary Data Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.VocabularyDataType
+	 * @generated
+	 */
+	public Adapter createVocabularyDataTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.NamedIndividual <em>Named Individual</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.NamedIndividual
+	 * @generated
+	 */
+	public Adapter createNamedIndividualAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.VocabularyClassExpression <em>Vocabulary Class Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.VocabularyClassExpression
+	 * @generated
+	 */
+	public Adapter createVocabularyClassExpressionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.VocabularyClass <em>Vocabulary Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.VocabularyClass
+	 * @generated
+	 */
+	public Adapter createVocabularyClassAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.AnonymousIndividual <em>Anonymous Individual</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.AnonymousIndividual
+	 * @generated
+	 */
+	public Adapter createAnonymousIndividualAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.Individual <em>Individual</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.Individual
+	 * @generated
+	 */
+	public Adapter createIndividualAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link frameweb.VocabularyLiteral <em>Vocabulary Literal</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see frameweb.VocabularyLiteral
+	 * @generated
+	 */
+	public Adapter createVocabularyLiteralAdapter() {
 		return null;
 	}
 
@@ -2261,7 +2693,7 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	 * @see org.eclipse.uml2.uml.Association
 	 * @generated
 	 */
-	public Adapter createAssociationAdapter() {
+	public Adapter createUML_AssociationAdapter() {
 		return null;
 	}
 
@@ -2359,7 +2791,7 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	 * @see org.eclipse.uml2.uml.Property
 	 * @generated
 	 */
-	public Adapter createPropertyAdapter() {
+	public Adapter createUML_PropertyAdapter() {
 		return null;
 	}
 
@@ -2626,6 +3058,62 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createExtensionEndAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.uml2.uml.DataType <em>Data Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.uml2.uml.DataType
+	 * @generated
+	 */
+	public Adapter createDataTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.uml2.uml.ValueSpecification <em>Value Specification</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.uml2.uml.ValueSpecification
+	 * @generated
+	 */
+	public Adapter createValueSpecificationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.uml2.uml.LiteralSpecification <em>Literal Specification</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.uml2.uml.LiteralSpecification
+	 * @generated
+	 */
+	public Adapter createLiteralSpecificationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.uml2.uml.LiteralString <em>Literal String</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.uml2.uml.LiteralString
+	 * @generated
+	 */
+	public Adapter createLiteralStringAdapter() {
 		return null;
 	}
 

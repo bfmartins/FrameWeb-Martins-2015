@@ -13,5 +13,5 @@ package frameweb;
  * @model
  * @generated
  */
-public interface ApplicationModel extends FrameWebModel {
+public interface ApplicationModel extends FramewebModel {
 } // ApplicationModel

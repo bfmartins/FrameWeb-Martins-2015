@@ -19,7 +19,7 @@ package frameweb;
  * @see frameweb.FramewebPackage#getFrontControllerDependency()
  * @model annotation="Ecore constraints='FrontControllerDependencyContent'"
  *        annotation="Comments FrontControllerDependencyContent='A FrontControllerDependencyConstraint must have a NavigationClass as client and a FrontControllerClass as supplier.'"
- *        annotation="OCL FrontControllerDependencyContent='(self.oclAsType(Dependency).supplier.oclIsTypeOf(FrontControllerClass)) and (self.oclAsType(Dependency).client.oclIsTypeOf(NavigationClass)) '"
+ *        annotation="OCL FrontControllerDependencyContent='(self.supplier.oclIsTypeOf(FrontControllerClass)) and (self.client.oclIsTypeOf(NavigationClass)) '"
  * @generated
  */
 public interface FrontControllerDependency extends NavigationDependency {
@@ -34,7 +34,7 @@ public interface FrontControllerDependency extends NavigationDependency {
 	 * @return the value of the '<em>Method</em>' reference.
 	 * @see #setMethod(FrontControllerMethod)
 	 * @see frameweb.FramewebPackage#getFrontControllerDependency_Method()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	FrontControllerMethod getMethod();

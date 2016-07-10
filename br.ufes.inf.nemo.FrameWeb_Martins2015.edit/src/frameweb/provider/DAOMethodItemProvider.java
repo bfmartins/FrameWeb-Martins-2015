@@ -125,7 +125,12 @@ public class DAOMethodItemProvider extends OperationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
-				 FramewebFactory.eINSTANCE.createDomainConstraints()));
+				 FramewebFactory.eINSTANCE.createEntityConstraints()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
+				 FramewebFactory.eINSTANCE.createVocabularyConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -150,7 +155,12 @@ public class DAOMethodItemProvider extends OperationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.OPERATION__BODY_CONDITION,
-				 FramewebFactory.eINSTANCE.createDomainConstraints()));
+				 FramewebFactory.eINSTANCE.createEntityConstraints()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__BODY_CONDITION,
+				 FramewebFactory.eINSTANCE.createVocabularyConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -175,7 +185,12 @@ public class DAOMethodItemProvider extends OperationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.OPERATION__POSTCONDITION,
-				 FramewebFactory.eINSTANCE.createDomainConstraints()));
+				 FramewebFactory.eINSTANCE.createEntityConstraints()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__POSTCONDITION,
+				 FramewebFactory.eINSTANCE.createVocabularyConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -200,7 +215,12 @@ public class DAOMethodItemProvider extends OperationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.OPERATION__PRECONDITION,
-				 FramewebFactory.eINSTANCE.createDomainConstraints()));
+				 FramewebFactory.eINSTANCE.createEntityConstraints()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.OPERATION__PRECONDITION,
+				 FramewebFactory.eINSTANCE.createVocabularyConstraints()));
 	}
 
 	/**

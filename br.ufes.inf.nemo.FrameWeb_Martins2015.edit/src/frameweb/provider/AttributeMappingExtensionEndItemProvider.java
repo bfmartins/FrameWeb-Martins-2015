@@ -104,6 +104,16 @@ public class AttributeMappingExtensionEndItemProvider extends ExtensionEndItemPr
 
 		newChildDescriptors.add
 			(createChildParameter
+				(UMLPackage.Literals.MULTIPLICITY_ELEMENT__LOWER_VALUE,
+				 FramewebFactory.eINSTANCE.createVocabularyLiteral()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.MULTIPLICITY_ELEMENT__UPPER_VALUE,
+				 FramewebFactory.eINSTANCE.createVocabularyLiteral()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(UMLPackage.Literals.PROPERTY__QUALIFIER,
 				 FramewebFactory.eINSTANCE.createVersionAttribute()));
 
@@ -165,7 +175,7 @@ public class AttributeMappingExtensionEndItemProvider extends ExtensionEndItemPr
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PROPERTY__QUALIFIER,
-				 FramewebFactory.eINSTANCE.createDomainProperty()));
+				 FramewebFactory.eINSTANCE.createEntityProperty()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -216,6 +226,11 @@ public class AttributeMappingExtensionEndItemProvider extends ExtensionEndItemPr
 			(createChildParameter
 				(UMLPackage.Literals.PROPERTY__QUALIFIER,
 				 FramewebFactory.eINSTANCE.createAttributeMappingProperty()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.PROPERTY__DEFAULT_VALUE,
+				 FramewebFactory.eINSTANCE.createVocabularyLiteral()));
 	}
 
 	/**

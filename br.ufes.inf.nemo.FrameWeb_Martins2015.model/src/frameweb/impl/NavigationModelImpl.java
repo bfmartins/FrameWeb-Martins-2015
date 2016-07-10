@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class NavigationModelImpl extends FrameWebModelImpl implements NavigationModel {
+public class NavigationModelImpl extends FramewebModelImpl implements NavigationModel {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -22,13 +22,13 @@ public interface FramewebFactory extends EFactory {
 	FramewebFactory eINSTANCE = frameweb.impl.FramewebFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Frameweb</em>'.
+	 * Returns a new object of class '<em>Project</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Frameweb</em>'.
+	 * @return a new object of class '<em>Project</em>'.
 	 * @generated
 	 */
-	Frameweb createFrameweb();
+	FramewebProject createFramewebProject();
 
 	/**
 	 * Returns a new object of class '<em>Framework Profile</em>'.
@@ -40,13 +40,13 @@ public interface FramewebFactory extends EFactory {
 	FrameworkProfile createFrameworkProfile();
 
 	/**
-	 * Returns a new object of class '<em>Domain Model</em>'.
+	 * Returns a new object of class '<em>Entity Model</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Domain Model</em>'.
+	 * @return a new object of class '<em>Entity Model</em>'.
 	 * @generated
 	 */
-	DomainModel createDomainModel();
+	EntityModel createEntityModel();
 
 	/**
 	 * Returns a new object of class '<em>Navigation Model</em>'.
@@ -76,13 +76,13 @@ public interface FramewebFactory extends EFactory {
 	PersistenceModel createPersistenceModel();
 
 	/**
-	 * Returns a new object of class '<em>Domain Association</em>'.
+	 * Returns a new object of class '<em>Entity Association</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Domain Association</em>'.
+	 * @return a new object of class '<em>Entity Association</em>'.
 	 * @generated
 	 */
-	DomainAssociation createDomainAssociation();
+	EntityAssociation createEntityAssociation();
 
 	/**
 	 * Returns a new object of class '<em>Version Attribute</em>'.
@@ -265,13 +265,13 @@ public interface FramewebFactory extends EFactory {
 	ServiceControllerAssociation createServiceControllerAssociation();
 
 	/**
-	 * Returns a new object of class '<em>Domain Class</em>'.
+	 * Returns a new object of class '<em>Entity Class</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Domain Class</em>'.
+	 * @return a new object of class '<em>Entity Class</em>'.
 	 * @generated
 	 */
-	DomainClass createDomainClass();
+	EntityClass createEntityClass();
 
 	/**
 	 * Returns a new object of class '<em>Result</em>'.
@@ -319,13 +319,13 @@ public interface FramewebFactory extends EFactory {
 	DAOServiceAssociation createDAOServiceAssociation();
 
 	/**
-	 * Returns a new object of class '<em>Domain Method</em>'.
+	 * Returns a new object of class '<em>Entity Method</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Domain Method</em>'.
+	 * @return a new object of class '<em>Entity Method</em>'.
 	 * @generated
 	 */
-	DomainMethod createDomainMethod();
+	EntityMethod createEntityMethod();
 
 	/**
 	 * Returns a new object of class '<em>DAO Attribute</em>'.
@@ -364,13 +364,13 @@ public interface FramewebFactory extends EFactory {
 	DAOMethod createDAOMethod();
 
 	/**
-	 * Returns a new object of class '<em>Domain Package</em>'.
+	 * Returns a new object of class '<em>Entity Package</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Domain Package</em>'.
+	 * @return a new object of class '<em>Entity Package</em>'.
 	 * @generated
 	 */
-	DomainPackage createDomainPackage();
+	EntityPackage createEntityPackage();
 
 	/**
 	 * Returns a new object of class '<em>View Package</em>'.
@@ -427,13 +427,13 @@ public interface FramewebFactory extends EFactory {
 	ResultType createResultType();
 
 	/**
-	 * Returns a new object of class '<em>Domain Generalization</em>'.
+	 * Returns a new object of class '<em>Entity Generalization</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Domain Generalization</em>'.
+	 * @return a new object of class '<em>Entity Generalization</em>'.
 	 * @generated
 	 */
-	DomainGeneralization createDomainGeneralization();
+	EntityGeneralization createEntityGeneralization();
 
 	/**
 	 * Returns a new object of class '<em>UI Component Field</em>'.
@@ -535,22 +535,22 @@ public interface FramewebFactory extends EFactory {
 	NavigationGeneralization createNavigationGeneralization();
 
 	/**
-	 * Returns a new object of class '<em>Domain Constraints</em>'.
+	 * Returns a new object of class '<em>Entity Constraints</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Domain Constraints</em>'.
+	 * @return a new object of class '<em>Entity Constraints</em>'.
 	 * @generated
 	 */
-	DomainConstraints createDomainConstraints();
+	EntityConstraints createEntityConstraints();
 
 	/**
-	 * Returns a new object of class '<em>Domain Property</em>'.
+	 * Returns a new object of class '<em>Entity Property</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Domain Property</em>'.
+	 * @return a new object of class '<em>Entity Property</em>'.
 	 * @generated
 	 */
-	DomainProperty createDomainProperty();
+	EntityProperty createEntityProperty();
 
 	/**
 	 * Returns a new object of class '<em>DAO Generalization</em>'.
@@ -589,13 +589,13 @@ public interface FramewebFactory extends EFactory {
 	AttributeMapping createAttributeMapping();
 
 	/**
-	 * Returns a new object of class '<em>Domain Generalization Set</em>'.
+	 * Returns a new object of class '<em>Entity Generalization Set</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Domain Generalization Set</em>'.
+	 * @return a new object of class '<em>Entity Generalization Set</em>'.
 	 * @generated
 	 */
-	DomainGeneralizationSet createDomainGeneralizationSet();
+	EntityGeneralizationSet createEntityGeneralizationSet();
 
 	/**
 	 * Returns a new object of class '<em>Tag Extension</em>'.
@@ -607,13 +607,13 @@ public interface FramewebFactory extends EFactory {
 	TagExtension createTagExtension();
 
 	/**
-	 * Returns a new object of class '<em>Framework</em>'.
+	 * Returns a new object of class '<em>Framework Application</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Framework</em>'.
+	 * @return a new object of class '<em>Framework Application</em>'.
 	 * @generated
 	 */
-	Framework createFramework();
+	FrameworkApplication createFrameworkApplication();
 
 	/**
 	 * Returns a new object of class '<em>Controller Extension</em>'.
@@ -794,6 +794,177 @@ public interface FramewebFactory extends EFactory {
 	 * @generated
 	 */
 	ServiceGeneralizationSet createServiceGeneralizationSet();
+
+	/**
+	 * Returns a new object of class '<em>Semantic Package</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Semantic Package</em>'.
+	 * @generated
+	 */
+	SemanticPackage createSemanticPackage();
+
+	/**
+	 * Returns a new object of class '<em>IRI</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>IRI</em>'.
+	 * @generated
+	 */
+	IRI createIRI();
+
+	/**
+	 * Returns a new object of class '<em>Vocabulary Model</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vocabulary Model</em>'.
+	 * @generated
+	 */
+	VocabularyModel createVocabularyModel();
+
+	/**
+	 * Returns a new object of class '<em>Vocabulary</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vocabulary</em>'.
+	 * @generated
+	 */
+	Vocabulary createVocabulary();
+
+	/**
+	 * Returns a new object of class '<em>Axiom</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Axiom</em>'.
+	 * @generated
+	 */
+	Axiom createAxiom();
+
+	/**
+	 * Returns a new object of class '<em>Annotation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Annotation</em>'.
+	 * @generated
+	 */
+	Annotation createAnnotation();
+
+	/**
+	 * Returns a new object of class '<em>Vocabulary Constraints</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vocabulary Constraints</em>'.
+	 * @generated
+	 */
+	VocabularyConstraints createVocabularyConstraints();
+
+	/**
+	 * Returns a new object of class '<em>Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Property</em>'.
+	 * @generated
+	 */
+	Property createProperty();
+
+	/**
+	 * Returns a new object of class '<em>Association</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Association</em>'.
+	 * @generated
+	 */
+	Association createAssociation();
+
+	/**
+	 * Returns a new object of class '<em>Vocabulary Association</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vocabulary Association</em>'.
+	 * @generated
+	 */
+	VocabularyAssociation createVocabularyAssociation();
+
+	/**
+	 * Returns a new object of class '<em>Vocabulary Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vocabulary Property</em>'.
+	 * @generated
+	 */
+	VocabularyProperty createVocabularyProperty();
+
+	/**
+	 * Returns a new object of class '<em>Object Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Object Property</em>'.
+	 * @generated
+	 */
+	ObjectProperty createObjectProperty();
+
+	/**
+	 * Returns a new object of class '<em>Data Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Data Property</em>'.
+	 * @generated
+	 */
+	DataProperty createDataProperty();
+
+	/**
+	 * Returns a new object of class '<em>Annotation Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Annotation Property</em>'.
+	 * @generated
+	 */
+	AnnotationProperty createAnnotationProperty();
+
+	/**
+	 * Returns a new object of class '<em>Vocabulary Data Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vocabulary Data Type</em>'.
+	 * @generated
+	 */
+	VocabularyDataType createVocabularyDataType();
+
+	/**
+	 * Returns a new object of class '<em>Named Individual</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Named Individual</em>'.
+	 * @generated
+	 */
+	NamedIndividual createNamedIndividual();
+
+	/**
+	 * Returns a new object of class '<em>Vocabulary Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vocabulary Class</em>'.
+	 * @generated
+	 */
+	VocabularyClass createVocabularyClass();
+
+	/**
+	 * Returns a new object of class '<em>Anonymous Individual</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Anonymous Individual</em>'.
+	 * @generated
+	 */
+	AnonymousIndividual createAnonymousIndividual();
+
+	/**
+	 * Returns a new object of class '<em>Vocabulary Literal</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vocabulary Literal</em>'.
+	 * @generated
+	 */
+	VocabularyLiteral createVocabularyLiteral();
 
 	/**
 	 * Returns the package supported by this factory.

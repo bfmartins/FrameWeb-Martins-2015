@@ -13,5 +13,5 @@ package frameweb;
  * @model
  * @generated
  */
-public interface PersistenceModel extends FrameWebModel {
+public interface PersistenceModel extends FramewebModel {
 } // PersistenceModel

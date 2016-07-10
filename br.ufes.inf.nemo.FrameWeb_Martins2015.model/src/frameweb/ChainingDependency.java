@@ -20,7 +20,7 @@ package frameweb;
  * @see frameweb.FramewebPackage#getChainingDependency()
  * @model annotation="Ecore constraints='ChainingDependencyContent'"
  *        annotation="Comments ChainingDependencyContent='A ChainingDependencyConstraint must have a FrontControllerClass as client and a FrontControllerClass as supplier and these client and supplier can not be the same.'"
- *        annotation="OCL \040ChainingDependencyContent='(self.oclAsType(Dependency).supplier.oclIsTypeOf(FrontControllerClass)) and (self.oclAsType(Dependency).client.oclIsTypeOf(FrontControllerClass)) and (self.oclAsType(Dependency).supplier <> self.oclAsType(Dependency).client) '"
+ *        annotation="OCL \040ChainingDependencyContent='(self.supplier.oclIsTypeOf(FrontControllerClass)) and (self.client.oclIsTypef(FrontControllerClass)) and (self.supplier <> self.client) '"
  * @generated
  */
 public interface ChainingDependency extends NavigationDependency {
@@ -35,7 +35,7 @@ public interface ChainingDependency extends NavigationDependency {
 	 * @return the value of the '<em>Out Method</em>' reference.
 	 * @see #setOutMethod(FrontControllerMethod)
 	 * @see frameweb.FramewebPackage#getChainingDependency_OutMethod()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	FrontControllerMethod getOutMethod();
@@ -61,7 +61,7 @@ public interface ChainingDependency extends NavigationDependency {
 	 * @return the value of the '<em>In Method</em>' reference.
 	 * @see #setInMethod(FrontControllerMethod)
 	 * @see frameweb.FramewebPackage#getChainingDependency_InMethod()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	FrontControllerMethod getInMethod();

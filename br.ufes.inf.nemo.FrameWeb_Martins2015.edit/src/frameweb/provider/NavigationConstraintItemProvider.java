@@ -3,6 +3,7 @@
 package frameweb.provider;
 
 
+import frameweb.FramewebFactory;
 import frameweb.NavigationConstraint;
 
 import java.util.Collection;
@@ -100,6 +101,11 @@ public class NavigationConstraintItemProvider extends ConstraintItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.CONSTRAINT__SPECIFICATION,
+				 FramewebFactory.eINSTANCE.createVocabularyLiteral()));
 	}
 
 	/**

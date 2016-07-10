@@ -19,7 +19,7 @@ package frameweb;
  * @model
  * @generated
  */
-public interface DateTimeAttribute extends DomainAttribute {
+public interface DateTimeAttribute extends EntityAttribute {
 	/**
 	 * Returns the value of the '<em><b>Date Time Precision</b></em>' attribute.
 	 * The literals are from the enumeration {@link frameweb.DateTimePrecision}.

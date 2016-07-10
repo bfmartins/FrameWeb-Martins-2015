@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class AttributeMappingExtensionImpl extends DomainExtensionImpl implements AttributeMappingExtension {
+public class AttributeMappingExtensionImpl extends EntityExtensionImpl implements AttributeMappingExtension {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

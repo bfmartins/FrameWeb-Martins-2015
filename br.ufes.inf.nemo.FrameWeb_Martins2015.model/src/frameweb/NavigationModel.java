@@ -13,5 +13,5 @@ package frameweb;
  * @model
  * @generated
  */
-public interface NavigationModel extends FrameWebModel {
+public interface NavigationModel extends FramewebModel {
 } // NavigationModel

@@ -24,7 +24,7 @@ import org.eclipse.emf.common.util.EList;
  * @see frameweb.FramewebPackage#getResultDependency()
  * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='ResultDependencyConstraint\r\n'"
  *        annotation="Comments ResultDependencyConstraint='A ResultDependency must have a FrontControllerClass as client and a NavigationClass as supplier.'"
- *        annotation="OCL ResultDependencyConstraint='(self.oclAsType(Dependency).client.oclIsTypeOf(FrontControllerClass)) and (self.oclAsType(Dependency).supplier.oclIsTypeOf(NavigationClass))'"
+ *        annotation="OCL ResultDependencyConstraint='(self.client.oclIsTypeOf(FrontControllerClass)) and (self.supplier.oclIsTypeOf(NavigationClass))'"
  * @generated
  */
 public interface ResultDependency extends NavigationDependency {
@@ -55,7 +55,7 @@ public interface ResultDependency extends NavigationDependency {
 	 * @return the value of the '<em>Result Method</em>' reference.
 	 * @see #setResultMethod(FrontControllerMethod)
 	 * @see frameweb.FramewebPackage#getResultDependency_ResultMethod()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	FrontControllerMethod getResultMethod();

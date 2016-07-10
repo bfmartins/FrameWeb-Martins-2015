@@ -25,7 +25,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class IdAttributeImpl extends DomainAttributeImpl implements IdAttribute {
+public class IdAttributeImpl extends EntityAttributeImpl implements IdAttribute {
 	/**
 	 * The default value of the '{@link #getGeneration() <em>Generation</em>}' attribute.
 	 * <!-- begin-user-doc -->

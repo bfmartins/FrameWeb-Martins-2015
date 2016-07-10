@@ -55,13 +55,13 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case FramewebPackage.FRAMEWEB: return createFrameweb();
+			case FramewebPackage.FRAMEWEB_PROJECT: return createFramewebProject();
 			case FramewebPackage.FRAMEWORK_PROFILE: return createFrameworkProfile();
-			case FramewebPackage.DOMAIN_MODEL: return createDomainModel();
+			case FramewebPackage.ENTITY_MODEL: return createEntityModel();
 			case FramewebPackage.NAVIGATION_MODEL: return createNavigationModel();
 			case FramewebPackage.APPLICATION_MODEL: return createApplicationModel();
 			case FramewebPackage.PERSISTENCE_MODEL: return createPersistenceModel();
-			case FramewebPackage.DOMAIN_ASSOCIATION: return createDomainAssociation();
+			case FramewebPackage.ENTITY_ASSOCIATION: return createEntityAssociation();
 			case FramewebPackage.VERSION_ATTRIBUTE: return createVersionAttribute();
 			case FramewebPackage.ID_ATTRIBUTE: return createIdAttribute();
 			case FramewebPackage.LOB_ATTRIBUTE: return createLOBAttribute();
@@ -82,25 +82,25 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.SERVICE_INTERFACE: return createServiceInterface();
 			case FramewebPackage.SERVICE_GENERALIZATION: return createServiceGeneralization();
 			case FramewebPackage.SERVICE_CONTROLLER_ASSOCIATION: return createServiceControllerAssociation();
-			case FramewebPackage.DOMAIN_CLASS: return createDomainClass();
+			case FramewebPackage.ENTITY_CLASS: return createEntityClass();
 			case FramewebPackage.RESULT: return createResult();
 			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY: return createFrontControllerDependency();
 			case FramewebPackage.PAGE_DEPENDENCY: return createPageDependency();
 			case FramewebPackage.CHAINING_DEPENDENCY: return createChainingDependency();
 			case FramewebPackage.DAO_SERVICE_ASSOCIATION: return createDAOServiceAssociation();
-			case FramewebPackage.DOMAIN_METHOD: return createDomainMethod();
+			case FramewebPackage.ENTITY_METHOD: return createEntityMethod();
 			case FramewebPackage.DAO_ATTRIBUTE: return createDAOAttribute();
 			case FramewebPackage.SERVICE_METHOD: return createServiceMethod();
 			case FramewebPackage.SERVICE_ATTRIBUTE: return createServiceAttribute();
 			case FramewebPackage.DAO_METHOD: return createDAOMethod();
-			case FramewebPackage.DOMAIN_PACKAGE: return createDomainPackage();
+			case FramewebPackage.ENTITY_PACKAGE: return createEntityPackage();
 			case FramewebPackage.VIEW_PACKAGE: return createViewPackage();
 			case FramewebPackage.CONTROLLER_PACKAGE: return createControllerPackage();
 			case FramewebPackage.PERSISTENCE_PACKAGE: return createPersistencePackage();
 			case FramewebPackage.APPLICATION_PACKAGE: return createApplicationPackage();
 			case FramewebPackage.UI_COMPONENT: return createUIComponent();
 			case FramewebPackage.RESULT_TYPE: return createResultType();
-			case FramewebPackage.DOMAIN_GENERALIZATION: return createDomainGeneralization();
+			case FramewebPackage.ENTITY_GENERALIZATION: return createEntityGeneralization();
 			case FramewebPackage.UI_COMPONENT_FIELD: return (EObject)createUIComponentField();
 			case FramewebPackage.TAG_LIB: return createTagLib();
 			case FramewebPackage.TAG: return createTag();
@@ -112,15 +112,15 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.METHOD_COSNTRAINT: return createMethodCosntraint();
 			case FramewebPackage.CHAINING_CONSTRAINT: return createChainingConstraint();
 			case FramewebPackage.NAVIGATION_GENERALIZATION: return createNavigationGeneralization();
-			case FramewebPackage.DOMAIN_CONSTRAINTS: return createDomainConstraints();
-			case FramewebPackage.DOMAIN_PROPERTY: return createDomainProperty();
+			case FramewebPackage.ENTITY_CONSTRAINTS: return createEntityConstraints();
+			case FramewebPackage.ENTITY_PROPERTY: return createEntityProperty();
 			case FramewebPackage.DAO_GENERALIZATION: return createDAOGeneralization();
 			case FramewebPackage.MAPPING_LIB: return createMappingLib();
 			case FramewebPackage.CLASS_MAPPING: return createClassMapping();
 			case FramewebPackage.ATTRIBUTE_MAPPING: return createAttributeMapping();
-			case FramewebPackage.DOMAIN_GENERALIZATION_SET: return createDomainGeneralizationSet();
+			case FramewebPackage.ENTITY_GENERALIZATION_SET: return createEntityGeneralizationSet();
 			case FramewebPackage.TAG_EXTENSION: return createTagExtension();
-			case FramewebPackage.FRAMEWORK: return createFramework();
+			case FramewebPackage.FRAMEWORK_APPLICATION: return createFrameworkApplication();
 			case FramewebPackage.CONTROLLER_EXTENSION: return createControllerExtension();
 			case FramewebPackage.CONTROLLER: return createController();
 			case FramewebPackage.CONTROLLER_SET: return createControllerSet();
@@ -141,6 +141,25 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.NAVIGATION_GENERALIZATION_SET: return createNavigationGeneralizationSet();
 			case FramewebPackage.DAO_GENERALIZATION_SET: return createDAOGeneralizationSet();
 			case FramewebPackage.SERVICE_GENERALIZATION_SET: return createServiceGeneralizationSet();
+			case FramewebPackage.SEMANTIC_PACKAGE: return createSemanticPackage();
+			case FramewebPackage.IRI: return createIRI();
+			case FramewebPackage.VOCABULARY_MODEL: return createVocabularyModel();
+			case FramewebPackage.VOCABULARY: return createVocabulary();
+			case FramewebPackage.AXIOM: return createAxiom();
+			case FramewebPackage.ANNOTATION: return createAnnotation();
+			case FramewebPackage.VOCABULARY_CONSTRAINTS: return createVocabularyConstraints();
+			case FramewebPackage.PROPERTY: return createProperty();
+			case FramewebPackage.ASSOCIATION: return createAssociation();
+			case FramewebPackage.VOCABULARY_ASSOCIATION: return createVocabularyAssociation();
+			case FramewebPackage.VOCABULARY_PROPERTY: return createVocabularyProperty();
+			case FramewebPackage.OBJECT_PROPERTY: return createObjectProperty();
+			case FramewebPackage.DATA_PROPERTY: return createDataProperty();
+			case FramewebPackage.ANNOTATION_PROPERTY: return createAnnotationProperty();
+			case FramewebPackage.VOCABULARY_DATA_TYPE: return createVocabularyDataType();
+			case FramewebPackage.NAMED_INDIVIDUAL: return createNamedIndividual();
+			case FramewebPackage.VOCABULARY_CLASS: return createVocabularyClass();
+			case FramewebPackage.ANONYMOUS_INDIVIDUAL: return createAnonymousIndividual();
+			case FramewebPackage.VOCABULARY_LITERAL: return createVocabularyLiteral();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -174,6 +193,10 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 				return createInheritanceMappingFromString(eDataType, initialValue);
 			case FramewebPackage.FRAMEWORK_KIND_LIST:
 				return createFrameworkKindListFromString(eDataType, initialValue);
+			case FramewebPackage.RATIONAL:
+				return createRationalFromString(eDataType, initialValue);
+			case FramewebPackage.DECIMAL:
+				return createDecimalFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -207,6 +230,10 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 				return convertInheritanceMappingToString(eDataType, instanceValue);
 			case FramewebPackage.FRAMEWORK_KIND_LIST:
 				return convertFrameworkKindListToString(eDataType, instanceValue);
+			case FramewebPackage.RATIONAL:
+				return convertRationalToString(eDataType, instanceValue);
+			case FramewebPackage.DECIMAL:
+				return convertDecimalToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -217,9 +244,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Frameweb createFrameweb() {
-		FramewebImpl frameweb = new FramewebImpl();
-		return frameweb;
+	public FramewebProject createFramewebProject() {
+		FramewebProjectImpl framewebProject = new FramewebProjectImpl();
+		return framewebProject;
 	}
 
 	/**
@@ -237,9 +264,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainModel createDomainModel() {
-		DomainModelImpl domainModel = new DomainModelImpl();
-		return domainModel;
+	public EntityModel createEntityModel() {
+		EntityModelImpl entityModel = new EntityModelImpl();
+		return entityModel;
 	}
 
 	/**
@@ -277,9 +304,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainAssociation createDomainAssociation() {
-		DomainAssociationImpl domainAssociation = new DomainAssociationImpl();
-		return domainAssociation;
+	public EntityAssociation createEntityAssociation() {
+		EntityAssociationImpl entityAssociation = new EntityAssociationImpl();
+		return entityAssociation;
 	}
 
 	/**
@@ -487,9 +514,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainClass createDomainClass() {
-		DomainClassImpl domainClass = new DomainClassImpl();
-		return domainClass;
+	public EntityClass createEntityClass() {
+		EntityClassImpl entityClass = new EntityClassImpl();
+		return entityClass;
 	}
 
 	/**
@@ -547,9 +574,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainMethod createDomainMethod() {
-		DomainMethodImpl domainMethod = new DomainMethodImpl();
-		return domainMethod;
+	public EntityMethod createEntityMethod() {
+		EntityMethodImpl entityMethod = new EntityMethodImpl();
+		return entityMethod;
 	}
 
 	/**
@@ -597,9 +624,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainPackage createDomainPackage() {
-		DomainPackageImpl domainPackage = new DomainPackageImpl();
-		return domainPackage;
+	public EntityPackage createEntityPackage() {
+		EntityPackageImpl entityPackage = new EntityPackageImpl();
+		return entityPackage;
 	}
 
 	/**
@@ -667,9 +694,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainGeneralization createDomainGeneralization() {
-		DomainGeneralizationImpl domainGeneralization = new DomainGeneralizationImpl();
-		return domainGeneralization;
+	public EntityGeneralization createEntityGeneralization() {
+		EntityGeneralizationImpl entityGeneralization = new EntityGeneralizationImpl();
+		return entityGeneralization;
 	}
 
 	/**
@@ -679,7 +706,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 */
 	public UIComponent createUIComponentField() {
 		UIComponentFieldImpl uiComponentField = new UIComponentFieldImpl();
-		return uiComponentField;
+		return (UIComponent) uiComponentField;
 	}
 
 	/**
@@ -787,9 +814,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainConstraints createDomainConstraints() {
-		DomainConstraintsImpl domainConstraints = new DomainConstraintsImpl();
-		return domainConstraints;
+	public EntityConstraints createEntityConstraints() {
+		EntityConstraintsImpl entityConstraints = new EntityConstraintsImpl();
+		return entityConstraints;
 	}
 
 	/**
@@ -797,9 +824,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainProperty createDomainProperty() {
-		DomainPropertyImpl domainProperty = new DomainPropertyImpl();
-		return domainProperty;
+	public EntityProperty createEntityProperty() {
+		EntityPropertyImpl entityProperty = new EntityPropertyImpl();
+		return entityProperty;
 	}
 
 	/**
@@ -847,9 +874,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DomainGeneralizationSet createDomainGeneralizationSet() {
-		DomainGeneralizationSetImpl domainGeneralizationSet = new DomainGeneralizationSetImpl();
-		return domainGeneralizationSet;
+	public EntityGeneralizationSet createEntityGeneralizationSet() {
+		EntityGeneralizationSetImpl entityGeneralizationSet = new EntityGeneralizationSetImpl();
+		return entityGeneralizationSet;
 	}
 
 	/**
@@ -867,9 +894,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Framework createFramework() {
-		FrameworkImpl framework = new FrameworkImpl();
-		return framework;
+	public FrameworkApplication createFrameworkApplication() {
+		FrameworkApplicationImpl frameworkApplication = new FrameworkApplicationImpl();
+		return frameworkApplication;
 	}
 
 	/**
@@ -1077,6 +1104,196 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public SemanticPackage createSemanticPackage() {
+		SemanticPackageImpl semanticPackage = new SemanticPackageImpl();
+		return semanticPackage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IRI createIRI() {
+		IRIImpl iri = new IRIImpl();
+		return iri;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VocabularyModel createVocabularyModel() {
+		VocabularyModelImpl vocabularyModel = new VocabularyModelImpl();
+		return vocabularyModel;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Vocabulary createVocabulary() {
+		VocabularyImpl vocabulary = new VocabularyImpl();
+		return vocabulary;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Axiom createAxiom() {
+		AxiomImpl axiom = new AxiomImpl();
+		return axiom;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Annotation createAnnotation() {
+		AnnotationImpl annotation = new AnnotationImpl();
+		return annotation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VocabularyConstraints createVocabularyConstraints() {
+		VocabularyConstraintsImpl vocabularyConstraints = new VocabularyConstraintsImpl();
+		return vocabularyConstraints;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Property createProperty() {
+		PropertyImpl property = new PropertyImpl();
+		return property;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Association createAssociation() {
+		AssociationImpl association = new AssociationImpl();
+		return association;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VocabularyAssociation createVocabularyAssociation() {
+		VocabularyAssociationImpl vocabularyAssociation = new VocabularyAssociationImpl();
+		return vocabularyAssociation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VocabularyProperty createVocabularyProperty() {
+		VocabularyPropertyImpl vocabularyProperty = new VocabularyPropertyImpl();
+		return vocabularyProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ObjectProperty createObjectProperty() {
+		ObjectPropertyImpl objectProperty = new ObjectPropertyImpl();
+		return objectProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DataProperty createDataProperty() {
+		DataPropertyImpl dataProperty = new DataPropertyImpl();
+		return dataProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AnnotationProperty createAnnotationProperty() {
+		AnnotationPropertyImpl annotationProperty = new AnnotationPropertyImpl();
+		return annotationProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VocabularyDataType createVocabularyDataType() {
+		VocabularyDataTypeImpl vocabularyDataType = new VocabularyDataTypeImpl();
+		return vocabularyDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NamedIndividual createNamedIndividual() {
+		NamedIndividualImpl namedIndividual = new NamedIndividualImpl();
+		return namedIndividual;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VocabularyClass createVocabularyClass() {
+		VocabularyClassImpl vocabularyClass = new VocabularyClassImpl();
+		return vocabularyClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AnonymousIndividual createAnonymousIndividual() {
+		AnonymousIndividualImpl anonymousIndividual = new AnonymousIndividualImpl();
+		return anonymousIndividual;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VocabularyLiteral createVocabularyLiteral() {
+		VocabularyLiteralImpl vocabularyLiteral = new VocabularyLiteralImpl();
+		return vocabularyLiteral;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public DateTimePrecision createDateTimePrecisionFromString(EDataType eDataType, String initialValue) {
 		DateTimePrecision result = DateTimePrecision.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
@@ -1270,6 +1487,42 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 */
 	public String convertFrameworkKindListToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Double createRationalFromString(EDataType eDataType, String initialValue) {
+		return (Double)super.createFromString(eDataType, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertRationalToString(EDataType eDataType, Object instanceValue) {
+		return super.convertToString(eDataType, instanceValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Double createDecimalFromString(EDataType eDataType, String initialValue) {
+		return (Double)super.createFromString(eDataType, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertDecimalToString(EDataType eDataType, Object instanceValue) {
+		return super.convertToString(eDataType, instanceValue);
 	}
 
 	/**

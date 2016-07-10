@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ApplicationModelImpl extends FrameWebModelImpl implements ApplicationModel {
+public class ApplicationModelImpl extends FramewebModelImpl implements ApplicationModel {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

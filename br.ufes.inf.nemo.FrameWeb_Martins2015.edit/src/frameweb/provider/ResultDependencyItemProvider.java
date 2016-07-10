@@ -68,8 +68,8 @@ public class ResultDependencyItemProvider extends NavigationDependencyItemProvid
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_ResultDependency_ResultResult_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_ResultDependency_ResultResult_feature", "_UI_ResultDependency_type"),
+				 getString("_UI_ResultDependency_resultResult_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ResultDependency_resultResult_feature", "_UI_ResultDependency_type"),
 				 FramewebPackage.Literals.RESULT_DEPENDENCY__RESULT_RESULT,
 				 true,
 				 false,
@@ -90,8 +90,8 @@ public class ResultDependencyItemProvider extends NavigationDependencyItemProvid
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_ResultDependency_ResultMethod_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_ResultDependency_ResultMethod_feature", "_UI_ResultDependency_type"),
+				 getString("_UI_ResultDependency_resultMethod_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ResultDependency_resultMethod_feature", "_UI_ResultDependency_type"),
 				 FramewebPackage.Literals.RESULT_DEPENDENCY__RESULT_METHOD,
 				 true,
 				 false,

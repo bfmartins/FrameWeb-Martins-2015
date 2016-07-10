@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class PersistenceModelImpl extends FrameWebModelImpl implements PersistenceModel {
+public class PersistenceModelImpl extends FramewebModelImpl implements PersistenceModel {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

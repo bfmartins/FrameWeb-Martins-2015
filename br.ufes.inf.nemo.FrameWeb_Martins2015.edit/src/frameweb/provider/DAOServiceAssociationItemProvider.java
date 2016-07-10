@@ -125,7 +125,12 @@ public class DAOServiceAssociationItemProvider extends AssociationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
-				 FramewebFactory.eINSTANCE.createDomainConstraints()));
+				 FramewebFactory.eINSTANCE.createEntityConstraints()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
+				 FramewebFactory.eINSTANCE.createVocabularyConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -135,7 +140,7 @@ public class DAOServiceAssociationItemProvider extends AssociationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
-				 FramewebFactory.eINSTANCE.createDomainGeneralization()));
+				 FramewebFactory.eINSTANCE.createEntityGeneralization()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -210,7 +215,7 @@ public class DAOServiceAssociationItemProvider extends AssociationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
-				 FramewebFactory.eINSTANCE.createDomainProperty()));
+				 FramewebFactory.eINSTANCE.createEntityProperty()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -325,7 +330,7 @@ public class DAOServiceAssociationItemProvider extends AssociationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
-				 FramewebFactory.eINSTANCE.createDomainProperty()));
+				 FramewebFactory.eINSTANCE.createEntityProperty()));
 
 		newChildDescriptors.add
 			(createChildParameter

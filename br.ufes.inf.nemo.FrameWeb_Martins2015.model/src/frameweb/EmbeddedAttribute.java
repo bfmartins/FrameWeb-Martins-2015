@@ -13,5 +13,5 @@ package frameweb;
  * @model
  * @generated
  */
-public interface EmbeddedAttribute extends DomainAttribute {
+public interface EmbeddedAttribute extends EntityAttribute {
 } // EmbeddedAttribute

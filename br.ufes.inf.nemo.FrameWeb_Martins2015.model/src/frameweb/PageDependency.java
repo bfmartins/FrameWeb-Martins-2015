@@ -18,7 +18,7 @@ package frameweb;
  * @see frameweb.FramewebPackage#getPageDependency()
  * @model annotation="Ecore constraints='PageDepencencyContent'"
  *        annotation="Comments PageDepencencyContent='A PageDependencyConstraint must have a Page as client and a Page or a Template as supplier.'"
- *        annotation="OCL PageDepencencyContent='(self.oclAsType(Dependency).client.oclIsTypeOf(Page)) and ((self.oclAsType(Dependency).supplier.oclIsTypeOf(Page)) or (self.oclAsType(Dependency).supplier.oclIsTypeOf(Template)))'"
+ *        annotation="OCL PageDepencencyContent='(self.client.oclIsTypeOf(Page)) and ((self.supplier.oclIsTypeOf(Page)) or (self.supplier.oclIsTypeOf(Template)))'"
  * @generated
  */
 public interface PageDependency extends NavigationDependency {

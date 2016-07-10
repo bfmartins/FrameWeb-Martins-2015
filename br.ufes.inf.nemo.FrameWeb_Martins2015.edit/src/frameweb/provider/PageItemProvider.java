@@ -61,8 +61,8 @@ public class PageItemProvider extends NavigationClassItemProvider {
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Page_PageTagLib_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Page_PageTagLib_feature", "_UI_Page_type"),
+				 getString("_UI_Page_pageTagLib_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Page_pageTagLib_feature", "_UI_Page_type"),
 				 FramewebPackage.Literals.PAGE__PAGE_TAG_LIB,
 				 true,
 				 false,
