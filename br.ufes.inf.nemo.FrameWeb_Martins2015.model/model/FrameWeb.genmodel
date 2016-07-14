@@ -62,7 +62,7 @@
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/class"/>
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/impl"/>
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/Controller"/>
-      <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/Entity"/>
+      <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/Domain"/>
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/Persistence"/>
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/Application"/>
       <genEnumLiterals ecoreEnumLiteral="FrameWeb.ecore#//ConstantNameList/View"/>
@@ -93,16 +93,16 @@
     <genClasses ecoreClass="FrameWeb.ecore#//NavigationModel"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ApplicationModel"/>
     <genClasses ecoreClass="FrameWeb.ecore#//PersistenceModel"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//EntityAssociation">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityAssociation/collection"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityAssociation/cascade"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityAssociation/fetch"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityAssociation/order"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//DomainAssociation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainAssociation/collection"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainAssociation/cascade"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainAssociation/fetch"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainAssociation/order"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="FrameWeb.ecore#//EntityAttribute">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityAttribute/size"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityAttribute/isNull"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityAttribute/isPersistent"/>
+    <genClasses image="false" ecoreClass="FrameWeb.ecore#//DomainAttribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainAttribute/size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainAttribute/isNull"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainAttribute/isPersistent"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//VersionAttribute"/>
     <genClasses ecoreClass="FrameWeb.ecore#//IdAttribute">
@@ -153,8 +153,8 @@
     <genClasses ecoreClass="FrameWeb.ecore#//ServiceInterface"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ServiceGeneralization"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ServiceControllerAssociation"/>
-    <genClasses image="false" ecoreClass="FrameWeb.ecore#//EntityClass">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityClass/table"/>
+    <genClasses image="false" ecoreClass="FrameWeb.ecore#//DomainClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainClass/table"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//Result"/>
     <genClasses ecoreClass="FrameWeb.ecore#//FrontControllerDependency">
@@ -172,14 +172,14 @@
     <genClasses ecoreClass="FrameWeb.ecore#//DAOServiceAssociation"/>
     <genClasses image="false" ecoreClass="FrameWeb.ecore#//NavigationAttribute"/>
     <genClasses image="false" ecoreClass="FrameWeb.ecore#//NavigationClass"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//EntityMethod"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//DomainMethod"/>
     <genClasses ecoreClass="FrameWeb.ecore#//DAOAttribute"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ServiceMethod"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ServiceAttribute"/>
     <genClasses image="false" ecoreClass="FrameWeb.ecore#//ServiceAssociation"/>
     <genClasses image="false" ecoreClass="FrameWeb.ecore#//NavigationDependency"/>
     <genClasses ecoreClass="FrameWeb.ecore#//DAOMethod"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//EntityPackage"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//DomainPackage"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ViewPackage"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ControllerPackage"/>
     <genClasses ecoreClass="FrameWeb.ecore#//PersistencePackage"/>
@@ -187,7 +187,7 @@
     <genClasses ecoreClass="FrameWeb.ecore#//UIComponent"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ResultType"/>
     <genClasses image="false" ecoreClass="FrameWeb.ecore#//NavigationPackage"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//EntityGeneralization"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//DomainGeneralization"/>
     <genClasses ecoreClass="FrameWeb.ecore#//UIComponentField">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrameWeb.ecore#//UIComponentField/inject"/>
     </genClasses>
@@ -205,14 +205,14 @@
     <genClasses ecoreClass="FrameWeb.ecore#//MethodCosntraint"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ChainingConstraint"/>
     <genClasses ecoreClass="FrameWeb.ecore#//NavigationGeneralization"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//EntityConstraints"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//EntityProperty"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//DomainConstraints"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//DomainProperty"/>
     <genClasses ecoreClass="FrameWeb.ecore#//DAOGeneralization"/>
     <genClasses ecoreClass="FrameWeb.ecore#//MappingLib"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ClassMapping"/>
     <genClasses ecoreClass="FrameWeb.ecore#//AttributeMapping"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//EntityGeneralizationSet">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//EntityGeneralizationSet/mapping"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//DomainGeneralizationSet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrameWeb.ecore#//DomainGeneralizationSet/mapping"/>
     </genClasses>
     <genClasses ecoreClass="FrameWeb.ecore#//FrameworkExtension"/>
     <genClasses ecoreClass="FrameWeb.ecore#//TagExtension"/>
@@ -235,7 +235,7 @@
     <genClasses ecoreClass="FrameWeb.ecore#//AttributeMappingProperty"/>
     <genClasses ecoreClass="FrameWeb.ecore#//SeviceRealization"/>
     <genClasses ecoreClass="FrameWeb.ecore#//NavigationExtension"/>
-    <genClasses ecoreClass="FrameWeb.ecore#//EntityExtension"/>
+    <genClasses ecoreClass="FrameWeb.ecore#//DomainExtension"/>
     <genClasses ecoreClass="FrameWeb.ecore#//NavigationGeneralizationSet"/>
     <genClasses ecoreClass="FrameWeb.ecore#//DAOGeneralizationSet"/>
     <genClasses ecoreClass="FrameWeb.ecore#//ServiceGeneralizationSet"/>

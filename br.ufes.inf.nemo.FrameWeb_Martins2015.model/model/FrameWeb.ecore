@@ -42,34 +42,34 @@
       <details key="constraints" value="EntityModelContent EntityModelMinimum"/>
     </eAnnotations>
     <eAnnotations source="comments" references="#//EntityModel/%http:%2F%2Fwww.eclipse.org%2Femf%2F2002%2FEcore%/@details.0">
-      <details key="EntityModelContent" value="A EntityModel must have only EntityPackage."/>
-      <details key="EntityModelMinimum" value="A EntityModel must have at least one EntityPackage"/>
+      <details key="EntityModelContent" value="A EntityModel must have only DomainPackage."/>
+      <details key="EntityModelMinimum" value="A EntityModel must have at least one DomainPackage"/>
     </eAnnotations>
     <eAnnotations source="OCL" references="#//EntityModel/%http:%2F%2Fwww.eclipse.org%2Femf%2F2002%2FEcore%/@details.0">
-      <details key="EntityModelContent" value="self.packagedElement.oclIsTypeOf(EntityPackage)"/>
+      <details key="EntityModelContent" value="self.packagedElement.oclIsTypeOf(DomainPackage)"/>
       <details key="EntityModelMinimum" value="self.packagedElement->size()>=1"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NavigationModel" eSuperTypes="#//FramewebModel"/>
   <eClassifiers xsi:type="ecore:EClass" name="ApplicationModel" eSuperTypes="#//FramewebModel"/>
   <eClassifiers xsi:type="ecore:EClass" name="PersistenceModel" eSuperTypes="#//FramewebModel"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EntityAssociation" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Association">
+  <eClassifiers xsi:type="ecore:EClass" name="DomainAssociation" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Association">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="collection" eType="#//Collection"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="cascade" eType="#//Cascade"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="fetch" eType="#//Fetch"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="order" eType="#//Order"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EntityAttribute" abstract="true" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Property">
+  <eClassifiers xsi:type="ecore:EClass" name="DomainAttribute" abstract="true" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Property">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isNull" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isPersistent" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="VersionAttribute" eSuperTypes="#//EntityAttribute"/>
-  <eClassifiers xsi:type="ecore:EClass" name="IdAttribute" eSuperTypes="#//EntityAttribute">
+  <eClassifiers xsi:type="ecore:EClass" name="VersionAttribute" eSuperTypes="#//DomainAttribute"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IdAttribute" eSuperTypes="#//DomainAttribute">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generation" eType="#//Generation"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="LOBAttribute" eSuperTypes="#//EntityAttribute"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EmbeddedAttribute" eSuperTypes="#//EntityAttribute"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LOBAttribute" eSuperTypes="#//DomainAttribute"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EmbeddedAttribute" eSuperTypes="#//DomainAttribute"/>
   <eClassifiers xsi:type="ecore:EEnum" name="DateTimePrecision">
     <eLiterals name="timestamp"/>
     <eLiterals name="time" value="1"/>
@@ -82,11 +82,11 @@
     <eLiterals name="none" value="3"/>
     <eLiterals name="table" value="4"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DecimalAttribute" eSuperTypes="#//EntityAttribute">
+  <eClassifiers xsi:type="ecore:EClass" name="DecimalAttribute" eSuperTypes="#//DomainAttribute">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="decimalPrecision" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="decimalScale" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DateTimeAttribute" eSuperTypes="#//EntityAttribute">
+  <eClassifiers xsi:type="ecore:EClass" name="DateTimeAttribute" eSuperTypes="#//DomainAttribute">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateTimePrecision" eType="#//DateTimePrecision"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Collection">
@@ -175,7 +175,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="ServiceInterface" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Interface"/>
   <eClassifiers xsi:type="ecore:EClass" name="ServiceGeneralization" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Generalization"/>
   <eClassifiers xsi:type="ecore:EClass" name="ServiceControllerAssociation" eSuperTypes="#//ServiceAssociation"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EntityClass" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Class">
+  <eClassifiers xsi:type="ecore:EClass" name="DomainClass" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Class">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="table" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ConstantNameList">
@@ -185,7 +185,7 @@
     <eLiterals name="class" value="3"/>
     <eLiterals name="impl" value="4"/>
     <eLiterals name="Controller" literal="Controller"/>
-    <eLiterals name="Entity"/>
+    <eLiterals name="Domain"/>
     <eLiterals name="Persistence" literal="Persistence"/>
     <eLiterals name="Application"/>
     <eLiterals name="View"/>
@@ -244,7 +244,7 @@
     <eLiterals name="join" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NavigationClass" abstract="true" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EntityMethod" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Operation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DomainMethod" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Operation"/>
   <eClassifiers xsi:type="ecore:EClass" name="DAOAttribute" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Property"/>
   <eClassifiers xsi:type="ecore:EClass" name="ServiceMethod" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Operation"/>
   <eClassifiers xsi:type="ecore:EClass" name="ServiceAttribute" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Property"/>
@@ -253,7 +253,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="NavigationDependency" abstract="true"
       eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Dependency"/>
   <eClassifiers xsi:type="ecore:EClass" name="DAOMethod" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Operation"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EntityPackage" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Package">
+  <eClassifiers xsi:type="ecore:EClass" name="DomainPackage" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Package">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ViewPackage" eSuperTypes="#//NavigationPackage"/>
@@ -263,7 +263,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="UIComponent" eSuperTypes="#//NavigationClass"/>
   <eClassifiers xsi:type="ecore:EClass" name="ResultType" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Stereotype"/>
   <eClassifiers xsi:type="ecore:EClass" name="NavigationPackage" abstract="true" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Package"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EntityGeneralization" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Generalization"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DomainGeneralization" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Generalization"/>
   <eClassifiers xsi:type="ecore:EClass" name="UIComponentField" instanceTypeName="UIComponent"
       eSuperTypes="#//NavigationAttribute">
     <eStructuralFeatures xsi:type="ecore:EReference" name="inject" eType="#//IOParameter"
@@ -286,13 +286,13 @@
   <eClassifiers xsi:type="ecore:EClass" name="MethodCosntraint" eSuperTypes="#//NavigationConstraint"/>
   <eClassifiers xsi:type="ecore:EClass" name="ChainingConstraint" eSuperTypes="#//NavigationConstraint"/>
   <eClassifiers xsi:type="ecore:EClass" name="NavigationGeneralization" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Generalization"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EntityConstraints" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Constraint"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EntityProperty" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Property"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DomainConstraints" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Constraint"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DomainProperty" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Property"/>
   <eClassifiers xsi:type="ecore:EClass" name="DAOGeneralization" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Generalization"/>
   <eClassifiers xsi:type="ecore:EClass" name="MappingLib" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Package"/>
   <eClassifiers xsi:type="ecore:EClass" name="ClassMapping" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Stereotype"/>
   <eClassifiers xsi:type="ecore:EClass" name="AttributeMapping" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Stereotype"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EntityGeneralizationSet" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//GeneralizationSet">
+  <eClassifiers xsi:type="ecore:EClass" name="DomainGeneralizationSet" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//GeneralizationSet">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mapping" eType="#//InheritanceMapping"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FrameworkExtension" abstract="true"
@@ -309,8 +309,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Controller" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Stereotype"/>
   <eClassifiers xsi:type="ecore:EClass" name="ControllerSet" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Package"/>
   <eClassifiers xsi:type="ecore:EClass" name="ResultExtension" eSuperTypes="#//NavigationExtension"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ClassMappingExtension" eSuperTypes="#//EntityExtension"/>
-  <eClassifiers xsi:type="ecore:EClass" name="AttributeMappingExtension" eSuperTypes="#//EntityExtension"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassMappingExtension" eSuperTypes="#//DomainExtension"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeMappingExtension" eSuperTypes="#//DomainExtension"/>
   <eClassifiers xsi:type="ecore:EClass" name="ControllerExtensionEnd" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//ExtensionEnd"/>
   <eClassifiers xsi:type="ecore:EClass" name="TagExtensionEnd" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//ExtensionEnd"/>
   <eClassifiers xsi:type="ecore:EClass" name="ResultExtensionEnd" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//ExtensionEnd"/>
@@ -324,7 +324,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="SeviceRealization" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//InterfaceRealization"/>
   <eClassifiers xsi:type="ecore:EClass" name="NavigationExtension" abstract="true"
       eSuperTypes="#//FrameworkExtension"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EntityExtension" abstract="true" eSuperTypes="#//FrameworkExtension"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DomainExtension" abstract="true" eSuperTypes="#//FrameworkExtension"/>
   <eClassifiers xsi:type="ecore:EClass" name="NavigationGeneralizationSet" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//GeneralizationSet"/>
   <eClassifiers xsi:type="ecore:EClass" name="DAOGeneralizationSet" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//GeneralizationSet"/>
   <eClassifiers xsi:type="ecore:EClass" name="ServiceGeneralizationSet" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//GeneralizationSet"/>
