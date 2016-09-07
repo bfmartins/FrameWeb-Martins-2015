@@ -13,5 +13,5 @@ package frameweb;
  * @model
  * @generated
  */
-public interface LOBAttribute extends EntityAttribute {
+public interface LOBAttribute extends DomainAttribute {
 } // LOBAttribute

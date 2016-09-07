@@ -25,7 +25,7 @@ import org.eclipse.uml2.uml.UMLPackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class IdAttributeItemProvider extends EntityAttributeItemProvider {
+public class IdAttributeItemProvider extends DomainAttributeItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->

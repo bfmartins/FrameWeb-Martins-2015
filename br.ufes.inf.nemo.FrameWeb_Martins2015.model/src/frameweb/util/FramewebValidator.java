@@ -22,6 +22,7 @@ import org.eclipse.uml2.uml.util.UMLValidator;
  * @see frameweb.FramewebPackage
  * @generated
  */
+
 public class FramewebValidator extends EObjectValidator {
 	/**
 	 * The cached model package
@@ -238,10 +239,10 @@ public class FramewebValidator extends EObjectValidator {
 				return validateApplicationModel((ApplicationModel)value, diagnostics, context);
 			case FramewebPackage.PERSISTENCE_MODEL:
 				return validatePersistenceModel((PersistenceModel)value, diagnostics, context);
-			case FramewebPackage.ENTITY_ASSOCIATION:
-				return validateEntityAssociation((EntityAssociation)value, diagnostics, context);
-			case FramewebPackage.ENTITY_ATTRIBUTE:
-				return validateEntityAttribute((EntityAttribute)value, diagnostics, context);
+			case FramewebPackage.DOMAIN_ASSOCIATION:
+				return validateDomainAssociation((DomainAssociation)value, diagnostics, context);
+			case FramewebPackage.DOMAIN_ATTRIBUTE:
+				return validateDomainAttribute((DomainAttribute)value, diagnostics, context);
 			case FramewebPackage.VERSION_ATTRIBUTE:
 				return validateVersionAttribute((VersionAttribute)value, diagnostics, context);
 			case FramewebPackage.ID_ATTRIBUTE:
@@ -282,8 +283,8 @@ public class FramewebValidator extends EObjectValidator {
 				return validateServiceGeneralization((ServiceGeneralization)value, diagnostics, context);
 			case FramewebPackage.SERVICE_CONTROLLER_ASSOCIATION:
 				return validateServiceControllerAssociation((ServiceControllerAssociation)value, diagnostics, context);
-			case FramewebPackage.ENTITY_CLASS:
-				return validateEntityClass((EntityClass)value, diagnostics, context);
+			case FramewebPackage.DOMAIN_CLASS:
+				return validateDomainClass((DomainClass)value, diagnostics, context);
 			case FramewebPackage.RESULT:
 				return validateResult((Result)value, diagnostics, context);
 			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY:
@@ -298,8 +299,8 @@ public class FramewebValidator extends EObjectValidator {
 				return validateNavigationAttribute((NavigationAttribute)value, diagnostics, context);
 			case FramewebPackage.NAVIGATION_CLASS:
 				return validateNavigationClass((NavigationClass)value, diagnostics, context);
-			case FramewebPackage.ENTITY_METHOD:
-				return validateEntityMethod((EntityMethod)value, diagnostics, context);
+			case FramewebPackage.DOMAIN_METHOD:
+				return validateDomainMethod((DomainMethod)value, diagnostics, context);
 			case FramewebPackage.DAO_ATTRIBUTE:
 				return validateDAOAttribute((DAOAttribute)value, diagnostics, context);
 			case FramewebPackage.SERVICE_METHOD:
@@ -312,8 +313,8 @@ public class FramewebValidator extends EObjectValidator {
 				return validateNavigationDependency((NavigationDependency)value, diagnostics, context);
 			case FramewebPackage.DAO_METHOD:
 				return validateDAOMethod((DAOMethod)value, diagnostics, context);
-			case FramewebPackage.ENTITY_PACKAGE:
-				return validateEntityPackage((EntityPackage)value, diagnostics, context);
+			case FramewebPackage.DOMAIN_PACKAGE:
+				return validateDomainPackage((DomainPackage)value, diagnostics, context);
 			case FramewebPackage.VIEW_PACKAGE:
 				return validateViewPackage((ViewPackage)value, diagnostics, context);
 			case FramewebPackage.CONTROLLER_PACKAGE:
@@ -328,8 +329,8 @@ public class FramewebValidator extends EObjectValidator {
 				return validateResultType((ResultType)value, diagnostics, context);
 			case FramewebPackage.NAVIGATION_PACKAGE:
 				return validateNavigationPackage((NavigationPackage)value, diagnostics, context);
-			case FramewebPackage.ENTITY_GENERALIZATION:
-				return validateEntityGeneralization((EntityGeneralization)value, diagnostics, context);
+			case FramewebPackage.DOMAIN_GENERALIZATION:
+				return validateDomainGeneralization((DomainGeneralization)value, diagnostics, context);
 			case FramewebPackage.UI_COMPONENT_FIELD:
 				return validateUIComponentField((UIComponent)value, diagnostics, context);
 			case FramewebPackage.TAG_LIB:
@@ -356,10 +357,10 @@ public class FramewebValidator extends EObjectValidator {
 				return validateChainingConstraint((ChainingConstraint)value, diagnostics, context);
 			case FramewebPackage.NAVIGATION_GENERALIZATION:
 				return validateNavigationGeneralization((NavigationGeneralization)value, diagnostics, context);
-			case FramewebPackage.ENTITY_CONSTRAINTS:
-				return validateEntityConstraints((EntityConstraints)value, diagnostics, context);
-			case FramewebPackage.ENTITY_PROPERTY:
-				return validateEntityProperty((EntityProperty)value, diagnostics, context);
+			case FramewebPackage.DOMAIN_CONSTRAINTS:
+				return validateDomainConstraints((DomainConstraints)value, diagnostics, context);
+			case FramewebPackage.DOMAIN_PROPERTY:
+				return validateDomainProperty((DomainProperty)value, diagnostics, context);
 			case FramewebPackage.DAO_GENERALIZATION:
 				return validateDAOGeneralization((DAOGeneralization)value, diagnostics, context);
 			case FramewebPackage.MAPPING_LIB:
@@ -368,8 +369,8 @@ public class FramewebValidator extends EObjectValidator {
 				return validateClassMapping((ClassMapping)value, diagnostics, context);
 			case FramewebPackage.ATTRIBUTE_MAPPING:
 				return validateAttributeMapping((AttributeMapping)value, diagnostics, context);
-			case FramewebPackage.ENTITY_GENERALIZATION_SET:
-				return validateEntityGeneralizationSet((EntityGeneralizationSet)value, diagnostics, context);
+			case FramewebPackage.DOMAIN_GENERALIZATION_SET:
+				return validateDomainGeneralizationSet((DomainGeneralizationSet)value, diagnostics, context);
 			case FramewebPackage.FRAMEWORK_EXTENSION:
 				return validateFrameworkExtension((FrameworkExtension)value, diagnostics, context);
 			case FramewebPackage.TAG_EXTENSION:
@@ -412,8 +413,8 @@ public class FramewebValidator extends EObjectValidator {
 				return validateSeviceRealization((SeviceRealization)value, diagnostics, context);
 			case FramewebPackage.NAVIGATION_EXTENSION:
 				return validateNavigationExtension((NavigationExtension)value, diagnostics, context);
-			case FramewebPackage.ENTITY_EXTENSION:
-				return validateEntityExtension((EntityExtension)value, diagnostics, context);
+			case FramewebPackage.DOMAIN_EXTENSION:
+				return validateDomainExtension((DomainExtension)value, diagnostics, context);
 			case FramewebPackage.NAVIGATION_GENERALIZATION_SET:
 				return validateNavigationGeneralizationSet((NavigationGeneralizationSet)value, diagnostics, context);
 			case FramewebPackage.DAO_GENERALIZATION_SET:
@@ -737,37 +738,37 @@ public class FramewebValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEntityAssociation(EntityAssociation entityAssociation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(entityAssociation, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateMembersDistinguishable(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportSelf(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportOwnedMembers(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionConsistent(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateNonLeafRedefinition(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionContextValid(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validatePackageableElement_validateNamespaceNeedsVisibility(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateSpecializeType(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateMapsToGeneralizationSet(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNonFinalParents(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNoCyclesInGeneralization(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateSpecializedEndNumber(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateSpecializedEndTypes(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateBinaryAssociations(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateAssociationEnds(entityAssociation, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateEndsMustBeTyped(entityAssociation, diagnostics, context);
+	public boolean validateDomainAssociation(DomainAssociation domainAssociation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(domainAssociation, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateMembersDistinguishable(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportSelf(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportOwnedMembers(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionConsistent(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateNonLeafRedefinition(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionContextValid(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validatePackageableElement_validateNamespaceNeedsVisibility(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateSpecializeType(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateMapsToGeneralizationSet(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNonFinalParents(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNoCyclesInGeneralization(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateSpecializedEndNumber(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateSpecializedEndTypes(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateBinaryAssociations(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateAssociationEnds(domainAssociation, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateEndsMustBeTyped(domainAssociation, diagnostics, context);
 		return result;
 	}
 
@@ -776,41 +777,41 @@ public class FramewebValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEntityAttribute(EntityAttribute entityAttribute, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(entityAttribute, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionConsistent(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateNonLeafRedefinition(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionContextValid(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateUpperGeLower(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateLowerGe0(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateValueSpecificationNoSideEffects(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateValueSpecificationConstant(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateLowerIsInteger(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateUpperIsUnlimitedNatural(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateSubsettingContextConforms(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateDerivedUnionIsReadOnly(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateMultiplicityOfComposite(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateRedefinedPropertyInherited(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateSubsettingRules(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateBindingToAttribute(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateDerivedUnionIsDerived(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateDeploymentTarget(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateSubsettedPropertyNames(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateTypeOfOppositeEnd(entityAttribute, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateQualifiedIsAssociationEnd(entityAttribute, diagnostics, context);
+	public boolean validateDomainAttribute(DomainAttribute domainAttribute, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(domainAttribute, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionConsistent(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateNonLeafRedefinition(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionContextValid(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateUpperGeLower(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateLowerGe0(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateValueSpecificationNoSideEffects(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateValueSpecificationConstant(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateLowerIsInteger(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateUpperIsUnlimitedNatural(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateSubsettingContextConforms(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateDerivedUnionIsReadOnly(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateMultiplicityOfComposite(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateRedefinedPropertyInherited(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateSubsettingRules(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateBindingToAttribute(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateDerivedUnionIsDerived(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateDeploymentTarget(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateSubsettedPropertyNames(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateTypeOfOppositeEnd(domainAttribute, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateQualifiedIsAssociationEnd(domainAttribute, diagnostics, context);
 		return result;
 	}
 
@@ -1577,34 +1578,34 @@ public class FramewebValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEntityClass(EntityClass entityClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(entityClass, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateMembersDistinguishable(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportSelf(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportOwnedMembers(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionConsistent(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateNonLeafRedefinition(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionContextValid(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validatePackageableElement_validateNamespaceNeedsVisibility(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateSpecializeType(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateMapsToGeneralizationSet(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNonFinalParents(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNoCyclesInGeneralization(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateBehavioredClassifier_validateClassBehavior(entityClass, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClass_validatePassiveClass(entityClass, diagnostics, context);
+	public boolean validateDomainClass(DomainClass domainClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(domainClass, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateMembersDistinguishable(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportSelf(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportOwnedMembers(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionConsistent(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateNonLeafRedefinition(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionContextValid(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validatePackageableElement_validateNamespaceNeedsVisibility(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateSpecializeType(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateMapsToGeneralizationSet(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNonFinalParents(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNoCyclesInGeneralization(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateBehavioredClassifier_validateClassBehavior(domainClass, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClass_validatePassiveClass(domainClass, diagnostics, context);
 		return result;
 	}
 
@@ -1839,30 +1840,30 @@ public class FramewebValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEntityMethod(EntityMethod entityMethod, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(entityMethod, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateMembersDistinguishable(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportSelf(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportOwnedMembers(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionConsistent(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateNonLeafRedefinition(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionContextValid(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateBehavioralFeature_validateAbstractNoMethod(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateOperation_validateAtMostOneReturn(entityMethod, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateOperation_validateOnlyBodyForQuery(entityMethod, diagnostics, context);
+	public boolean validateDomainMethod(DomainMethod domainMethod, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(domainMethod, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateMembersDistinguishable(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportSelf(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportOwnedMembers(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionConsistent(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateNonLeafRedefinition(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionContextValid(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateBehavioralFeature_validateAbstractNoMethod(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateOperation_validateAtMostOneReturn(domainMethod, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateOperation_validateOnlyBodyForQuery(domainMethod, diagnostics, context);
 		return result;
 	}
 
@@ -2084,26 +2085,26 @@ public class FramewebValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEntityPackage(EntityPackage entityPackage, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(entityPackage, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateMembersDistinguishable(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportSelf(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportOwnedMembers(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validatePackageableElement_validateNamespaceNeedsVisibility(entityPackage, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validatePackage_validateElementsPublicOrPrivate(entityPackage, diagnostics, context);
+	public boolean validateDomainPackage(DomainPackage domainPackage, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(domainPackage, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateMembersDistinguishable(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportSelf(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportOwnedMembers(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validatePackageableElement_validateNamespaceNeedsVisibility(domainPackage, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validatePackage_validateElementsPublicOrPrivate(domainPackage, diagnostics, context);
 		return result;
 	}
 
@@ -2331,18 +2332,18 @@ public class FramewebValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEntityGeneralization(EntityGeneralization entityGeneralization, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(entityGeneralization, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(entityGeneralization, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(entityGeneralization, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(entityGeneralization, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(entityGeneralization, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(entityGeneralization, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(entityGeneralization, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(entityGeneralization, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(entityGeneralization, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(entityGeneralization, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(entityGeneralization, diagnostics, context);
+	public boolean validateDomainGeneralization(DomainGeneralization domainGeneralization, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(domainGeneralization, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(domainGeneralization, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(domainGeneralization, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(domainGeneralization, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(domainGeneralization, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(domainGeneralization, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(domainGeneralization, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(domainGeneralization, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(domainGeneralization, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(domainGeneralization, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(domainGeneralization, diagnostics, context);
 		return result;
 	}
 
@@ -2777,25 +2778,25 @@ public class FramewebValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEntityConstraints(EntityConstraints entityConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(entityConstraints, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validatePackageableElement_validateNamespaceNeedsVisibility(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateConstraint_validateBooleanValue(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateConstraint_validateNoSideEffects(entityConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateConstraint_validateNotApplyToSelf(entityConstraints, diagnostics, context);
+	public boolean validateDomainConstraints(DomainConstraints domainConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(domainConstraints, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validatePackageableElement_validateNamespaceNeedsVisibility(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateConstraint_validateBooleanValue(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateConstraint_validateNoSideEffects(domainConstraints, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateConstraint_validateNotApplyToSelf(domainConstraints, diagnostics, context);
 		return result;
 	}
 
@@ -2804,41 +2805,41 @@ public class FramewebValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEntityProperty(EntityProperty entityProperty, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(entityProperty, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionConsistent(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateNonLeafRedefinition(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionContextValid(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateUpperGeLower(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateLowerGe0(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateValueSpecificationNoSideEffects(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateValueSpecificationConstant(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateLowerIsInteger(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateUpperIsUnlimitedNatural(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateSubsettingContextConforms(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateDerivedUnionIsReadOnly(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateMultiplicityOfComposite(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateRedefinedPropertyInherited(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateSubsettingRules(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateBindingToAttribute(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateDerivedUnionIsDerived(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateDeploymentTarget(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateSubsettedPropertyNames(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateTypeOfOppositeEnd(entityProperty, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateQualifiedIsAssociationEnd(entityProperty, diagnostics, context);
+	public boolean validateDomainProperty(DomainProperty domainProperty, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(domainProperty, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionConsistent(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateNonLeafRedefinition(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionContextValid(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateUpperGeLower(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateLowerGe0(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateValueSpecificationNoSideEffects(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateValueSpecificationConstant(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateLowerIsInteger(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateMultiplicityElement_validateUpperIsUnlimitedNatural(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateSubsettingContextConforms(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateDerivedUnionIsReadOnly(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateMultiplicityOfComposite(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateRedefinedPropertyInherited(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateSubsettingRules(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateBindingToAttribute(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateDerivedUnionIsDerived(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateDeploymentTarget(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateSubsettedPropertyNames(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateTypeOfOppositeEnd(domainProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateProperty_validateQualifiedIsAssociationEnd(domainProperty, diagnostics, context);
 		return result;
 	}
 
@@ -2981,24 +2982,24 @@ public class FramewebValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEntityGeneralizationSet(EntityGeneralizationSet entityGeneralizationSet, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(entityGeneralizationSet, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(entityGeneralizationSet, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(entityGeneralizationSet, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(entityGeneralizationSet, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(entityGeneralizationSet, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(entityGeneralizationSet, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(entityGeneralizationSet, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(entityGeneralizationSet, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(entityGeneralizationSet, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(entityGeneralizationSet, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(entityGeneralizationSet, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(entityGeneralizationSet, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(entityGeneralizationSet, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(entityGeneralizationSet, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validatePackageableElement_validateNamespaceNeedsVisibility(entityGeneralizationSet, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateGeneralizationSet_validateGeneralizationSameClassifier(entityGeneralizationSet, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateGeneralizationSet_validateMapsToGeneralizationSet(entityGeneralizationSet, diagnostics, context);
+	public boolean validateDomainGeneralizationSet(DomainGeneralizationSet domainGeneralizationSet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(domainGeneralizationSet, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(domainGeneralizationSet, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(domainGeneralizationSet, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(domainGeneralizationSet, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(domainGeneralizationSet, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(domainGeneralizationSet, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(domainGeneralizationSet, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(domainGeneralizationSet, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(domainGeneralizationSet, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(domainGeneralizationSet, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(domainGeneralizationSet, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(domainGeneralizationSet, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(domainGeneralizationSet, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(domainGeneralizationSet, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validatePackageableElement_validateNamespaceNeedsVisibility(domainGeneralizationSet, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateGeneralizationSet_validateGeneralizationSameClassifier(domainGeneralizationSet, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateGeneralizationSet_validateMapsToGeneralizationSet(domainGeneralizationSet, diagnostics, context);
 		return result;
 	}
 
@@ -3849,39 +3850,39 @@ public class FramewebValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEntityExtension(EntityExtension entityExtension, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(entityExtension, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateMembersDistinguishable(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportSelf(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportOwnedMembers(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionConsistent(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateNonLeafRedefinition(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionContextValid(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validatePackageableElement_validateNamespaceNeedsVisibility(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateSpecializeType(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateMapsToGeneralizationSet(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNonFinalParents(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNoCyclesInGeneralization(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateSpecializedEndNumber(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateSpecializedEndTypes(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateBinaryAssociations(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateAssociationEnds(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateEndsMustBeTyped(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateExtension_validateNonOwnedEnd(entityExtension, diagnostics, context);
-		if (result || diagnostics != null) result &= umlValidator.validateExtension_validateIsBinary(entityExtension, diagnostics, context);
+	public boolean validateDomainExtension(DomainExtension domainExtension, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(domainExtension, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateHasOwner(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateElement_validateNotOwnSelf(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateVisibilityNeedsOwnership(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasQualifiedName(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamedElement_validateHasNoQualifiedName(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateMembersDistinguishable(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportSelf(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateNamespace_validateCannotImportOwnedMembers(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionConsistent(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateNonLeafRedefinition(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateRedefinableElement_validateRedefinitionContextValid(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validatePackageableElement_validateNamespaceNeedsVisibility(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateSpecializeType(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateMapsToGeneralizationSet(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNonFinalParents(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateClassifier_validateNoCyclesInGeneralization(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateSpecializedEndNumber(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateSpecializedEndTypes(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateBinaryAssociations(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateAssociationEnds(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateAssociation_validateEndsMustBeTyped(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateExtension_validateNonOwnedEnd(domainExtension, diagnostics, context);
+		if (result || diagnostics != null) result &= umlValidator.validateExtension_validateIsBinary(domainExtension, diagnostics, context);
 		return result;
 	}
 

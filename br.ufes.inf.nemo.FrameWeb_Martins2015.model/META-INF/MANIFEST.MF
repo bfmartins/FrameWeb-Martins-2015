@@ -2,8 +2,8 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: br.ufes.inf.nemo.FrameWeb_Martins2015.model;singleton:=true
-Bundle-Version: 1.0.0.qualifier
-Bundle-ClassPath: .
+Bundle-Version: 1.0.00
+Bundle-ClassPath: runtime\fw-model.jar
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7

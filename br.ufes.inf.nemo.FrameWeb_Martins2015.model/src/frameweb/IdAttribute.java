@@ -19,7 +19,7 @@ package frameweb;
  * @model
  * @generated
  */
-public interface IdAttribute extends EntityAttribute {
+public interface IdAttribute extends DomainAttribute {
 	/**
 	 * Returns the value of the '<em><b>Generation</b></em>' attribute.
 	 * The literals are from the enumeration {@link frameweb.Generation}.

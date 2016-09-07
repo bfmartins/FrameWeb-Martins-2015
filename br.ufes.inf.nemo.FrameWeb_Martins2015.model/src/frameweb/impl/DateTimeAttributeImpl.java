@@ -25,7 +25,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class DateTimeAttributeImpl extends EntityAttributeImpl implements DateTimeAttribute {
+public class DateTimeAttributeImpl extends DomainAttributeImpl implements DateTimeAttribute {
 	/**
 	 * The default value of the '{@link #getDateTimePrecision() <em>Date Time Precision</em>}' attribute.
 	 * <!-- begin-user-doc -->

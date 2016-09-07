@@ -182,7 +182,7 @@ public class FrameworkProfileItemProvider extends ProfileItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
-				 FramewebFactory.eINSTANCE.createEntityConstraints()));
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -217,7 +217,7 @@ public class FrameworkProfileItemProvider extends ProfileItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__NESTED_PACKAGE,
-				 FramewebFactory.eINSTANCE.createEntityPackage()));
+				 FramewebFactory.eINSTANCE.createDomainPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -302,7 +302,7 @@ public class FrameworkProfileItemProvider extends ProfileItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
-				 FramewebFactory.eINSTANCE.createEntityAssociation()));
+				 FramewebFactory.eINSTANCE.createDomainAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -352,7 +352,7 @@ public class FrameworkProfileItemProvider extends ProfileItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__OWNED_TYPE,
-				 FramewebFactory.eINSTANCE.createEntityClass()));
+				 FramewebFactory.eINSTANCE.createDomainClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -497,7 +497,7 @@ public class FrameworkProfileItemProvider extends ProfileItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createEntityAssociation()));
+				 FramewebFactory.eINSTANCE.createDomainAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -557,7 +557,7 @@ public class FrameworkProfileItemProvider extends ProfileItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createEntityClass()));
+				 FramewebFactory.eINSTANCE.createDomainClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -587,7 +587,7 @@ public class FrameworkProfileItemProvider extends ProfileItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createEntityPackage()));
+				 FramewebFactory.eINSTANCE.createDomainPackage()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -657,7 +657,7 @@ public class FrameworkProfileItemProvider extends ProfileItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createEntityConstraints()));
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -677,7 +677,7 @@ public class FrameworkProfileItemProvider extends ProfileItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.PACKAGE__PACKAGED_ELEMENT,
-				 FramewebFactory.eINSTANCE.createEntityGeneralizationSet()));
+				 FramewebFactory.eINSTANCE.createDomainGeneralizationSet()));
 
 		newChildDescriptors.add
 			(createChildParameter

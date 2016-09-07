@@ -79,14 +79,14 @@ public enum ConstantNameList implements Enumerator {
 	CONTROLLER(0, "Controller", "Controller"),
 
 	/**
-	 * The '<em><b>Entity</b></em>' literal object.
+	 * The '<em><b>Domain</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENTITY_VALUE
+	 * @see #DOMAIN_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ENTITY(0, "Entity", "Entity"),
+	DOMAIN(0, "Domain", "Domain"),
 
 	/**
 	 * The '<em><b>Persistence</b></em>' literal object.
@@ -209,19 +209,19 @@ public enum ConstantNameList implements Enumerator {
 	public static final int CONTROLLER_VALUE = 0;
 
 	/**
-	 * The '<em><b>Entity</b></em>' literal value.
+	 * The '<em><b>Domain</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Entity</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Domain</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #ENTITY
-	 * @model name="Entity"
+	 * @see #DOMAIN
+	 * @model name="Domain"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENTITY_VALUE = 0;
+	public static final int DOMAIN_VALUE = 0;
 
 	/**
 	 * The '<em><b>Persistence</b></em>' literal value.
@@ -282,7 +282,7 @@ public enum ConstantNameList implements Enumerator {
 			CLASS,
 			IMPL,
 			CONTROLLER,
-			ENTITY,
+			DOMAIN,
 			PERSISTENCE,
 			APPLICATION,
 			VIEW,

@@ -210,26 +210,26 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.EntityAssociation} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.DomainAssociation} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EntityAssociationItemProvider entityAssociationItemProvider;
+	protected DomainAssociationItemProvider domainAssociationItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.EntityAssociation}.
+	 * This creates an adapter for a {@link frameweb.DomainAssociation}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createEntityAssociationAdapter() {
-		if (entityAssociationItemProvider == null) {
-			entityAssociationItemProvider = new EntityAssociationItemProvider(this);
+	public Adapter createDomainAssociationAdapter() {
+		if (domainAssociationItemProvider == null) {
+			domainAssociationItemProvider = new DomainAssociationItemProvider(this);
 		}
 
-		return entityAssociationItemProvider;
+		return domainAssociationItemProvider;
 	}
 
 	/**
@@ -693,26 +693,26 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.EntityClass} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.DomainClass} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EntityClassItemProvider entityClassItemProvider;
+	protected DomainClassItemProvider domainClassItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.EntityClass}.
+	 * This creates an adapter for a {@link frameweb.DomainClass}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createEntityClassAdapter() {
-		if (entityClassItemProvider == null) {
-			entityClassItemProvider = new EntityClassItemProvider(this);
+	public Adapter createDomainClassAdapter() {
+		if (domainClassItemProvider == null) {
+			domainClassItemProvider = new DomainClassItemProvider(this);
 		}
 
-		return entityClassItemProvider;
+		return domainClassItemProvider;
 	}
 
 	/**
@@ -831,26 +831,26 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.EntityMethod} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.DomainMethod} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EntityMethodItemProvider entityMethodItemProvider;
+	protected DomainMethodItemProvider domainMethodItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.EntityMethod}.
+	 * This creates an adapter for a {@link frameweb.DomainMethod}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createEntityMethodAdapter() {
-		if (entityMethodItemProvider == null) {
-			entityMethodItemProvider = new EntityMethodItemProvider(this);
+	public Adapter createDomainMethodAdapter() {
+		if (domainMethodItemProvider == null) {
+			domainMethodItemProvider = new DomainMethodItemProvider(this);
 		}
 
-		return entityMethodItemProvider;
+		return domainMethodItemProvider;
 	}
 
 	/**
@@ -946,26 +946,26 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.EntityPackage} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.DomainPackage} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EntityPackageItemProvider entityPackageItemProvider;
+	protected DomainPackageItemProvider domainPackageItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.EntityPackage}.
+	 * This creates an adapter for a {@link frameweb.DomainPackage}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createEntityPackageAdapter() {
-		if (entityPackageItemProvider == null) {
-			entityPackageItemProvider = new EntityPackageItemProvider(this);
+	public Adapter createDomainPackageAdapter() {
+		if (domainPackageItemProvider == null) {
+			domainPackageItemProvider = new DomainPackageItemProvider(this);
 		}
 
-		return entityPackageItemProvider;
+		return domainPackageItemProvider;
 	}
 
 	/**
@@ -1107,26 +1107,26 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.EntityGeneralization} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.DomainGeneralization} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EntityGeneralizationItemProvider entityGeneralizationItemProvider;
+	protected DomainGeneralizationItemProvider domainGeneralizationItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.EntityGeneralization}.
+	 * This creates an adapter for a {@link frameweb.DomainGeneralization}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createEntityGeneralizationAdapter() {
-		if (entityGeneralizationItemProvider == null) {
-			entityGeneralizationItemProvider = new EntityGeneralizationItemProvider(this);
+	public Adapter createDomainGeneralizationAdapter() {
+		if (domainGeneralizationItemProvider == null) {
+			domainGeneralizationItemProvider = new DomainGeneralizationItemProvider(this);
 		}
 
-		return entityGeneralizationItemProvider;
+		return domainGeneralizationItemProvider;
 	}
 
 	/**
@@ -1383,49 +1383,49 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.EntityConstraints} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.DomainConstraints} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EntityConstraintsItemProvider entityConstraintsItemProvider;
+	protected DomainConstraintsItemProvider domainConstraintsItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.EntityConstraints}.
+	 * This creates an adapter for a {@link frameweb.DomainConstraints}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createEntityConstraintsAdapter() {
-		if (entityConstraintsItemProvider == null) {
-			entityConstraintsItemProvider = new EntityConstraintsItemProvider(this);
+	public Adapter createDomainConstraintsAdapter() {
+		if (domainConstraintsItemProvider == null) {
+			domainConstraintsItemProvider = new DomainConstraintsItemProvider(this);
 		}
 
-		return entityConstraintsItemProvider;
+		return domainConstraintsItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.EntityProperty} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.DomainProperty} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EntityPropertyItemProvider entityPropertyItemProvider;
+	protected DomainPropertyItemProvider domainPropertyItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.EntityProperty}.
+	 * This creates an adapter for a {@link frameweb.DomainProperty}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createEntityPropertyAdapter() {
-		if (entityPropertyItemProvider == null) {
-			entityPropertyItemProvider = new EntityPropertyItemProvider(this);
+	public Adapter createDomainPropertyAdapter() {
+		if (domainPropertyItemProvider == null) {
+			domainPropertyItemProvider = new DomainPropertyItemProvider(this);
 		}
 
-		return entityPropertyItemProvider;
+		return domainPropertyItemProvider;
 	}
 
 	/**
@@ -1521,26 +1521,26 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link frameweb.EntityGeneralizationSet} instances.
+	 * This keeps track of the one adapter used for all {@link frameweb.DomainGeneralizationSet} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EntityGeneralizationSetItemProvider entityGeneralizationSetItemProvider;
+	protected DomainGeneralizationSetItemProvider domainGeneralizationSetItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link frameweb.EntityGeneralizationSet}.
+	 * This creates an adapter for a {@link frameweb.DomainGeneralizationSet}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createEntityGeneralizationSetAdapter() {
-		if (entityGeneralizationSetItemProvider == null) {
-			entityGeneralizationSetItemProvider = new EntityGeneralizationSetItemProvider(this);
+	public Adapter createDomainGeneralizationSetAdapter() {
+		if (domainGeneralizationSetItemProvider == null) {
+			domainGeneralizationSetItemProvider = new DomainGeneralizationSetItemProvider(this);
 		}
 
-		return entityGeneralizationSetItemProvider;
+		return domainGeneralizationSetItemProvider;
 	}
 
 	/**
@@ -2591,7 +2591,7 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (navigationModelItemProvider != null) navigationModelItemProvider.dispose();
 		if (applicationModelItemProvider != null) applicationModelItemProvider.dispose();
 		if (persistenceModelItemProvider != null) persistenceModelItemProvider.dispose();
-		if (entityAssociationItemProvider != null) entityAssociationItemProvider.dispose();
+		if (domainAssociationItemProvider != null) domainAssociationItemProvider.dispose();
 		if (versionAttributeItemProvider != null) versionAttributeItemProvider.dispose();
 		if (idAttributeItemProvider != null) idAttributeItemProvider.dispose();
 		if (lobAttributeItemProvider != null) lobAttributeItemProvider.dispose();
@@ -2612,25 +2612,25 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (serviceInterfaceItemProvider != null) serviceInterfaceItemProvider.dispose();
 		if (serviceGeneralizationItemProvider != null) serviceGeneralizationItemProvider.dispose();
 		if (serviceControllerAssociationItemProvider != null) serviceControllerAssociationItemProvider.dispose();
-		if (entityClassItemProvider != null) entityClassItemProvider.dispose();
+		if (domainClassItemProvider != null) domainClassItemProvider.dispose();
 		if (resultItemProvider != null) resultItemProvider.dispose();
 		if (frontControllerDependencyItemProvider != null) frontControllerDependencyItemProvider.dispose();
 		if (pageDependencyItemProvider != null) pageDependencyItemProvider.dispose();
 		if (chainingDependencyItemProvider != null) chainingDependencyItemProvider.dispose();
 		if (daoServiceAssociationItemProvider != null) daoServiceAssociationItemProvider.dispose();
-		if (entityMethodItemProvider != null) entityMethodItemProvider.dispose();
+		if (domainMethodItemProvider != null) domainMethodItemProvider.dispose();
 		if (daoAttributeItemProvider != null) daoAttributeItemProvider.dispose();
 		if (serviceMethodItemProvider != null) serviceMethodItemProvider.dispose();
 		if (serviceAttributeItemProvider != null) serviceAttributeItemProvider.dispose();
 		if (daoMethodItemProvider != null) daoMethodItemProvider.dispose();
-		if (entityPackageItemProvider != null) entityPackageItemProvider.dispose();
+		if (domainPackageItemProvider != null) domainPackageItemProvider.dispose();
 		if (viewPackageItemProvider != null) viewPackageItemProvider.dispose();
 		if (controllerPackageItemProvider != null) controllerPackageItemProvider.dispose();
 		if (persistencePackageItemProvider != null) persistencePackageItemProvider.dispose();
 		if (applicationPackageItemProvider != null) applicationPackageItemProvider.dispose();
 		if (uiComponentItemProvider != null) uiComponentItemProvider.dispose();
 		if (resultTypeItemProvider != null) resultTypeItemProvider.dispose();
-		if (entityGeneralizationItemProvider != null) entityGeneralizationItemProvider.dispose();
+		if (domainGeneralizationItemProvider != null) domainGeneralizationItemProvider.dispose();
 		if (uiComponentFieldItemProvider != null) uiComponentFieldItemProvider.dispose();
 		if (tagLibItemProvider != null) tagLibItemProvider.dispose();
 		if (tagItemProvider != null) tagItemProvider.dispose();
@@ -2642,13 +2642,13 @@ public class FramewebItemProviderAdapterFactory extends FramewebAdapterFactory i
 		if (methodCosntraintItemProvider != null) methodCosntraintItemProvider.dispose();
 		if (chainingConstraintItemProvider != null) chainingConstraintItemProvider.dispose();
 		if (navigationGeneralizationItemProvider != null) navigationGeneralizationItemProvider.dispose();
-		if (entityConstraintsItemProvider != null) entityConstraintsItemProvider.dispose();
-		if (entityPropertyItemProvider != null) entityPropertyItemProvider.dispose();
+		if (domainConstraintsItemProvider != null) domainConstraintsItemProvider.dispose();
+		if (domainPropertyItemProvider != null) domainPropertyItemProvider.dispose();
 		if (daoGeneralizationItemProvider != null) daoGeneralizationItemProvider.dispose();
 		if (mappingLibItemProvider != null) mappingLibItemProvider.dispose();
 		if (classMappingItemProvider != null) classMappingItemProvider.dispose();
 		if (attributeMappingItemProvider != null) attributeMappingItemProvider.dispose();
-		if (entityGeneralizationSetItemProvider != null) entityGeneralizationSetItemProvider.dispose();
+		if (domainGeneralizationSetItemProvider != null) domainGeneralizationSetItemProvider.dispose();
 		if (tagExtensionItemProvider != null) tagExtensionItemProvider.dispose();
 		if (frameworkApplicationItemProvider != null) frameworkApplicationItemProvider.dispose();
 		if (controllerExtensionItemProvider != null) controllerExtensionItemProvider.dispose();

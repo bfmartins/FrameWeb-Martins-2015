@@ -61,7 +61,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.NAVIGATION_MODEL: return createNavigationModel();
 			case FramewebPackage.APPLICATION_MODEL: return createApplicationModel();
 			case FramewebPackage.PERSISTENCE_MODEL: return createPersistenceModel();
-			case FramewebPackage.ENTITY_ASSOCIATION: return createEntityAssociation();
+			case FramewebPackage.DOMAIN_ASSOCIATION: return createDomainAssociation();
 			case FramewebPackage.VERSION_ATTRIBUTE: return createVersionAttribute();
 			case FramewebPackage.ID_ATTRIBUTE: return createIdAttribute();
 			case FramewebPackage.LOB_ATTRIBUTE: return createLOBAttribute();
@@ -82,25 +82,25 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.SERVICE_INTERFACE: return createServiceInterface();
 			case FramewebPackage.SERVICE_GENERALIZATION: return createServiceGeneralization();
 			case FramewebPackage.SERVICE_CONTROLLER_ASSOCIATION: return createServiceControllerAssociation();
-			case FramewebPackage.ENTITY_CLASS: return createEntityClass();
+			case FramewebPackage.DOMAIN_CLASS: return createDomainClass();
 			case FramewebPackage.RESULT: return createResult();
 			case FramewebPackage.FRONT_CONTROLLER_DEPENDENCY: return createFrontControllerDependency();
 			case FramewebPackage.PAGE_DEPENDENCY: return createPageDependency();
 			case FramewebPackage.CHAINING_DEPENDENCY: return createChainingDependency();
 			case FramewebPackage.DAO_SERVICE_ASSOCIATION: return createDAOServiceAssociation();
-			case FramewebPackage.ENTITY_METHOD: return createEntityMethod();
+			case FramewebPackage.DOMAIN_METHOD: return createDomainMethod();
 			case FramewebPackage.DAO_ATTRIBUTE: return createDAOAttribute();
 			case FramewebPackage.SERVICE_METHOD: return createServiceMethod();
 			case FramewebPackage.SERVICE_ATTRIBUTE: return createServiceAttribute();
 			case FramewebPackage.DAO_METHOD: return createDAOMethod();
-			case FramewebPackage.ENTITY_PACKAGE: return createEntityPackage();
+			case FramewebPackage.DOMAIN_PACKAGE: return createDomainPackage();
 			case FramewebPackage.VIEW_PACKAGE: return createViewPackage();
 			case FramewebPackage.CONTROLLER_PACKAGE: return createControllerPackage();
 			case FramewebPackage.PERSISTENCE_PACKAGE: return createPersistencePackage();
 			case FramewebPackage.APPLICATION_PACKAGE: return createApplicationPackage();
 			case FramewebPackage.UI_COMPONENT: return createUIComponent();
 			case FramewebPackage.RESULT_TYPE: return createResultType();
-			case FramewebPackage.ENTITY_GENERALIZATION: return createEntityGeneralization();
+			case FramewebPackage.DOMAIN_GENERALIZATION: return createDomainGeneralization();
 			case FramewebPackage.UI_COMPONENT_FIELD: return (EObject)createUIComponentField();
 			case FramewebPackage.TAG_LIB: return createTagLib();
 			case FramewebPackage.TAG: return createTag();
@@ -112,13 +112,13 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 			case FramewebPackage.METHOD_COSNTRAINT: return createMethodCosntraint();
 			case FramewebPackage.CHAINING_CONSTRAINT: return createChainingConstraint();
 			case FramewebPackage.NAVIGATION_GENERALIZATION: return createNavigationGeneralization();
-			case FramewebPackage.ENTITY_CONSTRAINTS: return createEntityConstraints();
-			case FramewebPackage.ENTITY_PROPERTY: return createEntityProperty();
+			case FramewebPackage.DOMAIN_CONSTRAINTS: return createDomainConstraints();
+			case FramewebPackage.DOMAIN_PROPERTY: return createDomainProperty();
 			case FramewebPackage.DAO_GENERALIZATION: return createDAOGeneralization();
 			case FramewebPackage.MAPPING_LIB: return createMappingLib();
 			case FramewebPackage.CLASS_MAPPING: return createClassMapping();
 			case FramewebPackage.ATTRIBUTE_MAPPING: return createAttributeMapping();
-			case FramewebPackage.ENTITY_GENERALIZATION_SET: return createEntityGeneralizationSet();
+			case FramewebPackage.DOMAIN_GENERALIZATION_SET: return createDomainGeneralizationSet();
 			case FramewebPackage.TAG_EXTENSION: return createTagExtension();
 			case FramewebPackage.FRAMEWORK_APPLICATION: return createFrameworkApplication();
 			case FramewebPackage.CONTROLLER_EXTENSION: return createControllerExtension();
@@ -304,9 +304,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EntityAssociation createEntityAssociation() {
-		EntityAssociationImpl entityAssociation = new EntityAssociationImpl();
-		return entityAssociation;
+	public DomainAssociation createDomainAssociation() {
+		DomainAssociationImpl domainAssociation = new DomainAssociationImpl();
+		return domainAssociation;
 	}
 
 	/**
@@ -514,9 +514,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EntityClass createEntityClass() {
-		EntityClassImpl entityClass = new EntityClassImpl();
-		return entityClass;
+	public DomainClass createDomainClass() {
+		DomainClassImpl domainClass = new DomainClassImpl();
+		return domainClass;
 	}
 
 	/**
@@ -574,9 +574,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EntityMethod createEntityMethod() {
-		EntityMethodImpl entityMethod = new EntityMethodImpl();
-		return entityMethod;
+	public DomainMethod createDomainMethod() {
+		DomainMethodImpl domainMethod = new DomainMethodImpl();
+		return domainMethod;
 	}
 
 	/**
@@ -624,9 +624,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EntityPackage createEntityPackage() {
-		EntityPackageImpl entityPackage = new EntityPackageImpl();
-		return entityPackage;
+	public DomainPackage createDomainPackage() {
+		DomainPackageImpl domainPackage = new DomainPackageImpl();
+		return domainPackage;
 	}
 
 	/**
@@ -694,9 +694,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EntityGeneralization createEntityGeneralization() {
-		EntityGeneralizationImpl entityGeneralization = new EntityGeneralizationImpl();
-		return entityGeneralization;
+	public DomainGeneralization createDomainGeneralization() {
+		DomainGeneralizationImpl domainGeneralization = new DomainGeneralizationImpl();
+		return domainGeneralization;
 	}
 
 	/**
@@ -706,7 +706,7 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 */
 	public UIComponent createUIComponentField() {
 		UIComponentFieldImpl uiComponentField = new UIComponentFieldImpl();
-		return (UIComponent) uiComponentField;
+		return uiComponentField;
 	}
 
 	/**
@@ -814,9 +814,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EntityConstraints createEntityConstraints() {
-		EntityConstraintsImpl entityConstraints = new EntityConstraintsImpl();
-		return entityConstraints;
+	public DomainConstraints createDomainConstraints() {
+		DomainConstraintsImpl domainConstraints = new DomainConstraintsImpl();
+		return domainConstraints;
 	}
 
 	/**
@@ -824,9 +824,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EntityProperty createEntityProperty() {
-		EntityPropertyImpl entityProperty = new EntityPropertyImpl();
-		return entityProperty;
+	public DomainProperty createDomainProperty() {
+		DomainPropertyImpl domainProperty = new DomainPropertyImpl();
+		return domainProperty;
 	}
 
 	/**
@@ -874,9 +874,9 @@ public class FramewebFactoryImpl extends EFactoryImpl implements FramewebFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EntityGeneralizationSet createEntityGeneralizationSet() {
-		EntityGeneralizationSetImpl entityGeneralizationSet = new EntityGeneralizationSetImpl();
-		return entityGeneralizationSet;
+	public DomainGeneralizationSet createDomainGeneralizationSet() {
+		DomainGeneralizationSetImpl domainGeneralizationSet = new DomainGeneralizationSetImpl();
+		return domainGeneralizationSet;
 	}
 
 	/**

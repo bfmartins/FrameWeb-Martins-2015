@@ -13,5 +13,5 @@ package frameweb;
  * @model
  * @generated
  */
-public interface VersionAttribute extends EntityAttribute {
+public interface VersionAttribute extends DomainAttribute {
 } // VersionAttribute

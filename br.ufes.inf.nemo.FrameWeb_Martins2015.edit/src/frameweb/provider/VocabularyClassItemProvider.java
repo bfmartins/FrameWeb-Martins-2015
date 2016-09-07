@@ -565,7 +565,7 @@ public class VocabularyClassItemProvider extends VocabularyEntityItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.STRUCTURED_CLASSIFIER__OWNED_ATTRIBUTE,
-				 FramewebFactory.eINSTANCE.createEntityProperty()));
+				 FramewebFactory.eINSTANCE.createDomainProperty()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -725,7 +725,7 @@ public class VocabularyClassItemProvider extends VocabularyEntityItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.CLASS__OWNED_OPERATION,
-				 FramewebFactory.eINSTANCE.createEntityMethod()));
+				 FramewebFactory.eINSTANCE.createDomainMethod()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -745,7 +745,7 @@ public class VocabularyClassItemProvider extends VocabularyEntityItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createEntityAssociation()));
+				 FramewebFactory.eINSTANCE.createDomainAssociation()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -795,7 +795,7 @@ public class VocabularyClassItemProvider extends VocabularyEntityItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.CLASS__NESTED_CLASSIFIER,
-				 FramewebFactory.eINSTANCE.createEntityClass()));
+				 FramewebFactory.eINSTANCE.createDomainClass()));
 
 		newChildDescriptors.add
 			(createChildParameter

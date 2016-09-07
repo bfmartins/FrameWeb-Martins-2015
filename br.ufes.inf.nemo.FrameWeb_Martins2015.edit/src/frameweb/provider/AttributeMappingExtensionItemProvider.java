@@ -21,7 +21,7 @@ import org.eclipse.uml2.uml.UMLPackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class AttributeMappingExtensionItemProvider extends EntityExtensionItemProvider {
+public class AttributeMappingExtensionItemProvider extends DomainExtensionItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->

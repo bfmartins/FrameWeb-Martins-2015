@@ -287,7 +287,7 @@ public class AssociationItemProvider extends ClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
-				 FramewebFactory.eINSTANCE.createEntityConstraints()));
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -302,7 +302,7 @@ public class AssociationItemProvider extends ClassifierItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
-				 FramewebFactory.eINSTANCE.createEntityGeneralization()));
+				 FramewebFactory.eINSTANCE.createDomainGeneralization()));
 
 		newChildDescriptors.add
 			(createChildParameter

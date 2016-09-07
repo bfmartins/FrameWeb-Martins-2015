@@ -17,7 +17,7 @@ Package frameweb <http://nemo.inf.ufes.br/projects/frameweb/2015>
     Attribute category : FrameworkCategoryList
     Attribute kind : FrameworkKindList
 
-  Class DomainModel -> FrameWebModel
+  Class EntityModel -> FrameWebModel
 
   Class NavigationModel -> FrameWebModel
 

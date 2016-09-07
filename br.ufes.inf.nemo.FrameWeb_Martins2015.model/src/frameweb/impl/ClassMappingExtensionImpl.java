@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ClassMappingExtensionImpl extends EntityExtensionImpl implements ClassMappingExtension {
+public class ClassMappingExtensionImpl extends DomainExtensionImpl implements ClassMappingExtension {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

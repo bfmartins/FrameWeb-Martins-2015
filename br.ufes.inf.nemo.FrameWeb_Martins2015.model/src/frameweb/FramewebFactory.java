@@ -76,13 +76,13 @@ public interface FramewebFactory extends EFactory {
 	PersistenceModel createPersistenceModel();
 
 	/**
-	 * Returns a new object of class '<em>Entity Association</em>'.
+	 * Returns a new object of class '<em>Domain Association</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Entity Association</em>'.
+	 * @return a new object of class '<em>Domain Association</em>'.
 	 * @generated
 	 */
-	EntityAssociation createEntityAssociation();
+	DomainAssociation createDomainAssociation();
 
 	/**
 	 * Returns a new object of class '<em>Version Attribute</em>'.
@@ -265,13 +265,13 @@ public interface FramewebFactory extends EFactory {
 	ServiceControllerAssociation createServiceControllerAssociation();
 
 	/**
-	 * Returns a new object of class '<em>Entity Class</em>'.
+	 * Returns a new object of class '<em>Domain Class</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Entity Class</em>'.
+	 * @return a new object of class '<em>Domain Class</em>'.
 	 * @generated
 	 */
-	EntityClass createEntityClass();
+	DomainClass createDomainClass();
 
 	/**
 	 * Returns a new object of class '<em>Result</em>'.
@@ -319,13 +319,13 @@ public interface FramewebFactory extends EFactory {
 	DAOServiceAssociation createDAOServiceAssociation();
 
 	/**
-	 * Returns a new object of class '<em>Entity Method</em>'.
+	 * Returns a new object of class '<em>Domain Method</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Entity Method</em>'.
+	 * @return a new object of class '<em>Domain Method</em>'.
 	 * @generated
 	 */
-	EntityMethod createEntityMethod();
+	DomainMethod createDomainMethod();
 
 	/**
 	 * Returns a new object of class '<em>DAO Attribute</em>'.
@@ -364,13 +364,13 @@ public interface FramewebFactory extends EFactory {
 	DAOMethod createDAOMethod();
 
 	/**
-	 * Returns a new object of class '<em>Entity Package</em>'.
+	 * Returns a new object of class '<em>Domain Package</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Entity Package</em>'.
+	 * @return a new object of class '<em>Domain Package</em>'.
 	 * @generated
 	 */
-	EntityPackage createEntityPackage();
+	DomainPackage createDomainPackage();
 
 	/**
 	 * Returns a new object of class '<em>View Package</em>'.
@@ -427,13 +427,13 @@ public interface FramewebFactory extends EFactory {
 	ResultType createResultType();
 
 	/**
-	 * Returns a new object of class '<em>Entity Generalization</em>'.
+	 * Returns a new object of class '<em>Domain Generalization</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Entity Generalization</em>'.
+	 * @return a new object of class '<em>Domain Generalization</em>'.
 	 * @generated
 	 */
-	EntityGeneralization createEntityGeneralization();
+	DomainGeneralization createDomainGeneralization();
 
 	/**
 	 * Returns a new object of class '<em>UI Component Field</em>'.
@@ -535,22 +535,22 @@ public interface FramewebFactory extends EFactory {
 	NavigationGeneralization createNavigationGeneralization();
 
 	/**
-	 * Returns a new object of class '<em>Entity Constraints</em>'.
+	 * Returns a new object of class '<em>Domain Constraints</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Entity Constraints</em>'.
+	 * @return a new object of class '<em>Domain Constraints</em>'.
 	 * @generated
 	 */
-	EntityConstraints createEntityConstraints();
+	DomainConstraints createDomainConstraints();
 
 	/**
-	 * Returns a new object of class '<em>Entity Property</em>'.
+	 * Returns a new object of class '<em>Domain Property</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Entity Property</em>'.
+	 * @return a new object of class '<em>Domain Property</em>'.
 	 * @generated
 	 */
-	EntityProperty createEntityProperty();
+	DomainProperty createDomainProperty();
 
 	/**
 	 * Returns a new object of class '<em>DAO Generalization</em>'.
@@ -589,13 +589,13 @@ public interface FramewebFactory extends EFactory {
 	AttributeMapping createAttributeMapping();
 
 	/**
-	 * Returns a new object of class '<em>Entity Generalization Set</em>'.
+	 * Returns a new object of class '<em>Domain Generalization Set</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Entity Generalization Set</em>'.
+	 * @return a new object of class '<em>Domain Generalization Set</em>'.
 	 * @generated
 	 */
-	EntityGeneralizationSet createEntityGeneralizationSet();
+	DomainGeneralizationSet createDomainGeneralizationSet();
 
 	/**
 	 * Returns a new object of class '<em>Tag Extension</em>'.

@@ -125,7 +125,7 @@ public class DAOMethodItemProvider extends OperationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
-				 FramewebFactory.eINSTANCE.createEntityConstraints()));
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -155,7 +155,7 @@ public class DAOMethodItemProvider extends OperationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.OPERATION__BODY_CONDITION,
-				 FramewebFactory.eINSTANCE.createEntityConstraints()));
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -185,7 +185,7 @@ public class DAOMethodItemProvider extends OperationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.OPERATION__POSTCONDITION,
-				 FramewebFactory.eINSTANCE.createEntityConstraints()));
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -215,7 +215,7 @@ public class DAOMethodItemProvider extends OperationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.OPERATION__PRECONDITION,
-				 FramewebFactory.eINSTANCE.createEntityConstraints()));
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter

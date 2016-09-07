@@ -138,12 +138,12 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createPersistenceModelAdapter();
 			}
 			@Override
-			public Adapter caseEntityAssociation(EntityAssociation object) {
-				return createEntityAssociationAdapter();
+			public Adapter caseDomainAssociation(DomainAssociation object) {
+				return createDomainAssociationAdapter();
 			}
 			@Override
-			public Adapter caseEntityAttribute(EntityAttribute object) {
-				return createEntityAttributeAdapter();
+			public Adapter caseDomainAttribute(DomainAttribute object) {
+				return createDomainAttributeAdapter();
 			}
 			@Override
 			public Adapter caseVersionAttribute(VersionAttribute object) {
@@ -226,8 +226,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createServiceControllerAssociationAdapter();
 			}
 			@Override
-			public Adapter caseEntityClass(EntityClass object) {
-				return createEntityClassAdapter();
+			public Adapter caseDomainClass(DomainClass object) {
+				return createDomainClassAdapter();
 			}
 			@Override
 			public Adapter caseResult(Result object) {
@@ -258,8 +258,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createNavigationClassAdapter();
 			}
 			@Override
-			public Adapter caseEntityMethod(EntityMethod object) {
-				return createEntityMethodAdapter();
+			public Adapter caseDomainMethod(DomainMethod object) {
+				return createDomainMethodAdapter();
 			}
 			@Override
 			public Adapter caseDAOAttribute(DAOAttribute object) {
@@ -286,8 +286,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createDAOMethodAdapter();
 			}
 			@Override
-			public Adapter caseEntityPackage(EntityPackage object) {
-				return createEntityPackageAdapter();
+			public Adapter caseDomainPackage(DomainPackage object) {
+				return createDomainPackageAdapter();
 			}
 			@Override
 			public Adapter caseViewPackage(ViewPackage object) {
@@ -318,8 +318,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createNavigationPackageAdapter();
 			}
 			@Override
-			public Adapter caseEntityGeneralization(EntityGeneralization object) {
-				return createEntityGeneralizationAdapter();
+			public Adapter caseDomainGeneralization(DomainGeneralization object) {
+				return createDomainGeneralizationAdapter();
 			}
 			@Override
 			public Adapter caseUIComponentField(UIComponent object) {
@@ -374,12 +374,12 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createNavigationGeneralizationAdapter();
 			}
 			@Override
-			public Adapter caseEntityConstraints(EntityConstraints object) {
-				return createEntityConstraintsAdapter();
+			public Adapter caseDomainConstraints(DomainConstraints object) {
+				return createDomainConstraintsAdapter();
 			}
 			@Override
-			public Adapter caseEntityProperty(EntityProperty object) {
-				return createEntityPropertyAdapter();
+			public Adapter caseDomainProperty(DomainProperty object) {
+				return createDomainPropertyAdapter();
 			}
 			@Override
 			public Adapter caseDAOGeneralization(DAOGeneralization object) {
@@ -398,8 +398,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createAttributeMappingAdapter();
 			}
 			@Override
-			public Adapter caseEntityGeneralizationSet(EntityGeneralizationSet object) {
-				return createEntityGeneralizationSetAdapter();
+			public Adapter caseDomainGeneralizationSet(DomainGeneralizationSet object) {
+				return createDomainGeneralizationSetAdapter();
 			}
 			@Override
 			public Adapter caseFrameworkExtension(FrameworkExtension object) {
@@ -486,8 +486,8 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 				return createNavigationExtensionAdapter();
 			}
 			@Override
-			public Adapter caseEntityExtension(EntityExtension object) {
-				return createEntityExtensionAdapter();
+			public Adapter caseDomainExtension(DomainExtension object) {
+				return createDomainExtensionAdapter();
 			}
 			@Override
 			public Adapter caseNavigationGeneralizationSet(NavigationGeneralizationSet object) {
@@ -892,30 +892,30 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.EntityAssociation <em>Entity Association</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.DomainAssociation <em>Domain Association</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.EntityAssociation
+	 * @see frameweb.DomainAssociation
 	 * @generated
 	 */
-	public Adapter createEntityAssociationAdapter() {
+	public Adapter createDomainAssociationAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.EntityAttribute <em>Entity Attribute</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.DomainAttribute <em>Domain Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.EntityAttribute
+	 * @see frameweb.DomainAttribute
 	 * @generated
 	 */
-	public Adapter createEntityAttributeAdapter() {
+	public Adapter createDomainAttributeAdapter() {
 		return null;
 	}
 
@@ -1200,16 +1200,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.EntityClass <em>Entity Class</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.DomainClass <em>Domain Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.EntityClass
+	 * @see frameweb.DomainClass
 	 * @generated
 	 */
-	public Adapter createEntityClassAdapter() {
+	public Adapter createDomainClassAdapter() {
 		return null;
 	}
 
@@ -1312,16 +1312,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.EntityMethod <em>Entity Method</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.DomainMethod <em>Domain Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.EntityMethod
+	 * @see frameweb.DomainMethod
 	 * @generated
 	 */
-	public Adapter createEntityMethodAdapter() {
+	public Adapter createDomainMethodAdapter() {
 		return null;
 	}
 
@@ -1410,16 +1410,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.EntityPackage <em>Entity Package</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.DomainPackage <em>Domain Package</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.EntityPackage
+	 * @see frameweb.DomainPackage
 	 * @generated
 	 */
-	public Adapter createEntityPackageAdapter() {
+	public Adapter createDomainPackageAdapter() {
 		return null;
 	}
 
@@ -1522,16 +1522,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.EntityGeneralization <em>Entity Generalization</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.DomainGeneralization <em>Domain Generalization</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.EntityGeneralization
+	 * @see frameweb.DomainGeneralization
 	 * @generated
 	 */
-	public Adapter createEntityGeneralizationAdapter() {
+	public Adapter createDomainGeneralizationAdapter() {
 		return null;
 	}
 
@@ -1718,30 +1718,30 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.EntityConstraints <em>Entity Constraints</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.DomainConstraints <em>Domain Constraints</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.EntityConstraints
+	 * @see frameweb.DomainConstraints
 	 * @generated
 	 */
-	public Adapter createEntityConstraintsAdapter() {
+	public Adapter createDomainConstraintsAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.EntityProperty <em>Entity Property</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.DomainProperty <em>Domain Property</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.EntityProperty
+	 * @see frameweb.DomainProperty
 	 * @generated
 	 */
-	public Adapter createEntityPropertyAdapter() {
+	public Adapter createDomainPropertyAdapter() {
 		return null;
 	}
 
@@ -1802,16 +1802,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.EntityGeneralizationSet <em>Entity Generalization Set</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.DomainGeneralizationSet <em>Domain Generalization Set</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.EntityGeneralizationSet
+	 * @see frameweb.DomainGeneralizationSet
 	 * @generated
 	 */
-	public Adapter createEntityGeneralizationSetAdapter() {
+	public Adapter createDomainGeneralizationSetAdapter() {
 		return null;
 	}
 
@@ -2110,16 +2110,16 @@ public class FramewebAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link frameweb.EntityExtension <em>Entity Extension</em>}'.
+	 * Creates a new adapter for an object of class '{@link frameweb.DomainExtension <em>Domain Extension</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see frameweb.EntityExtension
+	 * @see frameweb.DomainExtension
 	 * @generated
 	 */
-	public Adapter createEntityExtensionAdapter() {
+	public Adapter createDomainExtensionAdapter() {
 		return null;
 	}
 

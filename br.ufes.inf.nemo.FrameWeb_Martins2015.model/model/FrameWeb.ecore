@@ -165,7 +165,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="execute" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"
         defaultValueLiteral="@this"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ajax" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
-        defaultValueLiteral="False"/>
+        defaultValueLiteral="false"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NavigationAssociation" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Association"/>
   <eClassifiers xsi:type="ecore:EClass" name="FrontControllerMethod" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Operation">
@@ -203,7 +203,7 @@
     <eAnnotations source="OCL" references="#//FrontControllerDependency/%Ecore%/@details.0">
       <details key="FrontControllerDependencyContent" value="(self.supplier.oclIsTypeOf(FrontControllerClass)) and (self.client.oclIsTypeOf(NavigationClass)) "/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Method" eType="#//FrontControllerMethod"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="method" eType="#//FrontControllerMethod"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="methodDependendencyConstraint"
         ordered="false" lowerBound="1" eType="#//MethodCosntraint" containment="true"/>
   </eClassifiers>

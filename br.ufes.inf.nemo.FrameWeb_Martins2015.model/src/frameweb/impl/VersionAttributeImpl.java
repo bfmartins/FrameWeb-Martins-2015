@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class VersionAttributeImpl extends EntityAttributeImpl implements VersionAttribute {
+public class VersionAttributeImpl extends DomainAttributeImpl implements VersionAttribute {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

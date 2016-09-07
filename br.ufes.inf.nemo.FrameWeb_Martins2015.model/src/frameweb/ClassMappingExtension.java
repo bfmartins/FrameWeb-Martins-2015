@@ -13,5 +13,5 @@ package frameweb;
  * @model
  * @generated
  */
-public interface ClassMappingExtension extends EntityExtension {
+public interface ClassMappingExtension extends DomainExtension {
 } // ClassMappingExtension

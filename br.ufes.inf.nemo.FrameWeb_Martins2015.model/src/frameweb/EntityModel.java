@@ -11,8 +11,8 @@ package frameweb;
  *
  * @see frameweb.FramewebPackage#getEntityModel()
  * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='EntityModelContent EntityModelMinimum'"
- *        annotation="comments EntityModelContent='A EntityModel must have only EntityPackage.' EntityModelMinimum='A EntityModel must have at least one EntityPackage'"
- *        annotation="OCL EntityModelContent='self.packagedElement.oclIsTypeOf(EntityPackage)' EntityModelMinimum='self.packagedElement->size()>=1'"
+ *        annotation="comments EntityModelContent='A EntityModel must have only DomainPackage.' EntityModelMinimum='A EntityModel must have at least one DomainPackage'"
+ *        annotation="OCL EntityModelContent='self.packagedElement.oclIsTypeOf(DomainPackage)' EntityModelMinimum='self.packagedElement->size()>=1'"
  * @generated
  */
 public interface EntityModel extends FramewebModel {

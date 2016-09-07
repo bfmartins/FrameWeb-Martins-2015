@@ -152,7 +152,7 @@ public interface ResultDependency extends NavigationDependency {
 
 	/**
 	 * Returns the value of the '<em><b>Ajax</b></em>' attribute.
-	 * The default value is <code>"False"</code>.
+	 * The default value is <code>"false"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Ajax</em>' attribute isn't clear,
@@ -162,7 +162,7 @@ public interface ResultDependency extends NavigationDependency {
 	 * @return the value of the '<em>Ajax</em>' attribute.
 	 * @see #setAjax(boolean)
 	 * @see frameweb.FramewebPackage#getResultDependency_Ajax()
-	 * @model default="False"
+	 * @model default="false"
 	 * @generated
 	 */
 	boolean isAjax();

@@ -63,8 +63,8 @@ public class FrontControllerDependencyItemProvider extends NavigationDependencyI
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_FrontControllerDependency_Method_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_Method_feature", "_UI_FrontControllerDependency_type"),
+				 getString("_UI_FrontControllerDependency_method_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_FrontControllerDependency_method_feature", "_UI_FrontControllerDependency_type"),
 				 FramewebPackage.Literals.FRONT_CONTROLLER_DEPENDENCY__METHOD,
 				 true,
 				 false,

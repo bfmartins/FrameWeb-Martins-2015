@@ -125,7 +125,7 @@ public class ServiceControllerAssociationItemProvider extends AssociationItemPro
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.NAMESPACE__OWNED_RULE,
-				 FramewebFactory.eINSTANCE.createEntityConstraints()));
+				 FramewebFactory.eINSTANCE.createDomainConstraints()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -140,7 +140,7 @@ public class ServiceControllerAssociationItemProvider extends AssociationItemPro
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.CLASSIFIER__GENERALIZATION,
-				 FramewebFactory.eINSTANCE.createEntityGeneralization()));
+				 FramewebFactory.eINSTANCE.createDomainGeneralization()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -215,7 +215,7 @@ public class ServiceControllerAssociationItemProvider extends AssociationItemPro
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__OWNED_END,
-				 FramewebFactory.eINSTANCE.createEntityProperty()));
+				 FramewebFactory.eINSTANCE.createDomainProperty()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -330,7 +330,7 @@ public class ServiceControllerAssociationItemProvider extends AssociationItemPro
 		newChildDescriptors.add
 			(createChildParameter
 				(UMLPackage.Literals.ASSOCIATION__NAVIGABLE_OWNED_END,
-				 FramewebFactory.eINSTANCE.createEntityProperty()));
+				 FramewebFactory.eINSTANCE.createDomainProperty()));
 
 		newChildDescriptors.add
 			(createChildParameter

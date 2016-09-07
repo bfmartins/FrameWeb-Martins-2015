@@ -21,7 +21,7 @@ import org.eclipse.uml2.uml.UMLPackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class LOBAttributeItemProvider extends EntityAttributeItemProvider {
+public class LOBAttributeItemProvider extends DomainAttributeItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
